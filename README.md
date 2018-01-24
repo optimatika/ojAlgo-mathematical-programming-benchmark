@@ -1,5 +1,2 @@
 # oj! Mathematical Programming (JMH) Benchmark – ojMPB
-Mathematical Programming Benchmark
-
-
-oj! Linear Algebra (JMH) Benchmark - ojLAB
+Comparing ojAlgo with the few existing Java mathematical programming altenatives available, and with some native/commercial alternatives.
