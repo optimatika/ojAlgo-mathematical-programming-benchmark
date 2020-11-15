@@ -32,7 +32,7 @@
             <groupId>org.ojalgo</groupId>
             <artifactId>ojalgo</artifactId>
             <version>48.2.0</version>
-        </dependency>
+        </dependency>        
         <dependency>
             <groupId>org.ojalgo</groupId>
             <artifactId>ojalgo-cplex</artifactId>
@@ -65,7 +65,7 @@
         <jmh.version>1.20</jmh.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>ojmpb</uberjar.name>
-        <extensions.version>1.1.0</extensions.version>
+        <extensions.version>2.47.2</extensions.version>
     </properties>
 
     <build>
@@ -164,4 +164,10 @@
     <organization>
         <url>http://ojalgo.org/</url>
     </organization>
+        <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 </project>
