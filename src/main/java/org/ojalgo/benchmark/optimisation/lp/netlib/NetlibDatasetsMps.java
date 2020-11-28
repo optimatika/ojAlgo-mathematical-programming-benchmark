@@ -30,7 +30,6 @@ import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.ojalgo.TestUtils;
 import org.ojalgo.benchmark.Benchmarks;
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
 import org.ojalgo.joptimizer.SolverJOptimizer;
@@ -272,7 +271,7 @@ public class NetlibDatasetsMps {
 
         BasicLogger.debug("Path: {}", path);
 
-        try (InputStream input = TestUtils.class.getResourceAsStream(path)) {
+        try (InputStream input = this.getClass().getResourceAsStream(path)) {
             BasicLogger.debug("Input: {}", input);
             parsedMPS = MathProgSysModel.parse(input);
         } catch (IOException cause) {
