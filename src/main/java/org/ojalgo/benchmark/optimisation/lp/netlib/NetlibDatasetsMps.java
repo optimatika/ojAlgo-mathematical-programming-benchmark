@@ -22,12 +22,15 @@
 package org.ojalgo.benchmark.optimisation.lp.netlib;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.ojalgo.TestUtils;
 import org.ojalgo.benchmark.Benchmarks;
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
 import org.ojalgo.joptimizer.SolverJOptimizer;
@@ -199,26 +202,23 @@ NetlibDatasetsMps.solve  ADLITTLE     CPLEX  thrpt    5   350.290 ± 285.618  op
 @State(Scope.Benchmark)
 public class NetlibDatasetsMps {
 
-    public static final String PATH = "../ojAlgo/rsrc/optimisation/netlib/";
-
     private static final boolean DEBUG = true;
 
     private static final NumberContext PRECISION = new NumberContext(7, 6);
     private static final String SOLUTION_NOT_VALID = "Solution not valid!";
 
-    private static final String SUFFIX = ".SIF";
-
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
 
     static {
-        // INTEGRATIONS.put("ACM", SolverCommonsMath.INTEGRATION);
-        // INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
+        INTEGRATIONS.put("ACM", SolverCommonsMath.INTEGRATION);
+        INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
-        // INTEGRATIONS.put("JOptimizer", SolverJOptimizer.INTEGRATION);
+        INTEGRATIONS.put("JOptimizer", SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
     }
 
     public static void main(final String[] args) throws RunnerException {
+
         Benchmarks.run(NetlibDatasetsMps.class);
     }
 
@@ -249,8 +249,7 @@ public class NetlibDatasetsMps {
     @Setup
     public void setup() {
 
-        final File tmpFile = new File(PATH + model + SUFFIX);
-        parsedMPS = MathProgSysModel.make(tmpFile);
+        String path = "/optimisation/netlib/" + model + ".SIF";
 
         //        ExpressionsBasedModel.clearIntegrations();
         //        ExpressionsBasedModel.addIntegration(SolverCPLEX.INTEGRATION);
@@ -270,6 +269,16 @@ public class NetlibDatasetsMps {
         //            BasicLogger.debug("Actual  : {}", actual);
         //            throw new ProgrammingError("Error too big!");
         //        }
+
+        BasicLogger.debug("Path: {}", path);
+
+        try (InputStream input = TestUtils.class.getResourceAsStream(path)) {
+            BasicLogger.debug("Input: {}", input);
+            parsedMPS = MathProgSysModel.parse(input);
+        } catch (IOException cause) {
+            BasicLogger.error("Problem!", cause);
+            throw new RuntimeException(cause);
+        }
     }
 
     @Benchmark
@@ -336,7 +345,7 @@ public class NetlibDatasetsMps {
 
     void doTest(final String problem, final BigDecimal expectedMinimum, final BigDecimal expectedMaximum) {
 
-        ExpressionsBasedModel model = MathProgSysModel.make(new File(NetlibDatasetsMps.PATH + problem + ".SIF")).getExpressionsBasedModel();
+        ExpressionsBasedModel model = MathProgSysModel.make(new File("optimisation/netlib/" + problem + ".SIF")).getExpressionsBasedModel();
 
         ExpressionsBasedModel.clearIntegrations();
 

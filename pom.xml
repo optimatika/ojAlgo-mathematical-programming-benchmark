@@ -32,7 +32,13 @@
         <dependency>
             <groupId>org.ojalgo</groupId>
             <artifactId>ojalgo</artifactId>
-            <version>48.2.0</version>
+            <version>48.3.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ojalgo</groupId>
+            <artifactId>ojalgo</artifactId>
+            <version>48.3.2-SNAPSHOT</version>
+            <type>test-jar</type>
         </dependency>
         <dependency>
             <groupId>org.ojalgo</groupId>
