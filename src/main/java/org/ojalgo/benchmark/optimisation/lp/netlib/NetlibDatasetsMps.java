@@ -28,7 +28,6 @@ import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.ojalgo.ProgrammingError;
 import org.ojalgo.benchmark.Benchmarks;
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
 import org.ojalgo.joptimizer.SolverJOptimizer;
@@ -39,8 +38,6 @@ import org.ojalgo.optimisation.MathProgSysModel;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
-import org.ojalgo.optimisation.solver.gurobi.SolverGurobi;
-import org.ojalgo.optimisation.solver.mosek.SolverMosek;
 import org.ojalgo.type.context.NumberContext;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Param;
@@ -202,7 +199,7 @@ NetlibDatasetsMps.solve  ADLITTLE     CPLEX  thrpt    5   350.290 ± 285.618  op
 @State(Scope.Benchmark)
 public class NetlibDatasetsMps {
 
-    public static final String PATH = "./src/main/resources/netlib/";
+    public static final String PATH = "../ojAlgo/rsrc/optimisation/netlib/";
 
     private static final boolean DEBUG = true;
 
@@ -214,11 +211,11 @@ public class NetlibDatasetsMps {
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
 
     static {
-        INTEGRATIONS.put("CommonsMath", SolverCommonsMath.INTEGRATION);
-        INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
-        INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
-        INTEGRATIONS.put("JOptimizer", SolverJOptimizer.INTEGRATION);
-        INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
+        // INTEGRATIONS.put("ACM", SolverCommonsMath.INTEGRATION);
+        // INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
+        // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
+        // INTEGRATIONS.put("JOptimizer", SolverJOptimizer.INTEGRATION);
+        // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
     }
 
     public static void main(final String[] args) throws RunnerException {
@@ -240,7 +237,7 @@ public class NetlibDatasetsMps {
             "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" })
     public String model;
 
-    @Param({ "ojAlgo", "Gurobi", "CPLEX" })
+    @Param({ "ojAlgo", "ACM", "JOptimizer" })
     public String solver;
 
     private MathProgSysModel parsedMPS;
@@ -255,24 +252,24 @@ public class NetlibDatasetsMps {
         final File tmpFile = new File(PATH + model + SUFFIX);
         parsedMPS = MathProgSysModel.make(tmpFile);
 
-        ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addIntegration(SolverCPLEX.INTEGRATION);
-        final Result expected = parsedMPS.solve();
-        ExpressionsBasedModel.clearIntegrations();
+        //        ExpressionsBasedModel.clearIntegrations();
+        //        ExpressionsBasedModel.addIntegration(SolverCPLEX.INTEGRATION);
+        //        final Result expected = parsedMPS.solve();
+        //        ExpressionsBasedModel.clearIntegrations();
 
         final Integration<?> integration = INTEGRATIONS.get(solver);
         if (integration != null) {
-            ExpressionsBasedModel.addIntegration(integration);
+            ExpressionsBasedModel.addPreferredSolver(integration);
         }
 
-        final Result actual = parsedMPS.solve();
-
-        if (Math.abs((actual.getValue() - expected.getValue()) / expected.getValue()) >= 0.01) {
-            BasicLogger.debug();
-            BasicLogger.debug("Expected: {}", expected);
-            BasicLogger.debug("Actual  : {}", actual);
-            throw new ProgrammingError("Error too big!");
-        }
+        //        final Result actual = parsedMPS.solve();
+        //
+        //        if (Math.abs((actual.getValue() - expected.getValue()) / expected.getValue()) >= 0.01) {
+        //            BasicLogger.debug();
+        //            BasicLogger.debug("Expected: {}", expected);
+        //            BasicLogger.debug("Actual  : {}", actual);
+        //            throw new ProgrammingError("Error too big!");
+        //        }
     }
 
     @Benchmark
@@ -282,18 +279,12 @@ public class NetlibDatasetsMps {
 
     @Test
     public void testAFIRO() {
-
-        final BigDecimal maxValue = null;
-
-        this.doTest("AFIRO", new BigDecimal("-.46475314286e+3"), maxValue);
+        this.doTest("AFIRO", new BigDecimal("-.46475314286e+3"), null);
     }
 
     @Test
-    public void testDEGEN2() {
-
-        final BigDecimal maxValue = null;
-
-        this.doTest("CAPRI", new BigDecimal("2690.0129142514993"), maxValue);
+    public void testCAPRI() {
+        this.doTest("CAPRI", new BigDecimal("2690.0129142514993"), null);
     }
 
     private void assertMinMaxVal(final ExpressionsBasedModel model, final BigDecimal expectedMinimum, final BigDecimal expectedMaximum) {
@@ -345,24 +336,24 @@ public class NetlibDatasetsMps {
 
     void doTest(final String problem, final BigDecimal expectedMinimum, final BigDecimal expectedMaximum) {
 
-        final ExpressionsBasedModel model = MathProgSysModel.make(new File(NetlibDatasetsMps.PATH + problem + ".SIF")).getExpressionsBasedModel();
+        ExpressionsBasedModel model = MathProgSysModel.make(new File(NetlibDatasetsMps.PATH + problem + ".SIF")).getExpressionsBasedModel();
 
         ExpressionsBasedModel.clearIntegrations();
 
         this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
 
         ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addIntegration(SolverCPLEX.INTEGRATION);
+        ExpressionsBasedModel.addPreferredSolver(SolverCPLEX.INTEGRATION);
 
         this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
 
         ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addIntegration(SolverCommonsMath.INTEGRATION);
+        ExpressionsBasedModel.addPreferredSolver(SolverCommonsMath.INTEGRATION);
 
         this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
 
         ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addIntegration(SolverJOptimizer.INTEGRATION);
+        ExpressionsBasedModel.addPreferredSolver(SolverJOptimizer.INTEGRATION);
 
         this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
     }
