@@ -33,6 +33,7 @@ import org.openjdk.jmh.runner.options.TimeValue;
 public abstract class Benchmarks {
 
     private static final TimeValue ONE_MINUTE = new TimeValue(1L, TimeUnit.MINUTES);
+    private static final TimeValue ONE_SECOND = new TimeValue(1L, TimeUnit.SECONDS);
 
     public static void run(final Class<?> clazz) throws RunnerException {
         new Runner(Benchmarks.options().include(clazz.getSimpleName()).build()).run();
