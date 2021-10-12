@@ -30,22 +30,22 @@ import org.openjdk.jmh.runner.options.ChainedOptionsBuilder;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.runner.options.TimeValue;
 
-public abstract class Benchmarks {
+public abstract class OjBenchmarks {
 
     private static final TimeValue ONE_MINUTE = new TimeValue(1L, TimeUnit.MINUTES);
     private static final TimeValue ONE_SECOND = new TimeValue(1L, TimeUnit.SECONDS);
+    private static final TimeValue TEN_SECONDS = new TimeValue(20L, TimeUnit.SECONDS);
 
     public static void run(final Class<?> clazz) throws RunnerException {
-        new Runner(Benchmarks.options().include(clazz.getSimpleName()).build()).run();
+        new Runner(OjBenchmarks.options().include(clazz.getSimpleName()).build()).run();
     }
 
     protected static ChainedOptionsBuilder options() {
-        return new OptionsBuilder().forks(1).measurementIterations(5).warmupIterations(9).mode(Mode.Throughput).timeUnit(TimeUnit.SECONDS).timeout(ONE_MINUTE)
-                .jvmArgs("-server", "-Xmx6g",
-                        "-Djava.library.path=/Library/gurobi751/mac64/lib:/Users/apete/Applications/IBM/ILOG/CPLEX_Studio_Community1262/cplex/bin/x86-64_osx");
+        return new OptionsBuilder().forks(1).measurementIterations(3).warmupIterations(2).mode(Mode.Throughput).timeUnit(TimeUnit.SECONDS).timeout(TEN_SECONDS)
+                .jvmArgs("-server", "-Djava.library.path=/Applications/CPLEX_Studio_Community128/cplex/bin/x86-64_osx");
     }
 
-    protected Benchmarks() {
+    protected OjBenchmarks() {
         super();
     }
 
