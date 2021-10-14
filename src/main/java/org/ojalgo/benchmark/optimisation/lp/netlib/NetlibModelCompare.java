@@ -126,6 +126,10 @@ public class NetlibModelCompare {
                 } else if (fastest.duration.measure > another.duration.measure) {
                     fastest = another;
                 }
+
+            } else {
+
+                fastest = another;
             }
         }
 
@@ -257,12 +261,11 @@ public class NetlibModelCompare {
 
                         BasicLogger.debug("{} \t {} Problem!", work.model, work.solver);
                         done.add(work);
-
                     }
+
                 } catch (InterruptedException | IOException cause) {
                     throw new RuntimeException(cause);
                 }
-
             }
 
             WORK.removeAll(done);
@@ -270,7 +273,7 @@ public class NetlibModelCompare {
         } while (WORK.size() > 0);
 
         BasicLogger.debug();
-        BasicLogger.debug("=====================================================");
+        BasicLogger.debug("=====================================================================");
         for (Entry<ModelSolverPair, ResultsSet> keyPair : RESULTS.entrySet()) {
 
             ModelSolverPair work = keyPair.getKey();
