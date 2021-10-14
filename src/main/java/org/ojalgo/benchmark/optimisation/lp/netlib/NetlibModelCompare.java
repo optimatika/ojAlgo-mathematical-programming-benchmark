@@ -107,7 +107,13 @@ public class NetlibModelCompare {
     static final class ResultsSet {
 
         private final List<TimedResult<Optimisation.Result>> all = new ArrayList<>();
+        private final double relative;
         TimedResult<Optimisation.Result> fastest;
+
+        ResultsSet(final double accuracy) {
+            super();
+            relative = accuracy / 2D;
+        }
 
         void add(final TimedResult<Result> another) {
 
@@ -121,7 +127,7 @@ public class NetlibModelCompare {
                 double value1 = fastestR.getValue();
                 double value2 = anotherR.getValue();
 
-                if (fastestR.getState() != anotherR.getState() || Math.abs(value1 - value2) / (value1 + value2) > 0.005) {
+                if (fastestR.getState() != anotherR.getState() || Math.abs(value1 - value2) / (value1 + value2) > relative) {
                     fastest = new TimedResult<>(anotherR.withState(Optimisation.State.FAILED), another.duration);
                 } else if (fastest.duration.measure > another.duration.measure) {
                     fastest = another;
@@ -144,7 +150,7 @@ public class NetlibModelCompare {
             double latest1 = all.get(size - 1).duration.measure;
             double latest2 = all.get(size - 2).duration.measure;
 
-            if (Math.abs(latest1 - latest2) / (latest1 + latest2) > 0.005) {
+            if (Math.abs(latest1 - latest2) / (latest1 + latest2) > relative) {
                 return false;
             }
 
@@ -153,31 +159,16 @@ public class NetlibModelCompare {
 
     }
 
-    private static final String LENGTH = "            ";
-
-    static String toString(final Object obj) {
-
-        String retVal = obj.toString();
-
-        retVal = retVal + LENGTH;
-
-        retVal = retVal.substring(0, LENGTH.length());
-
-        return retVal;
-    }
-
-    private static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
+    static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
             new CalendarDateDuration(30, CalendarDateUnit.SECOND).convertTo(CalendarDateUnit.MILLIS));
-
-    private static final String[] MODELS = new String[] { "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SCTAP1", "SCSD1", "SCORPION", "SCFXM1", "SCAGR7",
-            "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "LOTFI", "KB2", "ISRAEL", "GROW7", "FORPLAN", "FFFFF800", "ETAMACRO", "E226", "CAPRI", "BRANDY",
-            "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
-    private static final Map<ModelSolverPair, ResultsSet> RESULTS = new TreeMap<>();
-
-    private static final String[] SOLVERS = new String[] { "CPLEX", "ojAlgo", "ACM" };
-    private static final Set<ModelSolverPair> WORK = new HashSet<>();
-
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
+    static final String LENGTH = "            ";
+    static final String[] MODELS = new String[] { "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SCTAP1", "SCSD1", "SCORPION", "SCFXM1", "SCAGR7", "SCAGR25",
+            "SC50B", "SC50A", "SC205", "SC105", "LOTFI", "KB2", "ISRAEL", "GROW7", "FORPLAN", "FFFFF800", "ETAMACRO", "E226", "CAPRI", "BRANDY", "BORE3D",
+            "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
+    static final Map<ModelSolverPair, ResultsSet> RESULTS = new TreeMap<>();
+    static final String[] SOLVERS = new String[] { "CPLEX", "ojAlgo", "ACM" };
+    static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
 
@@ -221,17 +212,24 @@ public class NetlibModelCompare {
                 try (InputStream input = NetlibModelCompare.class.getResourceAsStream(path)) {
                     ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
-                    ResultsSet computeIfAbsent = RESULTS.computeIfAbsent(work, k -> new ResultsSet());
+                    ResultsSet computeIfAbsent = RESULTS.computeIfAbsent(work, k -> new ResultsSet(0.01));
 
                     TimedResult<Optimisation.Result>[] resultA = (TimedResult<Result>[]) new TimedResult<?>[1];
 
                     Thread worker = new Thread(() -> {
-                        resultA[0] = Stopwatch.meassure(() -> NetlibModelCompare.solve(parsedMPS));
+
+                        ResultsSet subR = new ResultsSet(0.1);
+
+                        while (!subR.isStable()) {
+                            subR.add(NetlibModelCompare.meassure(parsedMPS));
+                        }
+
+                        resultA[0] = subR.fastest;
                     });
                     long start = System.currentTimeMillis();
                     worker.start();
 
-                    while (resultA[0] == null && System.currentTimeMillis() - start <= 30_000L) {
+                    while (resultA[0] == null && System.currentTimeMillis() - start <= 60_000L) {
                         Thread.sleep(1_000L);
                     }
 
@@ -289,17 +287,32 @@ public class NetlibModelCompare {
         }
     }
 
-    public static Optimisation.Result solve(final ExpressionsBasedModel parsedMPS) {
+    static TimedResult<Result> meassure(final ExpressionsBasedModel model) {
+        return Stopwatch.meassure(() -> NetlibModelCompare.solve(model));
+    }
+
+    static Optimisation.Result solve(final ExpressionsBasedModel model) {
 
         Optimisation.Result result = null;
 
-        if (parsedMPS.isMinimisation()) {
-            result = parsedMPS.minimise();
+        if (model.isMinimisation()) {
+            result = model.minimise();
         } else {
-            result = parsedMPS.maximise();
+            result = model.maximise();
         }
 
         return result;
+    }
+
+    static String toString(final Object obj) {
+
+        String retVal = obj.toString();
+
+        retVal = retVal + LENGTH;
+
+        retVal = retVal.substring(0, LENGTH.length());
+
+        return retVal;
     }
 
 }
