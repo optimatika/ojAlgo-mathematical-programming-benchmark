@@ -40,7 +40,6 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
-import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
@@ -110,11 +109,24 @@ public class NetlibModelCompare {
         private final List<TimedResult<Optimisation.Result>> all = new ArrayList<>();
         TimedResult<Optimisation.Result> fastest;
 
-        void add(final TimedResult<Result> newRes) {
-            if (fastest == null || fastest.duration.measure >= newRes.duration.measure) {
-                fastest = newRes;
+        void add(final TimedResult<Result> another) {
+
+            all.add(another);
+
+            if (fastest != null) {
+
+                Result fastestR = fastest.result;
+                Result anotherR = another.result;
+
+                double value1 = fastestR.getValue();
+                double value2 = anotherR.getValue();
+
+                if (fastestR.getState() != anotherR.getState() || Math.abs(value1 - value2) / (value1 + value2) > 0.005) {
+                    fastest = new TimedResult<>(anotherR.withState(Optimisation.State.FAILED), another.duration);
+                } else if (fastest.duration.measure > another.duration.measure) {
+                    fastest = another;
+                }
             }
-            all.add(newRes);
         }
 
         boolean isStable() {
@@ -135,6 +147,19 @@ public class NetlibModelCompare {
             return true;
         }
 
+    }
+
+    private static final String LENGTH = "            ";
+
+    static String toString(final Object obj) {
+
+        String retVal = obj.toString();
+
+        retVal = retVal + LENGTH;
+
+        retVal = retVal.substring(0, LENGTH.length());
+
+        return retVal;
     }
 
     private static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
@@ -216,13 +241,13 @@ public class NetlibModelCompare {
 
                         computeIfAbsent.add(result);
 
-                        if (result.result.getState() != Optimisation.State.OPTIMAL) {
-                            BasicLogger.debug("{}\t{} Not feasible solution!", work.model, work.solver);
+                        if (!result.result.getState().isOptimal()) {
+                            BasicLogger.debug("{} \t {} Not feasible solution!", work.model, work.solver);
                             done.add(work);
                         }
 
                         if (computeIfAbsent.isStable()) {
-                            BasicLogger.debug("{}\t{} Time stable", work.model, work.solver);
+                            BasicLogger.debug("{} \t {} Time stable", work.model, work.solver);
                             done.add(work);
                         }
 
@@ -230,7 +255,7 @@ public class NetlibModelCompare {
 
                         computeIfAbsent.add(FAILED);
 
-                        BasicLogger.debug("{}\t{} Problem!", work.model, work.solver);
+                        BasicLogger.debug("{} \t {} Problem!", work.model, work.solver);
                         done.add(work);
 
                     }
@@ -251,13 +276,13 @@ public class NetlibModelCompare {
             ModelSolverPair work = keyPair.getKey();
             TimedResult<Result> result = keyPair.getValue().fastest;
 
-            String model = work.model;
-            String solver = work.solver;
-            State state = result.result.getState();
-            double value = result.result.getValue();
-            CalendarDateDuration duration = result.duration;
+            String model = NetlibModelCompare.toString(work.model);
+            String solver = NetlibModelCompare.toString(work.solver);
+            String state = NetlibModelCompare.toString(result.result.getState());
+            String value = NetlibModelCompare.toString(result.result.getValue());
+            String duration = NetlibModelCompare.toString(result.duration);
 
-            BasicLogger.debug("{}\t \t{}\t \t{}\t \t{}\t \t{}", model, solver, state, value, duration);
+            BasicLogger.debug("{} \t {} \t {} \t {} \t {}", model, solver, state, value, duration);
         }
     }
 
