@@ -40,6 +40,7 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
+import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
@@ -136,6 +137,9 @@ public class NetlibModelCompare {
 
     }
 
+    private static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
+            new CalendarDateDuration(30, CalendarDateUnit.SECOND).convertTo(CalendarDateUnit.MILLIS));
+
     private static final String[] MODELS = new String[] { "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SCTAP1", "SCSD1", "SCORPION", "SCFXM1", "SCAGR7",
             "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "LOTFI", "KB2", "ISRAEL", "GROW7", "FORPLAN", "FFFFF800", "ETAMACRO", "E226", "CAPRI", "BRANDY",
             "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
@@ -213,20 +217,20 @@ public class NetlibModelCompare {
                         computeIfAbsent.add(result);
 
                         if (result.result.getState() != Optimisation.State.OPTIMAL) {
-                            BasicLogger.debug("{} with {} Not feasible solution!", work.model, work.solver);
+                            BasicLogger.debug("{}\t{} Not feasible solution!", work.model, work.solver);
                             done.add(work);
                         }
 
                         if (computeIfAbsent.isStable()) {
-                            BasicLogger.debug("{} with {} Time stable!", work.model, work.solver);
+                            BasicLogger.debug("{}\t{} Time stable", work.model, work.solver);
                             done.add(work);
                         }
 
                     } else {
-                        computeIfAbsent.add(
-                                new TimedResult(Optimisation.Result.of(0.0, Optimisation.State.FAILED), new CalendarDateDuration(30, CalendarDateUnit.SECOND)));
 
-                        BasicLogger.debug("{} with {} Problem!", work.model, work.solver);
+                        computeIfAbsent.add(FAILED);
+
+                        BasicLogger.debug("{}\t{} Problem!", work.model, work.solver);
                         done.add(work);
 
                     }
@@ -243,9 +247,17 @@ public class NetlibModelCompare {
         BasicLogger.debug();
         BasicLogger.debug("=====================================================");
         for (Entry<ModelSolverPair, ResultsSet> keyPair : RESULTS.entrySet()) {
+
             ModelSolverPair work = keyPair.getKey();
             TimedResult<Result> result = keyPair.getValue().fastest;
-            BasicLogger.debug("Solved {} with {} in {} with {}: {}", work.model, work.solver, result.duration, result.result.toString());
+
+            String model = work.model;
+            String solver = work.solver;
+            State state = result.result.getState();
+            double value = result.result.getValue();
+            CalendarDateDuration duration = result.duration;
+
+            BasicLogger.debug("{}\t \t{}\t \t{}\t \t{}\t \t{}", model, solver, state, value, duration);
         }
     }
 
