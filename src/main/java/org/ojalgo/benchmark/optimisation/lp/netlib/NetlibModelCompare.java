@@ -21,7 +21,6 @@
  */
 package org.ojalgo.benchmark.optimisation.lp.netlib;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -104,6 +103,17 @@ public class NetlibModelCompare {
             result = prime * result + (solver == null ? 0 : solver.hashCode());
             return result;
         }
+
+        @Override
+        public String toString() {
+            StringBuilder builder = new StringBuilder();
+            builder.append("ModelSolverPair [model=");
+            builder.append(model);
+            builder.append(", solver=");
+            builder.append(solver);
+            builder.append("]");
+            return builder.toString();
+        }
     }
 
     static final class ResultsSet {
@@ -174,9 +184,10 @@ public class NetlibModelCompare {
             new CalendarDateDuration(30, CalendarDateUnit.SECOND).convertTo(CalendarDateUnit.MILLIS));
 
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
-    static final String[] MODELS = new String[] { "TUFF", "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SCTAP1", "SCSD1", "SCORPION", "SCFXM1", "SCAGR7",
-            "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "PILOT4", "LOTFI", "KB2", "ISRAEL", "GROW7", "GROW15", "FORPLAN", "FFFFF800", "ETAMACRO", "E226",
-            "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
+    static final String[] MODELS = new String[] { "VTP-BASE", "TUFF", "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SEBA", "SCTAP1", "SCSD1", "SCORPION",
+            "SCFXM2", "SCFXM1", "SCAGR7", "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "RECIPELP", "PILOT4", "LOTFI", "KB2", "ISRAEL", "GROW7", "GROW22",
+            "GROW15", "FORPLAN", "FINNIS", "FFFFF800", "ETAMACRO", "E226", "DEGEN2", "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD",
+            "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
     static final Map<ModelSolverPair, ResultsSet> RESULTS = new TreeMap<>();
     static final String[] SOLVERS = new String[] { "CPLEX", "ojAlgo", "ACM" };
     static final int WIDTH = 22;
@@ -273,7 +284,8 @@ public class NetlibModelCompare {
                         done.add(work);
                     }
 
-                } catch (InterruptedException | IOException cause) {
+                } catch (Throwable cause) {
+                    BasicLogger.error("Error working with {}!", work);
                     throw new RuntimeException(cause);
                 }
             }

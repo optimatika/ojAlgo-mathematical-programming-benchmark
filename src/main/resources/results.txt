@@ -1,368 +1,357 @@
 
-Iteration 1
-------------------------
-SCSD1 	 ACM Problem!
-FORPLAN 	 ACM Problem!
-SCAGR25 	 ACM Problem!
-ETAMACRO 	 ACM Problem!
-FFFFF800 	 ACM Problem!
-BANDM 	 ACM Problem!
-SCFXM1 	 ACM Problem!
-STAIR 	 ACM Problem!
-BORE3D 	 ACM Not feasible solution!
-E226 	 ACM Problem!
-ADLITTLE 	 ACM Not feasible solution!
-BRANDY 	 ACM Not feasible solution!
-SCAGR7 	 ACM Not feasible solution!
-BOEING1 	 ACM Problem!
-LOTFI 	 ACM Problem!
-STOCFOR1 	 ACM Not feasible solution!
-BOEING2 	 ACM Problem!
-CAPRI 	 ACM Not feasible solution!
-KB2 	 ACM Problem!
-GROW7 	 ACM Problem!
-85 model/solver pairs remaining
+Iteration 1 with 135 model/solver pairs remaining
+--------------------------------------------------------------------------
+SCSD1                 ACM                   FAILED                
+FORPLAN               ACM                   FAILED                
+SCAGR25               ACM                   FAILED                
+ETAMACRO              ACM                   FAILED                
+SCFXM2                ACM                   FAILED                
+FFFFF800              ACM                   FAILED                
+BANDM                 ACM                   FAILED                
+SCFXM1                ACM                   FAILED                
+STAIR                 ACM                   FAILED                
+BORE3D                ACM                   FAILED                
+E226                  ACM                   FAILED                
+FINNIS                ACM                   FAILED                
+DEGEN2                ACM                   FAILED                
+TUFF                  ACM                   FAILED                
+TUFF                  ojAlgo                FAILED                
+SEBA                  ACM                   FAILED                
+BRANDY                ACM                   FAILED                
+GROW22                ACM                   FAILED                
+BOEING1               ACM                   FAILED                
+PILOT4                ACM                   FAILED                
+GROW15                ACM                   FAILED                
+BOEING2               ACM                   FAILED                
+CAPRI                 ACM                   FAILED                
+BEACONFD              ACM                   INFEASIBLE            
+GROW7                 ACM                   FAILED                
 
-Iteration 2
-------------------------
-AGG3 	 ACM Not feasible solution!
-84 model/solver pairs remaining
+Iteration 2 with 110 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 3
-------------------------
-SCSD1 	 ojAlgo Time stable
-SCAGR25 	 ojAlgo Time stable
-BOEING1 	 CPLEX Time stable
-SCTAP1 	 ACM Time stable
-BOEING1 	 ojAlgo Time stable
-SC205 	 CPLEX Time stable
-ADLITTLE 	 ojAlgo Time stable
-SHARE1B 	 ACM Time stable
-FFFFF800 	 CPLEX Time stable
-BORE3D 	 ojAlgo Time stable
-SHARE1B 	 ojAlgo Time stable
-73 model/solver pairs remaining
+Iteration 3 with 110 model/solver pairs remaining
+--------------------------------------------------------------------------
+BORE3D                CPLEX                 Time stable           
+BEACONFD              CPLEX                 Time stable           
+SCSD1                 ojAlgo                Time stable           
+CAPRI                 CPLEX                 Time stable           
+SCFXM2                ojAlgo                Time stable           
+BOEING1               CPLEX                 Time stable           
+STAIR                 CPLEX                 Time stable           
+SC50B                 CPLEX                 Time stable           
+VTP-BASE              ACM                   Time stable           
+FFFFF800              ojAlgo                Time stable           
+VTP-BASE              ojAlgo                Time stable           
+SHARE1B               CPLEX                 Time stable           
+SCAGR25               CPLEX                 Time stable           
+CAPRI                 ojAlgo                Time stable           
+SC105                 ACM                   Time stable           
+RECIPELP              CPLEX                 Time stable           
+BLEND                 ojAlgo                Time stable           
+BEACONFD              ojAlgo                Time stable           
+ISRAEL                CPLEX                 Time stable           
+SCTAP1                ACM                   Time stable           
+STAIR                 ojAlgo                Time stable           
+SC50B                 ACM                   Time stable           
+BOEING2               CPLEX                 Time stable           
+SCORPION              CPLEX                 Time stable           
+PILOT4                ojAlgo                Time stable           
+AGG3                  ojAlgo                Time stable           
+AGG3                  ACM                   Time stable           
+GROW15                ojAlgo                Time stable           
+DEGEN2                CPLEX                 Time stable           
+BANDM                 CPLEX                 Time stable           
+SC50A                 ACM                   Time stable           
+SC105                 ojAlgo                Time stable           
+RECIPELP              ojAlgo                Time stable           
+AGG2                  ACM                   Time stable           
+SC50B                 ojAlgo                Time stable           
+SC105                 CPLEX                 Time stable           
+VTP-BASE              CPLEX                 Time stable           
+AGG                   ACM                   Time stable           
+SCFXM1                ojAlgo                Time stable           
+BRANDY                CPLEX                 Time stable           
+E226                  CPLEX                 Time stable           
+SC50A                 CPLEX                 Time stable           
+AGG                   CPLEX                 Time stable           
+SHARE2B               ojAlgo                Time stable           
+ADLITTLE              ACM                   Time stable           
+SC205                 CPLEX                 Time stable           
+ADLITTLE              ojAlgo                Time stable           
+AFIRO                 ACM                   Time stable           
+SCORPION              ojAlgo                Time stable           
+KB2                   ojAlgo                Time stable           
+STOCFOR1              ojAlgo                Time stable           
+SC205                 ojAlgo                Time stable           
+ADLITTLE              CPLEX                 Time stable           
+SEBA                  CPLEX                 Time stable           
+SCSD1                 CPLEX                 Time stable           
+FORPLAN               CPLEX                 Time stable           
+TUFF                  CPLEX                 Time stable           
+LOTFI                 ojAlgo                Time stable           
+SCAGR7                ojAlgo                Time stable           
+SHARE2B               CPLEX                 Time stable           
+SCTAP1                ojAlgo                Time stable           
+BLEND                 CPLEX                 Time stable           
+AFIRO                 ojAlgo                Time stable           
+AFIRO                 CPLEX                 Time stable           
+KB2                   ACM                   Time stable           
+LOTFI                 CPLEX                 Time stable           
+SCAGR7                CPLEX                 Time stable           
+STOCFOR1              CPLEX                 Time stable           
 
-Iteration 4
-------------------------
-ISRAEL 	 ACM Time stable
-CAPRI 	 CPLEX Time stable
-STOCFOR1 	 ojAlgo Time stable
-SCAGR7 	 CPLEX Time stable
-69 model/solver pairs remaining
+Iteration 4 with 42 model/solver pairs remaining
+--------------------------------------------------------------------------
+SCTAP1                CPLEX                 Time stable           
+GROW22                CPLEX                 Time stable           
+KB2                   CPLEX                 Time stable           
+BOEING1               ojAlgo                Time stable           
+BANDM                 ojAlgo                Time stable           
+BRANDY                ojAlgo                Time stable           
+FFFFF800              CPLEX                 Time stable           
+SCORPION              ACM                   Time stable           
+BLEND                 ACM                   Time stable           
 
-Iteration 5
-------------------------
-ETAMACRO 	 ojAlgo Time stable
-SC50B 	 CPLEX Time stable
-KB2 	 CPLEX Time stable
-STAIR 	 ojAlgo Time stable
-ETAMACRO 	 CPLEX Time stable
-BLEND 	 CPLEX Time stable
-SHARE2B 	 ACM Time stable
-BEACONFD 	 ACM Time stable
-61 model/solver pairs remaining
+Iteration 5 with 33 model/solver pairs remaining
+--------------------------------------------------------------------------
+SCAGR25               ojAlgo                Time stable           
+SCFXM1                CPLEX                 Time stable           
+DEGEN2                ojAlgo                Time stable           
+GROW7                 ojAlgo                Time stable           
+LOTFI                 ACM                   Time stable           
+BORE3D                ojAlgo                Time stable           
+SHARE1B               ojAlgo                Time stable           
 
-Iteration 6
-------------------------
-BOEING2 	 CPLEX Time stable
-SC50B 	 ojAlgo Time stable
-SC105 	 CPLEX Time stable
-LOTFI 	 CPLEX Time stable
-57 model/solver pairs remaining
+Iteration 6 with 26 model/solver pairs remaining
+--------------------------------------------------------------------------
+ETAMACRO              CPLEX                 Time stable           
+GROW15                CPLEX                 Time stable           
+GROW7                 CPLEX                 Time stable           
+GROW22                ojAlgo                Time stable           
 
-Iteration 7
-------------------------
-BEACONFD 	 CPLEX Time stable
-BLEND 	 ojAlgo Time stable
-BANDM 	 CPLEX Time stable
-SC105 	 ojAlgo Time stable
-AGG2 	 ACM Time stable
-GROW7 	 CPLEX Time stable
-LOTFI 	 ojAlgo Time stable
-SCAGR7 	 ojAlgo Time stable
-SCTAP1 	 ojAlgo Time stable
-AFIRO 	 CPLEX Time stable
-47 model/solver pairs remaining
+Iteration 7 with 22 model/solver pairs remaining
+--------------------------------------------------------------------------
+FORPLAN               ojAlgo                Time stable           
+AGG2                  CPLEX                 Time stable           
+FINNIS                CPLEX                 Time stable           
+AGG3                  CPLEX                 Time stable           
+SEBA                  ojAlgo                Time stable           
+STOCFOR1              ACM                   Time stable           
 
-Iteration 8
-------------------------
-SCTAP1 	 CPLEX Time stable
-SCFXM1 	 ojAlgo Time stable
-SC205 	 ojAlgo Time stable
-SCORPION 	 ACM Time stable
-43 model/solver pairs remaining
+Iteration 8 with 16 model/solver pairs remaining
+--------------------------------------------------------------------------
+SC50A                 ojAlgo                Time stable           
 
-Iteration 9
-------------------------
-SCAGR25 	 CPLEX Time stable
-CAPRI 	 ojAlgo Time stable
-ISRAEL 	 CPLEX Time stable
-SC50B 	 ACM Time stable
-SC50A 	 ojAlgo Time stable
-BRANDY 	 CPLEX Time stable
-FORPLAN 	 CPLEX Time stable
-36 model/solver pairs remaining
+Iteration 9 with 15 model/solver pairs remaining
+--------------------------------------------------------------------------
+ISRAEL                ojAlgo                Time stable           
+SHARE1B               ACM                   Time stable           
 
-Iteration 10
-------------------------
-SC50A 	 CPLEX Time stable
-AGG 	 ojAlgo Time stable
-SCSD1 	 CPLEX Time stable
-33 model/solver pairs remaining
+Iteration 10 with 13 model/solver pairs remaining
+--------------------------------------------------------------------------
+FINNIS                ojAlgo                Time stable           
 
-Iteration 11
-------------------------
-ISRAEL 	 ojAlgo Time stable
-AFIRO 	 ojAlgo Time stable
-31 model/solver pairs remaining
+Iteration 11 with 12 model/solver pairs remaining
+--------------------------------------------------------------------------
+RECIPELP              ACM                   Time stable           
+SC205                 ACM                   Time stable           
+SHARE2B               ACM                   Time stable           
 
-Iteration 12
-------------------------
-BORE3D 	 CPLEX Time stable
-FFFFF800 	 ojAlgo Time stable
-E226 	 ojAlgo Time stable
-28 model/solver pairs remaining
+Iteration 12 with 9 model/solver pairs remaining
+--------------------------------------------------------------------------
+BOEING2               ojAlgo                Time stable           
 
-Iteration 13
-------------------------
-STAIR 	 CPLEX Time stable
-AGG 	 ACM Time stable
-E226 	 CPLEX Time stable
-ADLITTLE 	 CPLEX Time stable
-STOCFOR1 	 CPLEX Time stable
-23 model/solver pairs remaining
+Iteration 13 with 8 model/solver pairs remaining
+--------------------------------------------------------------------------
+SCAGR7                ACM                   Time stable           
 
-Iteration 14
-------------------------
-GROW7 	 ojAlgo Time stable
-22 model/solver pairs remaining
+Iteration 14 with 7 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 15
-------------------------
-SCFXM1 	 CPLEX Time stable
-KB2 	 ojAlgo Time stable
-20 model/solver pairs remaining
+Iteration 15 with 7 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 16
-------------------------
-AGG2 	 ojAlgo Time stable
-AFIRO 	 ACM Time stable
-SCORPION 	 ojAlgo Time stable
-17 model/solver pairs remaining
+Iteration 16 with 7 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 17
-------------------------
-SHARE2B 	 CPLEX Time stable
-16 model/solver pairs remaining
+Iteration 17 with 7 model/solver pairs remaining
+--------------------------------------------------------------------------
+PILOT4                CPLEX                 Time stable           
 
-Iteration 18
-------------------------
-SHARE1B 	 CPLEX Time stable
-BANDM 	 ojAlgo Time stable
-14 model/solver pairs remaining
+Iteration 18 with 6 model/solver pairs remaining
+--------------------------------------------------------------------------
+ETAMACRO              ojAlgo                Time stable           
+AGG2                  ojAlgo                Time stable           
+AGG                   ojAlgo                Time stable           
 
-Iteration 19
-------------------------
-SCORPION 	 CPLEX Time stable
-SC205 	 ACM Time stable
-12 model/solver pairs remaining
+Iteration 19 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 20
-------------------------
-AGG 	 CPLEX Time stable
-11 model/solver pairs remaining
+Iteration 20 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 21
-------------------------
-11 model/solver pairs remaining
+Iteration 21 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 22
-------------------------
-AGG2 	 CPLEX Time stable
-BLEND 	 ACM Time stable
-9 model/solver pairs remaining
+Iteration 22 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 23
-------------------------
-BEACONFD 	 ojAlgo Time stable
-8 model/solver pairs remaining
+Iteration 23 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 24
-------------------------
-FORPLAN 	 ojAlgo Time stable
-SHARE2B 	 ojAlgo Time stable
-6 model/solver pairs remaining
+Iteration 24 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 25
-------------------------
-BRANDY 	 ojAlgo Time stable
-5 model/solver pairs remaining
+Iteration 25 with 3 model/solver pairs remaining
+--------------------------------------------------------------------------
+ISRAEL                ACM                   Time stable           
 
-Iteration 26
-------------------------
-AGG3 	 ojAlgo Time stable
-4 model/solver pairs remaining
+Iteration 26 with 2 model/solver pairs remaining
+--------------------------------------------------------------------------
+SCFXM2                CPLEX                 Time stable           
 
-Iteration 27
-------------------------
-4 model/solver pairs remaining
+Iteration 27 with 1 model/solver pairs remaining
+--------------------------------------------------------------------------
 
-Iteration 28
-------------------------
-4 model/solver pairs remaining
+Iteration 28 with 1 model/solver pairs remaining
+--------------------------------------------------------------------------
+E226                  ojAlgo                Time stable           
 
-Iteration 29
-------------------------
-4 model/solver pairs remaining
-
-Iteration 30
-------------------------
-SC105 	 ACM Time stable
-3 model/solver pairs remaining
-
-Iteration 31
-------------------------
-BOEING2 	 ojAlgo Time stable
-SC50A 	 ACM Time stable
-1 model/solver pairs remaining
-
-Iteration 32
-------------------------
-1 model/solver pairs remaining
-
-Iteration 33
-------------------------
-1 model/solver pairs remaining
-
-Iteration 34
-------------------------
-1 model/solver pairs remaining
-
-Iteration 35
-------------------------
-1 model/solver pairs remaining
-
-Iteration 36
-------------------------
-1 model/solver pairs remaining
-
-Iteration 37
-------------------------
-1 model/solver pairs remaining
-
-Iteration 38
-------------------------
-1 model/solver pairs remaining
-
-Iteration 39
-------------------------
-AGG3 	 CPLEX Time stable
-0 model/solver pairs remaining
-
+Final Results
 =====================================================================
-ADLITTLE     	 ACM          	 INFEASIBLE   	 -72793.105   	 54.162484ms 
-ADLITTLE     	 CPLEX        	 OPTIMAL      	 225494.96316 	 1.427099ms  
-ADLITTLE     	 ojAlgo       	 OPTIMAL      	 225494.96316 	 2.246146ms  
-AFIRO        	 ACM          	 OPTIMAL      	 -464.7531428 	 1.340336ms  
-AFIRO        	 CPLEX        	 OPTIMAL      	 -464.7531428 	 0.555215ms  
-AFIRO        	 ojAlgo       	 OPTIMAL      	 -464.7531428 	 0.17576ms   
-AGG          	 ACM          	 OPTIMAL      	 -3.599176728 	 315.532501ms
-AGG          	 CPLEX        	 OPTIMAL      	 -3.599176728 	 4.23842ms   
-AGG          	 ojAlgo       	 OPTIMAL      	 -3.599176728 	 21.053534ms 
-AGG2         	 ACM          	 OPTIMAL      	 -2.023925235 	 1080.236425m
-AGG2         	 CPLEX        	 OPTIMAL      	 -2.023925235 	 5.661767ms  
-AGG2         	 ojAlgo       	 OPTIMAL      	 -2.023925235 	 118.596109ms
-AGG3         	 ACM          	 FAILED       	 1.0312115935 	 1293.630677m
-AGG3         	 CPLEX        	 OPTIMAL      	 1.0312115935 	 5.239263ms  
-AGG3         	 ojAlgo       	 OPTIMAL      	 1.0312115935 	 127.761531ms
-BANDM        	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-BANDM        	 CPLEX        	 OPTIMAL      	 -158.6280184 	 8.038162ms  
-BANDM        	 ojAlgo       	 OPTIMAL      	 -158.6280184 	 73.961797ms 
-BEACONFD     	 ACM          	 OPTIMAL      	 33592.485807 	 528.712825ms
-BEACONFD     	 CPLEX        	 OPTIMAL      	 33592.485807 	 3.144944ms  
-BEACONFD     	 ojAlgo       	 OPTIMAL      	 33592.485807 	 2.492211ms  
-BLEND        	 ACM          	 OPTIMAL      	 -24.18681299 	 34.546069ms 
-BLEND        	 CPLEX        	 OPTIMAL      	 -30.81214984 	 1.381119ms  
-BLEND        	 ojAlgo       	 OPTIMAL      	 -30.81214984 	 2.198463ms  
-BOEING1      	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-BOEING1      	 CPLEX        	 OPTIMAL      	 -335.2135675 	 11.452398ms 
-BOEING1      	 ojAlgo       	 OPTIMAL      	 -335.2135675 	 399.34687ms 
-BOEING2      	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-BOEING2      	 CPLEX        	 OPTIMAL      	 -315.0187280 	 2.861112ms  
-BOEING2      	 ojAlgo       	 OPTIMAL      	 -315.0187280 	 17.823828ms 
-BORE3D       	 ACM          	 UNBOUNDED    	 4229.3943384 	 5355.380339m
-BORE3D       	 CPLEX        	 OPTIMAL      	 1373.0803942 	 2.916164ms  
-BORE3D       	 ojAlgo       	 OPTIMAL      	 1373.0803942 	 6.588544ms  
-BRANDY       	 ACM          	 INFEASIBLE   	 0.0          	 1120.373372m
-BRANDY       	 CPLEX        	 OPTIMAL      	 1518.5098964 	 5.185399ms  
-BRANDY       	 ojAlgo       	 OPTIMAL      	 1518.5098964 	 16.378758ms 
-CAPRI        	 ACM          	 INFEASIBLE   	 -227.2926799 	 6039.695786m
-CAPRI        	 CPLEX        	 OPTIMAL      	 2690.0129137 	 6.012391ms  
-CAPRI        	 ojAlgo       	 OPTIMAL      	 2690.0129135 	 143.134714ms
-E226         	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-E226         	 CPLEX        	 OPTIMAL      	 -18.75192906 	 6.879887ms  
-E226         	 ojAlgo       	 OPTIMAL      	 -18.75192906 	 53.663714ms 
-ETAMACRO     	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-ETAMACRO     	 CPLEX        	 OPTIMAL      	 -755.7152332 	 11.170484ms 
-ETAMACRO     	 ojAlgo       	 OPTIMAL      	 -755.7152333 	 176.487946ms
-FFFFF800     	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-FFFFF800     	 CPLEX        	 OPTIMAL      	 555679.56481 	 10.462408ms 
-FFFFF800     	 ojAlgo       	 OPTIMAL      	 555679.56481 	 180.398864ms
-FORPLAN      	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-FORPLAN      	 CPLEX        	 OPTIMAL      	 -664.2189612 	 5.696355ms  
-FORPLAN      	 ojAlgo       	 OPTIMAL      	 -664.2189612 	 24.256685ms 
-GROW7        	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-GROW7        	 CPLEX        	 OPTIMAL      	 -4.778781181 	 8.368812ms  
-GROW7        	 ojAlgo       	 OPTIMAL      	 -4.778781181 	 16.562323ms 
-ISRAEL       	 ACM          	 OPTIMAL      	 -896644.8218 	 147.171618ms
-ISRAEL       	 CPLEX        	 OPTIMAL      	 -896644.8218 	 2.988419ms  
-ISRAEL       	 ojAlgo       	 OPTIMAL      	 -896644.8218 	 43.007756ms 
-KB2          	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-KB2          	 CPLEX        	 OPTIMAL      	 -1749.900129 	 1.000986ms  
-KB2          	 ojAlgo       	 OPTIMAL      	 -1749.900129 	 1.388673ms  
-LOTFI        	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-LOTFI        	 CPLEX        	 OPTIMAL      	 -25.26470606 	 2.657744ms  
-LOTFI        	 ojAlgo       	 OPTIMAL      	 -25.26470606 	 9.367219ms  
-SC105        	 ACM          	 OPTIMAL      	 -52.20206121 	 28.78233ms  
-SC105        	 CPLEX        	 OPTIMAL      	 -52.20206121 	 1.369908ms  
-SC105        	 ojAlgo       	 OPTIMAL      	 -52.20206121 	 1.565069ms  
-SC205        	 ACM          	 OPTIMAL      	 -52.20206121 	 226.134797ms
-SC205        	 CPLEX        	 OPTIMAL      	 -52.20206121 	 3.173505ms  
-SC205        	 ojAlgo       	 OPTIMAL      	 -52.20206121 	 9.328921ms  
-SC50A        	 ACM          	 OPTIMAL      	 -64.57507705 	 3.867063ms  
-SC50A        	 CPLEX        	 OPTIMAL      	 -64.57507705 	 0.778862ms  
-SC50A        	 ojAlgo       	 OPTIMAL      	 -64.57507705 	 0.433207ms  
-SC50B        	 ACM          	 OPTIMAL      	 -69.99999999 	 4.812696ms  
-SC50B        	 CPLEX        	 OPTIMAL      	 -70.0        	 1.10059ms   
-SC50B        	 ojAlgo       	 OPTIMAL      	 -70.0        	 0.282813ms  
-SCAGR25      	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-SCAGR25      	 CPLEX        	 OPTIMAL      	 -1.475343306 	 7.820359ms  
-SCAGR25      	 ojAlgo       	 OPTIMAL      	 -1.475343306 	 245.475746ms
-SCAGR7       	 ACM          	 FAILED       	 -2861096.477 	 209.356523ms
-SCAGR7       	 CPLEX        	 OPTIMAL      	 -2331389.824 	 2.190373ms  
-SCAGR7       	 ojAlgo       	 OPTIMAL      	 -2331389.824 	 6.544728ms  
-SCFXM1       	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-SCFXM1       	 CPLEX        	 OPTIMAL      	 18416.759028 	 6.959455ms  
-SCFXM1       	 ojAlgo       	 OPTIMAL      	 18416.759028 	 55.971474ms 
-SCORPION     	 ACM          	 OPTIMAL      	 1878.1248227 	 1172.669429m
-SCORPION     	 CPLEX        	 OPTIMAL      	 1878.1248227 	 3.512591ms  
-SCORPION     	 ojAlgo       	 OPTIMAL      	 1878.1248227 	 15.177105ms 
-SCSD1        	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-SCSD1        	 CPLEX        	 OPTIMAL      	 8.6666666743 	 3.123034ms  
-SCSD1        	 ojAlgo       	 OPTIMAL      	 8.6666666743 	 13.783759ms 
-SCTAP1       	 ACM          	 OPTIMAL      	 1412.2500000 	 2492.938848m
-SCTAP1       	 CPLEX        	 OPTIMAL      	 1412.2499999 	 4.397976ms  
-SCTAP1       	 ojAlgo       	 OPTIMAL      	 1412.25      	 30.84214ms  
-SHARE1B      	 ACM          	 OPTIMAL      	 -76589.31857 	 518.803115ms
-SHARE1B      	 CPLEX        	 OPTIMAL      	 -76589.31857 	 2.562696ms  
-SHARE1B      	 ojAlgo       	 OPTIMAL      	 -76589.31857 	 9.993703ms  
-SHARE2B      	 ACM          	 OPTIMAL      	 -415.7322407 	 35.520747ms 
-SHARE2B      	 CPLEX        	 OPTIMAL      	 -415.7322407 	 2.154328ms  
-SHARE2B      	 ojAlgo       	 OPTIMAL      	 -415.7322407 	 2.795634ms  
-STAIR        	 ACM          	 FAILED       	 0.0          	 30000.0ms   
-STAIR        	 CPLEX        	 OPTIMAL      	 -251.2669511 	 9.290501ms  
-STAIR        	 ojAlgo       	 OPTIMAL      	 -251.2669272 	 111.38973ms 
-STOCFOR1     	 ACM          	 UNBOUNDED    	 0.0          	 110.291206ms
-STOCFOR1     	 CPLEX        	 OPTIMAL      	 -41131.97621 	 1.766509ms  
-STOCFOR1     	 ojAlgo       	 OPTIMAL      	 -41131.97621 	 1.6399ms    
+ADLITTLE              ACM                   OPTIMAL               225494.96316238065    22.024169ms           
+ADLITTLE              CPLEX                 OPTIMAL               225494.96316238027    1.985779ms            
+ADLITTLE              ojAlgo                OPTIMAL               225494.96316238013    1.878197ms            
+AFIRO                 ACM                   OPTIMAL               -464.7531428571429    1.625706ms            
+AFIRO                 CPLEX                 OPTIMAL               -464.7531428571429    0.922409ms            
+AFIRO                 ojAlgo                OPTIMAL               -464.75314285714285   0.318672ms            
+AGG                   ACM                   OPTIMAL               -3.599176728657652E7  157.704045ms          
+AGG                   CPLEX                 OPTIMAL               -3.599176728657652E7  4.521216ms            
+AGG                   ojAlgo                OPTIMAL               -3.599176728657652E7  21.415562ms           
+AGG2                  ACM                   OPTIMAL               -2.0239252355977103E7 757.896335ms          
+AGG2                  CPLEX                 OPTIMAL               -2.0239252355977114E7 6.061943ms            
+AGG2                  ojAlgo                OPTIMAL               -2.023925235597718E7  124.227006ms          
+AGG3                  ACM                   OPTIMAL               1.0312115935089238E7  771.283995ms          
+AGG3                  CPLEX                 OPTIMAL               1.0312115935089217E7  6.84077ms             
+AGG3                  ojAlgo                OPTIMAL               1.0312115935089266E7  140.410457ms          
+BANDM                 ACM                   FAILED                0.0                   30000.0ms             
+BANDM                 CPLEX                 OPTIMAL               -158.62801845012052   8.513801ms            
+BANDM                 ojAlgo                OPTIMAL               -158.6280184501221    86.040002ms           
+BEACONFD              ACM                   INFEASIBLE            4.023195              175.303128ms          
+BEACONFD              CPLEX                 OPTIMAL               33592.4858072         3.011142ms            
+BEACONFD              ojAlgo                OPTIMAL               33592.4858072         2.980422ms            
+BLEND                 ACM                   OPTIMAL               -30.808519337853983   21.006263ms           
+BLEND                 CPLEX                 OPTIMAL               -30.812149845828227   1.728168ms            
+BLEND                 ojAlgo                OPTIMAL               -30.812149845828262   1.793596ms            
+BOEING1               ACM                   FAILED                2154.519865           7544.871053ms         
+BOEING1               CPLEX                 OPTIMAL               -335.21356750712675   10.801604ms           
+BOEING1               ojAlgo                OPTIMAL               -335.2135675071263    515.358773ms          
+BOEING2               ACM                   FAILED                -28.12327             777.433728ms          
+BOEING2               CPLEX                 OPTIMAL               -315.01872801520295   2.921929ms            
+BOEING2               ojAlgo                OPTIMAL               -315.0187280152036    25.625454ms           
+BORE3D                ACM                   FAILED                0.0                   30000.0ms             
+BORE3D                CPLEX                 OPTIMAL               1373.0803942084929    3.011352ms            
+BORE3D                ojAlgo                OPTIMAL               1373.0803942084929    5.086761ms            
+BRANDY                ACM                   FAILED                0.0                   30000.0ms             
+BRANDY                CPLEX                 OPTIMAL               1518.509896488128     4.996936ms            
+BRANDY                ojAlgo                OPTIMAL               1518.5098964880503    16.752692ms           
+CAPRI                 ACM                   FAILED                -227.29267992717644   3513.028317ms         
+CAPRI                 CPLEX                 OPTIMAL               2690.0129137681624    4.96358ms             
+CAPRI                 ojAlgo                OPTIMAL               2690.01291376828      161.416493ms          
+DEGEN2                ACM                   FAILED                0.0                   30000.0ms             
+DEGEN2                CPLEX                 OPTIMAL               -1435.178             12.290455ms           
+DEGEN2                ojAlgo                OPTIMAL               -1435.177999999998    1218.424673ms         
+E226                  ACM                   FAILED                -17.508761568332993   446.85758ms           
+E226                  CPLEX                 OPTIMAL               -18.751929066370547   6.553149ms            
+E226                  ojAlgo                OPTIMAL               -18.751929066371943   51.279048ms           
+ETAMACRO              ACM                   FAILED                0.0                   30000.0ms             
+ETAMACRO              CPLEX                 OPTIMAL               -755.7152332644273    9.643262ms            
+ETAMACRO              ojAlgo                OPTIMAL               -755.7152333749141    168.25346ms           
+FFFFF800              ACM                   FAILED                0.0                   30000.0ms             
+FFFFF800              CPLEX                 OPTIMAL               555679.5648174965     9.300749ms            
+FFFFF800              ojAlgo                OPTIMAL               555597.6772731489     214.783735ms          
+FINNIS                ACM                   FAILED                0.0                   30000.0ms             
+FINNIS                CPLEX                 OPTIMAL               172791.0655956116     7.287017ms            
+FINNIS                ojAlgo                OPTIMAL               172791.0655956126     1085.081554ms         
+FORPLAN               ACM                   FAILED                0.0                   30000.0ms             
+FORPLAN               CPLEX                 OPTIMAL               -664.2189612722054    5.70689ms             
+FORPLAN               ojAlgo                OPTIMAL               -664.21896127228      18.998945ms           
+GROW15                ACM                   FAILED                0.0                   30000.0ms             
+GROW15                CPLEX                 OPTIMAL               -1.0687094129357567E8 37.779063ms           
+GROW15                ojAlgo                OPTIMAL               -1.0687094129357536E8 123.781079ms          
+GROW22                ACM                   FAILED                0.0                   30000.0ms             
+GROW22                CPLEX                 OPTIMAL               -1.6083433648256308E8 110.064381ms          
+GROW22                ojAlgo                OPTIMAL               -1.6083433648256296E8 554.949021ms          
+GROW7                 ACM                   FAILED                0.0                   30000.0ms             
+GROW7                 CPLEX                 OPTIMAL               -4.778781181471152E7  9.472467ms            
+GROW7                 ojAlgo                OPTIMAL               -4.778781181471151E7  15.073394ms           
+ISRAEL                ACM                   OPTIMAL               -896644.8218630471    92.988127ms           
+ISRAEL                CPLEX                 OPTIMAL               -896644.8218630457    3.362146ms            
+ISRAEL                ojAlgo                OPTIMAL               -896644.8218630467    43.872726ms           
+KB2                   ACM                   OPTIMAL               -1749.900129906204    6.07855ms             
+KB2                   CPLEX                 OPTIMAL               -1749.9001299062045   1.239245ms            
+KB2                   ojAlgo                OPTIMAL               -1749.9001299060994   1.570798ms            
+LOTFI                 ACM                   OPTIMAL               -25.26470606188024    493.819504ms          
+LOTFI                 CPLEX                 OPTIMAL               -25.26470606188003    2.936066ms            
+LOTFI                 ojAlgo                OPTIMAL               -25.26470606188       10.988103ms           
+PILOT4                ACM                   FAILED                0.0                   30000.0ms             
+PILOT4                CPLEX                 OPTIMAL               -2581.1392595609123   25.540608ms           
+PILOT4                ojAlgo                OPTIMAL               -2581.139258883788    1837.247668ms         
+RECIPELP              ACM                   OPTIMAL               -266.616              82.689838ms           
+RECIPELP              CPLEX                 OPTIMAL               -266.616              1.605126ms            
+RECIPELP              ojAlgo                OPTIMAL               -266.616              0.871819ms            
+SC105                 ACM                   OPTIMAL               -52.20206121170725    26.202693ms           
+SC105                 CPLEX                 OPTIMAL               -52.20206121170725    1.76941ms             
+SC105                 ojAlgo                OPTIMAL               -52.20206121170724    1.947057ms            
+SC205                 ACM                   OPTIMAL               -52.20206121170753    175.554195ms          
+SC205                 CPLEX                 OPTIMAL               -52.20206121170725    2.916731ms            
+SC205                 ojAlgo                OPTIMAL               -52.20206121170713    10.562788ms           
+SC50A                 ACM                   OPTIMAL               -64.57507705856449    3.765348ms            
+SC50A                 CPLEX                 OPTIMAL               -64.57507705856449    1.177269ms            
+SC50A                 ojAlgo                OPTIMAL               -64.57507705856452    0.437865ms            
+SC50B                 ACM                   OPTIMAL               -70.00000000000003    3.72483ms             
+SC50B                 CPLEX                 OPTIMAL               -70.0                 1.004419ms            
+SC50B                 ojAlgo                OPTIMAL               -69.99999999999999    0.601989ms            
+SCAGR25               ACM                   FAILED                0.0                   30000.0ms             
+SCAGR25               CPLEX                 OPTIMAL               -1.4753433060768524E7 8.74913ms             
+SCAGR25               ojAlgo                OPTIMAL               -1.4753433060768541E7 263.525305ms          
+SCAGR7                ACM                   OPTIMAL               -2331389.8243309874   101.738247ms          
+SCAGR7                CPLEX                 OPTIMAL               -2331389.8243309837   2.278549ms            
+SCAGR7                ojAlgo                OPTIMAL               -2331389.8243309814   5.511726ms            
+SCFXM1                ACM                   FAILED                0.0                   30000.0ms             
+SCFXM1                CPLEX                 OPTIMAL               18416.759028348944    7.825979ms            
+SCFXM1                ojAlgo                OPTIMAL               18416.759028348813    38.166681ms           
+SCFXM2                ACM                   FAILED                0.0                   30000.0ms             
+SCFXM2                CPLEX                 OPTIMAL               36660.261564998815    14.776023ms           
+SCFXM2                ojAlgo                OPTIMAL               36660.261564998895    314.423138ms          
+SCORPION              ACM                   OPTIMAL               1878.124822738108     903.427769ms          
+SCORPION              CPLEX                 OPTIMAL               1878.1248227381063    3.932327ms            
+SCORPION              ojAlgo                OPTIMAL               1878.1248227381063    16.789447ms           
+SCSD1                 ACM                   FAILED                0.0                   30000.0ms             
+SCSD1                 CPLEX                 OPTIMAL               8.666666674333346     3.510672ms            
+SCSD1                 ojAlgo                OPTIMAL               8.66666667433337      7.543191ms            
+SCTAP1                ACM                   OPTIMAL               1412.2499999999993    2216.53804ms          
+SCTAP1                CPLEX                 OPTIMAL               1412.2499999999998    4.287142ms            
+SCTAP1                ojAlgo                OPTIMAL               1412.249999999999     30.768029ms           
+SEBA                  ACM                   FAILED                0.0                   30000.0ms             
+SEBA                  CPLEX                 OPTIMAL               15711.6               5.818077ms            
+SEBA                  ojAlgo                OPTIMAL               15711.600000000884    2335.672762ms         
+SHARE1B               ACM                   OPTIMAL               -76589.31857917839    273.496558ms          
+SHARE1B               CPLEX                 OPTIMAL               -76589.31857918586    3.264407ms            
+SHARE1B               ojAlgo                OPTIMAL               -76589.31857918596    10.475318ms           
+SHARE2B               ACM                   OPTIMAL               -415.73224074141973   26.02861ms            
+SHARE2B               CPLEX                 OPTIMAL               -415.7322407414191    1.92818ms             
+SHARE2B               ojAlgo                OPTIMAL               -415.732240741419     2.507077ms            
+STAIR                 ACM                   FAILED                0.0                   30000.0ms             
+STAIR                 CPLEX                 OPTIMAL               -251.2669511929679    11.173779ms           
+STAIR                 ojAlgo                OPTIMAL               -251.2669511929557    123.240592ms          
+STOCFOR1              ACM                   OPTIMAL               -41131.97621943639    31.527808ms           
+STOCFOR1              CPLEX                 OPTIMAL               -41131.976219436416   2.00024ms             
+STOCFOR1              ojAlgo                OPTIMAL               -41131.9762194364     1.534073ms            
+TUFF                  ACM                   FAILED                0.0                   30000.0ms             
+TUFF                  CPLEX                 OPTIMAL               0.29214776509361273   6.623791ms            
+TUFF                  ojAlgo                FAILED                0.0                   30000.0ms             
+VTP-BASE              ACM                   OPTIMAL               129831.46252554662    176.576773ms          
+VTP-BASE              CPLEX                 OPTIMAL               129831.46246136136    1.928785ms            
+VTP-BASE              ojAlgo                OPTIMAL               129831.46246136136    2.670691ms            
