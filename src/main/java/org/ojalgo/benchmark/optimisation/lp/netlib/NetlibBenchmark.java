@@ -21,7 +21,9 @@
  */
 package org.ojalgo.benchmark.optimisation.lp.netlib;
 
+import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -301,27 +303,40 @@ public class NetlibBenchmark {
 
         } while (WORK.size() > 0);
 
-        BasicLogger.debug();
-        BasicLogger.debug("Final Results");
-        BasicLogger.debug("=====================================================================");
-        for (Entry<ModelSolverPair, ResultsSet> entry : results.entrySet()) {
+        try (PrintWriter writer = new PrintWriter("./src/main/resources/netlib.benchmark")) {
 
-            ModelSolverPair work = entry.getKey();
-            TimedResult<Result> result = entry.getValue().fastest;
+            writer.println("Model" + "\t" + "Solver" + "\t" + "Time");
 
-            String model = work.model;
-            String solver = work.solver;
+            BasicLogger.debug();
+            BasicLogger.debug("Final Results");
+            BasicLogger.debug("=====================================================================");
+            for (Entry<ModelSolverPair, ResultsSet> entry : results.entrySet()) {
 
-            State state = result.result.getState();
-            double value = result.result.getValue();
-            CalendarDateDuration duration = result.duration;
+                ModelSolverPair work = entry.getKey();
+                TimedResult<Result> result = entry.getValue().fastest;
 
-            if (state.isOptimal()) {
-                BasicLogger.debug(WIDTH, model, solver, state, value, duration);
-            } else {
-                BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.get(work));
+                String model = work.model;
+                String solver = work.solver;
+
+                State state = result.result.getState();
+                double value = result.result.getValue();
+                CalendarDateDuration duration = result.duration;
+
+                ResultsSet referenceResult = results.get(new ModelSolverPair(model, SOLVERS[0]));
+                double referenceValue = referenceResult.fastest.result.getValue(); // CPLEX
+                if (state.isOptimal() && ResultsSet.isSimilar(referenceValue, value, 0.005)) {
+                    BasicLogger.debug(WIDTH, model, solver, state, value, duration);
+                    writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
+                } else {
+                    BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.get(work));
+                    writer.println(model + "\t" + solver + "\t");
+                }
             }
+
+        } catch (FileNotFoundException cause) {
+            throw new RuntimeException(cause);
         }
+
     }
 
     static TimedResult<Result> meassure(final ExpressionsBasedModel model) {
