@@ -303,7 +303,7 @@ public class NetlibBenchmark {
 
         } while (WORK.size() > 0);
 
-        try (PrintWriter writer = new PrintWriter("./src/main/resources/netlib.benchmark")) {
+        try (PrintWriter writer = new PrintWriter("./src/main/resources/netlib.csv")) {
 
             writer.println("Model" + "\t" + "Solver" + "\t" + "Time");
 
