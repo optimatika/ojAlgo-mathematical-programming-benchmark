@@ -325,7 +325,7 @@ public class NetlibBenchmark {
                 ResultsSet referenceResult = results.get(new ModelSolverPair(model, SOLVERS[0]));
                 double referenceValue = referenceResult.fastest.result.getValue(); // CPLEX
                 if (state.isOptimal() && ResultsSet.isSimilar(referenceValue, value, 0.005)) {
-                    BasicLogger.debug(WIDTH, model, solver, state, value, duration);
+                    BasicLogger.debug(WIDTH, model, solver, state, duration);
                     writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
                 } else {
                     BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.get(work));
