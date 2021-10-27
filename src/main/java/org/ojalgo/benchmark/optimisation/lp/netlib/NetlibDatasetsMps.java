@@ -21,24 +21,24 @@
  */
 package org.ojalgo.benchmark.optimisation.lp.netlib;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.ojalgo.benchmark.Benchmarks;
+import org.ojalgo.benchmark.OjBenchmarks;
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
 import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
+import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
-import org.ojalgo.optimisation.MathProgSysModel;
 import org.ojalgo.optimisation.Optimisation;
-import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.type.context.NumberContext;
 import org.openjdk.jmh.annotations.Benchmark;
@@ -217,8 +217,7 @@ public class NetlibDatasetsMps {
     }
 
     public static void main(final String[] args) throws RunnerException {
-
-        Benchmarks.run(NetlibDatasetsMps.class);
+        OjBenchmarks.run(NetlibDatasetsMps.class);
     }
 
     /**
@@ -236,10 +235,10 @@ public class NetlibDatasetsMps {
             "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" })
     public String model;
 
-    @Param({ "ojAlgo", "ACM", "JOptimizer" })
+    @Param({ "CPLEX", "ojAlgo", "ACM" })
     public String solver;
 
-    private MathProgSysModel parsedMPS;
+    private ExpressionsBasedModel parsedMPS;
 
     public NetlibDatasetsMps() {
         super();
@@ -248,14 +247,13 @@ public class NetlibDatasetsMps {
     @Setup
     public void setup() {
 
-        String path = "/optimisation/netlib/" + model + ".SIF";
-
         //        ExpressionsBasedModel.clearIntegrations();
         //        ExpressionsBasedModel.addIntegration(SolverCPLEX.INTEGRATION);
         //        final Result expected = parsedMPS.solve();
         //        ExpressionsBasedModel.clearIntegrations();
 
-        final Integration<?> integration = INTEGRATIONS.get(solver);
+        ExpressionsBasedModel.clearIntegrations();
+        Integration<?> integration = INTEGRATIONS.get(solver);
         if (integration != null) {
             ExpressionsBasedModel.addPreferredSolver(integration);
         }
@@ -269,101 +267,52 @@ public class NetlibDatasetsMps {
         //            throw new ProgrammingError("Error too big!");
         //        }
 
+        String path = "/optimisation/netlib/" + model + ".SIF";
         BasicLogger.debug("Path: {}", path);
 
         try (InputStream input = this.getClass().getResourceAsStream(path)) {
-            BasicLogger.debug("Input: {}", input);
-            parsedMPS = MathProgSysModel.parse(input);
+            parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
         } catch (IOException cause) {
             BasicLogger.error("Problem!", cause);
             throw new RuntimeException(cause);
         }
+
+        failed = false;
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        try {
+            Optimisation.Result result = executor.submit(this::solve).get(30, TimeUnit.SECONDS);
+            BasicLogger.debug("Result when solving {} with {}: {}", model, solver, result.toString());
+            if (result.getState() != Optimisation.State.OPTIMAL) {
+                BasicLogger.error("Not feasible solution!");
+                failed = true;
+            }
+        } catch (InterruptedException | ExecutionException | TimeoutException cause) {
+            failed = true;
+            BasicLogger.error("Problem solving {} with {}", model, solver);
+            throw new RuntimeException(cause);
+        } finally {
+            executor.shutdown();
+        }
     }
+
+    boolean failed = false;
 
     @Benchmark
     public Optimisation.Result solve() {
-        return parsedMPS.solve();
-    }
 
-    @Test
-    public void testAFIRO() {
-        this.doTest("AFIRO", new BigDecimal("-.46475314286e+3"), null);
-    }
-
-    @Test
-    public void testCAPRI() {
-        this.doTest("CAPRI", new BigDecimal("2690.0129142514993"), null);
-    }
-
-    private void assertMinMaxVal(final ExpressionsBasedModel model, final BigDecimal expectedMinimum, final BigDecimal expectedMaximum) {
-
-        //model.options.debug(LinearSolver.class);
-
-        Assert.assertTrue(model.validate());
-
-        if (expectedMinimum != null) {
-
-            final double expected = expectedMinimum.doubleValue();
-            final Result minimum = model.minimise();
-            if (DEBUG) {
-                BasicLogger.debug("Minimum: {}", minimum);
-            }
-            final double actual = minimum.getValue();
-
-            if (Double.isNaN(expected) && Double.isNaN(actual)) {
-
-            } else if (PRECISION.isDifferent(expected, actual)) {
-                Assert.assertEquals("Minimum", expected, actual, PRECISION.epsilon());
-            }
-
-            if (!model.validate(PRECISION)) {
-                Assert.fail(SOLUTION_NOT_VALID);
-            }
+        if (failed) {
+            return null;
         }
 
-        if (expectedMaximum != null) {
+        Optimisation.Result result = null;
 
-            final double expected = expectedMaximum.doubleValue();
-            final Result maximum = model.maximise();
-            if (DEBUG) {
-                BasicLogger.debug("Maximum: {}", maximum);
-            }
-            final double actual = maximum.getValue();
-
-            if (Double.isNaN(expected) && Double.isNaN(actual)) {
-
-            } else if (PRECISION.isDifferent(expected, actual)) {
-                Assert.assertEquals("Maximum", expected, actual, PRECISION.epsilon());
-            }
-
-            if (!model.validate(PRECISION)) {
-                Assert.fail(SOLUTION_NOT_VALID);
-            }
+        if (parsedMPS.isMinimisation()) {
+            result = parsedMPS.minimise();
+        } else {
+            result = parsedMPS.maximise();
         }
-    }
 
-    void doTest(final String problem, final BigDecimal expectedMinimum, final BigDecimal expectedMaximum) {
-
-        ExpressionsBasedModel model = MathProgSysModel.make(new File("optimisation/netlib/" + problem + ".SIF")).getExpressionsBasedModel();
-
-        ExpressionsBasedModel.clearIntegrations();
-
-        this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
-
-        ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addPreferredSolver(SolverCPLEX.INTEGRATION);
-
-        this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
-
-        ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addPreferredSolver(SolverCommonsMath.INTEGRATION);
-
-        this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
-
-        ExpressionsBasedModel.clearIntegrations();
-        ExpressionsBasedModel.addPreferredSolver(SolverJOptimizer.INTEGRATION);
-
-        this.assertMinMaxVal(model, expectedMinimum, expectedMaximum);
+        return result;
     }
 
 }
