@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.optimisation.lp.netlib;
+package org.ojalgo.benchmark.linear.netlib;
 
 import java.io.IOException;
 import java.io.InputStream;

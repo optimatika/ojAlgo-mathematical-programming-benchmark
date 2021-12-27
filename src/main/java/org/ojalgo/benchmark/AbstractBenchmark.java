@@ -19,11 +19,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.optimisation.lp.netlib;
+package org.ojalgo.benchmark;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,6 +37,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
+import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
@@ -48,19 +50,43 @@ import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
 import org.ojalgo.type.Stopwatch.TimedResult;
+import org.ojalgo.type.context.NumberContext;
 
-public class NetlibBenchmark {
+public abstract class AbstractBenchmark {
 
-    enum FailReason {
-        TIMEOUT, WRONG;
+    public static final class Configuration {
+
+        public NumberContext accuracy = NumberContext.of(4);
+        /**
+         * ms
+         */
+        public long maxWaitTime = 60_000L;
+        public String pathPrefix;
+        public String pathSuffix = ".SIF";
+        public String refeenceSolver = Contender.CPLEX;
+        public final Map<String, BigDecimal> values = new HashMap<>();
+
+        public String path(final String modelName) {
+            return pathPrefix + modelName + pathSuffix;
+        }
+
     }
 
-    static final class ModelSolverPair implements Comparable<ModelSolverPair> {
+    public static final class Contender {
 
-        String model;
-        String solver;
+        public static final String ACM = "ACM";
+        public static final String CPLEX = "CPLEX";
+        public static final String J_OPTIMIZER = "JOptimizer";
+        public static final String OJALGO = "ojAlgo";
 
-        ModelSolverPair(final String m, final String s) {
+    }
+
+    public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
+
+        public final String model;
+        public final String solver;
+
+        public ModelSolverPair(final String m, final String s) {
             super();
             model = m;
             solver = s;
@@ -122,35 +148,60 @@ public class NetlibBenchmark {
         }
     }
 
+    enum FailReason {
+        /**
+         * Hangs or takes too long
+         */
+        TIMEOUT,
+        /**
+         * Not always the same results between executions (a variation on WRONG)
+         */
+        UNSTABLE,
+        /**
+         * Does not match the expected value, or the reference solver
+         */
+        WRONG;
+    }
+
     static final class ResultsSet {
 
-        static boolean isSimilar(final double latest1, final double latest2, final double halfRelativeError) {
-            if (Math.abs(latest1 - latest2) / (latest1 + latest2) > halfRelativeError) {
+        static boolean isSimilar(final double value1, final double value2, final double halfRelativeError) {
+            if (Math.abs(value1 - value2) / (value1 + value2) > halfRelativeError) {
                 return false;
             }
             return true;
         }
 
+        public TimedResult<Optimisation.Result> fastest;
+
         private final List<TimedResult<Optimisation.Result>> all = new ArrayList<>();
-        private final double halfRelativeError;
+        private final double myHalfRelativeTimeError;
+        private final NumberContext myValueAccuracy;
 
-        TimedResult<Optimisation.Result> fastest;
-
-        ResultsSet(final double accuracy) {
+        public ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy) {
             super();
-            halfRelativeError = accuracy / 2D;
+            myValueAccuracy = valueAccuracy;
+            myHalfRelativeTimeError = timeAccuracy / 2D;
         }
 
-        void add(final TimedResult<Result> another) {
+        public void add(final TimedResult<Result> another) {
 
             Objects.requireNonNull(another);
+
+            Result anotherR = another.result;
+            CalendarDateDuration anotherD = another.duration;
+
+            if (anotherR == null || anotherD == null) {
+                fastest = FAILED;
+                return;
+            }
 
             all.add(another);
 
             if (fastest != null) {
 
                 Result fastestR = fastest.result;
-                Result anotherR = another.result;
+                CalendarDateDuration fastestD = fastest.duration;
 
                 State stateF = fastestR.getState();
                 State stateA = anotherR.getState();
@@ -158,9 +209,11 @@ public class NetlibBenchmark {
                 double valueF = fastestR.getValue();
                 double valueA = anotherR.getValue();
 
-                if (stateF != stateA || !ResultsSet.isSimilar(valueF, valueA, halfRelativeError)) {
-                    fastest = new TimedResult<>(anotherR.withState(Optimisation.State.FAILED), another.duration);
-                } else if (fastest.duration.measure > another.duration.measure) {
+                if (stateF != stateA) {
+                    fastest = new TimedResult<>(anotherR.withState(Optimisation.State.INVALID), anotherD);
+                } else if (myValueAccuracy.isDifferent(valueF, valueA)) {
+                    fastest = new TimedResult<>(anotherR.withState(Optimisation.State.APPROXIMATE), anotherD);
+                } else if (fastestD.measure > anotherD.measure) {
                     fastest = another;
                 }
 
@@ -170,7 +223,7 @@ public class NetlibBenchmark {
             }
         }
 
-        boolean isStable() {
+        public boolean isStable() {
 
             int size = all.size();
 
@@ -178,42 +231,29 @@ public class NetlibBenchmark {
                 return false;
             }
 
-            double latest1 = all.get(size - 1).duration.toDurationInMillis();
-            double latest2 = all.get(size - 2).duration.toDurationInMillis();
+            double duration1 = all.get(size - 1).duration.toDurationInMillis();
+            double duration2 = all.get(size - 2).duration.toDurationInMillis();
 
-            return ResultsSet.isSimilar(latest1, latest2, halfRelativeError);
+            return ResultsSet.isSimilar(duration1, duration2, myHalfRelativeTimeError);
         }
 
     }
 
     static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
-            new CalendarDateDuration(30, CalendarDateUnit.SECOND).convertTo(CalendarDateUnit.MILLIS));
+            new CalendarDateDuration(30, CalendarDateUnit.MINUTE).convertTo(CalendarDateUnit.MILLIS));
 
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
-    static final String[] MODELS = new String[] { "VTP-BASE", "TUFF", "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SEBA", "SCTAP1", "SCSD1", "SCORPION",
-            "SCFXM2", "SCFXM1", "SCAGR7", "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "RECIPELP", "PILOT4", "LOTFI", "KB2", "ISRAEL", "GROW7", "GROW22",
-            "GROW15", "FORPLAN", "FINNIS", "FFFFF800", "ETAMACRO", "E226", "DEGEN2", "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD",
-            "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
-    static final String[] SOLVERS = new String[] { "CPLEX", "ojAlgo", "ACM" };
     static final int WIDTH = 22;
-    static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
-
-        for (String mod : MODELS) {
-            for (String sol : SOLVERS) {
-                WORK.add(new ModelSolverPair(mod, sol));
-            }
-        }
-
-        INTEGRATIONS.put("ACM", SolverCommonsMath.INTEGRATION);
-        INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
+        INTEGRATIONS.put(Contender.ACM, SolverCommonsMath.INTEGRATION);
+        INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
-        // INTEGRATIONS.put("JOptimizer", SolverJOptimizer.INTEGRATION);
+        INTEGRATIONS.put(Contender.J_OPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
     }
 
-    public static void main(final String[] args) {
+    protected static void doBenchmark(final Set<ModelSolverPair> WORK, final Configuration configuration) {
 
         Set<ModelSolverPair> done = new HashSet<>();
         Map<ModelSolverPair, ResultsSet> results = new TreeMap<>();
@@ -237,27 +277,30 @@ public class NetlibBenchmark {
                     ExpressionsBasedModel.addPreferredSolver(integration);
                 }
 
-                String path = "/optimisation/netlib/" + work.model + ".SIF";
+                String path = configuration.path(work.model);
 
-                try (InputStream input = NetlibBenchmark.class.getResourceAsStream(path)) {
+                BigDecimal expectedValue = configuration.values.get(work.model);
+
+                try (InputStream input = AbstractBenchmark.class.getResourceAsStream(path)) {
                     ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
-                    ResultsSet resultsSet = results.computeIfAbsent(work, k -> new ResultsSet(0.01));
+                    ResultsSet resultsSet = results.computeIfAbsent(work, k -> new ResultsSet(configuration.accuracy, 0.01));
 
                     TimedResult<Optimisation.Result>[] resultA = (TimedResult<Result>[]) new TimedResult<?>[1];
 
                     Thread worker = new Thread(() -> {
-                        ResultsSet subresults = new ResultsSet(0.1);
+                        ResultsSet subresults = new ResultsSet(configuration.accuracy, 0.1);
                         while (!subresults.isStable()) {
-                            subresults.add(NetlibBenchmark.meassure(parsedMPS));
+                            subresults.add(AbstractBenchmark.meassure(parsedMPS));
                         }
                         resultA[0] = subresults.fastest;
                     });
 
+                    resultA[0] = null;
                     long start = System.currentTimeMillis();
                     worker.start();
 
-                    while (resultA[0] == null && System.currentTimeMillis() - start <= 60_000L) {
+                    while (resultA[0] == null && System.currentTimeMillis() - start <= configuration.maxWaitTime) {
                         Thread.sleep(1_000L);
                     }
 
@@ -267,30 +310,37 @@ public class NetlibBenchmark {
 
                     if (result != null) {
 
+                        // Have a result
+
                         resultsSet.add(result);
 
                         if (!result.result.getState().isOptimal()) {
 
-                            BasicLogger.debug(WIDTH, work.model, work.solver, result.result.getState());
-
+                            BasicLogger.debug(WIDTH, work.model, work.solver, result.result.getState(), FailReason.UNSTABLE);
+                            reasons.put(work, FailReason.UNSTABLE);
                             done.add(work);
-                            reasons.put(work, FailReason.WRONG);
-                        }
 
-                        if (resultsSet.isStable()) {
+                        } else if (expectedValue != null && configuration.accuracy.isDifferent(expectedValue.doubleValue(), result.result.getValue())) {
+
+                            BasicLogger.debug(WIDTH, work.model, work.solver, FailReason.WRONG, result.result.getValue(), "!= " + expectedValue);
+                            reasons.put(work, FailReason.WRONG);
+                            done.add(work);
+
+                        } else if (resultsSet.isStable()) {
 
                             BasicLogger.debug(WIDTH, work.model, work.solver, "Time stable");
-
                             done.add(work);
                         }
 
                     } else {
 
-                        BasicLogger.debug(WIDTH, work.model, work.solver, FAILED.result.getState());
+                        // No result, timeout
 
                         resultsSet.add(FAILED);
-                        done.add(work);
+
+                        BasicLogger.debug(WIDTH, work.model, work.solver, FAILED.result.getState(), FailReason.TIMEOUT);
                         reasons.put(work, FailReason.TIMEOUT);
+                        done.add(work);
                     }
 
                 } catch (Throwable cause) {
@@ -303,7 +353,7 @@ public class NetlibBenchmark {
 
         } while (WORK.size() > 0);
 
-        try (PrintWriter writer = new PrintWriter("./src/main/resources/netlib.csv")) {
+        try (PrintWriter writer = new PrintWriter("./src/main/resources/benchmark_output.csv")) {
 
             writer.println("Model" + "\t" + "Solver" + "\t" + "Time");
 
@@ -322,13 +372,27 @@ public class NetlibBenchmark {
                 double value = result.result.getValue();
                 CalendarDateDuration duration = result.duration;
 
-                ResultsSet referenceResult = results.get(new ModelSolverPair(model, SOLVERS[0]));
-                double referenceValue = referenceResult.fastest.result.getValue(); // CPLEX
-                if (state.isOptimal() && ResultsSet.isSimilar(referenceValue, value, 0.005)) {
+                BigDecimal expectedValue = configuration.values.get(model);
+
+                Result referenceResult = results.get(new ModelSolverPair(model, configuration.refeenceSolver)).fastest.result;
+
+                if (expectedValue != null || referenceResult.getState().isOptimal()) {
+
+                    double referenceValue = expectedValue != null ? expectedValue.doubleValue() : referenceResult.getValue();
+
+                    if (state.isOptimal() && !configuration.accuracy.isDifferent(referenceValue, value)) {
+                        BasicLogger.debug(WIDTH, model, solver, state, duration);
+                        writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
+                    } else {
+                        BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.getOrDefault(work, FailReason.WRONG));
+                        writer.println(model + "\t" + solver + "\t");
+                    }
+
+                } else if (state.isOptimal()) {
                     BasicLogger.debug(WIDTH, model, solver, state, duration);
                     writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
                 } else {
-                    BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.get(work));
+                    BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.getOrDefault(work, FailReason.TIMEOUT));
                     writer.println(model + "\t" + solver + "\t");
                 }
             }
@@ -340,7 +404,7 @@ public class NetlibBenchmark {
     }
 
     static TimedResult<Result> meassure(final ExpressionsBasedModel model) {
-        return Stopwatch.meassure(() -> NetlibBenchmark.solve(model));
+        return Stopwatch.meassure(() -> AbstractBenchmark.solve(model));
     }
 
     static Optimisation.Result solve(final ExpressionsBasedModel model) {
