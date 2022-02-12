@@ -1,5 +1,5 @@
 
-Iteration 1 with 219 model/solver pairs remaining 2021-12-18T09:45:00.625Z
+Iteration 1 with 219 model/solver pairs remaining 2022-02-12T08:59:40.731Z
 --------------------------------------------------------------------------
 log4j:WARN No appenders could be found for logger (com.joptimizer.optimizers.NewtonUnconstrained).
 log4j:WARN Please initialize the log4j system properly.
@@ -14,7 +14,6 @@ DUAL3                 JOptimizer            WRONG                 0.137858027595
 QE226                 ojAlgo                FAILED                TIMEOUT               
 QBANDM                JOptimizer            FAILED                UNSTABLE              
 PRIMALC5              JOptimizer            WRONG                 -3.055854111899788E7  != -427.23233         
-QSHARE2B              ojAlgo                FAILED                TIMEOUT               
 HS21                  JOptimizer            FAILED                UNSTABLE              
 QSHARE2B              JOptimizer            FAILED                TIMEOUT               
 HS118                 JOptimizer            INVALID               UNSTABLE              
@@ -27,7 +26,7 @@ QPCBOEI1              ojAlgo                FAILED                TIMEOUT
 DUAL1                 JOptimizer            WRONG                 0.09699480851586027   != 0.035012966        
 GOULDQP2              JOptimizer            WRONG                 1.635066591441E-4     != 0.00018427534      
 QISRAEL               ojAlgo                FAILED                TIMEOUT               
-CVXQP3_M              ojAlgo                INFEASIBLE            UNSTABLE              
+CVXQP3_M              ojAlgo                FAILED                TIMEOUT               
 QCAPRI                JOptimizer            FAILED                TIMEOUT               
 DUALC8                JOptimizer            FAILED                UNSTABLE              
 QSHARE1B              JOptimizer            FAILED                UNSTABLE              
@@ -40,12 +39,11 @@ QSTAIR                ojAlgo                FAILED                TIMEOUT
 QRECIPE               JOptimizer            FAILED                UNSTABLE              
 PRIMAL3               JOptimizer            WRONG                 -96.15468722460932    != -0.13575584        
 QSTAIR                JOptimizer            FAILED                TIMEOUT               
-CVXQP2_M              CPLEX                 FAILED                TIMEOUT               
 PRIMALC1              JOptimizer            FAILED                UNSTABLE              
 QSEBA                 ojAlgo                FAILED                TIMEOUT               
 QFFFFF80              JOptimizer            FAILED                UNSTABLE              
 PRIMALC2              JOptimizer            WRONG                 -2.918531598112494E8  != -3551.3077         
-QFORPLAN              ojAlgo                INFEASIBLE            UNSTABLE              
+QFORPLAN              ojAlgo                FAILED                TIMEOUT               
 QGROW15               JOptimizer            FAILED                UNSTABLE              
 QADLITTL              JOptimizer            FAILED                TIMEOUT               
 QSCTAP1               ojAlgo                FAILED                TIMEOUT               
@@ -57,12 +55,14 @@ QSCORPIO              JOptimizer            FAILED                TIMEOUT
 DUAL4                 JOptimizer            WRONG                 0.7713027271233273    != 0.74609084         
 CVXQP2_M              ojAlgo                FAILED                TIMEOUT               
 QBRANDY               JOptimizer            FAILED                UNSTABLE              
+QBRANDY               ojAlgo                FAILED                TIMEOUT               
 LOTSCHD               JOptimizer            WRONG                 249.90732480473665    != 2398.4159          
 QPCBLEND              ojAlgo                FAILED                TIMEOUT               
 DUALC2                JOptimizer            FAILED                UNSTABLE              
 CVXQP1_M              ojAlgo                FAILED                TIMEOUT               
 QSCORPIO              ojAlgo                FAILED                UNSTABLE              
 QSCFXM1               ojAlgo                FAILED                TIMEOUT               
+QSCAGR7               ojAlgo                FAILED                TIMEOUT               
 QAFIRO                JOptimizer            FAILED                TIMEOUT               
 DUALC1                JOptimizer            FAILED                UNSTABLE              
 QSCFXM1               JOptimizer            FAILED                TIMEOUT               
@@ -87,7 +87,7 @@ S268                  JOptimizer            FAILED                UNSTABLE
 QPCBOEI2              JOptimizer            FAILED                TIMEOUT               
 QISRAEL               JOptimizer            FAILED                UNSTABLE              
 QSCAGR25              ojAlgo                FAILED                TIMEOUT               
-QRECIPE               ojAlgo                WRONG                 -232.72311109100818   != -266.61600         
+QPCBOEI2              ojAlgo                FAILED                TIMEOUT               
 QSCSD1                ojAlgo                FAILED                TIMEOUT               
 MOSARQP2              JOptimizer            WRONG                 -1901.0796591472142   != -1597.4821         
 DUALC5                JOptimizer            WRONG                 3566.9181295937274    != 427.23233          
@@ -101,461 +101,443 @@ PRIMALC8              JOptimizer            FAILED                UNSTABLE
 QPCSTAIR              JOptimizer            FAILED                TIMEOUT               
 GOULDQP2              ojAlgo                FAILED                TIMEOUT               
 
-Iteration 2 with 123 model/solver pairs remaining 2021-12-18T10:37:11.597Z
+Iteration 2 with 123 model/solver pairs remaining 2022-02-12T09:53:06.937Z
 --------------------------------------------------------------------------
 
-Iteration 3 with 123 model/solver pairs remaining 2021-12-18T10:42:39.895Z
+Iteration 3 with 123 model/solver pairs remaining 2022-02-12T09:57:46.930Z
 --------------------------------------------------------------------------
 QPTEST                ojAlgo                Time stable           
+DUALC2                CPLEX                 Time stable           
 GENHS28               CPLEX                 Time stable           
 ZECEVIC2              ojAlgo                Time stable           
-DUAL2                 ojAlgo                Time stable           
+PRIMALC5              ojAlgo                Time stable           
+QPCBLEND              CPLEX                 Time stable           
+QSCSD1                CPLEX                 Time stable           
 HS21                  ojAlgo                Time stable           
-PRIMALC8              ojAlgo                Time stable           
+KSIP                  ojAlgo                Time stable           
+CVXQP1_M              CPLEX                 Time stable           
 DPKLO1                ojAlgo                Time stable           
-QSCFXM1               CPLEX                 Time stable           
-QSEBA                 CPLEX                 Time stable           
-DUAL4                 ojAlgo                Time stable           
-QAFIRO                CPLEX                 Time stable           
+HS35MOD               CPLEX                 Time stable           
+DUALC1                CPLEX                 Time stable           
 TAME                  ojAlgo                Time stable           
-CVXQP2_M              JOptimizer            Time stable           
-HS268                 CPLEX                 Time stable           
+QBEACONF              ojAlgo                Time stable           
 QSHARE1B              CPLEX                 Time stable           
+TAME                  CPLEX                 Time stable           
 HS53                  JOptimizer            Time stable           
+PRIMALC1              CPLEX                 Time stable           
+QSTAIR                CPLEX                 Time stable           
+QADLITTL              CPLEX                 Time stable           
 HS268                 ojAlgo                Time stable           
-PRIMALC2              CPLEX                 Time stable           
-QPTEST                CPLEX                 Time stable           
+HS35                  CPLEX                 Time stable           
 QSHARE2B              CPLEX                 Time stable           
-QE226                 CPLEX                 Time stable           
-CVXQP1_M              JOptimizer            Time stable           
+QSCTAP1               CPLEX                 Time stable           
 TAME                  JOptimizer            Time stable           
 GENHS28               ojAlgo                Time stable           
 HS35                  ojAlgo                Time stable           
-QBEACONF              CPLEX                 Time stable           
+QBANDM                CPLEX                 Time stable           
 HS21                  CPLEX                 Time stable           
-QAFIRO                ojAlgo                Time stable           
 PRIMALC5              CPLEX                 Time stable           
+DUAL1                 CPLEX                 Time stable           
 QSCAGR25              CPLEX                 Time stable           
 DUALC8                CPLEX                 Time stable           
 DUALC1                ojAlgo                Time stable           
 HS52                  JOptimizer            Time stable           
-DUAL4                 CPLEX                 Time stable           
 DPKLO1                CPLEX                 Time stable           
 S268                  ojAlgo                Time stable           
-S268                  CPLEX                 Time stable           
 GENHS28               JOptimizer            Time stable           
 DUALC2                ojAlgo                Time stable           
 HS51                  JOptimizer            Time stable           
 HS35MOD               ojAlgo                Time stable           
 LOTSCHD               ojAlgo                Time stable           
-QISRAEL               CPLEX                 Time stable           
-PRIMALC8              CPLEX                 Time stable           
 DUALC8                ojAlgo                Time stable           
-GOULDQP2              CPLEX                 Time stable           
-HS53                  CPLEX                 Time stable           
 MOSARQP2              CPLEX                 Time stable           
-QPCBOEI2              ojAlgo                Time stable           
-PRIMAL2               CPLEX                 Time stable           
+HS52                  CPLEX                 Time stable           
 HS76                  CPLEX                 Time stable           
 HS53                  ojAlgo                Time stable           
-QGROW7                CPLEX                 Time stable           
+QRECIPE               ojAlgo                Time stable           
 HS35MOD               JOptimizer            Time stable           
 DUALC5                ojAlgo                Time stable           
+DUAL1                 ojAlgo                Time stable           
 CVXQP2_S              CPLEX                 Time stable           
-QGROW22               CPLEX                 Time stable           
+PRIMAL1               CPLEX                 Time stable           
 QBORE3D               CPLEX                 Time stable           
 HS76                  ojAlgo                Time stable           
 HS52                  ojAlgo                Time stable           
 HS51                  CPLEX                 Time stable           
 HS118                 ojAlgo                Time stable           
 HS51                  ojAlgo                Time stable           
-ZECEVIC2              CPLEX                 Time stable           
 HS118                 CPLEX                 Time stable           
 
-Iteration 4 with 58 model/solver pairs remaining 2021-12-18T10:48:03.026Z
+Iteration 4 with 62 model/solver pairs remaining 2022-02-12T10:03:01.941Z
 --------------------------------------------------------------------------
-DUALC2                CPLEX                 Time stable           
-LOTSCHD               CPLEX                 Time stable           
-QSCSD1                CPLEX                 Time stable           
-CVXQP3_M              JOptimizer            FAILED                TIMEOUT               
-TAME                  CPLEX                 Time stable           
-PRIMALC1              CPLEX                 Time stable           
-QSTAIR                CPLEX                 Time stable           
-QADLITTL              CPLEX                 Time stable           
+CVXQP2_S              ojAlgo                Time stable           
+QSEBA                 CPLEX                 Time stable           
+QFFFFF80              CPLEX                 Time stable           
+PRIMALC2              CPLEX                 Time stable           
+QPTEST                CPLEX                 Time stable           
 QFORPLAN              CPLEX                 Time stable           
-QSCTAP1               CPLEX                 Time stable           
-QBANDM                CPLEX                 Time stable           
-QBRANDY               ojAlgo                Time stable           
+CVXQP1_S              CPLEX                 Time stable           
+DUAL2                 CPLEX                 Time stable           
+QAFIRO                ojAlgo                Time stable           
 QSC205                CPLEX                 Time stable           
-QPCSTAIR              CPLEX                 Time stable           
-DUAL3                 CPLEX                 Time stable           
-QPCBOEI2              CPLEX                 Time stable           
-PRIMAL3               ojAlgo                Time stable           
-HS52                  CPLEX                 Time stable           
-QCAPRI                CPLEX                 Time stable           
-
-Iteration 5 with 39 model/solver pairs remaining 2021-12-18T10:51:19.083Z
---------------------------------------------------------------------------
-KSIP                  ojAlgo                Time stable           
-HS35MOD               CPLEX                 Time stable           
-DUALC1                CPLEX                 Time stable           
+DUAL4                 CPLEX                 Time stable           
+S268                  CPLEX                 Time stable           
+QISRAEL               CPLEX                 Time stable           
+HS53                  CPLEX                 Time stable           
 QSCAGR7               CPLEX                 Time stable           
-PRIMAL1               CPLEX                 Time stable           
 DUALC5                CPLEX                 Time stable           
 
-Iteration 6 with 33 model/solver pairs remaining 2021-12-18T10:53:19.551Z
+Iteration 5 with 46 model/solver pairs remaining 2022-02-12T10:06:38.591Z
+--------------------------------------------------------------------------
+LOTSCHD               CPLEX                 Time stable           
+CVXQP3_M              JOptimizer            Time stable           
+QAFIRO                CPLEX                 Time stable           
+QE226                 CPLEX                 Time stable           
+CVXQP1_M              JOptimizer            Time stable           
+QPCSTAIR              CPLEX                 Time stable           
+CVXQP3_S              JOptimizer            Time stable           
+QPCBOEI2              CPLEX                 Time stable           
+CVXQP3_S              CPLEX                 Time stable           
+QGROW22               CPLEX                 Time stable           
+ZECEVIC2              CPLEX                 Time stable           
+
+Iteration 6 with 35 model/solver pairs remaining 2022-02-12T10:09:45.221Z
 --------------------------------------------------------------------------
 QBRANDY               CPLEX                 Time stable           
-HS35                  CPLEX                 Time stable           
-CVXQP1_S              CPLEX                 Time stable           
-QSCAGR7               ojAlgo                Time stable           
+DUAL2                 ojAlgo                Time stable           
+QSCFXM1               CPLEX                 Time stable           
+GOULDQP2              CPLEX                 Time stable           
+QGROW7                CPLEX                 Time stable           
 
-Iteration 7 with 29 model/solver pairs remaining 2021-12-18T10:54:17.790Z
+Iteration 7 with 30 model/solver pairs remaining 2022-02-12T10:11:42.594Z
 --------------------------------------------------------------------------
-QGROW15               CPLEX                 Time stable           
+DUAL3                 ojAlgo                Time stable           
+DUAL4                 ojAlgo                Time stable           
 QSCORPIO              CPLEX                 Time stable           
-QPCBOEI1              CPLEX                 Time stable           
+PRIMAL3               ojAlgo                Time stable           
+QCAPRI                CPLEX                 Time stable           
 
-Iteration 8 with 26 model/solver pairs remaining 2021-12-18T10:55:20.056Z
+Iteration 8 with 25 model/solver pairs remaining 2022-02-12T10:13:18.952Z
 --------------------------------------------------------------------------
-QADLITTL              ojAlgo                Time stable           
-CVXQP1_M              CPLEX                 Time stable           
-DUAL2                 CPLEX                 Time stable           
-DUAL1                 CPLEX                 Time stable           
-CVXQP3_S              ojAlgo                Time stable           
-CVXQP3_S              CPLEX                 Time stable           
-
-Iteration 9 with 20 model/solver pairs remaining 2021-12-18T10:56:24.340Z
---------------------------------------------------------------------------
-QPCBLEND              CPLEX                 Time stable           
-CVXQP3_S              JOptimizer            Time stable           
+HS268                 CPLEX                 Time stable           
 QRECIPE               CPLEX                 Time stable           
-PRIMAL2               ojAlgo                Time stable           
+PRIMAL3               CPLEX                 Time stable           
+PRIMAL2               CPLEX                 Time stable           
 
-Iteration 10 with 16 model/solver pairs remaining 2021-12-18T10:57:04.529Z
+Iteration 9 with 21 model/solver pairs remaining 2022-02-12T10:14:34.239Z
 --------------------------------------------------------------------------
-QSC205                ojAlgo                Time stable           
-QFFFFF80              CPLEX                 Time stable           
-QBEACONF              ojAlgo                Time stable           
-PRIMALC2              ojAlgo                Time stable           
 GOULDQP3              CPLEX                 Time stable           
 
-Iteration 11 with 11 model/solver pairs remaining 2021-12-18T10:57:30.667Z
+Iteration 10 with 20 model/solver pairs remaining 2022-02-12T10:15:43.463Z
 --------------------------------------------------------------------------
-PRIMALC5              ojAlgo                Time stable           
-QSCFXM2               CPLEX                 Time stable           
+PRIMALC8              CPLEX                 Time stable           
 
-Iteration 12 with 9 model/solver pairs remaining 2021-12-18T10:57:42.757Z
+Iteration 11 with 19 model/solver pairs remaining 2022-02-12T10:16:48.660Z
 --------------------------------------------------------------------------
-DUAL1                 ojAlgo                Time stable           
+QADLITTL              ojAlgo                Time stable           
+CVXQP1_S              ojAlgo                Time stable           
+PRIMALC8              ojAlgo                Time stable           
+QGROW15               CPLEX                 Time stable           
+CVXQP2_M              JOptimizer            Time stable           
+
+Iteration 12 with 14 model/solver pairs remaining 2022-02-12T10:17:54.899Z
+--------------------------------------------------------------------------
+QBEACONF              CPLEX                 Time stable           
+
+Iteration 13 with 13 model/solver pairs remaining 2022-02-12T10:18:56.085Z
+--------------------------------------------------------------------------
+PRIMAL2               ojAlgo                Time stable           
+
+Iteration 14 with 12 model/solver pairs remaining 2022-02-12T10:19:36.216Z
+--------------------------------------------------------------------------
+QSC205                ojAlgo                Time stable           
+
+Iteration 15 with 11 model/solver pairs remaining 2022-02-12T10:19:56.296Z
+--------------------------------------------------------------------------
+
+Iteration 16 with 11 model/solver pairs remaining 2022-02-12T10:20:25.409Z
+--------------------------------------------------------------------------
+
+Iteration 17 with 11 model/solver pairs remaining 2022-02-12T10:20:44.504Z
+--------------------------------------------------------------------------
+CVXQP2_M              CPLEX                 Time stable           
+DUAL3                 CPLEX                 Time stable           
 PRIMAL1               ojAlgo                Time stable           
 
-Iteration 13 with 7 model/solver pairs remaining 2021-12-18T10:57:52.835Z
+Iteration 18 with 8 model/solver pairs remaining 2022-02-12T10:21:04.596Z
+--------------------------------------------------------------------------
+QPCBOEI1              CPLEX                 Time stable           
+
+Iteration 19 with 7 model/solver pairs remaining 2022-02-12T10:21:14.641Z
+--------------------------------------------------------------------------
+PRIMALC2              ojAlgo                Time stable           
+
+Iteration 20 with 6 model/solver pairs remaining 2022-02-12T10:21:23.681Z
 --------------------------------------------------------------------------
 
-Iteration 14 with 7 model/solver pairs remaining 2021-12-18T10:58:00.894Z
---------------------------------------------------------------------------
-
-Iteration 15 with 7 model/solver pairs remaining 2021-12-18T10:58:08.954Z
---------------------------------------------------------------------------
-CVXQP1_S              ojAlgo                Time stable           
-
-Iteration 16 with 6 model/solver pairs remaining 2021-12-18T10:58:16.007Z
---------------------------------------------------------------------------
-QETAMACR              CPLEX                 Time stable           
-
-Iteration 17 with 5 model/solver pairs remaining 2021-12-18T10:58:22.050Z
---------------------------------------------------------------------------
-
-Iteration 18 with 5 model/solver pairs remaining 2021-12-18T10:58:27.088Z
+Iteration 21 with 6 model/solver pairs remaining 2022-02-12T10:21:31.715Z
 --------------------------------------------------------------------------
 PRIMALC1              ojAlgo                Time stable           
 
-Iteration 19 with 4 model/solver pairs remaining 2021-12-18T10:58:32.128Z
---------------------------------------------------------------------------
-
-Iteration 20 with 4 model/solver pairs remaining 2021-12-18T10:58:36.160Z
---------------------------------------------------------------------------
-
-Iteration 21 with 4 model/solver pairs remaining 2021-12-18T10:58:40.192Z
---------------------------------------------------------------------------
-
-Iteration 22 with 4 model/solver pairs remaining 2021-12-18T10:58:44.227Z
---------------------------------------------------------------------------
-
-Iteration 23 with 4 model/solver pairs remaining 2021-12-18T10:58:48.263Z
---------------------------------------------------------------------------
-
-Iteration 24 with 4 model/solver pairs remaining 2021-12-18T10:58:52.297Z
---------------------------------------------------------------------------
-
-Iteration 25 with 4 model/solver pairs remaining 2021-12-18T10:58:56.330Z
---------------------------------------------------------------------------
-DUAL3                 ojAlgo                Time stable           
-
-Iteration 26 with 3 model/solver pairs remaining 2021-12-18T10:59:00.361Z
---------------------------------------------------------------------------
-PRIMAL3               CPLEX                 Time stable           
-
-Iteration 27 with 2 model/solver pairs remaining 2021-12-18T10:59:03.384Z
---------------------------------------------------------------------------
-
-Iteration 28 with 2 model/solver pairs remaining 2021-12-18T10:59:05.394Z
---------------------------------------------------------------------------
-
-Iteration 29 with 2 model/solver pairs remaining 2021-12-18T10:59:08.405Z
---------------------------------------------------------------------------
-
-Iteration 30 with 2 model/solver pairs remaining 2021-12-18T10:59:10.411Z
+Iteration 22 with 5 model/solver pairs remaining 2022-02-12T10:21:39.745Z
 --------------------------------------------------------------------------
 DPKLO1                JOptimizer            Time stable           
 
-Iteration 31 with 1 model/solver pairs remaining 2021-12-18T10:59:12.421Z
+Iteration 23 with 4 model/solver pairs remaining 2022-02-12T10:21:46.776Z
+--------------------------------------------------------------------------
+CVXQP3_S              ojAlgo                Time stable           
+
+Iteration 24 with 3 model/solver pairs remaining 2022-02-12T10:21:52.805Z
 --------------------------------------------------------------------------
 
-Iteration 32 with 1 model/solver pairs remaining 2021-12-18T10:59:13.424Z
+Iteration 25 with 3 model/solver pairs remaining 2022-02-12T10:21:55.823Z
 --------------------------------------------------------------------------
 
-Iteration 33 with 1 model/solver pairs remaining 2021-12-18T10:59:14.430Z
+Iteration 26 with 3 model/solver pairs remaining 2022-02-12T10:21:58.844Z
 --------------------------------------------------------------------------
 
-Iteration 34 with 1 model/solver pairs remaining 2021-12-18T10:59:15.432Z
+Iteration 27 with 3 model/solver pairs remaining 2022-02-12T10:22:01.865Z
 --------------------------------------------------------------------------
 
-Iteration 35 with 1 model/solver pairs remaining 2021-12-18T10:59:16.438Z
+Iteration 28 with 3 model/solver pairs remaining 2022-02-12T10:22:04.893Z
+--------------------------------------------------------------------------
+QSCFXM2               CPLEX                 Time stable           
+
+Iteration 29 with 2 model/solver pairs remaining 2022-02-12T10:22:07.915Z
+--------------------------------------------------------------------------
+QETAMACR              CPLEX                 Time stable           
+
+Iteration 30 with 1 model/solver pairs remaining 2022-02-12T10:22:09.932Z
 --------------------------------------------------------------------------
 
-Iteration 36 with 1 model/solver pairs remaining 2021-12-18T10:59:17.440Z
+Iteration 31 with 1 model/solver pairs remaining 2022-02-12T10:22:10.936Z
 --------------------------------------------------------------------------
 
-Iteration 37 with 1 model/solver pairs remaining 2021-12-18T10:59:18.447Z
+Iteration 32 with 1 model/solver pairs remaining 2022-02-12T10:22:11.941Z
 --------------------------------------------------------------------------
 
-Iteration 38 with 1 model/solver pairs remaining 2021-12-18T10:59:19.452Z
+Iteration 33 with 1 model/solver pairs remaining 2022-02-12T10:22:12.943Z
 --------------------------------------------------------------------------
-
-Iteration 39 with 1 model/solver pairs remaining 2021-12-18T10:59:20.459Z
---------------------------------------------------------------------------
-CVXQP2_S              ojAlgo                Time stable           
+QSHARE2B              ojAlgo                Time stable           
 
 Final Results
 =====================================================================
-CVXQP1_M              CPLEX                 OPTIMAL               166.464834ms          
+CVXQP1_M              CPLEX                 OPTIMAL               170.450521ms          
 CVXQP1_M              JOptimizer            FAILED                WRONG                 
 CVXQP1_M              ojAlgo                FAILED                TIMEOUT               
-CVXQP1_S              CPLEX                 OPTIMAL               7.053766ms            
+CVXQP1_S              CPLEX                 OPTIMAL               6.950964ms            
 CVXQP1_S              JOptimizer            FAILED                UNSTABLE              
-CVXQP1_S              ojAlgo                OPTIMAL               57.762954ms           
-CVXQP2_M              CPLEX                 FAILED                TIMEOUT               
-CVXQP2_M              JOptimizer            OPTIMAL               4327.201363ms         
+CVXQP1_S              ojAlgo                OPTIMAL               55.472741ms           
+CVXQP2_M              CPLEX                 OPTIMAL               108.236388ms          
+CVXQP2_M              JOptimizer            FAILED                WRONG                 
 CVXQP2_M              ojAlgo                FAILED                TIMEOUT               
-CVXQP2_S              CPLEX                 OPTIMAL               5.759118ms            
+CVXQP2_S              CPLEX                 OPTIMAL               6.440279ms            
 CVXQP2_S              JOptimizer            FAILED                UNSTABLE              
-CVXQP2_S              ojAlgo                OPTIMAL               60.636ms              
+CVXQP2_S              ojAlgo                OPTIMAL               61.42035ms            
 CVXQP3_M              CPLEX                 FAILED                TIMEOUT               
-CVXQP3_M              JOptimizer            FAILED                TIMEOUT               
-CVXQP3_M              ojAlgo                FAILED                UNSTABLE              
-CVXQP3_S              CPLEX                 OPTIMAL               7.884973ms            
+CVXQP3_M              JOptimizer            OPTIMAL               12227.901191ms        
+CVXQP3_M              ojAlgo                FAILED                TIMEOUT               
+CVXQP3_S              CPLEX                 OPTIMAL               7.948853ms            
 CVXQP3_S              JOptimizer            FAILED                WRONG                 
-CVXQP3_S              ojAlgo                OPTIMAL               124.679142ms          
-DPKLO1                CPLEX                 OPTIMAL               3.662322ms            
-DPKLO1                JOptimizer            OPTIMAL               28.790586ms           
-DPKLO1                ojAlgo                OPTIMAL               5.016027ms            
-DUAL1                 CPLEX                 OPTIMAL               24.285581ms           
+CVXQP3_S              ojAlgo                OPTIMAL               398.658416ms          
+DPKLO1                CPLEX                 OPTIMAL               3.998736ms            
+DPKLO1                JOptimizer            OPTIMAL               26.857707ms           
+DPKLO1                ojAlgo                OPTIMAL               5.019881ms            
+DUAL1                 CPLEX                 OPTIMAL               25.016533ms           
 DUAL1                 JOptimizer            FAILED                WRONG                 
-DUAL1                 ojAlgo                OPTIMAL               7.860246ms            
-DUAL2                 CPLEX                 OPTIMAL               28.701661ms           
+DUAL1                 ojAlgo                OPTIMAL               7.85377ms             
+DUAL2                 CPLEX                 OPTIMAL               29.583066ms           
 DUAL2                 JOptimizer            FAILED                WRONG                 
-DUAL2                 ojAlgo                OPTIMAL               9.820347ms            
-DUAL3                 CPLEX                 OPTIMAL               38.146207ms           
+DUAL2                 ojAlgo                OPTIMAL               9.269454ms            
+DUAL3                 CPLEX                 OPTIMAL               34.935998ms           
 DUAL3                 JOptimizer            FAILED                WRONG                 
-DUAL3                 ojAlgo                OPTIMAL               14.047809ms           
-DUAL4                 CPLEX                 OPTIMAL               18.309245ms           
+DUAL3                 ojAlgo                OPTIMAL               13.932868ms           
+DUAL4                 CPLEX                 OPTIMAL               18.609419ms           
 DUAL4                 JOptimizer            FAILED                WRONG                 
-DUAL4                 ojAlgo                OPTIMAL               6.597319ms            
-DUALC1                CPLEX                 OPTIMAL               4.738769ms            
+DUAL4                 ojAlgo                OPTIMAL               6.487921ms            
+DUALC1                CPLEX                 OPTIMAL               5.217158ms            
 DUALC1                JOptimizer            FAILED                UNSTABLE              
-DUALC1                ojAlgo                OPTIMAL               0.501143ms            
-DUALC2                CPLEX                 OPTIMAL               5.070531ms            
+DUALC1                ojAlgo                OPTIMAL               0.53363ms             
+DUALC2                CPLEX                 OPTIMAL               4.546564ms            
 DUALC2                JOptimizer            FAILED                UNSTABLE              
-DUALC2                ojAlgo                OPTIMAL               0.518324ms            
-DUALC5                CPLEX                 OPTIMAL               4.637194ms            
+DUALC2                ojAlgo                OPTIMAL               0.654918ms            
+DUALC5                CPLEX                 OPTIMAL               4.189144ms            
 DUALC5                JOptimizer            FAILED                WRONG                 
-DUALC5                ojAlgo                OPTIMAL               0.783335ms            
-DUALC8                CPLEX                 OPTIMAL               4.591758ms            
+DUALC5                ojAlgo                OPTIMAL               0.807368ms            
+DUALC8                CPLEX                 OPTIMAL               4.658701ms            
 DUALC8                JOptimizer            FAILED                UNSTABLE              
-DUALC8                ojAlgo                OPTIMAL               0.878977ms            
-GENHS28               CPLEX                 OPTIMAL               2.65778ms             
-GENHS28               JOptimizer            OPTIMAL               0.55514ms             
-GENHS28               ojAlgo                OPTIMAL               0.191996ms            
-GOULDQP2              CPLEX                 OPTIMAL               18.617001ms           
+DUALC8                ojAlgo                OPTIMAL               0.960292ms            
+GENHS28               CPLEX                 OPTIMAL               2.845842ms            
+GENHS28               JOptimizer            OPTIMAL               0.805564ms            
+GENHS28               ojAlgo                OPTIMAL               0.129435ms            
+GOULDQP2              CPLEX                 OPTIMAL               17.878475ms           
 GOULDQP2              JOptimizer            FAILED                WRONG                 
 GOULDQP2              ojAlgo                FAILED                TIMEOUT               
-GOULDQP3              CPLEX                 OPTIMAL               17.926064ms           
+GOULDQP3              CPLEX                 OPTIMAL               17.88398ms            
 GOULDQP3              JOptimizer            FAILED                WRONG                 
 GOULDQP3              ojAlgo                FAILED                TIMEOUT               
-HS118                 CPLEX                 OPTIMAL               3.840974ms            
+HS118                 CPLEX                 OPTIMAL               4.035793ms            
 HS118                 JOptimizer            FAILED                UNSTABLE              
-HS118                 ojAlgo                OPTIMAL               0.775926ms            
-HS21                  CPLEX                 OPTIMAL               3.555166ms            
+HS118                 ojAlgo                OPTIMAL               0.70346ms             
+HS21                  CPLEX                 OPTIMAL               4.306604ms            
 HS21                  JOptimizer            FAILED                UNSTABLE              
-HS21                  ojAlgo                OPTIMAL               0.060572ms            
-HS268                 CPLEX                 OPTIMAL               3.765697ms            
+HS21                  ojAlgo                OPTIMAL               0.146905ms            
+HS268                 CPLEX                 OPTIMAL               3.377772ms            
 HS268                 JOptimizer            FAILED                UNSTABLE              
-HS268                 ojAlgo                OPTIMAL               0.15174ms             
-HS35                  CPLEX                 OPTIMAL               3.893291ms            
+HS268                 ojAlgo                OPTIMAL               0.160725ms            
+HS35                  CPLEX                 OPTIMAL               3.914011ms            
 HS35                  JOptimizer            FAILED                WRONG                 
-HS35                  ojAlgo                OPTIMAL               0.075641ms            
-HS35MOD               CPLEX                 OPTIMAL               3.9148ms              
-HS35MOD               JOptimizer            OPTIMAL               0.180522ms            
-HS35MOD               ojAlgo                OPTIMAL               0.064777ms            
-HS51                  CPLEX                 OPTIMAL               2.528642ms            
-HS51                  JOptimizer            OPTIMAL               0.309269ms            
-HS51                  ojAlgo                OPTIMAL               0.059396ms            
-HS52                  CPLEX                 OPTIMAL               2.234127ms            
-HS52                  JOptimizer            OPTIMAL               0.213561ms            
-HS52                  ojAlgo                OPTIMAL               0.051626ms            
-HS53                  CPLEX                 OPTIMAL               3.960013ms            
-HS53                  JOptimizer            OPTIMAL               0.332344ms            
-HS53                  ojAlgo                OPTIMAL               0.183729ms            
-HS76                  CPLEX                 OPTIMAL               3.711232ms            
+HS35                  ojAlgo                OPTIMAL               0.088361ms            
+HS35MOD               CPLEX                 OPTIMAL               4.064267ms            
+HS35MOD               JOptimizer            OPTIMAL               0.209283ms            
+HS35MOD               ojAlgo                OPTIMAL               0.070326ms            
+HS51                  CPLEX                 OPTIMAL               2.560771ms            
+HS51                  JOptimizer            OPTIMAL               0.211285ms            
+HS51                  ojAlgo                OPTIMAL               0.053564ms            
+HS52                  CPLEX                 OPTIMAL               2.514602ms            
+HS52                  JOptimizer            OPTIMAL               0.378595ms            
+HS52                  ojAlgo                OPTIMAL               0.098481ms            
+HS53                  CPLEX                 OPTIMAL               4.09339ms             
+HS53                  JOptimizer            OPTIMAL               0.264742ms            
+HS53                  ojAlgo                OPTIMAL               0.1582ms              
+HS76                  CPLEX                 OPTIMAL               3.582129ms            
 HS76                  JOptimizer            FAILED                UNSTABLE              
-HS76                  ojAlgo                OPTIMAL               0.087652ms            
+HS76                  ojAlgo                OPTIMAL               0.106293ms            
 KSIP                  CPLEX                 FAILED                TIMEOUT               
 KSIP                  JOptimizer            FAILED                UNSTABLE              
-KSIP                  ojAlgo                OPTIMAL               5.67676ms             
-LOTSCHD               CPLEX                 OPTIMAL               3.258882ms            
+KSIP                  ojAlgo                OPTIMAL               7.104855ms            
+LOTSCHD               CPLEX                 OPTIMAL               3.190802ms            
 LOTSCHD               JOptimizer            FAILED                WRONG                 
-LOTSCHD               ojAlgo                OPTIMAL               0.4877ms              
-MOSARQP2              CPLEX                 OPTIMAL               28.743558ms           
+LOTSCHD               ojAlgo                OPTIMAL               0.638424ms            
+MOSARQP2              CPLEX                 OPTIMAL               27.513161ms           
 MOSARQP2              JOptimizer            FAILED                WRONG                 
 MOSARQP2              ojAlgo                FAILED                TIMEOUT               
-PRIMAL1               CPLEX                 OPTIMAL               15.693079ms           
+PRIMAL1               CPLEX                 OPTIMAL               16.413292ms           
 PRIMAL1               JOptimizer            FAILED                WRONG                 
-PRIMAL1               ojAlgo                OPTIMAL               355.321992ms          
-PRIMAL2               CPLEX                 OPTIMAL               16.853613ms           
+PRIMAL1               ojAlgo                OPTIMAL               338.331081ms          
+PRIMAL2               CPLEX                 OPTIMAL               17.07351ms            
 PRIMAL2               JOptimizer            FAILED                WRONG                 
-PRIMAL2               ojAlgo                OPTIMAL               498.751904ms          
-PRIMAL3               CPLEX                 OPTIMAL               31.236904ms           
+PRIMAL2               ojAlgo                OPTIMAL               467.312719ms          
+PRIMAL3               CPLEX                 OPTIMAL               31.409456ms           
 PRIMAL3               JOptimizer            FAILED                WRONG                 
-PRIMAL3               ojAlgo                OPTIMAL               1839.083747ms         
-PRIMALC1              CPLEX                 OPTIMAL               4.137082ms            
+PRIMAL3               ojAlgo                OPTIMAL               1710.551572ms         
+PRIMALC1              CPLEX                 OPTIMAL               4.661994ms            
 PRIMALC1              JOptimizer            FAILED                UNSTABLE              
-PRIMALC1              ojAlgo                OPTIMAL               89.955457ms           
-PRIMALC2              CPLEX                 OPTIMAL               4.522763ms            
+PRIMALC1              ojAlgo                OPTIMAL               69.751695ms           
+PRIMALC2              CPLEX                 OPTIMAL               4.296414ms            
 PRIMALC2              JOptimizer            FAILED                WRONG                 
-PRIMALC2              ojAlgo                OPTIMAL               93.232231ms           
-PRIMALC5              CPLEX                 OPTIMAL               5.619941ms            
+PRIMALC2              ojAlgo                OPTIMAL               97.194779ms           
+PRIMALC5              CPLEX                 OPTIMAL               4.805038ms            
 PRIMALC5              JOptimizer            FAILED                WRONG                 
-PRIMALC5              ojAlgo                OPTIMAL               128.2184ms            
-PRIMALC8              CPLEX                 OPTIMAL               5.506201ms            
+PRIMALC5              ojAlgo                OPTIMAL               101.986941ms          
+PRIMALC8              CPLEX                 OPTIMAL               5.282295ms            
 PRIMALC8              JOptimizer            FAILED                UNSTABLE              
-PRIMALC8              ojAlgo                OPTIMAL               2955.188031ms         
-QADLITTL              CPLEX                 OPTIMAL               4.526495ms            
+PRIMALC8              ojAlgo                OPTIMAL               741.50381ms           
+QADLITTL              CPLEX                 OPTIMAL               4.841194ms            
 QADLITTL              JOptimizer            FAILED                TIMEOUT               
-QADLITTL              ojAlgo                OPTIMAL               131.732212ms          
-QAFIRO                CPLEX                 OPTIMAL               4.347783ms            
+QADLITTL              ojAlgo                OPTIMAL               128.880535ms          
+QAFIRO                CPLEX                 OPTIMAL               4.900851ms            
 QAFIRO                JOptimizer            FAILED                TIMEOUT               
-QAFIRO                ojAlgo                OPTIMAL               4.257224ms            
-QBANDM                CPLEX                 OPTIMAL               13.835851ms           
+QAFIRO                ojAlgo                OPTIMAL               4.056453ms            
+QBANDM                CPLEX                 OPTIMAL               14.16171ms            
 QBANDM                JOptimizer            FAILED                UNSTABLE              
 QBANDM                ojAlgo                FAILED                TIMEOUT               
-QBEACONF              CPLEX                 OPTIMAL               9.567028ms            
+QBEACONF              CPLEX                 OPTIMAL               7.949951ms            
 QBEACONF              JOptimizer            FAILED                TIMEOUT               
-QBEACONF              ojAlgo                OPTIMAL               1219.953385ms         
-QBORE3D               CPLEX                 OPTIMAL               3.299051ms            
+QBEACONF              ojAlgo                OPTIMAL               702.862179ms          
+QBORE3D               CPLEX                 OPTIMAL               3.282183ms            
 QBORE3D               JOptimizer            FAILED                TIMEOUT               
 QBORE3D               ojAlgo                FAILED                UNSTABLE              
-QBRANDY               CPLEX                 OPTIMAL               11.657ms              
+QBRANDY               CPLEX                 OPTIMAL               11.84466ms            
 QBRANDY               JOptimizer            FAILED                UNSTABLE              
-QBRANDY               ojAlgo                OPTIMAL               2541.027095ms         
-QCAPRI                CPLEX                 OPTIMAL               33.021526ms           
+QBRANDY               ojAlgo                FAILED                TIMEOUT               
+QCAPRI                CPLEX                 OPTIMAL               32.416224ms           
 QCAPRI                JOptimizer            FAILED                TIMEOUT               
 QCAPRI                ojAlgo                FAILED                TIMEOUT               
-QE226                 CPLEX                 OPTIMAL               20.242157ms           
+QE226                 CPLEX                 OPTIMAL               20.132633ms           
 QE226                 JOptimizer            FAILED                TIMEOUT               
 QE226                 ojAlgo                FAILED                TIMEOUT               
-QETAMACR              CPLEX                 OPTIMAL               67.03268ms            
+QETAMACR              CPLEX                 OPTIMAL               66.135186ms           
 QETAMACR              JOptimizer            FAILED                TIMEOUT               
 QETAMACR              ojAlgo                FAILED                TIMEOUT               
-QFFFFF80              CPLEX                 OPTIMAL               48.928718ms           
+QFFFFF80              CPLEX                 OPTIMAL               49.019787ms           
 QFFFFF80              JOptimizer            FAILED                UNSTABLE              
 QFFFFF80              ojAlgo                FAILED                TIMEOUT               
-QFORPLAN              CPLEX                 OPTIMAL               20.515685ms           
+QFORPLAN              CPLEX                 OPTIMAL               20.194192ms           
 QFORPLAN              JOptimizer            FAILED                UNSTABLE              
-QFORPLAN              ojAlgo                FAILED                UNSTABLE              
-QGROW15               CPLEX                 OPTIMAL               21.768434ms           
+QFORPLAN              ojAlgo                FAILED                TIMEOUT               
+QGROW15               CPLEX                 OPTIMAL               22.265773ms           
 QGROW15               JOptimizer            FAILED                UNSTABLE              
 QGROW15               ojAlgo                FAILED                TIMEOUT               
-QGROW22               CPLEX                 OPTIMAL               34.006633ms           
+QGROW22               CPLEX                 OPTIMAL               33.745685ms           
 QGROW22               JOptimizer            FAILED                UNSTABLE              
 QGROW22               ojAlgo                FAILED                TIMEOUT               
-QGROW7                CPLEX                 OPTIMAL               15.572005ms           
+QGROW7                CPLEX                 OPTIMAL               15.209575ms           
 QGROW7                JOptimizer            FAILED                UNSTABLE              
 QGROW7                ojAlgo                FAILED                TIMEOUT               
-QISRAEL               CPLEX                 OPTIMAL               18.205725ms           
+QISRAEL               CPLEX                 OPTIMAL               16.799795ms           
 QISRAEL               JOptimizer            FAILED                UNSTABLE              
 QISRAEL               ojAlgo                FAILED                TIMEOUT               
-QPCBLEND              CPLEX                 OPTIMAL               5.241299ms            
+QPCBLEND              CPLEX                 OPTIMAL               5.682619ms            
 QPCBLEND              JOptimizer            FAILED                WRONG                 
 QPCBLEND              ojAlgo                FAILED                TIMEOUT               
-QPCBOEI1              CPLEX                 OPTIMAL               24.676351ms           
+QPCBOEI1              CPLEX                 OPTIMAL               24.436228ms           
 QPCBOEI1              JOptimizer            FAILED                WRONG                 
 QPCBOEI1              ojAlgo                FAILED                TIMEOUT               
-QPCBOEI2              CPLEX                 OPTIMAL               13.512679ms           
+QPCBOEI2              CPLEX                 OPTIMAL               13.888952ms           
 QPCBOEI2              JOptimizer            FAILED                TIMEOUT               
-QPCBOEI2              ojAlgo                OPTIMAL               400.145712ms          
-QPCSTAIR              CPLEX                 OPTIMAL               27.90852ms            
+QPCBOEI2              ojAlgo                FAILED                TIMEOUT               
+QPCSTAIR              CPLEX                 OPTIMAL               27.35189ms            
 QPCSTAIR              JOptimizer            FAILED                TIMEOUT               
 QPCSTAIR              ojAlgo                FAILED                TIMEOUT               
-QPTEST                CPLEX                 OPTIMAL               3.802978ms            
+QPTEST                CPLEX                 OPTIMAL               3.784151ms            
 QPTEST                JOptimizer            FAILED                UNSTABLE              
-QPTEST                ojAlgo                OPTIMAL               0.09927ms             
-QRECIPE               CPLEX                 OPTIMAL               6.147187ms            
+QPTEST                ojAlgo                OPTIMAL               0.130786ms            
+QRECIPE               CPLEX                 OPTIMAL               6.134873ms            
 QRECIPE               JOptimizer            FAILED                UNSTABLE              
-QRECIPE               ojAlgo                FAILED                WRONG                 
-QSC205                CPLEX                 OPTIMAL               6.406895ms            
+QRECIPE               ojAlgo                OPTIMAL               69.15605ms            
+QSC205                CPLEX                 OPTIMAL               6.538573ms            
 QSC205                JOptimizer            FAILED                TIMEOUT               
-QSC205                ojAlgo                OPTIMAL               430.088214ms          
-QSCAGR25              CPLEX                 OPTIMAL               12.913058ms           
+QSC205                ojAlgo                OPTIMAL               410.297897ms          
+QSCAGR25              CPLEX                 OPTIMAL               12.91476ms            
 QSCAGR25              JOptimizer            FAILED                UNSTABLE              
 QSCAGR25              ojAlgo                FAILED                TIMEOUT               
-QSCAGR7               CPLEX                 OPTIMAL               6.360427ms            
+QSCAGR7               CPLEX                 OPTIMAL               6.80265ms             
 QSCAGR7               JOptimizer            FAILED                UNSTABLE              
-QSCAGR7               ojAlgo                OPTIMAL               286.265316ms          
-QSCFXM1               CPLEX                 OPTIMAL               21.998367ms           
+QSCAGR7               ojAlgo                FAILED                TIMEOUT               
+QSCFXM1               CPLEX                 OPTIMAL               21.637259ms           
 QSCFXM1               JOptimizer            FAILED                TIMEOUT               
 QSCFXM1               ojAlgo                FAILED                TIMEOUT               
-QSCFXM2               CPLEX                 OPTIMAL               39.129603ms           
+QSCFXM2               CPLEX                 OPTIMAL               37.978018ms           
 QSCFXM2               JOptimizer            FAILED                TIMEOUT               
 QSCFXM2               ojAlgo                FAILED                TIMEOUT               
-QSCORPIO              CPLEX                 OPTIMAL               8.336073ms            
+QSCORPIO              CPLEX                 OPTIMAL               7.989184ms            
 QSCORPIO              JOptimizer            FAILED                TIMEOUT               
 QSCORPIO              ojAlgo                FAILED                UNSTABLE              
-QSCSD1                CPLEX                 OPTIMAL               13.636559ms           
+QSCSD1                CPLEX                 OPTIMAL               13.885404ms           
 QSCSD1                JOptimizer            FAILED                UNSTABLE              
 QSCSD1                ojAlgo                FAILED                TIMEOUT               
-QSCTAP1               CPLEX                 OPTIMAL               13.887819ms           
+QSCTAP1               CPLEX                 OPTIMAL               13.969167ms           
 QSCTAP1               JOptimizer            FAILED                TIMEOUT               
 QSCTAP1               ojAlgo                FAILED                TIMEOUT               
-QSEBA                 CPLEX                 OPTIMAL               13.91456ms            
+QSEBA                 CPLEX                 OPTIMAL               14.172641ms           
 QSEBA                 JOptimizer            FAILED                UNSTABLE              
 QSEBA                 ojAlgo                FAILED                TIMEOUT               
-QSHARE1B              CPLEX                 OPTIMAL               8.918559ms            
+QSHARE1B              CPLEX                 OPTIMAL               8.826261ms            
 QSHARE1B              JOptimizer            FAILED                UNSTABLE              
 QSHARE1B              ojAlgo                FAILED                WRONG                 
-QSHARE2B              CPLEX                 OPTIMAL               6.521689ms            
+QSHARE2B              CPLEX                 OPTIMAL               6.645388ms            
 QSHARE2B              JOptimizer            FAILED                TIMEOUT               
-QSHARE2B              ojAlgo                FAILED                TIMEOUT               
-QSTAIR                CPLEX                 OPTIMAL               23.772423ms           
+QSHARE2B              ojAlgo                OPTIMAL               72.160824ms           
+QSTAIR                CPLEX                 OPTIMAL               24.611438ms           
 QSTAIR                JOptimizer            FAILED                TIMEOUT               
 QSTAIR                ojAlgo                FAILED                TIMEOUT               
-S268                  CPLEX                 OPTIMAL               3.832731ms            
+S268                  CPLEX                 OPTIMAL               3.994377ms            
 S268                  JOptimizer            FAILED                UNSTABLE              
-S268                  ojAlgo                OPTIMAL               0.10202ms             
-TAME                  CPLEX                 OPTIMAL               1.991369ms            
-TAME                  JOptimizer            OPTIMAL               0.079452ms            
-TAME                  ojAlgo                OPTIMAL               0.126084ms            
-ZECEVIC2              CPLEX                 OPTIMAL               2.829569ms            
+S268                  ojAlgo                OPTIMAL               0.124454ms            
+TAME                  CPLEX                 OPTIMAL               1.759193ms            
+TAME                  JOptimizer            OPTIMAL               0.136276ms            
+TAME                  ojAlgo                OPTIMAL               0.160471ms            
+ZECEVIC2              CPLEX                 OPTIMAL               3.410592ms            
 ZECEVIC2              JOptimizer            FAILED                WRONG                 
-ZECEVIC2              ojAlgo                OPTIMAL               0.113269ms            
+ZECEVIC2              ojAlgo                OPTIMAL               0.113373ms            
