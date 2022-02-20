@@ -35,6 +35,7 @@ import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
 import org.ojalgo.joptimizer.SolverJOptimizer;
@@ -255,23 +256,24 @@ public abstract class AbstractBenchmark {
 
     protected static void doBenchmark(final Set<ModelSolverPair> WORK, final Configuration configuration) {
 
-        Set<ModelSolverPair> done = new HashSet<>();
-        Map<ModelSolverPair, ResultsSet> results = new TreeMap<>();
-        Map<ModelSolverPair, FailReason> reasons = new TreeMap<>();
+        Map<ModelSolverPair, ResultsSet> totResults = new TreeMap<>();
+        Map<ModelSolverPair, FailReason> totReasons = new TreeMap<>();
 
         int iterations = 0;
+        Set<ModelSolverPair> iterDone = new HashSet<>();
 
         do {
+
             iterations++;
-            done.clear();
+            iterDone.clear();
 
             BasicLogger.debug();
             BasicLogger.debug("Iteration {} with {} model/solver pairs remaining {}", iterations, WORK.size(), Instant.now());
             BasicLogger.debug("--------------------------------------------------------------------------");
 
             for (ModelSolverPair work : WORK) {
-                ExpressionsBasedModel.clearIntegrations();
 
+                ExpressionsBasedModel.clearIntegrations();
                 Integration<?> integration = INTEGRATIONS.get(work.solver);
                 if (integration != null) {
                     ExpressionsBasedModel.addPreferredSolver(integration);
@@ -284,63 +286,64 @@ public abstract class AbstractBenchmark {
                 try (InputStream input = AbstractBenchmark.class.getResourceAsStream(path)) {
                     ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
-                    ResultsSet resultsSet = results.computeIfAbsent(work, k -> new ResultsSet(configuration.accuracy, 0.01));
+                    ResultsSet mainResults = totResults.computeIfAbsent(work, k -> new ResultsSet(configuration.accuracy, 0.01));
+                    ResultsSet subResults = new ResultsSet(configuration.accuracy, 0.1);
 
-                    TimedResult<Optimisation.Result>[] resultA = (TimedResult<Result>[]) new TimedResult<?>[1];
+                    AtomicBoolean working = new AtomicBoolean(false);
 
                     Thread worker = new Thread(() -> {
-                        ResultsSet subresults = new ResultsSet(configuration.accuracy, 0.1);
-                        while (!subresults.isStable()) {
-                            subresults.add(AbstractBenchmark.meassure(parsedMPS));
+
+                        while (!subResults.isStable()) {
+                            subResults.add(AbstractBenchmark.meassure(parsedMPS));
                         }
-                        resultA[0] = subresults.fastest;
+                        working.set(false);
                     });
 
-                    resultA[0] = null;
+                    working.set(true);
                     long start = System.currentTimeMillis();
                     worker.start();
 
-                    while (resultA[0] == null && System.currentTimeMillis() - start <= configuration.maxWaitTime) {
+                    while (working.get() && System.currentTimeMillis() - start <= configuration.maxWaitTime) {
                         Thread.sleep(1_000L);
                     }
 
                     worker.stop();
+                    working.set(false);
 
-                    TimedResult<Optimisation.Result> result = resultA[0];
-
-                    if (result != null) {
+                    if (subResults.fastest != null) {
 
                         // Have a result
 
-                        resultsSet.add(result);
+                        mainResults.add(subResults.fastest);
 
-                        if (!result.result.getState().isOptimal()) {
+                        if (!subResults.fastest.result.getState().isOptimal()) {
 
-                            BasicLogger.debug(WIDTH, work.model, work.solver, result.result.getState(), FailReason.UNSTABLE);
-                            reasons.put(work, FailReason.UNSTABLE);
-                            done.add(work);
+                            BasicLogger.debug(WIDTH, work.model, work.solver, subResults.fastest.result.getState(), FailReason.UNSTABLE);
+                            totReasons.put(work, FailReason.UNSTABLE);
+                            iterDone.add(work);
 
-                        } else if (expectedValue != null && configuration.accuracy.isDifferent(expectedValue.doubleValue(), result.result.getValue())) {
+                        } else if (expectedValue != null
+                                && configuration.accuracy.isDifferent(expectedValue.doubleValue(), subResults.fastest.result.getValue())) {
 
-                            BasicLogger.debug(WIDTH, work.model, work.solver, FailReason.WRONG, result.result.getValue(), "!= " + expectedValue);
-                            reasons.put(work, FailReason.WRONG);
-                            done.add(work);
+                            BasicLogger.debug(WIDTH, work.model, work.solver, FailReason.WRONG, subResults.fastest.result.getValue(), "!= " + expectedValue);
+                            totReasons.put(work, FailReason.WRONG);
+                            iterDone.add(work);
 
-                        } else if (resultsSet.isStable()) {
+                        } else if (mainResults.isStable()) {
 
                             BasicLogger.debug(WIDTH, work.model, work.solver, "Time stable");
-                            done.add(work);
+                            iterDone.add(work);
                         }
 
                     } else {
 
                         // No result, timeout
 
-                        resultsSet.add(FAILED);
+                        mainResults.add(FAILED);
 
                         BasicLogger.debug(WIDTH, work.model, work.solver, FAILED.result.getState(), FailReason.TIMEOUT);
-                        reasons.put(work, FailReason.TIMEOUT);
-                        done.add(work);
+                        totReasons.put(work, FailReason.TIMEOUT);
+                        iterDone.add(work);
                     }
 
                 } catch (Throwable cause) {
@@ -349,7 +352,7 @@ public abstract class AbstractBenchmark {
                 }
             }
 
-            WORK.removeAll(done);
+            WORK.removeAll(iterDone);
 
         } while (WORK.size() > 0);
 
@@ -360,7 +363,7 @@ public abstract class AbstractBenchmark {
             BasicLogger.debug();
             BasicLogger.debug("Final Results");
             BasicLogger.debug("=====================================================================");
-            for (Entry<ModelSolverPair, ResultsSet> entry : results.entrySet()) {
+            for (Entry<ModelSolverPair, ResultsSet> entry : totResults.entrySet()) {
 
                 ModelSolverPair work = entry.getKey();
                 TimedResult<Result> result = entry.getValue().fastest;
@@ -374,7 +377,7 @@ public abstract class AbstractBenchmark {
 
                 BigDecimal expectedValue = configuration.values.get(model);
 
-                Result referenceResult = results.get(new ModelSolverPair(model, configuration.refeenceSolver)).fastest.result;
+                Result referenceResult = totResults.get(new ModelSolverPair(model, configuration.refeenceSolver)).fastest.result;
 
                 if (expectedValue != null || referenceResult.getState().isOptimal()) {
 
@@ -384,7 +387,7 @@ public abstract class AbstractBenchmark {
                         BasicLogger.debug(WIDTH, model, solver, state, duration);
                         writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
                     } else {
-                        BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.getOrDefault(work, FailReason.WRONG));
+                        BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
                         writer.println(model + "\t" + solver + "\t");
                     }
 
@@ -392,7 +395,7 @@ public abstract class AbstractBenchmark {
                     BasicLogger.debug(WIDTH, model, solver, state, duration);
                     writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
                 } else {
-                    BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, reasons.getOrDefault(work, FailReason.TIMEOUT));
+                    BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
                     writer.println(model + "\t" + solver + "\t");
                 }
             }

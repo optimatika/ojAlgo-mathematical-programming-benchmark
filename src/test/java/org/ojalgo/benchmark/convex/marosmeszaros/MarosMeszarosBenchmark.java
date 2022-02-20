@@ -45,8 +45,11 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
     static {
 
         for (String mod : MODELS) {
-            for (String sol : SOLVERS) {
-                WORK.add(new ModelSolverPair(mod, sol));
+            ModelInfo modelInfo = CuteMarosMeszarosCase.getModelInfo(mod);
+            if (modelInfo.isPureQP()) {
+                for (String sol : SOLVERS) {
+                    WORK.add(new ModelSolverPair(mod, sol));
+                }
             }
         }
     }
@@ -58,7 +61,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
         configuration.maxWaitTime = 60_000L;
 
-        for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.MODEL_INFO.entrySet()) {
+        for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);
         }
 
