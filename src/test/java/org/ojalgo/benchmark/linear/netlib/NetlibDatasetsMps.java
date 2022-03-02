@@ -203,7 +203,7 @@ public class NetlibDatasetsMps {
 
     private static final boolean DEBUG = true;
 
-    private static final NumberContext PRECISION = new NumberContext(7, 6);
+    private static final NumberContext PRECISION = NumberContext.of(7,6);
     private static final String SOLUTION_NOT_VALID = "Solution not valid!";
 
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
