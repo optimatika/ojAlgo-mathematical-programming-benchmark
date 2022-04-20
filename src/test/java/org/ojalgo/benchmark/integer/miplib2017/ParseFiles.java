@@ -23,6 +23,9 @@ package org.ojalgo.benchmark.integer.miplib2017;
 
 import org.ojalgo.optimisation.Optimisation;
 
+/**
+ * Parse all the files
+ */
 public final class ParseFiles extends MIPLIB2017 {
 
     public static void main(final String[] args) {

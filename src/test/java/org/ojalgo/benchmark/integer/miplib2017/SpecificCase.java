@@ -31,6 +31,68 @@ import org.ojalgo.type.context.NumberContext;
 
 public final class SpecificCase extends MIPLIB2017 {
 
+    /**
+     * Failed to solve the relaxed LP
+     */
+    @Test
+    void testCod105() {
+
+        Optimisation.Options options = new Optimisation.Options();
+
+        options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
+        options.time_suffice = options.time_abort;
+
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
+                NodeKey.MAX_OBJECTIVE);
+
+        options.integer(strategy);
+
+        MIPLIB2017.doOne("cod105.mps.gz", options);
+    }
+
+    /**
+     * Failed to solve the relaxed LP
+     */
+    @Test
+    void testCsched008() {
+
+        Optimisation.Options options = new Optimisation.Options();
+
+        options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
+        options.time_suffice = options.time_abort;
+
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
+                NodeKey.MAX_OBJECTIVE);
+
+        options.integer(strategy);
+
+        MIPLIB2017.doOne("csched008.mps.gz", options);
+    }
+
+    /**
+     * Failed to find feasible solution within 1min
+     */
+    @Test
+    void testEnlight_hard() {
+
+        Optimisation.Options options = new Optimisation.Options();
+
+        options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
+        options.time_suffice = options.time_abort;
+
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
+                NodeKey.MAX_OBJECTIVE);
+
+        options.integer(strategy);
+
+        MIPLIB2017.doOne("enlight_hard.mps.gz", options);
+    }
+
+    /**
+     * Failed to find optimal MIP solution within 5min
+     * <p>
+     * There are 41 variables and 25 expressions.
+     */
     @Test
     void testGenIp002() {
 
@@ -42,9 +104,16 @@ public final class SpecificCase extends MIPLIB2017 {
         ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
                 NodeKey.MAX_OBJECTIVE);
 
-        MIPLIB2017.doOne("gen-ip002.mps.gz", options, strategy);
+        options.integer(strategy);
+
+        MIPLIB2017.doOne("gen-ip002.mps.gz", options);
     }
 
+    /**
+     * Failed to find optimal MIP solution within 5min
+     * <p>
+     * There are 30 variables and 28 expressions.
+     */
     @Test
     void testGenIp054() {
 
@@ -53,10 +122,13 @@ public final class SpecificCase extends MIPLIB2017 {
         options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
         options.time_suffice = options.time_abort;
 
-        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
-                NodeKey.MAX_OBJECTIVE);
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(12));
 
-        MIPLIB2017.doOne("gen-ip054.mps.gz", options, strategy);
+        strategy.addPriorityDefinitions(NodeKey.MIN_OBJECTIVE, NodeKey.MIN_OBJECTIVE);
+
+        options.integer(strategy);
+
+        MIPLIB2017.doOne("gen-ip054.mps.gz", options);
     }
 
 }

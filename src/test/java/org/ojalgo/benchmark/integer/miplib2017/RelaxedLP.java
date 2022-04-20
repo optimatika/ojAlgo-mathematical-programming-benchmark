@@ -24,6 +24,9 @@ package org.ojalgo.benchmark.integer.miplib2017;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.type.CalendarDateUnit;
 
+/**
+ * Solve the relaxed LP within 1min.
+ */
 public final class RelaxedLP extends MIPLIB2017 {
 
     public static void main(final String[] args) {

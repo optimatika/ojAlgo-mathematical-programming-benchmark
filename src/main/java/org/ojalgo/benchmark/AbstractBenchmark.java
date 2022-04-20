@@ -276,7 +276,7 @@ public abstract class AbstractBenchmark {
                 ExpressionsBasedModel.clearIntegrations();
                 Integration<?> integration = INTEGRATIONS.get(work.solver);
                 if (integration != null) {
-                    ExpressionsBasedModel.addPreferredSolver(integration);
+                    ExpressionsBasedModel.addIntegration(integration);
                 }
 
                 String path = configuration.path(work.model);
@@ -414,10 +414,12 @@ public abstract class AbstractBenchmark {
 
         Optimisation.Result result = null;
 
-        if (model.isMinimisation()) {
-            result = model.minimise();
-        } else {
+        boolean maximisation = model.getOptimisationSense() == Optimisation.Sense.MAX;
+
+        if (maximisation) {
             result = model.maximise();
+        } else {
+            result = model.minimise();
         }
 
         return result;

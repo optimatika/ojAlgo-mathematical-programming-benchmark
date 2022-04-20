@@ -24,13 +24,10 @@ package org.ojalgo.benchmark.integer.miplib2017;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.type.CalendarDateUnit;
 
+/**
+ * Find optimal MIP solution within 5min.
+ */
 public final class OptimalMIP extends MIPLIB2017 {
-
-    static {
-
-        // STRATEGIES.put("gen-ip002.mps.gz", IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(3)));
-
-    }
 
     public static void main(final String[] args) {
 

@@ -203,7 +203,7 @@ public class NetlibDatasetsMps {
 
     private static final boolean DEBUG = true;
 
-    private static final NumberContext PRECISION = NumberContext.of(7,6);
+    private static final NumberContext PRECISION = NumberContext.of(7, 6);
     private static final String SOLUTION_NOT_VALID = "Solution not valid!";
 
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
@@ -255,7 +255,7 @@ public class NetlibDatasetsMps {
         ExpressionsBasedModel.clearIntegrations();
         Integration<?> integration = INTEGRATIONS.get(solver);
         if (integration != null) {
-            ExpressionsBasedModel.addPreferredSolver(integration);
+            ExpressionsBasedModel.addIntegration(integration);
         }
 
         //        final Result actual = parsedMPS.solve();
@@ -306,10 +306,12 @@ public class NetlibDatasetsMps {
 
         Optimisation.Result result = null;
 
-        if (parsedMPS.isMinimisation()) {
-            result = parsedMPS.minimise();
-        } else {
+        boolean maximisation = parsedMPS.getOptimisationSense() == Optimisation.Sense.MAX;
+
+        if (maximisation) {
             result = parsedMPS.maximise();
+        } else {
+            result = parsedMPS.minimise();
         }
 
         return result;

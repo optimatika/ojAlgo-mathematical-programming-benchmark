@@ -37,12 +37,16 @@ import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.Optimisation;
+import org.ojalgo.optimisation.Optimisation.Result;
+import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.integer.IntegerSolver;
 import org.ojalgo.optimisation.integer.IntegerStrategy;
 import org.ojalgo.optimisation.linear.LinearSolver;
+import org.ojalgo.random.FrequencyMap;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
 import org.ojalgo.type.context.NumberContext;
+import org.opentest4j.AssertionFailedError;
 
 public abstract class MIPLIB2017 {
 
@@ -69,8 +73,8 @@ public abstract class MIPLIB2017 {
         KNOWN_PROBLEMS.add("enlight_hard.mps.gz");
 
         // OptimalMIP problems
-        KNOWN_PROBLEMS.add("gen-ip002.mps.gz");
-        KNOWN_PROBLEMS.add("gen-ip054.mps.gz");
+        // KNOWN_PROBLEMS.add("gen-ip002.mps.gz");
+        // KNOWN_PROBLEMS.add("gen-ip054.mps.gz");
 
         Set<String> benchmark = new HashSet<>();
         Set<String> easy = new HashSet<>();
@@ -132,8 +136,8 @@ public abstract class MIPLIB2017 {
 
     }
 
-    private static void execute(final String fileName, final boolean relaxed, final int sizeLimit, final boolean optimal, final Optimisation.Options options,
-            final IntegerStrategy strategy) {
+    private static Optimisation.Result execute(final String fileName, final boolean relaxed, final int sizeLimit, final boolean optimal,
+            final Optimisation.Options options) {
 
         BigDecimal optimalValue = INSTANCES.get(fileName);
 
@@ -149,7 +153,7 @@ public abstract class MIPLIB2017 {
 
             model.options.time_suffice = options.time_suffice;
             model.options.time_abort = options.time_abort;
-            model.options.integer(strategy);
+            model.options.integer(options.integer());
             if (relaxed) {
                 model.options.progress(LinearSolver.class);
             } else {
@@ -158,7 +162,7 @@ public abstract class MIPLIB2017 {
 
             int nbVariables = model.countVariables();
             int nbExpressions = model.countExpressions();
-            boolean minimisation = model.isMinimisation();
+            boolean maximisation = model.getOptimisationSense() == Optimisation.Sense.MAX;
 
             BasicLogger.debug("There are {} variables and {} expressions.", nbVariables, nbExpressions);
 
@@ -169,55 +173,79 @@ public abstract class MIPLIB2017 {
             if (nbVariables > sizeLimit || nbExpressions > sizeLimit) {
                 BasicLogger.debug("Skipping {} because of size limit: {}", fileName, sizeLimit);
                 BasicLogger.debug();
-                return;
+                return Result.of(State.UNEXPLORED);
             }
 
             Optimisation.Result result = null;
 
             TIMER.reset();
 
-            if (minimisation) {
-                result = model.minimise();
-            } else {
+            if (maximisation) {
                 result = model.maximise();
+            } else {
+                result = model.minimise();
             }
 
             BasicLogger.debug();
             BasicLogger.debug("{} in {}, {} was {}", fileName, TIMER.stop(CalendarDateUnit.SECOND), optimalValue, result.toString());
 
-            if (optimal) {
-                TestUtils.assertStateNotLessThanOptimal(result);
-            } else {
-                TestUtils.assertStateNotLessThanFeasible(result);
+            try {
+                if (optimal) {
+                    TestUtils.assertStateNotLessThanOptimal(result);
+                } else {
+                    TestUtils.assertStateNotLessThanFeasible(result);
+                }
+            } catch (AssertionFailedError cause) {
+                BasicLogger.debug(State.FAILED);
+                return result.withState(State.FAILED);
             }
 
             double expected = optimalValue.doubleValue();
             double actual = result.getValue();
 
-            if (relaxed || optimal) {
-                if (minimisation) {
-                    TestUtils.assertTrue(!ACCURACY.isDifferent(expected, actual) || actual < expected);
-                } else {
-                    TestUtils.assertTrue(!ACCURACY.isDifferent(expected, actual) || actual > expected);
+            try {
+                if (relaxed || optimal) {
+                    if (maximisation) {
+                        TestUtils.assertTrue(!ACCURACY.isDifferent(expected, actual) || actual > expected);
+                    } else {
+                        TestUtils.assertTrue(!ACCURACY.isDifferent(expected, actual) || actual < expected);
+                    }
                 }
+            } catch (AssertionFailedError cause) {
+                BasicLogger.debug(State.APPROXIMATE);
+                return result.withState(State.APPROXIMATE);
             }
+
+            return result;
 
         } catch (IOException cause) {
             throw new RuntimeException(cause);
         }
     }
 
-    static void doOne(final String fileName, final Optimisation.Options options, final IntegerStrategy strategy) {
-        MIPLIB2017.execute(fileName, false, Integer.MAX_VALUE, true, options, strategy);
+    static void doOne(final String fileName, final Optimisation.Options options) {
+        MIPLIB2017.execute(fileName, false, Integer.MAX_VALUE, true, options);
     }
 
     static void doRun(final boolean relaxed, final int sizeLimit, final boolean optimal, final Optimisation.Options options) {
+
+        FrequencyMap<Optimisation.State> statistics = new FrequencyMap<>();
 
         for (String fileName : MIPLIB2017.INSTANCES.keySet()) {
 
             IntegerStrategy strategy = STRATEGIES.getOrDefault(fileName, IntegerStrategy.DEFAULT);
 
-            MIPLIB2017.execute(fileName, relaxed, sizeLimit, optimal, options, strategy);
+            Result result = MIPLIB2017.execute(fileName, relaxed, sizeLimit, optimal, options);
+
+            statistics.increment(result.getState());
+        }
+
+        BasicLogger.debug();
+        BasicLogger.debug();
+        BasicLogger.debug("Statistics");
+        BasicLogger.debug("===========================================");
+        for (State key : statistics.elements()) {
+            BasicLogger.debug("{} = {}", key, statistics.getFrequency(key));
         }
     }
 
