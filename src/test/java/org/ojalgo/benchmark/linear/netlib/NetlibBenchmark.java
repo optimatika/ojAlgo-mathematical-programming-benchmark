@@ -28,12 +28,12 @@ import org.ojalgo.benchmark.AbstractBenchmark;
 
 public final class NetlibBenchmark extends AbstractBenchmark {
 
-    static final String[] MODELS = new String[] { "VTP-BASE", "TUFF", "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SEBA", "SCTAP1", "SCSD1", "SCORPION",
-            "SCFXM2", "SCFXM1", "SCAGR7", "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "RECIPELP", "PILOT4", "LOTFI", "KB2", "ISRAEL", "GROW7", "GROW22",
-            "GROW15", "FORPLAN", "FINNIS", "FFFFF800", "ETAMACRO", "E226", "DEGEN2", "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD",
-            "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" };
+    static final String[] MODELS = { "VTP-BASE", "TUFF", "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SEBA", "SCTAP1", "SCSD1", "SCORPION", "SCFXM2", "SCFXM1",
+            "SCAGR7", "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "RECIPELP", "PILOT4", "LOTFI", "KB2", "ISRAEL", "GROW7", "GROW22", "GROW15", "FORPLAN",
+            "FINNIS", "FFFFF800", "ETAMACRO", "E226", "DEGEN2", "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2",
+            "AGG", "AFIRO", "ADLITTLE" };
 
-    static final String[] SOLVERS = new String[] { Contender.CPLEX, Contender.OJALGO, Contender.ACM };
+    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO, Contender.ACM, Contender.HIPPARCHUS };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 

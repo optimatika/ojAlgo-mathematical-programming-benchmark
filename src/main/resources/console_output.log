@@ -1,363 +1,399 @@
 
-Iteration 1 with 135 model/solver pairs remaining 2022-02-21T12:36:48.927Z
+Iteration 1 with 180 model/solver pairs remaining 2022-09-13T13:13:36.955362Z
 --------------------------------------------------------------------------
 SCSD1                 ACM                   UNBOUNDED             UNSTABLE              
-FORPLAN               ACM                   INFEASIBLE            UNSTABLE              
-SCAGR25               ACM                   INFEASIBLE            UNSTABLE              
+FORPLAN               ACM                   INVALID               UNSTABLE              
+CAPRI                 Hipparchus            INFEASIBLE            UNSTABLE              
+SCAGR25               ACM                   FAILED                TIMEOUT               
 ETAMACRO              ACM                   FAILED                TIMEOUT               
 SCFXM2                ACM                   FAILED                TIMEOUT               
+BOEING1               Hipparchus            UNBOUNDED             UNSTABLE              
 VTP-BASE              ACM                   INFEASIBLE            UNSTABLE              
+STAIR                 Hipparchus            UNBOUNDED             UNSTABLE              
+SCFXM1                Hipparchus            FAILED                TIMEOUT               
 FFFFF800              ACM                   FAILED                TIMEOUT               
 BANDM                 ACM                   FAILED                TIMEOUT               
-SCTAP1                ACM                   INVALID               UNSTABLE              
-SCFXM1                ACM                   INFEASIBLE            UNSTABLE              
-STAIR                 ACM                   INVALID               UNSTABLE              
+FINNIS                Hipparchus            FAILED                TIMEOUT               
+SCTAP1                ACM                   FAILED                TIMEOUT               
+BRANDY                Hipparchus            FAILED                TIMEOUT               
+SCFXM1                ACM                   FAILED                TIMEOUT               
+STAIR                 ACM                   UNBOUNDED             UNSTABLE              
 BORE3D                ACM                   FAILED                TIMEOUT               
+E226                  ACM                   FAILED                TIMEOUT               
 FINNIS                ACM                   FAILED                TIMEOUT               
+FFFFF800              Hipparchus            FAILED                TIMEOUT               
+SCAGR25               Hipparchus            FAILED                TIMEOUT               
 DEGEN2                ACM                   FAILED                TIMEOUT               
+BORE3D                Hipparchus            FAILED                TIMEOUT               
 TUFF                  ACM                   FAILED                TIMEOUT               
+GROW15                Hipparchus            FAILED                TIMEOUT               
 TUFF                  ojAlgo                FAILED                TIMEOUT               
 SEBA                  ACM                   FAILED                TIMEOUT               
+GROW7                 Hipparchus            FAILED                TIMEOUT               
 BRANDY                ACM                   FAILED                TIMEOUT               
 GROW22                ACM                   FAILED                TIMEOUT               
-BOEING1               ACM                   FAILED                TIMEOUT               
+SEBA                  Hipparchus            FAILED                TIMEOUT               
+BOEING1               ACM                   UNBOUNDED             UNSTABLE              
 PILOT4                ACM                   UNBOUNDED             UNSTABLE              
+TUFF                  Hipparchus            FAILED                TIMEOUT               
+BANDM                 Hipparchus            FAILED                TIMEOUT               
 GROW15                ACM                   FAILED                TIMEOUT               
-BOEING2               ACM                   UNBOUNDED             UNSTABLE              
-CAPRI                 ACM                   INVALID               UNSTABLE              
+SCFXM2                Hipparchus            FAILED                TIMEOUT               
+BOEING2               ACM                   INVALID               UNSTABLE              
+CAPRI                 ACM                   UNBOUNDED             UNSTABLE              
+PILOT4                Hipparchus            UNBOUNDED             UNSTABLE              
 GROW7                 ACM                   FAILED                TIMEOUT               
+BOEING2               Hipparchus            UNBOUNDED             UNSTABLE              
 
-Iteration 2 with 110 model/solver pairs remaining 2022-02-21T13:02:12.338Z
+Iteration 2 with 137 model/solver pairs remaining 2022-09-13T13:50:58.030186Z
 --------------------------------------------------------------------------
 
-Iteration 3 with 110 model/solver pairs remaining 2022-02-21T13:04:22.917Z
+Iteration 3 with 137 model/solver pairs remaining 2022-09-13T13:53:56.881788Z
 --------------------------------------------------------------------------
+LOTFI                 Hipparchus            Time stable           
 ISRAEL                ACM                   Time stable           
+BORE3D                CPLEX                 Time stable           
 BEACONFD              CPLEX                 Time stable           
-ISRAEL                ojAlgo                Time stable           
+FORPLAN               ojAlgo                Time stable           
 CAPRI                 CPLEX                 Time stable           
+SCFXM2                ojAlgo                Time stable           
 SCTAP1                CPLEX                 Time stable           
 BOEING1               CPLEX                 Time stable           
-SC50B                 CPLEX                 Time stable           
+BEACONFD              Hipparchus            Time stable           
 VTP-BASE              ojAlgo                Time stable           
+GROW22                CPLEX                 Time stable           
 KB2                   CPLEX                 Time stable           
-SHARE1B               CPLEX                 Time stable           
+SC50B                 Hipparchus            Time stable           
+VTP-BASE              Hipparchus            Time stable           
+BOEING2               ojAlgo                Time stable           
 AGG2                  ojAlgo                Time stable           
-CAPRI                 ojAlgo                Time stable           
+SC105                 Hipparchus            Time stable           
 SC105                 ACM                   Time stable           
 RECIPELP              CPLEX                 Time stable           
 BLEND                 ojAlgo                Time stable           
 BEACONFD              ojAlgo                Time stable           
 ISRAEL                CPLEX                 Time stable           
-STAIR                 ojAlgo                Time stable           
+SC50B                 ACM                   Time stable           
+BOEING2               CPLEX                 Time stable           
+SCORPION              CPLEX                 Time stable           
+SCFXM2                CPLEX                 Time stable           
+ETAMACRO              CPLEX                 Time stable           
 BOEING1               ojAlgo                Time stable           
 AGG3                  ojAlgo                Time stable           
+ADLITTLE              Hipparchus            Time stable           
+AGG3                  ACM                   Time stable           
 SC50A                 ojAlgo                Time stable           
 DEGEN2                CPLEX                 Time stable           
+BANDM                 CPLEX                 Time stable           
 SC50A                 ACM                   Time stable           
 E226                  ojAlgo                Time stable           
+BANDM                 ojAlgo                Time stable           
 SC105                 ojAlgo                Time stable           
+AGG2                  CPLEX                 Time stable           
 RECIPELP              ojAlgo                Time stable           
 FINNIS                CPLEX                 Time stable           
 SC50B                 ojAlgo                Time stable           
 SC105                 CPLEX                 Time stable           
-VTP-BASE              CPLEX                 Time stable           
+SCFXM1                ojAlgo                Time stable           
 BRANDY                CPLEX                 Time stable           
+E226                  CPLEX                 Time stable           
 SC50A                 CPLEX                 Time stable           
 GROW15                CPLEX                 Time stable           
+AGG3                  Hipparchus            Time stable           
 AGG                   CPLEX                 Time stable           
+GROW7                 CPLEX                 Time stable           
 AGG3                  CPLEX                 Time stable           
-SEBA                  ojAlgo                Time stable           
 SHARE2B               ojAlgo                Time stable           
-SC205                 CPLEX                 Time stable           
+ADLITTLE              ACM                   Time stable           
 ADLITTLE              ojAlgo                Time stable           
+BRANDY                ojAlgo                Time stable           
 AFIRO                 ACM                   Time stable           
 SCORPION              ojAlgo                Time stable           
+GROW7                 ojAlgo                Time stable           
+BLEND                 Hipparchus            Time stable           
+SHARE2B               Hipparchus            Time stable           
+AFIRO                 Hipparchus            Time stable           
+SHARE1B               ACM                   Time stable           
 AGG                   ojAlgo                Time stable           
 KB2                   ojAlgo                Time stable           
-FFFFF800              CPLEX                 Time stable           
+PILOT4                CPLEX                 Time stable           
+STOCFOR1              Hipparchus            Time stable           
 STOCFOR1              ojAlgo                Time stable           
 SC205                 ojAlgo                Time stable           
+SCAGR7                ACM                   Time stable           
 ADLITTLE              CPLEX                 Time stable           
 SEBA                  CPLEX                 Time stable           
 SCSD1                 CPLEX                 Time stable           
+SCSD1                 Hipparchus            Time stable           
+FORPLAN               CPLEX                 Time stable           
+TUFF                  CPLEX                 Time stable           
 LOTFI                 ojAlgo                Time stable           
-SCAGR7                ojAlgo                Time stable           
+STOCFOR1              ACM                   Time stable           
 SHARE2B               CPLEX                 Time stable           
 SCORPION              ACM                   Time stable           
 SCTAP1                ojAlgo                Time stable           
 BLEND                 CPLEX                 Time stable           
 AFIRO                 ojAlgo                Time stable           
+RECIPELP              Hipparchus            Time stable           
+KB2                   Hipparchus            Time stable           
 AFIRO                 CPLEX                 Time stable           
+SHARE1B               ojAlgo                Time stable           
+BEACONFD              ACM                   Time stable           
+KB2                   ACM                   Time stable           
 LOTFI                 CPLEX                 Time stable           
 SCAGR7                CPLEX                 Time stable           
 STOCFOR1              CPLEX                 Time stable           
+SCORPION              Hipparchus            Time stable           
 
-Iteration 4 with 50 model/solver pairs remaining 2022-02-21T13:06:38.507Z
+Iteration 4 with 43 model/solver pairs remaining 2022-09-13T13:56:55.856384Z
 --------------------------------------------------------------------------
+ISRAEL                ojAlgo                Time stable           
 SCSD1                 ojAlgo                Time stable           
-RECIPELP              ACM                   Time stable           
-SC50B                 ACM                   Time stable           
-BOEING2               CPLEX                 Time stable           
-SCORPION              CPLEX                 Time stable           
-AGG3                  ACM                   Time stable           
-BANDM                 CPLEX                 Time stable           
-E226                  ACM                   Time stable           
-AGG2                  ACM                   Time stable           
-E226                  CPLEX                 Time stable           
-GROW7                 CPLEX                 Time stable           
-GROW7                 ojAlgo                Time stable           
-SCAGR7                ACM                   Time stable           
-LOTFI                 ACM                   Time stable           
-FORPLAN               CPLEX                 Time stable           
-TUFF                  CPLEX                 Time stable           
-STOCFOR1              ACM                   Time stable           
-BLEND                 ACM                   Time stable           
-GROW22                ojAlgo                Time stable           
-
-Iteration 5 with 31 model/solver pairs remaining 2022-02-21T13:07:45.818Z
---------------------------------------------------------------------------
-BORE3D                CPLEX                 Time stable           
-FORPLAN               ojAlgo                Time stable           
+SCAGR25               ojAlgo                Time stable           
+GROW22                Hipparchus            Time stable           
 SCFXM1                CPLEX                 Time stable           
+SHARE1B               CPLEX                 Time stable           
+STAIR                 ojAlgo                Time stable           
+SCAGR7                Hipparchus            Time stable           
+DEGEN2                Hipparchus            Time stable           
+FINNIS                ojAlgo                Time stable           
+SHARE1B               Hipparchus            Time stable           
+AGG2                  ACM                   Time stable           
+VTP-BASE              CPLEX                 Time stable           
+AGG                   ACM                   Time stable           
+SEBA                  ojAlgo                Time stable           
+SC205                 CPLEX                 Time stable           
+DEGEN2                ojAlgo                Time stable           
+AGG2                  Hipparchus            Time stable           
+FFFFF800              CPLEX                 Time stable           
+LOTFI                 ACM                   Time stable           
+ISRAEL                Hipparchus            Time stable           
+SC205                 ACM                   Time stable           
+SCAGR7                ojAlgo                Time stable           
+BLEND                 ACM                   Time stable           
+
+Iteration 5 with 19 model/solver pairs remaining 2022-09-13T13:58:14.499085Z
+--------------------------------------------------------------------------
+SCTAP1                Hipparchus            Time stable           
+STAIR                 CPLEX                 Time stable           
+SC50B                 CPLEX                 Time stable           
+SCAGR25               CPLEX                 Time stable           
+AGG                   Hipparchus            Time stable           
+
+Iteration 6 with 14 model/solver pairs remaining 2022-09-13T13:58:44.783168Z
+--------------------------------------------------------------------------
+CAPRI                 ojAlgo                Time stable           
+SC50A                 Hipparchus            Time stable           
 PILOT4                ojAlgo                Time stable           
 GROW15                ojAlgo                Time stable           
+SC205                 Hipparchus            Time stable           
+ETAMACRO              Hipparchus            Time stable           
 BORE3D                ojAlgo                Time stable           
-
-Iteration 6 with 25 model/solver pairs remaining 2022-02-21T13:08:18.981Z
---------------------------------------------------------------------------
-SCAGR25               ojAlgo                Time stable           
-SCAGR25               CPLEX                 Time stable           
-ETAMACRO              CPLEX                 Time stable           
-AGG2                  CPLEX                 Time stable           
-AGG                   ACM                   Time stable           
-SC205                 ACM                   Time stable           
-
-Iteration 7 with 19 model/solver pairs remaining 2022-02-21T13:08:45.107Z
---------------------------------------------------------------------------
-STAIR                 CPLEX                 Time stable           
-SCFXM2                CPLEX                 Time stable           
-DEGEN2                ojAlgo                Time stable           
-BRANDY                ojAlgo                Time stable           
-PILOT4                CPLEX                 Time stable           
-KB2                   ACM                   Time stable           
-
-Iteration 8 with 13 model/solver pairs remaining 2022-02-21T13:09:05.208Z
---------------------------------------------------------------------------
-SCFXM1                ojAlgo                Time stable           
-BEACONFD              ACM                   Time stable           
-
-Iteration 9 with 11 model/solver pairs remaining 2022-02-21T13:09:19.285Z
---------------------------------------------------------------------------
-
-Iteration 10 with 11 model/solver pairs remaining 2022-02-21T13:09:31.355Z
---------------------------------------------------------------------------
-BANDM                 ojAlgo                Time stable           
-
-Iteration 11 with 10 model/solver pairs remaining 2022-02-21T13:09:43.411Z
---------------------------------------------------------------------------
-BOEING2               ojAlgo                Time stable           
-SHARE1B               ojAlgo                Time stable           
-
-Iteration 12 with 8 model/solver pairs remaining 2022-02-21T13:09:54.463Z
---------------------------------------------------------------------------
-
-Iteration 13 with 8 model/solver pairs remaining 2022-02-21T13:10:03.508Z
---------------------------------------------------------------------------
-FINNIS                ojAlgo                Time stable           
 SHARE2B               ACM                   Time stable           
 
-Iteration 14 with 6 model/solver pairs remaining 2022-02-21T13:10:12.550Z
---------------------------------------------------------------------------
-
-Iteration 15 with 6 model/solver pairs remaining 2022-02-21T13:10:19.586Z
---------------------------------------------------------------------------
-ADLITTLE              ACM                   Time stable           
-
-Iteration 16 with 5 model/solver pairs remaining 2022-02-21T13:10:26.614Z
---------------------------------------------------------------------------
-SCFXM2                ojAlgo                Time stable           
-
-Iteration 17 with 4 model/solver pairs remaining 2022-02-21T13:10:32.656Z
+Iteration 7 with 6 model/solver pairs remaining 2022-09-13T13:59:08.975529Z
 --------------------------------------------------------------------------
 ETAMACRO              ojAlgo                Time stable           
-SHARE1B               ACM                   Time stable           
+E226                  Hipparchus            Time stable           
+GROW22                ojAlgo                Time stable           
 
-Iteration 18 with 2 model/solver pairs remaining 2022-02-21T13:10:37.678Z
+Iteration 8 with 3 model/solver pairs remaining 2022-09-13T13:59:20.053840Z
+--------------------------------------------------------------------------
+RECIPELP              ACM                   Time stable           
+FORPLAN               Hipparchus            Time stable           
+
+Iteration 9 with 1 model/solver pairs remaining 2022-09-13T13:59:23.080359Z
 --------------------------------------------------------------------------
 
-Iteration 19 with 2 model/solver pairs remaining 2022-02-21T13:10:39.696Z
+Iteration 10 with 1 model/solver pairs remaining 2022-09-13T13:59:24.095198Z
 --------------------------------------------------------------------------
 
-Iteration 20 with 2 model/solver pairs remaining 2022-02-21T13:10:41.709Z
+Iteration 11 with 1 model/solver pairs remaining 2022-09-13T13:59:25.109417Z
 --------------------------------------------------------------------------
 
-Iteration 21 with 2 model/solver pairs remaining 2022-02-21T13:10:43.720Z
---------------------------------------------------------------------------
-GROW22                CPLEX                 Time stable           
-
-Iteration 22 with 1 model/solver pairs remaining 2022-02-21T13:10:45.738Z
---------------------------------------------------------------------------
-
-Iteration 23 with 1 model/solver pairs remaining 2022-02-21T13:10:46.746Z
---------------------------------------------------------------------------
-
-Iteration 24 with 1 model/solver pairs remaining 2022-02-21T13:10:47.755Z
---------------------------------------------------------------------------
-
-Iteration 25 with 1 model/solver pairs remaining 2022-02-21T13:10:48.760Z
---------------------------------------------------------------------------
-
-Iteration 26 with 1 model/solver pairs remaining 2022-02-21T13:10:49.769Z
---------------------------------------------------------------------------
-
-Iteration 27 with 1 model/solver pairs remaining 2022-02-21T13:10:50.774Z
---------------------------------------------------------------------------
-
-Iteration 28 with 1 model/solver pairs remaining 2022-02-21T13:10:51.779Z
---------------------------------------------------------------------------
-
-Iteration 29 with 1 model/solver pairs remaining 2022-02-21T13:10:52.788Z
---------------------------------------------------------------------------
-
-Iteration 30 with 1 model/solver pairs remaining 2022-02-21T13:10:53.798Z
+Iteration 12 with 1 model/solver pairs remaining 2022-09-13T13:59:26.121586Z
 --------------------------------------------------------------------------
 FFFFF800              ojAlgo                Time stable           
 
 Final Results
 =====================================================================
-ADLITTLE              ACM                   OPTIMAL               24.40253ms            
-ADLITTLE              CPLEX                 OPTIMAL               2.031104ms            
-ADLITTLE              ojAlgo                OPTIMAL               1.054404ms            
-AFIRO                 ACM                   OPTIMAL               1.90258ms             
-AFIRO                 CPLEX                 OPTIMAL               0.774987ms            
-AFIRO                 ojAlgo                OPTIMAL               0.265833ms            
-AGG                   ACM                   OPTIMAL               202.008793ms          
-AGG                   CPLEX                 OPTIMAL               4.644614ms            
-AGG                   ojAlgo                OPTIMAL               4.314918ms            
-AGG2                  ACM                   OPTIMAL               1003.03178ms          
-AGG2                  CPLEX                 OPTIMAL               6.620704ms            
-AGG2                  ojAlgo                OPTIMAL               5.598157ms            
-AGG3                  ACM                   OPTIMAL               1049.772191ms         
-AGG3                  CPLEX                 OPTIMAL               6.68621ms             
-AGG3                  ojAlgo                OPTIMAL               6.683239ms            
+ADLITTLE              ACM                   OPTIMAL               21.644625ms           
+ADLITTLE              CPLEX                 OPTIMAL               2.868451ms            
+ADLITTLE              Hipparchus            OPTIMAL               5.260293ms            
+ADLITTLE              ojAlgo                OPTIMAL               1.091382ms            
+AFIRO                 ACM                   OPTIMAL               1.29884ms             
+AFIRO                 CPLEX                 OPTIMAL               1.391055ms            
+AFIRO                 Hipparchus            OPTIMAL               0.823148ms            
+AFIRO                 ojAlgo                OPTIMAL               0.301112ms            
+AGG                   ACM                   OPTIMAL               167.000546ms          
+AGG                   CPLEX                 OPTIMAL               7.726842ms            
+AGG                   Hipparchus            OPTIMAL               34.962631ms           
+AGG                   ojAlgo                OPTIMAL               5.718714ms            
+AGG2                  ACM                   OPTIMAL               813.284222ms          
+AGG2                  CPLEX                 OPTIMAL               11.74726ms            
+AGG2                  Hipparchus            OPTIMAL               96.809732ms           
+AGG2                  ojAlgo                OPTIMAL               8.171202ms            
+AGG3                  ACM                   OPTIMAL               820.1127ms            
+AGG3                  CPLEX                 OPTIMAL               11.864168ms           
+AGG3                  Hipparchus            OPTIMAL               104.029883ms          
+AGG3                  ojAlgo                OPTIMAL               9.846324ms            
 BANDM                 ACM                   FAILED                TIMEOUT               
-BANDM                 CPLEX                 OPTIMAL               9.297724ms            
-BANDM                 ojAlgo                OPTIMAL               18.997663ms           
-BEACONFD              ACM                   OPTIMAL               226.700469ms          
-BEACONFD              CPLEX                 OPTIMAL               3.562922ms            
-BEACONFD              ojAlgo                OPTIMAL               2.276825ms            
-BLEND                 ACM                   OPTIMAL               23.515548ms           
-BLEND                 CPLEX                 OPTIMAL               1.663466ms            
-BLEND                 ojAlgo                OPTIMAL               0.950342ms            
-BOEING1               ACM                   FAILED                TIMEOUT               
-BOEING1               CPLEX                 OPTIMAL               11.606891ms           
-BOEING1               ojAlgo                OPTIMAL               86.987504ms           
+BANDM                 CPLEX                 OPTIMAL               13.386505ms           
+BANDM                 Hipparchus            FAILED                TIMEOUT               
+BANDM                 ojAlgo                OPTIMAL               31.851977ms           
+BEACONFD              ACM                   OPTIMAL               191.590583ms          
+BEACONFD              CPLEX                 OPTIMAL               5.000415ms            
+BEACONFD              Hipparchus            OPTIMAL               37.023864ms           
+BEACONFD              ojAlgo                OPTIMAL               3.074742ms            
+BLEND                 ACM                   OPTIMAL               26.416073ms           
+BLEND                 CPLEX                 OPTIMAL               2.792674ms            
+BLEND                 Hipparchus            OPTIMAL               7.306609ms            
+BLEND                 ojAlgo                OPTIMAL               1.005236ms            
+BOEING1               ACM                   FAILED                UNSTABLE              
+BOEING1               CPLEX                 OPTIMAL               17.468899ms           
+BOEING1               Hipparchus            FAILED                UNSTABLE              
+BOEING1               ojAlgo                OPTIMAL               141.358322ms          
 BOEING2               ACM                   FAILED                UNSTABLE              
-BOEING2               CPLEX                 OPTIMAL               3.054295ms            
-BOEING2               ojAlgo                OPTIMAL               6.611392ms            
+BOEING2               CPLEX                 OPTIMAL               4.691281ms            
+BOEING2               Hipparchus            FAILED                UNSTABLE              
+BOEING2               ojAlgo                OPTIMAL               8.989652ms            
 BORE3D                ACM                   FAILED                TIMEOUT               
-BORE3D                CPLEX                 OPTIMAL               2.952702ms            
-BORE3D                ojAlgo                OPTIMAL               2.375518ms            
+BORE3D                CPLEX                 OPTIMAL               5.055457ms            
+BORE3D                Hipparchus            FAILED                TIMEOUT               
+BORE3D                ojAlgo                OPTIMAL               3.456446ms            
 BRANDY                ACM                   FAILED                TIMEOUT               
-BRANDY                CPLEX                 OPTIMAL               5.69342ms             
-BRANDY                ojAlgo                OPTIMAL               4.875528ms            
+BRANDY                CPLEX                 OPTIMAL               8.520516ms            
+BRANDY                Hipparchus            FAILED                TIMEOUT               
+BRANDY                ojAlgo                OPTIMAL               7.21827ms             
 CAPRI                 ACM                   FAILED                UNSTABLE              
-CAPRI                 CPLEX                 OPTIMAL               5.650528ms            
-CAPRI                 ojAlgo                OPTIMAL               28.585122ms           
+CAPRI                 CPLEX                 OPTIMAL               8.327037ms            
+CAPRI                 Hipparchus            FAILED                UNSTABLE              
+CAPRI                 ojAlgo                OPTIMAL               45.807463ms           
 DEGEN2                ACM                   FAILED                TIMEOUT               
-DEGEN2                CPLEX                 OPTIMAL               14.352009ms           
-DEGEN2                ojAlgo                OPTIMAL               145.216013ms          
-E226                  ACM                   OPTIMAL               688.73097ms           
-E226                  CPLEX                 OPTIMAL               7.112912ms            
-E226                  ojAlgo                OPTIMAL               11.579217ms           
+DEGEN2                CPLEX                 OPTIMAL               20.740736ms           
+DEGEN2                Hipparchus            OPTIMAL               1786.38462ms          
+DEGEN2                ojAlgo                OPTIMAL               242.32134ms           
+E226                  ACM                   FAILED                TIMEOUT               
+E226                  CPLEX                 OPTIMAL               11.069458ms           
+E226                  Hipparchus            OPTIMAL               92.910781ms           
+E226                  ojAlgo                OPTIMAL               16.670109ms           
 ETAMACRO              ACM                   FAILED                TIMEOUT               
-ETAMACRO              CPLEX                 OPTIMAL               9.666118ms            
-ETAMACRO              ojAlgo                OPTIMAL               26.447114ms           
+ETAMACRO              CPLEX                 OPTIMAL               16.462966ms           
+ETAMACRO              Hipparchus            OPTIMAL               1067.294064ms         
+ETAMACRO              ojAlgo                OPTIMAL               44.106707ms           
 FFFFF800              ACM                   FAILED                TIMEOUT               
-FFFFF800              CPLEX                 OPTIMAL               10.651637ms           
-FFFFF800              ojAlgo                OPTIMAL               52.345121ms           
+FFFFF800              CPLEX                 OPTIMAL               18.735497ms           
+FFFFF800              Hipparchus            FAILED                TIMEOUT               
+FFFFF800              ojAlgo                OPTIMAL               88.950183ms           
 FINNIS                ACM                   FAILED                TIMEOUT               
-FINNIS                CPLEX                 OPTIMAL               8.399524ms            
-FINNIS                ojAlgo                OPTIMAL               190.659009ms          
+FINNIS                CPLEX                 OPTIMAL               13.818495ms           
+FINNIS                Hipparchus            FAILED                TIMEOUT               
+FINNIS                ojAlgo                OPTIMAL               314.872777ms          
 FORPLAN               ACM                   FAILED                UNSTABLE              
-FORPLAN               CPLEX                 OPTIMAL               5.595419ms            
-FORPLAN               ojAlgo                OPTIMAL               7.328905ms            
+FORPLAN               CPLEX                 OPTIMAL               8.894963ms            
+FORPLAN               Hipparchus            OPTIMAL               239.978635ms          
+FORPLAN               ojAlgo                OPTIMAL               9.780629ms            
 GROW15                ACM                   FAILED                TIMEOUT               
-GROW15                CPLEX                 OPTIMAL               36.568825ms           
-GROW15                ojAlgo                OPTIMAL               206.485576ms          
+GROW15                CPLEX                 OPTIMAL               34.779264ms           
+GROW15                Hipparchus            FAILED                TIMEOUT               
+GROW15                ojAlgo                OPTIMAL               326.21745ms           
 GROW22                ACM                   FAILED                TIMEOUT               
-GROW22                CPLEX                 OPTIMAL               99.33184ms            
-GROW22                ojAlgo                OPTIMAL               1495.329128ms         
+GROW22                CPLEX                 OPTIMAL               109.099592ms          
+GROW22                Hipparchus            FAILED                WRONG                 
+GROW22                ojAlgo                OPTIMAL               1669.318161ms         
 GROW7                 ACM                   FAILED                TIMEOUT               
-GROW7                 CPLEX                 OPTIMAL               8.778534ms            
-GROW7                 ojAlgo                OPTIMAL               11.92479ms            
-ISRAEL                ACM                   OPTIMAL               149.444501ms          
-ISRAEL                CPLEX                 OPTIMAL               3.815925ms            
-ISRAEL                ojAlgo                OPTIMAL               6.528239ms            
-KB2                   ACM                   OPTIMAL               6.761116ms            
-KB2                   CPLEX                 OPTIMAL               1.033355ms            
-KB2                   ojAlgo                OPTIMAL               0.543901ms            
-LOTFI                 ACM                   OPTIMAL               599.764915ms          
-LOTFI                 CPLEX                 OPTIMAL               2.859463ms            
-LOTFI                 ojAlgo                OPTIMAL               1.524653ms            
+GROW7                 CPLEX                 OPTIMAL               11.710556ms           
+GROW7                 Hipparchus            FAILED                TIMEOUT               
+GROW7                 ojAlgo                OPTIMAL               18.688514ms           
+ISRAEL                ACM                   OPTIMAL               103.563223ms          
+ISRAEL                CPLEX                 OPTIMAL               5.685817ms            
+ISRAEL                Hipparchus            OPTIMAL               21.941009ms           
+ISRAEL                ojAlgo                OPTIMAL               7.192418ms            
+KB2                   ACM                   OPTIMAL               6.720416ms            
+KB2                   CPLEX                 OPTIMAL               2.016831ms            
+KB2                   Hipparchus            OPTIMAL               2.361479ms            
+KB2                   ojAlgo                OPTIMAL               0.562869ms            
+LOTFI                 ACM                   OPTIMAL               546.936236ms          
+LOTFI                 CPLEX                 OPTIMAL               4.722516ms            
+LOTFI                 Hipparchus            OPTIMAL               74.253037ms           
+LOTFI                 ojAlgo                OPTIMAL               2.791933ms            
 PILOT4                ACM                   FAILED                UNSTABLE              
-PILOT4                CPLEX                 OPTIMAL               25.350613ms           
-PILOT4                ojAlgo                OPTIMAL               443.840806ms          
-RECIPELP              ACM                   OPTIMAL               101.984305ms          
-RECIPELP              CPLEX                 OPTIMAL               1.763613ms            
-RECIPELP              ojAlgo                OPTIMAL               0.822763ms            
-SC105                 ACM                   OPTIMAL               32.575308ms           
-SC105                 CPLEX                 OPTIMAL               1.758967ms            
-SC105                 ojAlgo                OPTIMAL               0.552629ms            
-SC205                 ACM                   OPTIMAL               236.686857ms          
-SC205                 CPLEX                 OPTIMAL               2.698923ms            
-SC205                 ojAlgo                OPTIMAL               2.925706ms            
-SC50A                 ACM                   OPTIMAL               5.635887ms            
-SC50A                 CPLEX                 OPTIMAL               1.271988ms            
-SC50A                 ojAlgo                OPTIMAL               0.28155ms             
-SC50B                 ACM                   OPTIMAL               5.107918ms            
-SC50B                 CPLEX                 OPTIMAL               0.970393ms            
-SC50B                 ojAlgo                OPTIMAL               0.187952ms            
-SCAGR25               ACM                   FAILED                UNSTABLE              
-SCAGR25               CPLEX                 OPTIMAL               8.306402ms            
-SCAGR25               ojAlgo                OPTIMAL               70.463888ms           
-SCAGR7                ACM                   OPTIMAL               135.951426ms          
-SCAGR7                CPLEX                 OPTIMAL               2.769207ms            
-SCAGR7                ojAlgo                OPTIMAL               2.072001ms            
-SCFXM1                ACM                   FAILED                UNSTABLE              
-SCFXM1                CPLEX                 OPTIMAL               7.687805ms            
-SCFXM1                ojAlgo                OPTIMAL               9.042746ms            
+PILOT4                CPLEX                 OPTIMAL               43.948191ms           
+PILOT4                Hipparchus            FAILED                UNSTABLE              
+PILOT4                ojAlgo                OPTIMAL               719.960153ms          
+RECIPELP              ACM                   OPTIMAL               91.984139ms           
+RECIPELP              CPLEX                 OPTIMAL               2.647297ms            
+RECIPELP              Hipparchus            OPTIMAL               18.608792ms           
+RECIPELP              ojAlgo                OPTIMAL               1.076786ms            
+SC105                 ACM                   OPTIMAL               29.210945ms           
+SC105                 CPLEX                 OPTIMAL               2.386598ms            
+SC105                 Hipparchus            OPTIMAL               6.913549ms            
+SC105                 ojAlgo                OPTIMAL               0.784871ms            
+SC205                 ACM                   OPTIMAL               196.771752ms          
+SC205                 CPLEX                 OPTIMAL               4.356467ms            
+SC205                 Hipparchus            OPTIMAL               35.378977ms           
+SC205                 ojAlgo                OPTIMAL               3.716465ms            
+SC50A                 ACM                   OPTIMAL               3.713265ms            
+SC50A                 CPLEX                 OPTIMAL               1.637211ms            
+SC50A                 Hipparchus            OPTIMAL               1.447684ms            
+SC50A                 ojAlgo                OPTIMAL               0.340661ms            
+SC50B                 ACM                   OPTIMAL               3.824722ms            
+SC50B                 CPLEX                 OPTIMAL               1.352292ms            
+SC50B                 Hipparchus            OPTIMAL               1.598036ms            
+SC50B                 ojAlgo                OPTIMAL               0.362158ms            
+SCAGR25               ACM                   FAILED                TIMEOUT               
+SCAGR25               CPLEX                 OPTIMAL               12.959499ms           
+SCAGR25               Hipparchus            FAILED                TIMEOUT               
+SCAGR25               ojAlgo                OPTIMAL               109.784739ms          
+SCAGR7                ACM                   OPTIMAL               104.018329ms          
+SCAGR7                CPLEX                 OPTIMAL               4.137262ms            
+SCAGR7                Hipparchus            OPTIMAL               22.542501ms           
+SCAGR7                ojAlgo                OPTIMAL               2.415491ms            
+SCFXM1                ACM                   FAILED                TIMEOUT               
+SCFXM1                CPLEX                 OPTIMAL               12.276423ms           
+SCFXM1                Hipparchus            FAILED                TIMEOUT               
+SCFXM1                ojAlgo                OPTIMAL               14.529425ms           
 SCFXM2                ACM                   FAILED                TIMEOUT               
-SCFXM2                CPLEX                 OPTIMAL               14.680769ms           
-SCFXM2                ojAlgo                OPTIMAL               63.902875ms           
-SCORPION              ACM                   OPTIMAL               1236.17844ms          
-SCORPION              CPLEX                 OPTIMAL               4.051542ms            
-SCORPION              ojAlgo                OPTIMAL               7.651202ms            
+SCFXM2                CPLEX                 OPTIMAL               27.587144ms           
+SCFXM2                Hipparchus            FAILED                TIMEOUT               
+SCFXM2                ojAlgo                OPTIMAL               108.236033ms          
+SCORPION              ACM                   OPTIMAL               998.703727ms          
+SCORPION              CPLEX                 OPTIMAL               6.786039ms            
+SCORPION              Hipparchus            OPTIMAL               128.931352ms          
+SCORPION              ojAlgo                OPTIMAL               10.188435ms           
 SCSD1                 ACM                   FAILED                UNSTABLE              
-SCSD1                 CPLEX                 OPTIMAL               3.65711ms             
-SCSD1                 ojAlgo                OPTIMAL               4.699689ms            
-SCTAP1                ACM                   FAILED                UNSTABLE              
-SCTAP1                CPLEX                 OPTIMAL               4.531862ms            
-SCTAP1                ojAlgo                OPTIMAL               10.589084ms           
+SCSD1                 CPLEX                 OPTIMAL               6.155597ms            
+SCSD1                 Hipparchus            OPTIMAL               395.60068ms           
+SCSD1                 ojAlgo                OPTIMAL               6.227832ms            
+SCTAP1                ACM                   FAILED                TIMEOUT               
+SCTAP1                CPLEX                 OPTIMAL               7.630562ms            
+SCTAP1                Hipparchus            OPTIMAL               304.390071ms          
+SCTAP1                ojAlgo                OPTIMAL               14.170339ms           
 SEBA                  ACM                   FAILED                TIMEOUT               
-SEBA                  CPLEX                 OPTIMAL               5.573434ms            
-SEBA                  ojAlgo                OPTIMAL               133.949868ms          
-SHARE1B               ACM                   OPTIMAL               387.575914ms          
-SHARE1B               CPLEX                 OPTIMAL               3.196878ms            
-SHARE1B               ojAlgo                OPTIMAL               3.344322ms            
-SHARE2B               ACM                   OPTIMAL               35.89297ms            
-SHARE2B               CPLEX                 OPTIMAL               1.99975ms             
-SHARE2B               ojAlgo                OPTIMAL               1.065237ms            
+SEBA                  CPLEX                 OPTIMAL               9.795508ms            
+SEBA                  Hipparchus            FAILED                TIMEOUT               
+SEBA                  ojAlgo                OPTIMAL               212.850247ms          
+SHARE1B               ACM                   OPTIMAL               276.393102ms          
+SHARE1B               CPLEX                 OPTIMAL               5.268421ms            
+SHARE1B               Hipparchus            OPTIMAL               49.818582ms           
+SHARE1B               ojAlgo                OPTIMAL               5.161425ms            
+SHARE2B               ACM                   OPTIMAL               31.388091ms           
+SHARE2B               CPLEX                 OPTIMAL               3.36695ms             
+SHARE2B               Hipparchus            OPTIMAL               6.988701ms            
+SHARE2B               ojAlgo                OPTIMAL               1.098968ms            
 STAIR                 ACM                   FAILED                UNSTABLE              
-STAIR                 CPLEX                 OPTIMAL               10.086863ms           
-STAIR                 ojAlgo                OPTIMAL               26.062774ms           
-STOCFOR1              ACM                   OPTIMAL               43.634004ms           
-STOCFOR1              CPLEX                 OPTIMAL               2.047131ms            
-STOCFOR1              ojAlgo                OPTIMAL               0.959562ms            
+STAIR                 CPLEX                 OPTIMAL               16.468764ms           
+STAIR                 Hipparchus            FAILED                UNSTABLE              
+STAIR                 ojAlgo                OPTIMAL               42.203827ms           
+STOCFOR1              ACM                   OPTIMAL               34.564914ms           
+STOCFOR1              CPLEX                 OPTIMAL               2.932963ms            
+STOCFOR1              Hipparchus            OPTIMAL               9.242821ms            
+STOCFOR1              ojAlgo                OPTIMAL               1.156741ms            
 TUFF                  ACM                   FAILED                TIMEOUT               
-TUFF                  CPLEX                 OPTIMAL               6.589792ms            
+TUFF                  CPLEX                 OPTIMAL               11.663417ms           
+TUFF                  Hipparchus            FAILED                TIMEOUT               
 TUFF                  ojAlgo                FAILED                TIMEOUT               
 VTP-BASE              ACM                   FAILED                UNSTABLE              
-VTP-BASE              CPLEX                 OPTIMAL               2.149045ms            
-VTP-BASE              ojAlgo                OPTIMAL               1.876053ms            
+VTP-BASE              CPLEX                 OPTIMAL               3.198082ms            
+VTP-BASE              Hipparchus            OPTIMAL               46.099096ms           
+VTP-BASE              ojAlgo                OPTIMAL               2.165055ms            

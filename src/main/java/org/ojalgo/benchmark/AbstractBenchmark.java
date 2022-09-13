@@ -38,6 +38,7 @@ import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
+import org.ojalgo.hipparchus.optim.linear.SolverHipparchus;
 import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
@@ -79,6 +80,7 @@ public abstract class AbstractBenchmark {
 
         public static final String ACM = "ACM";
         public static final String CPLEX = "CPLEX";
+        public static final String HIPPARCHUS = "Hipparchus";
         public static final String J_OPTIMIZER = "JOptimizer";
         public static final String OJALGO = "ojAlgo";
         public static final String OJALGO_DENSE = "ojAlgo-dense";
@@ -251,41 +253,13 @@ public abstract class AbstractBenchmark {
 
     static {
         INTEGRATIONS.put(Contender.ACM, SolverCommonsMath.INTEGRATION);
+        INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.J_OPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_DENSE, new ExpressionsBasedModel.Integration<>() {
-
-            @Override
-            protected int getIndexInSolver(final ExpressionsBasedModel model, final Variable variable) {
-
-                int retVal = -1;
-
-                BigDecimal value = variable.getValue();
-
-                if ((value != null && value.signum() >= 0 || variable.isPositive()) && (retVal = model.indexOfPositiveVariable(variable)) >= 0) {
-                    return retVal;
-                }
-
-                if (((value != null && value.signum() <= 0) || variable.isNegative()) && (retVal = model.indexOfNegativeVariable(variable)) >= 0) {
-                    retVal += model.getPositiveVariables().size();
-                    return retVal;
-                }
-
-                return -1;
-            }
-
-            @Override
-            public Result toModelState(final Result solverState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toModelState(solverState, model);
-            }
-
-            @Override
-            public Result toSolverState(final Result modelState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toSolverState(modelState, model);
-            }
 
             @Override
             public Solver build(final ExpressionsBasedModel model) {
@@ -301,13 +275,14 @@ public abstract class AbstractBenchmark {
             }
 
             @Override
-            protected boolean isSolutionMapped() {
-                return true;
+            public Result toModelState(final Result solverState, final ExpressionsBasedModel model) {
+                return LinearSolver.INTEGRATION.toModelState(solverState, model);
             }
 
-        });
-
-        INTEGRATIONS.put(Contender.OJALGO_SPARSE, new ExpressionsBasedModel.Integration<>() {
+            @Override
+            public Result toSolverState(final Result modelState, final ExpressionsBasedModel model) {
+                return LinearSolver.INTEGRATION.toSolverState(modelState, model);
+            }
 
             @Override
             protected int getIndexInSolver(final ExpressionsBasedModel model, final Variable variable) {
@@ -329,14 +304,13 @@ public abstract class AbstractBenchmark {
             }
 
             @Override
-            public Result toModelState(final Result solverState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toModelState(solverState, model);
+            protected boolean isSolutionMapped() {
+                return true;
             }
 
-            @Override
-            public Result toSolverState(final Result modelState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toSolverState(modelState, model);
-            }
+        });
+
+        INTEGRATIONS.put(Contender.OJALGO_SPARSE, new ExpressionsBasedModel.Integration<>() {
 
             @Override
             public Solver build(final ExpressionsBasedModel model) {
@@ -349,6 +323,35 @@ public abstract class AbstractBenchmark {
             @Override
             public boolean isCapable(final ExpressionsBasedModel model) {
                 return LinearSolver.INTEGRATION.isCapable(model);
+            }
+
+            @Override
+            public Result toModelState(final Result solverState, final ExpressionsBasedModel model) {
+                return LinearSolver.INTEGRATION.toModelState(solverState, model);
+            }
+
+            @Override
+            public Result toSolverState(final Result modelState, final ExpressionsBasedModel model) {
+                return LinearSolver.INTEGRATION.toSolverState(modelState, model);
+            }
+
+            @Override
+            protected int getIndexInSolver(final ExpressionsBasedModel model, final Variable variable) {
+
+                int retVal = -1;
+
+                BigDecimal value = variable.getValue();
+
+                if ((value != null && value.signum() >= 0 || variable.isPositive()) && (retVal = model.indexOfPositiveVariable(variable)) >= 0) {
+                    return retVal;
+                }
+
+                if (((value != null && value.signum() <= 0) || variable.isNegative()) && (retVal = model.indexOfNegativeVariable(variable)) >= 0) {
+                    retVal += model.getPositiveVariables().size();
+                    return retVal;
+                }
+
+                return -1;
             }
 
             @Override
@@ -374,7 +377,7 @@ public abstract class AbstractBenchmark {
 
             BasicLogger.debug();
             BasicLogger.debug("Iteration {} with {} model/solver pairs remaining {}", iterations, WORK.size(), Instant.now());
-            BasicLogger.debug("--------------------------------------------------------------------------");
+            BasicLogger.debug("-----------------------------------------------------------------------------");
 
             for (ModelSolverPair work : WORK) {
 
@@ -423,20 +426,21 @@ public abstract class AbstractBenchmark {
 
                         if (!subResults.fastest.result.getState().isOptimal()) {
 
-                            BasicLogger.debug(WIDTH, work.model, work.solver, subResults.fastest.result.getState(), FailReason.UNSTABLE);
+                            BasicLogger.debugColumns(WIDTH, work.model, work.solver, subResults.fastest.result.getState(), FailReason.UNSTABLE);
                             totReasons.put(work, FailReason.UNSTABLE);
                             iterDone.add(work);
 
                         } else if (expectedValue != null
                                 && configuration.accuracy.isDifferent(expectedValue.doubleValue(), subResults.fastest.result.getValue())) {
 
-                            BasicLogger.debug(WIDTH, work.model, work.solver, FailReason.WRONG, subResults.fastest.result.getValue(), "!= " + expectedValue);
+                            BasicLogger.debugColumns(WIDTH, work.model, work.solver, FailReason.WRONG, subResults.fastest.result.getValue(),
+                                    "!= " + expectedValue);
                             totReasons.put(work, FailReason.WRONG);
                             iterDone.add(work);
 
                         } else if (mainResults.isStable()) {
 
-                            BasicLogger.debug(WIDTH, work.model, work.solver, "Time stable");
+                            BasicLogger.debugColumns(WIDTH, work.model, work.solver, "Time stable");
                             iterDone.add(work);
                         }
 
@@ -446,7 +450,7 @@ public abstract class AbstractBenchmark {
 
                         mainResults.add(FAILED);
 
-                        BasicLogger.debug(WIDTH, work.model, work.solver, FAILED.result.getState(), FailReason.TIMEOUT);
+                        BasicLogger.debugColumns(WIDTH, work.model, work.solver, FAILED.result.getState(), FailReason.TIMEOUT);
                         totReasons.put(work, FailReason.TIMEOUT);
                         iterDone.add(work);
                     }
@@ -489,18 +493,18 @@ public abstract class AbstractBenchmark {
                     double referenceValue = expectedValue != null ? expectedValue.doubleValue() : referenceResult.getValue();
 
                     if (state.isOptimal() && !configuration.accuracy.isDifferent(referenceValue, value)) {
-                        BasicLogger.debug(WIDTH, model, solver, state, duration);
+                        BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
                         writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
                     } else {
-                        BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
+                        BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
                         writer.println(model + "\t" + solver + "\t");
                     }
 
                 } else if (state.isOptimal()) {
-                    BasicLogger.debug(WIDTH, model, solver, state, duration);
+                    BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
                     writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
                 } else {
-                    BasicLogger.debug(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
+                    BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
                     writer.println(model + "\t" + solver + "\t");
                 }
             }

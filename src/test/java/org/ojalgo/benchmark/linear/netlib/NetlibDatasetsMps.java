@@ -33,6 +33,7 @@ import java.util.concurrent.TimeoutException;
 
 import org.ojalgo.benchmark.OjBenchmarks;
 import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
+import org.ojalgo.hipparchus.optim.linear.SolverHipparchus;
 import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
@@ -210,6 +211,7 @@ public class NetlibDatasetsMps {
 
     static {
         INTEGRATIONS.put("ACM", SolverCommonsMath.INTEGRATION);
+        INTEGRATIONS.put("Hipparchus", SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put("JOptimizer", SolverJOptimizer.INTEGRATION);
@@ -235,7 +237,7 @@ public class NetlibDatasetsMps {
             "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG", "AFIRO", "ADLITTLE" })
     public String model;
 
-    @Param({ "CPLEX", "ojAlgo", "ACM" })
+    @Param({ "CPLEX", "ojAlgo", "Hipparchus" })
     public String solver;
 
     private ExpressionsBasedModel parsedMPS;
