@@ -37,9 +37,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
-import org.ojalgo.hipparchus.optim.linear.SolverHipparchus;
-import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
@@ -49,7 +46,10 @@ import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.Variable;
 import org.ojalgo.optimisation.linear.LinearSolver;
+import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
+import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
+import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
@@ -252,7 +252,7 @@ public abstract class AbstractBenchmark {
     static final int WIDTH = 22;
 
     static {
-        INTEGRATIONS.put(Contender.ACM, SolverCommonsMath.INTEGRATION);
+        INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);

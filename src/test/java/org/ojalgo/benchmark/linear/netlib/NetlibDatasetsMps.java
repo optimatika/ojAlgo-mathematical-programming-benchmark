@@ -32,15 +32,15 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import org.ojalgo.benchmark.OjBenchmarks;
-import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
-import org.ojalgo.hipparchus.optim.linear.SolverHipparchus;
-import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation;
+import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
+import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
+import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.type.context.NumberContext;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Param;
@@ -210,7 +210,7 @@ public class NetlibDatasetsMps {
     static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
 
     static {
-        INTEGRATIONS.put("ACM", SolverCommonsMath.INTEGRATION);
+        INTEGRATIONS.put("ACM", SolverACM.INTEGRATION);
         INTEGRATIONS.put("Hipparchus", SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put("CPLEX", SolverCPLEX.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
