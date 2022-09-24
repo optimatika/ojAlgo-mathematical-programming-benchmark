@@ -37,9 +37,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.ojalgo.commons.math3.optim.linear.SolverCommonsMath;
-import org.ojalgo.hipparchus.optim.linear.SolverHipparchus;
-import org.ojalgo.joptimizer.SolverJOptimizer;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
@@ -49,7 +46,11 @@ import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.Variable;
 import org.ojalgo.optimisation.linear.LinearSolver;
+import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
+import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
+import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
+import org.ojalgo.optimisation.solver.ortools.SolverORTools;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
@@ -81,7 +82,8 @@ public abstract class AbstractBenchmark {
         public static final String ACM = "ACM";
         public static final String CPLEX = "CPLEX";
         public static final String HIPPARCHUS = "Hipparchus";
-        public static final String J_OPTIMIZER = "JOptimizer";
+        public static final String JOPTIMIZER = "JOptimizer";
+        public static final String ORTOOLS = "ORTools";
         public static final String OJALGO = "ojAlgo";
         public static final String OJALGO_DENSE = "ojAlgo-dense";
         public static final String OJALGO_SPARSE = "ojAlgo-sparse";
@@ -252,11 +254,13 @@ public abstract class AbstractBenchmark {
     static final int WIDTH = 22;
 
     static {
-        INTEGRATIONS.put(Contender.ACM, SolverCommonsMath.INTEGRATION);
+
+        INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
+        INTEGRATIONS.put(Contender.ORTOOLS, SolverORTools.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
-        INTEGRATIONS.put(Contender.J_OPTIMIZER, SolverJOptimizer.INTEGRATION);
+        INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_DENSE, new ExpressionsBasedModel.Integration<>() {

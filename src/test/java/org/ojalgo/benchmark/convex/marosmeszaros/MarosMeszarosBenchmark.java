@@ -38,7 +38,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
             "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPTEST", "QRECIPE", "QSC205", "QSCAGR25", "QSCAGR7", "QSCFXM1", "QSCFXM2", "QSCORPIO",
             "QSCSD1", "QSCTAP1", "QSEBA", "QSHARE1B", "QSHARE2B", "QSTAIR", "S268", "TAME", "ZECEVIC2" };
 
-    static final String[] SOLVERS = new String[] { Contender.CPLEX, Contender.OJALGO, Contender.J_OPTIMIZER };
+    static final String[] SOLVERS = new String[] { Contender.CPLEX, Contender.OJALGO, Contender.JOPTIMIZER };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 

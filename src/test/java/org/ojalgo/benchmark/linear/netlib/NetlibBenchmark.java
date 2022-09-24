@@ -33,7 +33,7 @@ public final class NetlibBenchmark extends AbstractBenchmark {
             "FINNIS", "FFFFF800", "ETAMACRO", "E226", "DEGEN2", "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2",
             "AGG", "AFIRO", "ADLITTLE" };
 
-    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO, Contender.ACM, Contender.HIPPARCHUS };
+    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO, Contender.ORTOOLS };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
