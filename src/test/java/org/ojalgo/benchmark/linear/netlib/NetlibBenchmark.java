@@ -21,28 +21,55 @@
  */
 package org.ojalgo.benchmark.linear.netlib;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.ojalgo.TestUtils;
 import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.netio.BasicLogger;
+import org.ojalgo.netio.TextLineReader;
+import org.ojalgo.optimisation.ExpressionsBasedModel;
+import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
 public final class NetlibBenchmark extends AbstractBenchmark {
 
-    static final String[] MODELS = { "VTP-BASE", "TUFF", "STOCFOR1", "STAIR", "SHARE2B", "SHARE1B", "SCTAP1", "SCSD1", "SCORPION", "SCFXM2", "SCFXM1", "SCAGR7",
-            "SCAGR25", "SC50B", "SC50A", "SC205", "SC105", "RECIPELP", "PILOT4", "LOTFI", "KB2", "ISRAEL", "GROW7", "GROW22", "GROW15", "FORPLAN", "FINNIS",
-            "FFFFF800", "ETAMACRO", "E226", "DEGEN2", "CAPRI", "BRANDY", "BORE3D", "BOEING2", "BOEING1", "BLEND", "BEACONFD", "BANDM", "AGG3", "AGG2", "AGG",
-            "AFIRO", "ADLITTLE" };
+    static final int MAX_NB_VARS = 200;
+    static final int MIN_NB_VARS = 100;
 
-    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO, Contender.ORTOOLS, Contender.ACM, Contender.HIPPARCHUS };
-
+    static final String[] SOLVERS = { Contender.OJALGO_SPARSE_LP, Contender.OJALGO_DENSE_LP, Contender.ORTOOLS };
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
 
-        for (String mod : MODELS) {
-            for (String sol : SOLVERS) {
-                WORK.add(new ModelSolverPair(mod, sol));
-            }
+        // /ojAlgo/src/test/resources/optimisation/netlib/NETLIB.dat
+        try (TextLineReader reader = new TextLineReader(TestUtils.getResource("optimisation", "netlib", "NETLIB.dat"))) {
+
+            reader.forEach(model -> {
+
+                try (InputStream stream = TestUtils.getResource("optimisation", "netlib", model + ".SIF")) {
+
+                    ExpressionsBasedModel parse = ExpressionsBasedModel.parse(stream, FileFormat.MPS);
+
+                    ExpressionsBasedModel.Description description = parse.describe();
+
+                    if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.nbExprTotal <= MAX_NB_VARS) {
+                        for (String solver : SOLVERS) {
+                            WORK.add(new ModelSolverPair(model, solver));
+                        }
+                    }
+
+                } catch (IOException cause) {
+                    BasicLogger.debug("Problem with model {}!", model);
+                    throw new RuntimeException(cause);
+                }
+
+            });
+
+        } catch (IOException cause) {
+            BasicLogger.debug("Problem reading list of models!");
+            throw new RuntimeException(cause);
         }
     }
 
@@ -51,6 +78,8 @@ public final class NetlibBenchmark extends AbstractBenchmark {
         Configuration configuration = new Configuration();
 
         configuration.pathPrefix = "/optimisation/netlib/";
+
+        configuration.refeenceSolver = Contender.ORTOOLS;
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }

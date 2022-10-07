@@ -44,7 +44,6 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
-import org.ojalgo.optimisation.Variable;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
@@ -83,10 +82,10 @@ public abstract class AbstractBenchmark {
         public static final String CPLEX = "CPLEX";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
-        public static final String ORTOOLS = "ORTools";
         public static final String OJALGO = "ojAlgo";
-        public static final String OJALGO_DENSE = "ojAlgo-dense";
-        public static final String OJALGO_SPARSE = "ojAlgo-sparse";
+        public static final String OJALGO_DENSE_LP = "ojAlgo-dense";
+        public static final String OJALGO_SPARSE_LP = "ojAlgo-sparse";
+        public static final String ORTOOLS = "ORTools";
 
     }
 
@@ -263,107 +262,9 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_DENSE, new ExpressionsBasedModel.Integration<>() {
+        INTEGRATIONS.put(Contender.OJALGO_DENSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.FALSE));
 
-            @Override
-            public Solver build(final ExpressionsBasedModel model) {
-
-                model.options.sparse = Boolean.FALSE;
-
-                return LinearSolver.INTEGRATION.build(model);
-            }
-
-            @Override
-            public boolean isCapable(final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.isCapable(model);
-            }
-
-            @Override
-            public Result toModelState(final Result solverState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toModelState(solverState, model);
-            }
-
-            @Override
-            public Result toSolverState(final Result modelState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toSolverState(modelState, model);
-            }
-
-            @Override
-            protected int getIndexInSolver(final ExpressionsBasedModel model, final Variable variable) {
-
-                int retVal = -1;
-
-                BigDecimal value = variable.getValue();
-
-                if ((value != null && value.signum() >= 0 || variable.isPositive()) && (retVal = model.indexOfPositiveVariable(variable)) >= 0) {
-                    return retVal;
-                }
-
-                if (((value != null && value.signum() <= 0) || variable.isNegative()) && (retVal = model.indexOfNegativeVariable(variable)) >= 0) {
-                    retVal += model.getPositiveVariables().size();
-                    return retVal;
-                }
-
-                return -1;
-            }
-
-            @Override
-            protected boolean isSolutionMapped() {
-                return true;
-            }
-
-        });
-
-        INTEGRATIONS.put(Contender.OJALGO_SPARSE, new ExpressionsBasedModel.Integration<>() {
-
-            @Override
-            public Solver build(final ExpressionsBasedModel model) {
-
-                model.options.sparse = Boolean.TRUE;
-
-                return LinearSolver.INTEGRATION.build(model);
-            }
-
-            @Override
-            public boolean isCapable(final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.isCapable(model);
-            }
-
-            @Override
-            public Result toModelState(final Result solverState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toModelState(solverState, model);
-            }
-
-            @Override
-            public Result toSolverState(final Result modelState, final ExpressionsBasedModel model) {
-                return LinearSolver.INTEGRATION.toSolverState(modelState, model);
-            }
-
-            @Override
-            protected int getIndexInSolver(final ExpressionsBasedModel model, final Variable variable) {
-
-                int retVal = -1;
-
-                BigDecimal value = variable.getValue();
-
-                if ((value != null && value.signum() >= 0 || variable.isPositive()) && (retVal = model.indexOfPositiveVariable(variable)) >= 0) {
-                    return retVal;
-                }
-
-                if (((value != null && value.signum() <= 0) || variable.isNegative()) && (retVal = model.indexOfNegativeVariable(variable)) >= 0) {
-                    retVal += model.getPositiveVariables().size();
-                    return retVal;
-                }
-
-                return -1;
-            }
-
-            @Override
-            protected boolean isSolutionMapped() {
-                return true;
-            }
-
-        });
+        INTEGRATIONS.put(Contender.OJALGO_SPARSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.TRUE));
     }
 
     protected static void doBenchmark(final Set<ModelSolverPair> WORK, final Configuration configuration) {
