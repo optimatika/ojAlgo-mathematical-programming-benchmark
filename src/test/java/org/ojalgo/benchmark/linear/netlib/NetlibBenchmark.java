@@ -54,7 +54,7 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
                     ExpressionsBasedModel.Description description = parse.describe();
 
-                    if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.nbExprTotal <= MAX_NB_VARS) {
+                    if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.constraints() <= MAX_NB_VARS) {
                         for (String solver : SOLVERS) {
                             WORK.add(new ModelSolverPair(model, solver));
                         }
