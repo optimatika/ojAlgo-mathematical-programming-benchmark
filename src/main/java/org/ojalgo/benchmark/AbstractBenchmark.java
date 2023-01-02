@@ -67,7 +67,7 @@ public abstract class AbstractBenchmark {
         public long maxWaitTime = 60_000L;
         public String pathPrefix;
         public String pathSuffix = ".SIF";
-        public String refeenceSolver = Contender.CPLEX;
+        public String refeenceSolver = Contender.ORTOOLS;
         public final Map<String, BigDecimal> values = new HashMap<>();
 
         public String path(final String modelName) {
@@ -83,8 +83,10 @@ public abstract class AbstractBenchmark {
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
         public static final String OJALGO = "ojAlgo";
-        public static final String OJALGO_DENSE_LP = "ojAlgo-dense";
-        public static final String OJALGO_SPARSE_LP = "ojAlgo-sparse";
+        public static final String OJALGO_NEW_REVISED_LP = "ojAlgo-revised";
+        public static final String OJALGO_NEW_TABLEAU_LP = "ojAlgo-tableau";
+        public static final String OJALGO_OLD_DENSE_LP = "ojAlgo-dense";
+        public static final String OJALGO_OLD_SPARSE_LP = "ojAlgo-sparse";
         public static final String ORTOOLS = "ORTools";
 
     }
@@ -262,9 +264,11 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_DENSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.FALSE));
+        INTEGRATIONS.put(Contender.OJALGO_OLD_DENSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.FALSE));
 
-        INTEGRATIONS.put(Contender.OJALGO_SPARSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.TRUE));
+        INTEGRATIONS.put(Contender.OJALGO_OLD_SPARSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.TRUE));
+        INTEGRATIONS.put(Contender.OJALGO_NEW_TABLEAU_LP, LinearSolver.NEW_INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.FALSE));
+        INTEGRATIONS.put(Contender.OJALGO_NEW_REVISED_LP, LinearSolver.NEW_INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.TRUE));
     }
 
     protected static void doBenchmark(final Set<ModelSolverPair> WORK, final Configuration configuration) {
@@ -391,7 +395,8 @@ public abstract class AbstractBenchmark {
 
                 BigDecimal expectedValue = configuration.values.get(model);
 
-                Result referenceResult = totResults.get(new ModelSolverPair(model, configuration.refeenceSolver)).fastest.result;
+                ModelSolverPair key = new ModelSolverPair(model, configuration.refeenceSolver);
+                Result referenceResult = totResults.get(key).fastest.result;
 
                 if (expectedValue != null || referenceResult.getState().isOptimal()) {
 
