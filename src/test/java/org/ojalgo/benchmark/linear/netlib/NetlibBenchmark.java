@@ -38,9 +38,9 @@ public final class NetlibBenchmark extends AbstractBenchmark {
     static final int MAX_NB_VARS = 1000;
     static final int MIN_NB_VARS = 1;
 
-    //    static final String[] SOLVERS = { Contender.OJALGO_NEW_TABLEAU_LP, Contender.OJALGO_NEW_REVISED_LP, Contender.OJALGO_OLD_DENSE_LP, Contender.ORTOOLS,
-    //            Contender.CPLEX };
-    static final String[] SOLVERS = { Contender.OJALGO_NEW_REVISED_LP };
+    static final String[] SOLVERS = { Contender.OJALGO_NEW_TABLEAU_LP, Contender.OJALGO_NEW_REVISED_LP, Contender.OJALGO_OLD_DENSE_LP, Contender.ORTOOLS,
+            Contender.CPLEX };
+    // static final String[] SOLVERS = { Contender.OJALGO_NEW_REVISED_LP };
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
