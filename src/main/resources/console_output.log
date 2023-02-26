@@ -1,530 +1,509 @@
 
-Iteration 1 with 220 model/solver pairs remaining 2023-02-13T19:46:27.290240Z
+Iteration 1 with 220 model/solver pairs remaining 2023-02-26T15:51:02.331502Z
 -----------------------------------------------------------------------------
 TUFF                  ojAlgo-dense          FAILED                TIMEOUT               
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
-Rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
+Basis rank 283 < 286
 TUFF                  ojAlgo-revised        FAILED                UNSTABLE              
 
-Iteration 2 with 218 model/solver pairs remaining 2023-02-13T19:53:24.522538Z
+Iteration 2 with 218 model/solver pairs remaining 2023-02-26T15:58:13.722084Z
 -----------------------------------------------------------------------------
 
-Iteration 3 with 218 model/solver pairs remaining 2023-02-13T19:58:15.969434Z
+Iteration 3 with 218 model/solver pairs remaining 2023-02-26T16:03:26.372647Z
 -----------------------------------------------------------------------------
 BORE3D                CPLEX                 Time stable           
 BEACONFD              CPLEX                 Time stable           
 BLEND                 ojAlgo-dense          Time stable           
+AGG2                  ojAlgo-tableau        Time stable           
+CAPRI                 CPLEX                 Time stable           
 AFIRO                 ojAlgo-revised        Time stable           
 AGG2                  ojAlgo-dense          Time stable           
-TUFF                  ORTools               Time stable           
 SHARE2B               ojAlgo-revised        Time stable           
 AGG                   ojAlgo-revised        Time stable           
+STAIR                 CPLEX                 Time stable           
 BLEND                 ojAlgo-tableau        Time stable           
-SCFXM1                CPLEX                 Time stable           
 KB2                   CPLEX                 Time stable           
 AGG                   ojAlgo-dense          Time stable           
-GROW15                ojAlgo-tableau        Time stable           
-SHARE1B               CPLEX                 Time stable           
 RECIPELP              CPLEX                 Time stable           
 SCSD1                 ojAlgo-tableau        Time stable           
+ISRAEL                ojAlgo-tableau        Time stable           
 ADLITTLE              ojAlgo-revised        Time stable           
 AGG3                  ojAlgo-dense          Time stable           
-SCAGR25               ojAlgo-tableau        Time stable           
 BOEING2               CPLEX                 Time stable           
-GROW15                ojAlgo-revised        Time stable           
-SCFXM2                CPLEX                 Time stable           
 SCORPION              CPLEX                 Time stable           
 ETAMACRO              CPLEX                 Time stable           
+SCORPION              ojAlgo-revised        Time stable           
 AFIRO                 ojAlgo-tableau        Time stable           
-SHARE2B               ojAlgo-tableau        Time stable           
 AFIRO                 ojAlgo-dense          Time stable           
-SHARE1B               ojAlgo-revised        Time stable           
-GROW22                ORTools               Time stable           
 KB2                   ojAlgo-revised        Time stable           
-BLEND                 ojAlgo-revised        Time stable           
 BANDM                 CPLEX                 Time stable           
-SCTAP1                ORTools               Time stable           
+SCTAP1                ojAlgo-dense          Time stable           
 LOTFI                 ojAlgo-tableau        Time stable           
-DEGEN2                ORTools               Time stable           
 FINNIS                CPLEX                 Time stable           
 ADLITTLE              ojAlgo-dense          Time stable           
-SCAGR25               ORTools               Time stable           
+SC105                 CPLEX                 Time stable           
 VTP-BASE              CPLEX                 Time stable           
-FFFFF800              ORTools               Time stable           
 BRANDY                CPLEX                 Time stable           
+SCAGR7                ojAlgo-revised        Time stable           
 KB2                   ojAlgo-dense          Time stable           
-SHARE1B               ojAlgo-dense          Time stable           
+FINNIS                ojAlgo-tableau        Time stable           
 AGG                   CPLEX                 Time stable           
-AGG3                  CPLEX                 Time stable           
-RECIPELP              ojAlgo-revised        Time stable           
+CAPRI                 ojAlgo-revised        Time stable           
+KB2                   ojAlgo-tableau        Time stable           
+FINNIS                ojAlgo-dense          Time stable           
 ETAMACRO              ORTools               Time stable           
 SCSD1                 ORTools               Time stable           
-SC205                 CPLEX                 Time stable           
 SC50B                 ORTools               Time stable           
-SCSD1                 ojAlgo-revised        Time stable           
+SC50B                 ojAlgo-revised        Time stable           
 BOEING1               ojAlgo-revised        Time stable           
 ADLITTLE              ojAlgo-tableau        Time stable           
 BRANDY                ojAlgo-dense          Time stable           
-ETAMACRO              ojAlgo-revised        Time stable           
+CAPRI                 ojAlgo-tableau        Time stable           
 FFFFF800              CPLEX                 Time stable           
 SC50A                 ojAlgo-dense          Time stable           
 SC50A                 ORTools               Time stable           
-SCFXM2                ojAlgo-revised        Time stable           
 BOEING2               ojAlgo-tableau        Time stable           
 FFFFF800              ojAlgo-revised        Time stable           
+SCFXM2                ojAlgo-tableau        Time stable           
 RECIPELP              ojAlgo-tableau        Time stable           
 SC50B                 ojAlgo-tableau        Time stable           
 SHARE2B               ojAlgo-dense          Time stable           
 RECIPELP              ojAlgo-dense          Time stable           
 SC50B                 ojAlgo-dense          Time stable           
-AGG                   ojAlgo-tableau        Time stable           
-ETAMACRO              ojAlgo-dense          Time stable           
+BOEING1               ORTools               Time stable           
 SC50A                 ojAlgo-tableau        Time stable           
-BLEND                 CPLEX                 Time stable           
 GROW7                 ojAlgo-dense          Time stable           
 GROW7                 ORTools               Time stable           
 KB2                   ORTools               Time stable           
-BRANDY                ojAlgo-tableau        Time stable           
+AFIRO                 CPLEX                 Time stable           
 SC50A                 ojAlgo-revised        Time stable           
-PILOT4                ojAlgo-dense          Time stable           
-PILOT4                ORTools               Time stable           
+SCFXM2                ojAlgo-dense          Time stable           
 LOTFI                 CPLEX                 Time stable           
-SCFXM2                ORTools               Time stable           
-BRANDY                ojAlgo-revised        Time stable           
-SCAGR7                CPLEX                 Time stable           
-BOEING2               ORTools               Time stable           
-STOCFOR1              CPLEX                 Time stable           
 BOEING2               ojAlgo-dense          Time stable           
 SC205                 ojAlgo-dense          Time stable           
 SHARE2B               ORTools               Time stable           
-GROW7                 ojAlgo-revised        Time stable           
+BANDM                 ojAlgo-tableau        Time stable           
+SCTAP1                CPLEX                 Time stable           
 SC50B                 CPLEX                 Time stable           
 PILOT4                ojAlgo-revised        Time stable           
 AFIRO                 ORTools               Time stable           
 ISRAEL                CPLEX                 Time stable           
 STOCFOR1              ojAlgo-dense          Time stable           
 GROW7                 ojAlgo-tableau        Time stable           
-GROW22                ojAlgo-revised        Time stable           
-AGG                   ORTools               Time stable           
+DEGEN2                CPLEX                 Time stable           
+SHARE1B               ORTools               Time stable           
 BEACONFD              ojAlgo-tableau        Time stable           
+STOCFOR1              ojAlgo-revised        Time stable           
+FORPLAN               ojAlgo-tableau        Time stable           
+TUFF                  ojAlgo-tableau        Time stable           
 SCAGR7                ojAlgo-tableau        Time stable           
+AGG2                  CPLEX                 Time stable           
+DEGEN2                ojAlgo-dense          Time stable           
 FORPLAN               ojAlgo-revised        Time stable           
-LOTFI                 ojAlgo-revised        Time stable           
 ADLITTLE              ORTools               Time stable           
 BORE3D                ORTools               Time stable           
 STOCFOR1              ojAlgo-tableau        Time stable           
-E226                  CPLEX                 Time stable           
 SC50A                 CPLEX                 Time stable           
 ISRAEL                ORTools               Time stable           
-SHARE1B               ojAlgo-tableau        Time stable           
 SCTAP1                ojAlgo-revised        Time stable           
+GROW7                 CPLEX                 Time stable           
 DEGEN2                ojAlgo-tableau        Time stable           
+BEACONFD              ojAlgo-revised        Time stable           
 STAIR                 ojAlgo-revised        Time stable           
+STAIR                 ojAlgo-tableau        Time stable           
 BEACONFD              ojAlgo-dense          Time stable           
-STAIR                 ojAlgo-dense          Time stable           
 ISRAEL                ojAlgo-revised        Time stable           
 SC105                 ORTools               Time stable           
 VTP-BASE              ORTools               Time stable           
-AGG2                  ORTools               Time stable           
 SCAGR7                ojAlgo-dense          Time stable           
 SC105                 ojAlgo-dense          Time stable           
 VTP-BASE              ojAlgo-dense          Time stable           
-SCORPION              ojAlgo-tableau        Time stable           
-E226                  ORTools               Time stable           
 PILOT4                CPLEX                 Time stable           
 LOTFI                 ORTools               Time stable           
 STOCFOR1              ORTools               Time stable           
-BANDM                 ojAlgo-revised        Time stable           
 SCAGR7                ORTools               Time stable           
 AGG3                  ORTools               Time stable           
 DEGEN2                ojAlgo-revised        Time stable           
 VTP-BASE              ojAlgo-tableau        Time stable           
-AGG2                  ojAlgo-revised        Time stable           
 FORPLAN               CPLEX                 Time stable           
 SCSD1                 CPLEX                 Time stable           
-TUFF                  CPLEX                 Time stable           
 BLEND                 ORTools               Time stable           
 BEACONFD              ORTools               Time stable           
-SCORPION              ORTools               Time stable           
-BANDM                 ORTools               Time stable           
-AGG3                  ojAlgo-revised        Time stable           
-E226                  ojAlgo-tableau        Time stable           
-ISRAEL                ojAlgo-dense          Time stable           
+SHARE2B               CPLEX                 Time stable           
+AGG3                  ojAlgo-tableau        Time stable           
 SCORPION              ojAlgo-dense          Time stable           
 SC105                 ojAlgo-tableau        Time stable           
-E226                  ojAlgo-revised        Time stable           
-VTP-BASE              ojAlgo-revised        Time stable           
 
-Iteration 4 with 75 model/solver pairs remaining 2023-02-13T20:03:07.516746Z
+Iteration 4 with 96 model/solver pairs remaining 2023-02-26T16:08:35.877946Z
 -----------------------------------------------------------------------------
-AGG2                  ojAlgo-tableau        Time stable           
-ISRAEL                ojAlgo-tableau        Time stable           
-CAPRI                 ojAlgo-revised        Time stable           
-SCFXM1                ojAlgo-revised        Time stable           
-SC50B                 ojAlgo-revised        Time stable           
-SCAGR25               ojAlgo-revised        Time stable           
-CAPRI                 ojAlgo-tableau        Time stable           
-BORE3D                ojAlgo-tableau        Time stable           
+SCFXM2                CPLEX                 Time stable           
+SHARE2B               ojAlgo-tableau        Time stable           
+SCTAP1                ojAlgo-tableau        Time stable           
+FORPLAN               ORTools               Time stable           
+BOEING2               ojAlgo-revised        Time stable           
+AGG3                  CPLEX                 Time stable           
+RECIPELP              ojAlgo-revised        Time stable           
+GROW22                ojAlgo-tableau        Time stable           
+BOEING1               ojAlgo-tableau        Time stable           
+BOEING1               ojAlgo-dense          Time stable           
 ADLITTLE              CPLEX                 Time stable           
-SCFXM1                ORTools               Time stable           
 RECIPELP              ORTools               Time stable           
-GROW15                ojAlgo-dense          Time stable           
-CAPRI                 ojAlgo-dense          Time stable           
 CAPRI                 ORTools               Time stable           
-AFIRO                 CPLEX                 Time stable           
-SCSD1                 ojAlgo-dense          Time stable           
-SCFXM2                ojAlgo-dense          Time stable           
-BANDM                 ojAlgo-dense          Time stable           
-SC205                 ojAlgo-tableau        Time stable           
-SCTAP1                CPLEX                 Time stable           
+SCAGR7                CPLEX                 Time stable           
+STOCFOR1              CPLEX                 Time stable           
+GROW7                 ojAlgo-revised        Time stable           
 GROW22                CPLEX                 Time stable           
-BRANDY                ORTools               Time stable           
-FORPLAN               ojAlgo-dense          Time stable           
-SHARE1B               ORTools               Time stable           
-FORPLAN               ojAlgo-tableau        Time stable           
-TUFF                  ojAlgo-tableau        Time stable           
-GROW7                 CPLEX                 Time stable           
-BEACONFD              ojAlgo-revised        Time stable           
-STAIR                 ojAlgo-tableau        Time stable           
-SHARE2B               CPLEX                 Time stable           
-
-Iteration 5 with 45 model/solver pairs remaining 2023-02-13T20:04:32.312506Z
------------------------------------------------------------------------------
-SCORPION              ojAlgo-revised        Time stable           
-SC105                 CPLEX                 Time stable           
-KB2                   ojAlgo-tableau        Time stable           
-SCFXM1                ojAlgo-dense          Time stable           
-BORE3D                ojAlgo-revised        Time stable           
-FINNIS                ojAlgo-revised        Time stable           
 SCAGR25               CPLEX                 Time stable           
 ETAMACRO              ojAlgo-tableau        Time stable           
-PILOT4                ojAlgo-tableau        Time stable           
-STAIR                 ORTools               Time stable           
-BORE3D                ojAlgo-dense          Time stable           
-STOCFOR1              ojAlgo-revised        Time stable           
-AGG2                  CPLEX                 Time stable           
-SC205                 ojAlgo-revised        Time stable           
-E226                  ojAlgo-dense          Time stable           
-LOTFI                 ojAlgo-dense          Time stable           
-SC205                 ORTools               Time stable           
-
-Iteration 6 with 28 model/solver pairs remaining 2023-02-13T20:05:24.770549Z
------------------------------------------------------------------------------
-FINNIS                ojAlgo-tableau        Time stable           
-FINNIS                ojAlgo-dense          Time stable           
-BOEING1               ojAlgo-tableau        Time stable           
-SCFXM1                ojAlgo-tableau        Time stable           
+BRANDY                ORTools               Time stable           
 FINNIS                ORTools               Time stable           
-SC105                 ojAlgo-revised        Time stable           
-AGG3                  ojAlgo-tableau        Time stable           
-
-Iteration 7 with 21 model/solver pairs remaining 2023-02-13T20:05:57.072317Z
------------------------------------------------------------------------------
-CAPRI                 CPLEX                 Time stable           
-SCAGR7                ojAlgo-revised        Time stable           
-BOEING1               ojAlgo-dense          Time stable           
-DEGEN2                CPLEX                 Time stable           
-
-Iteration 8 with 17 model/solver pairs remaining 2023-02-13T20:06:25.326880Z
------------------------------------------------------------------------------
-SCTAP1                ojAlgo-dense          Time stable           
-FORPLAN               ORTools               Time stable           
-DEGEN2                ojAlgo-dense          Time stable           
+AGG                   ORTools               Time stable           
+BORE3D                ojAlgo-dense          Time stable           
 GROW22                ojAlgo-dense          Time stable           
-GROW15                CPLEX                 Time stable           
+SC105                 ojAlgo-revised        Time stable           
+BANDM                 ojAlgo-revised        Time stable           
+ISRAEL                ojAlgo-dense          Time stable           
 
-Iteration 9 with 12 model/solver pairs remaining 2023-02-13T20:06:46.510875Z
+Iteration 5 with 69 model/solver pairs remaining 2023-02-26T16:10:53.573958Z
+-----------------------------------------------------------------------------
+TUFF                  ORTools               Time stable           
+SCFXM1                CPLEX                 Time stable           
+SCTAP1                ORTools               Time stable           
+SC205                 CPLEX                 Time stable           
+SCSD1                 ojAlgo-revised        Time stable           
+BORE3D                ojAlgo-revised        Time stable           
+SCFXM2                ojAlgo-revised        Time stable           
+BORE3D                ojAlgo-tableau        Time stable           
+ETAMACRO              ojAlgo-dense          Time stable           
+BLEND                 CPLEX                 Time stable           
+CAPRI                 ojAlgo-dense          Time stable           
+SCSD1                 ojAlgo-dense          Time stable           
+BRANDY                ojAlgo-tableau        Time stable           
+SCFXM2                ORTools               Time stable           
+BANDM                 ojAlgo-dense          Time stable           
+FORPLAN               ojAlgo-dense          Time stable           
+GROW22                ojAlgo-revised        Time stable           
+FFFFF800              ojAlgo-dense          Time stable           
+SHARE1B               ojAlgo-tableau        Time stable           
+LOTFI                 ojAlgo-dense          Time stable           
+SCORPION              ojAlgo-tableau        Time stable           
+SC205                 ORTools               Time stable           
+AGG2                  ojAlgo-revised        Time stable           
+TUFF                  CPLEX                 Time stable           
+SCORPION              ORTools               Time stable           
+
+Iteration 6 with 44 model/solver pairs remaining 2023-02-26T16:12:34.056840Z
+-----------------------------------------------------------------------------
+GROW15                ojAlgo-revised        Time stable           
+BLEND                 ojAlgo-revised        Time stable           
+DEGEN2                ORTools               Time stable           
+SHARE1B               ojAlgo-dense          Time stable           
+ETAMACRO              ojAlgo-revised        Time stable           
+AGG                   ojAlgo-tableau        Time stable           
+SCFXM1                ojAlgo-tableau        Time stable           
+GROW15                ORTools               Time stable           
+PILOT4                ORTools               Time stable           
+PILOT4                ojAlgo-tableau        Time stable           
+FFFFF800              ojAlgo-tableau        Time stable           
+STAIR                 ORTools               Time stable           
+SC205                 ojAlgo-revised        Time stable           
+AGG3                  ojAlgo-revised        Time stable           
+
+Iteration 7 with 30 model/solver pairs remaining 2023-02-26T16:13:32.393622Z
 -----------------------------------------------------------------------------
 BOEING1               CPLEX                 Time stable           
-BOEING1               ORTools               Time stable           
-FFFFF800              ojAlgo-tableau        Time stable           
-FFFFF800              ojAlgo-dense          Time stable           
+SCAGR25               ORTools               Time stable           
+SCFXM1                ojAlgo-revised        Time stable           
+BOEING2               ORTools               Time stable           
+SC205                 ojAlgo-tableau        Time stable           
+E226                  CPLEX                 Time stable           
+STAIR                 ojAlgo-dense          Time stable           
+E226                  ojAlgo-dense          Time stable           
+E226                  ojAlgo-tableau        Time stable           
+E226                  ojAlgo-revised        Time stable           
 
-Iteration 10 with 8 model/solver pairs remaining 2023-02-13T20:06:58.625892Z
+Iteration 8 with 20 model/solver pairs remaining 2023-02-26T16:14:10.728755Z
 -----------------------------------------------------------------------------
-BOEING2               ojAlgo-revised        Time stable           
-SCFXM2                ojAlgo-tableau        Time stable           
-BANDM                 ojAlgo-tableau        Time stable           
+SCAGR25               ojAlgo-tableau        Time stable           
+SCFXM1                ORTools               Time stable           
+PILOT4                ojAlgo-dense          Time stable           
+BRANDY                ojAlgo-revised        Time stable           
+LOTFI                 ojAlgo-revised        Time stable           
+BANDM                 ORTools               Time stable           
+VTP-BASE              ojAlgo-revised        Time stable           
 
-Iteration 11 with 5 model/solver pairs remaining 2023-02-13T20:07:06.710627Z
+Iteration 9 with 13 model/solver pairs remaining 2023-02-26T16:14:38.967580Z
 -----------------------------------------------------------------------------
-STAIR                 CPLEX                 Time stable           
-
-Iteration 12 with 4 model/solver pairs remaining 2023-02-13T20:07:11.772626Z
------------------------------------------------------------------------------
-
-Iteration 13 with 4 model/solver pairs remaining 2023-02-13T20:07:15.810478Z
------------------------------------------------------------------------------
+GROW15                ojAlgo-tableau        Time stable           
+SHARE1B               CPLEX                 Time stable           
 SCAGR25               ojAlgo-dense          Time stable           
+SCFXM1                ojAlgo-dense          Time stable           
+FINNIS                ojAlgo-revised        Time stable           
+GROW15                CPLEX                 Time stable           
 
-Iteration 14 with 3 model/solver pairs remaining 2023-02-13T20:07:19.848448Z
+Iteration 10 with 7 model/solver pairs remaining 2023-02-26T16:14:58.155413Z
 -----------------------------------------------------------------------------
 
-Iteration 15 with 3 model/solver pairs remaining 2023-02-13T20:07:22.880853Z
+Iteration 11 with 7 model/solver pairs remaining 2023-02-26T16:15:08.256191Z
 -----------------------------------------------------------------------------
-SCTAP1                ojAlgo-tableau        Time stable           
+GROW15                ojAlgo-dense          Time stable           
+E226                  ORTools               Time stable           
 
-Iteration 16 with 2 model/solver pairs remaining 2023-02-13T20:07:25.918279Z
------------------------------------------------------------------------------
-
-Iteration 17 with 2 model/solver pairs remaining 2023-02-13T20:07:27.945507Z
+Iteration 12 with 5 model/solver pairs remaining 2023-02-26T16:15:18.350407Z
 -----------------------------------------------------------------------------
 
-Iteration 18 with 2 model/solver pairs remaining 2023-02-13T20:07:29.975365Z
+Iteration 13 with 5 model/solver pairs remaining 2023-02-26T16:15:26.418559Z
 -----------------------------------------------------------------------------
+FFFFF800              ORTools               Time stable           
 
-Iteration 19 with 2 model/solver pairs remaining 2023-02-13T20:07:31.999069Z
+Iteration 14 with 4 model/solver pairs remaining 2023-02-26T16:15:34.491797Z
 -----------------------------------------------------------------------------
-GROW22                ojAlgo-tableau        Time stable           
+AGG2                  ORTools               Time stable           
 
-Iteration 20 with 1 model/solver pairs remaining 2023-02-13T20:07:34.024215Z
+Iteration 15 with 3 model/solver pairs remaining 2023-02-26T16:15:45.575097Z
 -----------------------------------------------------------------------------
-GROW15                ORTools               Time stable           
+GROW22                ORTools               Time stable           
+
+Iteration 16 with 2 model/solver pairs remaining 2023-02-26T16:15:54.641056Z
+-----------------------------------------------------------------------------
+SHARE1B               ojAlgo-revised        Time stable           
+SCAGR25               ojAlgo-revised        Time stable           
 
 Final Results
 =====================================================================
-ADLITTLE              CPLEX                 OPTIMAL               2.413639ms            
-ADLITTLE              ORTools               OPTIMAL               1.765504ms            
-ADLITTLE              ojAlgo-dense          OPTIMAL               1.108732ms            
-ADLITTLE              ojAlgo-revised        OPTIMAL               7.72394ms             
-ADLITTLE              ojAlgo-tableau        OPTIMAL               1.246471ms            
-AFIRO                 CPLEX                 OPTIMAL               1.362565ms            
-AFIRO                 ORTools               OPTIMAL               0.707744ms            
-AFIRO                 ojAlgo-dense          OPTIMAL               0.251871ms            
-AFIRO                 ojAlgo-revised        OPTIMAL               0.700019ms            
-AFIRO                 ojAlgo-tableau        OPTIMAL               0.287717ms            
-AGG                   CPLEX                 OPTIMAL               6.331287ms            
-AGG                   ORTools               OPTIMAL               5.720925ms            
-AGG                   ojAlgo-dense          OPTIMAL               5.025961ms            
-AGG                   ojAlgo-revised        OPTIMAL               89.69397ms            
-AGG                   ojAlgo-tableau        OPTIMAL               5.781257ms            
-AGG2                  CPLEX                 OPTIMAL               9.684312ms            
-AGG2                  ORTools               OPTIMAL               7.847514ms            
-AGG2                  ojAlgo-dense          OPTIMAL               7.15707ms             
-AGG2                  ojAlgo-revised        OPTIMAL               319.189119ms          
-AGG2                  ojAlgo-tableau        OPTIMAL               8.459102ms            
-AGG3                  CPLEX                 OPTIMAL               8.293606ms            
-AGG3                  ORTools               OPTIMAL               9.676324ms            
-AGG3                  ojAlgo-dense          OPTIMAL               8.13965ms             
-AGG3                  ojAlgo-revised        OPTIMAL               298.716925ms          
-AGG3                  ojAlgo-tableau        OPTIMAL               8.040084ms            
-BANDM                 CPLEX                 OPTIMAL               10.50447ms            
-BANDM                 ORTools               OPTIMAL               8.165148ms            
-BANDM                 ojAlgo-dense          OPTIMAL               20.262803ms           
-BANDM                 ojAlgo-revised        OPTIMAL               357.78294ms           
-BANDM                 ojAlgo-tableau        OPTIMAL               20.153309ms           
-BEACONFD              CPLEX                 OPTIMAL               3.97469ms             
-BEACONFD              ORTools               OPTIMAL               3.501087ms            
-BEACONFD              ojAlgo-dense          OPTIMAL               2.617138ms            
-BEACONFD              ojAlgo-revised        OPTIMAL               14.727186ms           
-BEACONFD              ojAlgo-tableau        OPTIMAL               2.739546ms            
-BLEND                 CPLEX                 OPTIMAL               2.579067ms            
-BLEND                 ORTools               OPTIMAL               1.898457ms            
-BLEND                 ojAlgo-dense          OPTIMAL               1.000846ms            
-BLEND                 ojAlgo-revised        OPTIMAL               12.199301ms           
-BLEND                 ojAlgo-tableau        OPTIMAL               1.804347ms            
-BOEING1               CPLEX                 OPTIMAL               11.068801ms           
-BOEING1               ORTools               OPTIMAL               9.383724ms            
-BOEING1               ojAlgo-dense          OPTIMAL               77.440528ms           
-BOEING1               ojAlgo-revised        OPTIMAL               1277.241631ms         
-BOEING1               ojAlgo-tableau        OPTIMAL               46.573939ms           
-BOEING2               CPLEX                 OPTIMAL               4.136601ms            
-BOEING2               ORTools               OPTIMAL               3.583363ms            
-BOEING2               ojAlgo-dense          OPTIMAL               7.810836ms            
-BOEING2               ojAlgo-revised        OPTIMAL               37.467905ms           
-BOEING2               ojAlgo-tableau        OPTIMAL               3.340061ms            
-BORE3D                CPLEX                 OPTIMAL               4.100284ms            
-BORE3D                ORTools               OPTIMAL               2.665719ms            
-BORE3D                ojAlgo-dense          OPTIMAL               2.381515ms            
-BORE3D                ojAlgo-revised        OPTIMAL               26.97317ms            
-BORE3D                ojAlgo-tableau        OPTIMAL               2.446711ms            
-BRANDY                CPLEX                 OPTIMAL               5.811918ms            
-BRANDY                ORTools               OPTIMAL               5.85083ms             
-BRANDY                ojAlgo-dense          OPTIMAL               5.704307ms            
-BRANDY                ojAlgo-revised        OPTIMAL               82.555737ms           
-BRANDY                ojAlgo-tableau        OPTIMAL               7.59918ms             
-CAPRI                 CPLEX                 OPTIMAL               5.950271ms            
-CAPRI                 ORTools               OPTIMAL               7.405471ms            
-CAPRI                 ojAlgo-dense          OPTIMAL               25.86166ms            
-CAPRI                 ojAlgo-revised        OPTIMAL               282.524071ms          
-CAPRI                 ojAlgo-tableau        OPTIMAL               14.133713ms           
-DEGEN2                CPLEX                 OPTIMAL               13.636197ms           
-DEGEN2                ORTools               OPTIMAL               17.28746ms            
-DEGEN2                ojAlgo-dense          OPTIMAL               134.752662ms          
-DEGEN2                ojAlgo-revised        OPTIMAL               5728.464153ms         
-DEGEN2                ojAlgo-tableau        OPTIMAL               203.591584ms          
-E226                  CPLEX                 OPTIMAL               8.77934ms             
-E226                  ORTools               OPTIMAL               8.610768ms            
-E226                  ojAlgo-dense          OPTIMAL               11.872257ms           
-E226                  ojAlgo-revised        OPTIMAL               152.886144ms          
-E226                  ojAlgo-tableau        OPTIMAL               12.097935ms           
-ETAMACRO              CPLEX                 OPTIMAL               11.965793ms           
-ETAMACRO              ORTools               OPTIMAL               11.014476ms           
-ETAMACRO              ojAlgo-dense          OPTIMAL               25.356359ms           
-ETAMACRO              ojAlgo-revised        OPTIMAL               1018.174111ms         
-ETAMACRO              ojAlgo-tableau        OPTIMAL               39.67745ms            
-FFFFF800              CPLEX                 OPTIMAL               11.764222ms           
-FFFFF800              ORTools               OPTIMAL               11.385852ms           
-FFFFF800              ojAlgo-dense          OPTIMAL               49.561474ms           
-FFFFF800              ojAlgo-revised        OPTIMAL               1887.68536ms          
-FFFFF800              ojAlgo-tableau        OPTIMAL               57.151639ms           
-FINNIS                CPLEX                 OPTIMAL               10.23163ms            
-FINNIS                ORTools               OPTIMAL               10.463164ms           
-FINNIS                ojAlgo-dense          OPTIMAL               179.32089ms           
-FINNIS                ojAlgo-revised        OPTIMAL               763.214308ms          
-FINNIS                ojAlgo-tableau        OPTIMAL               23.819781ms           
-FORPLAN               CPLEX                 OPTIMAL               6.307883ms            
-FORPLAN               ORTools               OPTIMAL               6.08659ms             
-FORPLAN               ojAlgo-dense          OPTIMAL               7.541485ms            
-FORPLAN               ojAlgo-revised        OPTIMAL               75.784337ms           
-FORPLAN               ojAlgo-tableau        OPTIMAL               10.045735ms           
-GROW15                CPLEX                 OPTIMAL               29.114249ms           
-GROW15                ORTools               OPTIMAL               15.370322ms           
-GROW15                ojAlgo-dense          OPTIMAL               184.465162ms          
-GROW15                ojAlgo-revised        OPTIMAL               493.033978ms          
-GROW15                ojAlgo-tableau        OPTIMAL               20.523137ms           
-GROW22                CPLEX                 OPTIMAL               75.717027ms           
-GROW22                ORTools               OPTIMAL               30.531852ms           
-GROW22                ojAlgo-dense          OPTIMAL               1299.580861ms         
-GROW22                ojAlgo-revised        OPTIMAL               1336.261191ms         
-GROW22                ojAlgo-tableau        OPTIMAL               52.174511ms           
-GROW7                 CPLEX                 OPTIMAL               6.532934ms            
-GROW7                 ORTools               OPTIMAL               5.892066ms            
-GROW7                 ojAlgo-dense          OPTIMAL               13.746601ms           
-GROW7                 ojAlgo-revised        OPTIMAL               65.645754ms           
-GROW7                 ojAlgo-tableau        OPTIMAL               4.809964ms            
-ISRAEL                CPLEX                 OPTIMAL               5.076753ms            
-ISRAEL                ORTools               OPTIMAL               3.95746ms             
-ISRAEL                ojAlgo-dense          OPTIMAL               6.41864ms             
-ISRAEL                ojAlgo-revised        OPTIMAL               91.85425ms            
-ISRAEL                ojAlgo-tableau        OPTIMAL               4.269577ms            
-KB2                   CPLEX                 OPTIMAL               2.00775ms             
-KB2                   ORTools               OPTIMAL               1.11913ms             
-KB2                   ojAlgo-dense          OPTIMAL               0.684625ms            
-KB2                   ojAlgo-revised        OPTIMAL               4.608585ms            
-KB2                   ojAlgo-tableau        OPTIMAL               0.407324ms            
-LOTFI                 CPLEX                 OPTIMAL               3.613593ms            
-LOTFI                 ORTools               OPTIMAL               3.120835ms            
-LOTFI                 ojAlgo-dense          OPTIMAL               2.312399ms            
-LOTFI                 ojAlgo-revised        OPTIMAL               43.728551ms           
-LOTFI                 ojAlgo-tableau        OPTIMAL               4.981432ms            
-PILOT4                CPLEX                 OPTIMAL               26.000205ms           
-PILOT4                ORTools               OPTIMAL               23.534316ms           
-PILOT4                ojAlgo-dense          OPTIMAL               410.807827ms          
-PILOT4                ojAlgo-revised        OPTIMAL               4897.53698ms          
-PILOT4                ojAlgo-tableau        OPTIMAL               287.511566ms          
-RECIPELP              CPLEX                 OPTIMAL               2.523782ms            
-RECIPELP              ORTools               OPTIMAL               0.954191ms            
-RECIPELP              ojAlgo-dense          OPTIMAL               0.91401ms             
-RECIPELP              ojAlgo-revised        OPTIMAL               4.153535ms            
-RECIPELP              ojAlgo-tableau        OPTIMAL               0.714371ms            
-SC105                 CPLEX                 OPTIMAL               2.202687ms            
-SC105                 ORTools               OPTIMAL               1.847768ms            
-SC105                 ojAlgo-dense          OPTIMAL               0.79113ms             
-SC105                 ojAlgo-revised        OPTIMAL               11.366036ms           
-SC105                 ojAlgo-tableau        OPTIMAL               1.049626ms            
-SC205                 CPLEX                 OPTIMAL               3.014355ms            
-SC205                 ORTools               OPTIMAL               3.850879ms            
-SC205                 ojAlgo-dense          OPTIMAL               3.290076ms            
-SC205                 ojAlgo-revised        OPTIMAL               78.603829ms           
-SC205                 ojAlgo-tableau        OPTIMAL               4.70635ms             
-SC50A                 CPLEX                 OPTIMAL               1.611828ms            
-SC50A                 ORTools               OPTIMAL               0.875987ms            
-SC50A                 ojAlgo-dense          OPTIMAL               0.328362ms            
-SC50A                 ojAlgo-revised        OPTIMAL               2.099782ms            
-SC50A                 ojAlgo-tableau        OPTIMAL               0.319851ms            
-SC50B                 CPLEX                 OPTIMAL               1.530487ms            
-SC50B                 ORTools               OPTIMAL               0.860658ms            
-SC50B                 ojAlgo-dense          OPTIMAL               0.352127ms            
-SC50B                 ojAlgo-revised        OPTIMAL               1.694597ms            
-SC50B                 ojAlgo-tableau        OPTIMAL               0.320923ms            
-SCAGR25               CPLEX                 OPTIMAL               9.066671ms            
-SCAGR25               ORTools               OPTIMAL               10.133336ms           
-SCAGR25               ojAlgo-dense          OPTIMAL               62.586953ms           
-SCAGR25               ojAlgo-revised        OPTIMAL               1023.10329ms          
-SCAGR25               ojAlgo-tableau        OPTIMAL               49.651953ms           
-SCAGR7                CPLEX                 OPTIMAL               3.768802ms            
-SCAGR7                ORTools               OPTIMAL               2.545368ms            
-SCAGR7                ojAlgo-dense          OPTIMAL               2.062911ms            
-SCAGR7                ojAlgo-revised        OPTIMAL               17.971857ms           
-SCAGR7                ojAlgo-tableau        OPTIMAL               2.252037ms            
-SCFXM1                CPLEX                 OPTIMAL               10.671912ms           
-SCFXM1                ORTools               OPTIMAL               7.664154ms            
-SCFXM1                ojAlgo-dense          OPTIMAL               10.612447ms           
-SCFXM1                ojAlgo-revised        OPTIMAL               318.561953ms          
-SCFXM1                ojAlgo-tableau        OPTIMAL               12.280094ms           
-SCFXM2                CPLEX                 OPTIMAL               18.730828ms           
-SCFXM2                ORTools               OPTIMAL               20.209925ms           
-SCFXM2                ojAlgo-dense          OPTIMAL               59.895555ms           
-SCFXM2                ojAlgo-revised        OPTIMAL               2462.412927ms         
-SCFXM2                ojAlgo-tableau        OPTIMAL               77.371983ms           
-SCORPION              CPLEX                 OPTIMAL               5.995629ms            
-SCORPION              ORTools               OPTIMAL               6.50511ms             
-SCORPION              ojAlgo-dense          OPTIMAL               8.780953ms            
-SCORPION              ojAlgo-revised        OPTIMAL               176.112483ms          
-SCORPION              ojAlgo-tableau        OPTIMAL               6.527348ms            
-SCSD1                 CPLEX                 OPTIMAL               6.018247ms            
-SCSD1                 ORTools               OPTIMAL               5.096982ms            
-SCSD1                 ojAlgo-dense          OPTIMAL               4.287073ms            
-SCSD1                 ojAlgo-revised        OPTIMAL               13.797939ms           
-SCSD1                 ojAlgo-tableau        OPTIMAL               4.254049ms            
-SCTAP1                CPLEX                 OPTIMAL               5.86698ms             
-SCTAP1                ORTools               OPTIMAL               5.608336ms            
-SCTAP1                ojAlgo-dense          OPTIMAL               7.916663ms            
-SCTAP1                ojAlgo-revised        OPTIMAL               659.296999ms          
-SCTAP1                ojAlgo-tableau        OPTIMAL               17.226503ms           
-SHARE1B               CPLEX                 OPTIMAL               5.194188ms            
-SHARE1B               ORTools               OPTIMAL               5.396345ms            
-SHARE1B               ojAlgo-dense          OPTIMAL               4.534836ms            
-SHARE1B               ojAlgo-revised        OPTIMAL               43.728518ms           
-SHARE1B               ojAlgo-tableau        OPTIMAL               4.800932ms            
-SHARE2B               CPLEX                 OPTIMAL               2.317958ms            
-SHARE2B               ORTools               OPTIMAL               1.911776ms            
-SHARE2B               ojAlgo-dense          OPTIMAL               1.006019ms            
-SHARE2B               ojAlgo-revised        OPTIMAL               14.631346ms           
-SHARE2B               ojAlgo-tableau        OPTIMAL               1.593153ms            
-STAIR                 CPLEX                 OPTIMAL               11.137187ms           
-STAIR                 ORTools               OPTIMAL               13.031991ms           
-STAIR                 ojAlgo-dense          OPTIMAL               23.765783ms           
-STAIR                 ojAlgo-revised        OPTIMAL               996.850833ms          
-STAIR                 ojAlgo-tableau        OPTIMAL               34.387928ms           
-STOCFOR1              CPLEX                 OPTIMAL               2.872053ms            
-STOCFOR1              ORTools               OPTIMAL               2.069684ms            
-STOCFOR1              ojAlgo-dense          OPTIMAL               1.198399ms            
-STOCFOR1              ojAlgo-revised        OPTIMAL               7.579905ms            
-STOCFOR1              ojAlgo-tableau        OPTIMAL               1.339469ms            
-TUFF                  CPLEX                 OPTIMAL               10.33865ms            
-TUFF                  ORTools               OPTIMAL               7.77317ms             
+ADLITTLE              CPLEX                 OPTIMAL               2.151826ms            
+ADLITTLE              ORTools               OPTIMAL               1.954173ms            
+ADLITTLE              ojAlgo-dense          OPTIMAL               1.065229ms            
+ADLITTLE              ojAlgo-revised        OPTIMAL               10.790242ms           
+ADLITTLE              ojAlgo-tableau        OPTIMAL               1.258413ms            
+AFIRO                 CPLEX                 OPTIMAL               1.29415ms             
+AFIRO                 ORTools               OPTIMAL               0.569456ms            
+AFIRO                 ojAlgo-dense          OPTIMAL               0.29709ms             
+AFIRO                 ojAlgo-revised        OPTIMAL               0.768368ms            
+AFIRO                 ojAlgo-tableau        OPTIMAL               0.285772ms            
+AGG                   CPLEX                 OPTIMAL               5.839833ms            
+AGG                   ORTools               OPTIMAL               4.665583ms            
+AGG                   ojAlgo-dense          OPTIMAL               4.866716ms            
+AGG                   ojAlgo-revised        OPTIMAL               114.441832ms          
+AGG                   ojAlgo-tableau        OPTIMAL               4.761553ms            
+AGG2                  CPLEX                 OPTIMAL               9.653827ms            
+AGG2                  ORTools               OPTIMAL               7.109205ms            
+AGG2                  ojAlgo-dense          OPTIMAL               5.937966ms            
+AGG2                  ojAlgo-revised        OPTIMAL               454.690458ms          
+AGG2                  ojAlgo-tableau        OPTIMAL               8.286706ms            
+AGG3                  CPLEX                 OPTIMAL               8.1168ms              
+AGG3                  ORTools               OPTIMAL               8.674447ms            
+AGG3                  ojAlgo-dense          OPTIMAL               8.203715ms            
+AGG3                  ojAlgo-revised        OPTIMAL               438.666964ms          
+AGG3                  ojAlgo-tableau        OPTIMAL               7.053894ms            
+BANDM                 CPLEX                 OPTIMAL               10.14118ms            
+BANDM                 ORTools               OPTIMAL               8.68716ms             
+BANDM                 ojAlgo-dense          OPTIMAL               18.294931ms           
+BANDM                 ojAlgo-revised        OPTIMAL               425.11485ms           
+BANDM                 ojAlgo-tableau        OPTIMAL               20.100281ms           
+BEACONFD              CPLEX                 OPTIMAL               4.225484ms            
+BEACONFD              ORTools               OPTIMAL               2.761429ms            
+BEACONFD              ojAlgo-dense          OPTIMAL               2.582189ms            
+BEACONFD              ojAlgo-revised        OPTIMAL               17.78463ms            
+BEACONFD              ojAlgo-tableau        OPTIMAL               2.681242ms            
+BLEND                 CPLEX                 OPTIMAL               2.482937ms            
+BLEND                 ORTools               OPTIMAL               1.569362ms            
+BLEND                 ojAlgo-dense          OPTIMAL               1.011311ms            
+BLEND                 ojAlgo-revised        OPTIMAL               13.808954ms           
+BLEND                 ojAlgo-tableau        OPTIMAL               1.853173ms            
+BOEING1               CPLEX                 OPTIMAL               12.361861ms           
+BOEING1               ORTools               OPTIMAL               11.715306ms           
+BOEING1               ojAlgo-dense          OPTIMAL               79.4267ms             
+BOEING1               ojAlgo-revised        OPTIMAL               1476.798949ms         
+BOEING1               ojAlgo-tableau        OPTIMAL               47.215948ms           
+BOEING2               CPLEX                 OPTIMAL               3.885016ms            
+BOEING2               ORTools               OPTIMAL               2.839371ms            
+BOEING2               ojAlgo-dense          OPTIMAL               7.819674ms            
+BOEING2               ojAlgo-revised        OPTIMAL               45.730325ms           
+BOEING2               ojAlgo-tableau        OPTIMAL               3.269644ms            
+BORE3D                CPLEX                 OPTIMAL               4.501216ms            
+BORE3D                ORTools               OPTIMAL               2.828554ms            
+BORE3D                ojAlgo-dense          OPTIMAL               2.413144ms            
+BORE3D                ojAlgo-revised        OPTIMAL               34.812371ms           
+BORE3D                ojAlgo-tableau        OPTIMAL               2.411302ms            
+BRANDY                CPLEX                 OPTIMAL               5.964973ms            
+BRANDY                ORTools               OPTIMAL               5.694564ms            
+BRANDY                ojAlgo-dense          OPTIMAL               6.150526ms            
+BRANDY                ojAlgo-revised        OPTIMAL               96.529696ms           
+BRANDY                ojAlgo-tableau        OPTIMAL               6.128833ms            
+CAPRI                 CPLEX                 OPTIMAL               6.596496ms            
+CAPRI                 ORTools               OPTIMAL               6.201927ms            
+CAPRI                 ojAlgo-dense          OPTIMAL               26.37276ms            
+CAPRI                 ojAlgo-revised        OPTIMAL               348.977313ms          
+CAPRI                 ojAlgo-tableau        OPTIMAL               14.763257ms           
+DEGEN2                CPLEX                 OPTIMAL               13.893284ms           
+DEGEN2                ORTools               OPTIMAL               18.849397ms           
+DEGEN2                ojAlgo-dense          OPTIMAL               139.845127ms          
+DEGEN2                ojAlgo-revised        OPTIMAL               6414.673335ms         
+DEGEN2                ojAlgo-tableau        OPTIMAL               206.188633ms          
+E226                  CPLEX                 OPTIMAL               6.30279ms             
+E226                  ORTools               OPTIMAL               7.168853ms            
+E226                  ojAlgo-dense          OPTIMAL               11.916764ms           
+E226                  ojAlgo-revised        OPTIMAL               179.396169ms          
+E226                  ojAlgo-tableau        OPTIMAL               11.059768ms           
+ETAMACRO              CPLEX                 OPTIMAL               12.009816ms           
+ETAMACRO              ORTools               OPTIMAL               11.785492ms           
+ETAMACRO              ojAlgo-dense          OPTIMAL               26.111638ms           
+ETAMACRO              ojAlgo-revised        OPTIMAL               1206.776697ms         
+ETAMACRO              ojAlgo-tableau        OPTIMAL               40.714277ms           
+FFFFF800              CPLEX                 OPTIMAL               11.768244ms           
+FFFFF800              ORTools               OPTIMAL               8.87694ms             
+FFFFF800              ojAlgo-dense          OPTIMAL               50.466661ms           
+FFFFF800              ojAlgo-revised        OPTIMAL               2400.584745ms         
+FFFFF800              ojAlgo-tableau        OPTIMAL               58.554328ms           
+FINNIS                CPLEX                 OPTIMAL               10.192314ms           
+FINNIS                ORTools               OPTIMAL               9.880753ms            
+FINNIS                ojAlgo-dense          OPTIMAL               183.16791ms           
+FINNIS                ojAlgo-revised        OPTIMAL               994.984093ms          
+FINNIS                ojAlgo-tableau        OPTIMAL               24.879767ms           
+FORPLAN               CPLEX                 OPTIMAL               7.540266ms            
+FORPLAN               ORTools               OPTIMAL               6.500859ms            
+FORPLAN               ojAlgo-dense          OPTIMAL               7.246926ms            
+FORPLAN               ojAlgo-revised        OPTIMAL               101.707544ms          
+FORPLAN               ojAlgo-tableau        OPTIMAL               9.604858ms            
+GROW15                CPLEX                 OPTIMAL               29.32177ms            
+GROW15                ORTools               OPTIMAL               16.13108ms            
+GROW15                ojAlgo-dense          OPTIMAL               188.944115ms          
+GROW15                ojAlgo-revised        OPTIMAL               649.748815ms          
+GROW15                ojAlgo-tableau        OPTIMAL               20.598239ms           
+GROW22                CPLEX                 OPTIMAL               78.095761ms           
+GROW22                ORTools               OPTIMAL               30.850092ms           
+GROW22                ojAlgo-dense          OPTIMAL               1449.788344ms         
+GROW22                ojAlgo-revised        OPTIMAL               1810.045493ms         
+GROW22                ojAlgo-tableau        OPTIMAL               52.670173ms           
+GROW7                 CPLEX                 OPTIMAL               9.601609ms            
+GROW7                 ORTools               OPTIMAL               7.729388ms            
+GROW7                 ojAlgo-dense          OPTIMAL               13.142043ms           
+GROW7                 ojAlgo-revised        OPTIMAL               75.415775ms           
+GROW7                 ojAlgo-tableau        OPTIMAL               4.832943ms            
+ISRAEL                CPLEX                 OPTIMAL               5.005518ms            
+ISRAEL                ORTools               OPTIMAL               4.793051ms            
+ISRAEL                ojAlgo-dense          OPTIMAL               6.251296ms            
+ISRAEL                ojAlgo-revised        OPTIMAL               105.245934ms          
+ISRAEL                ojAlgo-tableau        OPTIMAL               5.284496ms            
+KB2                   CPLEX                 OPTIMAL               1.836918ms            
+KB2                   ORTools               OPTIMAL               0.592592ms            
+KB2                   ojAlgo-dense          OPTIMAL               0.66315ms             
+KB2                   ojAlgo-revised        OPTIMAL               5.42234ms             
+KB2                   ojAlgo-tableau        OPTIMAL               0.711933ms            
+LOTFI                 CPLEX                 OPTIMAL               4.025322ms            
+LOTFI                 ORTools               OPTIMAL               3.0796ms              
+LOTFI                 ojAlgo-dense          OPTIMAL               2.225447ms            
+LOTFI                 ojAlgo-revised        OPTIMAL               55.670989ms           
+LOTFI                 ojAlgo-tableau        OPTIMAL               4.915415ms            
+PILOT4                CPLEX                 OPTIMAL               25.935716ms           
+PILOT4                ORTools               OPTIMAL               23.415537ms           
+PILOT4                ojAlgo-dense          OPTIMAL               412.677947ms          
+PILOT4                ojAlgo-revised        OPTIMAL               5617.315114ms         
+PILOT4                ojAlgo-tableau        OPTIMAL               290.624822ms          
+RECIPELP              CPLEX                 OPTIMAL               2.158373ms            
+RECIPELP              ORTools               OPTIMAL               1.2185ms              
+RECIPELP              ojAlgo-dense          OPTIMAL               1.008659ms            
+RECIPELP              ojAlgo-revised        OPTIMAL               5.204718ms            
+RECIPELP              ojAlgo-tableau        OPTIMAL               0.712539ms            
+SC105                 CPLEX                 OPTIMAL               2.143166ms            
+SC105                 ORTools               OPTIMAL               1.723464ms            
+SC105                 ojAlgo-dense          OPTIMAL               0.745783ms            
+SC105                 ojAlgo-revised        OPTIMAL               14.152232ms           
+SC105                 ojAlgo-tableau        OPTIMAL               0.888987ms            
+SC205                 CPLEX                 OPTIMAL               3.128056ms            
+SC205                 ORTools               OPTIMAL               4.291763ms            
+SC205                 ojAlgo-dense          OPTIMAL               2.911179ms            
+SC205                 ojAlgo-revised        OPTIMAL               96.799196ms           
+SC205                 ojAlgo-tableau        OPTIMAL               4.699783ms            
+SC50A                 CPLEX                 OPTIMAL               1.562905ms            
+SC50A                 ORTools               OPTIMAL               0.868534ms            
+SC50A                 ojAlgo-dense          OPTIMAL               0.327264ms            
+SC50A                 ojAlgo-revised        OPTIMAL               1.887829ms            
+SC50A                 ojAlgo-tableau        OPTIMAL               0.40217ms             
+SC50B                 CPLEX                 OPTIMAL               1.535618ms            
+SC50B                 ORTools               OPTIMAL               0.740258ms            
+SC50B                 ojAlgo-dense          OPTIMAL               0.366891ms            
+SC50B                 ojAlgo-revised        OPTIMAL               2.395179ms            
+SC50B                 ojAlgo-tableau        OPTIMAL               0.400323ms            
+SCAGR25               CPLEX                 OPTIMAL               8.910354ms            
+SCAGR25               ORTools               OPTIMAL               8.189667ms            
+SCAGR25               ojAlgo-dense          OPTIMAL               63.269462ms           
+SCAGR25               ojAlgo-revised        OPTIMAL               1163.342474ms         
+SCAGR25               ojAlgo-tableau        OPTIMAL               47.611124ms           
+SCAGR7                CPLEX                 OPTIMAL               2.915694ms            
+SCAGR7                ORTools               OPTIMAL               2.557071ms            
+SCAGR7                ojAlgo-dense          OPTIMAL               2.002841ms            
+SCAGR7                ojAlgo-revised        OPTIMAL               21.739278ms           
+SCAGR7                ojAlgo-tableau        OPTIMAL               2.207981ms            
+SCFXM1                CPLEX                 OPTIMAL               9.619239ms            
+SCFXM1                ORTools               OPTIMAL               8.043721ms            
+SCFXM1                ojAlgo-dense          OPTIMAL               10.482849ms           
+SCFXM1                ojAlgo-revised        OPTIMAL               400.962473ms          
+SCFXM1                ojAlgo-tableau        OPTIMAL               15.173706ms           
+SCFXM2                CPLEX                 OPTIMAL               17.082872ms           
+SCFXM2                ORTools               OPTIMAL               17.237776ms           
+SCFXM2                ojAlgo-dense          OPTIMAL               62.343002ms           
+SCFXM2                ojAlgo-revised        OPTIMAL               3133.164254ms         
+SCFXM2                ojAlgo-tableau        OPTIMAL               81.575635ms           
+SCORPION              CPLEX                 OPTIMAL               5.516204ms            
+SCORPION              ORTools               OPTIMAL               5.333248ms            
+SCORPION              ojAlgo-dense          OPTIMAL               7.254049ms            
+SCORPION              ojAlgo-revised        OPTIMAL               234.390824ms          
+SCORPION              ojAlgo-tableau        OPTIMAL               5.691937ms            
+SCSD1                 CPLEX                 OPTIMAL               5.678367ms            
+SCSD1                 ORTools               OPTIMAL               4.551415ms            
+SCSD1                 ojAlgo-dense          OPTIMAL               4.520237ms            
+SCSD1                 ojAlgo-revised        OPTIMAL               21.320205ms           
+SCSD1                 ojAlgo-tableau        OPTIMAL               4.320803ms            
+SCTAP1                CPLEX                 OPTIMAL               5.617204ms            
+SCTAP1                ORTools               OPTIMAL               4.815065ms            
+SCTAP1                ojAlgo-dense          OPTIMAL               11.722217ms           
+SCTAP1                ojAlgo-revised        OPTIMAL               773.843419ms          
+SCTAP1                ojAlgo-tableau        OPTIMAL               18.04512ms            
+SHARE1B               CPLEX                 OPTIMAL               4.051899ms            
+SHARE1B               ORTools               OPTIMAL               5.54542ms             
+SHARE1B               ojAlgo-dense          OPTIMAL               3.778232ms            
+SHARE1B               ojAlgo-revised        OPTIMAL               52.126374ms           
+SHARE1B               ojAlgo-tableau        OPTIMAL               3.863775ms            
+SHARE2B               CPLEX                 OPTIMAL               2.746118ms            
+SHARE2B               ORTools               OPTIMAL               2.082337ms            
+SHARE2B               ojAlgo-dense          OPTIMAL               1.08394ms             
+SHARE2B               ojAlgo-revised        OPTIMAL               16.739819ms           
+SHARE2B               ojAlgo-tableau        OPTIMAL               1.236845ms            
+STAIR                 CPLEX                 OPTIMAL               12.745992ms           
+STAIR                 ORTools               OPTIMAL               15.435413ms           
+STAIR                 ojAlgo-dense          OPTIMAL               23.831515ms           
+STAIR                 ojAlgo-revised        OPTIMAL               1148.044378ms         
+STAIR                 ojAlgo-tableau        OPTIMAL               36.777589ms           
+STOCFOR1              CPLEX                 OPTIMAL               2.124872ms            
+STOCFOR1              ORTools               OPTIMAL               1.873111ms            
+STOCFOR1              ojAlgo-dense          OPTIMAL               1.205608ms            
+STOCFOR1              ojAlgo-revised        OPTIMAL               11.564117ms           
+STOCFOR1              ojAlgo-tableau        OPTIMAL               1.215904ms            
+TUFF                  CPLEX                 OPTIMAL               8.509982ms            
+TUFF                  ORTools               OPTIMAL               6.371807ms            
 TUFF                  ojAlgo-dense          FAILED                TIMEOUT               
 TUFF                  ojAlgo-revised        FAILED                UNSTABLE              
-TUFF                  ojAlgo-tableau        OPTIMAL               16.042641ms           
-VTP-BASE              CPLEX                 OPTIMAL               3.112858ms            
-VTP-BASE              ORTools               OPTIMAL               2.182039ms            
-VTP-BASE              ojAlgo-dense          OPTIMAL               1.873467ms            
-VTP-BASE              ojAlgo-revised        OPTIMAL               6.279788ms            
-VTP-BASE              ojAlgo-tableau        OPTIMAL               1.676715ms            
+TUFF                  ojAlgo-tableau        OPTIMAL               18.658354ms           
+VTP-BASE              CPLEX                 OPTIMAL               2.60867ms             
+VTP-BASE              ORTools               OPTIMAL               2.179687ms            
+VTP-BASE              ojAlgo-dense          OPTIMAL               1.640049ms            
+VTP-BASE              ojAlgo-revised        OPTIMAL               6.266091ms            
+VTP-BASE              ojAlgo-tableau        OPTIMAL               1.681868ms            
