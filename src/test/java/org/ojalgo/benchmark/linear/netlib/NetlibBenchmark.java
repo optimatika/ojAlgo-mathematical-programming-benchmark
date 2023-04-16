@@ -1,5 +1,5 @@
 /*
- * Copyright 1997-2022 Optimatika
+ * Copyright 1997-2023 Optimatika
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -56,7 +56,7 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
                     ExpressionsBasedModel.Description description = parse.describe();
 
-                    if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.constraints() <= MAX_NB_VARS) {
+                    if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.countConstraints() <= MAX_NB_VARS) {
                         for (String solver : SOLVERS) {
                             WORK.add(new ModelSolverPair(model, solver));
                         }
