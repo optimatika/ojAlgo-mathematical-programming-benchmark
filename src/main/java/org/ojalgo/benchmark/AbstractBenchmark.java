@@ -46,7 +46,6 @@ import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
-import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
@@ -258,7 +257,7 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
-        INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
+        // INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         INTEGRATIONS.put(Contender.ORTOOLS, SolverORTools.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
