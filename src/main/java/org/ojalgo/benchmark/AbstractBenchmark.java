@@ -263,11 +263,22 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_OLD_DENSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.FALSE));
-
-        INTEGRATIONS.put(Contender.OJALGO_OLD_SPARSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.TRUE));
-        INTEGRATIONS.put(Contender.OJALGO_NEW_TABLEAU_LP, LinearSolver.NEW_INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.FALSE));
-        INTEGRATIONS.put(Contender.OJALGO_NEW_REVISED_LP, LinearSolver.NEW_INTEGRATION.withOptionsModifier(o -> o.sparse = Boolean.TRUE));
+        INTEGRATIONS.put(Contender.OJALGO_OLD_DENSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.experimental = false;
+            opt.sparse = Boolean.FALSE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_OLD_SPARSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.experimental = false;
+            opt.sparse = Boolean.TRUE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_NEW_TABLEAU_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.experimental = true;
+            opt.sparse = Boolean.FALSE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_NEW_REVISED_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.experimental = true;
+            opt.sparse = Boolean.TRUE;
+        }));
     }
 
     protected static void doBenchmark(final Set<ModelSolverPair> WORK, final Configuration configuration) {
