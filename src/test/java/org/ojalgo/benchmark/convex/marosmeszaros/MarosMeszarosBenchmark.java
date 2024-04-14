@@ -31,22 +31,35 @@ import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase.ModelInfo;
 
 public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
-    static final String[] MODELS = new String[] { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2", "DUAL3",
+    static final String[] SOME_MODELS = new String[] { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2", "DUAL3",
             "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "GENHS28", "GOULDQP2", "GOULDQP3", "HS118", "HS21", "HS268", "HS35", "HS35MOD", "HS51", "HS52",
             "HS53", "HS76", "KSIP", "LOTSCHD", "MOSARQP2", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8", "QADLITTL",
             "QAFIRO", "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGROW15", "QGROW22", "QGROW7",
             "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPTEST", "QRECIPE", "QSC205", "QSCAGR25", "QSCAGR7", "QSCFXM1", "QSCFXM2", "QSCORPIO",
             "QSCSD1", "QSCTAP1", "QSEBA", "QSHARE1B", "QSHARE2B", "QSTAIR", "S268", "TAME", "ZECEVIC2" };
 
-    static final String[] SOLVERS = new String[] { Contender.CPLEX, Contender.OJALGO, Contender.JOPTIMIZER };
+    static final String[] ALL_MODELS = new String[] { "AUG2D", "AUG2DC", "AUG2DCQP", "AUG2DQP", "AUG3D", "AUG3DC", "AUG3DCQP", "AUG3DQP", "BOYD1", "BOYD2",
+            "CONT-050", "CONT-100", "CONT-101", "CONT-200", "CONT-201", "CONT-300", "CVXQP1_L", "CVXQP1_M", "CVXQP1_S", "CVXQP2_L", "CVXQP2_M", "CVXQP2_S",
+            "CVXQP3_L", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DTOC3", "DUAL1", "DUAL2", "DUAL3", "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "EXDATA",
+            "GENHS28", "GOULDQP2", "GOULDQP3", "HS21", "HS35", "HS35MOD", "HS51", "HS52", "HS53", "HS76", "HS118", "HS268", "HUES-MOD", "HUESTIS", "KSIP",
+            "LASER", "LISWET1", "LISWET2", "LISWET3", "LISWET4", "LISWET5", "LISWET6", "LISWET7", "LISWET8", "LISWET9", "LISWET10", "LISWET11", "LISWET12",
+            "LOTSCHD", "MOSARQP1", "MOSARQP2", "POWELL20", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMAL4", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8",
+            "Q25FV47", "QADLITTL", "QAFIRO", "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGFRDXPN",
+            "QGROW7", "QGROW15", "QGROW22", "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPILOTNO", "QPTEST", "QRECIPE", "QSC205", "QSCAGR7",
+            "QSCAGR25", "QSCFXM1", "QSCFXM2", "QSCFXM3", "QSCORPIO", "QSCRS8", "QSCSD1", "QSCSD6", "QSCSD8", "QSCTAP1", "QSCTAP2", "QSCTAP3", "QSEBA",
+            "QSHARE1B", "QSHARE2B", "QSHELL", "QSHIP04L", "QSHIP04S", "QSHIP08L", "QSHIP08S", "QSHIP12L", "QSHIP12S", "QSIERRA", "QSTAIR", "QSTANDAT", "S268",
+            "STADAT1", "STADAT2", "STADAT3", "STCQP1", "STCQP2", "TAME", "UBH1", "VALUES", "YAO", "ZECEVIC2" };
+
+
+    static final String[] SOLVERS = new String[] { Contender.JOPTIMIZER, Contender.OJALGO, Contender.HIPPARCHUS };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
 
-        for (String mod : MODELS) {
+        for (String mod : ALL_MODELS) {
             ModelInfo modelInfo = CuteMarosMeszarosCase.getModelInfo(mod);
-            if (modelInfo.isPureQP()) {
+            if (modelInfo.isPureQP() && modelInfo.isSmall()) {
                 for (String sol : SOLVERS) {
                     WORK.add(new ModelSolverPair(mod, sol));
                 }
@@ -64,6 +77,8 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);
         }
+
+
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }
