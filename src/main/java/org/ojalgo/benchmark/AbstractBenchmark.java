@@ -46,7 +46,7 @@ import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
-import org.ojalgo.optimisation.solver.hipparchus.ADMMQPOptimizerImpl;
+import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
 import org.ojalgo.type.CalendarDateDuration;
@@ -82,10 +82,10 @@ public abstract class AbstractBenchmark {
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
         public static final String OJALGO = "ojAlgo";
-        public static final String OJALGO_NEW_REVISED_LP = "ojAlgo-revised";
-        public static final String OJALGO_NEW_TABLEAU_LP = "ojAlgo-tableau";
-        public static final String OJALGO_OLD_DENSE_LP = "ojAlgo-dense";
-        public static final String OJALGO_OLD_SPARSE_LP = "ojAlgo-sparse";
+        public static final String OJALGO_EXP_SPARSE = "ojAlgo-experimental-sparse";
+        public static final String OJALGO_EXP_DENSE = "ojAlgo-experimental-dense";
+        public static final String OJALGO_STD_DENSE = "ojAlgo-standard-dense";
+        public static final String OJALGO_STD_SPARSE = "ojAlgo-standard-sparse";
         public static final String ORTOOLS = "ORTools";
 
     }
@@ -256,27 +256,29 @@ public abstract class AbstractBenchmark {
     static {
 
         INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
-        // INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
-        INTEGRATIONS.put(Contender.HIPPARCHUS, ADMMQPOptimizerImpl.INTEGRATION);
+        INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
+        // INTEGRATIONS.put(Contender.HIPPARCHUS, ADMMQPOptimizerImpl.INTEGRATION);
         // INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         INTEGRATIONS.put(Contender.ORTOOLS, SolverORTools.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_OLD_DENSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO, LinearSolver.INTEGRATION);
+
+        INTEGRATIONS.put(Contender.OJALGO_STD_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.experimental = false;
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_OLD_SPARSE_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_STD_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.experimental = false;
             opt.sparse = Boolean.TRUE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_NEW_TABLEAU_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_EXP_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.experimental = true;
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_NEW_REVISED_LP, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_EXP_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.experimental = true;
             opt.sparse = Boolean.TRUE;
         }));
@@ -406,9 +408,12 @@ public abstract class AbstractBenchmark {
 
                 BigDecimal expectedValue = configuration.values.get(model);
 
-                ModelSolverPair referenceModelSolverPair = new ModelSolverPair(model, configuration.refeenceSolver);
-                ResultsSet referenceResultsSet = totResults.get(referenceModelSolverPair);
-                Result referenceResult = referenceResultsSet != null ? referenceResultsSet.fastest.result : null;
+                Result referenceResult = null;
+                if (configuration.refeenceSolver != null) {
+                    ModelSolverPair referenceModelSolverPair = new ModelSolverPair(model, configuration.refeenceSolver);
+                    ResultsSet referenceResultsSet = totResults.get(referenceModelSolverPair);
+                    referenceResult = referenceResultsSet != null ? referenceResultsSet.fastest.result : null;
+                }
 
                 if (expectedValue != null || referenceResult != null && referenceResult.getState().isOptimal()) {
 
