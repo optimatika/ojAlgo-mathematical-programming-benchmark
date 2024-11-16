@@ -46,6 +46,7 @@ import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
+import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
@@ -66,7 +67,7 @@ public abstract class AbstractBenchmark {
         public long maxWaitTime = 60_000L;
         public String pathPrefix;
         public String pathSuffix = ".SIF";
-        public String refeenceSolver = Contender.OJALGO;
+        public String refeenceSolver = Contender.CPLEX;
         public final Map<String, BigDecimal> values = new HashMap<>();
 
         public String path(final String modelName) {
@@ -258,7 +259,7 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
         // INTEGRATIONS.put(Contender.HIPPARCHUS, ADMMQPOptimizerImpl.INTEGRATION);
-        // INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
+        INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         INTEGRATIONS.put(Contender.ORTOOLS, SolverORTools.INTEGRATION);
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
