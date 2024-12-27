@@ -21,9 +21,8 @@
  */
 package org.ojalgo.benchmark;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
-import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -37,7 +36,10 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.ojalgo.netio.ASCII;
 import org.ojalgo.netio.BasicLogger;
+import org.ojalgo.netio.TextLineWriter;
+import org.ojalgo.netio.TextLineWriter.CSVLineBuilder;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
@@ -83,10 +85,10 @@ public abstract class AbstractBenchmark {
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
         public static final String OJALGO = "ojAlgo";
-        public static final String OJALGO_EXP_SPARSE = "ojAlgo-experimental-sparse";
-        public static final String OJALGO_EXP_DENSE = "ojAlgo-experimental-dense";
-        public static final String OJALGO_STD_DENSE = "ojAlgo-standard-dense";
-        public static final String OJALGO_STD_SPARSE = "ojAlgo-standard-sparse";
+        public static final String OJALGO_EXP_DENSE = "ojAlgo-exp-dense";
+        public static final String OJALGO_EXP_SPARSE = "ojAlgo-exp-sparse";
+        public static final String OJALGO_STD_DENSE = "ojAlgo-std-dense";
+        public static final String OJALGO_STD_SPARSE = "ojAlgo-std-sparse";
         public static final String ORTOOLS = "ORTools";
 
     }
@@ -170,6 +172,19 @@ public abstract class AbstractBenchmark {
          * Does not match the expected value, or the reference solver
          */
         WRONG;
+    }
+
+    static final class ModelSize {
+
+        public final int nbExpressions;
+        public final int nbVariables;
+
+        ModelSize(final int m, final int n) {
+            super();
+            nbExpressions = m;
+            nbVariables = n;
+        }
+
     }
 
     static final class ResultsSet {
@@ -285,10 +300,11 @@ public abstract class AbstractBenchmark {
         }));
     }
 
-    protected static void doBenchmark(final Set<ModelSolverPair> WORK, final Configuration configuration) {
+    protected static void doBenchmark(final Set<ModelSolverPair> allWork, final Configuration configuration) {
 
         Map<ModelSolverPair, ResultsSet> totResults = new TreeMap<>();
         Map<ModelSolverPair, FailReason> totReasons = new TreeMap<>();
+        Map<String, ModelSize> modDim = new TreeMap<>();
 
         int iterations = 0;
         Set<ModelSolverPair> iterDone = new HashSet<>();
@@ -299,25 +315,27 @@ public abstract class AbstractBenchmark {
             iterDone.clear();
 
             BasicLogger.debug();
-            BasicLogger.debug("Iteration {} with {} model/solver pairs remaining {}", iterations, WORK.size(), Instant.now());
+            BasicLogger.debug("Iteration {} with {} model/solver pairs remaining {}", iterations, allWork.size(), Instant.now());
             BasicLogger.debug("-----------------------------------------------------------------------------");
 
-            for (ModelSolverPair work : WORK) {
+            for (ModelSolverPair modelSolverPair : allWork) {
 
                 ExpressionsBasedModel.clearIntegrations();
-                Integration<?> integration = INTEGRATIONS.get(work.solver);
+                Integration<?> integration = INTEGRATIONS.get(modelSolverPair.solver);
                 if (integration != null) {
                     ExpressionsBasedModel.addIntegration(integration);
                 }
 
-                String path = configuration.path(work.model);
+                String path = configuration.path(modelSolverPair.model);
 
-                BigDecimal expectedValue = configuration.values.get(work.model);
+                BigDecimal expectedValue = configuration.values.get(modelSolverPair.model);
 
                 try (InputStream input = AbstractBenchmark.class.getResourceAsStream(path)) {
                     ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
+                    modDim.computeIfAbsent(modelSolverPair.model, k -> new ModelSize(parsedMPS.countExpressions(), parsedMPS.countVariables()));
+                    ExpressionsBasedModel simplified = parsedMPS.simplify();
 
-                    ResultsSet mainResults = totResults.computeIfAbsent(work, k -> new ResultsSet(configuration.accuracy, 0.01));
+                    ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.accuracy, 0.01));
                     ResultsSet subResults = new ResultsSet(configuration.accuracy, 0.1);
 
                     AtomicBoolean working = new AtomicBoolean(false);
@@ -325,7 +343,7 @@ public abstract class AbstractBenchmark {
                     Thread worker = new Thread(() -> {
 
                         while (!subResults.isStable()) {
-                            subResults.add(AbstractBenchmark.meassure(parsedMPS));
+                            subResults.add(AbstractBenchmark.meassure(simplified));
                         }
                         working.set(false);
                     });
@@ -349,22 +367,24 @@ public abstract class AbstractBenchmark {
 
                         if (!subResults.fastest.result.getState().isOptimal()) {
 
-                            BasicLogger.debugColumns(WIDTH, work.model, work.solver, subResults.fastest.result.getState(), FailReason.UNSTABLE);
-                            totReasons.put(work, FailReason.UNSTABLE);
-                            iterDone.add(work);
+                            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, subResults.fastest.result.getState(),
+                                    FailReason.UNSTABLE);
+                            totReasons.put(modelSolverPair, FailReason.UNSTABLE);
+                            iterDone.add(modelSolverPair);
 
                         } else if (expectedValue != null
                                 && configuration.accuracy.isDifferent(expectedValue.doubleValue(), subResults.fastest.result.getValue())) {
 
-                            BasicLogger.debugColumns(WIDTH, work.model, work.solver, FailReason.WRONG, subResults.fastest.result.getValue(),
-                                    "!= " + expectedValue);
-                            totReasons.put(work, FailReason.WRONG);
-                            iterDone.add(work);
+                            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG,
+                                    subResults.fastest.result.getValue(), "!= " + expectedValue);
+                            totReasons.put(modelSolverPair, FailReason.WRONG);
+                            iterDone.add(modelSolverPair);
 
                         } else if (mainResults.isStable()) {
 
-                            BasicLogger.debugColumns(WIDTH, work.model, work.solver, "Time stable");
-                            iterDone.add(work);
+                            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, "Time stable", mainResults.fastest.duration,
+                                    mainResults.fastest.result.getValue());
+                            iterDone.add(modelSolverPair);
                         }
 
                     } else {
@@ -373,24 +393,26 @@ public abstract class AbstractBenchmark {
 
                         mainResults.add(FAILED);
 
-                        BasicLogger.debugColumns(WIDTH, work.model, work.solver, FAILED.result.getState(), FailReason.TIMEOUT);
-                        totReasons.put(work, FailReason.TIMEOUT);
-                        iterDone.add(work);
+                        BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
+                        totReasons.put(modelSolverPair, FailReason.TIMEOUT);
+                        iterDone.add(modelSolverPair);
                     }
 
                 } catch (Throwable cause) {
-                    BasicLogger.error("Error working with {}!", work);
+                    BasicLogger.error("Error working with {}!", modelSolverPair);
                     throw new RuntimeException(cause);
                 }
             }
 
-            WORK.removeAll(iterDone);
+            allWork.removeAll(iterDone);
 
-        } while (WORK.size() > 0);
+        } while (allWork.size() > 0);
 
-        try (PrintWriter writer = new PrintWriter("./src/main/resources/benchmark_output.csv")) {
+        try (TextLineWriter writer = TextLineWriter.of("./src/main/resources/benchmark_output.csv")) {
 
-            writer.println("Model" + "\t" + "Solver" + "\t" + "Time");
+            CSVLineBuilder csv = writer.newCSVLineBuilder(ASCII.HT);
+
+            csv.line("Model", "Solver", "Time", "nbVars", "nbExpr");
 
             BasicLogger.debug();
             BasicLogger.debug("Final Results");
@@ -406,6 +428,7 @@ public abstract class AbstractBenchmark {
                 State state = result.result.getState();
                 double value = result.result.getValue();
                 CalendarDateDuration duration = result.duration;
+                ModelSize dimensions = modDim.get(model);
 
                 BigDecimal expectedValue = configuration.values.get(model);
 
@@ -422,22 +445,22 @@ public abstract class AbstractBenchmark {
 
                     if (state.isOptimal() && !configuration.accuracy.isDifferent(referenceValue, value)) {
                         BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                        writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
+                        csv.line(model, solver, duration.toDurationInNanos(), dimensions.nbVariables, dimensions.nbExpressions);
                     } else {
                         BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
-                        writer.println(model + "\t" + solver + "\t");
+                        csv.line(model, solver, "", dimensions.nbVariables, dimensions.nbExpressions);
                     }
 
                 } else if (state.isOptimal()) {
                     BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                    writer.println(model + "\t" + solver + "\t" + duration.toDurationInNanos());
+                    csv.line(model, solver, duration.toDurationInNanos(), dimensions.nbVariables, dimensions.nbExpressions);
                 } else {
                     BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
-                    writer.println(model + "\t" + solver + "\t");
+                    csv.line(model, solver, "", dimensions.nbVariables, dimensions.nbExpressions);
                 }
             }
 
-        } catch (FileNotFoundException cause) {
+        } catch (IOException cause) {
             throw new RuntimeException(cause);
         }
 

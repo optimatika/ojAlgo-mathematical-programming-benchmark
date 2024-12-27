@@ -35,11 +35,11 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
 public final class NetlibBenchmark extends AbstractBenchmark {
 
-    static final int MAX_NB_VARS = 1000;
-    static final int MIN_NB_VARS = 1;
+    static final int MAX_NB_VARS = 587;
+    static final int MIN_NB_VARS = 587;
 
-    // static final String[] SOLVERS = { Contender.OJALGO_NEW_TABLEAU_LP, Contender.OJALGO_NEW_REVISED_LP, Contender.OJALGO_OLD_DENSE_LP, Contender.ORTOOLS };
-    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO, Contender.ORTOOLS, Contender.HIPPARCHUS };
+    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_EXP_SPARSE, Contender.OJALGO_EXP_DENSE, Contender.OJALGO_STD_SPARSE,
+            Contender.OJALGO_STD_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
@@ -47,22 +47,22 @@ public final class NetlibBenchmark extends AbstractBenchmark {
         // /ojAlgo/src/test/resources/optimisation/netlib/NETLIB.dat
         try (TextLineReader reader = new TextLineReader(TestUtils.getResource("optimisation", "netlib", "NETLIB.dat"))) {
 
-            reader.forEach(model -> {
+            reader.forEach(line -> {
 
-                try (InputStream stream = TestUtils.getResource("optimisation", "netlib", model + ".SIF")) {
+                try (InputStream input = TestUtils.getResource("optimisation", "netlib", line + ".SIF")) {
 
-                    ExpressionsBasedModel parse = ExpressionsBasedModel.parse(stream, FileFormat.MPS);
+                    ExpressionsBasedModel model = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
-                    ExpressionsBasedModel.Description description = parse.describe();
+                    ExpressionsBasedModel.Description description = model.describe();
 
                     if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.countConstraints() <= MAX_NB_VARS) {
                         for (String solver : SOLVERS) {
-                            WORK.add(new ModelSolverPair(model, solver));
+                            WORK.add(new ModelSolverPair(line, solver));
                         }
                     }
 
                 } catch (IOException cause) {
-                    BasicLogger.debug("Problem with model {}!", model);
+                    BasicLogger.debug("Problem with model {}!", line);
                     throw new RuntimeException(cause);
                 }
 
