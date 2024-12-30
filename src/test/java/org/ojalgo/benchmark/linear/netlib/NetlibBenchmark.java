@@ -38,8 +38,8 @@ public final class NetlibBenchmark extends AbstractBenchmark {
     static final int MAX_NB_VARS = 1_000;
     static final int MIN_NB_VARS = 1;
 
-    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_EXP_SPARSE, Contender.OJALGO_EXP_DENSE, Contender.OJALGO_STD_SPARSE,
-            Contender.OJALGO_STD_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
+    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_PRIM_SPARSE, Contender.OJALGO_PRIM_DENSE, Contender.OJALGO_DUAL_SPARSE,
+            Contender.OJALGO_DUAL_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {

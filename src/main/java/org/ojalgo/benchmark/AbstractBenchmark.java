@@ -85,10 +85,10 @@ public abstract class AbstractBenchmark {
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
         public static final String OJALGO = "ojAlgo";
-        public static final String OJALGO_EXP_DENSE = "ojAlgo-exp-dense";
-        public static final String OJALGO_EXP_SPARSE = "ojAlgo-exp-sparse";
-        public static final String OJALGO_STD_DENSE = "ojAlgo-std-dense";
-        public static final String OJALGO_STD_SPARSE = "ojAlgo-std-sparse";
+        public static final String OJALGO_DUAL_DENSE = "ojAlgo-dual-D";
+        public static final String OJALGO_DUAL_SPARSE = "ojAlgo-dual-S";
+        public static final String OJALGO_PRIM_DENSE = "ojAlgo-prim-D";
+        public static final String OJALGO_PRIM_SPARSE = "ojAlgo-prim-S";
         public static final String ORTOOLS = "ORTools";
 
     }
@@ -282,20 +282,20 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.OJALGO, LinearSolver.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_STD_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
-            opt.experimental = false;
+        INTEGRATIONS.put(Contender.OJALGO_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().dual();
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_STD_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
-            opt.experimental = false;
+        INTEGRATIONS.put(Contender.OJALGO_DUAL_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().dual();
             opt.sparse = Boolean.TRUE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_EXP_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
-            opt.experimental = true;
+        INTEGRATIONS.put(Contender.OJALGO_PRIM_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().primal();
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_EXP_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
-            opt.experimental = true;
+        INTEGRATIONS.put(Contender.OJALGO_PRIM_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().primal();
             opt.sparse = Boolean.TRUE;
         }));
     }
