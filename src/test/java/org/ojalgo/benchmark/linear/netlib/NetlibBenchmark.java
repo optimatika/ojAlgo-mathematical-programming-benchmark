@@ -35,8 +35,8 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
 public final class NetlibBenchmark extends AbstractBenchmark {
 
-    static final int MAX_NB_VARS = 587;
-    static final int MIN_NB_VARS = 587;
+    static final int MAX_NB_VARS = 1_000;
+    static final int MIN_NB_VARS = 1;
 
     static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_EXP_SPARSE, Contender.OJALGO_EXP_DENSE, Contender.OJALGO_STD_SPARSE,
             Contender.OJALGO_STD_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
