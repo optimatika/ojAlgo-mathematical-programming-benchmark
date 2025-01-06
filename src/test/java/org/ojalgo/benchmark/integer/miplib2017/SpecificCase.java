@@ -42,8 +42,8 @@ public final class SpecificCase extends MIPLIB2017 {
         options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
         options.time_suffice = options.time_abort;
 
-        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
-                NodeKey.MAX_OBJECTIVE);
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MAX_OBJECTIVE,
+                NodeKey.MIN_OBJECTIVE);
 
         options.integer(strategy);
 
@@ -61,8 +61,8 @@ public final class SpecificCase extends MIPLIB2017 {
         options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
         options.time_suffice = options.time_abort;
 
-        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
-                NodeKey.MAX_OBJECTIVE);
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MAX_OBJECTIVE,
+                NodeKey.MIN_OBJECTIVE);
 
         options.integer(strategy);
 
@@ -80,8 +80,8 @@ public final class SpecificCase extends MIPLIB2017 {
         options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
         options.time_suffice = options.time_abort;
 
-        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
-                NodeKey.MAX_OBJECTIVE);
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MAX_OBJECTIVE,
+                NodeKey.MIN_OBJECTIVE);
 
         options.integer(strategy);
 
@@ -101,8 +101,8 @@ public final class SpecificCase extends MIPLIB2017 {
         options.time_abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
         options.time_suffice = options.time_abort;
 
-        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MIN_OBJECTIVE,
-                NodeKey.MAX_OBJECTIVE);
+        ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(4)).addPriorityDefinitions(NodeKey.MAX_OBJECTIVE,
+                NodeKey.MIN_OBJECTIVE);
 
         options.integer(strategy);
 
@@ -124,7 +124,7 @@ public final class SpecificCase extends MIPLIB2017 {
 
         ConfigurableStrategy strategy = IntegerStrategy.DEFAULT.withGapTolerance(NumberContext.of(12));
 
-        strategy.addPriorityDefinitions(NodeKey.MIN_OBJECTIVE, NodeKey.MIN_OBJECTIVE);
+        strategy.addPriorityDefinitions(NodeKey.MAX_OBJECTIVE, NodeKey.MAX_OBJECTIVE);
 
         options.integer(strategy);
 
