@@ -40,6 +40,8 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
     static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_PRIM_SPARSE, Contender.OJALGO_PRIM_DENSE, Contender.OJALGO_DUAL_SPARSE,
             Contender.OJALGO_DUAL_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
+    // static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_DUAL_SPARSE,
+    // Contender.OJALGO_DUAL_DENSE };
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
     static {
