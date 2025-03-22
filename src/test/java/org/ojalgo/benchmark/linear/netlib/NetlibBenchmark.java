@@ -82,7 +82,7 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
         configuration.pathPrefix = "/optimisation/netlib/";
 
-        configuration.refeenceSolver = null;
+        // configuration.refeenceSolver = null;
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }
