@@ -52,9 +52,8 @@ public abstract class MIPLIB2017 {
 
     static final NumberContext ACCURACY = NumberContext.of(8);
     /**
-     * Map file name to optimal value. To be included here the model should be in both the "benchmark" and
-     * "easy" sets. In addition there should be a proven optimal solution listed (no infeasible models or with
-     * just best bounds).
+     * Map file name to optimal value. To be included here the model should be in both the "benchmark" and "easy" sets.
+     * In addition there should be a proven optimal solution listed (no infeasible models or with just best bounds).
      */
     static final Map<String, BigDecimal> INSTANCES = new HashMap<>();
     static final Set<String> KNOWN_PROBLEMS = new HashSet<>();
