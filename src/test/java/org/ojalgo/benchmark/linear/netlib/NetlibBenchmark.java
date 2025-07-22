@@ -35,11 +35,11 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
 public final class NetlibBenchmark extends AbstractBenchmark {
 
-    static final int MAX_NB_VARS = 1_000;
+    static final int MAX_NB_VARS = 10_000;
     static final int MIN_NB_VARS = 1;
 
-    static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_PRIM_SPARSE, Contender.OJALGO_PRIM_DENSE, Contender.OJALGO_DUAL_SPARSE,
-            Contender.OJALGO_DUAL_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
+    static final String[] SOLVERS = { Contender.OJALGO_PRIM_SPARSE, Contender.OJALGO_PRIM_DENSE, Contender.OJALGO_DUAL_SPARSE, Contender.OJALGO_DUAL_DENSE,
+            Contender.ORTOOLS, Contender.HIPPARCHUS };
     // static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_DUAL_SPARSE,
     // Contender.OJALGO_DUAL_DENSE };
     static final Set<ModelSolverPair> WORK = new HashSet<>();
@@ -82,7 +82,7 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
         configuration.pathPrefix = "/optimisation/netlib/";
 
-        // configuration.refeenceSolver = null;
+        configuration.refeenceSolver = Contender.ORTOOLS;
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }
