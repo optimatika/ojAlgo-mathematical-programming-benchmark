@@ -341,11 +341,16 @@ public abstract class AbstractBenchmark {
                     AtomicBoolean working = new AtomicBoolean(false);
 
                     Thread worker = new Thread(() -> {
-
-                        while (!subResults.isStable()) {
-                            subResults.add(AbstractBenchmark.meassure(simplified));
+                        try {
+                            while (!subResults.isStable() && !Thread.currentThread().isInterrupted()) {
+                                subResults.add(AbstractBenchmark.meassure(simplified));
+                            }
+                        } catch (Exception e) {
+                            // Handle interruption or other exceptions
+                            BasicLogger.debug("Worker thread interrupted or exception occurred: {}", e.getMessage());
+                        } finally {
+                            working.set(false);
                         }
-                        working.set(false);
                     });
 
                     working.set(true);
@@ -356,7 +361,14 @@ public abstract class AbstractBenchmark {
                         Thread.sleep(1_000L);
                     }
 
-                    worker.stop();
+                    worker.interrupt();
+                    // Give the worker thread a chance to clean up
+                    try {
+                        worker.join(1000); // Wait up to 1 second for the thread to terminate
+                    } catch (InterruptedException e) {
+                        // Handle interruption by ignoring it and continuing with the next benchmark.
+                        BasicLogger.debug("Worker thread.join() sent interrupt: {}", e.getMessage());
+                    }
                     working.set(false);
 
                     if (subResults.fastest != null) {
