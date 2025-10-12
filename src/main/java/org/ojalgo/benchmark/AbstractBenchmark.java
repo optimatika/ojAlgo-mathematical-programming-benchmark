@@ -118,10 +118,9 @@ public abstract class AbstractBenchmark {
             if (this == obj) {
                 return true;
             }
-            if (!(obj instanceof ModelSolverPair)) {
+            if (!(obj instanceof ModelSolverPair other)) {
                 return false;
             }
-            ModelSolverPair other = (ModelSolverPair) obj;
             if (model == null) {
                 if (other.model != null) {
                     return false;
@@ -356,8 +355,16 @@ public abstract class AbstractBenchmark {
                         Thread.sleep(1_000L);
                     }
 
-                    worker.stop();
-                    working.set(false);
+                    try {
+                        worker.stop();
+                    } catch (UnsupportedOperationException cause) {
+                        // In Java 20, the implementation of Thread.stop() was changed: the method no longer
+                        // actually stops the thread; instead, it was altered to throw UnsupportedOperationException.
+                        // So far have not been ale to find an alternative that doesn't leave sub-threads running.
+                        // Need to run in a forked JVM process. Should try to switch to JMH for this
+                    } finally {
+                        working.set(false);
+                    }
 
                     if (subResults.fastest != null) {
 
