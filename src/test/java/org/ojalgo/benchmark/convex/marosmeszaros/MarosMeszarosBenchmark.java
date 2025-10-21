@@ -31,9 +31,9 @@ import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase.ModelInfo;
 
 public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
-    static final String[] SOME_MODELS = new String[] { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2", "DUAL3",
-            "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "GENHS28", "GOULDQP2", "GOULDQP3", "HS118", "HS21", "HS268", "HS35", "HS35MOD", "HS51", "HS52",
-            "HS53", "HS76", "KSIP", "LOTSCHD", "MOSARQP2", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8", "QADLITTL",
+    static final String[] SOME_MODELS = new String[] { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2",
+            "DUAL3", "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "GENHS28", "GOULDQP2", "GOULDQP3", "HS118", "HS21", "HS268", "HS35", "HS35MOD", "HS51",
+            "HS52", "HS53", "HS76", "KSIP", "LOTSCHD", "MOSARQP2", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8", "QADLITTL",
             "QAFIRO", "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGROW15", "QGROW22", "QGROW7",
             "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPTEST", "QRECIPE", "QSC205", "QSCAGR25", "QSCAGR7", "QSCFXM1", "QSCFXM2", "QSCORPIO",
             "QSCSD1", "QSCTAP1", "QSEBA", "QSHARE1B", "QSHARE2B", "QSTAIR", "S268", "TAME", "ZECEVIC2" };
@@ -50,8 +50,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
             "QSHARE1B", "QSHARE2B", "QSHELL", "QSHIP04L", "QSHIP04S", "QSHIP08L", "QSHIP08S", "QSHIP12L", "QSHIP12S", "QSIERRA", "QSTAIR", "QSTANDAT", "S268",
             "STADAT1", "STADAT2", "STADAT3", "STCQP1", "STCQP2", "TAME", "UBH1", "VALUES", "YAO", "ZECEVIC2" };
 
-
-    static final String[] SOLVERS = new String[] { Contender.JOPTIMIZER, Contender.OJALGO, Contender.HIPPARCHUS };
+    static final String[] SOLVERS = new String[] { Contender.JOPTIMIZER, Contender.OJALGO, Contender.HIPPARCHUS, Contender.CPLEX };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
@@ -72,13 +71,11 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         Configuration configuration = new Configuration();
 
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
-        configuration.maxWaitTime = 60_000L;
+        configuration.refeenceSolver = Contender.CPLEX;
 
         for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);
         }
-
-
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }

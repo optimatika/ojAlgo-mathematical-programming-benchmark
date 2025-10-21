@@ -22,27 +22,32 @@
 package org.ojalgo.benchmark;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
+import org.ojalgo.OjAlgoUtils;
+import org.ojalgo.benchmark.ForkedTask.ReturnValue;
+import org.ojalgo.concurrent.ExternalProcessExecutor;
+import org.ojalgo.concurrent.Parallelism;
+import org.ojalgo.concurrent.ParallelismSupplier;
+import org.ojalgo.concurrent.ProcessingService;
 import org.ojalgo.netio.ASCII;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineWriter;
 import org.ojalgo.netio.TextLineWriter.CSVLineBuilder;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
-import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
-import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
@@ -62,14 +67,14 @@ public abstract class AbstractBenchmark {
 
     public static final class Configuration {
 
-        public NumberContext accuracy = NumberContext.of(4);
         /**
          * ms
          */
         public long maxWaitTime = 60_000L;
+        public ParallelismSupplier parallelism = Parallelism.CORES.halve().adjustDown();
         public String pathPrefix;
         public String pathSuffix = ".SIF";
-        public String refeenceSolver = Contender.CPLEX;
+        public String refeenceSolver = Contender.ORTOOLS;
         public final Map<String, BigDecimal> values = new HashMap<>();
 
         public String path(final String modelName) {
@@ -160,6 +165,10 @@ public abstract class AbstractBenchmark {
 
     enum FailReason {
         /**
+         * Unexpected error/exception
+         */
+        FAILED,
+        /**
          * Hangs or takes too long
          */
         TIMEOUT,
@@ -189,10 +198,7 @@ public abstract class AbstractBenchmark {
     static final class ResultsSet {
 
         static boolean isSimilar(final double value1, final double value2, final double halfRelativeError) {
-            if (Math.abs(value1 - value2) / (value1 + value2) > halfRelativeError) {
-                return false;
-            }
-            return true;
+            return (Math.abs(value1 - value2) / (value1 + value2) < halfRelativeError);
         }
 
         public TimedResult<Optimisation.Result> fastest;
@@ -201,10 +207,37 @@ public abstract class AbstractBenchmark {
         private final double myHalfRelativeTimeError;
         private final NumberContext myValueAccuracy;
 
-        public ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy) {
+        public ResultsSet() {
+            this(ACCURACY, 0.1);
+        }
+
+        private ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy) {
             super();
             myValueAccuracy = valueAccuracy;
             myHalfRelativeTimeError = timeAccuracy / 2D;
+        }
+
+        public TimedResult<Result> add(final ForkedTask.ReturnValue returnValue) {
+
+            if (returnValue == null) {
+                fastest = FAILED;
+                return null;
+            }
+
+            if (returnValue.result == null || Double.isNaN(returnValue.time)) {
+                fastest = FAILED;
+                return null;
+            }
+
+            Optimisation.Result result = Optimisation.Result.parse(returnValue.result);
+
+            CalendarDateDuration duration = new CalendarDateDuration(returnValue.time, CalendarDateUnit.MILLIS);
+
+            TimedResult<Result> another = new TimedResult<>(result, duration);
+
+            this.add(another);
+
+            return another;
         }
 
         public void add(final TimedResult<Result> another) {
@@ -262,6 +295,8 @@ public abstract class AbstractBenchmark {
 
     }
 
+    static final NumberContext ACCURACY = NumberContext.of(4);
+
     static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
             new CalendarDateDuration(30, CalendarDateUnit.MINUTE).convertTo(CalendarDateUnit.MILLIS));
 
@@ -301,12 +336,19 @@ public abstract class AbstractBenchmark {
 
     protected static void doBenchmark(final Set<ModelSolverPair> allWork, final Configuration configuration) {
 
-        Map<ModelSolverPair, ResultsSet> totResults = new TreeMap<>();
-        Map<ModelSolverPair, FailReason> totReasons = new TreeMap<>();
-        Map<String, ModelSize> modDim = new TreeMap<>();
+        ProcessingService masterProcessor = ProcessingService.newInstance("benchmark");
+        ExternalProcessExecutor slaveExecutor = ExternalProcessExecutor.newInstance();
+
+        Map<ModelSolverPair, ResultsSet> totResults = new ConcurrentHashMap<>();
+        Map<ModelSolverPair, FailReason> totReasons = new ConcurrentHashMap<>();
+        Map<String, ModelSize> modDim = new ConcurrentHashMap<>();
 
         int iterations = 0;
-        Set<ModelSolverPair> iterDone = new HashSet<>();
+        Set<ModelSolverPair> iterDone = ConcurrentHashMap.newKeySet();
+
+        BasicLogger.debug();
+        BasicLogger.debug("Environment: {}", OjAlgoUtils.ENVIRONMENT);
+        BasicLogger.debug();
 
         do {
 
@@ -317,103 +359,14 @@ public abstract class AbstractBenchmark {
             BasicLogger.debug("Iteration {} with {} model/solver pairs remaining {}", iterations, allWork.size(), Instant.now());
             BasicLogger.debug("-----------------------------------------------------------------------------");
 
-            for (ModelSolverPair modelSolverPair : allWork) {
-
-                ExpressionsBasedModel.clearIntegrations();
-                Integration<?> integration = INTEGRATIONS.get(modelSolverPair.solver);
-                if (integration != null) {
-                    ExpressionsBasedModel.addIntegration(integration);
-                }
-
-                String path = configuration.path(modelSolverPair.model);
-
-                BigDecimal expectedValue = configuration.values.get(modelSolverPair.model);
-
-                try (InputStream input = AbstractBenchmark.class.getResourceAsStream(path)) {
-                    ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
-                    modDim.computeIfAbsent(modelSolverPair.model, k -> new ModelSize(parsedMPS.countExpressions(), parsedMPS.countVariables()));
-                    ExpressionsBasedModel simplified = parsedMPS.simplify();
-
-                    ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.accuracy, 0.01));
-                    ResultsSet subResults = new ResultsSet(configuration.accuracy, 0.1);
-
-                    AtomicBoolean working = new AtomicBoolean(false);
-
-                    Thread worker = new Thread(() -> {
-
-                        while (!subResults.isStable()) {
-                            subResults.add(AbstractBenchmark.meassure(simplified));
-                        }
-                        working.set(false);
-                    });
-
-                    working.set(true);
-                    long start = System.currentTimeMillis();
-                    worker.start();
-
-                    while (working.get() && System.currentTimeMillis() - start <= configuration.maxWaitTime) {
-                        Thread.sleep(1_000L);
-                    }
-
-                    try {
-                        worker.stop();
-                    } catch (UnsupportedOperationException cause) {
-                        // In Java 20, the implementation of Thread.stop() was changed: the method no longer
-                        // actually stops the thread; instead, it was altered to throw UnsupportedOperationException.
-                        // So far have not been ale to find an alternative that doesn't leave sub-threads running.
-                        // Need to run in a forked JVM process. Should try to switch to JMH for this
-                    } finally {
-                        working.set(false);
-                    }
-
-                    if (subResults.fastest != null) {
-
-                        // Have a result
-
-                        mainResults.add(subResults.fastest);
-
-                        if (!subResults.fastest.result.getState().isOptimal()) {
-
-                            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, subResults.fastest.result.getState(),
-                                    FailReason.UNSTABLE);
-                            totReasons.put(modelSolverPair, FailReason.UNSTABLE);
-                            iterDone.add(modelSolverPair);
-
-                        } else if (expectedValue != null
-                                && configuration.accuracy.isDifferent(expectedValue.doubleValue(), subResults.fastest.result.getValue())) {
-
-                            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG,
-                                    subResults.fastest.result.getValue(), "!= " + expectedValue);
-                            totReasons.put(modelSolverPair, FailReason.WRONG);
-                            iterDone.add(modelSolverPair);
-
-                        } else if (mainResults.isStable()) {
-
-                            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, "Time stable", mainResults.fastest.duration,
-                                    mainResults.fastest.result.getValue());
-                            iterDone.add(modelSolverPair);
-                        }
-
-                    } else {
-
-                        // No result, timeout
-
-                        mainResults.add(FAILED);
-
-                        BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
-                        totReasons.put(modelSolverPair, FailReason.TIMEOUT);
-                        iterDone.add(modelSolverPair);
-                    }
-
-                } catch (Throwable cause) {
-                    BasicLogger.error("Error working with {}!", modelSolverPair);
-                    throw new RuntimeException(cause);
-                }
-            }
+            masterProcessor.process(allWork, configuration.parallelism,
+                    modelSolverPair -> AbstractBenchmark.doOnePair(configuration, slaveExecutor, totResults, totReasons, modDim, iterDone, modelSolverPair));
 
             allWork.removeAll(iterDone);
 
         } while (allWork.size() > 0);
+
+        Map<ModelSolverPair, ResultsSet> sortedResults = new TreeMap<>(totResults);
 
         try (TextLineWriter writer = TextLineWriter.of("./src/main/resources/benchmark_output.csv")) {
 
@@ -424,7 +377,7 @@ public abstract class AbstractBenchmark {
             BasicLogger.debug();
             BasicLogger.debug("Final Results");
             BasicLogger.debug("=====================================================================");
-            for (Entry<ModelSolverPair, ResultsSet> entry : totResults.entrySet()) {
+            for (Entry<ModelSolverPair, ResultsSet> entry : sortedResults.entrySet()) {
 
                 ModelSolverPair work = entry.getKey();
                 TimedResult<Result> result = entry.getValue().fastest;
@@ -436,13 +389,15 @@ public abstract class AbstractBenchmark {
                 double value = result.result.getValue();
                 CalendarDateDuration duration = result.duration;
                 ModelSize dimensions = modDim.get(model);
+                int nbVars = dimensions != null ? dimensions.nbVariables : 0;
+                int nbExpr = dimensions != null ? dimensions.nbExpressions : 0;
 
                 BigDecimal expectedValue = configuration.values.get(model);
 
                 Result referenceResult = null;
                 if (configuration.refeenceSolver != null) {
                     ModelSolverPair referenceModelSolverPair = new ModelSolverPair(model, configuration.refeenceSolver);
-                    ResultsSet referenceResultsSet = totResults.get(referenceModelSolverPair);
+                    ResultsSet referenceResultsSet = sortedResults.get(referenceModelSolverPair);
                     referenceResult = referenceResultsSet != null ? referenceResultsSet.fastest.result : null;
                 }
 
@@ -450,20 +405,20 @@ public abstract class AbstractBenchmark {
 
                     double referenceValue = expectedValue != null ? expectedValue.doubleValue() : referenceResult.getValue();
 
-                    if (state.isOptimal() && !configuration.accuracy.isDifferent(referenceValue, value)) {
+                    if (state.isOptimal() && !ACCURACY.isDifferent(referenceValue, value)) {
                         BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                        csv.line(model, solver, duration.toDurationInNanos(), dimensions.nbVariables, dimensions.nbExpressions);
+                        csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr);
                     } else {
                         BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
-                        csv.line(model, solver, "", dimensions.nbVariables, dimensions.nbExpressions);
+                        csv.line(model, solver, "", nbVars, nbExpr);
                     }
 
                 } else if (state.isOptimal()) {
                     BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                    csv.line(model, solver, duration.toDurationInNanos(), dimensions.nbVariables, dimensions.nbExpressions);
+                    csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr);
                 } else {
                     BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
-                    csv.line(model, solver, "", dimensions.nbVariables, dimensions.nbExpressions);
+                    csv.line(model, solver, "", nbVars, nbExpr);
                 }
             }
 
@@ -471,6 +426,100 @@ public abstract class AbstractBenchmark {
             throw new RuntimeException(cause);
         }
 
+    }
+
+    static void doOnePair(final Configuration configuration, final ExternalProcessExecutor executor, final Map<ModelSolverPair, ResultsSet> totResults,
+            final Map<ModelSolverPair, FailReason> totReasons, final Map<String, ModelSize> modDim, final Set<ModelSolverPair> iterDone,
+            final ModelSolverPair modelSolverPair) {
+
+        String path = configuration.path(modelSolverPair.model);
+
+        BigDecimal expectedValue = configuration.values.get(modelSolverPair.model);
+
+        Future<ForkedTask.ReturnValue> future = null;
+        try {
+
+            future = executor.execute(ForkedTask.DESCRIPTOR, path, modelSolverPair.solver);
+
+            ReturnValue subResults = future.get(configuration.maxWaitTime, TimeUnit.MILLISECONDS);
+
+            modDim.computeIfAbsent(modelSolverPair.model, k -> new ModelSize(subResults.nbExpressions, subResults.nbVariables));
+
+            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
+
+            if (subResults.result != null) {
+
+                // Have a result
+
+                TimedResult<Result> fastest = mainResults.add(subResults);
+
+                if (!fastest.result.getState().isOptimal()) {
+
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, fastest.result.getState(), FailReason.UNSTABLE);
+                    totReasons.put(modelSolverPair, FailReason.UNSTABLE);
+                    iterDone.add(modelSolverPair);
+
+                } else if (expectedValue != null && ACCURACY.isDifferent(expectedValue.doubleValue(), fastest.result.getValue())) {
+
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, fastest.result.getValue(),
+                            "!= " + expectedValue);
+                    totReasons.put(modelSolverPair, FailReason.WRONG);
+                    iterDone.add(modelSolverPair);
+
+                } else if (mainResults.isStable()) {
+
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, "Time stable", mainResults.fastest.duration,
+                            mainResults.fastest.result.getValue());
+                    iterDone.add(modelSolverPair);
+                }
+
+            } else {
+
+                // No result, timeout
+
+                mainResults.add(FAILED);
+
+                BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
+                totReasons.put(modelSolverPair, FailReason.TIMEOUT);
+                iterDone.add(modelSolverPair);
+            }
+
+        } catch (TimeoutException timeout) {
+
+            if (future != null) {
+                try {
+                    future.cancel(true);
+                } catch (Exception ignore) {
+                    // ignore
+                }
+            }
+
+            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
+            mainResults.add(FAILED);
+
+            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
+            totReasons.put(modelSolverPair, FailReason.TIMEOUT);
+            iterDone.add(modelSolverPair);
+
+        } catch (Exception cause) {
+
+            if (future != null) {
+                try {
+                    future.cancel(true);
+                } catch (Exception ignore) {
+                    // ignore
+                }
+            }
+
+            BasicLogger.error("Error working with {}!", modelSolverPair);
+
+            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
+            mainResults.add(FAILED);
+
+            BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.FAILED);
+            totReasons.put(modelSolverPair, FailReason.FAILED);
+            iterDone.add(modelSolverPair);
+        }
     }
 
     static TimedResult<Result> meassure(final ExpressionsBasedModel model) {
