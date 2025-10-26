@@ -1,0 +1,334 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+
+Environment: 8GB/10threads aarch64 [32GB/10threads, 2MB/10threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 132 model/solver pairs remaining 2025-10-26T08:50:02.050621Z
+-----------------------------------------------------------------------------
+DUALC1                Hipparchus            WRONG                 6162.39405134238      != 6155.2508          
+QPTEST                JOptimizer            FAILED                UNSTABLE              
+HS35                  JOptimizer            WRONG                 6.9280446213241E-15   != 0.11111111         
+DUALC2                JOptimizer            FAILED                UNSTABLE              
+DUAL3                 JOptimizer            WRONG                 0.1378580275951401    != 0.13575584         
+HS21                  JOptimizer            FAILED                UNSTABLE              
+HS118                 JOptimizer            WRONG                 274.27735             != 664.82045          
+DUAL2                 JOptimizer            WRONG                 0.03411084717612885   != 0.033733676        
+DUALC1                JOptimizer            FAILED                UNSTABLE              
+CVXQP1_S              JOptimizer            FAILED                UNSTABLE              
+VALUES                CPLEX                 FAILED                UNSTABLE              
+HS76                  JOptimizer            FAILED                UNSTABLE              
+DUAL1                 JOptimizer            WRONG                 0.09699480851586027   != 0.035012966        
+DUALC8                JOptimizer            FAILED                UNSTABLE              
+HS268                 JOptimizer            FAILED                UNSTABLE              
+QPCBLEND              JOptimizer            WRONG                 -0.5645366567229769   != -0.0078425409      
+CVXQP3_M              Hipparchus            FAILED                TIMEOUT               
+QPCBOEI2              Hipparchus            WRONG                 7196181.244435853     != 8171962.3          
+HS268                 Hipparchus            WRONG                 0.31360218110489807   != 0                  
+CVXQP1_M              ojAlgo                FAILED                TIMEOUT               
+S268                  JOptimizer            FAILED                UNSTABLE              
+CVXQP3_M              ojAlgo                FAILED                TIMEOUT               
+S268                  Hipparchus            WRONG                 0.31360218110489807   != 5.7310705E-7       
+MOSARQP2              JOptimizer            WRONG                 -1901.0796591472142   != -1597.4821         
+DUALC5                JOptimizer            WRONG                 3566.9181295937274    != 427.23233          
+VALUES                JOptimizer            FAILED                UNSTABLE              
+CVXQP2_S              JOptimizer            FAILED                UNSTABLE              
+Error working with ModelSolverPair [model=QPCBOEI2, solver=JOptimizer]!
+QPCBOEI2              JOptimizer            FAILED                FAILED                
+QPCBOEI1              JOptimizer            WRONG                 387028.4915739987     != 11503914           
+QPCSTAIR              Hipparchus            FAILED                UNSTABLE              
+DUAL4                 JOptimizer            WRONG                 0.7713027271233273    != 0.74609084         
+Error working with ModelSolverPair [model=QPCSTAIR, solver=JOptimizer]!
+QPCSTAIR              JOptimizer            FAILED                FAILED                
+CVXQP2_M              ojAlgo                FAILED                TIMEOUT               
+
+Iteration 2 with 99 model/solver pairs remaining 2025-10-26T09:03:45.094598Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 99 model/solver pairs remaining 2025-10-26T09:10:37.855277Z
+-----------------------------------------------------------------------------
+DUAL3                 ojAlgo                Time stable           7.59775ms             0.13575583686602102   
+QPTEST                ojAlgo                Time stable           0.288625ms            4.371875              
+DUALC2                CPLEX                 Time stable           2.726958ms            3551.307695643078     
+DUALC1                ojAlgo                Time stable           0.194208ms            6155.250829462582     
+HS52                  JOptimizer            Time stable           0.231417ms            5.326647564469917     
+QPCSTAIR              CPLEX                 Time stable           21.009375ms           6204387.479164349     
+CVXQP3_S              Hipparchus            Time stable           151.444542ms          11943.444203298306    
+HS35MOD               CPLEX                 Time stable           3.211292ms            0.2500000042798633    
+QPCBLEND              Hipparchus            Time stable           191.655875ms          -0.007844316554338579 
+DUALC1                CPLEX                 Time stable           2.673417ms            6155.2508400609095    
+HS51                  JOptimizer            Time stable           0.521208ms            0.0                   
+CVXQP3_S              ojAlgo                Time stable           157.090792ms          11943.432202310021    
+CVXQP2_M              JOptimizer            Time stable           2539.929625ms         1.8266575730882693E7  
+DUALC5                Hipparchus            Time stable           0.291ms               427.2461448375591     
+QPCBOEI1              ojAlgo                Time stable           13742.599708ms        1.1503914009768302E7  
+QPCSTAIR              ojAlgo                Time stable           4840.789292ms         6204387.476082004     
+MOSARQP2              CPLEX                 Time stable           19.967292ms           -1597.4821051481947   
+MOSARQP2              Hipparchus            Time stable           84028.823625ms        -1597.4821975304994   
+QPCBOEI2              ojAlgo                Time stable           738.248666ms          8171962.244330333     
+MOSARQP2              ojAlgo                Time stable           146793.005083ms       -1597.4821175234274   
+HS35MOD               JOptimizer            Time stable           0.162625ms            0.2500000000004191    
+HS35                  CPLEX                 Time stable           2.689333ms            0.11111112951084967   
+HS51                  CPLEX                 Time stable           1.033959ms            7.343141846E-19       
+DUALC5                CPLEX                 Time stable           2.063ms               427.2323269107383     
+CVXQP1_M              JOptimizer            Time stable           4653.298125ms         4733678.036626817     
+CVXQP2_S              Hipparchus            Time stable           91.820208ms           8120.959865171435     
+VALUES                Hipparchus            Time stable           1063.58625ms          -1.39658729172455     
+QPCBOEI1              Hipparchus            Time stable           84679.566542ms        1.1496498319986075E7  
+CVXQP1_M              Hipparchus            Time stable           193010.89025ms        1087511.3646372678    
+
+Iteration 4 with 70 model/solver pairs remaining 2025-10-26T09:16:58.968829Z
+-----------------------------------------------------------------------------
+GENHS28               CPLEX                 Time stable           0.814333ms            0.9271736937663807    
+CVXQP2_S              ojAlgo                Time stable           22.477459ms           8120.940477250781     
+QPCBLEND              CPLEX                 Time stable           3.004625ms            -0.007842542226937078 
+DUAL1                 CPLEX                 Time stable           12.626083ms           0.03501296712192964   
+CVXQP3_M              JOptimizer            Time stable           5390.576ms            1668047.18538035      
+DUAL3                 Hipparchus            Time stable           126.43625ms           0.13576857040037427   
+DUALC8                CPLEX                 Time stable           2.013833ms            18309.358834929888    
+CVXQP1_S              ojAlgo                Time stable           38.152625ms           11590.71811942676     
+CVXQP1_S              Hipparchus            Time stable           204.767375ms          11590.73439911826     
+HS52                  Hipparchus            Time stable           0.22725ms             5.326631409728266     
+HS76                  Hipparchus            Time stable           0.201291ms            -4.68176033421074     
+S268                  CPLEX                 Time stable           2.306709ms            1.1682835170954212E-5 
+QPCBOEI2              CPLEX                 Time stable           10.160458ms           8171962.2445413945    
+DUALC8                ojAlgo                Time stable           0.10875ms             18309.35883273631     
+HS53                  CPLEX                 Time stable           2.920583ms            4.093023255813976     
+TAME                  CPLEX                 Time stable           1.109083ms            0.0                   
+CVXQP2_M              CPLEX                 Time stable           92.184041ms           820155.431027407      
+
+Iteration 5 with 53 model/solver pairs remaining 2025-10-26T09:19:41.496837Z
+-----------------------------------------------------------------------------
+HS21                  CPLEX                 Time stable           2.243292ms            -99.95999999938574    
+GENHS28               Hipparchus            Time stable           0.225792ms            0.927163573651928     
+DUAL2                 ojAlgo                Time stable           4.8205ms              0.03373367612271781   
+DUAL2                 Hipparchus            Time stable           64.99775ms            0.03373517208368592   
+HS52                  CPLEX                 Time stable           1.032584ms            5.326647564469881     
+CVXQP2_S              CPLEX                 Time stable           3.7455ms              8120.940478472599     
+HS118                 CPLEX                 Time stable           2.292875ms            664.8204500665357     
+CVXQP3_M              CPLEX                 INVALID               UNSTABLE              
+CVXQP1_M              CPLEX                 Time stable           93.341792ms           1087511.5698667949    
+CVXQP2_M              Hipparchus            Time stable           108001.619666ms       820155.4218256708     
+
+Iteration 6 with 43 model/solver pairs remaining 2025-10-26T09:21:56.603081Z
+-----------------------------------------------------------------------------
+DUAL4                 ojAlgo                Time stable           2.835791ms            0.7460908418021085    
+GENHS28               JOptimizer            Time stable           0.526667ms            0.9271736937663944    
+DUAL1                 Hipparchus            Time stable           64.462167ms           0.035017846507731314  
+
+Iteration 7 with 40 model/solver pairs remaining 2025-10-26T09:22:48.094986Z
+-----------------------------------------------------------------------------
+CVXQP1_S              CPLEX                 Time stable           3.920542ms            11590.718131765081    
+DUAL2                 CPLEX                 Time stable           13.307958ms           0.03373367616076254   
+DUALC8                Hipparchus            Time stable           0.578084ms            18312.25866883296     
+HS118                 Hipparchus            Time stable           3.189541ms            664.8215476458131     
+QPTEST                CPLEX                 Time stable           2.383208ms            4.37187500545178      
+HS118                 ojAlgo                Time stable           0.519917ms            664.82045             
+
+Iteration 8 with 34 model/solver pairs remaining 2025-10-26T09:22:50.065319Z
+-----------------------------------------------------------------------------
+HS21                  Hipparchus            Time stable           0.148666ms            -99.95992668731232    
+S268                  ojAlgo                Time stable           0.089417ms            1.09894E-23           
+DUALC2                ojAlgo                Time stable           0.111541ms            3551.307692670844     
+QPCBOEI1              CPLEX                 Time stable           12.3985ms             1.1503914011830442E7  
+HS76                  CPLEX                 Time stable           1.246042ms            -4.681818168301529    
+DUAL1                 ojAlgo                Time stable           4.033583ms            0.03501296573347623   
+DUAL4                 Hipparchus            Time stable           44.457875ms           0.7461175658281045    
+
+Iteration 9 with 27 model/solver pairs remaining 2025-10-26T09:22:51.711699Z
+-----------------------------------------------------------------------------
+HS35                  Hipparchus            Time stable           0.073083ms            0.11110889854183209   
+TAME                  Hipparchus            Time stable           0.108542ms            2.10681E-23           
+HS53                  JOptimizer            Time stable           0.345625ms            4.093023255813952     
+
+Iteration 10 with 24 model/solver pairs remaining 2025-10-26T09:22:53.360225Z
+-----------------------------------------------------------------------------
+DUALC2                Hipparchus            Time stable           0.361ms               3551.632573074723     
+DUAL4                 CPLEX                 Time stable           10.770708ms           0.7460908419173067    
+HS268                 CPLEX                 Time stable           1.400542ms            1.1682835170954212E-5 
+CVXQP3_S              CPLEX                 Time stable           4.690458ms            11943.432260753456    
+QPCBLEND              ojAlgo                Time stable           17.80575ms            -0.007842543074184147 
+
+Iteration 11 with 19 model/solver pairs remaining 2025-10-26T09:22:54.736899Z
+-----------------------------------------------------------------------------
+VALUES                ojAlgo                Time stable           257.951542ms          -1.3966211447137578   
+
+Iteration 12 with 18 model/solver pairs remaining 2025-10-26T09:22:56.186962Z
+-----------------------------------------------------------------------------
+
+Iteration 13 with 18 model/solver pairs remaining 2025-10-26T09:22:56.379536Z
+-----------------------------------------------------------------------------
+DUAL3                 CPLEX                 Time stable           17.744958ms           0.13575583751626022   
+
+Iteration 14 with 17 model/solver pairs remaining 2025-10-26T09:22:56.542980Z
+-----------------------------------------------------------------------------
+
+Iteration 15 with 17 model/solver pairs remaining 2025-10-26T09:22:56.689630Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 17 model/solver pairs remaining 2025-10-26T09:22:56.789605Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 17 model/solver pairs remaining 2025-10-26T09:22:56.939053Z
+-----------------------------------------------------------------------------
+CVXQP3_S              JOptimizer            Time stable           14.992542ms           12310.00979384134     
+
+Iteration 18 with 16 model/solver pairs remaining 2025-10-26T09:22:57.095621Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 16 model/solver pairs remaining 2025-10-26T09:22:57.113501Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 16 model/solver pairs remaining 2025-10-26T09:22:57.132671Z
+-----------------------------------------------------------------------------
+HS21                  ojAlgo                Time stable           0.022083ms            -99.96                
+HS35MOD               ojAlgo                Time stable           0.013208ms            0.25                  
+QPTEST                Hipparchus            Time stable           0.07325ms             4.371795373549981     
+TAME                  ojAlgo                Time stable           0.011125ms            0.0                   
+HS53                  ojAlgo                Time stable           0.022125ms            4.093023255813954     
+HS51                  Hipparchus            Time stable           0.086833ms            5.128148427126529E-12 
+HS268                 ojAlgo                Time stable           0.036292ms            1.09894E-23           
+DUALC5                ojAlgo                Time stable           0.043709ms            427.23232677639356    
+HS76                  ojAlgo                Time stable           0.040875ms            -4.681818181818177    
+HS53                  Hipparchus            Time stable           0.113875ms            4.093055230874879     
+HS52                  ojAlgo                Time stable           0.024041ms            5.326647576871785     
+HS51                  ojAlgo                Time stable           0.016667ms            4.13106175527E-17     
+TAME                  JOptimizer            Time stable           0.085291ms            0.0                   
+HS35MOD               Hipparchus            Time stable           0.076083ms            0.2500000000000372    
+HS35                  ojAlgo                Time stable           0.012916ms            0.11111111111111334   
+GENHS28               ojAlgo                Time stable           0.034334ms            0.9271736939195341    
+
+Final Results
+=====================================================================
+CVXQP1_M              CPLEX                 OPTIMAL               93.341792ms           
+CVXQP1_M              Hipparchus            OPTIMAL               193010.89025ms        
+CVXQP1_M              JOptimizer            FAILED                WRONG                 
+CVXQP1_M              ojAlgo                FAILED                TIMEOUT               
+CVXQP1_S              CPLEX                 OPTIMAL               3.920542ms            
+CVXQP1_S              Hipparchus            OPTIMAL               204.767375ms          
+CVXQP1_S              JOptimizer            FAILED                UNSTABLE              
+CVXQP1_S              ojAlgo                OPTIMAL               38.152625ms           
+CVXQP2_M              CPLEX                 OPTIMAL               92.184041ms           
+CVXQP2_M              Hipparchus            OPTIMAL               108001.619666ms       
+CVXQP2_M              JOptimizer            FAILED                WRONG                 
+CVXQP2_M              ojAlgo                FAILED                TIMEOUT               
+CVXQP2_S              CPLEX                 OPTIMAL               3.7455ms              
+CVXQP2_S              Hipparchus            OPTIMAL               91.820208ms           
+CVXQP2_S              JOptimizer            FAILED                UNSTABLE              
+CVXQP2_S              ojAlgo                OPTIMAL               22.477459ms           
+CVXQP3_M              CPLEX                 FAILED                UNSTABLE              
+CVXQP3_M              Hipparchus            FAILED                TIMEOUT               
+CVXQP3_M              JOptimizer            OPTIMAL               5390.576ms            
+CVXQP3_M              ojAlgo                FAILED                TIMEOUT               
+CVXQP3_S              CPLEX                 OPTIMAL               4.690458ms            
+CVXQP3_S              Hipparchus            OPTIMAL               151.444542ms          
+CVXQP3_S              JOptimizer            FAILED                WRONG                 
+CVXQP3_S              ojAlgo                OPTIMAL               157.090792ms          
+DUAL1                 CPLEX                 OPTIMAL               12.626083ms           
+DUAL1                 Hipparchus            OPTIMAL               64.462167ms           
+DUAL1                 JOptimizer            FAILED                WRONG                 
+DUAL1                 ojAlgo                OPTIMAL               4.033583ms            
+DUAL2                 CPLEX                 OPTIMAL               13.307958ms           
+DUAL2                 Hipparchus            OPTIMAL               64.99775ms            
+DUAL2                 JOptimizer            FAILED                WRONG                 
+DUAL2                 ojAlgo                OPTIMAL               4.8205ms              
+DUAL3                 CPLEX                 OPTIMAL               17.744958ms           
+DUAL3                 Hipparchus            OPTIMAL               126.43625ms           
+DUAL3                 JOptimizer            FAILED                WRONG                 
+DUAL3                 ojAlgo                OPTIMAL               7.59775ms             
+DUAL4                 CPLEX                 OPTIMAL               10.770708ms           
+DUAL4                 Hipparchus            OPTIMAL               44.457875ms           
+DUAL4                 JOptimizer            FAILED                WRONG                 
+DUAL4                 ojAlgo                OPTIMAL               2.835791ms            
+DUALC1                CPLEX                 OPTIMAL               2.673417ms            
+DUALC1                Hipparchus            FAILED                WRONG                 
+DUALC1                JOptimizer            FAILED                UNSTABLE              
+DUALC1                ojAlgo                OPTIMAL               0.194208ms            
+DUALC2                CPLEX                 OPTIMAL               2.726958ms            
+DUALC2                Hipparchus            OPTIMAL               0.361ms               
+DUALC2                JOptimizer            FAILED                UNSTABLE              
+DUALC2                ojAlgo                OPTIMAL               0.111541ms            
+DUALC5                CPLEX                 OPTIMAL               2.063ms               
+DUALC5                Hipparchus            OPTIMAL               0.291ms               
+DUALC5                JOptimizer            FAILED                WRONG                 
+DUALC5                ojAlgo                OPTIMAL               0.043709ms            
+DUALC8                CPLEX                 OPTIMAL               2.013833ms            
+DUALC8                Hipparchus            OPTIMAL               0.578084ms            
+DUALC8                JOptimizer            FAILED                UNSTABLE              
+DUALC8                ojAlgo                OPTIMAL               0.10875ms             
+GENHS28               CPLEX                 OPTIMAL               0.814333ms            
+GENHS28               Hipparchus            OPTIMAL               0.225792ms            
+GENHS28               JOptimizer            OPTIMAL               0.526667ms            
+GENHS28               ojAlgo                OPTIMAL               0.034334ms            
+HS118                 CPLEX                 OPTIMAL               2.292875ms            
+HS118                 Hipparchus            OPTIMAL               3.189541ms            
+HS118                 JOptimizer            FAILED                WRONG                 
+HS118                 ojAlgo                OPTIMAL               0.519917ms            
+HS21                  CPLEX                 OPTIMAL               2.243292ms            
+HS21                  Hipparchus            OPTIMAL               0.148666ms            
+HS21                  JOptimizer            FAILED                UNSTABLE              
+HS21                  ojAlgo                OPTIMAL               0.022083ms            
+HS268                 CPLEX                 OPTIMAL               1.400542ms            
+HS268                 Hipparchus            FAILED                WRONG                 
+HS268                 JOptimizer            FAILED                UNSTABLE              
+HS268                 ojAlgo                OPTIMAL               0.036292ms            
+HS35                  CPLEX                 OPTIMAL               2.689333ms            
+HS35                  Hipparchus            OPTIMAL               0.073083ms            
+HS35                  JOptimizer            FAILED                WRONG                 
+HS35                  ojAlgo                OPTIMAL               0.012916ms            
+HS35MOD               CPLEX                 OPTIMAL               3.211292ms            
+HS35MOD               Hipparchus            OPTIMAL               0.076083ms            
+HS35MOD               JOptimizer            OPTIMAL               0.162625ms            
+HS35MOD               ojAlgo                OPTIMAL               0.013208ms            
+HS51                  CPLEX                 OPTIMAL               1.033959ms            
+HS51                  Hipparchus            OPTIMAL               0.086833ms            
+HS51                  JOptimizer            OPTIMAL               0.521208ms            
+HS51                  ojAlgo                OPTIMAL               0.016667ms            
+HS52                  CPLEX                 OPTIMAL               1.032584ms            
+HS52                  Hipparchus            OPTIMAL               0.22725ms             
+HS52                  JOptimizer            OPTIMAL               0.231417ms            
+HS52                  ojAlgo                OPTIMAL               0.024041ms            
+HS53                  CPLEX                 OPTIMAL               2.920583ms            
+HS53                  Hipparchus            OPTIMAL               0.113875ms            
+HS53                  JOptimizer            OPTIMAL               0.345625ms            
+HS53                  ojAlgo                OPTIMAL               0.022125ms            
+HS76                  CPLEX                 OPTIMAL               1.246042ms            
+HS76                  Hipparchus            OPTIMAL               0.201291ms            
+HS76                  JOptimizer            FAILED                UNSTABLE              
+HS76                  ojAlgo                OPTIMAL               0.040875ms            
+MOSARQP2              CPLEX                 OPTIMAL               19.967292ms           
+MOSARQP2              Hipparchus            OPTIMAL               84028.823625ms        
+MOSARQP2              JOptimizer            FAILED                WRONG                 
+MOSARQP2              ojAlgo                OPTIMAL               146793.005083ms       
+QPCBLEND              CPLEX                 OPTIMAL               3.004625ms            
+QPCBLEND              Hipparchus            OPTIMAL               191.655875ms          
+QPCBLEND              JOptimizer            FAILED                WRONG                 
+QPCBLEND              ojAlgo                OPTIMAL               17.80575ms            
+QPCBOEI1              CPLEX                 OPTIMAL               12.3985ms             
+QPCBOEI1              Hipparchus            OPTIMAL               84679.566542ms        
+QPCBOEI1              JOptimizer            FAILED                WRONG                 
+QPCBOEI1              ojAlgo                OPTIMAL               13742.599708ms        
+QPCBOEI2              CPLEX                 OPTIMAL               10.160458ms           
+QPCBOEI2              Hipparchus            FAILED                WRONG                 
+QPCBOEI2              JOptimizer            FAILED                FAILED                
+QPCBOEI2              ojAlgo                OPTIMAL               738.248666ms          
+QPCSTAIR              CPLEX                 OPTIMAL               21.009375ms           
+QPCSTAIR              Hipparchus            FAILED                UNSTABLE              
+QPCSTAIR              JOptimizer            FAILED                FAILED                
+QPCSTAIR              ojAlgo                OPTIMAL               4840.789292ms         
+QPTEST                CPLEX                 OPTIMAL               2.383208ms            
+QPTEST                Hipparchus            OPTIMAL               0.07325ms             
+QPTEST                JOptimizer            FAILED                UNSTABLE              
+QPTEST                ojAlgo                OPTIMAL               0.288625ms            
+S268                  CPLEX                 OPTIMAL               2.306709ms            
+S268                  Hipparchus            FAILED                WRONG                 
+S268                  JOptimizer            FAILED                UNSTABLE              
+S268                  ojAlgo                OPTIMAL               0.089417ms            
+TAME                  CPLEX                 OPTIMAL               1.109083ms            
+TAME                  Hipparchus            OPTIMAL               0.108542ms            
+TAME                  JOptimizer            OPTIMAL               0.085291ms            
+TAME                  ojAlgo                OPTIMAL               0.011125ms            
+VALUES                CPLEX                 FAILED                UNSTABLE              
+VALUES                Hipparchus            OPTIMAL               1063.58625ms          
+VALUES                JOptimizer            FAILED                UNSTABLE              
+VALUES                ojAlgo                OPTIMAL               257.951542ms          

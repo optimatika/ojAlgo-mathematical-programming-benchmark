@@ -70,7 +70,7 @@ public abstract class AbstractBenchmark {
         /**
          * ms
          */
-        public long maxWaitTime = 60_000L;
+        public long maxWaitTime = 1_000L * 60L * 5L;
         public ParallelismSupplier parallelism = Parallelism.CORES.halve().adjustDown();
         public String pathPrefix;
         public String pathSuffix = ".SIF";
@@ -287,6 +287,10 @@ public abstract class AbstractBenchmark {
                 return false;
             }
 
+            if (size >= 20) {
+                return true;
+            }
+
             double duration1 = all.get(size - 1).duration.toDurationInMillis();
             double duration2 = all.get(size - 2).duration.toDurationInMillis();
 
@@ -439,7 +443,7 @@ public abstract class AbstractBenchmark {
         Future<ForkedTask.ReturnValue> future = null;
         try {
 
-            future = executor.execute(ForkedTask.DESCRIPTOR, path, modelSolverPair.solver);
+            future = executor.execute(ForkedTask.DESCRIPTOR, path, modelSolverPair.solver, configuration.maxWaitTime);
 
             ReturnValue subResults = future.get(configuration.maxWaitTime, TimeUnit.MILLISECONDS);
 

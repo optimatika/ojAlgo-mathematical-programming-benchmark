@@ -34,9 +34,12 @@ public abstract class ForkedTask {
 
     }
 
-    static final MethodDescriptor DESCRIPTOR = MethodDescriptor.of(ForkedTask.class, "execute", String.class, String.class);
+    static final MethodDescriptor DESCRIPTOR = MethodDescriptor.of(ForkedTask.class, "execute", String.class, String.class, long.class);
 
-    public static ReturnValue execute(final String modelFilePath, final String contenderSolverName) {
+    public static ReturnValue execute(final String modelFilePath, final String contenderSolverName, final long maxWaitTime) {
+
+        long instanceTime = Long.MAX_VALUE;
+        long remainingTime = maxWaitTime / 2L;
 
         ExpressionsBasedModel.clearIntegrations();
         Integration<?> integration = AbstractBenchmark.INTEGRATIONS.get(contenderSolverName);
@@ -58,9 +61,16 @@ public abstract class ForkedTask {
 
             ExpressionsBasedModel simplified = parsedMPS.simplify();
 
-            while (!resultsSet.isStable()) {
-                resultsSet.add(AbstractBenchmark.meassure(simplified));
-            }
+            do {
+
+                TimedResult<Result> meassured = AbstractBenchmark.meassure(simplified);
+
+                instanceTime = meassured.duration.toDurationInMillis();
+                remainingTime -= instanceTime;
+
+                resultsSet.add(meassured);
+
+            } while (instanceTime < remainingTime && !resultsSet.isStable());
 
         } catch (IOException cause) {
             throw new RuntimeException(cause);
