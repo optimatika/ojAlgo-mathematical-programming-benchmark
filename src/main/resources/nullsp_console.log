@@ -1,0 +1,332 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+
+Environment: 8GB/10threads aarch64 [32GB/10threads, 2MB/10threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 132 model/solver pairs remaining 2025-11-22T10:07:51.102019Z
+-----------------------------------------------------------------------------
+CVXQP2_M              ojAlgo-D-exp          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-S-stbl         FAILED                TIMEOUT               
+QPCBOEI2              ojAlgo-D-exp          FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-S-stbl         WRONG                 3.340019383093374E7   != 11503914           
+CVXQP1_M              ojAlgo-S-stbl         FAILED                TIMEOUT               
+QPCBOEI2              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-S-exp          FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-D-stbl         FAILED                TIMEOUT               
+QPCSTAIR              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-S-stbl         FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP2_S              ojAlgo-D-exp          FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-S-exp          FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-D-exp          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-D-exp          FAILED                TIMEOUT               
+QPCSTAIR              ojAlgo-D-exp          FAILED                TIMEOUT               
+
+Iteration 2 with 114 model/solver pairs remaining 2025-11-22T10:36:15.406418Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 114 model/solver pairs remaining 2025-11-22T10:41:05.155016Z
+-----------------------------------------------------------------------------
+QPCBLEND              ojAlgo-D-stbl         Time stable           25.250833ms           -0.007842543074187618 
+HS118                 ojAlgo-D-stbl         Time stable           0.601292ms            664.8204499999999     
+S268                  ojAlgo-D-exp          Time stable           0.724583ms            1.09894E-23           
+DUALC8                ojAlgo-D-exp          Time stable           0.6245ms              18309.358832735496    
+CVXQP3_S              ojAlgo-D-exp          Time stable           4.35975ms             11943.432202309948    
+CVXQP2_S              ojAlgo-D-stbl         Time stable           232.659791ms          8120.940498232463     
+QPCBLEND              ojAlgo-D-exp          Time stable           7.08575ms             -0.007842543074217957 
+DUAL1                 ojAlgo-S-stbl         Time stable           6.283417ms            0.03501296573347623   
+CVXQP1_S              ojAlgo-S-stbl         Time stable           120.80375ms           11590.71811942676     
+VALUES                ojAlgo-S-stbl         Time stable           438.226083ms          -1.3966211447137578   
+DUAL3                 ojAlgo-D-exp          Time stable           14.708167ms           0.13575583686848558   
+CVXQP3_M              ojAlgo-D-exp          Time stable           570.366667ms          1362828.7416028955    
+QPCBLEND              ojAlgo-S-stbl         Time stable           48.199584ms           -0.007842543074221072 
+CVXQP1_S              ojAlgo-D-stbl         Time stable           133.425375ms          11590.718148185751    
+VALUES                ojAlgo-D-exp          Time stable           1020.625292ms         -1.3966211447135424   
+DUAL2                 ojAlgo-S-exp          Time stable           10.166375ms           0.03373367612271781   
+CVXQP3_S              ojAlgo-S-exp          Time stable           6.291708ms            11943.432202309961    
+QPCBOEI1              ojAlgo-S-exp          Time stable           24538.712458ms        1.1503914009767337E7  
+DUAL2                 ojAlgo-S-stbl         Time stable           7.603667ms            0.03373367612271781   
+MOSARQP2              ojAlgo-D-exp          Time stable           81941.533959ms        -1597.4821175234274   
+MOSARQP2              ojAlgo-S-stbl         Time stable           155467.087833ms       -1597.4821175234274   
+MOSARQP2              ojAlgo-S-exp          Time stable           163447.455291ms       -1597.4821175234274   
+
+Iteration 4 with 92 model/solver pairs remaining 2025-11-22T10:45:14.361870Z
+-----------------------------------------------------------------------------
+DUAL3                 ojAlgo-D-stbl         Time stable           6.964583ms            0.13575583686602102   
+DUAL4                 ojAlgo-S-stbl         Time stable           2.7345ms              0.7460908418021085    
+QPCBOEI2              ojAlgo-S-stbl         Time stable           841.540208ms          8171962.244232641     
+HS118                 ojAlgo-S-exp          Time stable           0.27575ms             664.82045             
+VALUES                ojAlgo-S-exp          Time stable           965.899958ms          -1.3966211447135424   
+DUAL1                 ojAlgo-S-exp          Time stable           6.979417ms            0.03501296573347697   
+CVXQP3_S              ojAlgo-S-stbl         Time stable           576.614959ms          11943.432202310021    
+
+Iteration 5 with 85 model/solver pairs remaining 2025-11-22T10:46:32.953815Z
+-----------------------------------------------------------------------------
+DUAL4                 ojAlgo-D-stbl         Time stable           2.881083ms            0.7460908418021085    
+CVXQP1_S              ojAlgo-S-exp          Time stable           7.604875ms            11590.71811942676     
+QPCSTAIR              ojAlgo-S-exp          Time stable           4183.056958ms         6204387.476082278     
+CVXQP2_S              ojAlgo-S-stbl         Time stable           60.2945ms             8120.940477250781     
+VALUES                ojAlgo-D-stbl         Time stable           396.265584ms          -1.3966211447137578   
+DUAL4                 ojAlgo-S-exp          Time stable           10.695084ms           0.7460908418021085    
+DUAL4                 ojAlgo-D-exp          Time stable           5.845292ms            0.7460908418021085    
+DUAL1                 ojAlgo-D-stbl         Time stable           5.226375ms            0.03501296573347623   
+QPCBLEND              ojAlgo-S-exp          Time stable           11.379083ms           -0.007842543074190106 
+DUAL3                 ojAlgo-S-stbl         Time stable           10.589959ms           0.13575583686602102   
+DUAL2                 ojAlgo-D-stbl         Time stable           6.628459ms            0.03373367612271817   
+CVXQP3_M              ojAlgo-S-exp          Time stable           965.527375ms          1362828.7416028953    
+MOSARQP2              ojAlgo-D-stbl         Time stable           5093.121666ms         -1597.4821175234274   
+
+Iteration 6 with 72 model/solver pairs remaining 2025-11-22T10:47:48.149126Z
+-----------------------------------------------------------------------------
+DUALC2                ojAlgo-S-exp          Time stable           0.119792ms            3551.309361268401     
+DUAL2                 ojAlgo-D-exp          Time stable           7.720083ms            0.03373367612271781   
+
+Iteration 7 with 70 model/solver pairs remaining 2025-11-22T10:48:11.757060Z
+-----------------------------------------------------------------------------
+CVXQP1_S              ojAlgo-D-exp          Time stable           2.548334ms            11590.718119610645    
+QPCSTAIR              ojAlgo-S-stbl         Time stable           3863.115708ms         6204387.47608178      
+
+Iteration 8 with 68 model/solver pairs remaining 2025-11-22T10:48:34.905983Z
+-----------------------------------------------------------------------------
+CVXQP3_S              ojAlgo-D-stbl         Time stable           84.258458ms           11954.138821326149    
+DUAL3                 ojAlgo-S-exp          Time stable           16.387959ms           0.13575583686848558   
+CVXQP2_S              ojAlgo-S-exp          Time stable           14.701792ms           8120.940477250715     
+QPCBOEI2              ojAlgo-S-exp          Time stable           528.168958ms          8171962.244136844     
+
+Iteration 9 with 64 model/solver pairs remaining 2025-11-22T10:48:36.614932Z
+-----------------------------------------------------------------------------
+
+Iteration 10 with 64 model/solver pairs remaining 2025-11-22T10:48:36.657480Z
+-----------------------------------------------------------------------------
+DUAL1                 ojAlgo-D-exp          Time stable           4.11175ms             0.0350129657334766    
+
+Iteration 11 with 63 model/solver pairs remaining 2025-11-22T10:48:36.710217Z
+-----------------------------------------------------------------------------
+
+Iteration 12 with 63 model/solver pairs remaining 2025-11-22T10:48:36.743655Z
+-----------------------------------------------------------------------------
+
+Iteration 13 with 63 model/solver pairs remaining 2025-11-22T10:48:36.778083Z
+-----------------------------------------------------------------------------
+
+Iteration 14 with 63 model/solver pairs remaining 2025-11-22T10:48:36.813896Z
+-----------------------------------------------------------------------------
+
+Iteration 15 with 63 model/solver pairs remaining 2025-11-22T10:48:36.849550Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 63 model/solver pairs remaining 2025-11-22T10:48:36.887856Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 63 model/solver pairs remaining 2025-11-22T10:48:36.923783Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 63 model/solver pairs remaining 2025-11-22T10:48:36.955859Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 63 model/solver pairs remaining 2025-11-22T10:48:36.988091Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 63 model/solver pairs remaining 2025-11-22T10:48:37.026301Z
+-----------------------------------------------------------------------------
+HS35                  ojAlgo-D-stbl         Time stable           0.007208ms            0.11111111111111334   
+HS51                  ojAlgo-D-stbl         Time stable           0.008834ms            4.13106175527E-17     
+QPTEST                ojAlgo-D-stbl         Time stable           0.007959ms            4.371875              
+HS35MOD               ojAlgo-S-exp          Time stable           0.008667ms            0.25                  
+HS53                  ojAlgo-S-stbl         Time stable           0.018875ms            4.093023255813954     
+HS52                  ojAlgo-S-stbl         Time stable           0.008ms               5.326647576871785     
+HS76                  ojAlgo-S-stbl         Time stable           0.009833ms            -4.681818181818182    
+S268                  ojAlgo-S-stbl         DUALC1                Time stable           ojAlgo-S-exp          0.020916ms            Time stable           1.09894E-23           0.088917ms            6155.250829467569     
+
+HS53                  ojAlgo-D-exp          Time stable           0.02ms                4.093023255813952     
+TAME                  ojAlgo-S-stbl         Time stable           0.007542ms            0.0                   
+HS268                 ojAlgo-S-stbl         Time stable           0.020958ms            1.09894E-23           
+DUALC2                ojAlgo-D-stbl         Time stable           0.0485ms              3551.3077178929225    
+HS51                  ojAlgo-S-stbl         Time stable           0.008791ms            4.13106175527E-17     
+S268                  ojAlgo-S-exp          Time stable           0.021625ms            1.09894E-23           
+DUALC5                ojAlgo-D-exp          Time stable           0.039959ms            427.23232677638896    
+HS35                  ojAlgo-S-stbl         Time stable           0.008417ms            0.11111111111111334   
+TAME                  ojAlgo-D-stbl         Time stable           0.005833ms            0.0                   
+HS76                  ojAlgo-D-exp          Time stable           0.008292ms            -4.681818181818182    
+QPTEST                ojAlgo-S-stbl         Time stable           0.008583ms            4.371875              
+HS52                  ojAlgo-D-exp          Time stable           0.008084ms            5.326647576871785     
+HS21                  ojAlgo-D-stbl         Time stable           0.007125ms            -99.96                
+TAME                  ojAlgo-S-exp          Time stable           0.009083ms            0.0                   
+HS118                 ojAlgo-D-exp          Time stable           0.092917ms            664.8204499999999     
+QPTEST                ojAlgo-D-exp          Time stable           0.008334ms            4.371875              
+DUALC5                HS21                  ojAlgo-D-stbl         ojAlgo-S-exp          Time stable           Time stable           0.027375ms            0.008666ms            427.23232677638435    -99.96                
+
+HS35                  ojAlgo-D-exp          Time stable           0.007792ms            0.11111111111111334   
+HS51                  ojAlgo-D-exp          Time stable           0.008583ms            4.13106175527E-17     
+HS268                 ojAlgo-D-exp          Time stable           0.020375ms            1.09894E-23           
+HS76                  ojAlgo-S-exp          Time stable           0.009791ms            -4.681818181818182    
+GENHS28               ojAlgo-D-exp          Time stable           0.019583ms            0.9271736939195341    
+HS118                 HS21                  ojAlgo-S-stbl         ojAlgo-S-stbl         Time stable           Time stable           0.094167ms            0.008583ms            664.82045             -99.96                
+
+HS52                  ojAlgo-S-exp          Time stable           0.008125ms            5.326647576871785     
+DUALC5                ojAlgo-S-stbl         Time stable           0.029875ms            427.23232677638896    
+DUALC5                ojAlgo-S-exp          Time stable           0.045542ms            427.23232677639356    
+HS268                 ojAlgo-S-exp          Time stable           0.0205ms              1.09894E-23           
+DUALC2                ojAlgo-S-stbl         Time stable           0.036666ms            3551.307692670844     
+HS35MOD               ojAlgo-S-stbl         Time stable           0.008458ms            0.25                  
+HS35                  ojAlgo-S-exp          Time stable           0.008292ms            0.11111111111111334   
+DUALC2                ojAlgo-D-exp          Time stable           0.058917ms            3551.307702980929     
+HS51                  ojAlgo-S-exp          Time stable           0.00925ms             4.13106175527E-17     
+S268                  ojAlgo-D-stbl         Time stable           0.019583ms            1.09894E-23           
+HS35MOD               ojAlgo-D-stbl         Time stable           0.007833ms            0.25                  
+HS21                  ojAlgo-D-exp          Time stable           0.00725ms             -99.96                
+GENHS28               ojAlgo-S-stbl         Time stable           0.0205ms              0.9271736939195341    
+QPTEST                ojAlgo-S-exp          Time stable           0.009125ms            4.371875              
+HS268                 ojAlgo-D-stbl         Time stable           0.020208ms            1.09894E-23           
+HS53                  ojAlgo-D-stbl         Time stable           0.0185ms              4.093023247315109     
+DUALC1                GENHS28               ojAlgo-D-exp          ojAlgo-S-exp          Time stable           Time stable           0.073834ms            0.021458ms            6155.250829462892     0.9271736939195341    
+
+GENHS28               ojAlgo-D-stbl         Time stable           0.021292ms            0.9271736939195341    
+HS52                  ojAlgo-D-stbl         Time stable           0.007875ms            5.326647576871785     
+HS53                  ojAlgo-S-exp          Time stable           0.02225ms             4.093023255813952     
+DUALC8                ojAlgo-S-stbl         Time stable           0.043083ms            18309.358832740163    
+HS76                  ojAlgo-D-stbl         Time stable           0.008208ms            -4.681818181818182    
+DUALC1                ojAlgo-D-stbl         Time stable           0.040458ms            6155.250829462685     
+TAME                  DUALC8                ojAlgo-D-exp          ojAlgo-D-stbl         Time stable           Time stable           0.009416ms            0.037625ms            0.0                   18309.35883273631     
+
+DUALC1                ojAlgo-S-stbl         Time stable           0.051333ms            6155.2508294631       
+HS35MOD               ojAlgo-D-exp          Time stable           0.008041ms            0.25                  
+DUALC8                ojAlgo-S-exp          Time stable           0.093875ms            18309.358833353068    
+
+Final Results
+=====================================================================
+CVXQP1_M              ojAlgo-D-exp          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-S-exp          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-S-stbl         FAILED                TIMEOUT               
+CVXQP1_S              ojAlgo-D-exp          OPTIMAL               2.548334ms            
+CVXQP1_S              ojAlgo-D-stbl         OPTIMAL               133.425375ms          
+CVXQP1_S              ojAlgo-S-exp          OPTIMAL               7.604875ms            
+CVXQP1_S              ojAlgo-S-stbl         OPTIMAL               120.80375ms           
+CVXQP2_M              ojAlgo-D-exp          FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-S-exp          FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-S-stbl         FAILED                TIMEOUT               
+CVXQP2_S              ojAlgo-D-exp          FAILED                TIMEOUT               
+CVXQP2_S              ojAlgo-D-stbl         OPTIMAL               232.659791ms          
+CVXQP2_S              ojAlgo-S-exp          OPTIMAL               14.701792ms           
+CVXQP2_S              ojAlgo-S-stbl         OPTIMAL               60.2945ms             
+CVXQP3_M              ojAlgo-D-exp          OPTIMAL               570.366667ms          
+CVXQP3_M              ojAlgo-D-stbl         FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-S-exp          OPTIMAL               965.527375ms          
+CVXQP3_M              ojAlgo-S-stbl         FAILED                TIMEOUT               
+CVXQP3_S              ojAlgo-D-exp          OPTIMAL               4.35975ms             
+CVXQP3_S              ojAlgo-D-stbl         OPTIMAL               84.258458ms           
+CVXQP3_S              ojAlgo-S-exp          OPTIMAL               6.291708ms            
+CVXQP3_S              ojAlgo-S-stbl         OPTIMAL               576.614959ms          
+DUAL1                 ojAlgo-D-exp          OPTIMAL               4.11175ms             
+DUAL1                 ojAlgo-D-stbl         OPTIMAL               5.226375ms            
+DUAL1                 ojAlgo-S-exp          OPTIMAL               6.979417ms            
+DUAL1                 ojAlgo-S-stbl         OPTIMAL               6.283417ms            
+DUAL2                 ojAlgo-D-exp          OPTIMAL               7.720083ms            
+DUAL2                 ojAlgo-D-stbl         OPTIMAL               6.628459ms            
+DUAL2                 ojAlgo-S-exp          OPTIMAL               10.166375ms           
+DUAL2                 ojAlgo-S-stbl         OPTIMAL               7.603667ms            
+DUAL3                 ojAlgo-D-exp          OPTIMAL               14.708167ms           
+DUAL3                 ojAlgo-D-stbl         OPTIMAL               6.964583ms            
+DUAL3                 ojAlgo-S-exp          OPTIMAL               16.387959ms           
+DUAL3                 ojAlgo-S-stbl         OPTIMAL               10.589959ms           
+DUAL4                 ojAlgo-D-exp          OPTIMAL               5.845292ms            
+DUAL4                 ojAlgo-D-stbl         OPTIMAL               2.881083ms            
+DUAL4                 ojAlgo-S-exp          OPTIMAL               10.695084ms           
+DUAL4                 ojAlgo-S-stbl         OPTIMAL               2.7345ms              
+DUALC1                ojAlgo-D-exp          OPTIMAL               0.073834ms            
+DUALC1                ojAlgo-D-stbl         OPTIMAL               0.040458ms            
+DUALC1                ojAlgo-S-exp          OPTIMAL               0.088917ms            
+DUALC1                ojAlgo-S-stbl         OPTIMAL               0.051333ms            
+DUALC2                ojAlgo-D-exp          OPTIMAL               0.058917ms            
+DUALC2                ojAlgo-D-stbl         OPTIMAL               0.0485ms              
+DUALC2                ojAlgo-S-exp          OPTIMAL               0.119792ms            
+DUALC2                ojAlgo-S-stbl         OPTIMAL               0.036666ms            
+DUALC5                ojAlgo-D-exp          OPTIMAL               0.039959ms            
+DUALC5                ojAlgo-D-stbl         OPTIMAL               0.027375ms            
+DUALC5                ojAlgo-S-exp          OPTIMAL               0.045542ms            
+DUALC5                ojAlgo-S-stbl         OPTIMAL               0.029875ms            
+DUALC8                ojAlgo-D-exp          OPTIMAL               0.6245ms              
+DUALC8                ojAlgo-D-stbl         OPTIMAL               0.037625ms            
+DUALC8                ojAlgo-S-exp          OPTIMAL               0.093875ms            
+DUALC8                ojAlgo-S-stbl         OPTIMAL               0.043083ms            
+GENHS28               ojAlgo-D-exp          OPTIMAL               0.019583ms            
+GENHS28               ojAlgo-D-stbl         OPTIMAL               0.021292ms            
+GENHS28               ojAlgo-S-exp          OPTIMAL               0.021458ms            
+GENHS28               ojAlgo-S-stbl         OPTIMAL               0.0205ms              
+HS118                 ojAlgo-D-exp          OPTIMAL               0.092917ms            
+HS118                 ojAlgo-D-stbl         OPTIMAL               0.601292ms            
+HS118                 ojAlgo-S-exp          OPTIMAL               0.27575ms             
+HS118                 ojAlgo-S-stbl         OPTIMAL               0.094167ms            
+HS21                  ojAlgo-D-exp          OPTIMAL               0.00725ms             
+HS21                  ojAlgo-D-stbl         OPTIMAL               0.007125ms            
+HS21                  ojAlgo-S-exp          OPTIMAL               0.008666ms            
+HS21                  ojAlgo-S-stbl         OPTIMAL               0.008583ms            
+HS268                 ojAlgo-D-exp          OPTIMAL               0.020375ms            
+HS268                 ojAlgo-D-stbl         OPTIMAL               0.020208ms            
+HS268                 ojAlgo-S-exp          OPTIMAL               0.0205ms              
+HS268                 ojAlgo-S-stbl         OPTIMAL               0.020958ms            
+HS35                  ojAlgo-D-exp          OPTIMAL               0.007792ms            
+HS35                  ojAlgo-D-stbl         OPTIMAL               0.007208ms            
+HS35                  ojAlgo-S-exp          OPTIMAL               0.008292ms            
+HS35                  ojAlgo-S-stbl         OPTIMAL               0.008417ms            
+HS35MOD               ojAlgo-D-exp          OPTIMAL               0.008041ms            
+HS35MOD               ojAlgo-D-stbl         OPTIMAL               0.007833ms            
+HS35MOD               ojAlgo-S-exp          OPTIMAL               0.008667ms            
+HS35MOD               ojAlgo-S-stbl         OPTIMAL               0.008458ms            
+HS51                  ojAlgo-D-exp          OPTIMAL               0.008583ms            
+HS51                  ojAlgo-D-stbl         OPTIMAL               0.008834ms            
+HS51                  ojAlgo-S-exp          OPTIMAL               0.00925ms             
+HS51                  ojAlgo-S-stbl         OPTIMAL               0.008791ms            
+HS52                  ojAlgo-D-exp          OPTIMAL               0.008084ms            
+HS52                  ojAlgo-D-stbl         OPTIMAL               0.007875ms            
+HS52                  ojAlgo-S-exp          OPTIMAL               0.008125ms            
+HS52                  ojAlgo-S-stbl         OPTIMAL               0.008ms               
+HS53                  ojAlgo-D-exp          OPTIMAL               0.02ms                
+HS53                  ojAlgo-D-stbl         OPTIMAL               0.0185ms              
+HS53                  ojAlgo-S-exp          OPTIMAL               0.02225ms             
+HS53                  ojAlgo-S-stbl         OPTIMAL               0.018875ms            
+HS76                  ojAlgo-D-exp          OPTIMAL               0.008292ms            
+HS76                  ojAlgo-D-stbl         OPTIMAL               0.008208ms            
+HS76                  ojAlgo-S-exp          OPTIMAL               0.009791ms            
+HS76                  ojAlgo-S-stbl         OPTIMAL               0.009833ms            
+MOSARQP2              ojAlgo-D-exp          OPTIMAL               81941.533959ms        
+MOSARQP2              ojAlgo-D-stbl         OPTIMAL               5093.121666ms         
+MOSARQP2              ojAlgo-S-exp          OPTIMAL               163447.455291ms       
+MOSARQP2              ojAlgo-S-stbl         OPTIMAL               155467.087833ms       
+QPCBLEND              ojAlgo-D-exp          OPTIMAL               7.08575ms             
+QPCBLEND              ojAlgo-D-stbl         OPTIMAL               25.250833ms           
+QPCBLEND              ojAlgo-S-exp          OPTIMAL               11.379083ms           
+QPCBLEND              ojAlgo-S-stbl         OPTIMAL               48.199584ms           
+QPCBOEI1              ojAlgo-D-exp          FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-D-stbl         FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-S-exp          OPTIMAL               24538.712458ms        
+QPCBOEI1              ojAlgo-S-stbl         FAILED                WRONG                 
+QPCBOEI2              ojAlgo-D-exp          FAILED                TIMEOUT               
+QPCBOEI2              ojAlgo-D-stbl         FAILED                TIMEOUT               
+QPCBOEI2              ojAlgo-S-exp          OPTIMAL               528.168958ms          
+QPCBOEI2              ojAlgo-S-stbl         OPTIMAL               841.540208ms          
+QPCSTAIR              ojAlgo-D-exp          FAILED                TIMEOUT               
+QPCSTAIR              ojAlgo-D-stbl         FAILED                TIMEOUT               
+QPCSTAIR              ojAlgo-S-exp          OPTIMAL               4183.056958ms         
+QPCSTAIR              ojAlgo-S-stbl         OPTIMAL               3863.115708ms         
+QPTEST                ojAlgo-D-exp          OPTIMAL               0.008334ms            
+QPTEST                ojAlgo-D-stbl         OPTIMAL               0.007959ms            
+QPTEST                ojAlgo-S-exp          OPTIMAL               0.009125ms            
+QPTEST                ojAlgo-S-stbl         OPTIMAL               0.008583ms            
+S268                  ojAlgo-D-exp          OPTIMAL               0.724583ms            
+S268                  ojAlgo-D-stbl         OPTIMAL               0.019583ms            
+S268                  ojAlgo-S-exp          OPTIMAL               0.021625ms            
+S268                  ojAlgo-S-stbl         OPTIMAL               0.020916ms            
+TAME                  ojAlgo-D-exp          OPTIMAL               0.009416ms            
+TAME                  ojAlgo-D-stbl         OPTIMAL               0.005833ms            
+TAME                  ojAlgo-S-exp          OPTIMAL               0.009083ms            
+TAME                  ojAlgo-S-stbl         OPTIMAL               0.007542ms            
+VALUES                ojAlgo-D-exp          OPTIMAL               1020.625292ms         
+VALUES                ojAlgo-D-stbl         OPTIMAL               396.265584ms          
+VALUES                ojAlgo-S-exp          OPTIMAL               965.899958ms          
+VALUES                ojAlgo-S-stbl         OPTIMAL               438.226083ms          

@@ -1,0 +1,572 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+
+Environment: 8GB/10threads aarch64 [32GB/10threads, 2MB/10threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 252 model/solver pairs remaining 2025-11-22T08:28:55.419847Z
+-----------------------------------------------------------------------------
+QPCBOEI1              ojAlgo-CG-id          INVALID               UNSTABLE              
+QPCBOEI1              ojAlgo-QMR-ssorp      WRONG                 1.1522165871707538E7  != 11503914           
+QPCBOEI1              ojAlgo-QMR-id         WRONG                 5.5038916688378856E7  != 11503914           
+QPCBOEI1              ojAlgo-CG-jacobi      WRONG                 4.595992516348865E7   != 11503914           
+QPCBOEI2              ojAlgo-MINRES-id      WRONG                 8190606.746981773     != 8171962.3          
+QPCBOEI1              ojAlgo-MINRES-jacobi  WRONG                 1.3240541692582821E7  != 11503914           
+QPCBOEI1              ojAlgo-MINRES-ssorp   WRONG                 1.1523208582452556E7  != 11503914           
+
+Iteration 2 with 245 model/solver pairs remaining 2025-11-22T08:36:03.861143Z
+-----------------------------------------------------------------------------
+QPCBOEI1              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+
+Iteration 3 with 244 model/solver pairs remaining 2025-11-22T08:41:30.145192Z
+-----------------------------------------------------------------------------
+VALUES                ojAlgo-QMR-id         Time stable           765.148084ms          -1.3966211447135424   
+CVXQP1_S              ojAlgo-QMR-ssorp      Time stable           27.617958ms           11590.71811942676     
+HS118                 ojAlgo-QMR-id         Time stable           0.84125ms             664.82045             
+VALUES                ojAlgo-CG-id          Time stable           546.028791ms          -1.3966211447135424   
+HS118                 ojAlgo-QMR-ssorp      Time stable           0.554375ms            664.82045             
+HS118                 ojAlgo-MINRES-jacobi  Time stable           0.556917ms            664.82045             
+DUAL2                 ojAlgo-MINRES-ssorp   Time stable           6.673375ms            0.03373367612271781   
+VALUES                ojAlgo-CG-ssorp       Time stable           758.637875ms          -1.3966211447135424   
+VALUES                ojAlgo-MINRES-ssorp   Time stable           609.364208ms          -1.3966211447135424   
+CVXQP1_S              ojAlgo-MINRES-jacobi  Time stable           4.530834ms            11590.71811942676     
+QPCBLEND              ojAlgo-QMR-jacobi     Time stable           13.948208ms           -0.007842543074214593 
+DUAL2                 ojAlgo-CG-ssorp       Time stable           6.514583ms            0.03373367612271781   
+VALUES                ojAlgo-MINRES-jacobi  Time stable           608.74675ms           -1.3966211447135424   
+QPCSTAIR              ojAlgo-CG-ssorp       Time stable           2711.95375ms          6204387.476082278     
+DUAL3                 ojAlgo-MINRES-id      Time stable           12.997792ms           0.13575583686848558   
+DUAL4                 ojAlgo-CG-ssorp       Time stable           6.955667ms            0.7460908418021085    
+QPCBOEI2              ojAlgo-QMR-jacobi     Time stable           2477.277417ms         8171962.244136844     
+DUAL4                 ojAlgo-QMR-jacobi     Time stable           5.263875ms            0.7460908418021085    
+DUAL2                 ojAlgo-CG-id          Time stable           5.787625ms            0.03373367612271781   
+QPCBOEI2              ojAlgo-MINRES-ssorp   Time stable           379.275208ms          8174110.457240709     
+CVXQP3_S              ojAlgo-QMR-jacobi     Time stable           11.576792ms           11943.432202309961    
+DUAL1                 ojAlgo-MINRES-id      Time stable           5.768417ms            0.03501296573347697   
+QPCBOEI2              ojAlgo-MINRES-jacobi  Time stable           403.374666ms          8175597.10563211      
+DUAL3                 ojAlgo-CG-id          Time stable           11.948333ms           0.13575583686848558   
+QPCBLEND              ojAlgo-MINRES-id      Time stable           10.142125ms           -0.007842543074190106 
+DUAL4                 ojAlgo-CG-id          Time stable           4.563416ms            0.7460908418021085    
+QPCBLEND              ojAlgo-MINRES-jacobi  Time stable           12.285ms              -0.007842543074190106 
+QPCBOEI1              ojAlgo-MINRES-id      Time stable           3192.236584ms         1.1503914009768134E7  
+
+Iteration 4 with 216 model/solver pairs remaining 2025-11-22T08:47:13.785491Z
+-----------------------------------------------------------------------------
+QPCSTAIR              ojAlgo-MINRES-id      Time stable           4978.278708ms         6204387.476082324     
+HS118                 ojAlgo-CG-id          Time stable           0.400333ms            664.8204500000002     
+CVXQP1_S              ojAlgo-CG-id          Time stable           3.170166ms            11590.71811942676     
+DUALC2                ojAlgo-CG-id          Time stable           0.173375ms            3551.3085767889324    
+DUALC2                ojAlgo-MINRES-id      Time stable           0.156875ms            3551.308746653177     
+CVXQP2_S              ojAlgo-QMR-ssorp      Time stable           110.9785ms            8120.940477250715     
+DUALC1                ojAlgo-CG-id          Time stable           0.115334ms            6155.250829462685     
+QPCSTAIR              ojAlgo-QMR-ssorp      Time stable           9552.402959ms         6204387.476082278     
+QPCSTAIR              ojAlgo-QMR-jacobi     Time stable           922.18825ms           6204387.476140807     
+CVXQP3_S              ojAlgo-CG-jacobi      Time stable           4.107958ms            11943.432202309961    
+QPCBOEI1              ojAlgo-CG-ssorp       Time stable           11980.295584ms        1.1503914009767337E7  
+DUAL4                 ojAlgo-MINRES-ssorp   Time stable           5.014125ms            0.7460908418021085    
+HS118                 ojAlgo-CG-jacobi      Time stable           0.1855ms              664.82045             
+DUAL1                 ojAlgo-CG-ssorp       Time stable           5.363834ms            0.03501296573347697   
+CVXQP2_S              ojAlgo-CG-jacobi      Time stable           10.772959ms           8120.940477250715     
+CVXQP2_S              ojAlgo-MINRES-jacobi  Time stable           8.770875ms            8120.940477250715     
+DUAL4                 ojAlgo-CG-jacobi      Time stable           4.794166ms            0.7460908418021085    
+DUAL4                 ojAlgo-MINRES-jacobi  Time stable           4.742417ms            0.7460908418021085    
+DUAL2                 ojAlgo-MINRES-id      Time stable           5.917ms               0.03373367612271781   
+CVXQP2_S              ojAlgo-MINRES-ssorp   Time stable           12.147292ms           8120.940477250715     
+
+Iteration 5 with 196 model/solver pairs remaining 2025-11-22T08:51:27.524378Z
+-----------------------------------------------------------------------------
+CVXQP3_S              ojAlgo-CG-id          Time stable           3.916583ms            11943.432202309961    
+HS118                 ojAlgo-QMR-jacobi     Time stable           0.789875ms            664.82045             
+S268                  ojAlgo-CG-jacobi      Time stable           0.055375ms            1.09894E-23           
+DUAL4                 ojAlgo-QMR-id         Time stable           5.904166ms            0.7460908418021085    
+HS118                 ojAlgo-CG-ssorp       Time stable           0.118375ms            664.82045             
+VALUES                ojAlgo-MINRES-id      Time stable           531.44475ms           -1.3966211447135424   
+VALUES                ojAlgo-CG-jacobi      Time stable           535.9315ms            -1.3966211447135424   
+DUAL2                 ojAlgo-CG-jacobi      Time stable           6.070542ms            0.03373367612271781   
+QPCBLEND              ojAlgo-CG-jacobi      Time stable           5.295292ms            -0.007842543074214593 
+DUAL3                 ojAlgo-MINRES-ssorp   Time stable           18.0415ms             0.13575583686848558   
+CVXQP1_S              ojAlgo-MINRES-id      Time stable           3.020916ms            11590.71811942676     
+QPCBLEND              ojAlgo-CG-ssorp       Time stable           7.127833ms            -0.007842543074190106 
+QPCBOEI2              ojAlgo-CG-ssorp       Time stable           511.918583ms          8171962.244136844     
+CVXQP3_S              ojAlgo-QMR-ssorp      Time stable           6.81ms                11943.432202309961    
+DUALC1                ojAlgo-QMR-jacobi     Time stable           0.115292ms            6155.250829462685     
+CVXQP3_S              ojAlgo-MINRES-id      Time stable           3.80375ms             11943.432202309961    
+DUAL1                 ojAlgo-MINRES-ssorp   Time stable           5.740875ms            0.03501296573347697   
+
+Iteration 6 with 179 model/solver pairs remaining 2025-11-22T08:56:08.045015Z
+-----------------------------------------------------------------------------
+DUALC1                ojAlgo-MINRES-ssorp   Time stable           0.218791ms            6155.250829471505     
+DUAL1                 ojAlgo-QMR-id         Time stable           5.241542ms            0.03501296573347697   
+DUAL3                 ojAlgo-QMR-ssorp      Time stable           13.815875ms           0.13575583686848558   
+DUALC5                ojAlgo-CG-ssorp       Time stable           0.068667ms            427.23232677639356    
+QPCBLEND              ojAlgo-QMR-ssorp      Time stable           13.924958ms           -0.007842543074190106 
+CVXQP3_S              ojAlgo-QMR-id         Time stable           8.514417ms            11943.432202309961    
+QPCBOEI2              ojAlgo-CG-jacobi      Time stable           402.036083ms          8171962.244136844     
+DUAL3                 ojAlgo-CG-jacobi      Time stable           11.114459ms           0.13575583686848558   
+DUAL3                 ojAlgo-CG-ssorp       Time stable           12.598583ms           0.13575583686848558   
+QPCSTAIR              ojAlgo-MINRES-jacobi  Time stable           3647.0435ms           6204387.476082304     
+QPCSTAIR              ojAlgo-CG-id          Time stable           7295.971292ms         6204387.476082357     
+QPCBOEI2              ojAlgo-QMR-id         Time stable           8449.128125ms         8171962.244136844     
+QPCSTAIR              ojAlgo-QMR-id         FAILED                TIMEOUT               
+
+Iteration 7 with 166 model/solver pairs remaining 2025-11-22T09:01:45.374465Z
+-----------------------------------------------------------------------------
+TAME                  ojAlgo-CG-id          Time stable           0.043791ms            0.0                   
+DUALC2                ojAlgo-QMR-jacobi     Time stable           0.145916ms            3551.3091141803097    
+CVXQP1_S              ojAlgo-MINRES-ssorp   Time stable           5.605042ms            11590.71811942676     
+CVXQP1_S              ojAlgo-CG-jacobi      Time stable           4.449375ms            11590.71811942676     
+DUAL3                 ojAlgo-QMR-jacobi     Time stable           12.356875ms           0.13575583686848558   
+DUALC2                ojAlgo-MINRES-ssorp   Time stable           0.101583ms            3551.3087736385955    
+QPCSTAIR              ojAlgo-MINRES-ssorp   Time stable           2585.025166ms         6204387.476082279     
+
+Iteration 8 with 159 model/solver pairs remaining 2025-11-22T09:03:03.449584Z
+-----------------------------------------------------------------------------
+CVXQP2_S              ojAlgo-CG-id          Time stable           10.186209ms           8120.940477250715     
+DUALC2                ojAlgo-CG-ssorp       Time stable           0.1145ms              3551.309361268401     
+VALUES                ojAlgo-QMR-ssorp      Time stable           551.164208ms          -1.3966211447135424   
+DUALC2                ojAlgo-CG-jacobi      Time stable           0.107958ms            3551.308844798728     
+VALUES                ojAlgo-QMR-jacobi     Time stable           546.946125ms          -1.3966211447135424   
+CVXQP2_S              ojAlgo-QMR-id         Time stable           47.836584ms           8120.940477250715     
+DUAL3                 ojAlgo-MINRES-jacobi  Time stable           12.832958ms           0.13575583686848558   
+DUALC2                ojAlgo-QMR-ssorp      Time stable           0.126958ms            3551.309160643287     
+CVXQP1_S              ojAlgo-CG-ssorp       Time stable           4.548875ms            11590.71811942676     
+CVXQP3_S              ojAlgo-MINRES-jacobi  Time stable           3.181833ms            11943.432202309961    
+HS118                 ojAlgo-MINRES-id      Time stable           0.24025ms             664.82045             
+
+Iteration 9 with 148 model/solver pairs remaining 2025-11-22T09:03:22.614314Z
+-----------------------------------------------------------------------------
+DUAL2                 ojAlgo-QMR-ssorp      Time stable           5.306334ms            0.03373367612271781   
+CVXQP3_S              ojAlgo-MINRES-ssorp   Time stable           3.403875ms            11943.432202309961    
+CVXQP2_S              ojAlgo-CG-ssorp       Time stable           14.625959ms           8120.940477250715     
+DUALC1                ojAlgo-QMR-ssorp      Time stable           0.141958ms            6155.250829471822     
+DUALC2                ojAlgo-QMR-id         Time stable           0.128208ms            3551.3091214548895    
+DUAL4                 ojAlgo-QMR-ssorp      Time stable           6.368416ms            0.7460908418021085    
+DUAL1                 ojAlgo-CG-id          Time stable           5.297458ms            0.03501296573347697   
+DUAL2                 ojAlgo-QMR-jacobi     Time stable           6.105958ms            0.03373367612271781   
+QPCBOEI2              ojAlgo-QMR-ssorp      Time stable           1411.845959ms         8171962.244136844     
+QPCSTAIR              ojAlgo-CG-jacobi      Time stable           3023.031167ms         6204387.476082287     
+
+Iteration 10 with 138 model/solver pairs remaining 2025-11-22T09:03:35.401337Z
+-----------------------------------------------------------------------------
+CVXQP3_S              ojAlgo-CG-ssorp       Time stable           3.20425ms             11943.432202309961    
+DUAL1                 ojAlgo-QMR-jacobi     Time stable           5.354667ms            0.03501296573347697   
+DUAL1                 ojAlgo-QMR-ssorp      Time stable           4.70875ms             0.03501296573347697   
+DUAL1                 ojAlgo-CG-jacobi      Time stable           5.129167ms            0.03501296573347697   
+QPCBOEI2              ojAlgo-CG-id          Time stable           424.926ms             8171962.244136844     
+DUAL4                 ojAlgo-MINRES-id      Time stable           4.265333ms            0.7460908418021085    
+
+Iteration 11 with 132 model/solver pairs remaining 2025-11-22T09:03:42.090271Z
+-----------------------------------------------------------------------------
+QPCBLEND              ojAlgo-MINRES-ssorp   Time stable           6.523125ms            -0.007842543074190106 
+QPCBLEND              ojAlgo-QMR-id         Time stable           8.016208ms            -0.007842543074190106 
+CVXQP2_S              ojAlgo-MINRES-id      Time stable           5.387084ms            8120.940477250715     
+
+Iteration 12 with 129 model/solver pairs remaining 2025-11-22T09:03:46.553544Z
+-----------------------------------------------------------------------------
+DUAL3                 ojAlgo-QMR-id         Time stable           11.640333ms           0.13575583686848558   
+CVXQP1_S              ojAlgo-QMR-id         Time stable           14.242833ms           11590.71811942676     
+QPCBLEND              ojAlgo-CG-id          Time stable           2.948208ms            -0.007842543074190106 
+
+Iteration 13 with 126 model/solver pairs remaining 2025-11-22T09:03:52.542433Z
+-----------------------------------------------------------------------------
+DUAL2                 ojAlgo-MINRES-jacobi  Time stable           5.357083ms            0.03373367612271781   
+CVXQP2_S              ojAlgo-QMR-jacobi     Time stable           111.634084ms          8120.940477250715     
+
+Iteration 14 with 124 model/solver pairs remaining 2025-11-22T09:03:57.943107Z
+-----------------------------------------------------------------------------
+CVXQP1_S              ojAlgo-QMR-jacobi     Time stable           32.334625ms           11590.71811942676     
+
+Iteration 15 with 123 model/solver pairs remaining 2025-11-22T09:03:59.913271Z
+-----------------------------------------------------------------------------
+DUAL1                 ojAlgo-MINRES-jacobi  Time stable           4.79525ms             0.03501296573347697   
+
+Iteration 16 with 122 model/solver pairs remaining 2025-11-22T09:04:00.621988Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 122 model/solver pairs remaining 2025-11-22T09:04:01.175712Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 122 model/solver pairs remaining 2025-11-22T09:04:01.893711Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 122 model/solver pairs remaining 2025-11-22T09:04:02.607905Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 122 model/solver pairs remaining 2025-11-22T09:04:03.321097Z
+-----------------------------------------------------------------------------
+HS21                  ojAlgo-QMR-jacobi     Time stable           0.007375ms            -99.96                
+GENHS28               ojAlgo-MINRES-ssorp   Time stable           0.01925ms             0.9271736939195341    
+HS52                  ojAlgo-CG-jacobi      Time stable           0.007333ms            5.326647576871785     
+HS35MOD               ojAlgo-CG-ssorp       Time stable           0.008125ms            0.25                  
+HS76                  ojAlgo-CG-jacobi      Time stable           0.009ms               -4.681818181818177    
+DUALC5                ojAlgo-CG-jacobi      Time stable           0.046042ms            427.23232677639356    
+S268                  ojAlgo-MINRES-id      Time stable           0.020791ms            1.09894E-23           
+HS21                  ojAlgo-QMR-ssorp      Time stable           0.007ms               -99.96                
+HS21                  ojAlgo-QMR-id         Time stable           0.007541ms            -99.96                
+HS53                  ojAlgo-CG-jacobi      Time stable           0.017542ms            4.093023255813952     
+HS51                  ojAlgo-MINRES-ssorp   Time stable           0.010083ms            4.13106175527E-17     
+DUALC1                ojAlgo-CG-ssorp       Time stable           0.089958ms            6155.250829467569     
+HS35                  ojAlgo-QMR-jacobi     Time stable           0.009125ms            0.11111111111111334   
+DUALC5                ojAlgo-MINRES-jacobi  Time stable           0.045292ms            427.23232677638896    
+S268                  ojAlgo-QMR-id         Time stable           0.020792ms            1.09894E-23           
+QPTEST                ojAlgo-QMR-jacobi     Time stable           0.008667ms            4.371875              
+S268                  ojAlgo-QMR-ssorp      Time stable           0.020625ms            1.09894E-23           
+HS21                  ojAlgo-MINRES-id      Time stable           0.006917ms            -99.96                
+DUALC1                ojAlgo-MINRES-jacobi  Time stable           0.095042ms            6155.250829462685     
+TAME                  ojAlgo-CG-ssorp       Time stable           0.007792ms            0.0                   
+DUALC5                ojAlgo-MINRES-id      Time stable           0.044042ms            427.23232677638896    
+HS35MOD               ojAlgo-MINRES-jacobi  Time stable           0.008167ms            0.25                  
+HS35                  ojAlgo-CG-id          Time stable           0.007375ms            0.11111111111111334   
+QPTEST                ojAlgo-CG-id          Time stable           0.008375ms            4.371875              
+QPTEST                ojAlgo-MINRES-id      Time stable           0.008125ms            4.371875              
+HS76                  ojAlgo-QMR-ssorp      Time stable           0.011333ms            -4.681818181818177    
+DUALC2                ojAlgo-MINRES-jacobi  Time stable           0.094375ms            3551.309357376159     
+TAME                  ojAlgo-MINRES-ssorp   Time stable           0.007875ms            0.0                   
+HS35                  ojAlgo-MINRES-id      Time stable           0.007125ms            0.11111111111111334   
+HS53                  ojAlgo-MINRES-ssorp   Time stable           0.018875ms            4.093023255813952     
+HS268                 ojAlgo-QMR-jacobi     Time stable           0.019083ms            1.09894E-23           
+HS35MOD               ojAlgo-CG-jacobi      Time stable           0.008416ms            0.25                  
+HS76                  ojAlgo-QMR-id         Time stable           0.009042ms            -4.681818181818182    
+HS52                  ojAlgo-QMR-id         Time stable           0.00825ms             5.326647576871785     
+HS52                  ojAlgo-CG-ssorp       Time stable           0.007208ms            5.326647576871785     
+HS52                  ojAlgo-QMR-ssorp      Time stable           0.007083ms            5.326647576871785     
+HS76                  ojAlgo-CG-ssorp       Time stable           0.009666ms            -4.681818181818182    
+HS52                  ojAlgo-MINRES-ssorp   Time stable           0.007083ms            5.326647576871785     
+S268                  ojAlgo-MINRES-jacobi  Time stable           0.02ms                1.09894E-23           
+HS53                  ojAlgo-QMR-ssorp      Time stable           0.018625ms            4.093023255813952     
+S268                  ojAlgo-QMR-jacobi     Time stable           0.019917ms            1.09894E-23           
+HS76                  ojAlgo-MINRES-ssorp   Time stable           0.010167ms            -4.681818181818177    
+HS53                  ojAlgo-QMR-id         Time stable           0.017625ms            4.093023255813952     
+DUALC5                ojAlgo-QMR-id         Time stable           0.0475ms              427.23232677639356    
+HS53                  ojAlgo-CG-ssorp       Time stable           0.01975ms             4.093023255813952     
+DUALC5                ojAlgo-QMR-ssorp      Time stable           0.046417ms            427.23232677638896    
+HS268                 ojAlgo-MINRES-id      Time stable           0.01975ms             1.09894E-23           
+GENHS28               ojAlgo-MINRES-id      Time stable           0.01975ms             0.9271736939195341    
+HS35MOD               ojAlgo-CG-id          Time stable           0.007708ms            0.25                  
+S268                  ojAlgo-CG-id          Time stable           0.020125ms            1.09894E-23           
+GENHS28               ojAlgo-MINRES-jacobi  Time stable           0.020541ms            0.9271736939195341    
+HS51                  ojAlgo-QMR-id         Time stable           0.007708ms            4.13106175527E-17     
+HS51                  ojAlgo-CG-ssorp       Time stable           0.007792ms            4.13106175527E-17     
+DUALC1                HS51                  ojAlgo-CG-jacobi      ojAlgo-MINRES-id      Time stable           Time stable           0.009916ms            0.11125ms             4.13106175527E-17     6155.250829462685     
+HS268                 ojAlgo-MINRES-jacobi  Time stable           0.02ms                1.09894E-23           
+
+HS35MOD               ojAlgo-QMR-ssorp      Time stable           0.007875ms            0.25                  
+HS51                  ojAlgo-QMR-ssorp      Time stable           0.007708ms            4.13106175527E-17     
+HS21                  ojAlgo-MINRES-ssorp   Time stable           0.006792ms            -99.96                
+HS35MOD               ojAlgo-QMR-id         Time stable           0.007708ms            0.25                  
+QPTEST                ojAlgo-MINRES-jacobi  Time stable           0.008375ms            4.371875              
+HS35MOD               ojAlgo-QMR-jacobi     Time stable           0.007791ms            0.25                  
+HS35                  ojAlgo-MINRES-jacobi  Time stable           0.007375ms            0.11111111111111334   
+GENHS28               ojAlgo-QMR-jacobi     Time stable           0.019375ms            0.9271736939195341    
+HS21                  ojAlgo-MINRES-jacobi  Time stable           0.00675ms             -99.96                
+DUALC5                ojAlgo-CG-id          Time stable           0.049792ms            427.23232677638896    
+HS21                  ojAlgo-CG-ssorp       Time stable           0.007875ms            -99.96                
+HS35                  ojAlgo-MINRES-ssorp   Time stable           0.0075ms              0.11111111111111334   
+HS51                  ojAlgo-QMR-jacobi     Time stable           0.009833ms            4.13106175527E-17     
+HS53                  ojAlgo-CG-id          Time stable           0.017708ms            4.093023255813952     
+HS35MOD               ojAlgo-MINRES-id      Time stable           0.008541ms            0.25                  
+HS52                  ojAlgo-CG-id          Time stable           0.008959ms            5.326647576871785     
+TAME                  ojAlgo-MINRES-id      Time stable           0.007708ms            0.0                   
+TAME                  ojAlgo-QMR-id         Time stable           0.007292ms            0.0                   
+HS76                  ojAlgo-CG-id          Time stable           0.009125ms            -4.681818181818182    
+TAME                  ojAlgo-CG-jacobi      Time stable           0.007375ms            0.0                   
+DUALC1                ojAlgo-QMR-id         Time stable           0.109292ms            6155.250829462685     
+TAME                  ojAlgo-MINRES-jacobi  Time stable           0.011ms               0.0                   
+DUALC5                ojAlgo-QMR-jacobi     Time stable           0.046583ms            427.23232677638896    
+HS268                 ojAlgo-CG-id          Time stable           0.02025ms             1.09894E-23           
+HS118                 ojAlgo-MINRES-ssorp   Time stable           0.138333ms            664.82045             
+GENHS28               ojAlgo-CG-id          Time stable           0.019791ms            0.9271736939195341    
+QPTEST                ojAlgo-MINRES-ssorp   Time stable           0.010125ms            4.371875              
+TAME                  ojAlgo-QMR-ssorp      Time stable           0.007834ms            0.0                   S268                  ojAlgo-CG-ssorp       Time stable           0.019875ms            1.09894E-23           
+
+HS51                  ojAlgo-CG-id          Time stable           0.008125ms            4.13106175527E-17     
+TAME                  ojAlgo-QMR-jacobi     Time stable           0.007375ms            0.0                   
+HS53                  ojAlgo-QMR-jacobi     Time stable           0.017792ms            4.093023255813952     
+HS268                 ojAlgo-MINRES-ssorp   Time stable           0.019625ms            1.09894E-23           
+HS51                  ojAlgo-MINRES-id      Time stable           0.007959ms            4.13106175527E-17     
+DUALC5                ojAlgo-MINRES-ssorp   Time stable           0.046542ms            427.23232677638896    
+DUALC1                ojAlgo-CG-jacobi      Time stable           0.094834ms            6155.250829462685     
+HS52                  ojAlgo-QMR-jacobi     Time stable           0.007458ms            5.326647576871785     
+HS76                  ojAlgo-QMR-jacobi     Time stable           0.009708ms            -4.681818181818177    
+HS53                  ojAlgo-MINRES-jacobi  Time stable           0.018375ms            4.093023255813952     
+HS21                  ojAlgo-CG-id          Time stable           0.007667ms            -99.96                
+HS21                  ojAlgo-CG-jacobi      Time stable           0.007291ms            -99.96                
+HS52                  ojAlgo-MINRES-jacobi  Time stable           0.007125ms            5.326647576871785     
+GENHS28               ojAlgo-CG-ssorp       Time stable           0.019458ms            0.9271736939195341    
+HS76                  ojAlgo-MINRES-jacobi  Time stable           0.010125ms            -4.681818181818177    
+HS53                  ojAlgo-MINRES-id      Time stable           0.017916ms            4.093023255813952     
+HS35MOD               ojAlgo-MINRES-ssorp   Time stable           0.007583ms            0.25                  
+HS35                  ojAlgo-QMR-id         Time stable           0.007625ms            0.11111111111111334   
+GENHS28               ojAlgo-CG-jacobi      Time stable           0.019ms               0.9271736939195341    
+HS35                  ojAlgo-QMR-ssorp      Time stable           0.008834ms            0.11111111111111334   
+QPTEST                ojAlgo-QMR-id         Time stable           0.009125ms            4.371875              
+QPTEST                ojAlgo-QMR-ssorp      Time stable           0.008208ms            4.371875              
+HS268                 ojAlgo-CG-ssorp       Time stable           0.02ms                1.09894E-23           
+QPTEST                ojAlgo-CG-jacobi      Time stable           0.012167ms            4.371875              
+HS51                  GENHS28               ojAlgo-MINRES-jacobi  ojAlgo-QMR-id         Time stable           Time stable           0.008042ms            0.01975ms             4.13106175527E-17     0.9271736939195341    
+
+HS268                 ojAlgo-CG-jacobi      Time stable           0.019292ms            1.09894E-23           
+HS268                 ojAlgo-QMR-id         Time stable           0.01925ms             1.09894E-23           
+HS268                 ojAlgo-QMR-ssorp      Time stable           0.020083ms            1.09894E-23           
+HS76                  ojAlgo-MINRES-id      Time stable           0.009125ms            -4.681818181818182    
+HS35                  ojAlgo-CG-ssorp       Time stable           0.007958ms            0.11111111111111334   
+HS35                  ojAlgo-CG-jacobi      Time stable           0.007542ms            0.11111111111111334   
+GENHS28               ojAlgo-QMR-ssorp      Time stable           0.019459ms            0.9271736939195341    
+HS52                  ojAlgo-MINRES-id      Time stable           0.00725ms             5.326647576871785     
+QPTEST                ojAlgo-CG-ssorp       Time stable           0.008083ms            4.371875              
+S268                  ojAlgo-MINRES-ssorp   Time stable           0.020375ms            1.09894E-23           
+DUAL2                 ojAlgo-QMR-id         Time stable           4.980917ms            0.03373367612271781   
+
+Final Results
+=====================================================================
+CVXQP1_S              ojAlgo-CG-id          OPTIMAL               3.170166ms            
+CVXQP1_S              ojAlgo-CG-jacobi      OPTIMAL               4.449375ms            
+CVXQP1_S              ojAlgo-CG-ssorp       OPTIMAL               4.548875ms            
+CVXQP1_S              ojAlgo-MINRES-id      OPTIMAL               3.020916ms            
+CVXQP1_S              ojAlgo-MINRES-jacobi  OPTIMAL               4.530834ms            
+CVXQP1_S              ojAlgo-MINRES-ssorp   OPTIMAL               5.605042ms            
+CVXQP1_S              ojAlgo-QMR-id         OPTIMAL               14.242833ms           
+CVXQP1_S              ojAlgo-QMR-jacobi     OPTIMAL               32.334625ms           
+CVXQP1_S              ojAlgo-QMR-ssorp      OPTIMAL               27.617958ms           
+CVXQP2_S              ojAlgo-CG-id          OPTIMAL               10.186209ms           
+CVXQP2_S              ojAlgo-CG-jacobi      OPTIMAL               10.772959ms           
+CVXQP2_S              ojAlgo-CG-ssorp       OPTIMAL               14.625959ms           
+CVXQP2_S              ojAlgo-MINRES-id      OPTIMAL               5.387084ms            
+CVXQP2_S              ojAlgo-MINRES-jacobi  OPTIMAL               8.770875ms            
+CVXQP2_S              ojAlgo-MINRES-ssorp   OPTIMAL               12.147292ms           
+CVXQP2_S              ojAlgo-QMR-id         OPTIMAL               47.836584ms           
+CVXQP2_S              ojAlgo-QMR-jacobi     OPTIMAL               111.634084ms          
+CVXQP2_S              ojAlgo-QMR-ssorp      OPTIMAL               110.9785ms            
+CVXQP3_S              ojAlgo-CG-id          OPTIMAL               3.916583ms            
+CVXQP3_S              ojAlgo-CG-jacobi      OPTIMAL               4.107958ms            
+CVXQP3_S              ojAlgo-CG-ssorp       OPTIMAL               3.20425ms             
+CVXQP3_S              ojAlgo-MINRES-id      OPTIMAL               3.80375ms             
+CVXQP3_S              ojAlgo-MINRES-jacobi  OPTIMAL               3.181833ms            
+CVXQP3_S              ojAlgo-MINRES-ssorp   OPTIMAL               3.403875ms            
+CVXQP3_S              ojAlgo-QMR-id         OPTIMAL               8.514417ms            
+CVXQP3_S              ojAlgo-QMR-jacobi     OPTIMAL               11.576792ms           
+CVXQP3_S              ojAlgo-QMR-ssorp      OPTIMAL               6.81ms                
+DUAL1                 ojAlgo-CG-id          OPTIMAL               5.297458ms            
+DUAL1                 ojAlgo-CG-jacobi      OPTIMAL               5.129167ms            
+DUAL1                 ojAlgo-CG-ssorp       OPTIMAL               5.363834ms            
+DUAL1                 ojAlgo-MINRES-id      OPTIMAL               5.768417ms            
+DUAL1                 ojAlgo-MINRES-jacobi  OPTIMAL               4.79525ms             
+DUAL1                 ojAlgo-MINRES-ssorp   OPTIMAL               5.740875ms            
+DUAL1                 ojAlgo-QMR-id         OPTIMAL               5.241542ms            
+DUAL1                 ojAlgo-QMR-jacobi     OPTIMAL               5.354667ms            
+DUAL1                 ojAlgo-QMR-ssorp      OPTIMAL               4.70875ms             
+DUAL2                 ojAlgo-CG-id          OPTIMAL               5.787625ms            
+DUAL2                 ojAlgo-CG-jacobi      OPTIMAL               6.070542ms            
+DUAL2                 ojAlgo-CG-ssorp       OPTIMAL               6.514583ms            
+DUAL2                 ojAlgo-MINRES-id      OPTIMAL               5.917ms               
+DUAL2                 ojAlgo-MINRES-jacobi  OPTIMAL               5.357083ms            
+DUAL2                 ojAlgo-MINRES-ssorp   OPTIMAL               6.673375ms            
+DUAL2                 ojAlgo-QMR-id         OPTIMAL               4.980917ms            
+DUAL2                 ojAlgo-QMR-jacobi     OPTIMAL               6.105958ms            
+DUAL2                 ojAlgo-QMR-ssorp      OPTIMAL               5.306334ms            
+DUAL3                 ojAlgo-CG-id          OPTIMAL               11.948333ms           
+DUAL3                 ojAlgo-CG-jacobi      OPTIMAL               11.114459ms           
+DUAL3                 ojAlgo-CG-ssorp       OPTIMAL               12.598583ms           
+DUAL3                 ojAlgo-MINRES-id      OPTIMAL               12.997792ms           
+DUAL3                 ojAlgo-MINRES-jacobi  OPTIMAL               12.832958ms           
+DUAL3                 ojAlgo-MINRES-ssorp   OPTIMAL               18.0415ms             
+DUAL3                 ojAlgo-QMR-id         OPTIMAL               11.640333ms           
+DUAL3                 ojAlgo-QMR-jacobi     OPTIMAL               12.356875ms           
+DUAL3                 ojAlgo-QMR-ssorp      OPTIMAL               13.815875ms           
+DUAL4                 ojAlgo-CG-id          OPTIMAL               4.563416ms            
+DUAL4                 ojAlgo-CG-jacobi      OPTIMAL               4.794166ms            
+DUAL4                 ojAlgo-CG-ssorp       OPTIMAL               6.955667ms            
+DUAL4                 ojAlgo-MINRES-id      OPTIMAL               4.265333ms            
+DUAL4                 ojAlgo-MINRES-jacobi  OPTIMAL               4.742417ms            
+DUAL4                 ojAlgo-MINRES-ssorp   OPTIMAL               5.014125ms            
+DUAL4                 ojAlgo-QMR-id         OPTIMAL               5.904166ms            
+DUAL4                 ojAlgo-QMR-jacobi     OPTIMAL               5.263875ms            
+DUAL4                 ojAlgo-QMR-ssorp      OPTIMAL               6.368416ms            
+DUALC1                ojAlgo-CG-id          OPTIMAL               0.115334ms            
+DUALC1                ojAlgo-CG-jacobi      OPTIMAL               0.094834ms            
+DUALC1                ojAlgo-CG-ssorp       OPTIMAL               0.089958ms            
+DUALC1                ojAlgo-MINRES-id      OPTIMAL               0.11125ms             
+DUALC1                ojAlgo-MINRES-jacobi  OPTIMAL               0.095042ms            
+DUALC1                ojAlgo-MINRES-ssorp   OPTIMAL               0.218791ms            
+DUALC1                ojAlgo-QMR-id         OPTIMAL               0.109292ms            
+DUALC1                ojAlgo-QMR-jacobi     OPTIMAL               0.115292ms            
+DUALC1                ojAlgo-QMR-ssorp      OPTIMAL               0.141958ms            
+DUALC2                ojAlgo-CG-id          OPTIMAL               0.173375ms            
+DUALC2                ojAlgo-CG-jacobi      OPTIMAL               0.107958ms            
+DUALC2                ojAlgo-CG-ssorp       OPTIMAL               0.1145ms              
+DUALC2                ojAlgo-MINRES-id      OPTIMAL               0.156875ms            
+DUALC2                ojAlgo-MINRES-jacobi  OPTIMAL               0.094375ms            
+DUALC2                ojAlgo-MINRES-ssorp   OPTIMAL               0.101583ms            
+DUALC2                ojAlgo-QMR-id         OPTIMAL               0.128208ms            
+DUALC2                ojAlgo-QMR-jacobi     OPTIMAL               0.145916ms            
+DUALC2                ojAlgo-QMR-ssorp      OPTIMAL               0.126958ms            
+DUALC5                ojAlgo-CG-id          OPTIMAL               0.049792ms            
+DUALC5                ojAlgo-CG-jacobi      OPTIMAL               0.046042ms            
+DUALC5                ojAlgo-CG-ssorp       OPTIMAL               0.068667ms            
+DUALC5                ojAlgo-MINRES-id      OPTIMAL               0.044042ms            
+DUALC5                ojAlgo-MINRES-jacobi  OPTIMAL               0.045292ms            
+DUALC5                ojAlgo-MINRES-ssorp   OPTIMAL               0.046542ms            
+DUALC5                ojAlgo-QMR-id         OPTIMAL               0.0475ms              
+DUALC5                ojAlgo-QMR-jacobi     OPTIMAL               0.046583ms            
+DUALC5                ojAlgo-QMR-ssorp      OPTIMAL               0.046417ms            
+GENHS28               ojAlgo-CG-id          OPTIMAL               0.019791ms            
+GENHS28               ojAlgo-CG-jacobi      OPTIMAL               0.019ms               
+GENHS28               ojAlgo-CG-ssorp       OPTIMAL               0.019458ms            
+GENHS28               ojAlgo-MINRES-id      OPTIMAL               0.01975ms             
+GENHS28               ojAlgo-MINRES-jacobi  OPTIMAL               0.020541ms            
+GENHS28               ojAlgo-MINRES-ssorp   OPTIMAL               0.01925ms             
+GENHS28               ojAlgo-QMR-id         OPTIMAL               0.01975ms             
+GENHS28               ojAlgo-QMR-jacobi     OPTIMAL               0.019375ms            
+GENHS28               ojAlgo-QMR-ssorp      OPTIMAL               0.019459ms            
+HS118                 ojAlgo-CG-id          OPTIMAL               0.400333ms            
+HS118                 ojAlgo-CG-jacobi      OPTIMAL               0.1855ms              
+HS118                 ojAlgo-CG-ssorp       OPTIMAL               0.118375ms            
+HS118                 ojAlgo-MINRES-id      OPTIMAL               0.24025ms             
+HS118                 ojAlgo-MINRES-jacobi  OPTIMAL               0.556917ms            
+HS118                 ojAlgo-MINRES-ssorp   OPTIMAL               0.138333ms            
+HS118                 ojAlgo-QMR-id         OPTIMAL               0.84125ms             
+HS118                 ojAlgo-QMR-jacobi     OPTIMAL               0.789875ms            
+HS118                 ojAlgo-QMR-ssorp      OPTIMAL               0.554375ms            
+HS21                  ojAlgo-CG-id          OPTIMAL               0.007667ms            
+HS21                  ojAlgo-CG-jacobi      OPTIMAL               0.007291ms            
+HS21                  ojAlgo-CG-ssorp       OPTIMAL               0.007875ms            
+HS21                  ojAlgo-MINRES-id      OPTIMAL               0.006917ms            
+HS21                  ojAlgo-MINRES-jacobi  OPTIMAL               0.00675ms             
+HS21                  ojAlgo-MINRES-ssorp   OPTIMAL               0.006792ms            
+HS21                  ojAlgo-QMR-id         OPTIMAL               0.007541ms            
+HS21                  ojAlgo-QMR-jacobi     OPTIMAL               0.007375ms            
+HS21                  ojAlgo-QMR-ssorp      OPTIMAL               0.007ms               
+HS268                 ojAlgo-CG-id          OPTIMAL               0.02025ms             
+HS268                 ojAlgo-CG-jacobi      OPTIMAL               0.019292ms            
+HS268                 ojAlgo-CG-ssorp       OPTIMAL               0.02ms                
+HS268                 ojAlgo-MINRES-id      OPTIMAL               0.01975ms             
+HS268                 ojAlgo-MINRES-jacobi  OPTIMAL               0.02ms                
+HS268                 ojAlgo-MINRES-ssorp   OPTIMAL               0.019625ms            
+HS268                 ojAlgo-QMR-id         OPTIMAL               0.01925ms             
+HS268                 ojAlgo-QMR-jacobi     OPTIMAL               0.019083ms            
+HS268                 ojAlgo-QMR-ssorp      OPTIMAL               0.020083ms            
+HS35                  ojAlgo-CG-id          OPTIMAL               0.007375ms            
+HS35                  ojAlgo-CG-jacobi      OPTIMAL               0.007542ms            
+HS35                  ojAlgo-CG-ssorp       OPTIMAL               0.007958ms            
+HS35                  ojAlgo-MINRES-id      OPTIMAL               0.007125ms            
+HS35                  ojAlgo-MINRES-jacobi  OPTIMAL               0.007375ms            
+HS35                  ojAlgo-MINRES-ssorp   OPTIMAL               0.0075ms              
+HS35                  ojAlgo-QMR-id         OPTIMAL               0.007625ms            
+HS35                  ojAlgo-QMR-jacobi     OPTIMAL               0.009125ms            
+HS35                  ojAlgo-QMR-ssorp      OPTIMAL               0.008834ms            
+HS35MOD               ojAlgo-CG-id          OPTIMAL               0.007708ms            
+HS35MOD               ojAlgo-CG-jacobi      OPTIMAL               0.008416ms            
+HS35MOD               ojAlgo-CG-ssorp       OPTIMAL               0.008125ms            
+HS35MOD               ojAlgo-MINRES-id      OPTIMAL               0.008541ms            
+HS35MOD               ojAlgo-MINRES-jacobi  OPTIMAL               0.008167ms            
+HS35MOD               ojAlgo-MINRES-ssorp   OPTIMAL               0.007583ms            
+HS35MOD               ojAlgo-QMR-id         OPTIMAL               0.007708ms            
+HS35MOD               ojAlgo-QMR-jacobi     OPTIMAL               0.007791ms            
+HS35MOD               ojAlgo-QMR-ssorp      OPTIMAL               0.007875ms            
+HS51                  ojAlgo-CG-id          OPTIMAL               0.008125ms            
+HS51                  ojAlgo-CG-jacobi      OPTIMAL               0.009916ms            
+HS51                  ojAlgo-CG-ssorp       OPTIMAL               0.007792ms            
+HS51                  ojAlgo-MINRES-id      OPTIMAL               0.007959ms            
+HS51                  ojAlgo-MINRES-jacobi  OPTIMAL               0.008042ms            
+HS51                  ojAlgo-MINRES-ssorp   OPTIMAL               0.010083ms            
+HS51                  ojAlgo-QMR-id         OPTIMAL               0.007708ms            
+HS51                  ojAlgo-QMR-jacobi     OPTIMAL               0.009833ms            
+HS51                  ojAlgo-QMR-ssorp      OPTIMAL               0.007708ms            
+HS52                  ojAlgo-CG-id          OPTIMAL               0.008959ms            
+HS52                  ojAlgo-CG-jacobi      OPTIMAL               0.007333ms            
+HS52                  ojAlgo-CG-ssorp       OPTIMAL               0.007208ms            
+HS52                  ojAlgo-MINRES-id      OPTIMAL               0.00725ms             
+HS52                  ojAlgo-MINRES-jacobi  OPTIMAL               0.007125ms            
+HS52                  ojAlgo-MINRES-ssorp   OPTIMAL               0.007083ms            
+HS52                  ojAlgo-QMR-id         OPTIMAL               0.00825ms             
+HS52                  ojAlgo-QMR-jacobi     OPTIMAL               0.007458ms            
+HS52                  ojAlgo-QMR-ssorp      OPTIMAL               0.007083ms            
+HS53                  ojAlgo-CG-id          OPTIMAL               0.017708ms            
+HS53                  ojAlgo-CG-jacobi      OPTIMAL               0.017542ms            
+HS53                  ojAlgo-CG-ssorp       OPTIMAL               0.01975ms             
+HS53                  ojAlgo-MINRES-id      OPTIMAL               0.017916ms            
+HS53                  ojAlgo-MINRES-jacobi  OPTIMAL               0.018375ms            
+HS53                  ojAlgo-MINRES-ssorp   OPTIMAL               0.018875ms            
+HS53                  ojAlgo-QMR-id         OPTIMAL               0.017625ms            
+HS53                  ojAlgo-QMR-jacobi     OPTIMAL               0.017792ms            
+HS53                  ojAlgo-QMR-ssorp      OPTIMAL               0.018625ms            
+HS76                  ojAlgo-CG-id          OPTIMAL               0.009125ms            
+HS76                  ojAlgo-CG-jacobi      OPTIMAL               0.009ms               
+HS76                  ojAlgo-CG-ssorp       OPTIMAL               0.009666ms            
+HS76                  ojAlgo-MINRES-id      OPTIMAL               0.009125ms            
+HS76                  ojAlgo-MINRES-jacobi  OPTIMAL               0.010125ms            
+HS76                  ojAlgo-MINRES-ssorp   OPTIMAL               0.010167ms            
+HS76                  ojAlgo-QMR-id         OPTIMAL               0.009042ms            
+HS76                  ojAlgo-QMR-jacobi     OPTIMAL               0.009708ms            
+HS76                  ojAlgo-QMR-ssorp      OPTIMAL               0.011333ms            
+QPCBLEND              ojAlgo-CG-id          OPTIMAL               2.948208ms            
+QPCBLEND              ojAlgo-CG-jacobi      OPTIMAL               5.295292ms            
+QPCBLEND              ojAlgo-CG-ssorp       OPTIMAL               7.127833ms            
+QPCBLEND              ojAlgo-MINRES-id      OPTIMAL               10.142125ms           
+QPCBLEND              ojAlgo-MINRES-jacobi  OPTIMAL               12.285ms              
+QPCBLEND              ojAlgo-MINRES-ssorp   OPTIMAL               6.523125ms            
+QPCBLEND              ojAlgo-QMR-id         OPTIMAL               8.016208ms            
+QPCBLEND              ojAlgo-QMR-jacobi     OPTIMAL               13.948208ms           
+QPCBLEND              ojAlgo-QMR-ssorp      OPTIMAL               13.924958ms           
+QPCBOEI1              ojAlgo-CG-id          FAILED                UNSTABLE              
+QPCBOEI1              ojAlgo-CG-jacobi      FAILED                WRONG                 
+QPCBOEI1              ojAlgo-CG-ssorp       OPTIMAL               11980.295584ms        
+QPCBOEI1              ojAlgo-MINRES-id      OPTIMAL               3192.236584ms         
+QPCBOEI1              ojAlgo-MINRES-jacobi  FAILED                WRONG                 
+QPCBOEI1              ojAlgo-MINRES-ssorp   FAILED                WRONG                 
+QPCBOEI1              ojAlgo-QMR-id         FAILED                WRONG                 
+QPCBOEI1              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-QMR-ssorp      FAILED                WRONG                 
+QPCBOEI2              ojAlgo-CG-id          OPTIMAL               424.926ms             
+QPCBOEI2              ojAlgo-CG-jacobi      OPTIMAL               402.036083ms          
+QPCBOEI2              ojAlgo-CG-ssorp       OPTIMAL               511.918583ms          
+QPCBOEI2              ojAlgo-MINRES-id      FAILED                WRONG                 
+QPCBOEI2              ojAlgo-MINRES-jacobi  OPTIMAL               403.374666ms          
+QPCBOEI2              ojAlgo-MINRES-ssorp   OPTIMAL               379.275208ms          
+QPCBOEI2              ojAlgo-QMR-id         OPTIMAL               8449.128125ms         
+QPCBOEI2              ojAlgo-QMR-jacobi     OPTIMAL               2477.277417ms         
+QPCBOEI2              ojAlgo-QMR-ssorp      OPTIMAL               1411.845959ms         
+QPCSTAIR              ojAlgo-CG-id          OPTIMAL               7295.971292ms         
+QPCSTAIR              ojAlgo-CG-jacobi      OPTIMAL               3023.031167ms         
+QPCSTAIR              ojAlgo-CG-ssorp       OPTIMAL               2711.95375ms          
+QPCSTAIR              ojAlgo-MINRES-id      OPTIMAL               4978.278708ms         
+QPCSTAIR              ojAlgo-MINRES-jacobi  OPTIMAL               3647.0435ms           
+QPCSTAIR              ojAlgo-MINRES-ssorp   OPTIMAL               2585.025166ms         
+QPCSTAIR              ojAlgo-QMR-id         FAILED                TIMEOUT               
+QPCSTAIR              ojAlgo-QMR-jacobi     OPTIMAL               922.18825ms           
+QPCSTAIR              ojAlgo-QMR-ssorp      OPTIMAL               9552.402959ms         
+QPTEST                ojAlgo-CG-id          OPTIMAL               0.008375ms            
+QPTEST                ojAlgo-CG-jacobi      OPTIMAL               0.012167ms            
+QPTEST                ojAlgo-CG-ssorp       OPTIMAL               0.008083ms            
+QPTEST                ojAlgo-MINRES-id      OPTIMAL               0.008125ms            
+QPTEST                ojAlgo-MINRES-jacobi  OPTIMAL               0.008375ms            
+QPTEST                ojAlgo-MINRES-ssorp   OPTIMAL               0.010125ms            
+QPTEST                ojAlgo-QMR-id         OPTIMAL               0.009125ms            
+QPTEST                ojAlgo-QMR-jacobi     OPTIMAL               0.008667ms            
+QPTEST                ojAlgo-QMR-ssorp      OPTIMAL               0.008208ms            
+S268                  ojAlgo-CG-id          OPTIMAL               0.020125ms            
+S268                  ojAlgo-CG-jacobi      OPTIMAL               0.055375ms            
+S268                  ojAlgo-CG-ssorp       OPTIMAL               0.019875ms            
+S268                  ojAlgo-MINRES-id      OPTIMAL               0.020791ms            
+S268                  ojAlgo-MINRES-jacobi  OPTIMAL               0.02ms                
+S268                  ojAlgo-MINRES-ssorp   OPTIMAL               0.020375ms            
+S268                  ojAlgo-QMR-id         OPTIMAL               0.020792ms            
+S268                  ojAlgo-QMR-jacobi     OPTIMAL               0.019917ms            
+S268                  ojAlgo-QMR-ssorp      OPTIMAL               0.020625ms            
+TAME                  ojAlgo-CG-id          OPTIMAL               0.043791ms            
+TAME                  ojAlgo-CG-jacobi      OPTIMAL               0.007375ms            
+TAME                  ojAlgo-CG-ssorp       OPTIMAL               0.007792ms            
+TAME                  ojAlgo-MINRES-id      OPTIMAL               0.007708ms            
+TAME                  ojAlgo-MINRES-jacobi  OPTIMAL               0.011ms               
+TAME                  ojAlgo-MINRES-ssorp   OPTIMAL               0.007875ms            
+TAME                  ojAlgo-QMR-id         OPTIMAL               0.007292ms            
+TAME                  ojAlgo-QMR-jacobi     OPTIMAL               0.007375ms            
+TAME                  ojAlgo-QMR-ssorp      OPTIMAL               0.007834ms            
+VALUES                ojAlgo-CG-id          OPTIMAL               546.028791ms          
+VALUES                ojAlgo-CG-jacobi      OPTIMAL               535.9315ms            
+VALUES                ojAlgo-CG-ssorp       OPTIMAL               758.637875ms          
+VALUES                ojAlgo-MINRES-id      OPTIMAL               531.44475ms           
+VALUES                ojAlgo-MINRES-jacobi  OPTIMAL               608.74675ms           
+VALUES                ojAlgo-MINRES-ssorp   OPTIMAL               609.364208ms          
+VALUES                ojAlgo-QMR-id         OPTIMAL               765.148084ms          
+VALUES                ojAlgo-QMR-jacobi     OPTIMAL               546.946125ms          
+VALUES                ojAlgo-QMR-ssorp      OPTIMAL               551.164208ms          

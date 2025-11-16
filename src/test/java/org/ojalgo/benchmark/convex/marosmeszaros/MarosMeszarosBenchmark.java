@@ -26,10 +26,13 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase;
 import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase.ModelInfo;
 
 public final class MarosMeszarosBenchmark extends AbstractBenchmark {
+
+    static final String[] ONE_MODEL = new String[] { "MOSARQP2" };
 
     static final String[] SOME_MODELS = new String[] { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2",
             "DUAL3", "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "GENHS28", "GOULDQP2", "GOULDQP3", "HS118", "HS21", "HS268", "HS35", "HS35MOD", "HS51",
@@ -50,14 +53,26 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
             "QSHARE1B", "QSHARE2B", "QSHELL", "QSHIP04L", "QSHIP04S", "QSHIP08L", "QSHIP08S", "QSHIP12L", "QSHIP12S", "QSIERRA", "QSTAIR", "QSTANDAT", "S268",
             "STADAT1", "STADAT2", "STADAT3", "STCQP1", "STCQP2", "TAME", "UBH1", "VALUES", "YAO", "ZECEVIC2" };
 
-    static final String[] SOLVERS = new String[] { Contender.JOPTIMIZER, Contender.OJALGO, Contender.HIPPARCHUS, Contender.CPLEX };
+    static final String[] SOLVERS = new String[] { Contender.OJALGO, Contender.CLARABEL4J, Contender.HIPPARCHUS, Contender.CPLEX };
+
+    //    static final String[] SOLVERS = new String[] { Contender.OJALGO_DENSE_EXPERIMENTAL, Contender.OJALGO_DENSE_STABLE, Contender.OJALGO_SPARSE_EXPERIMENTAL,
+    //            Contender.OJALGO_SPARSE_STABLE };
+
+    //    static final String[] SOLVERS = new String[] { Contender.OJALGO_QP_CG_ID, Contender.OJALGO_QP_CG_JACOBI, Contender.OJALGO_QP_CG_SSORP,
+    //            Contender.OJALGO_QP_MINRES_ID, Contender.OJALGO_QP_MINRES_JACOBI, Contender.OJALGO_QP_MINRES_SSORP, Contender.OJALGO_QP_QMR_ID,
+    //            Contender.OJALGO_QP_QMR_JACOBI, Contender.OJALGO_QP_QMR_SSORP };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
+
+    private static int MAX_DIM = 1_000;
+    private static int MIN_DIM = 1;
 
     static {
 
         for (String mod : ALL_MODELS) {
             ModelInfo modelInfo = CuteMarosMeszarosCase.getModelInfo(mod);
+
+            // if (modelInfo.isPureQP() && modelInfo.M <= MAX_DIM && modelInfo.N <= MAX_DIM && modelInfo.N >= MIN_DIM) {
             if (modelInfo.isPureQP() && modelInfo.isSmall()) {
                 for (String sol : SOLVERS) {
                     WORK.add(new ModelSolverPair(mod, sol));
@@ -72,6 +87,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
         configuration.refeenceSolver = Contender.CPLEX;
+        configuration.parallelism = Parallelism.ONE;
 
         for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);

@@ -1,0 +1,266 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+
+Environment: 8GB/10threads aarch64 [32GB/10threads, 2MB/10threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 99 model/solver pairs remaining 2025-11-25T05:56:45.951057Z
+-----------------------------------------------------------------------------
+CVXQP3_M              Hipparchus            FAILED                TIMEOUT               
+DUALC1                Hipparchus            WRONG                 6162.39405134238      != 6155.2508          
+CVXQP1_M              ojAlgo                FAILED                TIMEOUT               
+VALUES                CPLEX                 FAILED                UNSTABLE              
+QPCBOEI1              ojAlgo                WRONG                 3.3400017967119463E7  != 11503914           
+QPCBOEI2              Hipparchus            WRONG                 7196181.244435853     != 8171962.3          
+HS268                 Hipparchus            WRONG                 0.31360218110489807   != 0                  
+S268                  Hipparchus            WRONG                 0.31360218110489807   != 5.7310705E-7       
+QPCSTAIR              Hipparchus            FAILED                UNSTABLE              
+CVXQP2_M              ojAlgo                FAILED                TIMEOUT               
+
+Iteration 2 with 89 model/solver pairs remaining 2025-11-25T06:24:18.861281Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 89 model/solver pairs remaining 2025-11-25T06:34:18.804059Z
+-----------------------------------------------------------------------------
+CVXQP1_S              Hipparchus            Time stable           172.588833ms          11590.73439911826     
+DUAL1                 Hipparchus            Time stable           61.559292ms           0.035017846507731314  
+HS21                  CPLEX                 Time stable           1.981208ms            -99.95999999938574    
+GENHS28               CPLEX                 Time stable           0.778417ms            0.9271736937663807    
+DUAL2                 Hipparchus            Time stable           61.907583ms           0.03373517208368592   
+DUAL1                 CPLEX                 Time stable           11.087917ms           0.03501296712192964   
+DUAL3                 Hipparchus            Time stable           122.655292ms          0.13576857040037427   
+DUALC8                CPLEX                 Time stable           1.721833ms            18309.358834929888    
+CVXQP1_M              CPLEX                 Time stable           88.563833ms           1087511.5698075048    
+CVXQP3_S              Hipparchus            Time stable           127.439917ms          11943.444203298306    
+QPCSTAIR              CPLEX                 Time stable           12.641625ms           6204387.479164349     
+VALUES                ojAlgo                Time stable           263.603333ms          -1.3966211447137578   
+QPCBLEND              Hipparchus            Time stable           149.414125ms          -0.007844316554338579 
+DUAL4                 ojAlgo                Time stable           2.620375ms            0.7460908418021085    
+DUALC1                CPLEX                 Time stable           2.123458ms            6155.2508400609095    
+S268                  CPLEX                 Time stable           1.671792ms            1.1682835170954212E-5 
+MOSARQP2              ojAlgo                Time stable           5252.723875ms         -1597.4821175234274   
+CVXQP3_M              CPLEX                 Time stable           138.801125ms          1362828.7422424632    
+DUAL3                 CPLEX                 Time stable           16.964ms              0.13575583751626022   
+DUALC8                Hipparchus            Time stable           0.610834ms            18312.25866883296     
+CVXQP3_S              ojAlgo                Time stable           3.681625ms            11943.432202309961    
+QPCSTAIR              ojAlgo                Time stable           3337.401375ms         6204387.476082277     
+HS268                 CPLEX                 Time stable           1.883791ms            1.1682835170954212E-5 
+CVXQP2_M              CPLEX                 Time stable           63.987583ms           820155.4310255032     
+HS53                  CPLEX                 Time stable           1.907666ms            4.093023255813976     
+TAME                  CPLEX                 Time stable           0.576666ms            0.0                   
+MOSARQP2              Hipparchus            Time stable           55803.274333ms        -1597.4821975304994   
+QPCBOEI1              CPLEX                 Time stable           11.231375ms           1.1503914011830442E7  
+CVXQP2_M              Hipparchus            Time stable           92087.066458ms        820155.4218256708     
+QPCBOEI2              ojAlgo                Time stable           691.295416ms          8171962.244232641     
+HS52                  CPLEX                 Time stable           0.613833ms            5.326647564469881     
+HS76                  CPLEX                 Time stable           1.697292ms            -4.681818168301529    
+HS118                 Hipparchus            Time stable           3.016459ms            664.8215476458131     
+CVXQP1_M              Hipparchus            Time stable           157382.790375ms       1087511.3646372678    
+DUAL1                 ojAlgo                Time stable           3.427916ms            0.03501296573347623   
+QPTEST                CPLEX                 Time stable           2.109875ms            4.37187500545178      
+CVXQP2_S              CPLEX                 Time stable           2.386875ms            8120.940478472599     
+HS35                  CPLEX                 Time stable           1.823875ms            0.11111112951084967   
+DUAL4                 Hipparchus            Time stable           39.733458ms           0.7461175658281045    
+HS51                  CPLEX                 Time stable           0.762542ms            7.343141846E-19       
+DUALC5                CPLEX                 Time stable           1.605584ms            427.2323269107383     
+CVXQP2_S              Hipparchus            Time stable           67.302959ms           8120.959865171435     
+QPCBOEI1              Hipparchus            Time stable           63521.126625ms        1.1496498319986075E7  
+HS118                 CPLEX                 Time stable           2.001167ms            664.8204500665357     
+VALUES                Hipparchus            Time stable           763.683292ms          -1.39658729172455     
+
+Iteration 4 with 44 model/solver pairs remaining 2025-11-25T06:45:05.269202Z
+-----------------------------------------------------------------------------
+DUALC2                CPLEX                 Time stable           1.682666ms            3551.307695643078     
+CVXQP1_S              CPLEX                 Time stable           3.728375ms            11590.718131765081    
+DUAL2                 CPLEX                 Time stable           12.650666ms           0.03373367616076254   
+QPCBLEND              ojAlgo                Time stable           6.771708ms            -0.007842543074190106 
+CVXQP2_S              ojAlgo                Time stable           44.491917ms           8120.940477250781     
+DUAL2                 ojAlgo                Time stable           4.42375ms             0.03373367612271781   
+QPCBLEND              CPLEX                 Time stable           2.795875ms            -0.007842542226937078 
+CVXQP1_S              ojAlgo                Time stable           4.971875ms            11590.71811942676     
+DUAL4                 CPLEX                 Time stable           8.899084ms            0.7460908419173067    
+CVXQP3_M              ojAlgo                Time stable           251.939209ms          1362828.7416028955    
+HS35MOD               CPLEX                 Time stable           2.268083ms            0.2500000042798633    
+MOSARQP2              CPLEX                 Time stable           12.512709ms           -1597.4821051481947   
+
+Iteration 5 with 32 model/solver pairs remaining 2025-11-25T06:45:12.256806Z
+-----------------------------------------------------------------------------
+
+Iteration 6 with 32 model/solver pairs remaining 2025-11-25T06:45:12.609992Z
+-----------------------------------------------------------------------------
+DUAL3                 ojAlgo                Time stable           6.087667ms            0.13575583686602102   
+CVXQP3_S              CPLEX                 Time stable           4.069333ms            11943.432260753456    
+
+Iteration 7 with 30 model/solver pairs remaining 2025-11-25T06:45:12.910826Z
+-----------------------------------------------------------------------------
+
+Iteration 8 with 30 model/solver pairs remaining 2025-11-25T06:45:12.983009Z
+-----------------------------------------------------------------------------
+QPCBOEI2              CPLEX                 Time stable           5.78475ms             8171962.2445413945    
+
+Iteration 9 with 29 model/solver pairs remaining 2025-11-25T06:45:13.056493Z
+-----------------------------------------------------------------------------
+
+Iteration 10 with 29 model/solver pairs remaining 2025-11-25T06:45:13.109030Z
+-----------------------------------------------------------------------------
+
+Iteration 11 with 29 model/solver pairs remaining 2025-11-25T06:45:13.159566Z
+-----------------------------------------------------------------------------
+
+Iteration 12 with 29 model/solver pairs remaining 2025-11-25T06:45:13.208979Z
+-----------------------------------------------------------------------------
+
+Iteration 13 with 29 model/solver pairs remaining 2025-11-25T06:45:13.258737Z
+-----------------------------------------------------------------------------
+
+Iteration 14 with 29 model/solver pairs remaining 2025-11-25T06:45:13.308406Z
+-----------------------------------------------------------------------------
+
+Iteration 15 with 29 model/solver pairs remaining 2025-11-25T06:45:13.358722Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 29 model/solver pairs remaining 2025-11-25T06:45:13.407607Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 29 model/solver pairs remaining 2025-11-25T06:45:13.456265Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 29 model/solver pairs remaining 2025-11-25T06:45:13.523046Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 29 model/solver pairs remaining 2025-11-25T06:45:13.575224Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 29 model/solver pairs remaining 2025-11-25T06:45:13.622314Z
+-----------------------------------------------------------------------------
+HS21                  Hipparchus            Time stable           0.056125ms            -99.95992668731232    
+QPTEST                ojAlgo                Time stable           0.008708ms            4.371875              
+GENHS28               Hipparchus            Time stable           0.176042ms            0.927163573651928     
+DUALC2                Hipparchus            Time stable           0.296291ms            3551.632573074723     
+HS21                  ojAlgo                Time stable           0.007291ms            -99.96                
+HS51                  Hipparchus            Time stable           0.0795ms              5.128148427126529E-12 
+HS35                  Hipparchus            Time stable           0.058208ms            0.11110889854183209   
+QPTEST                Hipparchus            Time stable           0.054542ms            4.371795373549981     
+DUALC1                ojAlgo                Time stable           0.055042ms            6155.250829463378     
+HS52                  Hipparchus            Time stable           0.093333ms            5.326631409728266     
+HS76                  Hipparchus            Time stable           0.090416ms            -4.68176033421074     
+S268                  ojAlgo                Time stable           0.019709ms            1.09894E-23           
+DUALC2                ojAlgo                Time stable           0.038166ms            3551.307692670844     
+HS35MOD               ojAlgo                Time stable           0.007834ms            0.25                  
+TAME                  ojAlgo                Time stable           0.006375ms            0.0                   
+TAME                  Hipparchus            Time stable           0.087166ms            2.10681E-23           
+HS53                  Hipparchus            Time stable           0.101125ms            4.093055230874879     
+DUALC8                ojAlgo                Time stable           0.044584ms            18309.358832740163    
+DUALC5                Hipparchus            Time stable           0.221958ms            427.2461448375591     
+HS53                  ojAlgo                Time stable           0.019ms               4.093023255813954     
+HS268                 ojAlgo                Time stable           0.019584ms            1.09894E-23           
+DUALC5                ojAlgo                Time stable           0.037ms               427.23232677639356    
+HS76                  ojAlgo                Time stable           0.009416ms            -4.681818181818177    
+HS52                  ojAlgo                Time stable           0.007791ms            5.326647576871785     
+HS35MOD               Hipparchus            Time stable           0.065875ms            0.2500000000000372    
+HS118                 ojAlgo                Time stable           0.113334ms            664.82045             
+HS51                  ojAlgo                Time stable           0.008625ms            4.13106175527E-17     
+GENHS28               ojAlgo                Time stable           0.020459ms            0.9271736939195341    
+HS35                  ojAlgo                Time stable           0.007ms               0.11111111111111334   
+
+Final Results
+=====================================================================
+CVXQP1_M              CPLEX                 OPTIMAL               88.563833ms           
+CVXQP1_M              Hipparchus            OPTIMAL               157382.790375ms       
+CVXQP1_M              ojAlgo                FAILED                TIMEOUT               
+CVXQP1_S              CPLEX                 OPTIMAL               3.728375ms            
+CVXQP1_S              Hipparchus            OPTIMAL               172.588833ms          
+CVXQP1_S              ojAlgo                OPTIMAL               4.971875ms            
+CVXQP2_M              CPLEX                 OPTIMAL               63.987583ms           
+CVXQP2_M              Hipparchus            OPTIMAL               92087.066458ms        
+CVXQP2_M              ojAlgo                FAILED                TIMEOUT               
+CVXQP2_S              CPLEX                 OPTIMAL               2.386875ms            
+CVXQP2_S              Hipparchus            OPTIMAL               67.302959ms           
+CVXQP2_S              ojAlgo                OPTIMAL               44.491917ms           
+CVXQP3_M              CPLEX                 OPTIMAL               138.801125ms          
+CVXQP3_M              Hipparchus            FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo                OPTIMAL               251.939209ms          
+CVXQP3_S              CPLEX                 OPTIMAL               4.069333ms            
+CVXQP3_S              Hipparchus            OPTIMAL               127.439917ms          
+CVXQP3_S              ojAlgo                OPTIMAL               3.681625ms            
+DUAL1                 CPLEX                 OPTIMAL               11.087917ms           
+DUAL1                 Hipparchus            OPTIMAL               61.559292ms           
+DUAL1                 ojAlgo                OPTIMAL               3.427916ms            
+DUAL2                 CPLEX                 OPTIMAL               12.650666ms           
+DUAL2                 Hipparchus            OPTIMAL               61.907583ms           
+DUAL2                 ojAlgo                OPTIMAL               4.42375ms             
+DUAL3                 CPLEX                 OPTIMAL               16.964ms              
+DUAL3                 Hipparchus            OPTIMAL               122.655292ms          
+DUAL3                 ojAlgo                OPTIMAL               6.087667ms            
+DUAL4                 CPLEX                 OPTIMAL               8.899084ms            
+DUAL4                 Hipparchus            OPTIMAL               39.733458ms           
+DUAL4                 ojAlgo                OPTIMAL               2.620375ms            
+DUALC1                CPLEX                 OPTIMAL               2.123458ms            
+DUALC1                Hipparchus            FAILED                WRONG                 
+DUALC1                ojAlgo                OPTIMAL               0.055042ms            
+DUALC2                CPLEX                 OPTIMAL               1.682666ms            
+DUALC2                Hipparchus            OPTIMAL               0.296291ms            
+DUALC2                ojAlgo                OPTIMAL               0.038166ms            
+DUALC5                CPLEX                 OPTIMAL               1.605584ms            
+DUALC5                Hipparchus            OPTIMAL               0.221958ms            
+DUALC5                ojAlgo                OPTIMAL               0.037ms               
+DUALC8                CPLEX                 OPTIMAL               1.721833ms            
+DUALC8                Hipparchus            OPTIMAL               0.610834ms            
+DUALC8                ojAlgo                OPTIMAL               0.044584ms            
+GENHS28               CPLEX                 OPTIMAL               0.778417ms            
+GENHS28               Hipparchus            OPTIMAL               0.176042ms            
+GENHS28               ojAlgo                OPTIMAL               0.020459ms            
+HS118                 CPLEX                 OPTIMAL               2.001167ms            
+HS118                 Hipparchus            OPTIMAL               3.016459ms            
+HS118                 ojAlgo                OPTIMAL               0.113334ms            
+HS21                  CPLEX                 OPTIMAL               1.981208ms            
+HS21                  Hipparchus            OPTIMAL               0.056125ms            
+HS21                  ojAlgo                OPTIMAL               0.007291ms            
+HS268                 CPLEX                 OPTIMAL               1.883791ms            
+HS268                 Hipparchus            FAILED                WRONG                 
+HS268                 ojAlgo                OPTIMAL               0.019584ms            
+HS35                  CPLEX                 OPTIMAL               1.823875ms            
+HS35                  Hipparchus            OPTIMAL               0.058208ms            
+HS35                  ojAlgo                OPTIMAL               0.007ms               
+HS35MOD               CPLEX                 OPTIMAL               2.268083ms            
+HS35MOD               Hipparchus            OPTIMAL               0.065875ms            
+HS35MOD               ojAlgo                OPTIMAL               0.007834ms            
+HS51                  CPLEX                 OPTIMAL               0.762542ms            
+HS51                  Hipparchus            OPTIMAL               0.0795ms              
+HS51                  ojAlgo                OPTIMAL               0.008625ms            
+HS52                  CPLEX                 OPTIMAL               0.613833ms            
+HS52                  Hipparchus            OPTIMAL               0.093333ms            
+HS52                  ojAlgo                OPTIMAL               0.007791ms            
+HS53                  CPLEX                 OPTIMAL               1.907666ms            
+HS53                  Hipparchus            OPTIMAL               0.101125ms            
+HS53                  ojAlgo                OPTIMAL               0.019ms               
+HS76                  CPLEX                 OPTIMAL               1.697292ms            
+HS76                  Hipparchus            OPTIMAL               0.090416ms            
+HS76                  ojAlgo                OPTIMAL               0.009416ms            
+MOSARQP2              CPLEX                 OPTIMAL               12.512709ms           
+MOSARQP2              Hipparchus            OPTIMAL               55803.274333ms        
+MOSARQP2              ojAlgo                OPTIMAL               5252.723875ms         
+QPCBLEND              CPLEX                 OPTIMAL               2.795875ms            
+QPCBLEND              Hipparchus            OPTIMAL               149.414125ms          
+QPCBLEND              ojAlgo                OPTIMAL               6.771708ms            
+QPCBOEI1              CPLEX                 OPTIMAL               11.231375ms           
+QPCBOEI1              Hipparchus            OPTIMAL               63521.126625ms        
+QPCBOEI1              ojAlgo                FAILED                WRONG                 
+QPCBOEI2              CPLEX                 OPTIMAL               5.78475ms             
+QPCBOEI2              Hipparchus            FAILED                WRONG                 
+QPCBOEI2              ojAlgo                OPTIMAL               691.295416ms          
+QPCSTAIR              CPLEX                 OPTIMAL               12.641625ms           
+QPCSTAIR              Hipparchus            FAILED                UNSTABLE              
+QPCSTAIR              ojAlgo                OPTIMAL               3337.401375ms         
+QPTEST                CPLEX                 OPTIMAL               2.109875ms            
+QPTEST                Hipparchus            OPTIMAL               0.054542ms            
+QPTEST                ojAlgo                OPTIMAL               0.008708ms            
+S268                  CPLEX                 OPTIMAL               1.671792ms            
+S268                  Hipparchus            FAILED                WRONG                 
+S268                  ojAlgo                OPTIMAL               0.019709ms            
+TAME                  CPLEX                 OPTIMAL               0.576666ms            
+TAME                  Hipparchus            OPTIMAL               0.087166ms            
+TAME                  ojAlgo                OPTIMAL               0.006375ms            
+VALUES                CPLEX                 FAILED                UNSTABLE              
+VALUES                Hipparchus            OPTIMAL               763.683292ms          
+VALUES                ojAlgo                OPTIMAL               263.603333ms          

@@ -43,6 +43,12 @@ import org.ojalgo.concurrent.ExternalProcessExecutor;
 import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.concurrent.ParallelismSupplier;
 import org.ojalgo.concurrent.ProcessingService;
+import org.ojalgo.matrix.task.iterative.ConjugateGradientSolver;
+import org.ojalgo.matrix.task.iterative.JacobiPreconditioner;
+import org.ojalgo.matrix.task.iterative.MINRESSolver;
+import org.ojalgo.matrix.task.iterative.Preconditioner;
+import org.ojalgo.matrix.task.iterative.QMRSolver;
+import org.ojalgo.matrix.task.iterative.SSORPreconditioner;
 import org.ojalgo.netio.ASCII;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineWriter;
@@ -51,8 +57,10 @@ import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
+import org.ojalgo.optimisation.convex.ConvexSolver;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
+import org.ojalgo.optimisation.solver.clarabel4j.SolverClarabel4j;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
@@ -94,7 +102,25 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_DUAL_SPARSE = "ojAlgo-dual-S";
         public static final String OJALGO_PRIM_DENSE = "ojAlgo-prim-D";
         public static final String OJALGO_PRIM_SPARSE = "ojAlgo-prim-S";
+
+        public static final String OJALGO_DENSE_EXPERIMENTAL = "ojAlgo-D-exp";
+        public static final String OJALGO_SPARSE_EXPERIMENTAL = "ojAlgo-S-exp";
+        public static final String OJALGO_DENSE_STABLE = "ojAlgo-D-stbl";
+        public static final String OJALGO_SPARSE_STABLE = "ojAlgo-S-stbl";
+
         public static final String ORTOOLS = "ORTools";
+
+        public static final String CLARABEL4J = "Clarabel4j";
+
+        public static final String OJALGO_QP_CG_ID = "ojAlgo-CG-id";
+        public static final String OJALGO_QP_CG_JACOBI = "ojAlgo-CG-jacobi";
+        public static final String OJALGO_QP_CG_SSORP = "ojAlgo-CG-ssorp";
+        public static final String OJALGO_QP_MINRES_ID = "ojAlgo-MINRES-id";
+        public static final String OJALGO_QP_MINRES_JACOBI = "ojAlgo-MINRES-jacobi";
+        public static final String OJALGO_QP_MINRES_SSORP = "ojAlgo-MINRES-ssorp";
+        public static final String OJALGO_QP_QMR_ID = "ojAlgo-QMR-id";
+        public static final String OJALGO_QP_QMR_JACOBI = "ojAlgo-QMR-jacobi";
+        public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QMR-ssorp";
 
     }
 
@@ -320,6 +346,8 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.OJALGO, LinearSolver.INTEGRATION);
 
+        INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
+
         INTEGRATIONS.put(Contender.OJALGO_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
             opt.sparse = Boolean.FALSE;
@@ -335,6 +363,60 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.OJALGO_PRIM_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().primal();
             opt.sparse = Boolean.TRUE;
+        }));
+
+        INTEGRATIONS.put(Contender.OJALGO_DENSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.FALSE;
+            opt.experimental = true;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_SPARSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.experimental = true;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_DENSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.FALSE;
+            opt.experimental = false;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_SPARSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.experimental = false;
+        }));
+
+        INTEGRATIONS.put(Contender.OJALGO_QP_CG_ID, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(ConjugateGradientSolver::new, Preconditioner::newIdentity);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_CG_JACOBI, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(ConjugateGradientSolver::new, JacobiPreconditioner::new);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_CG_SSORP, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(ConjugateGradientSolver::new, SSORPreconditioner::new);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_ID, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(MINRESSolver::new, Preconditioner::newIdentity);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_JACOBI, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(MINRESSolver::new, JacobiPreconditioner::new);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_SSORP, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(MINRESSolver::new, SSORPreconditioner::new);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_ID, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(QMRSolver::new, Preconditioner::newIdentity);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_JACOBI, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(QMRSolver::new, JacobiPreconditioner::new);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_SSORP, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.sparse = Boolean.TRUE;
+            opt.convex().iterative(QMRSolver::new, SSORPreconditioner::new);
         }));
     }
 

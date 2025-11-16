@@ -1,0 +1,230 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+
+Environment: 8GB/10threads aarch64 [32GB/10threads, 2MB/10threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 99 model/solver pairs remaining 2025-11-21T17:50:09.361890Z
+-----------------------------------------------------------------------------
+CVXQP3_M              YAO                   ojAlgo-QMR-jacobi     ojAlgo-CG-ssorp       FAILED                FAILED                TIMEOUT               TIMEOUT               
+
+LASER                 ojAlgo-MINRES-id      FAILED                TIMEOUT               
+STCQP1                ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+YAO                   ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+STCQP1                ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-MINRES-id      FAILED                TIMEOUT               
+YAO                   ojAlgo-QMR-id         FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-CG-id          FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+YAO                   ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+STCQP1                ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+LASER                 ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+YAO                   ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+YAO                   ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+STCQP1                ojAlgo-CG-id          FAILED                TIMEOUT               
+STCQP1                ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QMR-id         FAILED                TIMEOUT               
+YAO                   ojAlgo-MINRES-id      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-CG-id          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+LASER                 ojAlgo-CG-id          FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-MINRES-id      FAILED                TIMEOUT               
+LASER                 ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+STCQP1                ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QMR-id         FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+YAO                   ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+LASER                 ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-MINRES-id      FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-CG-id          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-CG-id          FAILED                TIMEOUT               
+LASER                 ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+YAO                   ojAlgo-CG-id          FAILED                TIMEOUT               
+STCQP1                ojAlgo-MINRES-id      FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+LASER                 ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+LASER                 ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+LASER                 ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+STCQP1                ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+STCQP1                ojAlgo-QMR-id         FAILED                TIMEOUT               
+
+Iteration 2 with 35 model/solver pairs remaining 2025-11-21T19:28:01.352565Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 35 model/solver pairs remaining 2025-11-21T19:42:20.846400Z
+-----------------------------------------------------------------------------
+CVXQP3_M              ojAlgo-MINRES-ssorp   Time stable           29674.965792ms        1362828.7416028953    
+AUG3DC                ojAlgo-CG-jacobi      Time stable           4199.465666ms         771.2624386889565     
+STCQP2                ojAlgo-QMR-jacobi     Time stable           142192.498ms          22327.313272416686    
+AUG3DC                ojAlgo-MINRES-jacobi  Time stable           4351.439959ms         771.2624386889565     
+STCQP2                ojAlgo-QMR-ssorp      Time stable           79376.907ms           22327.313272416686    
+CONT-050              ojAlgo-QMR-jacobi     Time stable           15781.123958ms        -4.563850904324675    
+STCQP2                ojAlgo-CG-ssorp       Time stable           79631.210125ms        22327.313272416686    
+AUG3DC                ojAlgo-QMR-jacobi     Time stable           4504.167167ms         771.2624386889565     
+CVXQP3_M              ojAlgo-MINRES-jacobi  Time stable           26993.231958ms        1362828.7416028953    
+CONT-050              ojAlgo-MINRES-id      Time stable           15983.716625ms        -4.563850904324675    
+AUG3DC                ojAlgo-MINRES-id      Time stable           6257.752458ms         771.2624386889565     
+AUG3DC                ojAlgo-CG-ssorp       Time stable           6365.452042ms         771.2624386889541     
+STCQP2                ojAlgo-CG-id          Time stable           104133.903667ms       22327.313272416686    
+CONT-050              ojAlgo-QMR-id         Time stable           13521.228667ms        -4.563850904324675    
+AUG3DC                ojAlgo-QMR-ssorp      Time stable           4589.097333ms         771.2624386889565     
+CVXQP1_M              ojAlgo-MINRES-jacobi  Time stable           243750.728125ms       1087511.567321502     
+CVXQP3_M              ojAlgo-CG-jacobi      Time stable           31769.892916ms        1362828.7416028953    
+CVXQP3_M              ojAlgo-CG-id          Time stable           40334.884542ms        1362828.7416028953    
+AUG3DC                ojAlgo-QMR-id         Time stable           6111.955709ms         771.2624386889522     
+CONT-050              ojAlgo-CG-ssorp       Time stable           17631.105708ms        -4.563850904324675    
+CONT-050              ojAlgo-MINRES-ssorp   Time stable           16383.051333ms        -4.563850904324675    
+STCQP2                ojAlgo-CG-jacobi      Time stable           105389.307541ms       22327.313272416686    
+CONT-050              ojAlgo-CG-id          Time stable           17658.090666ms        -4.563850904324675    
+STCQP2                ojAlgo-QMR-id         Time stable           133489.07625ms        22327.313272416686    
+STCQP2                ojAlgo-MINRES-jacobi  Time stable           117463.751541ms       22327.313272416686    
+STCQP2                ojAlgo-MINRES-id      Time stable           106766.742375ms       22327.313272416686    
+
+Iteration 4 with 9 model/solver pairs remaining 2025-11-21T19:55:56.738353Z
+-----------------------------------------------------------------------------
+CONT-050              ojAlgo-CG-jacobi      Time stable           12281.833167ms        -4.563850904324675    
+STCQP2                ojAlgo-MINRES-ssorp   Time stable           96157.744166ms        22327.313272416686    
+CONT-050              ojAlgo-QMR-ssorp      Time stable           13065.690541ms        -4.563850904324675    
+CVXQP3_M              ojAlgo-CG-ssorp       Time stable           28614.551625ms        1362828.7416028953    
+
+Iteration 5 with 5 model/solver pairs remaining 2025-11-21T20:00:11.638053Z
+-----------------------------------------------------------------------------
+CVXQP3_M              ojAlgo-MINRES-id      Time stable           29094.883833ms        1362828.7416028953    
+
+Iteration 6 with 4 model/solver pairs remaining 2025-11-21T20:02:44.010899Z
+-----------------------------------------------------------------------------
+AUG3DC                ojAlgo-CG-id          Time stable           3738.7185ms           771.2624386889541     
+AUG3DC                ojAlgo-MINRES-ssorp   Time stable           4310.759ms            771.2624386889522     
+CONT-050              ojAlgo-MINRES-jacobi  Time stable           11800.610916ms        -4.563850904324675    
+
+Iteration 7 with 1 model/solver pairs remaining 2025-11-21T20:04:35.278428Z
+-----------------------------------------------------------------------------
+
+Iteration 8 with 1 model/solver pairs remaining 2025-11-21T20:07:01.277113Z
+-----------------------------------------------------------------------------
+CVXQP1_M              ojAlgo-MINRES-id      Time stable           72447.443042ms        1087511.567321502     
+
+Final Results
+=====================================================================
+AUG3DC                ojAlgo-CG-id          OPTIMAL               3738.7185ms           
+AUG3DC                ojAlgo-CG-jacobi      OPTIMAL               4199.465666ms         
+AUG3DC                ojAlgo-CG-ssorp       OPTIMAL               6365.452042ms         
+AUG3DC                ojAlgo-MINRES-id      OPTIMAL               6257.752458ms         
+AUG3DC                ojAlgo-MINRES-jacobi  OPTIMAL               4351.439959ms         
+AUG3DC                ojAlgo-MINRES-ssorp   OPTIMAL               4310.759ms            
+AUG3DC                ojAlgo-QMR-id         OPTIMAL               6111.955709ms         
+AUG3DC                ojAlgo-QMR-jacobi     OPTIMAL               4504.167167ms         
+AUG3DC                ojAlgo-QMR-ssorp      OPTIMAL               4589.097333ms         
+AUG3DCQP              ojAlgo-CG-id          FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-MINRES-id      FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QMR-id         FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+CONT-050              ojAlgo-CG-id          OPTIMAL               17658.090666ms        
+CONT-050              ojAlgo-CG-jacobi      OPTIMAL               12281.833167ms        
+CONT-050              ojAlgo-CG-ssorp       OPTIMAL               17631.105708ms        
+CONT-050              ojAlgo-MINRES-id      OPTIMAL               15983.716625ms        
+CONT-050              ojAlgo-MINRES-jacobi  OPTIMAL               11800.610916ms        
+CONT-050              ojAlgo-MINRES-ssorp   OPTIMAL               16383.051333ms        
+CONT-050              ojAlgo-QMR-id         OPTIMAL               13521.228667ms        
+CONT-050              ojAlgo-QMR-jacobi     OPTIMAL               15781.123958ms        
+CONT-050              ojAlgo-QMR-ssorp      OPTIMAL               13065.690541ms        
+CVXQP1_M              ojAlgo-CG-id          FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-MINRES-id      OPTIMAL               72447.443042ms        
+CVXQP1_M              ojAlgo-MINRES-jacobi  OPTIMAL               243750.728125ms       
+CVXQP1_M              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-CG-id          FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-MINRES-id      FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-CG-id          OPTIMAL               40334.884542ms        
+CVXQP3_M              ojAlgo-CG-jacobi      OPTIMAL               31769.892916ms        
+CVXQP3_M              ojAlgo-CG-ssorp       OPTIMAL               28614.551625ms        
+CVXQP3_M              ojAlgo-MINRES-id      OPTIMAL               29094.883833ms        
+CVXQP3_M              ojAlgo-MINRES-jacobi  OPTIMAL               26993.231958ms        
+CVXQP3_M              ojAlgo-MINRES-ssorp   OPTIMAL               29674.965792ms        
+CVXQP3_M              ojAlgo-QMR-id         FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+LASER                 ojAlgo-CG-id          FAILED                TIMEOUT               
+LASER                 ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+LASER                 ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+LASER                 ojAlgo-MINRES-id      FAILED                TIMEOUT               
+LASER                 ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+LASER                 ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+LASER                 ojAlgo-QMR-id         FAILED                TIMEOUT               
+LASER                 ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+LASER                 ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-CG-id          FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-MINRES-id      FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QMR-id         FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+STCQP1                ojAlgo-CG-id          FAILED                TIMEOUT               
+STCQP1                ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+STCQP1                ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+STCQP1                ojAlgo-MINRES-id      FAILED                TIMEOUT               
+STCQP1                ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+STCQP1                ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+STCQP1                ojAlgo-QMR-id         FAILED                TIMEOUT               
+STCQP1                ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+STCQP1                ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
+STCQP2                ojAlgo-CG-id          OPTIMAL               104133.903667ms       
+STCQP2                ojAlgo-CG-jacobi      OPTIMAL               105389.307541ms       
+STCQP2                ojAlgo-CG-ssorp       OPTIMAL               79631.210125ms        
+STCQP2                ojAlgo-MINRES-id      OPTIMAL               106766.742375ms       
+STCQP2                ojAlgo-MINRES-jacobi  OPTIMAL               117463.751541ms       
+STCQP2                ojAlgo-MINRES-ssorp   OPTIMAL               96157.744166ms        
+STCQP2                ojAlgo-QMR-id         OPTIMAL               133489.07625ms        
+STCQP2                ojAlgo-QMR-jacobi     OPTIMAL               142192.498ms          
+STCQP2                ojAlgo-QMR-ssorp      OPTIMAL               79376.907ms           
+YAO                   ojAlgo-CG-id          FAILED                TIMEOUT               
+YAO                   ojAlgo-CG-jacobi      FAILED                TIMEOUT               
+YAO                   ojAlgo-CG-ssorp       FAILED                TIMEOUT               
+YAO                   ojAlgo-MINRES-id      FAILED                TIMEOUT               
+YAO                   ojAlgo-MINRES-jacobi  FAILED                TIMEOUT               
+YAO                   ojAlgo-MINRES-ssorp   FAILED                TIMEOUT               
+YAO                   ojAlgo-QMR-id         FAILED                TIMEOUT               
+YAO                   ojAlgo-QMR-jacobi     FAILED                TIMEOUT               
+YAO                   ojAlgo-QMR-ssorp      FAILED                TIMEOUT               
