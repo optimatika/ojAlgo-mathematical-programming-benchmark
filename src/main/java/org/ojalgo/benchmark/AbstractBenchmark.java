@@ -58,6 +58,7 @@ import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.convex.ConvexSolver;
+import org.ojalgo.optimisation.convex.ConvexSolver.Algorithm;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.clarabel4j.SolverClarabel4j;
@@ -94,34 +95,35 @@ public abstract class AbstractBenchmark {
     public static final class Contender {
 
         public static final String ACM = "ACM";
+        public static final String CLARABEL4J = "Clarabel4j";
         public static final String CPLEX = "CPLEX";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
-        public static final String OJALGO = "ojAlgo";
-        public static final String OJALGO_DUAL_DENSE = "ojAlgo-dual-D";
-        public static final String OJALGO_DUAL_SPARSE = "ojAlgo-dual-S";
-        public static final String OJALGO_PRIM_DENSE = "ojAlgo-prim-D";
-        public static final String OJALGO_PRIM_SPARSE = "ojAlgo-prim-S";
-
-        public static final String OJALGO_DENSE_EXPERIMENTAL = "ojAlgo-D-exp";
-        public static final String OJALGO_SPARSE_EXPERIMENTAL = "ojAlgo-S-exp";
-        public static final String OJALGO_DENSE_STABLE = "ojAlgo-D-stbl";
-        public static final String OJALGO_SPARSE_STABLE = "ojAlgo-S-stbl";
-
+        public static final String OJALGO_LP = "ojAlgo-LP";
+        public static final String OJALGO_LP_DUAL_DENSE = "ojAlgo-LP-dual-D";
+        public static final String OJALGO_LP_DUAL_SPARSE = "ojAlgo-LP-dual-S";
+        public static final String OJALGO_LP_PRIM_DENSE = "ojAlgo-LP-prim-D";
+        public static final String OJALGO_LP_PRIM_SPARSE = "ojAlgo-LP-prim-S";
+        public static final String OJALGO_QP = "ojAlgo-QP";
+        public static final String OJALGO_QP_ADMM = "ojAlgo-QP-ADMM";
+        public static final String OJALGO_QP_CG_ID = "ojAlgo-QP-CG-id";
+        public static final String OJALGO_QP_CG_JACOBI = "ojAlgo-QP-CG-jacobi";
+        public static final String OJALGO_QP_CG_SSORP = "ojAlgo-QP-CG-ssorp";
+        public static final String OJALGO_QP_DENSE_EXPERIMENTAL = "ojAlgo-QP-D-exp";
+        public static final String OJALGO_QP_DENSE_STABLE = "ojAlgo-QP-D-stbl";
+        public static final String OJALGO_QP_MINRES_ID = "ojAlgo-QP-MINRES-id";
+        public static final String OJALGO_QP_MINRES_JACOBI = "ojAlgo-QP-MINRES-jacobi";
+        public static final String OJALGO_QP_MINRES_SSORP = "ojAlgo-QP-MINRES-ssorp";
+        public static final String OJALGO_QP_NULLSPACE_DENSE = "ojAlgo-QP-NSP-D";
+        public static final String OJALGO_QP_NULLSPACE_SPARSE = "ojAlgo-QP-NSP-S";
+        public static final String OJALGO_QP_PLAIN_DENSE = "ojAlgo-QP-PLAIN-D";
+        public static final String OJALGO_QP_PLAIN_SPARSE = "ojAlgo-QP-PLAIN-S";
+        public static final String OJALGO_QP_QMR_ID = "ojAlgo-QP-QMR-id";
+        public static final String OJALGO_QP_QMR_JACOBI = "ojAlgo-QP-QMR-jacobi";
+        public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QP-QMR-ssorp";
+        public static final String OJALGO_QP_SPARSE_EXPERIMENTAL = "ojAlgo-QP-S-exp";
+        public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
         public static final String ORTOOLS = "ORTools";
-
-        public static final String CLARABEL4J = "Clarabel4j";
-
-        public static final String OJALGO_QP_CG_ID = "ojAlgo-CG-id";
-        public static final String OJALGO_QP_CG_JACOBI = "ojAlgo-CG-jacobi";
-        public static final String OJALGO_QP_CG_SSORP = "ojAlgo-CG-ssorp";
-        public static final String OJALGO_QP_MINRES_ID = "ojAlgo-MINRES-id";
-        public static final String OJALGO_QP_MINRES_JACOBI = "ojAlgo-MINRES-jacobi";
-        public static final String OJALGO_QP_MINRES_SSORP = "ojAlgo-MINRES-ssorp";
-        public static final String OJALGO_QP_QMR_ID = "ojAlgo-QMR-id";
-        public static final String OJALGO_QP_QMR_JACOBI = "ojAlgo-QMR-jacobi";
-        public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QMR-ssorp";
-
     }
 
     public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
@@ -210,13 +212,15 @@ public abstract class AbstractBenchmark {
 
     static final class ModelSize {
 
+        public final double density;
         public final int nbExpressions;
         public final int nbVariables;
 
-        ModelSize(final int m, final int n) {
+        ModelSize(final int nbExpressions, final int nbVariables, final double density) {
             super();
-            nbExpressions = m;
-            nbVariables = n;
+            this.nbExpressions = nbExpressions;
+            this.nbVariables = nbVariables;
+            this.density = density;
         }
 
     }
@@ -337,47 +341,49 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
-        // INTEGRATIONS.put(Contender.HIPPARCHUS, ADMMQPOptimizerImpl.INTEGRATION);
         INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
         INTEGRATIONS.put(Contender.ORTOOLS, SolverORTools.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.experimental = true;
+        }));
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO, LinearSolver.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_LP, LinearSolver.INTEGRATION);
 
         INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_DUAL_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
             opt.sparse = Boolean.TRUE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_PRIM_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().primal();
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_PRIM_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().primal();
             opt.sparse = Boolean.TRUE;
         }));
 
-        INTEGRATIONS.put(Contender.OJALGO_DENSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_DENSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.FALSE;
             opt.experimental = true;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_SPARSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_SPARSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.experimental = true;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_DENSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_DENSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.FALSE;
             opt.experimental = false;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_SPARSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_SPARSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.experimental = false;
         }));
@@ -418,6 +424,33 @@ public abstract class AbstractBenchmark {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(QMRSolver::new, SSORPreconditioner::new);
         }));
+
+        INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_QP, ConvexSolver.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.convex().algorithm(Algorithm.ADMM);
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_DENSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.convex().algorithm(Algorithm.ACTIVE_SET);
+            opt.convex().projection(Boolean.TRUE);
+            opt.sparse = Boolean.FALSE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_SPARSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.convex().algorithm(Algorithm.ACTIVE_SET);
+            opt.convex().projection(Boolean.TRUE);
+            opt.sparse = Boolean.TRUE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_DENSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.convex().algorithm(Algorithm.ACTIVE_SET);
+            opt.convex().projection(Boolean.FALSE);
+            opt.sparse = Boolean.FALSE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_SPARSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.convex().algorithm(Algorithm.ACTIVE_SET);
+            opt.convex().projection(Boolean.FALSE);
+            opt.sparse = Boolean.TRUE;
+        }));
+
     }
 
     protected static void doBenchmark(final Set<ModelSolverPair> allWork, final Configuration configuration) {
@@ -458,7 +491,7 @@ public abstract class AbstractBenchmark {
 
             CSVLineBuilder csv = writer.newCSVLineBuilder(ASCII.HT);
 
-            csv.line("Model", "Solver", "Time", "nbVars", "nbExpr");
+            csv.line("Model", "Solver", "Time", "nbVars", "nbExpr", "density");
 
             BasicLogger.debug();
             BasicLogger.debug("Final Results");
@@ -477,6 +510,7 @@ public abstract class AbstractBenchmark {
                 ModelSize dimensions = modDim.get(model);
                 int nbVars = dimensions != null ? dimensions.nbVariables : 0;
                 int nbExpr = dimensions != null ? dimensions.nbExpressions : 0;
+                double density = dimensions != null ? dimensions.density : Double.NaN;
 
                 BigDecimal expectedValue = configuration.values.get(model);
 
@@ -493,18 +527,18 @@ public abstract class AbstractBenchmark {
 
                     if (state.isOptimal() && !ACCURACY.isDifferent(referenceValue, value)) {
                         BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                        csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr);
+                        csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
                     } else {
                         BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
-                        csv.line(model, solver, "", nbVars, nbExpr);
+                        csv.line(model, solver, "", nbVars, nbExpr, density);
                     }
 
                 } else if (state.isOptimal()) {
                     BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                    csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr);
+                    csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
                 } else {
                     BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
-                    csv.line(model, solver, "", nbVars, nbExpr);
+                    csv.line(model, solver, "", nbVars, nbExpr, density);
                 }
             }
 
@@ -529,7 +563,7 @@ public abstract class AbstractBenchmark {
 
             ReturnValue subResults = future.get(configuration.maxWaitTime, TimeUnit.MILLISECONDS);
 
-            modDim.computeIfAbsent(modelSolverPair.model, k -> new ModelSize(subResults.nbExpressions, subResults.nbVariables));
+            modDim.computeIfAbsent(modelSolverPair.model, k -> new ModelSize(subResults.nbExpressions, subResults.nbVariables, subResults.density));
 
             ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
 
@@ -608,20 +642,28 @@ public abstract class AbstractBenchmark {
         }
     }
 
-    static TimedResult<Result> meassure(final ExpressionsBasedModel model) {
-        return Stopwatch.meassure(() -> AbstractBenchmark.solve(model));
+    static TimedResult<Result> meassure(final ExpressionsBasedModel model, final ExpressionsBasedModel.Integration<?> integration) {
+        return Stopwatch.meassure(() -> AbstractBenchmark.solve(model, integration));
     }
 
-    static Optimisation.Result solve(final ExpressionsBasedModel model) {
+    static Optimisation.Result solve(final ExpressionsBasedModel model, final ExpressionsBasedModel.Integration<?> integration) {
 
         Optimisation.Result result = null;
 
         boolean maximisation = model.getOptimisationSense() == Optimisation.Sense.MAX;
 
         if (maximisation) {
-            result = model.maximise();
+            if (integration != null) {
+                result = model.maximise(integration);
+            } else {
+                result = model.maximise();
+            }
         } else {
-            result = model.minimise();
+            if (integration != null) {
+                result = model.minimise(integration);
+            } else {
+                result = model.minimise();
+            }
         }
 
         return result;

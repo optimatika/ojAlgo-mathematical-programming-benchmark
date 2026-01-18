@@ -32,28 +32,31 @@ import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase.ModelInfo;
 
 public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
-    static final String[] ONE_MODEL = new String[] { "MOSARQP2" };
+    static final String[] ONE_MODEL = { "MOSARQP2" };
 
-    static final String[] SOME_MODELS = new String[] { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2",
-            "DUAL3", "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "GENHS28", "GOULDQP2", "GOULDQP3", "HS118", "HS21", "HS268", "HS35", "HS35MOD", "HS51",
-            "HS52", "HS53", "HS76", "KSIP", "LOTSCHD", "MOSARQP2", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8", "QADLITTL",
-            "QAFIRO", "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGROW15", "QGROW22", "QGROW7",
-            "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPTEST", "QRECIPE", "QSC205", "QSCAGR25", "QSCAGR7", "QSCFXM1", "QSCFXM2", "QSCORPIO",
-            "QSCSD1", "QSCTAP1", "QSEBA", "QSHARE1B", "QSHARE2B", "QSTAIR", "S268", "TAME", "ZECEVIC2" };
+    static final String[] SOME_MODELS = { "CVXQP1_M", "CVXQP1_S", "CVXQP2_M", "CVXQP2_S", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DUAL1", "DUAL2", "DUAL3", "DUAL4",
+            "DUALC1", "DUALC2", "DUALC5", "DUALC8", "GENHS28", "GOULDQP2", "GOULDQP3", "HS118", "HS21", "HS268", "HS35", "HS35MOD", "HS51", "HS52", "HS53",
+            "HS76", "KSIP", "LOTSCHD", "MOSARQP2", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8", "QADLITTL", "QAFIRO",
+            "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGROW15", "QGROW22", "QGROW7", "QISRAEL",
+            "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPTEST", "QRECIPE", "QSC205", "QSCAGR25", "QSCAGR7", "QSCFXM1", "QSCFXM2", "QSCORPIO", "QSCSD1",
+            "QSCTAP1", "QSEBA", "QSHARE1B", "QSHARE2B", "QSTAIR", "S268", "TAME", "ZECEVIC2" };
 
-    static final String[] ALL_MODELS = new String[] { "AUG2D", "AUG2DC", "AUG2DCQP", "AUG2DQP", "AUG3D", "AUG3DC", "AUG3DCQP", "AUG3DQP", "BOYD1", "BOYD2",
-            "CONT-050", "CONT-100", "CONT-101", "CONT-200", "CONT-201", "CONT-300", "CVXQP1_L", "CVXQP1_M", "CVXQP1_S", "CVXQP2_L", "CVXQP2_M", "CVXQP2_S",
-            "CVXQP3_L", "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DTOC3", "DUAL1", "DUAL2", "DUAL3", "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "EXDATA",
-            "GENHS28", "GOULDQP2", "GOULDQP3", "HS21", "HS35", "HS35MOD", "HS51", "HS52", "HS53", "HS76", "HS118", "HS268", "HUES-MOD", "HUESTIS", "KSIP",
-            "LASER", "LISWET1", "LISWET2", "LISWET3", "LISWET4", "LISWET5", "LISWET6", "LISWET7", "LISWET8", "LISWET9", "LISWET10", "LISWET11", "LISWET12",
-            "LOTSCHD", "MOSARQP1", "MOSARQP2", "POWELL20", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMAL4", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8",
-            "Q25FV47", "QADLITTL", "QAFIRO", "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGFRDXPN",
-            "QGROW7", "QGROW15", "QGROW22", "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPILOTNO", "QPTEST", "QRECIPE", "QSC205", "QSCAGR7",
-            "QSCAGR25", "QSCFXM1", "QSCFXM2", "QSCFXM3", "QSCORPIO", "QSCRS8", "QSCSD1", "QSCSD6", "QSCSD8", "QSCTAP1", "QSCTAP2", "QSCTAP3", "QSEBA",
-            "QSHARE1B", "QSHARE2B", "QSHELL", "QSHIP04L", "QSHIP04S", "QSHIP08L", "QSHIP08S", "QSHIP12L", "QSHIP12S", "QSIERRA", "QSTAIR", "QSTANDAT", "S268",
-            "STADAT1", "STADAT2", "STADAT3", "STCQP1", "STCQP2", "TAME", "UBH1", "VALUES", "YAO", "ZECEVIC2" };
+    static final String[] ALL_MODELS = { "AUG2D", "AUG2DC", "AUG2DCQP", "AUG2DQP", "AUG3D", "AUG3DC", "AUG3DCQP", "AUG3DQP", "BOYD1", "BOYD2", "CONT-050",
+            "CONT-100", "CONT-101", "CONT-200", "CONT-201", "CONT-300", "CVXQP1_L", "CVXQP1_M", "CVXQP1_S", "CVXQP2_L", "CVXQP2_M", "CVXQP2_S", "CVXQP3_L",
+            "CVXQP3_M", "CVXQP3_S", "DPKLO1", "DTOC3", "DUAL1", "DUAL2", "DUAL3", "DUAL4", "DUALC1", "DUALC2", "DUALC5", "DUALC8", "EXDATA", "GENHS28",
+            "GOULDQP2", "GOULDQP3", "HS21", "HS35", "HS35MOD", "HS51", "HS52", "HS53", "HS76", "HS118", "HS268", "HUES-MOD", "HUESTIS", "KSIP", "LASER",
+            "LISWET1", "LISWET2", "LISWET3", "LISWET4", "LISWET5", "LISWET6", "LISWET7", "LISWET8", "LISWET9", "LISWET10", "LISWET11", "LISWET12", "LOTSCHD",
+            "MOSARQP1", "MOSARQP2", "POWELL20", "PRIMAL1", "PRIMAL2", "PRIMAL3", "PRIMAL4", "PRIMALC1", "PRIMALC2", "PRIMALC5", "PRIMALC8", "Q25FV47",
+            "QADLITTL", "QAFIRO", "QBANDM", "QBEACONF", "QBORE3D", "QBRANDY", "QCAPRI", "QE226", "QETAMACR", "QFFFFF80", "QFORPLAN", "QGFRDXPN", "QGROW7",
+            "QGROW15", "QGROW22", "QISRAEL", "QPCBLEND", "QPCBOEI1", "QPCBOEI2", "QPCSTAIR", "QPILOTNO", "QPTEST", "QRECIPE", "QSC205", "QSCAGR7", "QSCAGR25",
+            "QSCFXM1", "QSCFXM2", "QSCFXM3", "QSCORPIO", "QSCRS8", "QSCSD1", "QSCSD6", "QSCSD8", "QSCTAP1", "QSCTAP2", "QSCTAP3", "QSEBA", "QSHARE1B",
+            "QSHARE2B", "QSHELL", "QSHIP04L", "QSHIP04S", "QSHIP08L", "QSHIP08S", "QSHIP12L", "QSHIP12S", "QSIERRA", "QSTAIR", "QSTANDAT", "S268", "STADAT1",
+            "STADAT2", "STADAT3", "STCQP1", "STCQP2", "TAME", "UBH1", "VALUES", "YAO", "ZECEVIC2" };
 
-    static final String[] SOLVERS = new String[] { Contender.OJALGO, Contender.CLARABEL4J, Contender.HIPPARCHUS, Contender.CPLEX };
+    //    static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_OSQP, Contender.OJALGO_QP_NULLSPACE_DENSE, Contender.OJALGO_QP_NULLSPACE_SPARSE,
+    //            Contender.OJALGO_QP_PLAIN_DENSE, Contender.OJALGO_QP_PLAIN_SPARSE };
+
+    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL4J, Contender.HIPPARCHUS };
 
     //    static final String[] SOLVERS = new String[] { Contender.OJALGO_DENSE_EXPERIMENTAL, Contender.OJALGO_DENSE_STABLE, Contender.OJALGO_SPARSE_EXPERIMENTAL,
     //            Contender.OJALGO_SPARSE_STABLE };
@@ -64,7 +67,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
-    private static int MAX_DIM = 1_000;
+    private static int MAX_DIM = 5_000;
     private static int MIN_DIM = 1;
 
     static {
@@ -72,8 +75,8 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         for (String mod : ALL_MODELS) {
             ModelInfo modelInfo = CuteMarosMeszarosCase.getModelInfo(mod);
 
-            // if (modelInfo.isPureQP() && modelInfo.M <= MAX_DIM && modelInfo.N <= MAX_DIM && modelInfo.N >= MIN_DIM) {
-            if (modelInfo.isPureQP() && modelInfo.isSmall()) {
+            if (modelInfo.isPureQP() && modelInfo.M <= MAX_DIM && modelInfo.N <= MAX_DIM && modelInfo.N >= MIN_DIM) {
+                // if (modelInfo.isPureQP() && modelInfo.isSmall()) {
                 for (String sol : SOLVERS) {
                     WORK.add(new ModelSolverPair(mod, sol));
                 }
@@ -86,7 +89,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         Configuration configuration = new Configuration();
 
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
-        configuration.refeenceSolver = Contender.CPLEX;
+        configuration.refeenceSolver = Contender.CLARABEL4J;
         configuration.parallelism = Parallelism.ONE;
 
         for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {

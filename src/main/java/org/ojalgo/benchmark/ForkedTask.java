@@ -18,18 +18,19 @@ public abstract class ForkedTask {
 
         private static final long serialVersionUID = 1L;
 
+        public final double density;
         public final int nbExpressions;
         public final int nbVariables;
-
         public final String result;
         public final double time;
 
-        ReturnValue(final String result, final double time, final int nbVariables, final int nbExpressions) {
+        ReturnValue(final String result, final double time, final int nbVariables, final int nbExpressions, final double density) {
             super();
             this.result = result;
             this.time = time;
             this.nbVariables = nbVariables;
             this.nbExpressions = nbExpressions;
+            this.density = density;
         }
 
     }
@@ -41,16 +42,13 @@ public abstract class ForkedTask {
         long instanceTime = Long.MAX_VALUE;
         long remainingTime = maxWaitTime / 2L;
 
-        ExpressionsBasedModel.clearIntegrations();
         Integration<?> integration = AbstractBenchmark.INTEGRATIONS.get(contenderSolverName);
-        if (integration != null) {
-            ExpressionsBasedModel.addIntegration(integration);
-        }
 
         ResultsSet resultsSet = new ResultsSet();
 
         int nbVariables = 0;
         int nbExpressions = 0;
+        double density = Double.NaN;
 
         try (InputStream input = AbstractBenchmark.class.getResourceAsStream(modelFilePath)) {
 
@@ -58,12 +56,13 @@ public abstract class ForkedTask {
 
             nbVariables = parsedMPS.countVariables();
             nbExpressions = parsedMPS.countExpressions();
+            density = parsedMPS.objective().density();
 
             ExpressionsBasedModel simplified = parsedMPS.simplify();
 
             do {
 
-                TimedResult<Result> meassured = AbstractBenchmark.meassure(simplified);
+                TimedResult<Result> meassured = AbstractBenchmark.meassure(simplified, integration);
 
                 instanceTime = meassured.duration.toDurationInMillis();
                 remainingTime -= instanceTime;
@@ -80,11 +79,11 @@ public abstract class ForkedTask {
 
         if (fastest != null) {
 
-            return new ReturnValue(fastest.result.toString(), fastest.duration.measure, nbVariables, nbExpressions);
+            return new ReturnValue(fastest.result.toString(), fastest.duration.measure, nbVariables, nbExpressions, density);
 
         } else {
 
-            return new ReturnValue(null, Double.NaN, nbVariables, nbExpressions);
+            return new ReturnValue(null, Double.NaN, nbVariables, nbExpressions, density);
         }
     }
 
