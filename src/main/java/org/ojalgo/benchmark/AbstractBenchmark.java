@@ -63,6 +63,7 @@ import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.clarabel4j.SolverClarabel4j;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
+import org.ojalgo.optimisation.solver.highs.SolverHiGHS;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
@@ -124,6 +125,7 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP_SPARSE_EXPERIMENTAL = "ojAlgo-QP-S-exp";
         public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
         public static final String ORTOOLS = "ORTools";
+        public static final String HIGHS = "HiGHS";
     }
 
     public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
@@ -353,6 +355,7 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.OJALGO_LP, LinearSolver.INTEGRATION);
 
         INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
+        INTEGRATIONS.put(Contender.HIGHS, SolverHiGHS.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();

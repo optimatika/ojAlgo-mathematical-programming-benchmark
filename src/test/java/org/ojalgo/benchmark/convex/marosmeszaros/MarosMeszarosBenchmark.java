@@ -53,10 +53,10 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
             "QSHARE2B", "QSHELL", "QSHIP04L", "QSHIP04S", "QSHIP08L", "QSHIP08S", "QSHIP12L", "QSHIP12S", "QSIERRA", "QSTAIR", "QSTANDAT", "S268", "STADAT1",
             "STADAT2", "STADAT3", "STCQP1", "STCQP2", "TAME", "UBH1", "VALUES", "YAO", "ZECEVIC2" };
 
-    static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_NULLSPACE_DENSE, Contender.OJALGO_QP_NULLSPACE_SPARSE,
-            Contender.OJALGO_QP_PLAIN_DENSE, Contender.OJALGO_QP_PLAIN_SPARSE };
+    //    static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_NULLSPACE_DENSE, Contender.OJALGO_QP_NULLSPACE_SPARSE,
+    //            Contender.OJALGO_QP_PLAIN_DENSE, Contender.OJALGO_QP_PLAIN_SPARSE };
 
-    // static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL4J, Contender.HIPPARCHUS };
+    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL4J, Contender.HIPPARCHUS, Contender.HIGHS };
 
     //    static final String[] SOLVERS = new String[] { Contender.OJALGO_DENSE_EXPERIMENTAL, Contender.OJALGO_DENSE_STABLE, Contender.OJALGO_SPARSE_EXPERIMENTAL,
     //            Contender.OJALGO_SPARSE_STABLE };
@@ -67,8 +67,8 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
-    private static int MAX_DIM = 10_000;
-    private static int MIN_DIM = 1;
+    private static int MAX_DIM = 1000;
+    private static int MIN_DIM = 100;
 
     static {
 
