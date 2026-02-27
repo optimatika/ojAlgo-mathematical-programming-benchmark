@@ -67,8 +67,8 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
-    private static int MAX_DIM = 1000;
-    private static int MIN_DIM = 100;
+    private static int MAX_DIM = 10_000;
+    private static int MIN_DIM = 1;
 
     static {
 
@@ -90,7 +90,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
         configuration.refeenceSolver = Contender.CLARABEL4J;
-        configuration.parallelism = Parallelism.FOUR;
+        configuration.parallelism = Parallelism.TWO;
 
         for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);
