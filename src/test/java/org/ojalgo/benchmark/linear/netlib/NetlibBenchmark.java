@@ -87,7 +87,7 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
         configuration.pathPrefix = "/optimisation/netlib/";
         configuration.refeenceSolver = Contender.ORTOOLS;
-        configuration.parallelism = Parallelism.TWO;
+        configuration.parallelism = Parallelism.FOUR;
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }
