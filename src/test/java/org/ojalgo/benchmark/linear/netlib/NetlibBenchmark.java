@@ -28,24 +28,31 @@ import java.util.Set;
 
 import org.ojalgo.TestUtils;
 import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.AbstractBenchmark.Contender;
+import org.ojalgo.benchmark.AbstractBenchmark.ModelSolverPair;
 import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineReader;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
-public final class NetlibBenchmark extends AbstractBenchmark {
+public final class NetlibBenchmark extends AbstractNetlibBenchmark {
 
-    static final int MAX_NB_VARS = 10_000;
+    static final Set<String> INVESTIGATE = Set.of();
+    static final Set<String> INVESTIGATE2 = Set.of("25FV47", "BANDM", "BNL1", "BNL2", "CRE-A", "CYCLE", "CZPROB", "D2Q06C", "DEGEN3", "FIT2D", "FORPLAN",
+            "GANGES", "GREENBEA", "GREENBEB", "MAROS", "MAROS-R7", "NESM", "PDS-02", "PEROLD", "PILOT", "PILOT-JA", "PILOT-WE", "PILOT4", "PILOT87", "PILOTNOV",
+            "QAP12", "QAP8", "SCSD8", "TRUSS", "WOOD1P", "WOODW", "AGG2", "GROW22", "SCTAP1", "STAIR", "ISRAEL");
+
+    static final int MAX_NB_VARS = 11_000;
     static final int MIN_NB_VARS = 1;
 
     //    static final String[] SOLVERS = { Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE, Contender.OJALGO_LP_DUAL_SPARSE,
     //            Contender.OJALGO_LP_DUAL_DENSE, Contender.ORTOOLS, Contender.HIPPARCHUS };
 
-    static final String[] SOLVERS = { Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS };
+    // static final String[] SOLVERS = { Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS };
 
-    // static final String[] SOLVERS = { Contender.CPLEX, Contender.OJALGO_DUAL_SPARSE,
-    // Contender.OJALGO_DUAL_DENSE };
+    // static final String[] SOLVERS = { Contender.OJALGO_LP_DUAL_SPARSE };
+    static final String[] SOLVERS = { Contender.HIGHS, Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
@@ -62,7 +69,8 @@ public final class NetlibBenchmark extends AbstractBenchmark {
 
                     ExpressionsBasedModel.Description description = model.describe();
 
-                    if (description.nbVariables >= MIN_NB_VARS && description.nbVariables <= MAX_NB_VARS && description.countConstraints() <= MAX_NB_VARS) {
+                    if ((INVESTIGATE.isEmpty() || INVESTIGATE.contains(line)) && description.nbVariables >= MIN_NB_VARS
+                            && description.nbVariables <= MAX_NB_VARS && description.countConstraints() <= MAX_NB_VARS) {
                         for (String solver : SOLVERS) {
                             WORK.add(new ModelSolverPair(line, solver));
                         }
@@ -86,8 +94,8 @@ public final class NetlibBenchmark extends AbstractBenchmark {
         Configuration configuration = new Configuration();
 
         configuration.pathPrefix = "/optimisation/netlib/";
-        configuration.refeenceSolver = Contender.ORTOOLS;
-        configuration.parallelism = Parallelism.FOUR;
+        configuration.refeenceSolver = null;
+        configuration.parallelism = Parallelism.ONE;
 
         AbstractBenchmark.doBenchmark(WORK, configuration);
     }

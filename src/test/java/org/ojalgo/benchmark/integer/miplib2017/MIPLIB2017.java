@@ -80,7 +80,7 @@ public abstract class MIPLIB2017 {
 
         String line;
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("MIPLIB2017", "benchmark-v2.test.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("optimisation", "miplib2017", "benchmark-v2.test.txt")))) {
 
             while ((line = reader.readLine()) != null) {
                 benchmark.add(line.trim().toLowerCase());
@@ -90,7 +90,7 @@ public abstract class MIPLIB2017 {
             throw new RuntimeException(cause);
         }
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("MIPLIB2017", "easy-v9.test.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("optimisation", "miplib2017", "easy-v9.test.txt")))) {
 
             while ((line = reader.readLine()) != null) {
                 easy.add(line.trim().toLowerCase());
@@ -100,7 +100,7 @@ public abstract class MIPLIB2017 {
             throw new RuntimeException(cause);
         }
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("MIPLIB2017", "miplib2017-v22.solu.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("optimisation", "miplib2017", "miplib2017-v22.solu.txt")))) {
 
             while ((line = reader.readLine()) != null) {
 
@@ -146,7 +146,7 @@ public abstract class MIPLIB2017 {
         BasicLogger.debug("===========================================");
         BasicLogger.debug();
 
-        try (InputStream input = new GZIPInputStream(TestUtils.getResource("MIPLIB2017", fileName))) {
+        try (InputStream input = new GZIPInputStream(TestUtils.getResource("optimisation", "miplib2017", fileName))) {
 
             ExpressionsBasedModel model = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 

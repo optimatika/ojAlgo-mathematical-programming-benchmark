@@ -77,15 +77,24 @@ public abstract class AbstractBenchmark {
 
     public static final class Configuration {
 
+        public Set<String> investigate = Set.of();
+        public int maxProbSize = 10_000;
         /**
          * ms
          */
         public long maxWaitTime = 1_000L * 60L * 5L;
+        public int minProbSize = 1;
         public ParallelismSupplier parallelism = Parallelism.CORES.halve().adjustDown();
         public String pathPrefix;
         public String pathSuffix = ".SIF";
         public String refeenceSolver = Contender.ORTOOLS;
+        public final String[] solvers;
         public final Map<String, BigDecimal> values = new HashMap<>();
+
+        public Configuration(final String... solvers) {
+            super();
+            this.solvers = solvers;
+        }
 
         public String path(final String modelName) {
             return pathPrefix + modelName + pathSuffix;
@@ -98,6 +107,7 @@ public abstract class AbstractBenchmark {
         public static final String ACM = "ACM";
         public static final String CLARABEL4J = "Clarabel4j";
         public static final String CPLEX = "CPLEX";
+        public static final String HIGHS = "HiGHS";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
         public static final String OJALGO_LP = "ojAlgo-LP";
@@ -107,6 +117,7 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_LP_PRIM_SPARSE = "ojAlgo-LP-prim-S";
         public static final String OJALGO_QP = "ojAlgo-QP";
         public static final String OJALGO_QP_ADMM = "ojAlgo-QP-ADMM";
+        public static final String OJALGO_QP_ASET = "ojAlgo-QP-ASET";
         public static final String OJALGO_QP_CG_ID = "ojAlgo-QP-CG-id";
         public static final String OJALGO_QP_CG_JACOBI = "ojAlgo-QP-CG-jacobi";
         public static final String OJALGO_QP_CG_SSORP = "ojAlgo-QP-CG-ssorp";
@@ -124,8 +135,7 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QP-QMR-ssorp";
         public static final String OJALGO_QP_SPARSE_EXPERIMENTAL = "ojAlgo-QP-S-exp";
         public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
-        public static final String ORTOOLS = "ORTools";
-        public static final String HIGHS = "HiGHS";
+        public static final String ORTOOLS = "OR-Tools";
     }
 
     public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
@@ -430,9 +440,14 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
         INTEGRATIONS.put(Contender.OJALGO_QP, ConvexSolver.INTEGRATION);
+
         INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ADMM);
         }));
+        INTEGRATIONS.put(Contender.OJALGO_QP_ASET, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.convex().algorithm(Algorithm.ACTIVE_SET);
+        }));
+
         INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_DENSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.TRUE);

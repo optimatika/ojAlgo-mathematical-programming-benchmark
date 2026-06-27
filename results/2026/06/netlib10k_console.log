@@ -1,0 +1,849 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.google.ortools.Loader in an unnamed module (file:/Users/apete/.m2/repository/com/google/ortools/ortools-java/9.15.6755/ortools-java-9.15.6755.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 388 model/solver pairs remaining 2026-06-26T19:06:21.423226Z
+-----------------------------------------------------------------------------
+TRUSS                 Hipparchus            FAILED                TIMEOUT               
+CYCLE                 Hipparchus            FAILED                TIMEOUT               
+PILOT-JA              Hipparchus            UNBOUNDED             UNSTABLE              
+GANGES                Hipparchus            INFEASIBLE            UNSTABLE              
+GROW15                Hipparchus            FAILED                TIMEOUT               
+GROW7                 Hipparchus            FAILED                TIMEOUT               
+80BAU3B               Hipparchus            FAILED                TIMEOUT               
+PILOT87               Hipparchus            FAILED                TIMEOUT               
+SCFXM3                Hipparchus            FAILED                TIMEOUT               
+TUFF                  Hipparchus            FAILED                TIMEOUT               
+SCFXM2                Hipparchus            FAILED                TIMEOUT               
+MAROS                 Hipparchus            FAILED                TIMEOUT               
+QAP12                 Hipparchus            INFEASIBLE            UNSTABLE              
+BOEING1               Hipparchus            UNBOUNDED             UNSTABLE              
+FINNIS                Hipparchus            FAILED                TIMEOUT               
+GREENBEA              Hipparchus            FAILED                TIMEOUT               
+25FV47                Hipparchus            FAILED                TIMEOUT               
+BNL2                  Hipparchus            FAILED                TIMEOUT               
+FFFFF800              Hipparchus            FAILED                TIMEOUT               
+GREENBEB              Hipparchus            FAILED                TIMEOUT               
+BORE3D                Hipparchus            FAILED                TIMEOUT               
+BNL1                  Hipparchus            INFEASIBLE            UNSTABLE              
+D6CUBE                Hipparchus            FAILED                TIMEOUT               
+STOCFOR2              Hipparchus            FAILED                TIMEOUT               
+WOODW                 Hipparchus            FAILED                TIMEOUT               
+PILOTNOV              Hipparchus            FAILED                TIMEOUT               
+BANDM                 Hipparchus            INFEASIBLE            UNSTABLE              
+PILOT-WE              Hipparchus            FAILED                TIMEOUT               
+SCTAP3                Hipparchus            FAILED                TIMEOUT               
+WOOD1P                Hipparchus            FAILED                TIMEOUT               
+SCAGR25               Hipparchus            FAILED                TIMEOUT               
+SCTAP2                Hipparchus            FAILED                TIMEOUT               
+QAP8                  Hipparchus            FAILED                TIMEOUT               
+D2Q06C                Hipparchus            FAILED                TIMEOUT               
+PEROLD                Hipparchus            FAILED                TIMEOUT               
+PILOT4                Hipparchus            UNBOUNDED             UNSTABLE              
+MODSZK1               Hipparchus            UNBOUNDED             UNSTABLE              
+SCFXM1                Hipparchus            FAILED                TIMEOUT               
+STAIR                 Hipparchus            FAILED                TIMEOUT               
+PILOT                 Hipparchus            FAILED                TIMEOUT               
+SCSD6                 Hipparchus            UNBOUNDED             UNSTABLE              
+GREENBEA              ojAlgo-LP             UNBOUNDED             UNSTABLE              
+SEBA                  Hipparchus            FAILED                TIMEOUT               
+
+Iteration 2 with 345 model/solver pairs remaining 2026-06-26T22:39:11.655506Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 345 model/solver pairs remaining 2026-06-26T23:01:59.129438Z
+-----------------------------------------------------------------------------
+CRE-C                 Hipparchus            Time stable           59560.158459ms        2.527511614088045E7   
+LOTFI                 Hipparchus            Time stable           19.687458ms           -25.26470606187983    
+GFRD-PNC              Hipparchus            Time stable           684.638666ms          6902235.999548814     
+SCRS8                 HiGHS                 Time stable           4.024084ms            904.2969538007912     
+BEACONFD              HiGHS                 Time stable           1.230459ms            33592.4858072         
+ISRAEL                ojAlgo-LP             Time stable           0.907917ms            -896644.8218630457    
+ISRAEL                OR-Tools              Time stable           1.088208ms            -896644.8218630457    
+GROW22                Hipparchus            Time stable           1124.915333ms         0.0                   
+SHARE1B               HiGHS                 Time stable           1.512875ms            -76589.31857918581    
+SCSD8                 HiGHS                 Time stable           18.698792ms           904.9999999254644     
+VTP-BASE              HiGHS                 Time stable           0.553125ms            129831.46246136136    
+BRANDY                HiGHS                 Time stable           2.25625ms             1518.5098964881272    
+STANDATA              Hipparchus            Time stable           147.134667ms          1257.6994999999995    
+SCSD1                 OR-Tools              Time stable           1.301958ms            8.666666674333346     
+CYCLE                 OR-Tools              Time stable           18.273417ms           -5.2263930248941      
+GANGES                OR-Tools              Time stable           5.753ms               -109585.7361292784    
+SC105                 HiGHS                 Time stable           0.614208ms            -52.20206121170722    
+STANDATA              OR-Tools              Time stable           1.709292ms            1257.6995             
+SHIP12S               Hipparchus            Time stable           586.258292ms          1489236.1344061294    
+CRE-A                 Hipparchus            Time stable           78328.454625ms        2.359540706097186E7   
+GFRD-PNC              ojAlgo-LP             Time stable           16.110333ms           6902235.999548808     
+PILOT-JA              OR-Tools              Time stable           50.358084ms           -6113.1364655813495   
+PILOT87               ojAlgo-LP             Time stable           21046.967583ms        2.0805406915068815E15 
+PILOT-WE              HiGHS                 Time stable           63.652292ms           -2720107.5328449635   
+PILOT87               OR-Tools              Time stable           1099.643083ms         301.7103473330999     
+FIT1P                 OR-Tools              Time stable           8.653208ms            9146.378092420928     
+SHARE2B               HiGHS                 Time stable           0.889458ms            -415.7322407414194    
+BOEING2               HiGHS                 Time stable           1.214375ms            -315.0187280152029    
+PILOT-JA              ojAlgo-LP             Time stable           738.797292ms          -6113.13697841436     
+GFRD-PNC              OR-Tools              Time stable           4.219792ms            6902235.9995488105    
+TRUSS                 OR-Tools              Time stable           130.333875ms          458815.84718561685    
+CRE-C                 OR-Tools              Time stable           50.265333ms           2.5275116140880212E7  
+D2Q06C                HiGHS                 Time stable           324.482209ms          122784.2108141895     
+MAROS                 HiGHS                 Time stable           17.404833ms           -58063.743701125895   
+GANGES                ojAlgo-LP             Time stable           53.221625ms           -109585.73612927801   
+CAPRI                 HiGHS                 Time stable           1.926041ms            2690.0129137681606    
+CYCLE                 ojAlgo-LP             Time stable           501.846167ms          -5.226393024894798    
+SCSD6                 ojAlgo-LP             Time stable           7.333583ms            50.500000078262424    
+SHIP12S               OR-Tools              Time stable           3.91925ms             1489236.1344061291    
+TUFF                  OR-Tools              Time stable           1.713042ms            0.2921477650936127    
+GROW22                ojAlgo-LP             Time stable           16.786875ms           -1.60834336482563E8   
+GROW7                 OR-Tools              Time stable           2.011333ms            -4.7787811814711526E7 
+BANDM                 HiGHS                 Time stable           4.312833ms            -158.62801845012035   
+SHARE2B               Hipparchus            Time stable           1.847958ms            -415.7322407414181    
+SCSD6                 OR-Tools              Time stable           2.941542ms            50.50000007714429     
+D6CUBE                OR-Tools              Time stable           279.814709ms          315.49166666667315    
+CRE-C                 ojAlgo-LP             Time stable           196.73475ms           2.5275116140880365E7  
+CRE-A                 OR-Tools              Time stable           56.3045ms             2.359540706097161E7   
+SCRS8                 ojAlgo-LP             Time stable           18.119875ms           904.2969538007895     
+STOCFOR2              ojAlgo-LP             Time stable           946.4765ms            -39024.408537882024   
+BEACONFD              ojAlgo-LP             Time stable           0.569291ms            33592.48580719999     
+TRUSS                 ojAlgo-LP             Time stable           2336.90775ms          6084219.028746713     
+ETAMACRO              Hipparchus            Time stable           286.701583ms          -755.7152322722827    
+LOTFI                 ojAlgo-LP             Time stable           1.070208ms            -25.26470606188001    
+SHARE1B               OR-Tools              Time stable           1.321208ms            -76589.31857918568    
+SCSD1                 Hipparchus            Time stable           107.158292ms          8.666666674333563     
+SCSD8                 ojAlgo-LP             Time stable           97.095125ms           904.9999999254686     
+MAROS-R7              Hipparchus            Time stable           202397.071417ms       1497185.1664796434    
+WOODW                 ojAlgo-LP             Time stable           279.641166ms          1.30447633308422      
+RECIPELP              Hipparchus            Time stable           3.644917ms            -266.616              
+KB2                   Hipparchus            Time stable           0.65075ms             -1749.9001299061822   
+FORPLAN               OR-Tools              Time stable           2.027542ms            -664.2189612722033    
+FIT1P                 Hipparchus            Time stable           9139.057541ms         9146.400446359658     
+DEGEN2                HiGHS                 Time stable           8.763542ms            -1435.178             
+BNL2                  OR-Tools              Time stable           41.597541ms           1811.2365403585452    
+ETAMACRO              ojAlgo-LP             Time stable           10.511333ms           -755.7152330760083    
+D2Q06C                OR-Tools              Time stable           284.8845ms            122784.21081418857    
+MAROS-R7              ojAlgo-LP             Time stable           5037.909208ms         1497185.1664796437    
+CAPRI                 Hipparchus            Time stable           296.747833ms          2690.01291376841      
+CYCLE                 HiGHS                 Time stable           67.071ms              -5.226393024894101    
+BOEING2               OR-Tools              Time stable           0.674375ms            -315.01872801520295   
+QAP12                 ojAlgo-LP             Time stable           5124.863375ms         0.0                   
+QAP12                 OR-Tools              Time stable           6503.119875ms         522.8943505591718     
+FFFFF800              ojAlgo-LP             Time stable           21.389625ms           555679.5648174965     
+PILOT-WE              OR-Tools              Time stable           28.629042ms           -2720107.532844969    
+BNL1                  OR-Tools              Time stable           16.190583ms           1977.629561522887     
+QAP8                  HiGHS                 Time stable           321.349083ms          203.5000000000163     
+BEACONFD              OR-Tools              Time stable           0.560292ms            33592.4858072         
+BORE3D                OR-Tools              Time stable           0.519375ms            1373.0803942084929    
+E226                  HiGHS                 Time stable           3.526667ms            -11.63892906637049    
+PILOTNOV              ojAlgo-LP             Time stable           554.9115ms            -4497.535897453836    
+MAROS-R7              OR-Tools              Time stable           320.687667ms          1497185.1664800502    
+GFRD-PNC              HiGHS                 Time stable           3.170333ms            6902235.99954881      
+BRANDY                Hipparchus            Time stable           29.624625ms           1518.5098964878891    
+CRE-C                 HiGHS                 Time stable           27.823459ms           2.5275116140880216E7  
+STANDATA              HiGHS                 Time stable           2.536083ms            1257.6994999999997    
+STANDMPS              ojAlgo-LP             Time stable           2.817458ms            1406.017499999999     
+SCSD1                 HiGHS                 Time stable           1.105167ms            8.666666674333346     
+PILOT4                OR-Tools              Time stable           10.088334ms           -2581.1392588838853   
+SHIP12S               HiGHS                 Time stable           4.901666ms            1489236.1344061291    
+BORE3D                ojAlgo-LP             Time stable           0.577458ms            1373.0803942084924    
+MAROS                 OR-Tools              Time stable           11.127542ms           -58063.74370112621    
+FINNIS                OR-Tools              Time stable           2.702708ms            172791.06559561158    
+CZPROB                HiGHS                 Time stable           16.557083ms           2185196.6988565773    
+FORPLAN               Hipparchus            Time stable           60.278709ms           -664.2189612721944    
+BRANDY                OR-Tools              Time stable           1.576ms               1518.509896488128     
+SCORPION              OR-Tools              Time stable           1.244792ms            1878.1248227381063    
+BNL1                  ojAlgo-LP             Time stable           57.333125ms           1977.6295615175254    
+SHIP04S               Hipparchus            Time stable           154.547083ms          1798714.7004453922    
+SHIP12L               Hipparchus            Time stable           2462.289875ms         1470187.919329265     
+SIERRA                OR-Tools              Time stable           5.854125ms            1.539436218363193E7   
+ETAMACRO              OR-Tools              Time stable           4.110209ms            -755.7152333505863    
+FIT1P                 HiGHS                 Time stable           16.494125ms           9146.378092420926     
+SHARE1B               Hipparchus            Time stable           13.887375ms           -76589.31857918517    
+BANDM                 OR-Tools              Time stable           2.627791ms            -158.62801845012066   
+PEROLD                HiGHS                 Time stable           21.360708ms           -9380.75527823519     
+FINNIS                ojAlgo-LP             Time stable           9.321416ms            172791.06559561152    
+BOEING1               OR-Tools              Time stable           3.513208ms            -335.2135675071269    
+STAIR                 ojAlgo-LP             Time stable           11.921709ms           -251.2669511929636    
+GROW7                 HiGHS                 Time stable           3.99ms                -4.7787811814711496E7 
+BNL2                  ojAlgo-LP             Time stable           1646.682958ms         1811.2365403585347    
+NESM                  ojAlgo-LP             Time stable           679.774792ms          1.4076036487562725E7  
+AGG3                  Hipparchus            Time stable           21.313625ms           1.0312115935089234E7  
+PILOT4                HiGHS                 Time stable           16.784375ms           -2581.139258883881    
+STOCFOR1              HiGHS                 Time stable           0.633541ms            -41131.9762194364     
+FIT1P                 ojAlgo-LP             Time stable           257.387875ms          9146.378092421093     
+STANDMPS              HiGHS                 Time stable           3.10175ms             1406.0175             
+WOODW                 HiGHS                 Time stable           33.553792ms           1.30447633308422      
+SHIP12S               ojAlgo-LP             Time stable           8.550041ms            1489236.1344061291    
+BLEND                 HiGHS                 Time stable           0.758833ms            -30.81214984582824    
+BRANDY                ojAlgo-LP             Time stable           2.268167ms            1518.5098964881272    
+AGG2                  Hipparchus            Time stable           19.87825ms            -2.0239252355977103E7 
+BLEND                 Hipparchus            Time stable           2.0155ms              -30.812149845828362   
+AGG                   OR-Tools              Time stable           1.006583ms            -3.5991767286576465E7 
+STANDATA              ojAlgo-LP             Time stable           1.252083ms            1257.6994999999997    
+STOCFOR2              HiGHS                 Time stable           12.640417ms           -39024.40853788203    
+BOEING1               ojAlgo-LP             Time stable           10.9555ms             -335.2135675071275    
+QAP8                  ojAlgo-LP             Time stable           1289.828791ms         319.7135448055865     
+PILOTNOV              HiGHS                 Time stable           34.164792ms           -4497.276188218871    
+STOCFOR1              Hipparchus            Time stable           1.943334ms            -41131.976219436525   
+SIERRA                Hipparchus            Time stable           5013.206042ms         1.5394362183631983E7  
+WOODW                 OR-Tools              Time stable           23.114125ms           1.30447633308422      
+PILOTNOV              OR-Tools              Time stable           27.038666ms           -4497.27618821887     
+BNL2                  HiGHS                 Time stable           22.814542ms           1811.2365403585452    
+SHIP12L               OR-Tools              Time stable           8.096333ms            1470187.919329265     
+BOEING2               ojAlgo-LP             Time stable           0.565667ms            -315.0187280152027    
+FFFFF800              OR-Tools              Time stable           3.150125ms            555679.5648174962     
+MAROS                 ojAlgo-LP             Time stable           75.110417ms           -58063.74370112706    
+STANDMPS              OR-Tools              Time stable           2.709ms               1406.0175             
+D2Q06C                ojAlgo-LP             Time stable           7811.214042ms         1.6862886247114576E29 
+GANGES                HiGHS                 Time stable           6.631084ms            -109585.73612927798   
+PILOT4                ojAlgo-LP             Time stable           57.522ms              -2581.139258937271    
+FFFFF800              HiGHS                 Time stable           5.823875ms            555679.5648174962     
+BNL1                  HiGHS                 Time stable           12.369833ms           1977.6295615228855    
+BORE3D                HiGHS                 Time stable           0.971167ms            1373.0803942084929    
+SCSD1                 ojAlgo-LP             Time stable           0.898042ms            8.666666674333346     
+SHIP04S               OR-Tools              Time stable           2.105ms               1798714.7004453924    
+GROW7                 ojAlgo-LP             Time stable           1.200458ms            -4.7787811814711526E7 
+STOCFOR2              OR-Tools              Time stable           11.082875ms           -39024.40853788204    
+SCORPION              Hipparchus            Time stable           31.52725ms            1878.1248227381047    
+SCAGR7                HiGHS                 Time stable           0.672ms               -2331389.8243309837   
+SCTAP2                OR-Tools              Time stable           4.276708ms            1724.807142857143     
+STAIR                 HiGHS                 Time stable           6.711542ms            -251.2669511929635    
+SCTAP3                ojAlgo-LP             Time stable           86.410458ms           1424.0000000000048    
+SCAGR25               OR-Tools              Time stable           2.244959ms            -1.4753433060768519E7 
+SCFXM1                HiGHS                 Time stable           3.389208ms            18416.759028348944    
+GREENBEB              HiGHS                 Time stable           167.954667ms          -4302260.261206587    
+MODSZK1               HiGHS                 Time stable           7.118667ms            320.61972906463194    
+SCTAP1                Hipparchus            Time stable           90.453834ms           1412.2499999875893    
+FINNIS                HiGHS                 Time stable           2.132666ms            172791.06559561158    
+SHIP12L               HiGHS                 Time stable           10.995208ms           1470187.919329265     
+PEROLD                ojAlgo-LP             Time stable           246.020208ms          -9380.755278628843    
+E226                  OR-Tools              Time stable           2.11925ms             -11.638929066370544   
+SCTAP3                OR-Tools              Time stable           7.513042ms            1424.0000000000002    
+SHIP04S               HiGHS                 Time stable           2.561292ms            1798714.700445392     
+PDS-02                HiGHS                 Time stable           33.239292ms           2.885786201E10        
+PILOT                 HiGHS                 Time stable           398.000625ms          -557.4897292840628    
+SHIP04L               OR-Tools              Time stable           3.061542ms            1793324.5379703557    
+GREENBEA              HiGHS                 Time stable           104.633333ms          -7.255524812984602E7  
+E226                  Hipparchus            Time stable           28.203583ms           -11.6389290663644     
+CZPROB                ojAlgo-LP             Time stable           49.019917ms           2185196.698856594     
+DEGEN3                Hipparchus            Time stable           45616.697667ms        -987.294000000004     
+AGG                   ojAlgo-LP             Time stable           1.049167ms            -3.599176728657634E7  
+DEGEN3                OR-Tools              Time stable           88.858666ms           -987.2940000000001    
+SCTAP1                ojAlgo-LP             Time stable           2.429ms               1412.2499999999998    
+QAP12                 HiGHS                 Time stable           133843.541459ms       522.8943505605733     
+AGG2                  OR-Tools              Time stable           1.940959ms            -2.0239252355977107E7 
+SCFXM3                HiGHS                 Time stable           13.87025ms            54901.25454975145     
+AGG3                  ojAlgo-LP             Time stable           2.125667ms            1.0312115935089208E7  
+ETAMACRO              HiGHS                 Time stable           5.383625ms            -755.7152333005275    
+DEGEN2                Hipparchus            Time stable           505.218958ms          -1435.1779999999978   
+DEGEN3                ojAlgo-LP             Time stable           793.755958ms          -987.2940000000044    
+E226                  ojAlgo-LP             Time stable           3.63775ms             -11.638929066371311   
+PEROLD                OR-Tools              Time stable           23.145375ms           -9380.755278235429    
+RECIPELP              HiGHS                 Time stable           0.579833ms            -266.616              
+SCAGR25               ojAlgo-LP             Time stable           12.230333ms           -1.4753433060768535E7 
+FIT1D                 Hipparchus            Time stable           632.04425ms           -9146.378092420824    
+SHIP08S               Hipparchus            Time stable           399.844ms             1920098.2105346203    
+SCTAP2                ojAlgo-LP             Time stable           36.435417ms           1724.8071428571445    
+FIT1D                 ojAlgo-LP             Time stable           8.069791ms            -9146.378092420924    
+AGG2                  ojAlgo-LP             Time stable           1.973416ms            -2.0239252355977103E7 
+SCORPION              HiGHS                 Time stable           1.278792ms            1878.1248227381063    
+AGG3                  OR-Tools              Time stable           2.0435ms              1.0312115935089221E7  
+SCFXM2                HiGHS                 Time stable           8.1435ms              36660.261564998815    
+STANDGUB              OR-Tools              Time stable           1.690125ms            1257.6995             
+DEGEN2                ojAlgo-LP             Time stable           20.520459ms           -1435.178000000002    
+QAP8                  OR-Tools              Time stable           82.255708ms           203.50000000000878    
+SEBA                  HiGHS                 Time stable           1.856833ms            15711.6               
+CZPROB                OR-Tools              Time stable           11.585958ms           2185196.6988565777    
+MAROS-R7              HiGHS                 Time stable           309.097166ms          1497185.166479644     
+AGG                   Hipparchus            Time stable           7.887042ms            -3.599176728657652E7  
+D6CUBE                HiGHS                 Time stable           62.558834ms           315.4916666666715     
+SEBA                  ojAlgo-LP             Time stable           15.307125ms           15711.599999999908    
+SCORPION              ojAlgo-LP             Time stable           1.346416ms            1878.1248227381075    
+SHELL                 OR-Tools              Time stable           3.637042ms            1.208825346E9         
+KEN-07                Hipparchus            Time stable           27020.428834ms        -6.795204433816868E8  
+AGG2                  HiGHS                 Time stable           2.5965ms              -2.0239252355977114E7 
+NESM                  OR-Tools              Time stable           29.374959ms           1.4076036487562722E7  
+MODSZK1               ojAlgo-LP             Time stable           130.451625ms          320.61972906276804    
+DEGEN2                OR-Tools              Time stable           7.693666ms            -1435.178             
+SHIP04S               ojAlgo-LP             Time stable           3.562125ms            1798714.7004453917    
+25FV47                HiGHS                 Time stable           51.074083ms           5501.845888286739     
+SHIP12L               ojAlgo-LP             Time stable           100.643625ms          1470187.9193292647    
+AGG3                  HiGHS                 Time stable           2.683667ms            1.0312115935089221E7  
+FORPLAN               HiGHS                 Time stable           3.70275ms             -664.2189612722043    
+SHIP08S               OR-Tools              Time stable           3.649542ms            1920098.2105346196    
+SCTAP2                HiGHS                 Time stable           5.602917ms            1724.8071428571432    
+FIT1D                 OR-Tools              Time stable           9.090125ms            -9146.37809242093     
+GREENBEB              OR-Tools              Time stable           107.915292ms          -4302260.261206587    
+PDS-02                ojAlgo-LP             Time stable           1747.031709ms         2.885786201E10        
+CZPROB                Hipparchus            Time stable           3211.020209ms         2185196.6988565763    
+SCTAP1                OR-Tools              Time stable           1.224ms               1412.2499999999995    
+FIT1D                 HiGHS                 Time stable           5.004584ms            -9146.37809242092     
+SC205                 ojAlgo-LP             Time stable           1.959792ms            -52.20206121170699    
+SCTAP3                HiGHS                 Time stable           7.3915ms              1424.0000000000005    
+SHELL                 Hipparchus            Time stable           416.581125ms          1.208825346E9         
+NESM                  HiGHS                 Time stable           91.660083ms           1.4076036487562735E7  
+CRE-A                 HiGHS                 Time stable           29.139917ms           2.3595407060971607E7  
+25FV47                OR-Tools              Time stable           46.492083ms           5501.84588828675      
+GREENBEA              OR-Tools              Time stable           175.1365ms            -7.255524812984598E7  
+BOEING2               Hipparchus            Time stable           36.810292ms           -315.0187280153995    
+SHIP04L               HiGHS                 Time stable           3.363417ms            1793324.5379703555    
+SCRS8                 Hipparchus            Time stable           257.696041ms          904.2969538007914     
+LOTFI                 HiGHS                 Time stable           1.176208ms            -25.26470606187999    
+SHIP08L               Hipparchus            Time stable           1420.076667ms         1909055.2113891307    
+BANDM                 ojAlgo-LP             Time stable           8.694041ms            -158.6280184501143    
+FORPLAN               ojAlgo-LP             Time stable           3.750333ms            -664.2189612721251    
+TRUSS                 HiGHS                 Time stable           1255.420875ms         458815.8471856168     
+SCSD8                 Hipparchus            Time stable           4462.439334ms         904.9999999255086     
+80BAU3B               ojAlgo-LP             Time stable           3740.111083ms         987224.1924090902     
+DEGEN3                HiGHS                 Time stable           74.335416ms           -987.294              
+SHIP08S               HiGHS                 Time stable           4.043792ms            1920098.2105346196    
+PILOT-JA              HiGHS                 Time stable           39.666667ms           -6113.136465581353    
+SCFXM2                OR-Tools              Time stable           6.988083ms            36660.261564998815    
+STANDGUB              HiGHS                 Time stable           2.295458ms            1257.6994999999997    
+PDS-02                OR-Tools              Time stable           17.889792ms           2.885786201E10        
+PILOT-WE              ojAlgo-LP             Time stable           582.082958ms          -2720107.5323666423   
+CAPRI                 OR-Tools              Time stable           1.695459ms            2690.012913768163     
+SHIP08L               OR-Tools              Time stable           7.204459ms            1909055.2113891316    
+VTP-BASE              Hipparchus            Time stable           15.653792ms           129831.46246136018    
+SC105                 Hipparchus            Time stable           1.59025ms             -52.2020612117072     
+SCTAP1                HiGHS                 Time stable           2.850417ms            1412.2499999999998    
+GROW22                HiGHS                 Time stable           31.743041ms           -1.6083433648256296E8 
+PDS-02                Hipparchus            Time stable           20215.361417ms        2.885786201E10        
+STAIR                 OR-Tools              Time stable           5.543625ms            -251.2669511929625    
+SCAGR7                Hipparchus            Time stable           6.51375ms             -2331389.8243309823   
+SCFXM3                OR-Tools              Time stable           11.637916ms           54901.254549751444    
+PILOT                 ojAlgo-LP             Time stable           6656.008834ms         -555.3426753446098    
+ISRAEL                HiGHS                 Time stable           1.622791ms            -896644.8218630456    
+SIERRA                ojAlgo-LP             Time stable           16.945208ms           1.539436218363193E7   
+SHIP08L               ojAlgo-LP             Time stable           15.740583ms           1909055.2113891311    
+MODSZK1               OR-Tools              Time stable           8.500834ms            320.6197290631776     
+ADLITTLE              Hipparchus            Time stable           1.217375ms            225494.96316238042    
+GREENBEB              ojAlgo-LP             Time stable           9811.771458ms         9.980848266191272E24  
+TUFF                  HiGHS                 Time stable           3.931791ms            0.2921477650936128    
+SHELL                 HiGHS                 Time stable           6.117125ms            1.208825346E9         
+80BAU3B               OR-Tools              Time stable           81.864917ms           987224.1924090903     
+SCSD8                 OR-Tools              Time stable           11.173417ms           904.9999999254643     
+D6CUBE                ojAlgo-LP             Time stable           194.7465ms            315.4916666666686     
+WOOD1P                ojAlgo-LP             Time stable           103.417291ms          1.44290241157341      
+NESM                  Hipparchus            Time stable           127989.346292ms       1.4076036487562226E7  
+SCRS8                 OR-Tools              Time stable           5.028667ms            904.2969538007912     
+CRE-A                 ojAlgo-LP             Time stable           420.907917ms          2.3595407064427786E7  
+SCFXM1                OR-Tools              Time stable           2.67675ms             18416.759028348937    
+KEN-07                ojAlgo-LP             Time stable           79.678708ms           -6.79520443381687E8   
+PILOT87               HiGHS                 Time stable           1550.655208ms         301.71034733310984    
+GROW15                HiGHS                 Time stable           15.978167ms           -1.0687094129357532E8 
+TUFF                  ojAlgo-LP             Time stable           6.857ms               0.2921477650935935    
+SC205                 Hipparchus            Time stable           8.529875ms            -52.20206121170723    
+SC205                 HiGHS                 Time stable           0.960208ms            -52.20206121170724    
+80BAU3B               HiGHS                 Time stable           59.500791ms           987224.1924090901     
+SEBA                  OR-Tools              Time stable           0.956667ms            15711.6               
+SHARE1B               ojAlgo-LP             Time stable           1.05125ms             -76589.31857918581    
+SHIP08S               ojAlgo-LP             Time stable           5.921542ms            1920098.210534619     
+KEN-07                OR-Tools              Time stable           10.86925ms            -6.79520443381687E8   
+WOOD1P                OR-Tools              Time stable           17.956625ms           1.44290241157341      
+SCFXM1                ojAlgo-LP             Time stable           3.830834ms            18416.75902834894     
+25FV47                ojAlgo-LP             Time stable           594.54375ms           5501.84588828774      
+SC205                 OR-Tools              Time stable           0.986ms               -52.2020612117072     
+ISRAEL                Hipparchus            Time stable           5.648792ms            -896644.8218630459    
+WOOD1P                HiGHS                 Time stable           37.514667ms           1.44290241157341      
+CAPRI                 ojAlgo-LP             Time stable           2.047083ms            2690.0129137681556    
+STANDGUB              ojAlgo-LP             Time stable           1.192292ms            1257.6994999999997    
+ADLITTLE              HiGHS                 Time stable           0.761167ms            225494.96316238042    
+LOTFI                 OR-Tools              Time stable           0.548ms               -25.26470606188001    
+SHELL                 ojAlgo-LP             Time stable           7.115625ms            1.208825346E9         
+SCFXM2                ojAlgo-LP             Time stable           18.159084ms           36660.261564998815    
+GROW15                ojAlgo-LP             Time stable           6.847667ms            -1.0687094129357533E8 
+KEN-07                HiGHS                 Time stable           11.169917ms           -6.79520443381687E8   
+SHIP08L               HiGHS                 Time stable           7.659792ms            1909055.2113891314    
+SCAGR25               HiGHS                 Time stable           3.298916ms            -1.4753433060768522E7 
+SCFXM3                ojAlgo-LP             Time stable           66.290667ms           54901.25454975111     
+GROW22                OR-Tools              Time stable           12.574042ms           -1.6083433648256302E8 
+PILOT                 OR-Tools              Time stable           361.988417ms          -557.4897292730852    
+
+Iteration 4 with 41 model/solver pairs remaining 2026-06-26T23:24:49.359761Z
+-----------------------------------------------------------------------------
+BOEING1               HiGHS                 Time stable           5.377334ms            -335.2135675071267    
+GROW15                OR-Tools              Time stable           6.460708ms            -1.0687094129357532E8 
+STANDMPS              Hipparchus            Time stable           339.401542ms          1406.0174999999986    
+SHIP04L               Hipparchus            Time stable           317.227167ms          1793324.5379703552    
+STANDGUB              Hipparchus            Time stable           161.030833ms          1257.6994999999995    
+
+Iteration 5 with 36 model/solver pairs remaining 2026-06-26T23:24:52.583141Z
+-----------------------------------------------------------------------------
+SCSD6                 HiGHS                 Time stable           2.902125ms            50.50000007826231     
+BEACONFD              Hipparchus            Time stable           8.95275ms             33592.485807199955    
+AGG                   HiGHS                 Time stable           1.254958ms            -3.599176728657651E7  
+SHIP04L               ojAlgo-LP             Time stable           6.181333ms            1793324.5379703555    
+SIERRA                HiGHS                 Time stable           6.469ms               1.5394362183631929E7  
+
+Iteration 6 with 31 model/solver pairs remaining 2026-06-26T23:24:52.819710Z
+-----------------------------------------------------------------------------
+
+Iteration 7 with 31 model/solver pairs remaining 2026-06-26T23:24:52.958479Z
+-----------------------------------------------------------------------------
+
+Iteration 8 with 31 model/solver pairs remaining 2026-06-26T23:24:53.098320Z
+-----------------------------------------------------------------------------
+
+Iteration 9 with 31 model/solver pairs remaining 2026-06-26T23:24:53.236369Z
+-----------------------------------------------------------------------------
+
+Iteration 10 with 31 model/solver pairs remaining 2026-06-26T23:24:53.379872Z
+-----------------------------------------------------------------------------
+
+Iteration 11 with 31 model/solver pairs remaining 2026-06-26T23:24:53.520180Z
+-----------------------------------------------------------------------------
+
+Iteration 12 with 31 model/solver pairs remaining 2026-06-26T23:24:53.661943Z
+-----------------------------------------------------------------------------
+
+Iteration 13 with 31 model/solver pairs remaining 2026-06-26T23:24:53.803205Z
+-----------------------------------------------------------------------------
+
+Iteration 14 with 31 model/solver pairs remaining 2026-06-26T23:24:53.946061Z
+-----------------------------------------------------------------------------
+
+Iteration 15 with 31 model/solver pairs remaining 2026-06-26T23:24:54.085519Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 31 model/solver pairs remaining 2026-06-26T23:24:54.226377Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 31 model/solver pairs remaining 2026-06-26T23:24:54.368691Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 31 model/solver pairs remaining 2026-06-26T23:24:54.506132Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 31 model/solver pairs remaining 2026-06-26T23:24:54.643014Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 31 model/solver pairs remaining 2026-06-26T23:24:54.782947Z
+-----------------------------------------------------------------------------
+SC50B                 Hipparchus            Time stable           0.283625ms            -69.99999999999999    
+SC50A                 Hipparchus            Time stable           0.271208ms            -64.57507705856452    
+SC50B                 ojAlgo-LP             Time stable           0.047625ms            -70.0                 
+SC50A                 OR-Tools              Time stable           0.091792ms            -64.5750770585645     
+SC50A                 ojAlgo-LP             Time stable           0.044291ms            -64.57507705856452    
+KB2                   HiGHS                 Time stable           0.294791ms            -1749.9001299062054   
+SC50B                 OR-Tools              Time stable           0.087083ms            -69.99999999999997    
+SHARE2B               OR-Tools              Time stable           0.272666ms            -415.73224074142047   
+STOCFOR1              ojAlgo-LP             Time stable           0.164958ms            -41131.976219436394   
+BLEND                 ojAlgo-LP             Time stable           0.149917ms            -30.812149845813178   
+SC50A                 HiGHS                 Time stable           0.229667ms            -64.57507705856449    
+SC50B                 HiGHS                 Time stable           0.232542ms            -70.00000000000001    
+SC105                 ojAlgo-LP             Time stable           0.25425ms             -52.20206121170723    
+VTP-BASE              ojAlgo-LP             Time stable           0.131583ms            129831.46246136136    
+BLEND                 OR-Tools              Time stable           0.229042ms            -30.812149845828223   
+STOCFOR1              OR-Tools              Time stable           0.197708ms            -41131.97621943641    
+ADLITTLE              ojAlgo-LP             Time stable           0.121458ms            225494.9631623808     
+AFIRO                 ojAlgo-LP             Time stable           0.015125ms            -464.75314285714285   
+SCAGR7                ojAlgo-LP             Time stable           0.286ms               -2331389.824330984    
+RECIPELP              OR-Tools              Time stable           0.172541ms            -266.616              
+VTP-BASE              OR-Tools              Time stable           0.1975ms              129831.46246136136    
+RECIPELP              ojAlgo-LP             Time stable           0.0865ms              -266.616              
+KB2                   OR-Tools              Time stable           0.118167ms            -1749.9001299062054   
+SC105                 OR-Tools              Time stable           0.260833ms            -52.20206121170721    
+AFIRO                 Hipparchus            Time stable           0.103291ms            -464.7531428571428    
+AFIRO                 HiGHS                 Time stable           0.205875ms            -464.7531428571429    
+SCAGR7                OR-Tools              Time stable           0.31925ms             -2331389.824330984    
+KB2                   ojAlgo-LP             Time stable           0.0515ms              -1749.9001299062072   
+ADLITTLE              OR-Tools              Time stable           0.264459ms            225494.96316238036    
+SHARE2B               ojAlgo-LP             Time stable           0.233834ms            -415.73224074141984   
+AFIRO                 OR-Tools              Time stable           0.0495ms              -464.75314285714285   
+
+Final Results
+=====================================================================
+25FV47                HiGHS                 OPTIMAL               51.074083ms           
+25FV47                Hipparchus            FAILED                TIMEOUT               
+25FV47                OR-Tools              OPTIMAL               46.492083ms           
+25FV47                ojAlgo-LP             OPTIMAL               594.54375ms           
+80BAU3B               HiGHS                 OPTIMAL               59.500791ms           
+80BAU3B               Hipparchus            FAILED                TIMEOUT               
+80BAU3B               OR-Tools              OPTIMAL               81.864917ms           
+80BAU3B               ojAlgo-LP             OPTIMAL               3740.111083ms         
+ADLITTLE              HiGHS                 OPTIMAL               0.761167ms            
+ADLITTLE              Hipparchus            OPTIMAL               1.217375ms            
+ADLITTLE              OR-Tools              OPTIMAL               0.264459ms            
+ADLITTLE              ojAlgo-LP             OPTIMAL               0.121458ms            
+AFIRO                 HiGHS                 OPTIMAL               0.205875ms            
+AFIRO                 Hipparchus            OPTIMAL               0.103291ms            
+AFIRO                 OR-Tools              OPTIMAL               0.0495ms              
+AFIRO                 ojAlgo-LP             OPTIMAL               0.015125ms            
+AGG                   HiGHS                 OPTIMAL               1.254958ms            
+AGG                   Hipparchus            OPTIMAL               7.887042ms            
+AGG                   OR-Tools              OPTIMAL               1.006583ms            
+AGG                   ojAlgo-LP             OPTIMAL               1.049167ms            
+AGG2                  HiGHS                 OPTIMAL               2.5965ms              
+AGG2                  Hipparchus            OPTIMAL               19.87825ms            
+AGG2                  OR-Tools              OPTIMAL               1.940959ms            
+AGG2                  ojAlgo-LP             OPTIMAL               1.973416ms            
+AGG3                  HiGHS                 OPTIMAL               2.683667ms            
+AGG3                  Hipparchus            OPTIMAL               21.313625ms           
+AGG3                  OR-Tools              OPTIMAL               2.0435ms              
+AGG3                  ojAlgo-LP             OPTIMAL               2.125667ms            
+BANDM                 HiGHS                 OPTIMAL               4.312833ms            
+BANDM                 Hipparchus            FAILED                UNSTABLE              
+BANDM                 OR-Tools              OPTIMAL               2.627791ms            
+BANDM                 ojAlgo-LP             OPTIMAL               8.694041ms            
+BEACONFD              HiGHS                 OPTIMAL               1.230459ms            
+BEACONFD              Hipparchus            OPTIMAL               8.95275ms             
+BEACONFD              OR-Tools              OPTIMAL               0.560292ms            
+BEACONFD              ojAlgo-LP             OPTIMAL               0.569291ms            
+BLEND                 HiGHS                 OPTIMAL               0.758833ms            
+BLEND                 Hipparchus            OPTIMAL               2.0155ms              
+BLEND                 OR-Tools              OPTIMAL               0.229042ms            
+BLEND                 ojAlgo-LP             OPTIMAL               0.149917ms            
+BNL1                  HiGHS                 OPTIMAL               12.369833ms           
+BNL1                  Hipparchus            FAILED                UNSTABLE              
+BNL1                  OR-Tools              OPTIMAL               16.190583ms           
+BNL1                  ojAlgo-LP             OPTIMAL               57.333125ms           
+BNL2                  HiGHS                 OPTIMAL               22.814542ms           
+BNL2                  Hipparchus            FAILED                TIMEOUT               
+BNL2                  OR-Tools              OPTIMAL               41.597541ms           
+BNL2                  ojAlgo-LP             OPTIMAL               1646.682958ms         
+BOEING1               HiGHS                 OPTIMAL               5.377334ms            
+BOEING1               Hipparchus            FAILED                UNSTABLE              
+BOEING1               OR-Tools              OPTIMAL               3.513208ms            
+BOEING1               ojAlgo-LP             OPTIMAL               10.9555ms             
+BOEING2               HiGHS                 OPTIMAL               1.214375ms            
+BOEING2               Hipparchus            OPTIMAL               36.810292ms           
+BOEING2               OR-Tools              OPTIMAL               0.674375ms            
+BOEING2               ojAlgo-LP             OPTIMAL               0.565667ms            
+BORE3D                HiGHS                 OPTIMAL               0.971167ms            
+BORE3D                Hipparchus            FAILED                TIMEOUT               
+BORE3D                OR-Tools              OPTIMAL               0.519375ms            
+BORE3D                ojAlgo-LP             OPTIMAL               0.577458ms            
+BRANDY                HiGHS                 OPTIMAL               2.25625ms             
+BRANDY                Hipparchus            OPTIMAL               29.624625ms           
+BRANDY                OR-Tools              OPTIMAL               1.576ms               
+BRANDY                ojAlgo-LP             OPTIMAL               2.268167ms            
+CAPRI                 HiGHS                 OPTIMAL               1.926041ms            
+CAPRI                 Hipparchus            OPTIMAL               296.747833ms          
+CAPRI                 OR-Tools              OPTIMAL               1.695459ms            
+CAPRI                 ojAlgo-LP             OPTIMAL               2.047083ms            
+CRE-A                 HiGHS                 OPTIMAL               29.139917ms           
+CRE-A                 Hipparchus            OPTIMAL               78328.454625ms        
+CRE-A                 OR-Tools              OPTIMAL               56.3045ms             
+CRE-A                 ojAlgo-LP             OPTIMAL               420.907917ms          
+CRE-C                 HiGHS                 OPTIMAL               27.823459ms           
+CRE-C                 Hipparchus            OPTIMAL               59560.158459ms        
+CRE-C                 OR-Tools              OPTIMAL               50.265333ms           
+CRE-C                 ojAlgo-LP             OPTIMAL               196.73475ms           
+CYCLE                 HiGHS                 OPTIMAL               67.071ms              
+CYCLE                 Hipparchus            FAILED                TIMEOUT               
+CYCLE                 OR-Tools              OPTIMAL               18.273417ms           
+CYCLE                 ojAlgo-LP             OPTIMAL               501.846167ms          
+CZPROB                HiGHS                 OPTIMAL               16.557083ms           
+CZPROB                Hipparchus            OPTIMAL               3211.020209ms         
+CZPROB                OR-Tools              OPTIMAL               11.585958ms           
+CZPROB                ojAlgo-LP             OPTIMAL               49.019917ms           
+D2Q06C                HiGHS                 OPTIMAL               324.482209ms          
+D2Q06C                Hipparchus            FAILED                TIMEOUT               
+D2Q06C                OR-Tools              OPTIMAL               284.8845ms            
+D2Q06C                ojAlgo-LP             OPTIMAL               7811.214042ms         
+D6CUBE                HiGHS                 OPTIMAL               62.558834ms           
+D6CUBE                Hipparchus            FAILED                TIMEOUT               
+D6CUBE                OR-Tools              OPTIMAL               279.814709ms          
+D6CUBE                ojAlgo-LP             OPTIMAL               194.7465ms            
+DEGEN2                HiGHS                 OPTIMAL               8.763542ms            
+DEGEN2                Hipparchus            OPTIMAL               505.218958ms          
+DEGEN2                OR-Tools              OPTIMAL               7.693666ms            
+DEGEN2                ojAlgo-LP             OPTIMAL               20.520459ms           
+DEGEN3                HiGHS                 OPTIMAL               74.335416ms           
+DEGEN3                Hipparchus            OPTIMAL               45616.697667ms        
+DEGEN3                OR-Tools              OPTIMAL               88.858666ms           
+DEGEN3                ojAlgo-LP             OPTIMAL               793.755958ms          
+E226                  HiGHS                 OPTIMAL               3.526667ms            
+E226                  Hipparchus            OPTIMAL               28.203583ms           
+E226                  OR-Tools              OPTIMAL               2.11925ms             
+E226                  ojAlgo-LP             OPTIMAL               3.63775ms             
+ETAMACRO              HiGHS                 OPTIMAL               5.383625ms            
+ETAMACRO              Hipparchus            OPTIMAL               286.701583ms          
+ETAMACRO              OR-Tools              OPTIMAL               4.110209ms            
+ETAMACRO              ojAlgo-LP             OPTIMAL               10.511333ms           
+FFFFF800              HiGHS                 OPTIMAL               5.823875ms            
+FFFFF800              Hipparchus            FAILED                TIMEOUT               
+FFFFF800              OR-Tools              OPTIMAL               3.150125ms            
+FFFFF800              ojAlgo-LP             OPTIMAL               21.389625ms           
+FINNIS                HiGHS                 OPTIMAL               2.132666ms            
+FINNIS                Hipparchus            FAILED                TIMEOUT               
+FINNIS                OR-Tools              OPTIMAL               2.702708ms            
+FINNIS                ojAlgo-LP             OPTIMAL               9.321416ms            
+FIT1D                 HiGHS                 OPTIMAL               5.004584ms            
+FIT1D                 Hipparchus            OPTIMAL               632.04425ms           
+FIT1D                 OR-Tools              OPTIMAL               9.090125ms            
+FIT1D                 ojAlgo-LP             OPTIMAL               8.069791ms            
+FIT1P                 HiGHS                 OPTIMAL               16.494125ms           
+FIT1P                 Hipparchus            OPTIMAL               9139.057541ms         
+FIT1P                 OR-Tools              OPTIMAL               8.653208ms            
+FIT1P                 ojAlgo-LP             OPTIMAL               257.387875ms          
+FORPLAN               HiGHS                 OPTIMAL               3.70275ms             
+FORPLAN               Hipparchus            OPTIMAL               60.278709ms           
+FORPLAN               OR-Tools              OPTIMAL               2.027542ms            
+FORPLAN               ojAlgo-LP             OPTIMAL               3.750333ms            
+GANGES                HiGHS                 OPTIMAL               6.631084ms            
+GANGES                Hipparchus            FAILED                UNSTABLE              
+GANGES                OR-Tools              OPTIMAL               5.753ms               
+GANGES                ojAlgo-LP             OPTIMAL               53.221625ms           
+GFRD-PNC              HiGHS                 OPTIMAL               3.170333ms            
+GFRD-PNC              Hipparchus            OPTIMAL               684.638666ms          
+GFRD-PNC              OR-Tools              OPTIMAL               4.219792ms            
+GFRD-PNC              ojAlgo-LP             OPTIMAL               16.110333ms           
+GREENBEA              HiGHS                 OPTIMAL               104.633333ms          
+GREENBEA              Hipparchus            FAILED                TIMEOUT               
+GREENBEA              OR-Tools              OPTIMAL               175.1365ms            
+GREENBEA              ojAlgo-LP             FAILED                UNSTABLE              
+GREENBEB              HiGHS                 OPTIMAL               167.954667ms          
+GREENBEB              Hipparchus            FAILED                TIMEOUT               
+GREENBEB              OR-Tools              OPTIMAL               107.915292ms          
+GREENBEB              ojAlgo-LP             OPTIMAL               9811.771458ms         
+GROW15                HiGHS                 OPTIMAL               15.978167ms           
+GROW15                Hipparchus            FAILED                TIMEOUT               
+GROW15                OR-Tools              OPTIMAL               6.460708ms            
+GROW15                ojAlgo-LP             OPTIMAL               6.847667ms            
+GROW22                HiGHS                 OPTIMAL               31.743041ms           
+GROW22                Hipparchus            OPTIMAL               1124.915333ms         
+GROW22                OR-Tools              OPTIMAL               12.574042ms           
+GROW22                ojAlgo-LP             OPTIMAL               16.786875ms           
+GROW7                 HiGHS                 OPTIMAL               3.99ms                
+GROW7                 Hipparchus            FAILED                TIMEOUT               
+GROW7                 OR-Tools              OPTIMAL               2.011333ms            
+GROW7                 ojAlgo-LP             OPTIMAL               1.200458ms            
+ISRAEL                HiGHS                 OPTIMAL               1.622791ms            
+ISRAEL                Hipparchus            OPTIMAL               5.648792ms            
+ISRAEL                OR-Tools              OPTIMAL               1.088208ms            
+ISRAEL                ojAlgo-LP             OPTIMAL               0.907917ms            
+KB2                   HiGHS                 OPTIMAL               0.294791ms            
+KB2                   Hipparchus            OPTIMAL               0.65075ms             
+KB2                   OR-Tools              OPTIMAL               0.118167ms            
+KB2                   ojAlgo-LP             OPTIMAL               0.0515ms              
+KEN-07                HiGHS                 OPTIMAL               11.169917ms           
+KEN-07                Hipparchus            OPTIMAL               27020.428834ms        
+KEN-07                OR-Tools              OPTIMAL               10.86925ms            
+KEN-07                ojAlgo-LP             OPTIMAL               79.678708ms           
+LOTFI                 HiGHS                 OPTIMAL               1.176208ms            
+LOTFI                 Hipparchus            OPTIMAL               19.687458ms           
+LOTFI                 OR-Tools              OPTIMAL               0.548ms               
+LOTFI                 ojAlgo-LP             OPTIMAL               1.070208ms            
+MAROS                 HiGHS                 OPTIMAL               17.404833ms           
+MAROS                 Hipparchus            FAILED                TIMEOUT               
+MAROS                 OR-Tools              OPTIMAL               11.127542ms           
+MAROS                 ojAlgo-LP             OPTIMAL               75.110417ms           
+MAROS-R7              HiGHS                 OPTIMAL               309.097166ms          
+MAROS-R7              Hipparchus            OPTIMAL               202397.071417ms       
+MAROS-R7              OR-Tools              OPTIMAL               320.687667ms          
+MAROS-R7              ojAlgo-LP             OPTIMAL               5037.909208ms         
+MODSZK1               HiGHS                 OPTIMAL               7.118667ms            
+MODSZK1               Hipparchus            FAILED                UNSTABLE              
+MODSZK1               OR-Tools              OPTIMAL               8.500834ms            
+MODSZK1               ojAlgo-LP             OPTIMAL               130.451625ms          
+NESM                  HiGHS                 OPTIMAL               91.660083ms           
+NESM                  Hipparchus            OPTIMAL               127989.346292ms       
+NESM                  OR-Tools              OPTIMAL               29.374959ms           
+NESM                  ojAlgo-LP             OPTIMAL               679.774792ms          
+PDS-02                HiGHS                 OPTIMAL               33.239292ms           
+PDS-02                Hipparchus            OPTIMAL               20215.361417ms        
+PDS-02                OR-Tools              OPTIMAL               17.889792ms           
+PDS-02                ojAlgo-LP             OPTIMAL               1747.031709ms         
+PEROLD                HiGHS                 OPTIMAL               21.360708ms           
+PEROLD                Hipparchus            FAILED                TIMEOUT               
+PEROLD                OR-Tools              OPTIMAL               23.145375ms           
+PEROLD                ojAlgo-LP             OPTIMAL               246.020208ms          
+PILOT                 HiGHS                 OPTIMAL               398.000625ms          
+PILOT                 Hipparchus            FAILED                TIMEOUT               
+PILOT                 OR-Tools              OPTIMAL               361.988417ms          
+PILOT                 ojAlgo-LP             OPTIMAL               6656.008834ms         
+PILOT-JA              HiGHS                 OPTIMAL               39.666667ms           
+PILOT-JA              Hipparchus            FAILED                UNSTABLE              
+PILOT-JA              OR-Tools              OPTIMAL               50.358084ms           
+PILOT-JA              ojAlgo-LP             OPTIMAL               738.797292ms          
+PILOT-WE              HiGHS                 OPTIMAL               63.652292ms           
+PILOT-WE              Hipparchus            FAILED                TIMEOUT               
+PILOT-WE              OR-Tools              OPTIMAL               28.629042ms           
+PILOT-WE              ojAlgo-LP             OPTIMAL               582.082958ms          
+PILOT4                HiGHS                 OPTIMAL               16.784375ms           
+PILOT4                Hipparchus            FAILED                UNSTABLE              
+PILOT4                OR-Tools              OPTIMAL               10.088334ms           
+PILOT4                ojAlgo-LP             OPTIMAL               57.522ms              
+PILOT87               HiGHS                 OPTIMAL               1550.655208ms         
+PILOT87               Hipparchus            FAILED                TIMEOUT               
+PILOT87               OR-Tools              OPTIMAL               1099.643083ms         
+PILOT87               ojAlgo-LP             OPTIMAL               21046.967583ms        
+PILOTNOV              HiGHS                 OPTIMAL               34.164792ms           
+PILOTNOV              Hipparchus            FAILED                TIMEOUT               
+PILOTNOV              OR-Tools              OPTIMAL               27.038666ms           
+PILOTNOV              ojAlgo-LP             OPTIMAL               554.9115ms            
+QAP12                 HiGHS                 OPTIMAL               133843.541459ms       
+QAP12                 Hipparchus            FAILED                UNSTABLE              
+QAP12                 OR-Tools              OPTIMAL               6503.119875ms         
+QAP12                 ojAlgo-LP             OPTIMAL               5124.863375ms         
+QAP8                  HiGHS                 OPTIMAL               321.349083ms          
+QAP8                  Hipparchus            FAILED                TIMEOUT               
+QAP8                  OR-Tools              OPTIMAL               82.255708ms           
+QAP8                  ojAlgo-LP             OPTIMAL               1289.828791ms         
+RECIPELP              HiGHS                 OPTIMAL               0.579833ms            
+RECIPELP              Hipparchus            OPTIMAL               3.644917ms            
+RECIPELP              OR-Tools              OPTIMAL               0.172541ms            
+RECIPELP              ojAlgo-LP             OPTIMAL               0.0865ms              
+SC105                 HiGHS                 OPTIMAL               0.614208ms            
+SC105                 Hipparchus            OPTIMAL               1.59025ms             
+SC105                 OR-Tools              OPTIMAL               0.260833ms            
+SC105                 ojAlgo-LP             OPTIMAL               0.25425ms             
+SC205                 HiGHS                 OPTIMAL               0.960208ms            
+SC205                 Hipparchus            OPTIMAL               8.529875ms            
+SC205                 OR-Tools              OPTIMAL               0.986ms               
+SC205                 ojAlgo-LP             OPTIMAL               1.959792ms            
+SC50A                 HiGHS                 OPTIMAL               0.229667ms            
+SC50A                 Hipparchus            OPTIMAL               0.271208ms            
+SC50A                 OR-Tools              OPTIMAL               0.091792ms            
+SC50A                 ojAlgo-LP             OPTIMAL               0.044291ms            
+SC50B                 HiGHS                 OPTIMAL               0.232542ms            
+SC50B                 Hipparchus            OPTIMAL               0.283625ms            
+SC50B                 OR-Tools              OPTIMAL               0.087083ms            
+SC50B                 ojAlgo-LP             OPTIMAL               0.047625ms            
+SCAGR25               HiGHS                 OPTIMAL               3.298916ms            
+SCAGR25               Hipparchus            FAILED                TIMEOUT               
+SCAGR25               OR-Tools              OPTIMAL               2.244959ms            
+SCAGR25               ojAlgo-LP             OPTIMAL               12.230333ms           
+SCAGR7                HiGHS                 OPTIMAL               0.672ms               
+SCAGR7                Hipparchus            OPTIMAL               6.51375ms             
+SCAGR7                OR-Tools              OPTIMAL               0.31925ms             
+SCAGR7                ojAlgo-LP             OPTIMAL               0.286ms               
+SCFXM1                HiGHS                 OPTIMAL               3.389208ms            
+SCFXM1                Hipparchus            FAILED                TIMEOUT               
+SCFXM1                OR-Tools              OPTIMAL               2.67675ms             
+SCFXM1                ojAlgo-LP             OPTIMAL               3.830834ms            
+SCFXM2                HiGHS                 OPTIMAL               8.1435ms              
+SCFXM2                Hipparchus            FAILED                TIMEOUT               
+SCFXM2                OR-Tools              OPTIMAL               6.988083ms            
+SCFXM2                ojAlgo-LP             OPTIMAL               18.159084ms           
+SCFXM3                HiGHS                 OPTIMAL               13.87025ms            
+SCFXM3                Hipparchus            FAILED                TIMEOUT               
+SCFXM3                OR-Tools              OPTIMAL               11.637916ms           
+SCFXM3                ojAlgo-LP             OPTIMAL               66.290667ms           
+SCORPION              HiGHS                 OPTIMAL               1.278792ms            
+SCORPION              Hipparchus            OPTIMAL               31.52725ms            
+SCORPION              OR-Tools              OPTIMAL               1.244792ms            
+SCORPION              ojAlgo-LP             OPTIMAL               1.346416ms            
+SCRS8                 HiGHS                 OPTIMAL               4.024084ms            
+SCRS8                 Hipparchus            OPTIMAL               257.696041ms          
+SCRS8                 OR-Tools              OPTIMAL               5.028667ms            
+SCRS8                 ojAlgo-LP             OPTIMAL               18.119875ms           
+SCSD1                 HiGHS                 OPTIMAL               1.105167ms            
+SCSD1                 Hipparchus            OPTIMAL               107.158292ms          
+SCSD1                 OR-Tools              OPTIMAL               1.301958ms            
+SCSD1                 ojAlgo-LP             OPTIMAL               0.898042ms            
+SCSD6                 HiGHS                 OPTIMAL               2.902125ms            
+SCSD6                 Hipparchus            FAILED                UNSTABLE              
+SCSD6                 OR-Tools              OPTIMAL               2.941542ms            
+SCSD6                 ojAlgo-LP             OPTIMAL               7.333583ms            
+SCSD8                 HiGHS                 OPTIMAL               18.698792ms           
+SCSD8                 Hipparchus            OPTIMAL               4462.439334ms         
+SCSD8                 OR-Tools              OPTIMAL               11.173417ms           
+SCSD8                 ojAlgo-LP             OPTIMAL               97.095125ms           
+SCTAP1                HiGHS                 OPTIMAL               2.850417ms            
+SCTAP1                Hipparchus            OPTIMAL               90.453834ms           
+SCTAP1                OR-Tools              OPTIMAL               1.224ms               
+SCTAP1                ojAlgo-LP             OPTIMAL               2.429ms               
+SCTAP2                HiGHS                 OPTIMAL               5.602917ms            
+SCTAP2                Hipparchus            FAILED                TIMEOUT               
+SCTAP2                OR-Tools              OPTIMAL               4.276708ms            
+SCTAP2                ojAlgo-LP             OPTIMAL               36.435417ms           
+SCTAP3                HiGHS                 OPTIMAL               7.3915ms              
+SCTAP3                Hipparchus            FAILED                TIMEOUT               
+SCTAP3                OR-Tools              OPTIMAL               7.513042ms            
+SCTAP3                ojAlgo-LP             OPTIMAL               86.410458ms           
+SEBA                  HiGHS                 OPTIMAL               1.856833ms            
+SEBA                  Hipparchus            FAILED                TIMEOUT               
+SEBA                  OR-Tools              OPTIMAL               0.956667ms            
+SEBA                  ojAlgo-LP             OPTIMAL               15.307125ms           
+SHARE1B               HiGHS                 OPTIMAL               1.512875ms            
+SHARE1B               Hipparchus            OPTIMAL               13.887375ms           
+SHARE1B               OR-Tools              OPTIMAL               1.321208ms            
+SHARE1B               ojAlgo-LP             OPTIMAL               1.05125ms             
+SHARE2B               HiGHS                 OPTIMAL               0.889458ms            
+SHARE2B               Hipparchus            OPTIMAL               1.847958ms            
+SHARE2B               OR-Tools              OPTIMAL               0.272666ms            
+SHARE2B               ojAlgo-LP             OPTIMAL               0.233834ms            
+SHELL                 HiGHS                 OPTIMAL               6.117125ms            
+SHELL                 Hipparchus            OPTIMAL               416.581125ms          
+SHELL                 OR-Tools              OPTIMAL               3.637042ms            
+SHELL                 ojAlgo-LP             OPTIMAL               7.115625ms            
+SHIP04L               HiGHS                 OPTIMAL               3.363417ms            
+SHIP04L               Hipparchus            OPTIMAL               317.227167ms          
+SHIP04L               OR-Tools              OPTIMAL               3.061542ms            
+SHIP04L               ojAlgo-LP             OPTIMAL               6.181333ms            
+SHIP04S               HiGHS                 OPTIMAL               2.561292ms            
+SHIP04S               Hipparchus            OPTIMAL               154.547083ms          
+SHIP04S               OR-Tools              OPTIMAL               2.105ms               
+SHIP04S               ojAlgo-LP             OPTIMAL               3.562125ms            
+SHIP08L               HiGHS                 OPTIMAL               7.659792ms            
+SHIP08L               Hipparchus            OPTIMAL               1420.076667ms         
+SHIP08L               OR-Tools              OPTIMAL               7.204459ms            
+SHIP08L               ojAlgo-LP             OPTIMAL               15.740583ms           
+SHIP08S               HiGHS                 OPTIMAL               4.043792ms            
+SHIP08S               Hipparchus            OPTIMAL               399.844ms             
+SHIP08S               OR-Tools              OPTIMAL               3.649542ms            
+SHIP08S               ojAlgo-LP             OPTIMAL               5.921542ms            
+SHIP12L               HiGHS                 OPTIMAL               10.995208ms           
+SHIP12L               Hipparchus            OPTIMAL               2462.289875ms         
+SHIP12L               OR-Tools              OPTIMAL               8.096333ms            
+SHIP12L               ojAlgo-LP             OPTIMAL               100.643625ms          
+SHIP12S               HiGHS                 OPTIMAL               4.901666ms            
+SHIP12S               Hipparchus            OPTIMAL               586.258292ms          
+SHIP12S               OR-Tools              OPTIMAL               3.91925ms             
+SHIP12S               ojAlgo-LP             OPTIMAL               8.550041ms            
+SIERRA                HiGHS                 OPTIMAL               6.469ms               
+SIERRA                Hipparchus            OPTIMAL               5013.206042ms         
+SIERRA                OR-Tools              OPTIMAL               5.854125ms            
+SIERRA                ojAlgo-LP             OPTIMAL               16.945208ms           
+STAIR                 HiGHS                 OPTIMAL               6.711542ms            
+STAIR                 Hipparchus            FAILED                TIMEOUT               
+STAIR                 OR-Tools              OPTIMAL               5.543625ms            
+STAIR                 ojAlgo-LP             OPTIMAL               11.921709ms           
+STANDATA              HiGHS                 OPTIMAL               2.536083ms            
+STANDATA              Hipparchus            OPTIMAL               147.134667ms          
+STANDATA              OR-Tools              OPTIMAL               1.709292ms            
+STANDATA              ojAlgo-LP             OPTIMAL               1.252083ms            
+STANDGUB              HiGHS                 OPTIMAL               2.295458ms            
+STANDGUB              Hipparchus            OPTIMAL               161.030833ms          
+STANDGUB              OR-Tools              OPTIMAL               1.690125ms            
+STANDGUB              ojAlgo-LP             OPTIMAL               1.192292ms            
+STANDMPS              HiGHS                 OPTIMAL               3.10175ms             
+STANDMPS              Hipparchus            OPTIMAL               339.401542ms          
+STANDMPS              OR-Tools              OPTIMAL               2.709ms               
+STANDMPS              ojAlgo-LP             OPTIMAL               2.817458ms            
+STOCFOR1              HiGHS                 OPTIMAL               0.633541ms            
+STOCFOR1              Hipparchus            OPTIMAL               1.943334ms            
+STOCFOR1              OR-Tools              OPTIMAL               0.197708ms            
+STOCFOR1              ojAlgo-LP             OPTIMAL               0.164958ms            
+STOCFOR2              HiGHS                 OPTIMAL               12.640417ms           
+STOCFOR2              Hipparchus            FAILED                TIMEOUT               
+STOCFOR2              OR-Tools              OPTIMAL               11.082875ms           
+STOCFOR2              ojAlgo-LP             OPTIMAL               946.4765ms            
+TRUSS                 HiGHS                 OPTIMAL               1255.420875ms         
+TRUSS                 Hipparchus            FAILED                TIMEOUT               
+TRUSS                 OR-Tools              OPTIMAL               130.333875ms          
+TRUSS                 ojAlgo-LP             OPTIMAL               2336.90775ms          
+TUFF                  HiGHS                 OPTIMAL               3.931791ms            
+TUFF                  Hipparchus            FAILED                TIMEOUT               
+TUFF                  OR-Tools              OPTIMAL               1.713042ms            
+TUFF                  ojAlgo-LP             OPTIMAL               6.857ms               
+VTP-BASE              HiGHS                 OPTIMAL               0.553125ms            
+VTP-BASE              Hipparchus            OPTIMAL               15.653792ms           
+VTP-BASE              OR-Tools              OPTIMAL               0.1975ms              
+VTP-BASE              ojAlgo-LP             OPTIMAL               0.131583ms            
+WOOD1P                HiGHS                 OPTIMAL               37.514667ms           
+WOOD1P                Hipparchus            FAILED                TIMEOUT               
+WOOD1P                OR-Tools              OPTIMAL               17.956625ms           
+WOOD1P                ojAlgo-LP             OPTIMAL               103.417291ms          
+WOODW                 HiGHS                 OPTIMAL               33.553792ms           
+WOODW                 Hipparchus            FAILED                TIMEOUT               
+WOODW                 OR-Tools              OPTIMAL               23.114125ms           
+WOODW                 ojAlgo-LP             OPTIMAL               279.641166ms          

@@ -50,7 +50,8 @@ public abstract class ForkedTask {
         int nbExpressions = 0;
         double density = Double.NaN;
 
-        try (InputStream input = AbstractBenchmark.class.getResourceAsStream(modelFilePath)) {
+        String classLoaderPath = modelFilePath.startsWith("/") ? modelFilePath.substring(1) : modelFilePath;
+        try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(classLoaderPath)) {
 
             ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
