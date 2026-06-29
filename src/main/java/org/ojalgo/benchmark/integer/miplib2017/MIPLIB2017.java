@@ -32,8 +32,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.zip.GZIPInputStream;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
@@ -47,7 +45,6 @@ import org.ojalgo.random.FrequencyMap;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
 import org.ojalgo.type.context.NumberContext;
-import org.opentest4j.AssertionFailedError;
 
 public abstract class MIPLIB2017 {
 
@@ -189,13 +186,7 @@ public abstract class MIPLIB2017 {
             BasicLogger.debug();
             BasicLogger.debug("{} in {}, {} was {}", fileName, TIMER.stop(CalendarDateUnit.SECOND), optimalValue, result.toString());
 
-            try {
-                if (optimal) {
-                    assertTrue(result.getState().isOptimal(), result.toString());
-                } else {
-                    assertTrue(result.getState().isFeasible(), result.toString());
-                }
-            } catch (AssertionFailedError cause) {
+            if (optimal ? !result.getState().isOptimal() : !result.getState().isFeasible()) {
                 BasicLogger.debug(State.FAILED);
                 return result.withState(State.FAILED);
             }
@@ -203,17 +194,14 @@ public abstract class MIPLIB2017 {
             double expected = optimalValue.doubleValue();
             double actual = result.getValue();
 
-            try {
-                if (relaxed || optimal) {
-                    if (maximisation) {
-                        assertTrue(!ACCURACY.isDifferent(expected, actual) || actual > expected);
-                    } else {
-                        assertTrue(!ACCURACY.isDifferent(expected, actual) || actual < expected);
-                    }
+            if (relaxed || optimal) {
+                boolean accurate = maximisation
+                        ? !ACCURACY.isDifferent(expected, actual) || actual > expected
+                        : !ACCURACY.isDifferent(expected, actual) || actual < expected;
+                if (!accurate) {
+                    BasicLogger.debug(State.APPROXIMATE);
+                    return result.withState(State.APPROXIMATE);
                 }
-            } catch (AssertionFailedError cause) {
-                BasicLogger.debug(State.APPROXIMATE);
-                return result.withState(State.APPROXIMATE);
             }
 
             return result;
