@@ -63,14 +63,6 @@
         </dependency>
         <dependency>
             <groupId>org.ojalgo</groupId>
-            <artifactId>ojalgo</artifactId>
-            <version>${version.org.ojalgo}</version>
-            <classifier>tests</classifier>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.ojalgo</groupId>
             <artifactId>ojalgo-cplex</artifactId>
             <version>3.1.0</version>
         </dependency>

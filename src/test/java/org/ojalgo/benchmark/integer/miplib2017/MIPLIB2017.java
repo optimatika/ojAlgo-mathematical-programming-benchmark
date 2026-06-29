@@ -32,7 +32,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.zip.GZIPInputStream;
 
-import org.ojalgo.TestUtils;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
@@ -80,7 +81,7 @@ public abstract class MIPLIB2017 {
 
         String line;
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("optimisation", "miplib2017", "benchmark-v2.test.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream("optimisation/miplib2017/benchmark-v2.test.txt")))) {
 
             while ((line = reader.readLine()) != null) {
                 benchmark.add(line.trim().toLowerCase());
@@ -90,7 +91,7 @@ public abstract class MIPLIB2017 {
             throw new RuntimeException(cause);
         }
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("optimisation", "miplib2017", "easy-v9.test.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream("optimisation/miplib2017/easy-v9.test.txt")))) {
 
             while ((line = reader.readLine()) != null) {
                 easy.add(line.trim().toLowerCase());
@@ -100,7 +101,7 @@ public abstract class MIPLIB2017 {
             throw new RuntimeException(cause);
         }
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(TestUtils.getResource("optimisation", "miplib2017", "miplib2017-v22.solu.txt")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream("optimisation/miplib2017/miplib2017-v22.solu.txt")))) {
 
             while ((line = reader.readLine()) != null) {
 
@@ -146,7 +147,7 @@ public abstract class MIPLIB2017 {
         BasicLogger.debug("===========================================");
         BasicLogger.debug();
 
-        try (InputStream input = new GZIPInputStream(TestUtils.getResource("optimisation", "miplib2017", fileName))) {
+        try (InputStream input = new GZIPInputStream(Thread.currentThread().getContextClassLoader().getResourceAsStream("optimisation/miplib2017/" + fileName))) {
 
             ExpressionsBasedModel model = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
@@ -190,9 +191,9 @@ public abstract class MIPLIB2017 {
 
             try {
                 if (optimal) {
-                    TestUtils.assertStateNotLessThanOptimal(result);
+                    assertTrue(result.getState().isOptimal(), result.toString());
                 } else {
-                    TestUtils.assertStateNotLessThanFeasible(result);
+                    assertTrue(result.getState().isFeasible(), result.toString());
                 }
             } catch (AssertionFailedError cause) {
                 BasicLogger.debug(State.FAILED);
@@ -205,9 +206,9 @@ public abstract class MIPLIB2017 {
             try {
                 if (relaxed || optimal) {
                     if (maximisation) {
-                        TestUtils.assertTrue(!ACCURACY.isDifferent(expected, actual) || actual > expected);
+                        assertTrue(!ACCURACY.isDifferent(expected, actual) || actual > expected);
                     } else {
-                        TestUtils.assertTrue(!ACCURACY.isDifferent(expected, actual) || actual < expected);
+                        assertTrue(!ACCURACY.isDifferent(expected, actual) || actual < expected);
                     }
                 }
             } catch (AssertionFailedError cause) {
