@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.ojalgo.TestUtils;
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineReader;
@@ -18,11 +17,11 @@ abstract class AbstractNetlibBenchmark extends AbstractBenchmark {
 
         Set<ModelSolverPair> retVal = new HashSet<>();
 
-        try (TextLineReader reader = new TextLineReader(TestUtils.getResource("optimisation", "netlib", "NETLIB.dat"))) {
+        try (TextLineReader reader = new TextLineReader(Thread.currentThread().getContextClassLoader().getResourceAsStream("optimisation/netlib/NETLIB.dat"))) {
 
             reader.forEach(line -> {
 
-                try (InputStream input = TestUtils.getResource("optimisation", "netlib", line + ".SIF")) {
+                try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("optimisation/netlib/" + line + ".SIF")) {
 
                     ExpressionsBasedModel model = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 

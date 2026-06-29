@@ -26,9 +26,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
-import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase;
-import org.ojalgo.optimisation.convex.CuteMarosMeszarosCase.ModelInfo;
 
 public final class MarosMeszarosBenchmark extends AbstractBenchmark {
 
@@ -75,7 +74,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
     static {
 
         for (String mod : ALL_MODELS) {
-            ModelInfo modelInfo = CuteMarosMeszarosCase.getModelInfo(mod);
+            ModelInfo modelInfo = MarosMeszarosModels.getModelInfo(mod);
 
             if (modelInfo.isPureQP() && modelInfo.M <= MAX_DIM && modelInfo.N <= MAX_DIM && modelInfo.N >= MIN_DIM) {
                 // if (modelInfo.isPureQP() && modelInfo.isSmall()) {
@@ -94,7 +93,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         configuration.refeenceSolver = Contender.CLARABEL4J;
         configuration.parallelism = Parallelism.ONE;
 
-        for (Entry<String, ModelInfo> entry : CuteMarosMeszarosCase.getModelInfo().entrySet()) {
+        for (Entry<String, ModelInfo> entry : MarosMeszarosModels.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);
         }
 

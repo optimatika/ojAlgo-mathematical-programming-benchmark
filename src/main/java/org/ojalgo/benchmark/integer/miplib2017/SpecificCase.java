@@ -21,7 +21,6 @@
  */
 package org.ojalgo.benchmark.integer.miplib2017;
 
-import org.junit.jupiter.api.Test;
 import org.ojalgo.optimisation.Optimisation;
 import org.ojalgo.optimisation.integer.IntegerStrategy;
 import org.ojalgo.optimisation.integer.IntegerStrategy.ConfigurableStrategy;
@@ -31,11 +30,18 @@ import org.ojalgo.type.context.NumberContext;
 
 public final class SpecificCase extends MIPLIB2017 {
 
+    public static void main(final String[] args) {
+        testCod105();
+        testCsched008();
+        testEnlight_hard();
+        testGenIp002();
+        testGenIp054();
+    }
+
     /**
      * Failed to solve the relaxed LP
      */
-    @Test
-    void testCod105() {
+    static void testCod105() {
 
         Optimisation.Options options = new Optimisation.Options();
 
@@ -53,8 +59,7 @@ public final class SpecificCase extends MIPLIB2017 {
     /**
      * Failed to solve the relaxed LP
      */
-    @Test
-    void testCsched008() {
+    static void testCsched008() {
 
         Optimisation.Options options = new Optimisation.Options();
 
@@ -72,8 +77,7 @@ public final class SpecificCase extends MIPLIB2017 {
     /**
      * Failed to find feasible solution within 1min
      */
-    @Test
-    void testEnlight_hard() {
+    static void testEnlight_hard() {
 
         Optimisation.Options options = new Optimisation.Options();
 
@@ -93,8 +97,7 @@ public final class SpecificCase extends MIPLIB2017 {
      * <p>
      * There are 41 variables and 25 expressions.
      */
-    @Test
-    void testGenIp002() {
+    static void testGenIp002() {
 
         Optimisation.Options options = new Optimisation.Options();
 
@@ -114,8 +117,7 @@ public final class SpecificCase extends MIPLIB2017 {
      * <p>
      * There are 30 variables and 28 expressions.
      */
-    @Test
-    void testGenIp054() {
+    static void testGenIp054() {
 
         Optimisation.Options options = new Optimisation.Options();
 
