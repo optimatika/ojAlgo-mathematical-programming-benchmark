@@ -19,27 +19,23 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.linear.netlib;
-
-import java.util.Set;
+package org.ojalgo.benchmark.linear.meszaros;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class NetlibInvestigate extends AbstractNetlib {
+public final class MeszarosBenchmark extends AbstractMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.HIGHS, Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
+        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
 
-        configuration.maxProbSize = 11_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
+        configuration.maxProbSize = 10_000;
+        configuration.pathPrefix = "/optimisation/meszaros/";
+        configuration.pathSuffix = ".mps";
         configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.ONE;
-        configuration.investigate = Set.of("25FV47", "BANDM", "BNL1", "BNL2", "CRE-A", "CYCLE", "CZPROB", "D2Q06C", "DEGEN3", "FIT2D", "FORPLAN", "GANGES",
-                "GREENBEA", "GREENBEB", "MAROS", "MAROS-R7", "NESM", "PDS-02", "PEROLD", "PILOT", "PILOT-JA", "PILOT-WE", "PILOT4", "PILOT87", "PILOTNOV",
-                "QAP12", "QAP8", "SCSD8", "TRUSS", "WOOD1P", "WOODW", "AGG2", "GROW22", "SCTAP1", "STAIR", "ISRAEL");
 
-        AbstractNetlib.doBenchmark(configuration);
+        AbstractMeszaros.doBenchmark(configuration);
     }
 
 }

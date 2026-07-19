@@ -19,27 +19,26 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.linear.netlib;
+package org.ojalgo.benchmark.qplib;
 
-import java.util.Set;
-
+import org.ojalgo.benchmark.qplib.QPLIBModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
-public final class NetlibInvestigate extends AbstractNetlib {
+public final class QPLIBBenchmark extends AbstractQPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.HIGHS, Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
+        Configuration configuration = new Configuration(Contender.OJALGO_QP, Contender.CLARABEL4J, Contender.HIGHS);
 
-        configuration.maxProbSize = 11_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
+        configuration.maxProbSize = 10_000;
+        configuration.pathPrefix = "/optimisation/QPLIB/";
+        configuration.pathSuffix = ".lp";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
-        configuration.investigate = Set.of("25FV47", "BANDM", "BNL1", "BNL2", "CRE-A", "CYCLE", "CZPROB", "D2Q06C", "DEGEN3", "FIT2D", "FORPLAN", "GANGES",
-                "GREENBEA", "GREENBEB", "MAROS", "MAROS-R7", "NESM", "PDS-02", "PEROLD", "PILOT", "PILOT-JA", "PILOT-WE", "PILOT4", "PILOT87", "PILOTNOV",
-                "QAP12", "QAP8", "SCSD8", "TRUSS", "WOOD1P", "WOODW", "AGG2", "GROW22", "SCTAP1", "STAIR", "ISRAEL");
+        configuration.parallelism = Parallelism.EIGHT;
 
-        AbstractNetlib.doBenchmark(configuration);
+        AbstractQPLIB.loadExpectedValues(configuration);
+
+        AbstractQPLIB.doBenchmark(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
     }
 
 }

@@ -27,15 +27,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
-import org.ojalgo.benchmark.AbstractBenchmark.Contender;
-import org.ojalgo.benchmark.AbstractBenchmark.ModelSolverPair;
 import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineReader;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
-public final class NetlibBenchmark extends AbstractNetlibBenchmark {
+public final class NetlibBenchmark extends AbstractNetlib {
 
     static final Set<String> INVESTIGATE = Set.of();
     static final Set<String> INVESTIGATE2 = Set.of("25FV47", "BANDM", "BNL1", "BNL2", "CRE-A", "CYCLE", "CZPROB", "D2Q06C", "DEGEN3", "FIT2D", "FORPLAN",

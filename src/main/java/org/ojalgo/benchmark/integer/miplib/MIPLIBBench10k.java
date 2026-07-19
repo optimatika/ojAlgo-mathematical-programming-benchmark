@@ -19,25 +19,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.integer.miplib2017;
+package org.ojalgo.benchmark.integer.miplib;
 
-import org.ojalgo.optimisation.Optimisation;
-import org.ojalgo.type.CalendarDateUnit;
+import org.ojalgo.concurrent.Parallelism;
 
-/**
- * Find optimal MIP solution within 5min.
- */
-public final class OptimalMIP extends MIPLIB2017 {
+public final class MIPLIBBench10k extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        long abort = 5L * CalendarDateUnit.MINUTE.toDurationInMillis();
+        Configuration configuration = new Configuration(Contender.ORTOOLS, Contender.HIGHS);
 
-        Optimisation.Options options = new Optimisation.Options();
-        options.time_suffice = abort;
-        options.time_abort = abort;
+        configuration.maxProbSize = 10_000;
+        configuration.pathPrefix = "/optimisation/MIPLIB/";
+        configuration.pathSuffix = ".mps";
+        configuration.refeenceSolver = Contender.ORTOOLS;
+        configuration.parallelism = Parallelism.ONE;
 
-        MIPLIB2017.doRun(false, 50, true, options);
+        AbstractMIPLIB.loadExpectedValues(configuration);
+
+        AbstractMIPLIB.doBenchmark(configuration);
     }
 
 }

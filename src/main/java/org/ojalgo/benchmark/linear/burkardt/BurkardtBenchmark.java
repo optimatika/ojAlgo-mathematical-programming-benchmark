@@ -19,25 +19,23 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.integer.miplib2017;
+package org.ojalgo.benchmark.linear.burkardt;
 
-import org.ojalgo.optimisation.Optimisation;
-import org.ojalgo.type.CalendarDateUnit;
+import org.ojalgo.concurrent.Parallelism;
 
-/**
- * Find feasible MIP solution within 1min.
- */
-public final class FeasibleMIP extends MIPLIB2017 {
+public final class BurkardtBenchmark extends AbstractBurkardt {
 
     public static void main(final String[] args) {
 
-        long suffice = 1L * CalendarDateUnit.MINUTE.toDurationInMillis();
+        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
 
-        Optimisation.Options options = new Optimisation.Options();
-        options.time_suffice = suffice;
-        options.time_abort = 2L * suffice;
+        configuration.maxProbSize = 10_000;
+        configuration.pathPrefix = "/optimisation/burkardt/";
+        configuration.pathSuffix = ".mps";
+        configuration.refeenceSolver = null;
+        configuration.parallelism = Parallelism.ONE;
 
-        MIPLIB2017.doRun(false, 200, false, options);
+        AbstractBurkardt.doBenchmark(configuration);
     }
 
 }

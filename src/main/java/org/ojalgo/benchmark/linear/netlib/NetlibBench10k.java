@@ -23,7 +23,7 @@ package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class NetlibBench10k extends AbstractNetlibBenchmark {
+public final class NetlibBench10k extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
@@ -34,7 +34,7 @@ public final class NetlibBench10k extends AbstractNetlibBenchmark {
         configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.ONE;
 
-        AbstractNetlibBenchmark.doBenchmark(configuration);
+        AbstractNetlib.doBenchmark(configuration);
     }
 
 }

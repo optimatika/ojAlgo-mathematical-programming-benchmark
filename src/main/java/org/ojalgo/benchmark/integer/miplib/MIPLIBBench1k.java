@@ -19,20 +19,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.integer.miplib2017;
+package org.ojalgo.benchmark.integer.miplib;
 
-import org.ojalgo.optimisation.Optimisation;
+import org.ojalgo.concurrent.Parallelism;
 
-/**
- * Parse all the files
- */
-public final class ParseFiles extends MIPLIB2017 {
+public final class MIPLIBBench1k extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Optimisation.Options options = new Optimisation.Options();
+        Configuration configuration = new Configuration(Contender.ORTOOLS, Contender.HIGHS);
 
-        MIPLIB2017.doRun(true, 0, false, options);
+        configuration.maxProbSize = 1_000;
+        configuration.pathPrefix = "/optimisation/MIPLIB/";
+        configuration.pathSuffix = ".mps";
+        configuration.refeenceSolver = Contender.ORTOOLS;
+        configuration.parallelism = Parallelism.ONE;
+
+        AbstractMIPLIB.loadExpectedValues(configuration);
+
+        AbstractMIPLIB.doBenchmark(configuration);
     }
 
 }

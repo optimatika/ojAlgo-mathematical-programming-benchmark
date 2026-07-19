@@ -53,7 +53,8 @@ public abstract class ForkedTask {
         String classLoaderPath = modelFilePath.startsWith("/") ? modelFilePath.substring(1) : modelFilePath;
         try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(classLoaderPath)) {
 
-            ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, FileFormat.MPS);
+            FileFormat format = classLoaderPath.endsWith(".lp") ? FileFormat.LP : FileFormat.MPS;
+            ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, format);
 
             nbVariables = parsedMPS.countVariables();
             nbExpressions = parsedMPS.countExpressions();

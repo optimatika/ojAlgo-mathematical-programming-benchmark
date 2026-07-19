@@ -72,8 +72,7 @@ public final class MarosMeszarosModels {
 
         Map<String, ModelInfo> modelInfo = new HashMap<>();
 
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(getResource("optimisation/marosmeszaros/00README.CSV")))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(MarosMeszarosModels.getResource("optimisation/marosmeszaros/00README.CSV")))) {
 
             String line;
             while ((line = reader.readLine()) != null) {

@@ -1,0 +1,961 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by com.google.ortools.Loader in an unnamed module (file:/Users/apete/.m2/repository/com/google/ortools/ortools-java/9.15.6755/ortools-java-9.15.6755.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Skipping model diameterc-mstc-v20a190d5i (Unsupported MPS section: LAZYCONS)
+Skipping model diameterc-msts-v40a100d5i (Unsupported MPS section: LAZYCONS)
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+
+
+Iteration 1 with 444 model/solver pairs remaining 2026-07-16T21:36:47.207063Z
+-----------------------------------------------------------------------------
+newdano               OR-Tools              FAILED                TIMEOUT               
+gen-ip002             CPLEX                 FAILED                TIMEOUT               
+danoint               OR-Tools              FAILED                TIMEOUT               
+timtab2               CPLEX                 FAILED                TIMEOUT               
+markshare2            HiGHS                 FAILED                TIMEOUT               
+neos-5140963-mincio   OR-Tools              FAILED                TIMEOUT               
+neos-3754480-nidda    HiGHS                 FAILED                TIMEOUT               
+gen-ip002             HiGHS                 FAILED                TIMEOUT               
+gen-ip021             OR-Tools              FAILED                TIMEOUT               
+gen-ip016             CPLEX                 FAILED                TIMEOUT               
+markshare1            HiGHS                 FAILED                TIMEOUT               
+gsvm2rl5              CPLEX                 FAILED                TIMEOUT               
+neos-3046601-motu     OR-Tools              FAILED                TIMEOUT               
+timtab2               HiGHS                 FAILED                TIMEOUT               
+gen-ip036             HiGHS                 FAILED                TIMEOUT               
+neos-3072252-nete     OR-Tools              FAILED                TIMEOUT               
+k16x240b              HiGHS                 FAILED                TIMEOUT               
+markshare1            OR-Tools              FAILED                TIMEOUT               
+p80x400b              HiGHS                 FAILED                TIMEOUT               
+k16x240               OR-Tools              FAILED                TIMEOUT               
+neos15                OR-Tools              FAILED                TIMEOUT               
+markshare2            OR-Tools              FAILED                TIMEOUT               
+neos-5140963-mincio   HiGHS                 FAILED                TIMEOUT               
+markshare_5_0         OR-Tools              FAILED                TIMEOUT               
+gen-ip002             OR-Tools              FAILED                TIMEOUT               
+pigeon-10             HiGHS                 FAILED                TIMEOUT               
+neos-3754480-nidda    OR-Tools              FAILED                TIMEOUT               
+gen-ip016             HiGHS                 FAILED                TIMEOUT               
+neos-1430701          OR-Tools              FAILED                TIMEOUT               
+neos-3046615-murg     OR-Tools              FAILED                TIMEOUT               
+pigeon-10             OR-Tools              FAILED                TIMEOUT               
+gsvm2rl5              OR-Tools              FAILED                TIMEOUT               
+gen-ip054             HiGHS                 FAILED                TIMEOUT               
+timtab2               OR-Tools              FAILED                TIMEOUT               
+breastcancer-regularizCPLEX                 WRONG                 0.00223133429113      != 35.76784210526315  
+assign1-5-8           HiGHS                 FAILED                TIMEOUT               
+neos-3072252-nete     HiGHS                 FAILED                TIMEOUT               
+neos-2657525-crna     OR-Tools              FAILED                TIMEOUT               
+neos-2652786-brda     OR-Tools              FAILED                TIMEOUT               
+ran14x18-disj-8       OR-Tools              FAILED                TIMEOUT               
+neos-911970           OR-Tools              FAILED                TIMEOUT               
+mas74                 OR-Tools              FAILED                TIMEOUT               
+go19                  HiGHS                 FAILED                TIMEOUT               
+bppc8-09              OR-Tools              FAILED                TIMEOUT               
+b-ball                OR-Tools              FAILED                TIMEOUT               
+gen-ip021             HiGHS                 FAILED                TIMEOUT               
+go19                  OR-Tools              FAILED                TIMEOUT               
+bppc8-09              HiGHS                 FAILED                TIMEOUT               
+markshare1            CPLEX                 FAILED                TIMEOUT               
+gsvm2rl5              HiGHS                 FAILED                TIMEOUT               
+neos5                 OR-Tools              FAILED                TIMEOUT               
+control30-3-2-3       HiGHS                 FAILED                TIMEOUT               
+cov1075               OR-Tools              FAILED                TIMEOUT               
+breastcancer-regularizHiGHS                 FAILED                TIMEOUT               
+danoint               HiGHS                 FAILED                TIMEOUT               
+markshare2            CPLEX                 FAILED                TIMEOUT               
+gen-ip054             OR-Tools              FAILED                TIMEOUT               
+neos-3046615-murg     CPLEX                 FAILED                TIMEOUT               
+assign1-5-8           CPLEX                 FAILED                TIMEOUT               
+ej                    CPLEX                 FAILED                TIMEOUT               
+control30-3-2-3       OR-Tools              FAILED                TIMEOUT               
+breastcancer-regularizOR-Tools              FAILED                TIMEOUT               
+neos-2657525-crna     HiGHS                 FAILED                TIMEOUT               
+ran14x18-disj-8       HiGHS                 FAILED                TIMEOUT               
+mas74                 HiGHS                 FAILED                TIMEOUT               
+neos-3046615-murg     HiGHS                 FAILED                TIMEOUT               
+enlight15             HiGHS                 FAILED                TIMEOUT               
+neos-2657525-crna     CPLEX                 FAILED                TIMEOUT               
+neos-2652786-brda     CPLEX                 FAILED                TIMEOUT               
+neos-1426635          OR-Tools              FAILED                TIMEOUT               
+neos-2652786-brda     HiGHS                 FAILED                TIMEOUT               
+assign1-5-8           OR-Tools              FAILED                TIMEOUT               
+go19                  CPLEX                 FAILED                TIMEOUT               
+ej                    HiGHS                 FAILED                TIMEOUT               
+rlp1                  OR-Tools              FAILED                TIMEOUT               
+markshare_5_0         HiGHS                 FAILED                TIMEOUT               
+neos-1426635          HiGHS                 FAILED                TIMEOUT               
+m100n500k4r1          OR-Tools              FAILED                TIMEOUT               
+control30-3-2-3       CPLEX                 FAILED                TIMEOUT               
+supportcase26         OR-Tools              FAILED                TIMEOUT               
+k16x240               HiGHS                 FAILED                TIMEOUT               
+p80x400b              OR-Tools              FAILED                TIMEOUT               
+mad                   CPLEX                 FAILED                TIMEOUT               
+m100n500k4r1          HiGHS                 FAILED                TIMEOUT               
+mad                   HiGHS                 FAILED                TIMEOUT               
+graphdraw-domain      OR-Tools              FAILED                TIMEOUT               
+gen-ip016             OR-Tools              FAILED                TIMEOUT               
+neos-3046601-motu     HiGHS                 FAILED                TIMEOUT               
+supportcase26         HiGHS                 FAILED                TIMEOUT               
+neos-1440460          OR-Tools              FAILED                TIMEOUT               
+supportcase20         OR-Tools              FAILED                TIMEOUT               
+neos-3046601-motu     CPLEX                 FAILED                TIMEOUT               
+bienst2               OR-Tools              FAILED                TIMEOUT               
+glass4                OR-Tools              FAILED                TIMEOUT               
+ran14x18              OR-Tools              FAILED                TIMEOUT               
+neos-911880           CPLEX                 FAILED                TIMEOUT               
+neos-1440460          CPLEX                 FAILED                TIMEOUT               
+ran14x18              HiGHS                 FAILED                TIMEOUT               
+graphdraw-domain      HiGHS                 FAILED                TIMEOUT               
+neos-3754480-nidda    CPLEX                 FAILED                TIMEOUT               
+newdano               HiGHS                 FAILED                TIMEOUT               
+mad                   OR-Tools              FAILED                TIMEOUT               
+supportcase20         HiGHS                 FAILED                TIMEOUT               
+
+Iteration 2 with 341 model/solver pairs remaining 2026-07-16T23:22:12.873630Z
+-----------------------------------------------------------------------------
+neos-942830           OR-Tools              FAILED                TIMEOUT               
+neos-1440460          HiGHS                 FAILED                TIMEOUT               
+bienst2               HiGHS                 FAILED                TIMEOUT               
+gen-ip036             OR-Tools              FAILED                TIMEOUT               
+neos-5140963-mincio   CPLEX                 FAILED                TIMEOUT               
+k16x240b              OR-Tools              FAILED                TIMEOUT               
+markshare_4_0         HiGHS                 FAILED                TIMEOUT               
+enlight13             HiGHS                 FAILED                TIMEOUT               
+neos-942830           HiGHS                 FAILED                TIMEOUT               
+supportcase26         CPLEX                 FAILED                TIMEOUT               
+
+Iteration 3 with 331 model/solver pairs remaining 2026-07-17T00:15:11.339699Z
+-----------------------------------------------------------------------------
+enlight8              CPLEX                 Time stable           2.624209ms            27.0                  
+bell4                 HiGHS                 Time stable           858.214666ms          1.8542135524353176E7  
+neos-5192052-neckar   HiGHS                 Time stable           25.036541ms           -1.167E7              
+gsvm2rl3              CPLEX                 Time stable           24511.278083ms        0.3365275339619653    
+p0548                 CPLEX                 Time stable           19990.804167ms        8691.0                
+enlight8              HiGHS                 Time stable           1046.241917ms         27.00000000000374     
+mod008                CPLEX                 Time stable           119930.384625ms       307.0                 
+timtab1               HiGHS                 Time stable           42609.554ms           764771.9999998797     
+bell5                 CPLEX                 Time stable           1820.776791ms         8966406.49152         
+mod008                HiGHS                 Time stable           1290.354709ms         306.9999999999855     
+noswot                HiGHS                 Time stable           39743.556542ms        -41.00000000000012    
+pk1                   OR-Tools              Time stable           155819.818042ms       10.99999999999994     
+dcmulti               HiGHS                 Time stable           3065.4835ms           188182.0              
+prod2                 CPLEX                 Time stable           7918.524625ms         -62.00000000000003    
+p0040                 HiGHS                 Time stable           2.813542ms            62027.0               
+neos15                HiGHS                 FAILED                TIMEOUT               
+flugpl                OR-Tools              Time stable           77.167084ms           1201500.0             
+mod008                OR-Tools              Time stable           538.8015ms            307.0                 
+sentoy                HiGHS                 Time stable           124.823666ms          -7772.0               
+gen-ip054             CPLEX                 FAILED                TIMEOUT               
+neos-1426635          CPLEX                 Time stable           13545.174917ms        -176.0                
+danoint               CPLEX                 Time stable           68973.373375ms        65.66666666666666     
+mik-250-20-75-1       OR-Tools              Time stable           3138.67525ms          -49715.99999999998    
+gen-ip021             CPLEX                 Time stable           44199.98225ms         2361.4541951916       
+k16x240b              CPLEX                 Time stable           29494.881583ms        11393.000000000031    
+sample2               OR-Tools              Time stable           2.109666ms            375.0                 
+fixnet6               HiGHS                 Time stable           1502.01325ms          3982.999999999999     
+neos-3610173-itata    HiGHS                 Time stable           1705.615333ms         148.0                 
+neos-3611689-kaihu    OR-Tools              Time stable           724.744541ms          119.0                 
+neos15                CPLEX                 Time stable           103190.34875ms        80598.43009686079     
+stein45               HiGHS                 Time stable           13124.902333ms        30.0                  
+r50x360               CPLEX                 Time stable           4110.386834ms         1653.0000000000327    
+aflow30a              OR-Tools              Time stable           14891.345709ms        1158.0                
+22433                 HiGHS                 Time stable           1973.973917ms         21476.99999999998     
+flugpl                HiGHS                 Time stable           41.633375ms           1201500.0             
+mik-250-20-75-3       OR-Tools              Time stable           7273.746958ms         -52241.99999999999    
+neos-5192052-neckar   OR-Tools              Time stable           7.539125ms            -1.167E7              
+set1ch                CPLEX                 Time stable           23086.297875ms        54537.75              
+ran16x16              CPLEX                 Time stable           4773.678583ms         3823.0                
+stein27               OR-Tools              Time stable           566.808916ms          18.0                  
+bppc8-02              HiGHS                 Time stable           157.039834ms          507.0                 
+gen-ip036             CPLEX                 Time stable           92652.403166ms        -4606.6796098376      
+mas76                 CPLEX                 Time stable           27142.327625ms        40005.054142          
+neos-3611447-jijia    OR-Tools              Time stable           1166.438833ms         107.0                 
+m100n500k4r1          CPLEX                 Time stable           9679.517458ms         -25.0                 
+enigma                CPLEX                 Time stable           113.031667ms          0.0                   
+sp150x300d            OR-Tools              Time stable           897.514583ms          69.0                  
+bppc8-02              CPLEX                 Time stable           12580.0665ms          507.0                 
+neos-911880           HiGHS                 Time stable           6916.900833ms         54.76000000000655     
+cov1075               CPLEX                 Time stable           9720.496916ms         20.0                  
+glass4                CPLEX                 Time stable           48372.362792ms        1.2000126E9           
+neos-1425699          OR-Tools              Time stable           2.907667ms            3.179698977E9         
+graphdraw-gemcutter   OR-Tools              Time stable           188475.9715ms         7118.5                
+mas76                 HiGHS                 Time stable           224927.28575ms        40005.05414191548     
+ran14x18              CPLEX                 Time stable           29797.7975ms          3711.9999999999995    
+pp08aCUTS             OR-Tools              Time stable           1845.408708ms         7350.00000000001      
+r50x360               HiGHS                 Time stable           26440.193458ms        1653.0000000055775    
+ran16x16              HiGHS                 Time stable           50536.177375ms        3823.0000000001155    
+blend2                HiGHS                 Time stable           1663.045584ms         7.598985              
+opt1217               OR-Tools              Time stable           166.878125ms          -16.0                 
+neos-911880           OR-Tools              Time stable           44702.047417ms        54.76000000000008     
+rout                  HiGHS                 Time stable           63819.537417ms        1077.559999999838     
+mik-250-20-75-2       CPLEX                 Time stable           34950.091125ms        -50768.0              
+beavma                HiGHS                 Time stable           70.28975ms            383285.0              
+misc07                OR-Tools              Time stable           75709.915875ms        2810.0                
+neos5                 CPLEX                 Time stable           21718.251125ms        15.0                  
+modglob               CPLEX                 Time stable           17188.861917ms        2.074050808630826E7   
+mik-250-20-75-1       CPLEX                 Time stable           17442.618375ms        -49716.0              
+set1al                CPLEX                 Time stable           25238.262417ms        15869.75              
+fixnet4               CPLEX                 Time stable           188.019291ms          8936.0                
+supportcase14         CPLEX                 Time stable           1792.715833ms         288.0                 
+ran16x16              OR-Tools              Time stable           64280.744292ms        3823.0                
+ran12x21              CPLEX                 Time stable           2168.014167ms         3664.0                
+gr4x6                 OR-Tools              Time stable           3.075375ms            202.35000000000002    
+sentoy                CPLEX                 Time stable           962.448333ms          -7772.0               
+graphdraw-gemcutter   CPLEX                 Time stable           7840.17925ms          7118.500000000001     
+fixnet3               CPLEX                 Time stable           637.29675ms           51972.99999999999     
+enigma                OR-Tools              Time stable           115.699125ms          0.0                   
+enlight8              OR-Tools              Time stable           2.157959ms            27.0                  
+neos-942830           CPLEX                 Time stable           145099.658875ms       16.0                  
+vpm1                  OR-Tools              Time stable           9.620583ms            20.0                  
+set1al                OR-Tools              Time stable           57.980833ms           15869.75              
+dfn-gwin-UUM          HiGHS                 FAILED                TIMEOUT               
+prod1                 OR-Tools              Time stable           10022.455292ms        -56.0                 
+ic97_tension          HiGHS                 Time stable           13221.144333ms        3942.0000000000005    
+prod2                 HiGHS                 Time stable           95786.31025ms         -62.0                 
+glass4                HiGHS                 Time stable           227194.140709ms       1.2000126370391996E9  
+
+Iteration 4 with 244 model/solver pairs remaining 2026-07-17T01:05:30.756272Z
+-----------------------------------------------------------------------------
+aflow30a              HiGHS                 Time stable           5460.038708ms         1158.0                
+bell5                 HiGHS                 Time stable           673.523291ms          8966406.49152         
+timtab1               CPLEX                 Time stable           19247.653209ms        764771.99999978       
+gr4x6                 CPLEX                 Time stable           2387.232833ms         202.35                
+rgn                   HiGHS                 Time stable           125.750542ms          82.19999923999976     
+misc01                CPLEX                 Time stable           10773.359167ms        563.5                 
+supportcase20         CPLEX                 FAILED                TIMEOUT               
+rgn                   CPLEX                 Time stable           18202.151042ms        82.19999922399934     
+neos17                OR-Tools              Time stable           5712.362334ms         0.15000257742257736   
+pp08aCUTS             HiGHS                 Time stable           853.453666ms          7350.000000017598     
+b-ball                CPLEX                 Time stable           2.058042ms            -1.5                  
+neos-2624317-amur     OR-Tools              Time stable           58591.158625ms        3.5223968             
+stein9                OR-Tools              Time stable           4.649792ms            5.0                   
+enlight15             OR-Tools              Time stable           4.972041ms            69.0                  
+enlight13             OR-Tools              Time stable           3.793208ms            71.0                  
+fixnet3               OR-Tools              Time stable           17.755792ms           51973.00000000001     
+mik-250-20-75-2       OR-Tools              Time stable           3336.463ms            -50767.99999999999    
+mod013                OR-Tools              Time stable           492.395375ms          280.95                
+pp08a                 OR-Tools              Time stable           785.689042ms          7350.000000000006     
+mik-250-20-75-5       HiGHS                 Time stable           2104.301208ms         -51532.00000000022    
+p0033                 OR-Tools              Time stable           6.059375ms            3089.0                
+exp-1-500-5-5         CPLEX                 Time stable           957.651ms             65887.00000000006     
+f2gap40400            HiGHS                 Time stable           6.809166ms            20772.0               
+neos5                 HiGHS                 Time stable           59486.950792ms        15.0000002075778      
+p0040                 OR-Tools              Time stable           1.319917ms            62027.0               
+noswot                OR-Tools              Time stable           73607.235375ms        -41.0                 
+sentoy                OR-Tools              Time stable           212.811583ms          -7772.0               
+enigma                HiGHS                 Time stable           117.9415ms            0.0                   
+neos-911970           HiGHS                 Time stable           5607.673333ms         54.76000000000348     
+mik-250-20-75-2       HiGHS                 Time stable           3199.330625ms         -50768.00000000009    
+rout                  CPLEX                 Time stable           5252.482917ms         1077.559999999999     
+graphdraw-domain      CPLEX                 Time stable           49214.89ms            19686.000000000022    
+enlight13             CPLEX                 Time stable           4.26975ms             71.0                  
+set1cl                CPLEX                 Time stable           2895.133791ms         6484.25               
+neos-3610051-istra    HiGHS                 Time stable           4601.963875ms         49.0                  
+set1ch                OR-Tools              Time stable           209.721334ms          54537.75              
+neos-3610173-itata    CPLEX                 Time stable           22579.216917ms        148.0                 
+dfn-gwin-UUM          CPLEX                 Time stable           20577.712125ms        38752.0               
+mas74                 CPLEX                 FAILED                TIMEOUT               
+enlight_hard          OR-Tools              Time stable           2.006166ms            37.0                  
+misc05                HiGHS                 Time stable           438.4815ms            2984.499999999996     
+timtab1CUTS           CPLEX                 Time stable           26893.629125ms        764771.99999988       
+egout                 OR-Tools              Time stable           2.830166ms            568.1007              
+pipex                 OR-Tools              Time stable           47.123ms              788.263               
+cracpb1               OR-Tools              Time stable           69.485958ms           22199.0               
+p0040                 CPLEX                 Time stable           1.602959ms            62027.0               
+neos-3610040-iskar    HiGHS                 Time stable           801.354291ms          37.0                  
+misc02                HiGHS                 Time stable           31.947458ms           1690.0                
+neos-3610040-iskar    OR-Tools              Time stable           1023.145917ms         37.0                  
+p0548                 OR-Tools              Time stable           54.185917ms           8691.0                
+newdano               CPLEX                 Time stable           169151.702583ms       65.66666666666666     
+opt1217               CPLEX                 Time stable           160.969125ms          -16.0                 
+p0291                 CPLEX                 Time stable           173.178958ms          5223.748999999999     
+ic97_tension          OR-Tools              Time stable           8130.121708ms         3942.0                
+
+Iteration 5 with 190 model/solver pairs remaining 2026-07-17T01:35:54.098140Z
+-----------------------------------------------------------------------------
+dcmulti               CPLEX                 Time stable           42.775083ms           188182.0              
+aflow30a              CPLEX                 Time stable           876.849958ms          1158.0                
+stein45               CPLEX                 Time stable           752.280875ms          30.0                  
+noswot                CPLEX                 Time stable           1421.785959ms         -41.0                 
+neos17                HiGHS                 Time stable           3729.734417ms         0.15000257742257736   
+air01                 OR-Tools              Time stable           36.774875ms           6796.0                
+bell3b                OR-Tools              Time stable           1739.639208ms         1.1786160618E7        
+neos-1430701          HiGHS                 Time stable           4412.514417ms         -77.00000000000024    
+ej                    OR-Tools              Time stable           14500.506333ms        25508.0               
+mod013                HiGHS                 Time stable           420.371875ms          280.95000000000016    
+modglob               OR-Tools              Time stable           118.122ms             2.0740508086308237E7  
+gt2                   CPLEX                 Time stable           140.659125ms          21166.0               
+set1ch                HiGHS                 Time stable           665.583875ms          54537.75              
+nexp-50-20-1-1        OR-Tools              Time stable           132.494958ms          29.0                  
+lseu                  HiGHS                 Time stable           163.374375ms          1120.0                
+neos-3610051-istra    OR-Tools              Time stable           721.822375ms          49.0                  
+gt2                   OR-Tools              Time stable           19.446167ms           21166.0               
+pigeon-08             OR-Tools              Time stable           16700.05525ms         -7000.0               
+misc05                OR-Tools              Time stable           967.867333ms          2984.5                
+rlp1                  HiGHS                 Time stable           295.600208ms          15.0                  
+timtab1CUTS           HiGHS                 Time stable           77061.567917ms        764771.9999998807     
+vpm1                  CPLEX                 Time stable           166.174291ms          20.0                  
+p0201                 HiGHS                 Time stable           493.77825ms           7615.0                
+ic97_tension          CPLEX                 Time stable           7940.468375ms         3942.0000000000005    
+p0033                 CPLEX                 Time stable           7674.905125ms         3089.0                
+bell3a                HiGHS                 Time stable           226.816ms             878430.3159999811     
+ran13x13              CPLEX                 Time stable           23377.912458ms        3252.0                
+vpm2                  CPLEX                 Time stable           1453.919792ms         13.75                 
+neos-3611447-jijia    HiGHS                 Time stable           840.102ms             107.0                 
+timtab1CUTS           OR-Tools              Time stable           54984.095125ms        764771.99999978       
+misc01                OR-Tools              Time stable           270.535708ms          563.5                 
+lseu                  OR-Tools              Time stable           416.600291ms          1120.0                
+
+Iteration 6 with 158 model/solver pairs remaining 2026-07-17T01:55:32.797323Z
+-----------------------------------------------------------------------------
+gr4x6                 HiGHS                 Time stable           7.226916ms            202.35                
+exp-1-500-5-5         HiGHS                 Time stable           1684.9615ms           65887.0               
+bienst1               CPLEX                 Time stable           1333.585208ms         46.74999999999999     
+enlight_hard          HiGHS                 Time stable           3812.0295ms           37.00000000000016     
+cracpb1               CPLEX                 Time stable           15.663208ms           22199.0               
+neos17                CPLEX                 Time stable           623.3125ms            0.15000257742257742   
+bienst2               CPLEX                 Time stable           6090.133583ms         54.6                  
+mik-250-1-100-1       HiGHS                 Time stable           6477.682333ms         -66729.0              
+air01                 HiGHS                 Time stable           52.505917ms           6796.0                
+23588                 HiGHS                 Time stable           4105.4195ms           8090.000000000001     
+beavma                OR-Tools              Time stable           240.848042ms          383285.0              
+opt1217               HiGHS                 Time stable           74.542208ms           -16.0                 
+neos-2624317-amur     HiGHS                 Time stable           7412.515334ms         3.5223968             
+bell3b                HiGHS                 Time stable           313.636208ms          1.17862305228E7       
+rgn                   OR-Tools              Time stable           103.522875ms          82.19999924           
+23588                 OR-Tools              Time stable           1547.55225ms          8090.0                
+fixnet3               HiGHS                 Time stable           47.111917ms           51973.0               
+bell4                 OR-Tools              Time stable           393.34ms              1.8541484198E7        
+f2gap40400            OR-Tools              Time stable           26.216042ms           20772.0               
+bppc8-02              OR-Tools              Time stable           153.810917ms          507.0                 
+neos-3610173-itata    OR-Tools              Time stable           457.932416ms          148.0                 
+timtab1               OR-Tools              Time stable           44097.571625ms        764771.9999998801     
+gen                   OR-Tools              Time stable           11.471875ms           112313.362718         
+fixnet4               OR-Tools              Time stable           748.847209ms          8936.000000000025     
+b-ball                HiGHS                 Time stable           83.659667ms           -1.500001             
+pp08a                 HiGHS                 Time stable           696.445709ms          7349.999999999996     
+pigeon-08             CPLEX                 Time stable           1749.90825ms          -7000.0               
+cov1075               HiGHS                 Time stable           29208.551875ms        20.00000000000036     
+k16x240               CPLEX                 Time stable           26378.735ms           10674.0               
+p0282                 OR-Tools              Time stable           160.104958ms          258411.0              
+gsvm2rl3              OR-Tools              Time stable           5044.25825ms          0.33652753396196383   
+sample2               HiGHS                 Time stable           13.313208ms           375.0                 
+enlight15             CPLEX                 Time stable           4.426ms               69.0                  
+22433                 OR-Tools              Time stable           768.829708ms          21477.0               
+mik-250-20-75-4       HiGHS                 Time stable           27508.497834ms        -52301.00000019135    
+f2gap40400            CPLEX                 Time stable           822.525ms             20772.0               
+stein27               HiGHS                 Time stable           835.182834ms          17.99999999999997     
+p0291                 OR-Tools              Time stable           7.177709ms            5223.749              
+rout                  OR-Tools              Time stable           21645.398625ms        1077.56               
+sample2               CPLEX                 Time stable           160.934083ms          375.0                 
+r50x360               OR-Tools              Time stable           52611.028875ms        1653.0000000000034    
+misc07                HiGHS                 Time stable           23323.279334ms        2809.999999999984     
+graphdraw-gemcutter   HiGHS                 Time stable           162995.118667ms       7118.500000000005     
+pk1                   HiGHS                 Time stable           136877.450875ms       10.9999990000002      
+
+Iteration 7 with 114 model/solver pairs remaining 2026-07-17T02:16:10.828465Z
+-----------------------------------------------------------------------------
+23588                 CPLEX                 Time stable           54.967916ms           8090.0                
+neos-2624317-amur     CPLEX                 Time stable           154.972625ms          3.5223968             
+modglob               HiGHS                 Time stable           404.134042ms          2.0740508086308237E7  
+stein27               CPLEX                 Time stable           553.21475ms           18.0                  
+pipex                 HiGHS                 Time stable           64.482333ms           788.2629999997624     
+vpm2                  HiGHS                 Time stable           2308.54975ms          13.75                 
+mik-250-20-75-3       HiGHS                 Time stable           5115.711959ms         -52242.00000000025    
+mik-250-20-75-4       CPLEX                 Time stable           23184.360292ms        -52300.99999999999    
+mik-250-20-75-3       CPLEX                 Time stable           5403.811458ms         -52242.0              
+stein9                HiGHS                 Time stable           11.309583ms           5.0                   
+egout                 HiGHS                 Time stable           10.949625ms           568.1007              
+misc03                OR-Tools              Time stable           704.667416ms          3360.0                
+ran14x18-disj-8       CPLEX                 Time stable           117215.423542ms       3712.0000039666747    
+markshare_4_0         OR-Tools              Time stable           74085.358459ms        1.00000000000001      
+bienst1               OR-Tools              Time stable           78412.342875ms        46.75                 
+p0548                 HiGHS                 Time stable           41.869166ms           8691.0                
+
+Iteration 8 with 98 model/solver pairs remaining 2026-07-17T02:31:40.426004Z
+-----------------------------------------------------------------------------
+p0201                 OR-Tools              Time stable           416.488458ms          7615.0                
+neos-1430701          CPLEX                 Time stable           205.044458ms          -77.0                 
+mod013                CPLEX                 Time stable           145.274541ms          280.9500000019        
+mas76                 OR-Tools              Time stable           64880.55475ms         40005.054142          
+p0033                 HiGHS                 Time stable           6.315709ms            3088.9999999999977    
+air01                 CPLEX                 Time stable           135.724042ms          6796.0                
+pigeon-08             HiGHS                 Time stable           3128.08475ms          -7000.0               
+lseu                  CPLEX                 Time stable           97.755334ms           1120.0                
+nexp-50-20-1-1        HiGHS                 Time stable           26.537791ms           29.0                  
+stein45               OR-Tools              Time stable           7342.163375ms         30.0                  
+mik-250-20-75-1       HiGHS                 Time stable           2958.871292ms         -49716.00000000193    
+set1cl                HiGHS                 Time stable           42.787125ms           6484.25               
+supportcase16         HiGHS                 Time stable           43.751833ms           288.0                 
+supportcase14         OR-Tools              Time stable           51.007041ms           288.0                 
+neos-911970           CPLEX                 Time stable           25304.743875ms        54.75999999999999     
+
+Iteration 9 with 83 model/solver pairs remaining 2026-07-17T02:45:16.639480Z
+-----------------------------------------------------------------------------
+enlight_hard          CPLEX                 Time stable           2.425375ms            37.0                  
+bell3a                OR-Tools              Time stable           588.309917ms          878430.316            
+exp-1-500-5-5         OR-Tools              Time stable           1046.061208ms         65887.00000002752     
+gsvm2rl3              HiGHS                 Time stable           4642.555708ms         0.3365275339619642    
+fixnet6               OR-Tools              Time stable           5726.080375ms         3983.0                
+bienst1               HiGHS                 Time stable           17640.113375ms        46.74999999999992     
+pigeon-10             CPLEX                 Time stable           81.955625ms           -9000.0               
+bell4                 CPLEX                 Time stable           470.3965ms            1.8541825838E7        
+neos-3610040-iskar    CPLEX                 Time stable           35.909ms              37.0                  
+bell5                 OR-Tools              Time stable           143.217125ms          8966406.49152         
+sp150x300d            HiGHS                 Time stable           60.357ms              68.99999999999999     
+p0201                 CPLEX                 Time stable           109.222708ms          7615.0                
+stein15               CPLEX                 Time stable           312.302709ms          9.0                   
+prod1                 CPLEX                 Time stable           2567.359916ms         -56.00000000000003    
+bm23                  HiGHS                 Time stable           60.648292ms           34.0                  
+pipex                 CPLEX                 Time stable           152.989417ms          788.263               
+blend2                OR-Tools              Time stable           689.45675ms           7.598985              
+mik-250-20-75-5       CPLEX                 Time stable           1678.69575ms          -51532.000000113      
+dcmulti               OR-Tools              Time stable           850.476459ms          188182.0              
+misc03                HiGHS                 Time stable           389.483459ms          3359.999999999982     
+misc02                OR-Tools              Time stable           115.171708ms          1690.0                
+misc07                CPLEX                 Time stable           724.351ms             2810.0                
+bm23                  CPLEX                 Time stable           112.665167ms          34.0                  
+supportcase16         CPLEX                 Time stable           1690.11725ms          288.0                 
+neos-3611447-jijia    CPLEX                 Time stable           200.824209ms          107.0                 
+pk1                   CPLEX                 Time stable           4142.049542ms         11.0                  
+ran13x13              OR-Tools              Time stable           20274.410791ms        3252.0000000000005    
+ran12x21              OR-Tools              Time stable           23428.468ms           3664.0                
+prod1                 HiGHS                 Time stable           39912.796ms           -56.0                 
+markshare_5_0         CPLEX                 Time stable           4040.10375ms          1.0                   
+ran13x13              HiGHS                 Time stable           13189.639459ms        3252.0000000000136    
+dfn-gwin-UUM          OR-Tools              Time stable           75095.110583ms        38752.0               
+prod2                 OR-Tools              Time stable           88449.211ms           -62.0                 
+p80x400b              CPLEX                 Time stable           60232.371625ms        39667.00000000119     
+bell3a                CPLEX                 Time stable           141.424791ms          878430.316            
+
+Iteration 10 with 48 model/solver pairs remaining 2026-07-17T02:57:44.541980Z
+-----------------------------------------------------------------------------
+p0291                 HiGHS                 Time stable           14.388958ms           5223.749              
+p0282                 HiGHS                 Time stable           82.181208ms           258411.0              
+neos-5192052-neckar   CPLEX                 Time stable           7.46075ms             -1.1670000000000002E7 
+mik-250-20-75-5       OR-Tools              Time stable           2234.788583ms         -51532.00000000007    
+fixnet6               CPLEX                 Time stable           181.407541ms          3983.0                
+neos-3611689-kaihu    CPLEX                 Time stable           1039.998708ms         119.0                 
+mik-250-1-100-1       CPLEX                 Time stable           1166.125875ms         -66729.0              
+bppc8-09              CPLEX                 Time stable           1528.912625ms         472.0                 
+mik-250-20-75-4       OR-Tools              Time stable           8268.636125ms         -52301.0              
+egout                 CPLEX                 Time stable           152.534459ms          568.1007              
+neos-3072252-nete     CPLEX                 Time stable           1964.08175ms          1.1807697999999994E7  
+mik-250-1-100-1       OR-Tools              Time stable           45937.646333ms        -66729.0              
+
+Iteration 11 with 36 model/solver pairs remaining 2026-07-17T03:03:39.859061Z
+-----------------------------------------------------------------------------
+gen                   HiGHS                 Time stable           11.996875ms           112313.362718         
+vpm1                  HiGHS                 Time stable           10.593708ms           20.0                  
+stein15               HiGHS                 Time stable           23.331833ms           9.0                   
+supportcase14         HiGHS                 Time stable           51.465333ms           288.0                 
+nexp-50-20-1-1        CPLEX                 Time stable           102.042541ms          29.0                  
+stein9                CPLEX                 Time stable           96.241542ms           5.0                   
+vpm2                  OR-Tools              Time stable           1987.389834ms         13.75                 
+ran12x21              HiGHS                 Time stable           10870.237333ms        3664.0000000000573    
+bell3b                CPLEX                 Time stable           490.489542ms          1.1786515398E7        
+p0282                 CPLEX                 Time stable           126.76375ms           258411.0              
+
+Iteration 12 with 26 model/solver pairs remaining 2026-07-17T03:07:57.932668Z
+-----------------------------------------------------------------------------
+22433                 CPLEX                 Time stable           112.132792ms          21477.0               
+pp08a                 CPLEX                 Time stable           8444.198459ms         7350.0                
+
+Iteration 13 with 24 model/solver pairs remaining 2026-07-17T03:11:24.922836Z
+-----------------------------------------------------------------------------
+gt2                   HiGHS                 Time stable           28.360958ms           21166.0               
+beavma                CPLEX                 Time stable           63.848416ms           383285.0              
+set1al                HiGHS                 Time stable           38.796208ms           15869.75              
+misc01                HiGHS                 Time stable           117.944208ms          563.4999999999993     
+cracpb1               HiGHS                 Time stable           29.029917ms           22199.0               
+
+Iteration 14 with 19 model/solver pairs remaining 2026-07-17T03:15:00.084097Z
+-----------------------------------------------------------------------------
+bm23                  OR-Tools              Time stable           150.429042ms          34.0                  
+misc03                CPLEX                 Time stable           112.373625ms          3360.0                
+
+Iteration 15 with 17 model/solver pairs remaining 2026-07-17T03:17:50.502827Z
+-----------------------------------------------------------------------------
+stein15               OR-Tools              Time stable           20.815375ms           9.0                   
+
+Iteration 16 with 16 model/solver pairs remaining 2026-07-17T03:20:55.047243Z
+-----------------------------------------------------------------------------
+fixnet4               HiGHS                 Time stable           181.860208ms          8936.0                
+flugpl                CPLEX                 Time stable           6.318917ms            1201500.0             
+markshare_4_0         CPLEX                 Time stable           1721.362333ms         1.0                   
+
+Iteration 17 with 13 model/solver pairs remaining 2026-07-17T03:24:01.217022Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 13 model/solver pairs remaining 2026-07-17T03:26:28.401244Z
+-----------------------------------------------------------------------------
+neos-3611689-kaihu    HiGHS                 Time stable           1219.223416ms         119.0                 
+pp08aCUTS             CPLEX                 Time stable           108.947542ms          7350.000000000001     
+
+Iteration 19 with 11 model/solver pairs remaining 2026-07-17T03:28:54.201109Z
+-----------------------------------------------------------------------------
+set1cl                OR-Tools              Time stable           10.0785ms             6484.25               
+neos-3610051-istra    CPLEX                 Time stable           72.782417ms           49.0                  
+
+Iteration 20 with 9 model/solver pairs remaining 2026-07-17T03:31:21.884390Z
+-----------------------------------------------------------------------------
+neos-1425699          HiGHS                 Time stable           72.862ms              3.179698977E9         
+supportcase16         OR-Tools              Time stable           79.506542ms           288.0                 
+neos-1425699          CPLEX                 Time stable           36.27875ms            3.179698977E9         
+gen                   CPLEX                 Time stable           77.776042ms           112313.362718         
+misc05                CPLEX                 Time stable           47.83775ms            2984.5                
+sp150x300d            CPLEX                 Time stable           152.157084ms          69.0                  
+rlp1                  CPLEX                 Time stable           68.719791ms           15.0                  
+misc02                CPLEX                 Time stable           374.821209ms          1690.0                
+blend2                CPLEX                 Time stable           2245.7125ms           7.598985              
+
+Final Results
+=====================================================================
+22433                 CPLEX                 OPTIMAL               112.132792ms          
+22433                 HiGHS                 OPTIMAL               1973.973917ms         
+22433                 OR-Tools              OPTIMAL               768.829708ms          
+23588                 CPLEX                 OPTIMAL               54.967916ms           
+23588                 HiGHS                 OPTIMAL               4105.4195ms           
+23588                 OR-Tools              OPTIMAL               1547.55225ms          
+aflow30a              CPLEX                 OPTIMAL               876.849958ms          
+aflow30a              HiGHS                 OPTIMAL               5460.038708ms         
+aflow30a              OR-Tools              OPTIMAL               14891.345709ms        
+air01                 CPLEX                 OPTIMAL               135.724042ms          
+air01                 HiGHS                 OPTIMAL               52.505917ms           
+air01                 OR-Tools              OPTIMAL               36.774875ms           
+assign1-5-8           CPLEX                 FAILED                TIMEOUT               
+assign1-5-8           HiGHS                 FAILED                TIMEOUT               
+assign1-5-8           OR-Tools              FAILED                TIMEOUT               
+b-ball                CPLEX                 OPTIMAL               2.058042ms            
+b-ball                HiGHS                 OPTIMAL               83.659667ms           
+b-ball                OR-Tools              FAILED                TIMEOUT               
+beavma                CPLEX                 OPTIMAL               63.848416ms           
+beavma                HiGHS                 OPTIMAL               70.28975ms            
+beavma                OR-Tools              OPTIMAL               240.848042ms          
+bell3a                CPLEX                 OPTIMAL               141.424791ms          
+bell3a                HiGHS                 OPTIMAL               226.816ms             
+bell3a                OR-Tools              OPTIMAL               588.309917ms          
+bell3b                CPLEX                 OPTIMAL               490.489542ms          
+bell3b                HiGHS                 OPTIMAL               313.636208ms          
+bell3b                OR-Tools              OPTIMAL               1739.639208ms         
+bell4                 CPLEX                 OPTIMAL               470.3965ms            
+bell4                 HiGHS                 OPTIMAL               858.214666ms          
+bell4                 OR-Tools              OPTIMAL               393.34ms              
+bell5                 CPLEX                 OPTIMAL               1820.776791ms         
+bell5                 HiGHS                 OPTIMAL               673.523291ms          
+bell5                 OR-Tools              OPTIMAL               143.217125ms          
+bienst1               CPLEX                 OPTIMAL               1333.585208ms         
+bienst1               HiGHS                 OPTIMAL               17640.113375ms        
+bienst1               OR-Tools              OPTIMAL               78412.342875ms        
+bienst2               CPLEX                 OPTIMAL               6090.133583ms         
+bienst2               HiGHS                 FAILED                TIMEOUT               
+bienst2               OR-Tools              FAILED                TIMEOUT               
+blend2                CPLEX                 OPTIMAL               2245.7125ms           
+blend2                HiGHS                 OPTIMAL               1663.045584ms         
+blend2                OR-Tools              OPTIMAL               689.45675ms           
+bm23                  CPLEX                 OPTIMAL               112.665167ms          
+bm23                  HiGHS                 OPTIMAL               60.648292ms           
+bm23                  OR-Tools              OPTIMAL               150.429042ms          
+bppc8-02              CPLEX                 OPTIMAL               12580.0665ms          
+bppc8-02              HiGHS                 OPTIMAL               157.039834ms          
+bppc8-02              OR-Tools              OPTIMAL               153.810917ms          
+bppc8-09              CPLEX                 OPTIMAL               1528.912625ms         
+bppc8-09              HiGHS                 FAILED                TIMEOUT               
+bppc8-09              OR-Tools              FAILED                TIMEOUT               
+breastcancer-regularizCPLEX                 FAILED                WRONG                 
+breastcancer-regularizHiGHS                 FAILED                TIMEOUT               
+breastcancer-regularizOR-Tools              FAILED                TIMEOUT               
+control30-3-2-3       CPLEX                 FAILED                TIMEOUT               
+control30-3-2-3       HiGHS                 FAILED                TIMEOUT               
+control30-3-2-3       OR-Tools              FAILED                TIMEOUT               
+cov1075               CPLEX                 OPTIMAL               9720.496916ms         
+cov1075               HiGHS                 OPTIMAL               29208.551875ms        
+cov1075               OR-Tools              FAILED                TIMEOUT               
+cracpb1               CPLEX                 OPTIMAL               15.663208ms           
+cracpb1               HiGHS                 OPTIMAL               29.029917ms           
+cracpb1               OR-Tools              OPTIMAL               69.485958ms           
+danoint               CPLEX                 OPTIMAL               68973.373375ms        
+danoint               HiGHS                 FAILED                TIMEOUT               
+danoint               OR-Tools              FAILED                TIMEOUT               
+dcmulti               CPLEX                 OPTIMAL               42.775083ms           
+dcmulti               HiGHS                 OPTIMAL               3065.4835ms           
+dcmulti               OR-Tools              OPTIMAL               850.476459ms          
+dfn-gwin-UUM          CPLEX                 OPTIMAL               20577.712125ms        
+dfn-gwin-UUM          HiGHS                 FAILED                TIMEOUT               
+dfn-gwin-UUM          OR-Tools              OPTIMAL               75095.110583ms        
+egout                 CPLEX                 OPTIMAL               152.534459ms          
+egout                 HiGHS                 OPTIMAL               10.949625ms           
+egout                 OR-Tools              OPTIMAL               2.830166ms            
+ej                    CPLEX                 FAILED                TIMEOUT               
+ej                    HiGHS                 FAILED                TIMEOUT               
+ej                    OR-Tools              OPTIMAL               14500.506333ms        
+enigma                CPLEX                 OPTIMAL               113.031667ms          
+enigma                HiGHS                 OPTIMAL               117.9415ms            
+enigma                OR-Tools              OPTIMAL               115.699125ms          
+enlight13             CPLEX                 OPTIMAL               4.26975ms             
+enlight13             HiGHS                 FAILED                TIMEOUT               
+enlight13             OR-Tools              OPTIMAL               3.793208ms            
+enlight15             CPLEX                 OPTIMAL               4.426ms               
+enlight15             HiGHS                 FAILED                TIMEOUT               
+enlight15             OR-Tools              OPTIMAL               4.972041ms            
+enlight8              CPLEX                 OPTIMAL               2.624209ms            
+enlight8              HiGHS                 OPTIMAL               1046.241917ms         
+enlight8              OR-Tools              OPTIMAL               2.157959ms            
+enlight_hard          CPLEX                 OPTIMAL               2.425375ms            
+enlight_hard          HiGHS                 OPTIMAL               3812.0295ms           
+enlight_hard          OR-Tools              OPTIMAL               2.006166ms            
+exp-1-500-5-5         CPLEX                 OPTIMAL               957.651ms             
+exp-1-500-5-5         HiGHS                 OPTIMAL               1684.9615ms           
+exp-1-500-5-5         OR-Tools              OPTIMAL               1046.061208ms         
+f2gap40400            CPLEX                 OPTIMAL               822.525ms             
+f2gap40400            HiGHS                 OPTIMAL               6.809166ms            
+f2gap40400            OR-Tools              OPTIMAL               26.216042ms           
+fixnet3               CPLEX                 OPTIMAL               637.29675ms           
+fixnet3               HiGHS                 OPTIMAL               47.111917ms           
+fixnet3               OR-Tools              OPTIMAL               17.755792ms           
+fixnet4               CPLEX                 OPTIMAL               188.019291ms          
+fixnet4               HiGHS                 OPTIMAL               181.860208ms          
+fixnet4               OR-Tools              OPTIMAL               748.847209ms          
+fixnet6               CPLEX                 OPTIMAL               181.407541ms          
+fixnet6               HiGHS                 OPTIMAL               1502.01325ms          
+fixnet6               OR-Tools              OPTIMAL               5726.080375ms         
+flugpl                CPLEX                 OPTIMAL               6.318917ms            
+flugpl                HiGHS                 OPTIMAL               41.633375ms           
+flugpl                OR-Tools              OPTIMAL               77.167084ms           
+gen                   CPLEX                 OPTIMAL               77.776042ms           
+gen                   HiGHS                 OPTIMAL               11.996875ms           
+gen                   OR-Tools              OPTIMAL               11.471875ms           
+gen-ip002             CPLEX                 FAILED                TIMEOUT               
+gen-ip002             HiGHS                 FAILED                TIMEOUT               
+gen-ip002             OR-Tools              FAILED                TIMEOUT               
+gen-ip016             CPLEX                 FAILED                TIMEOUT               
+gen-ip016             HiGHS                 FAILED                TIMEOUT               
+gen-ip016             OR-Tools              FAILED                TIMEOUT               
+gen-ip021             CPLEX                 OPTIMAL               44199.98225ms         
+gen-ip021             HiGHS                 FAILED                TIMEOUT               
+gen-ip021             OR-Tools              FAILED                TIMEOUT               
+gen-ip036             CPLEX                 OPTIMAL               92652.403166ms        
+gen-ip036             HiGHS                 FAILED                TIMEOUT               
+gen-ip036             OR-Tools              FAILED                TIMEOUT               
+gen-ip054             CPLEX                 FAILED                TIMEOUT               
+gen-ip054             HiGHS                 FAILED                TIMEOUT               
+gen-ip054             OR-Tools              FAILED                TIMEOUT               
+glass4                CPLEX                 OPTIMAL               48372.362792ms        
+glass4                HiGHS                 OPTIMAL               227194.140709ms       
+glass4                OR-Tools              FAILED                TIMEOUT               
+go19                  CPLEX                 FAILED                TIMEOUT               
+go19                  HiGHS                 FAILED                TIMEOUT               
+go19                  OR-Tools              FAILED                TIMEOUT               
+gr4x6                 CPLEX                 OPTIMAL               2387.232833ms         
+gr4x6                 HiGHS                 OPTIMAL               7.226916ms            
+gr4x6                 OR-Tools              OPTIMAL               3.075375ms            
+graphdraw-domain      CPLEX                 OPTIMAL               49214.89ms            
+graphdraw-domain      HiGHS                 FAILED                TIMEOUT               
+graphdraw-domain      OR-Tools              FAILED                TIMEOUT               
+graphdraw-gemcutter   CPLEX                 OPTIMAL               7840.17925ms          
+graphdraw-gemcutter   HiGHS                 OPTIMAL               162995.118667ms       
+graphdraw-gemcutter   OR-Tools              OPTIMAL               188475.9715ms         
+gsvm2rl3              CPLEX                 OPTIMAL               24511.278083ms        
+gsvm2rl3              HiGHS                 OPTIMAL               4642.555708ms         
+gsvm2rl3              OR-Tools              OPTIMAL               5044.25825ms          
+gsvm2rl5              CPLEX                 FAILED                TIMEOUT               
+gsvm2rl5              HiGHS                 FAILED                TIMEOUT               
+gsvm2rl5              OR-Tools              FAILED                TIMEOUT               
+gt2                   CPLEX                 OPTIMAL               140.659125ms          
+gt2                   HiGHS                 OPTIMAL               28.360958ms           
+gt2                   OR-Tools              OPTIMAL               19.446167ms           
+ic97_tension          CPLEX                 OPTIMAL               7940.468375ms         
+ic97_tension          HiGHS                 OPTIMAL               13221.144333ms        
+ic97_tension          OR-Tools              OPTIMAL               8130.121708ms         
+k16x240               CPLEX                 OPTIMAL               26378.735ms           
+k16x240               HiGHS                 FAILED                TIMEOUT               
+k16x240               OR-Tools              FAILED                TIMEOUT               
+k16x240b              CPLEX                 OPTIMAL               29494.881583ms        
+k16x240b              HiGHS                 FAILED                TIMEOUT               
+k16x240b              OR-Tools              FAILED                TIMEOUT               
+lseu                  CPLEX                 OPTIMAL               97.755334ms           
+lseu                  HiGHS                 OPTIMAL               163.374375ms          
+lseu                  OR-Tools              OPTIMAL               416.600291ms          
+m100n500k4r1          CPLEX                 OPTIMAL               9679.517458ms         
+m100n500k4r1          HiGHS                 FAILED                TIMEOUT               
+m100n500k4r1          OR-Tools              FAILED                TIMEOUT               
+mad                   CPLEX                 FAILED                TIMEOUT               
+mad                   HiGHS                 FAILED                TIMEOUT               
+mad                   OR-Tools              FAILED                TIMEOUT               
+markshare1            CPLEX                 FAILED                TIMEOUT               
+markshare1            HiGHS                 FAILED                TIMEOUT               
+markshare1            OR-Tools              FAILED                TIMEOUT               
+markshare2            CPLEX                 FAILED                TIMEOUT               
+markshare2            HiGHS                 FAILED                TIMEOUT               
+markshare2            OR-Tools              FAILED                TIMEOUT               
+markshare_4_0         CPLEX                 OPTIMAL               1721.362333ms         
+markshare_4_0         HiGHS                 FAILED                TIMEOUT               
+markshare_4_0         OR-Tools              OPTIMAL               74085.358459ms        
+markshare_5_0         CPLEX                 OPTIMAL               4040.10375ms          
+markshare_5_0         HiGHS                 FAILED                TIMEOUT               
+markshare_5_0         OR-Tools              FAILED                TIMEOUT               
+mas74                 CPLEX                 FAILED                TIMEOUT               
+mas74                 HiGHS                 FAILED                TIMEOUT               
+mas74                 OR-Tools              FAILED                TIMEOUT               
+mas76                 CPLEX                 OPTIMAL               27142.327625ms        
+mas76                 HiGHS                 OPTIMAL               224927.28575ms        
+mas76                 OR-Tools              OPTIMAL               64880.55475ms         
+mik-250-1-100-1       CPLEX                 OPTIMAL               1166.125875ms         
+mik-250-1-100-1       HiGHS                 OPTIMAL               6477.682333ms         
+mik-250-1-100-1       OR-Tools              OPTIMAL               45937.646333ms        
+mik-250-20-75-1       CPLEX                 OPTIMAL               17442.618375ms        
+mik-250-20-75-1       HiGHS                 OPTIMAL               2958.871292ms         
+mik-250-20-75-1       OR-Tools              OPTIMAL               3138.67525ms          
+mik-250-20-75-2       CPLEX                 OPTIMAL               34950.091125ms        
+mik-250-20-75-2       HiGHS                 OPTIMAL               3199.330625ms         
+mik-250-20-75-2       OR-Tools              OPTIMAL               3336.463ms            
+mik-250-20-75-3       CPLEX                 OPTIMAL               5403.811458ms         
+mik-250-20-75-3       HiGHS                 OPTIMAL               5115.711959ms         
+mik-250-20-75-3       OR-Tools              OPTIMAL               7273.746958ms         
+mik-250-20-75-4       CPLEX                 OPTIMAL               23184.360292ms        
+mik-250-20-75-4       HiGHS                 OPTIMAL               27508.497834ms        
+mik-250-20-75-4       OR-Tools              OPTIMAL               8268.636125ms         
+mik-250-20-75-5       CPLEX                 OPTIMAL               1678.69575ms          
+mik-250-20-75-5       HiGHS                 OPTIMAL               2104.301208ms         
+mik-250-20-75-5       OR-Tools              OPTIMAL               2234.788583ms         
+misc01                CPLEX                 OPTIMAL               10773.359167ms        
+misc01                HiGHS                 OPTIMAL               117.944208ms          
+misc01                OR-Tools              OPTIMAL               270.535708ms          
+misc02                CPLEX                 OPTIMAL               374.821209ms          
+misc02                HiGHS                 OPTIMAL               31.947458ms           
+misc02                OR-Tools              OPTIMAL               115.171708ms          
+misc03                CPLEX                 OPTIMAL               112.373625ms          
+misc03                HiGHS                 OPTIMAL               389.483459ms          
+misc03                OR-Tools              OPTIMAL               704.667416ms          
+misc05                CPLEX                 OPTIMAL               47.83775ms            
+misc05                HiGHS                 OPTIMAL               438.4815ms            
+misc05                OR-Tools              OPTIMAL               967.867333ms          
+misc07                CPLEX                 OPTIMAL               724.351ms             
+misc07                HiGHS                 OPTIMAL               23323.279334ms        
+misc07                OR-Tools              OPTIMAL               75709.915875ms        
+mod008                CPLEX                 OPTIMAL               119930.384625ms       
+mod008                HiGHS                 OPTIMAL               1290.354709ms         
+mod008                OR-Tools              OPTIMAL               538.8015ms            
+mod013                CPLEX                 OPTIMAL               145.274541ms          
+mod013                HiGHS                 OPTIMAL               420.371875ms          
+mod013                OR-Tools              OPTIMAL               492.395375ms          
+modglob               CPLEX                 OPTIMAL               17188.861917ms        
+modglob               HiGHS                 OPTIMAL               404.134042ms          
+modglob               OR-Tools              OPTIMAL               118.122ms             
+neos-1425699          CPLEX                 OPTIMAL               36.27875ms            
+neos-1425699          HiGHS                 OPTIMAL               72.862ms              
+neos-1425699          OR-Tools              OPTIMAL               2.907667ms            
+neos-1426635          CPLEX                 OPTIMAL               13545.174917ms        
+neos-1426635          HiGHS                 FAILED                TIMEOUT               
+neos-1426635          OR-Tools              FAILED                TIMEOUT               
+neos-1430701          CPLEX                 OPTIMAL               205.044458ms          
+neos-1430701          HiGHS                 OPTIMAL               4412.514417ms         
+neos-1430701          OR-Tools              FAILED                TIMEOUT               
+neos-1440460          CPLEX                 FAILED                TIMEOUT               
+neos-1440460          HiGHS                 FAILED                TIMEOUT               
+neos-1440460          OR-Tools              FAILED                TIMEOUT               
+neos-2624317-amur     CPLEX                 OPTIMAL               154.972625ms          
+neos-2624317-amur     HiGHS                 OPTIMAL               7412.515334ms         
+neos-2624317-amur     OR-Tools              OPTIMAL               58591.158625ms        
+neos-2652786-brda     CPLEX                 FAILED                TIMEOUT               
+neos-2652786-brda     HiGHS                 FAILED                TIMEOUT               
+neos-2652786-brda     OR-Tools              FAILED                TIMEOUT               
+neos-2657525-crna     CPLEX                 FAILED                TIMEOUT               
+neos-2657525-crna     HiGHS                 FAILED                TIMEOUT               
+neos-2657525-crna     OR-Tools              FAILED                TIMEOUT               
+neos-3046601-motu     CPLEX                 FAILED                TIMEOUT               
+neos-3046601-motu     HiGHS                 FAILED                TIMEOUT               
+neos-3046601-motu     OR-Tools              FAILED                TIMEOUT               
+neos-3046615-murg     CPLEX                 FAILED                TIMEOUT               
+neos-3046615-murg     HiGHS                 FAILED                TIMEOUT               
+neos-3046615-murg     OR-Tools              FAILED                TIMEOUT               
+neos-3072252-nete     CPLEX                 OPTIMAL               1964.08175ms          
+neos-3072252-nete     HiGHS                 FAILED                TIMEOUT               
+neos-3072252-nete     OR-Tools              FAILED                TIMEOUT               
+neos-3610040-iskar    CPLEX                 OPTIMAL               35.909ms              
+neos-3610040-iskar    HiGHS                 OPTIMAL               801.354291ms          
+neos-3610040-iskar    OR-Tools              OPTIMAL               1023.145917ms         
+neos-3610051-istra    CPLEX                 OPTIMAL               72.782417ms           
+neos-3610051-istra    HiGHS                 OPTIMAL               4601.963875ms         
+neos-3610051-istra    OR-Tools              OPTIMAL               721.822375ms          
+neos-3610173-itata    CPLEX                 OPTIMAL               22579.216917ms        
+neos-3610173-itata    HiGHS                 OPTIMAL               1705.615333ms         
+neos-3610173-itata    OR-Tools              OPTIMAL               457.932416ms          
+neos-3611447-jijia    CPLEX                 OPTIMAL               200.824209ms          
+neos-3611447-jijia    HiGHS                 OPTIMAL               840.102ms             
+neos-3611447-jijia    OR-Tools              OPTIMAL               1166.438833ms         
+neos-3611689-kaihu    CPLEX                 OPTIMAL               1039.998708ms         
+neos-3611689-kaihu    HiGHS                 OPTIMAL               1219.223416ms         
+neos-3611689-kaihu    OR-Tools              OPTIMAL               724.744541ms          
+neos-3754480-nidda    CPLEX                 FAILED                TIMEOUT               
+neos-3754480-nidda    HiGHS                 FAILED                TIMEOUT               
+neos-3754480-nidda    OR-Tools              FAILED                TIMEOUT               
+neos-5140963-mincio   CPLEX                 FAILED                TIMEOUT               
+neos-5140963-mincio   HiGHS                 FAILED                TIMEOUT               
+neos-5140963-mincio   OR-Tools              FAILED                TIMEOUT               
+neos-5192052-neckar   CPLEX                 OPTIMAL               7.46075ms             
+neos-5192052-neckar   HiGHS                 OPTIMAL               25.036541ms           
+neos-5192052-neckar   OR-Tools              OPTIMAL               7.539125ms            
+neos-911880           CPLEX                 FAILED                TIMEOUT               
+neos-911880           HiGHS                 OPTIMAL               6916.900833ms         
+neos-911880           OR-Tools              OPTIMAL               44702.047417ms        
+neos-911970           CPLEX                 OPTIMAL               25304.743875ms        
+neos-911970           HiGHS                 OPTIMAL               5607.673333ms         
+neos-911970           OR-Tools              FAILED                TIMEOUT               
+neos-942830           CPLEX                 OPTIMAL               145099.658875ms       
+neos-942830           HiGHS                 FAILED                TIMEOUT               
+neos-942830           OR-Tools              FAILED                TIMEOUT               
+neos15                CPLEX                 OPTIMAL               103190.34875ms        
+neos15                HiGHS                 FAILED                TIMEOUT               
+neos15                OR-Tools              FAILED                TIMEOUT               
+neos17                CPLEX                 OPTIMAL               623.3125ms            
+neos17                HiGHS                 OPTIMAL               3729.734417ms         
+neos17                OR-Tools              OPTIMAL               5712.362334ms         
+neos5                 CPLEX                 OPTIMAL               21718.251125ms        
+neos5                 HiGHS                 OPTIMAL               59486.950792ms        
+neos5                 OR-Tools              FAILED                TIMEOUT               
+newdano               CPLEX                 OPTIMAL               169151.702583ms       
+newdano               HiGHS                 FAILED                TIMEOUT               
+newdano               OR-Tools              FAILED                TIMEOUT               
+nexp-50-20-1-1        CPLEX                 OPTIMAL               102.042541ms          
+nexp-50-20-1-1        HiGHS                 OPTIMAL               26.537791ms           
+nexp-50-20-1-1        OR-Tools              OPTIMAL               132.494958ms          
+noswot                CPLEX                 OPTIMAL               1421.785959ms         
+noswot                HiGHS                 OPTIMAL               39743.556542ms        
+noswot                OR-Tools              OPTIMAL               73607.235375ms        
+opt1217               CPLEX                 OPTIMAL               160.969125ms          
+opt1217               HiGHS                 OPTIMAL               74.542208ms           
+opt1217               OR-Tools              OPTIMAL               166.878125ms          
+p0033                 CPLEX                 OPTIMAL               7674.905125ms         
+p0033                 HiGHS                 OPTIMAL               6.315709ms            
+p0033                 OR-Tools              OPTIMAL               6.059375ms            
+p0040                 CPLEX                 OPTIMAL               1.602959ms            
+p0040                 HiGHS                 OPTIMAL               2.813542ms            
+p0040                 OR-Tools              OPTIMAL               1.319917ms            
+p0201                 CPLEX                 OPTIMAL               109.222708ms          
+p0201                 HiGHS                 OPTIMAL               493.77825ms           
+p0201                 OR-Tools              OPTIMAL               416.488458ms          
+p0282                 CPLEX                 OPTIMAL               126.76375ms           
+p0282                 HiGHS                 OPTIMAL               82.181208ms           
+p0282                 OR-Tools              OPTIMAL               160.104958ms          
+p0291                 CPLEX                 OPTIMAL               173.178958ms          
+p0291                 HiGHS                 OPTIMAL               14.388958ms           
+p0291                 OR-Tools              OPTIMAL               7.177709ms            
+p0548                 CPLEX                 OPTIMAL               19990.804167ms        
+p0548                 HiGHS                 OPTIMAL               41.869166ms           
+p0548                 OR-Tools              OPTIMAL               54.185917ms           
+p80x400b              CPLEX                 OPTIMAL               60232.371625ms        
+p80x400b              HiGHS                 FAILED                TIMEOUT               
+p80x400b              OR-Tools              FAILED                TIMEOUT               
+pigeon-08             CPLEX                 OPTIMAL               1749.90825ms          
+pigeon-08             HiGHS                 OPTIMAL               3128.08475ms          
+pigeon-08             OR-Tools              OPTIMAL               16700.05525ms         
+pigeon-10             CPLEX                 OPTIMAL               81.955625ms           
+pigeon-10             HiGHS                 FAILED                TIMEOUT               
+pigeon-10             OR-Tools              FAILED                TIMEOUT               
+pipex                 CPLEX                 OPTIMAL               152.989417ms          
+pipex                 HiGHS                 OPTIMAL               64.482333ms           
+pipex                 OR-Tools              OPTIMAL               47.123ms              
+pk1                   CPLEX                 OPTIMAL               4142.049542ms         
+pk1                   HiGHS                 OPTIMAL               136877.450875ms       
+pk1                   OR-Tools              OPTIMAL               155819.818042ms       
+pp08a                 CPLEX                 OPTIMAL               8444.198459ms         
+pp08a                 HiGHS                 OPTIMAL               696.445709ms          
+pp08a                 OR-Tools              OPTIMAL               785.689042ms          
+pp08aCUTS             CPLEX                 OPTIMAL               108.947542ms          
+pp08aCUTS             HiGHS                 OPTIMAL               853.453666ms          
+pp08aCUTS             OR-Tools              OPTIMAL               1845.408708ms         
+prod1                 CPLEX                 OPTIMAL               2567.359916ms         
+prod1                 HiGHS                 OPTIMAL               39912.796ms           
+prod1                 OR-Tools              OPTIMAL               10022.455292ms        
+prod2                 CPLEX                 OPTIMAL               7918.524625ms         
+prod2                 HiGHS                 OPTIMAL               95786.31025ms         
+prod2                 OR-Tools              OPTIMAL               88449.211ms           
+r50x360               CPLEX                 OPTIMAL               4110.386834ms         
+r50x360               HiGHS                 OPTIMAL               26440.193458ms        
+r50x360               OR-Tools              OPTIMAL               52611.028875ms        
+ran12x21              CPLEX                 OPTIMAL               2168.014167ms         
+ran12x21              HiGHS                 OPTIMAL               10870.237333ms        
+ran12x21              OR-Tools              OPTIMAL               23428.468ms           
+ran13x13              CPLEX                 OPTIMAL               23377.912458ms        
+ran13x13              HiGHS                 OPTIMAL               13189.639459ms        
+ran13x13              OR-Tools              OPTIMAL               20274.410791ms        
+ran14x18              CPLEX                 OPTIMAL               29797.7975ms          
+ran14x18              HiGHS                 FAILED                TIMEOUT               
+ran14x18              OR-Tools              FAILED                TIMEOUT               
+ran14x18-disj-8       CPLEX                 OPTIMAL               117215.423542ms       
+ran14x18-disj-8       HiGHS                 FAILED                TIMEOUT               
+ran14x18-disj-8       OR-Tools              FAILED                TIMEOUT               
+ran16x16              CPLEX                 OPTIMAL               4773.678583ms         
+ran16x16              HiGHS                 OPTIMAL               50536.177375ms        
+ran16x16              OR-Tools              OPTIMAL               64280.744292ms        
+rgn                   CPLEX                 OPTIMAL               18202.151042ms        
+rgn                   HiGHS                 OPTIMAL               125.750542ms          
+rgn                   OR-Tools              OPTIMAL               103.522875ms          
+rlp1                  CPLEX                 OPTIMAL               68.719791ms           
+rlp1                  HiGHS                 OPTIMAL               295.600208ms          
+rlp1                  OR-Tools              FAILED                TIMEOUT               
+rout                  CPLEX                 OPTIMAL               5252.482917ms         
+rout                  HiGHS                 OPTIMAL               63819.537417ms        
+rout                  OR-Tools              OPTIMAL               21645.398625ms        
+sample2               CPLEX                 OPTIMAL               160.934083ms          
+sample2               HiGHS                 OPTIMAL               13.313208ms           
+sample2               OR-Tools              OPTIMAL               2.109666ms            
+sentoy                CPLEX                 OPTIMAL               962.448333ms          
+sentoy                HiGHS                 OPTIMAL               124.823666ms          
+sentoy                OR-Tools              OPTIMAL               212.811583ms          
+set1al                CPLEX                 OPTIMAL               25238.262417ms        
+set1al                HiGHS                 OPTIMAL               38.796208ms           
+set1al                OR-Tools              OPTIMAL               57.980833ms           
+set1ch                CPLEX                 OPTIMAL               23086.297875ms        
+set1ch                HiGHS                 OPTIMAL               665.583875ms          
+set1ch                OR-Tools              OPTIMAL               209.721334ms          
+set1cl                CPLEX                 OPTIMAL               2895.133791ms         
+set1cl                HiGHS                 OPTIMAL               42.787125ms           
+set1cl                OR-Tools              OPTIMAL               10.0785ms             
+sp150x300d            CPLEX                 OPTIMAL               152.157084ms          
+sp150x300d            HiGHS                 OPTIMAL               60.357ms              
+sp150x300d            OR-Tools              OPTIMAL               897.514583ms          
+stein15               CPLEX                 OPTIMAL               312.302709ms          
+stein15               HiGHS                 OPTIMAL               23.331833ms           
+stein15               OR-Tools              OPTIMAL               20.815375ms           
+stein27               CPLEX                 OPTIMAL               553.21475ms           
+stein27               HiGHS                 OPTIMAL               835.182834ms          
+stein27               OR-Tools              OPTIMAL               566.808916ms          
+stein45               CPLEX                 OPTIMAL               752.280875ms          
+stein45               HiGHS                 OPTIMAL               13124.902333ms        
+stein45               OR-Tools              OPTIMAL               7342.163375ms         
+stein9                CPLEX                 OPTIMAL               96.241542ms           
+stein9                HiGHS                 OPTIMAL               11.309583ms           
+stein9                OR-Tools              OPTIMAL               4.649792ms            
+supportcase14         CPLEX                 OPTIMAL               1792.715833ms         
+supportcase14         HiGHS                 OPTIMAL               51.465333ms           
+supportcase14         OR-Tools              OPTIMAL               51.007041ms           
+supportcase16         CPLEX                 OPTIMAL               1690.11725ms          
+supportcase16         HiGHS                 OPTIMAL               43.751833ms           
+supportcase16         OR-Tools              OPTIMAL               79.506542ms           
+supportcase20         CPLEX                 FAILED                TIMEOUT               
+supportcase20         HiGHS                 FAILED                TIMEOUT               
+supportcase20         OR-Tools              FAILED                TIMEOUT               
+supportcase26         CPLEX                 FAILED                TIMEOUT               
+supportcase26         HiGHS                 FAILED                TIMEOUT               
+supportcase26         OR-Tools              FAILED                TIMEOUT               
+timtab1               CPLEX                 OPTIMAL               19247.653209ms        
+timtab1               HiGHS                 OPTIMAL               42609.554ms           
+timtab1               OR-Tools              OPTIMAL               44097.571625ms        
+timtab1CUTS           CPLEX                 OPTIMAL               26893.629125ms        
+timtab1CUTS           HiGHS                 OPTIMAL               77061.567917ms        
+timtab1CUTS           OR-Tools              OPTIMAL               54984.095125ms        
+timtab2               CPLEX                 FAILED                TIMEOUT               
+timtab2               HiGHS                 FAILED                TIMEOUT               
+timtab2               OR-Tools              FAILED                TIMEOUT               
+vpm1                  CPLEX                 OPTIMAL               166.174291ms          
+vpm1                  HiGHS                 OPTIMAL               10.593708ms           
+vpm1                  OR-Tools              OPTIMAL               9.620583ms            
+vpm2                  CPLEX                 OPTIMAL               1453.919792ms         
+vpm2                  HiGHS                 OPTIMAL               2308.54975ms          
+vpm2                  OR-Tools              OPTIMAL               1987.389834ms         

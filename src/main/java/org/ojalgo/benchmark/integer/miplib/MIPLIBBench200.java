@@ -19,25 +19,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.integer.miplib2017;
+package org.ojalgo.benchmark.integer.miplib;
 
-import org.ojalgo.optimisation.Optimisation;
-import org.ojalgo.type.CalendarDateUnit;
+import org.ojalgo.concurrent.Parallelism;
 
-/**
- * Solve the relaxed LP within 1min.
- */
-public final class RelaxedLP extends MIPLIB2017 {
+public final class MIPLIBBench200 extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        long abort = 1L * CalendarDateUnit.MINUTE.toDurationInMillis();
+        Configuration configuration = new Configuration(Contender.CPLEX, Contender.ORTOOLS, Contender.HIGHS);
 
-        Optimisation.Options options = new Optimisation.Options();
-        options.time_suffice = abort;
-        options.time_abort = abort;
+        configuration.maxProbSize = 1_000;
+        configuration.pathPrefix = "/optimisation/MIPLIB/";
+        configuration.pathSuffix = ".mps";
+        configuration.refeenceSolver = null;
+        configuration.parallelism = Parallelism.EIGHT;
 
-        MIPLIB2017.doRun(true, 2_000, true, options);
+        AbstractMIPLIB.loadExpectedValues(configuration);
+
+        AbstractMIPLIB.doBenchmark(configuration);
     }
 
 }

@@ -11,7 +11,7 @@ import org.ojalgo.netio.TextLineReader;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
-abstract class AbstractNetlibBenchmark extends AbstractBenchmark {
+abstract class AbstractNetlib extends AbstractBenchmark {
 
     private static Set<ModelSolverPair> createWorkSet(final Configuration filter) {
 
@@ -51,7 +51,7 @@ abstract class AbstractNetlibBenchmark extends AbstractBenchmark {
 
     static void doBenchmark(final Configuration configuration) {
 
-        Set<ModelSolverPair> allWork = AbstractNetlibBenchmark.createWorkSet(configuration);
+        Set<ModelSolverPair> allWork = AbstractNetlib.createWorkSet(configuration);
 
         AbstractBenchmark.doBenchmark(allWork, configuration);
     }
