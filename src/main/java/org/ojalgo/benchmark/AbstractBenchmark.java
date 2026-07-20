@@ -61,12 +61,13 @@ import org.ojalgo.optimisation.convex.ConvexSolver;
 import org.ojalgo.optimisation.convex.ConvexSolver.Algorithm;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
-import org.ojalgo.optimisation.solver.clarabel4j.SolverClarabel4j;
+import org.ojalgo.optimisation.solver.clarabel.SolverClarabel;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.optimisation.solver.highs.SolverHiGHS;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
+import org.ojalgo.optimisation.solver.scip.SolverSCIP;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
@@ -105,7 +106,7 @@ public abstract class AbstractBenchmark {
     public static final class Contender {
 
         public static final String ACM = "ACM";
-        public static final String CLARABEL4J = "Clarabel4j";
+        public static final String CLARABEL = "Clarabel";
         public static final String CPLEX = "CPLEX";
         public static final String HIGHS = "HiGHS";
         public static final String HIPPARCHUS = "Hipparchus";
@@ -136,6 +137,7 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP_SPARSE_EXPERIMENTAL = "ojAlgo-QP-S-exp";
         public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
         public static final String ORTOOLS = "OR-Tools";
+        public static final String SCIP = "SCIP";
     }
 
     public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
@@ -364,8 +366,10 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.OJALGO_LP, LinearSolver.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
+        INTEGRATIONS.put(Contender.CLARABEL, SolverClarabel.INTEGRATION);
         INTEGRATIONS.put(Contender.HIGHS, SolverHiGHS.INTEGRATION);
+
+        INTEGRATIONS.put(Contender.SCIP, SolverSCIP.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
@@ -438,7 +442,7 @@ public abstract class AbstractBenchmark {
             opt.convex().iterative(QMRSolver::new, SSORPreconditioner::new);
         }));
 
-        INTEGRATIONS.put(Contender.CLARABEL4J, SolverClarabel4j.INTEGRATION);
+        INTEGRATIONS.put(Contender.CLARABEL, SolverClarabel.INTEGRATION);
         INTEGRATIONS.put(Contender.OJALGO_QP, ConvexSolver.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {

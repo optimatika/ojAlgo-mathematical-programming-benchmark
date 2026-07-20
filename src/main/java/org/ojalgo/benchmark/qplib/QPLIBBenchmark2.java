@@ -23,13 +23,13 @@ package org.ojalgo.benchmark.qplib;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class QPLIBBenchmark extends AbstractQPLIB {
+public final class QPLIBBenchmark2 extends AbstractQPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_QP, Contender.CLARABEL, Contender.HIGHS);
+        Configuration configuration = new Configuration(Contender.CLARABEL, Contender.SCIP);
 
-        configuration.maxProbSize = 10_000;
+        configuration.maxProbSize = 50;
         configuration.pathPrefix = "/optimisation/QPLIB/";
         configuration.pathSuffix = ".lp";
         configuration.refeenceSolver = null;
@@ -37,7 +37,7 @@ public final class QPLIBBenchmark extends AbstractQPLIB {
 
         AbstractQPLIB.loadExpectedValues(configuration);
 
-        AbstractQPLIB.doBenchmark(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
+        AbstractQPLIB.doBenchmark(configuration, info -> true);
     }
 
 }

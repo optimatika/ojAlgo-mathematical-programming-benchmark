@@ -52,14 +52,21 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
                     return;
                 }
 
+                if (!configuration.investigate.isEmpty() && !configuration.investigate.contains(line)) {
+                    return;
+                }
+
                 try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_DIR + line + ".mps")) {
+
+                    if (input == null) {
+                        return;
+                    }
 
                     ExpressionsBasedModel model = ExpressionsBasedModel.parse(input, FileFormat.MPS);
 
                     ExpressionsBasedModel.Description description = model.describe();
 
-                    if ((configuration.investigate.isEmpty() || configuration.investigate.contains(line))
-                            && description.nbVariables >= configuration.minProbSize && description.nbVariables <= configuration.maxProbSize
+                    if (description.nbVariables >= configuration.minProbSize && description.nbVariables <= configuration.maxProbSize
                             && description.countConstraints() <= configuration.maxProbSize) {
                         for (String solver : configuration.solvers) {
                             retVal.add(new ModelSolverPair(line, solver));

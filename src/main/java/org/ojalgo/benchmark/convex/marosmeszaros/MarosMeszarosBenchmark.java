@@ -55,7 +55,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
     //    static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_NULLSPACE_DENSE, Contender.OJALGO_QP_NULLSPACE_SPARSE,
     //            Contender.OJALGO_QP_PLAIN_DENSE, Contender.OJALGO_QP_PLAIN_SPARSE };
 
-    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL4J, Contender.HIPPARCHUS, Contender.HIGHS };
+    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL, Contender.HIPPARCHUS, Contender.HIGHS };
 
     //static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_ASET };
 
@@ -90,7 +90,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         Configuration configuration = new Configuration();
 
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
-        configuration.refeenceSolver = Contender.CLARABEL4J;
+        configuration.refeenceSolver = Contender.CLARABEL;
         configuration.parallelism = Parallelism.ONE;
 
         for (Entry<String, ModelInfo> entry : MarosMeszarosModels.getModelInfo().entrySet()) {

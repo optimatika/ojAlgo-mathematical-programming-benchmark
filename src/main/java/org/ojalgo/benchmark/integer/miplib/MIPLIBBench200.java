@@ -27,9 +27,9 @@ public final class MIPLIBBench200 extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.CPLEX, Contender.ORTOOLS, Contender.HIGHS);
+        Configuration configuration = new Configuration(Contender.CPLEX, Contender.ORTOOLS, Contender.HIGHS, Contender.SCIP);
 
-        configuration.maxProbSize = 1_000;
+        configuration.maxProbSize = 100;
         configuration.pathPrefix = "/optimisation/MIPLIB/";
         configuration.pathSuffix = ".mps";
         configuration.refeenceSolver = null;
