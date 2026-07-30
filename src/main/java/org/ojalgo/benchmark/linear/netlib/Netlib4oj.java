@@ -19,24 +19,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.integer.miplib;
+package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class MIPLIBBench1k extends AbstractMIPLIB {
+public final class Netlib4oj extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_MIP, Contender.HIGHS, Contender.SCIP, Contender.SSCLP);
+        Configuration configuration = new Configuration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE, Contender.OJALGO_LP_DUAL_SPARSE,
+                Contender.OJALGO_LP_DUAL_DENSE);
 
-        configuration.maxProbSize = 1_000;
-        configuration.pathPrefix = "/optimisation/MIPLIB/";
-        configuration.pathSuffix = ".mps";
+        configuration.maxProbSize = 10_000;
+        configuration.pathPrefix = "/optimisation/netlib/";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
-        configuration.maxIterations = 10;
+        configuration.parallelism = Parallelism.FOUR;
 
-        AbstractMIPLIB.doBenchmark(configuration);
+        AbstractNetlib.loadExpectedValues(configuration);
+
+        AbstractNetlib.doBenchmark(configuration);
     }
 
 }

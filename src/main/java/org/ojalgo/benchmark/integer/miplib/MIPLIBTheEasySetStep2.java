@@ -21,20 +21,29 @@
  */
 package org.ojalgo.benchmark.integer.miplib;
 
+import java.util.Set;
+
 import org.ojalgo.concurrent.Parallelism;
 
-public final class MIPLIBBench1k extends AbstractMIPLIB {
+/**
+ * A subset of the 94 MIPLIB models in ojAlgo's "easy set" that have caused problems.
+ */
+public final class MIPLIBTheEasySetStep2 extends AbstractMIPLIB {
+
+    public static final Set<String> MODELS = Set.of("blend2", "bm23", "lseu", "misc02", "misc03", "opt1217", "enigma", "p0291", "22433", "p0548", "pk1",
+            "neos-3610040-iskar", "neos-3610173-itata", "sentoy");
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_MIP, Contender.HIGHS, Contender.SCIP, Contender.SSCLP);
+        Configuration configuration = new Configuration(Contender.OJALGO_MIP, Contender.SCIP, Contender.HIGHS, Contender.CPLEX);
 
-        configuration.maxProbSize = 1_000;
+        configuration.investigate = MODELS;
+
         configuration.pathPrefix = "/optimisation/MIPLIB/";
         configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
-        configuration.maxIterations = 10;
+        configuration.refeenceSolver = Contender.CPLEX;
+        configuration.parallelism = Parallelism.TWO;
+        configuration.maxProbSize = 1_000;
 
         AbstractMIPLIB.doBenchmark(configuration);
     }

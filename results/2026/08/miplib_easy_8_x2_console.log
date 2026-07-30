@@ -1,0 +1,1139 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 8, threads per worker: 3
+
+
+Iteration 1 with 376 model/solver pairs remaining 2026-08-22T17:29:53.712950Z
+-----------------------------------------------------------------------------
+gr4x6                 HiGHS                 Solved                9.916875ms            202.35                
+f2gap40400            HiGHS                 Solved                8.584125ms            20772.0               
+bell4                 HiGHS                 Solved                485.063292ms          1.8542042122400157E7  
+supportcase16         SCIP                  Solved                68.146042ms           288.0                 
+enlight8              CPLEX                 Solved                2.921917ms            27.0                  
+mod013                SCIP                  Solved                616.6575ms            280.95                
+pipex                 HiGHS                 Solved                39.706709ms           788.2629999997624     
+vpm2                  HiGHS                 Solved                1140.359625ms         13.75                 
+mik-250-20-75-3       CPLEX                 Solved                607.555917ms          -52242.0              
+bell4                 CPLEX                 Solved                27.82475ms            1.8541957238E7        
+gsvm2rl3              HiGHS                 Solved                6267.670709ms         0.3365275339619642    
+aflow30a              HiGHS                 Solved                8436.755083ms         1158.0                
+gsvm2rl3              CPLEX                 Solved                847.917916ms          0.3365275339619651    
+pk1                   ojAlgo-MIP            Solved                8372.248458ms         10.99999999999999     
+timtab1               CPLEX                 Solved                20039.9995ms          764771.9999997807     
+gr4x6                 CPLEX                 Solved                2.629875ms            202.35                
+r50x360               SCIP                  Solved                24036.965458ms        1653.0000000000032    
+mas76                 CPLEX                 Solved                4959.1735ms           40005.054142          
+pipex                 CPLEX                 Solved                21.923209ms           788.262999999995      
+gt2                   HiGHS                 Solved                33.514417ms           21166.0               
+neos-5192052-neckar   CPLEX                 Solved                3.500875ms            -1.1670000000000002E7 
+f2gap40400            CPLEX                 Solved                7.523958ms            20772.0               
+mod013                ojAlgo-MIP            Solved                72.042375ms           280.95                
+sample2               HiGHS                 Solved                16.525875ms           375.0                 
+mod008                CPLEX                 Solved                24.049708ms           307.0                 
+enlight_hard          CPLEX                 Solved                3.537542ms            37.0                  
+neos-5192052-neckar   HiGHS                 Solved                21.341583ms           -1.167E7              
+bppc8-02              HiGHS                 Solved                199.111917ms          507.0                 
+p0548                 CPLEX                 Solved                20.854083ms           8691.0                
+neos-3610051-istra    SCIP                  Solved                1300.364ms            49.0                  
+dcmulti               CPLEX                 Solved                67.007ms              188182.00000000006    
+mik-250-20-75-3       HiGHS                 Solved                2424.451542ms         -52242.00000000003    
+bell5                 CPLEX                 Solved                11.573834ms           8966406.49152         
+supportcase16         ojAlgo-MIP            Solved                56.202542ms           288.0                 
+aflow30a              CPLEX                 Solved                1788.599542ms         1158.0                
+mik-250-20-75-4       CPLEX                 Solved                2493.837834ms         -52300.99999999999    
+enlight8              HiGHS                 Solved                445.011459ms          27.00000000000374     
+22433                 ojAlgo-MIP            Solved                265.182084ms          21477.00000000001     
+22433                 SCIP                  Solved                1016.029458ms         21477.0               
+set1ch                HiGHS                 Solved                294.638292ms          54537.75              
+mik-250-20-75-2       HiGHS                 Solved                2470.489209ms         -50768.00000000276    
+enigma                HiGHS                 Solved                130.084666ms          0.0                   
+p0040                 ojAlgo-MIP            Solved                1.375125ms            62027.00000003067     
+bell3a                SCIP                  Solved                881.244875ms          878430.316            
+timtab1               HiGHS                 Solved                36098.641708ms        764771.9999998799     
+p0282                 ojAlgo-MIP            Solved                145.2875ms            258411.0              
+ran16x16              SCIP                  Solved                44354.416875ms        3823.0                
+rout                  CPLEX                 Solved                1574.420334ms         1077.559999999999     
+pk1                   SCIP                  Solved                83423.756958ms        10.99999999999982     
+r50x360               ojAlgo-MIP            FAILED                TIMEOUT               
+noswot                HiGHS                 Solved                72697.551084ms        -41.00000000000001    
+egout                 CPLEX                 Solved                3.665458ms            568.1007              
+ran16x16              ojAlgo-MIP            FAILED                TIMEOUT               
+supportcase14         SCIP                  Solved                375.117375ms          288.0                 
+mik-250-20-75-5       CPLEX                 Solved                412.157458ms          -51532.0000000565     
+sentoy                ojAlgo-MIP            Solved                42.131625ms           -7772.0               
+neos-3610051-istra    ojAlgo-MIP            FAILED                TIMEOUT               
+blend2                CPLEX                 Solved                180.583375ms          7.598985              
+neos-3611689-kaihu    SCIP                  Solved                893.900667ms          119.0                 
+stein45               CPLEX                 Solved                2430.555667ms         30.0                  
+mik-250-20-75-1       HiGHS                 Solved                4581.685833ms         -49716.00000000193    
+stein27               SCIP                  Solved                149.097958ms          18.0                  
+stein15               SCIP                  Solved                29.850292ms           9.0                   
+bell3b                SCIP                  Solved                3137.406833ms         1.1786160618E7        
+enigma                CPLEX                 Solved                36.032125ms           0.0                   
+mik-250-1-100-1       ojAlgo-MIP            FAILED                TIMEOUT               
+exp-1-500-5-5         HiGHS                 Solved                2869.866292ms         65887.00000000013     
+air01                 SCIP                  Solved                54.175625ms           6796.0                
+bell5                 HiGHS                 Solved                363.032542ms          8966406.49152         
+bppc8-02              CPLEX                 Solved                65.432167ms           507.0                 
+neos-3610173-itata    CPLEX                 Solved                49.487958ms           148.0                 
+bienst1               CPLEX                 Solved                6067.165667ms         46.75                 
+noswot                CPLEX                 Solved                16745.582125ms        -41.0                 
+p0033                 SCIP                  Solved                8.518ms               3089.0                
+misc01                CPLEX                 Solved                37.872875ms           563.5                 
+mod008                HiGHS                 Solved                693.612708ms          306.9999999999855     
+nexp-50-20-1-1        HiGHS                 Solved                37.34325ms            29.0                  
+set1cl                CPLEX                 Solved                18.0355ms             6484.25               
+vpm1                  HiGHS                 Solved                12.631666ms           20.0                  
+dcmulti               HiGHS                 Solved                735.34775ms           188182.0              
+rgn                   CPLEX                 Solved                17.221458ms           82.19999924           
+pigeon-08             ojAlgo-MIP            Solved                195742.036709ms       -7000.0               
+cracpb1               CPLEX                 Solved                20.882916ms           22199.0               
+misc07                SCIP                  Solved                2189.693042ms         2810.0                
+enlight_hard          HiGHS                 Solved                5601.941791ms         36.99999999999532     
+fixnet6               SCIP                  Solved                4411.924291ms         3983.0                
+neos17                CPLEX                 Solved                826.131708ms          0.15000257742257736   
+rgn                   HiGHS                 Solved                155.088167ms          82.19999923999774     
+exp-1-500-5-5         SCIP                  Solved                1697.789292ms         65887.0               
+graphdraw-gemcutter   ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-1-100-1       HiGHS                 Solved                9597.455708ms         -66729.0              
+neos-3611447-jijia    SCIP                  Solved                597.278334ms          107.0                 
+bm23                  CPLEX                 Solved                17.038417ms           34.0                  
+nexp-50-20-1-1        SCIP                  Solved                140.950542ms          29.0                  
+gen                   ojAlgo-MIP            Solved                8120.060458ms         112313.362718         
+air01                 HiGHS                 Solved                88.70425ms            6796.0                
+timtab1CUTS           HiGHS                 Solved                43145.163625ms        764771.99999988       
+dcmulti               ojAlgo-MIP            Solved                2138.33375ms          188182.0              
+23588                 CPLEX                 Solved                189.97975ms           8090.0                
+sp150x300d            ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-1-100-1       SCIP                  Solved                68141.902875ms        -66729.00000000003    
+neos-3610051-istra    HiGHS                 Solved                2670.404875ms         49.0                  
+mas76                 HiGHS                 Solved                138325.109125ms       40005.05414181039     
+neos-1425699          SCIP                  Solved                4.057708ms            3.179698977E9         
+neos17                ojAlgo-MIP            FAILED                TIMEOUT               
+neos-2624317-amur     CPLEX                 Solved                788.472042ms          3.5223968             
+p0548                 SCIP                  Solved                81.907292ms           8691.0                
+23588                 HiGHS                 Solved                7897.768375ms         8089.999999999969     
+sample2               ojAlgo-MIP            Solved                44.073375ms           375.0                 
+neos-2624317-amur     ojAlgo-MIP            FAILED                TIMEOUT               
+flugpl                CPLEX                 Solved                3.10975ms             1201500.0             
+set1al                ojAlgo-MIP            FAILED                TIMEOUT               
+gt2                   SCIP                  Solved                19.438334ms           21166.0               
+pp08aCUTS             HiGHS                 Solved                1543.249666ms         7350.000000017598     
+mik-250-20-75-1       ojAlgo-MIP            FAILED                TIMEOUT               
+opt1217               HiGHS                 Solved                128.550708ms          -16.0                 
+neos-3610040-iskar    CPLEX                 Solved                44.897417ms           37.0                  
+p0548                 ojAlgo-MIP            FAILED                TIMEOUT               
+pipex                 SCIP                  Solved                46.211208ms           788.263               
+fixnet3               ojAlgo-MIP            FAILED                TIMEOUT               
+vpm2                  ojAlgo-MIP            FAILED                TIMEOUT               
+neos-2624317-amur     HiGHS                 Solved                9735.047916ms         3.5223968             
+lseu                  HiGHS                 Solved                123.992583ms          1120.0                
+modglob               ojAlgo-MIP            FAILED                TIMEOUT               
+gr4x6                 SCIP                  Solved                7.068875ms            202.35000000000002    
+r50x360               HiGHS                 Solved                24415.940334ms        1653.0000000009047    
+misc05                SCIP                  Solved                527.968042ms          2984.5                
+neos-3610173-itata    SCIP                  Solved                810.325ms             148.0                 
+bienst1               HiGHS                 Solved                28097.160166ms        46.74999999999995     
+set1cl                HiGHS                 Solved                69.73375ms            6484.25               
+ic97_tension          CPLEX                 Solved                1427.3005ms           3942.0                
+stein9                HiGHS                 Solved                20.581208ms           5.0                   
+bell5                 SCIP                  Solved                127.629959ms          8966406.49152         
+neos-5192052-neckar   ojAlgo-MIP            Solved                9.851042ms            -1.167000000000001E7  
+egout                 HiGHS                 Solved                15.428375ms           568.1007              
+bell3b                HiGHS                 Solved                511.52025ms           1.17862305228E7       
+prod2                 CPLEX                 Solved                25559.032791ms        -62.00000000000003    
+p0291                 HiGHS                 Solved                22.400042ms           5223.749              
+ran16x16              HiGHS                 Solved                51162.583375ms        3823.0000000033283    
+p0033                 CPLEX                 Solved                4.949084ms            3089.0                
+pigeon-08             SCIP                  Solved                517.25825ms           -7000.0               
+neos17                HiGHS                 Solved                5456.489834ms         0.15000257742257742   
+pp08a                 CPLEX                 Solved                115.593041ms          7350.0                
+sp150x300d            SCIP                  Solved                347.270541ms          69.0                  
+ran12x21              ojAlgo-MIP            FAILED                TIMEOUT               
+timtab1               SCIP                  Solved                52999.722292ms        764771.9999997802     
+misc02                SCIP                  Solved                206.175416ms          1690.0                
+prod1                 CPLEX                 Solved                5664.22925ms          -56.00000000000003    
+enlight_hard          SCIP                  Solved                4.914792ms            37.0                  
+fixnet6               CPLEX                 Solved                167.542375ms          3983.0                
+rout                  HiGHS                 Solved                30808.768084ms        1077.559999999991     
+vpm1                  CPLEX                 Solved                7.576041ms            20.0                  
+aflow30a              ojAlgo-MIP            FAILED                TIMEOUT               
+enlight8              SCIP                  Solved                3.942042ms            27.0                  
+bell4                 SCIP                  Solved                629.879834ms          1.8541484198E7        
+fixnet4               ojAlgo-MIP            FAILED                TIMEOUT               
+gen                   CPLEX                 Solved                12.7195ms             112313.362718         
+ran13x13              CPLEX                 Solved                1720.016ms            3252.0                
+blend2                HiGHS                 Solved                872.228792ms          7.598985              
+p0033                 ojAlgo-MIP            Solved                17.761542ms           3089.0                
+mik-250-20-75-2       CPLEX                 Solved                439.49625ms           -50768.0              
+noswot                SCIP                  Solved                14819.475875ms        -41.0                 
+timtab1CUTS           CPLEX                 Solved                20304.541291ms        764771.9999997867     
+set1al                CPLEX                 Solved                33.988542ms           15869.75              
+stein15               HiGHS                 Solved                40.500792ms           9.0                   
+neos-3610173-itata    ojAlgo-MIP            FAILED                TIMEOUT               
+stein27               HiGHS                 Solved                559.261458ms          17.99999999999997     
+vpm1                  ojAlgo-MIP            FAILED                TIMEOUT               
+supportcase16         HiGHS                 Solved                51.125166ms           288.0                 
+mik-250-20-75-1       CPLEX                 Solved                585.651458ms          -49716.0              
+modglob               CPLEX                 Solved                45.774792ms           2.074050808630825E7   
+misc03                SCIP                  Solved                1359.058208ms         3360.0                
+beavma                HiGHS                 Solved                381.671083ms          383285.0              
+mik-250-20-75-3       ojAlgo-MIP            FAILED                TIMEOUT               
+ran13x13              ojAlgo-MIP            FAILED                TIMEOUT               
+mod013                CPLEX                 Solved                14.971375ms           280.95                
+p0201                 HiGHS                 Solved                662.32325ms           7615.0                
+sample2               CPLEX                 Solved                10.121666ms           375.0                 
+vpm2                  CPLEX                 Solved                57.448834ms           13.75                 
+ran12x21              CPLEX                 Solved                4925.456542ms         3664.0                
+blend2                SCIP                  Solved                689.213583ms          7.598985              
+opt1217               SCIP                  Solved                91.566166ms           -16.0                 
+neos-3611689-kaihu    ojAlgo-MIP            Solved                266911.478208ms       119.0                 
+graphdraw-gemcutter   SCIP                  Solved                92901.7345ms          7118.5                
+cracpb1               SCIP                  Solved                104.46625ms           22199.0               
+pp08aCUTS             SCIP                  Solved                1222.601125ms         7350.0                
+mik-250-20-75-5       SCIP                  Solved                3836.534583ms         -51532.00000000056    
+stein15               CPLEX                 Solved                4.052083ms            9.0                   
+prod1                 SCIP                  Solved                12757.292166ms        -56.0                 
+stein27               CPLEX                 Solved                7.752167ms            18.0                  
+modglob               HiGHS                 Solved                549.706958ms          2.0740508086308237E7  
+set1cl                ojAlgo-MIP            Solved                38.443334ms           6484.249999987936     
+misc01                ojAlgo-MIP            Solved                32.715583ms           563.4999999999999     
+cracpb1               ojAlgo-MIP            Solved                55.20075ms            22199.00000000045     
+p0201                 CPLEX                 Solved                62.206375ms           7615.0                
+sentoy                CPLEX                 Solved                12.191792ms           -7772.0               
+neos-3611689-kaihu    HiGHS                 Solved                1242.473292ms         119.0                 
+ic97_tension          SCIP                  Solved                8762.961209ms         3941.9999999999936    
+egout                 SCIP                  Solved                4.982833ms            568.1007              
+gen                   HiGHS                 Solved                19.739334ms           112313.362718         
+fixnet4               HiGHS                 Solved                281.82575ms           8936.000000000002     
+fixnet4               CPLEX                 Solved                127.488875ms          8936.0                
+rgn                   ojAlgo-MIP            Solved                130.288625ms          82.19999923999444     
+pp08a                 ojAlgo-MIP            FAILED                TIMEOUT               
+stein45               ojAlgo-MIP            Solved                23802.790375ms        30.0                  
+mik-250-20-75-2       ojAlgo-MIP            FAILED                TIMEOUT               
+sp150x300d            CPLEX                 Solved                70.354167ms           69.0                  
+bienst1               ojAlgo-MIP            Solved                97851.989416ms        46.74999999999991     
+supportcase14         CPLEX                 Solved                16.096417ms           288.0                 
+misc05                HiGHS                 Solved                231.892708ms          2984.499999999992     
+fixnet6               ojAlgo-MIP            FAILED                TIMEOUT               
+prod1                 ojAlgo-MIP            FAILED                TIMEOUT               
+egout                 ojAlgo-MIP            Solved                737.612083ms          568.1007              
+gsvm2rl3              ojAlgo-MIP            FAILED                TIMEOUT               
+rgn                   SCIP                  Solved                165.538875ms          82.19999924           
+p0282                 HiGHS                 Solved                114.03775ms           258411.0              
+bell3a                HiGHS                 Solved                197.267791ms          878430.3159999811     
+stein45               SCIP                  Solved                8842.420875ms         30.0                  
+mik-250-20-75-4       SCIP                  Solved                10753.052583ms        -52301.00000000004    
+p0040                 HiGHS                 Solved                3.671875ms            62027.0               
+sp150x300d            HiGHS                 Solved                70.200292ms           68.99999999999999     
+flugpl                SCIP                  Solved                21.902167ms           1201500.0             
+misc07                CPLEX                 Solved                315.817459ms          2810.0                
+bm23                  ojAlgo-MIP            Solved                10.819167ms           34.0                  
+graphdraw-gemcutter   CPLEX                 Solved                9518.630667ms         7118.499999999999     
+mod008                SCIP                  Solved                145.407791ms          307.0                 
+supportcase14         HiGHS                 Solved                49.614709ms           288.0                 
+misc07                HiGHS                 Solved                29749.114042ms        2809.999999999692     
+graphdraw-gemcutter   HiGHS                 Solved                110863.777417ms       7118.499999997938     
+misc01                SCIP                  Solved                175.502875ms          563.5                 
+fixnet3               CPLEX                 Solved                55.844583ms           51973.0               
+bienst1               SCIP                  Solved                63704.441125ms        46.74999999999999     
+mod008                ojAlgo-MIP            Solved                290.701292ms          307.0                 
+neos-1425699          HiGHS                 Solved                103.777042ms          3.179698977E9         
+flugpl                ojAlgo-MIP            Solved                29.953042ms           1201500.0             
+neos-3611689-kaihu    CPLEX                 Solved                213.710292ms          119.0                 
+set1al                HiGHS                 Solved                58.652834ms           15869.75              
+prod2                 ojAlgo-MIP            FAILED                TIMEOUT               
+timtab1CUTS           SCIP                  Solved                90424.981583ms        764771.99999988       
+misc03                ojAlgo-MIP            Solved                149.850375ms          3359.999999999997     
+neos-3611447-jijia    CPLEX                 Solved                62.476125ms           107.0                 
+ic97_tension          ojAlgo-MIP            FAILED                TIMEOUT               
+supportcase16         CPLEX                 Solved                13.280666ms           288.0                 
+lseu                  ojAlgo-MIP            Solved                397.2955ms            1120.0                
+mik-250-20-75-3       SCIP                  Solved                2905.490458ms         -52242.00000000032    
+23588                 ojAlgo-MIP            Solved                867.664709ms          8090.000000000001     
+mas76                 ojAlgo-MIP            Solved                13446.643083ms        40005.05414200007     
+pp08aCUTS             ojAlgo-MIP            FAILED                TIMEOUT               
+enlight8              ojAlgo-MIP            Solved                1583.195792ms         27.0                  
+neos-3611447-jijia    HiGHS                 Solved                1157.752625ms         107.0                 
+bm23                  SCIP                  Solved                157.749125ms          34.0                  
+ran12x21              HiGHS                 Solved                16874.061333ms        3664.0000000000177    
+mik-250-20-75-4       ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP            FAILED                TIMEOUT               
+pk1                   CPLEX                 Solved                5612.361125ms         11.0                  
+beavma                SCIP                  Solved                277.903542ms          383285.0              
+misc03                HiGHS                 Solved                510.498167ms          3359.999999999995     
+22433                 CPLEX                 Solved                69.323875ms           21477.0               
+blend2                ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-2       SCIP                  Solved                5064.160416ms         -50768.00000000006    
+lseu                  CPLEX                 Solved                21.08775ms            1120.0                
+aflow30a              SCIP                  Solved                15191.620958ms        1158.0                
+gsvm2rl3              SCIP                  Solved                5273.157917ms         0.3365275339619638    
+sentoy                HiGHS                 Solved                148.610458ms          -7772.0               
+set1ch                SCIP                  Solved                206.366125ms          54537.75              
+neos-3610040-iskar    HiGHS                 Solved                1062.209875ms         36.99999999999999     
+ran13x13              SCIP                  Solved                26868.630334ms        3252.0000000000095    
+p0040                 CPLEX                 Solved                2.417833ms            62027.0               
+timtab1CUTS           ojAlgo-MIP            FAILED                TIMEOUT               
+misc02                ojAlgo-MIP            Solved                4.895083ms            1690.0                
+stein9                SCIP                  Solved                9.501708ms            5.0                   
+p0291                 SCIP                  Solved                12.901167ms           5223.749              
+neos-5192052-neckar   SCIP                  Solved                13.814834ms           -1.167E7              
+fixnet3               HiGHS                 Solved                72.686208ms           51973.0               
+p0282                 CPLEX                 Solved                33.668ms              258411.0              
+bell5                 ojAlgo-MIP            Solved                20217.265791ms        8966406.49152         
+pp08a                 SCIP                  Solved                805.900375ms          7350.000000000019     
+f2gap40400            ojAlgo-MIP            Solved                437.209042ms          20772.0               
+vpm1                  SCIP                  Solved                16.165042ms           20.0                  
+mik-250-20-75-1       SCIP                  Solved                2715.490834ms         -49716.00000000016    
+enlight_hard          ojAlgo-MIP            Solved                157532.103083ms       37.0                  
+misc05                ojAlgo-MIP            Solved                1279.122083ms         2984.499999999997     
+bppc8-02              ojAlgo-MIP            Solved                2488.839625ms         507.0                 
+beavma                CPLEX                 Solved                21.507792ms           383285.0              
+enigma                ojAlgo-MIP            Solved                78.840042ms           0.0                   
+misc02                CPLEX                 Solved                18.861542ms           1690.0                
+neos-1425699          ojAlgo-MIP            Solved                1.287792ms            3.179698977E9         
+neos-3610040-iskar    ojAlgo-MIP            FAILED                TIMEOUT               
+gt2                   ojAlgo-MIP            Solved                51.367042ms           21166.0               
+enigma                SCIP                  Solved                194.243959ms          0.0                   
+pigeon-08             CPLEX                 Solved                1574.495584ms         -7000.0               
+dcmulti               SCIP                  Solved                1865.75825ms          188182.0              
+sample2               SCIP                  Solved                4.197542ms            375.00000000000006    
+misc01                HiGHS                 Solved                158.261584ms          563.5000000000003     
+set1al                SCIP                  Solved                66.7975ms             15869.75              
+fixnet3               SCIP                  Solved                29.280792ms           51973.0               
+air01                 CPLEX                 Solved                18.700458ms           6796.0                
+modglob               SCIP                  Solved                126.033583ms          2.0740508086308237E7  
+vpm2                  SCIP                  Solved                1565.644125ms         13.75                 
+p0201                 SCIP                  Solved                572.660208ms          7615.0                
+prod2                 SCIP                  Solved                116643.237666ms       -62.0                 
+pipex                 ojAlgo-MIP            Solved                89.871333ms           788.263               
+misc03                CPLEX                 Solved                38.308042ms           3360.0                
+p0201                 ojAlgo-MIP            Solved                454.132291ms          7615.0                
+neos17                SCIP                  Solved                3785.273541ms         0.15000257742257736   
+cracpb1               HiGHS                 Solved                37.935208ms           22199.0               
+pigeon-08             HiGHS                 Solved                16309.410834ms        -7000.0               
+mod013                HiGHS                 Solved                317.7765ms            280.95000000000016    
+mik-250-1-100-1       CPLEX                 Solved                808.027333ms          -66729.00000000001    
+misc02                HiGHS                 Solved                45.460084ms           1690.0                
+ran13x13              HiGHS                 Solved                13756.078166ms        3252.0                
+fixnet4               SCIP                  Solved                441.338916ms          8936.000000000004     
+gr4x6                 ojAlgo-MIP            Solved                1.924666ms            202.35                
+ran12x21              SCIP                  Solved                42665.8825ms          3663.9999999999995    
+rout                  SCIP                  Solved                7828.441041ms         1077.56               
+timtab1               ojAlgo-MIP            FAILED                TIMEOUT               
+gen                   SCIP                  Solved                20.764625ms           112313.362718         
+p0033                 HiGHS                 Solved                35.016375ms           3089.0                
+23588                 SCIP                  Solved                3481.869125ms         8090.0                
+stein45               HiGHS                 Solved                20432.065583ms        30.0                  
+sentoy                SCIP                  Solved                295.752667ms          -7772.0               
+neos-3611447-jijia    ojAlgo-MIP            Solved                258442.195792ms       107.0                 
+p0040                 SCIP                  Solved                2.942667ms            62027.0               
+p0282                 SCIP                  Solved                136.250583ms          258411.0              
+misc07                ojAlgo-MIP            Solved                17383.907791ms        2809.99999999999      
+r50x360               CPLEX                 Solved                4544.143708ms         1653.000000000168     
+exp-1-500-5-5         CPLEX                 Solved                1042.900334ms         65887.00000000001     
+bell3b                CPLEX                 Solved                37.658208ms           1.1786160618E7        
+fixnet6               HiGHS                 Solved                2182.627916ms         3983.0                
+bell4                 ojAlgo-MIP            FAILED                TIMEOUT               
+neos-3610040-iskar    SCIP                  Solved                1087.671375ms         37.0                  
+stein27               ojAlgo-MIP            Solved                436.013584ms          17.99999999999996     
+stein9                CPLEX                 Solved                1.956917ms            5.0                   
+bell3a                ojAlgo-MIP            Solved                1816.7785ms           878430.316            
+opt1217               CPLEX                 Solved                28.373417ms           -16.0                 
+stein15               ojAlgo-MIP            Solved                8.901125ms            8.99999999999999      
+noswot                ojAlgo-MIP            FAILED                TIMEOUT               
+p0291                 CPLEX                 Solved                5.186458ms            5223.748999999999     
+nexp-50-20-1-1        CPLEX                 Solved                26.795ms              29.0                  
+pp08a                 HiGHS                 Solved                871.800459ms          7350.000000000001     
+neos-3610173-itata    HiGHS                 Solved                2459.200209ms         148.0                 
+f2gap40400            SCIP                  Solved                33.041208ms           20772.0               
+mik-250-20-75-5       HiGHS                 Solved                2589.718041ms         -51532.00000000022    
+neos-3610051-istra    CPLEX                 Solved                111.53225ms           49.0                  
+p0291                 ojAlgo-MIP            Solved                54.96675ms            5223.749              
+nexp-50-20-1-1        ojAlgo-MIP            FAILED                TIMEOUT               
+set1cl                SCIP                  Solved                19.549667ms           6484.25               
+gt2                   CPLEX                 Solved                7.856875ms            21166.0               
+set1ch                CPLEX                 Solved                85.281458ms           54543.0               
+stein9                ojAlgo-MIP            Solved                4.930166ms            5.0                   
+22433                 HiGHS                 Solved                2533.116584ms         21476.99999999998     
+ran16x16              CPLEX                 Solved                9176.882875ms         3823.0                
+misc05                CPLEX                 Solved                35.743583ms           2984.5                
+neos-1425699          CPLEX                 Solved                1.850208ms            3.179698977E9         
+lseu                  SCIP                  Solved                304.49025ms           1120.0                
+bppc8-02              SCIP                  Solved                154.011167ms          506.9999999999999     
+prod1                 HiGHS                 Solved                18618.969959ms        -56.0                 
+flugpl                HiGHS                 Solved                46.808125ms           1201500.0             
+pp08aCUTS             CPLEX                 Solved                102.890542ms          7350.0000000000055    
+mas76                 SCIP                  Solved                34599.489959ms        40005.054142          
+supportcase14         ojAlgo-MIP            Solved                30.357042ms           288.0                 
+ic97_tension          HiGHS                 Solved                15176.977875ms        3942.0000000000014    
+bell3b                ojAlgo-MIP            Solved                1872.53425ms          1.1786751918000001E7  
+bell3a                CPLEX                 Solved                32.145125ms           878430.316            
+rout                  ojAlgo-MIP            FAILED                TIMEOUT               
+bm23                  HiGHS                 Solved                97.154042ms           34.0                  
+neos-2624317-amur     SCIP                  Solved                31083.67025ms         3.5223968             
+air01                 ojAlgo-MIP            Solved                13.574083ms           6796.0                
+p0548                 HiGHS                 Solved                47.201875ms           8691.0                
+mik-250-20-75-4       HiGHS                 Solved                12096.924208ms        -52301.00000000885    
+prod2                 HiGHS                 Solved                97894.942875ms        -62.0                 
+pk1                   HiGHS                 Solved                163159.958125ms       10.99999999999998     
+exp-1-500-5-5         ojAlgo-MIP            FAILED                TIMEOUT               
+beavma                ojAlgo-MIP            FAILED                TIMEOUT               
+Error working with ModelSolverPair [model=opt1217, solver=ojAlgo-MIP]!
+opt1217               ojAlgo-MIP            FAILED                FAILED                
+set1ch                ojAlgo-MIP            FAILED                TIMEOUT               
+
+Iteration 2 with 333 model/solver pairs remaining 2026-08-22T18:11:32.545799Z
+-----------------------------------------------------------------------------
+neos-3611689-kaihu    ojAlgo-MIP            FAILED                TIMEOUT               
+
+Iteration 3 with 332 model/solver pairs remaining 2026-08-22T18:23:21.183637Z
+-----------------------------------------------------------------------------
+enlight8              CPLEX                 Time stable           2.065042ms            27.0                  
+bell4                 HiGHS                 Time stable           472.112833ms          1.8542042122400157E7  
+pipex                 HiGHS                 Time stable           37.903792ms           788.2629999997624     
+mod013                SCIP                  Time stable           601.946084ms          280.95                
+bell4                 CPLEX                 Time stable           27.82475ms            1.8541957238E7        
+mik-250-20-75-3       CPLEX                 Time stable           565.107667ms          -52242.0              
+vpm2                  HiGHS                 Time stable           1106.810709ms         13.75                 
+gsvm2rl3              CPLEX                 Time stable           679.535667ms          0.3365275339619651    
+gr4x6                 CPLEX                 Time stable           1.994ms               202.35                
+mas76                 CPLEX                 Time stable           3882.705292ms         40005.054142          
+gsvm2rl3              HiGHS                 Time stable           5821.119583ms         0.3365275339619642    
+pipex                 CPLEX                 Time stable           20.69075ms            788.262999999995      
+gt2                   HiGHS                 Time stable           31.627458ms           21166.0               
+neos-5192052-neckar   CPLEX                 Time stable           2.703625ms            -1.1670000000000002E7 
+sample2               HiGHS                 Time stable           13.320417ms           375.0                 
+mod008                CPLEX                 Time stable           22.113541ms           307.0                 
+neos-5192052-neckar   HiGHS                 Time stable           19.523875ms           -1.167E7              
+bppc8-02              HiGHS                 Time stable           185.492833ms          507.0                 
+neos-3610051-istra    SCIP                  Time stable           1137.034375ms         49.0                  
+dcmulti               CPLEX                 Time stable           61.429709ms           188182.00000000006    
+mik-250-20-75-3       HiGHS                 Time stable           2264.418167ms         -52242.00000000003    
+aflow30a              HiGHS                 Time stable           7981.426166ms         1158.0                
+supportcase16         ojAlgo-MIP            Time stable           54.869708ms           288.0                 
+enlight8              HiGHS                 Time stable           409.136583ms          27.00000000000374     
+22433                 ojAlgo-MIP            Time stable           238.684667ms          21477.00000000001     
+mik-250-20-75-4       CPLEX                 Time stable           1888.152084ms         -52300.99999999999    
+aflow30a              CPLEX                 Time stable           1411.680125ms         1158.0                
+22433                 SCIP                  Time stable           928.671459ms          21477.0               
+enigma                HiGHS                 Time stable           117.836083ms          0.0                   
+set1ch                HiGHS                 Time stable           283.198292ms          54537.75              
+p0282                 ojAlgo-MIP            Time stable           79.158542ms           258411.0              
+bell3a                SCIP                  Time stable           761.983458ms          878430.316            
+rout                  CPLEX                 Time stable           1200.028375ms         1077.559999999999     
+mik-250-20-75-2       HiGHS                 Time stable           2224.75975ms          -50768.00000000276    
+timtab1               CPLEX                 Time stable           18685.375291ms        764771.9999997807     
+stein45               CPLEX                 Time stable           1276.189208ms         30.0                  
+supportcase14         SCIP                  Time stable           211.888625ms          288.0                 
+mik-250-20-75-5       CPLEX                 Time stable           205.398541ms          -51532.0000000565     
+r50x360               SCIP                  Time stable           21886.8875ms          1653.0000000000032    
+blend2                CPLEX                 Time stable           97.0845ms             7.598985              
+neos-3611689-kaihu    SCIP                  Time stable           511.52925ms           119.0                 
+mik-250-20-75-1       HiGHS                 Time stable           2686.01375ms          -49716.00000000193    
+stein27               SCIP                  Time stable           96.894542ms           18.0                  
+stein15               SCIP                  Time stable           17.571709ms           9.0                   
+bell3b                SCIP                  Time stable           1781.435167ms         1.1786160618E7        
+enigma                CPLEX                 Time stable           24.839167ms           0.0                   
+exp-1-500-5-5         HiGHS                 Time stable           2596.504ms            65887.00000000013     
+timtab1               HiGHS                 Time stable           32633.866875ms        764771.9999998799     
+air01                 SCIP                  Time stable           47.177041ms           6796.0                
+bell5                 HiGHS                 Time stable           319.425833ms          8966406.49152         
+bppc8-02              CPLEX                 Time stable           58.694541ms           507.0                 
+neos-3610173-itata    CPLEX                 Time stable           44.0435ms             148.0                 
+noswot                CPLEX                 Time stable           13675.729375ms        -41.0                 
+ran16x16              SCIP                  Time stable           36710.296125ms        3823.0                
+p0033                 SCIP                  Time stable           7.107625ms            3089.0                
+misc01                CPLEX                 Time stable           37.254792ms           563.5                 
+bienst1               CPLEX                 Time stable           5160.0685ms           46.75                 
+nexp-50-20-1-1        HiGHS                 Time stable           32.654791ms           29.0                  
+set1cl                CPLEX                 Time stable           14.355916ms           6484.25               
+vpm1                  HiGHS                 Time stable           11.134667ms           20.0                  
+mod008                HiGHS                 Time stable           599.92525ms           306.9999999999855     
+rgn                   CPLEX                 Time stable           15.927041ms           82.19999924           
+dcmulti               HiGHS                 Time stable           649.075459ms          188182.0              
+cracpb1               CPLEX                 Time stable           19.504625ms           22199.0               
+misc07                SCIP                  Time stable           1968.703042ms         2810.0                
+noswot                HiGHS                 Time stable           51890.504125ms        -41.00000000000001    
+enlight_hard          HiGHS                 Time stable           5192.654209ms         36.99999999999532     
+rgn                   HiGHS                 Time stable           130.100459ms          82.19999923999774     
+neos17                CPLEX                 Time stable           736.661917ms          0.15000257742257736   
+pigeon-08             ojAlgo-MIP            Time stable           102281.040167ms       -7000.0               
+fixnet6               SCIP                  Time stable           3997.171417ms         3983.0                
+exp-1-500-5-5         SCIP                  Time stable           1432.628167ms         65887.0               
+nexp-50-20-1-1        SCIP                  Time stable           112.030875ms          29.0                  
+air01                 HiGHS                 Time stable           68.125625ms           6796.0                
+neos-3611447-jijia    SCIP                  Time stable           481.446292ms          107.0                 
+dcmulti               ojAlgo-MIP            Time stable           1984.280625ms         188182.0              
+neos-1425699          SCIP                  Time stable           3.077625ms            3.179698977E9         
+neos-3610051-istra    HiGHS                 Time stable           1898.5425ms           49.0                  
+p0548                 SCIP                  Time stable           48.441125ms           8691.0                
+neos-2624317-amur     CPLEX                 Time stable           449.810875ms          3.5223968             
+sample2               ojAlgo-MIP            Time stable           11.678667ms           375.0                 
+flugpl                CPLEX                 Time stable           1.570666ms            1201500.0             
+timtab1CUTS           HiGHS                 Time stable           39011.712542ms        764771.99999988       
+gt2                   SCIP                  Time stable           14.987375ms           21166.0               
+pp08aCUTS             HiGHS                 Time stable           986.19525ms           7350.000000017598     
+opt1217               HiGHS                 Time stable           89.392667ms           -16.0                 
+neos-3610040-iskar    CPLEX                 Time stable           29.976625ms           37.0                  
+gen                   ojAlgo-MIP            Time stable           6567.572083ms         112313.362718         
+pipex                 SCIP                  Time stable           31.670333ms           788.263               
+pk1                   SCIP                  Time stable           65288.776416ms        10.99999999999982     
+lseu                  HiGHS                 Time stable           95.332208ms           1120.0                
+23588                 HiGHS                 Time stable           4456.631209ms         8089.999999999969     
+mik-250-1-100-1       HiGHS                 Time stable           7719.101042ms         -66729.0              
+misc05                SCIP                  Time stable           409.114125ms          2984.5                
+neos-3610173-itata    SCIP                  Time stable           576.311875ms          148.0                 
+set1cl                HiGHS                 Time stable           45.277625ms           6484.25               
+ic97_tension          CPLEX                 Time stable           907.526583ms          3942.0                
+bell5                 SCIP                  Time stable           88.436625ms           8966406.49152         
+bell3b                HiGHS                 Time stable           349.31875ms           1.17862305228E7       
+neos-2624317-amur     HiGHS                 Time stable           7769.984583ms         3.5223968             
+p0291                 HiGHS                 Time stable           16.952542ms           5223.749              
+p0033                 CPLEX                 Time stable           3.595ms               3089.0                
+pigeon-08             SCIP                  Time stable           323.564042ms          -7000.0               
+neos17                HiGHS                 Time stable           3720.026666ms         0.15000257742257742   
+pp08a                 CPLEX                 Time stable           84.59375ms            7350.0                
+sp150x300d            SCIP                  Time stable           210.207417ms          69.0                  
+mik-250-1-100-1       SCIP                  Time stable           53044.292334ms        -66729.00000000003    
+misc02                SCIP                  Time stable           137.949958ms          1690.0                
+r50x360               HiGHS                 Time stable           19576.903959ms        1653.0000000009047    
+enlight_hard          SCIP                  Time stable           3.017709ms            37.0                  
+fixnet6               CPLEX                 Time stable           119.877ms             3983.0                
+vpm1                  CPLEX                 Time stable           5.284125ms            20.0                  
+mas76                 HiGHS                 Time stable           105703.923833ms       40005.05414181039     
+bell4                 SCIP                  Time stable           420.599083ms          1.8541484198E7        
+prod1                 CPLEX                 Time stable           3348.065625ms         -56.00000000000003    
+gen                   CPLEX                 Time stable           11.598ms              112313.362718         
+prod2                 CPLEX                 Time stable           18280.909209ms        -62.00000000000003    
+blend2                HiGHS                 Time stable           594.204875ms          7.598985              
+stein27               HiGHS                 Time stable           382.847542ms          17.99999999999997     
+supportcase16         HiGHS                 Time stable           31.759459ms           288.0                 
+mik-250-20-75-1       CPLEX                 Time stable           397.782916ms          -49716.0              
+modglob               CPLEX                 Time stable           31.946125ms           2.074050808630825E7   
+beavma                HiGHS                 Time stable           209.862375ms          383285.0              
+misc03                SCIP                  Time stable           910.957375ms          3360.0                
+mod013                CPLEX                 Time stable           12.644125ms           280.95                
+p0201                 HiGHS                 Time stable           524.568416ms          7615.0                
+sample2               CPLEX                 Time stable           4.640708ms            375.0                 
+vpm2                  CPLEX                 Time stable           44.604709ms           13.75                 
+bienst1               HiGHS                 Time stable           22668.394417ms        46.74999999999995     
+blend2                SCIP                  Time stable           528.728958ms          7.598985              
+opt1217               SCIP                  Time stable           72.940291ms           -16.0                 
+ran12x21              CPLEX                 Time stable           3221.352667ms         3664.0                
+pp08aCUTS             SCIP                  Time stable           962.506792ms          7350.0                
+cracpb1               SCIP                  Time stable           83.579666ms           22199.0               
+stein15               CPLEX                 Time stable           2.813958ms            9.0                   
+mik-250-20-75-5       SCIP                  Time stable           2880.123458ms         -51532.00000000056    
+stein27               CPLEX                 Time stable           7.02225ms             18.0                  
+modglob               HiGHS                 Time stable           428.336042ms          2.0740508086308237E7  
+p0201                 CPLEX                 Time stable           47.087333ms           7615.0                
+sentoy                CPLEX                 Time stable           10.2515ms             -7772.0               
+fixnet4               HiGHS                 Time stable           223.274583ms          8936.000000000002     
+fixnet4               CPLEX                 Time stable           98.002958ms           8936.0                
+rout                  HiGHS                 Time stable           20655.29475ms         1077.559999999991     
+sp150x300d            CPLEX                 Time stable           63.511583ms           69.0                  
+ic97_tension          SCIP                  Time stable           6597.806459ms         3941.9999999999936    
+supportcase14         CPLEX                 Time stable           14.871875ms           288.0                 
+misc05                HiGHS                 Time stable           208.941667ms          2984.499999999992     
+prod1                 SCIP                  Time stable           9361.938042ms         -56.0                 
+egout                 ojAlgo-MIP            Time stable           737.612083ms          568.1007              
+rgn                   SCIP                  Time stable           163.266291ms          82.19999924           
+p0282                 HiGHS                 Time stable           110.075875ms          258411.0              
+bell3a                HiGHS                 Time stable           196.627209ms          878430.3159999811     
+ran16x16              HiGHS                 Time stable           37113.436167ms        3823.0000000033283    
+stein45               SCIP                  Time stable           8819.39325ms          30.0                  
+mik-250-20-75-4       SCIP                  Time stable           10753.052583ms        -52301.00000000004    
+p0040                 HiGHS                 Time stable           3.671875ms            62027.0               
+sp150x300d            HiGHS                 Time stable           70.200292ms           68.99999999999999     
+flugpl                SCIP                  Time stable           21.902167ms           1201500.0             
+misc07                CPLEX                 Time stable           315.061791ms          2810.0                
+mod008                SCIP                  Time stable           141.061292ms          307.0                 
+supportcase14         HiGHS                 Time stable           48.207125ms           288.0                 
+misc01                SCIP                  Time stable           157.915709ms          563.5                 
+fixnet3               CPLEX                 Time stable           37.351792ms           51973.0               
+graphdraw-gemcutter   CPLEX                 Time stable           9518.630667ms         7118.499999999999     
+mod008                ojAlgo-MIP            Time stable           222.535583ms          307.0                 
+neos-1425699          HiGHS                 Time stable           89.569458ms           3.179698977E9         
+neos-3611689-kaihu    CPLEX                 Time stable           167.679834ms          119.0                 
+set1al                HiGHS                 Time stable           49.25475ms            15869.75              
+neos-3611447-jijia    CPLEX                 Time stable           52.936541ms           107.0                 
+stein45               ojAlgo-MIP            Time stable           16516.446916ms        29.99999999999944     
+supportcase16         CPLEX                 Time stable           10.378083ms           288.0                 
+mik-250-20-75-3       SCIP                  Time stable           1964.176084ms         -52242.00000000032    
+graphdraw-gemcutter   SCIP                  Time stable           66698.602417ms        7118.5                
+neos-3611447-jijia    HiGHS                 Time stable           1016.1955ms           107.0                 
+bm23                  SCIP                  Time stable           132.494042ms          34.0                  
+enlight8              ojAlgo-MIP            Time stable           1192.632583ms         27.0                  
+ran12x21              HiGHS                 Time stable           12258.815708ms        3664.0000000000177    
+beavma                SCIP                  Time stable           239.663333ms          383285.0              
+misc03                HiGHS                 Time stable           443.457125ms          3359.999999999995     
+22433                 CPLEX                 Time stable           58.672625ms           21477.0               
+graphdraw-gemcutter   HiGHS                 Time stable           101012.581417ms       7118.499999997938     
+lseu                  CPLEX                 Time stable           19.823375ms           1120.0                
+mik-250-20-75-2       SCIP                  Time stable           4172.582208ms         -50768.00000000006    
+bienst1               SCIP                  Time stable           60051.785084ms        46.74999999999999     
+sentoy                HiGHS                 Time stable           112.145792ms          -7772.0               
+gsvm2rl3              SCIP                  Time stable           4324.906333ms         0.3365275339619638    
+set1ch                SCIP                  Time stable           164.310625ms          54537.75              
+p0040                 CPLEX                 Time stable           0.9755ms              62027.0               
+neos-3610040-iskar    HiGHS                 Time stable           942.282541ms          36.99999999999999     
+p0291                 SCIP                  Time stable           9.768375ms            5223.749              
+neos-5192052-neckar   SCIP                  Time stable           12.695125ms           -1.167E7              
+fixnet3               HiGHS                 Time stable           65.296084ms           51973.0               
+pp08a                 SCIP                  Time stable           694.376541ms          7350.000000000019     
+f2gap40400            ojAlgo-MIP            Time stable           404.838375ms          20772.0               
+mik-250-20-75-1       SCIP                  Time stable           2167.0085ms           -49716.00000000016    
+misc05                ojAlgo-MIP            Time stable           882.950542ms          2984.499999999997     
+aflow30a              SCIP                  Time stable           12646.486875ms        1158.0                
+beavma                CPLEX                 Time stable           19.571833ms           383285.0              
+misc02                CPLEX                 Time stable           17.575875ms           1690.0                
+enigma                SCIP                  Time stable           164.719792ms          0.0                   
+misc01                HiGHS                 Time stable           134.101416ms          563.5000000000003     
+set1al                SCIP                  Time stable           56.299792ms           15869.75              
+fixnet3               SCIP                  Time stable           21.002708ms           51973.0               
+air01                 CPLEX                 Time stable           17.1865ms             6796.0                
+modglob               SCIP                  Time stable           102.967375ms          2.0740508086308237E7  
+dcmulti               SCIP                  Time stable           1523.547917ms         188182.0              
+vpm2                  SCIP                  Time stable           1291.232208ms         13.75                 
+p0201                 SCIP                  Time stable           460.5335ms            7615.0                
+pipex                 ojAlgo-MIP            Time stable           61.380459ms           788.263               
+misc03                CPLEX                 Time stable           32.269125ms           3360.0                
+cracpb1               HiGHS                 Time stable           33.861375ms           22199.0               
+mod013                HiGHS                 Time stable           174.046542ms          280.95000000000016    
+mik-250-1-100-1       CPLEX                 Time stable           593.812167ms          -66729.00000000001    
+misc02                HiGHS                 Time stable           30.501208ms           1690.0                
+neos17                SCIP                  Time stable           3085.553834ms         0.15000257742257736   
+fixnet4               SCIP                  Time stable           318.328417ms          8936.000000000004     
+gr4x6                 ojAlgo-MIP            Time stable           1.787625ms            202.35                
+rout                  SCIP                  Time stable           5572.612167ms         1077.56               
+prod2                 SCIP                  Time stable           93486.98ms            -62.0                 
+gen                   SCIP                  Time stable           13.61475ms            112313.362718         
+p0033                 HiGHS                 Time stable           11.83875ms            3089.0                
+ran13x13              HiGHS                 Time stable           10220.373041ms        3252.0                
+pigeon-08             HiGHS                 Time stable           13283.0255ms          -7000.0               
+23588                 SCIP                  Time stable           2569.754042ms         8090.0                
+sentoy                SCIP                  Time stable           205.996917ms          -7772.0               
+p0040                 SCIP                  Time stable           2.004625ms            62027.0               
+exp-1-500-5-5         CPLEX                 Time stable           732.259958ms          65887.00000000001     
+bell3b                CPLEX                 Time stable           35.025167ms           1.1786160618E7        
+r50x360               CPLEX                 Time stable           3298.276875ms         1653.000000000168     
+fixnet6               HiGHS                 Time stable           1651.621208ms         3983.0                
+neos-3610040-iskar    SCIP                  Time stable           785.365ms             37.0                  
+stein27               ojAlgo-MIP            Time stable           312.215333ms          18.0                  
+opt1217               CPLEX                 Time stable           26.63825ms            -16.0                 
+stein15               ojAlgo-MIP            Time stable           3.62975ms             8.99999999999999      
+neos-3610173-itata    HiGHS                 Time stable           2203.053333ms         148.0                 
+p0291                 CPLEX                 Time stable           3.556792ms            5223.748999999999     
+nexp-50-20-1-1        CPLEX                 Time stable           25.115541ms           29.0                  
+pp08a                 HiGHS                 Time stable           786.482209ms          7350.000000000001     
+mik-250-20-75-5       HiGHS                 Time stable           2349.801834ms         -51532.00000000022    
+f2gap40400            SCIP                  Time stable           29.624792ms           20772.0               
+stein45               HiGHS                 Time stable           14501.897542ms        30.0                  
+neos-3610051-istra    CPLEX                 Time stable           85.705834ms           49.0                  
+ran12x21              SCIP                  Time stable           35339.141792ms        3663.9999999999995    
+set1cl                SCIP                  Time stable           12.523875ms           6484.25               
+gt2                   CPLEX                 Time stable           5.652958ms            21166.0               
+set1ch                CPLEX                 Time stable           76.349042ms           54543.0               
+22433                 HiGHS                 Time stable           2349.568292ms         21476.99999999998     
+ran16x16              CPLEX                 Time stable           8426.510541ms         3823.0                
+misc05                CPLEX                 Time stable           35.507583ms           2984.5                
+neos-1425699          CPLEX                 Time stable           1.824875ms            3.179698977E9         
+lseu                  SCIP                  Time stable           291.037709ms          1120.0                
+bppc8-02              SCIP                  Time stable           146.029667ms          506.9999999999999     
+flugpl                HiGHS                 Time stable           46.273084ms           1201500.0             
+pp08aCUTS             CPLEX                 Time stable           98.481417ms           7350.0000000000055    
+supportcase14         ojAlgo-MIP            Time stable           25.804084ms           288.0                 
+bell3a                CPLEX                 Time stable           29.661875ms           878430.316            
+prod1                 HiGHS                 Time stable           18204.813334ms        -56.0                 
+bm23                  HiGHS                 Time stable           81.603667ms           34.0                  
+neos-3611447-jijia    ojAlgo-MIP            Time stable           187396.3455ms         107.0                 
+p0548                 HiGHS                 Time stable           42.603292ms           8691.0                
+ic97_tension          HiGHS                 Time stable           14068.426542ms        3942.0000000000014    
+mik-250-20-75-4       HiGHS                 Time stable           10390.081541ms        -52301.00000000885    
+mas76                 SCIP                  Time stable           27715.864458ms        40005.054142          
+neos-2624317-amur     SCIP                  Time stable           22192.780417ms        3.5223968             
+prod2                 HiGHS                 Time stable           78172.60075ms         -62.0                 
+enlight_hard          ojAlgo-MIP            FAILED                TIMEOUT               
+pk1                   HiGHS                 Time stable           135194.295417ms       10.99999999999998     
+
+Iteration 4 with 65 model/solver pairs remaining 2026-08-22T18:34:23.614260Z
+-----------------------------------------------------------------------------
+p0040                 ojAlgo-MIP            Time stable           0.532541ms            62027.00000003067     
+egout                 CPLEX                 Time stable           2.134167ms            568.1007              
+bm23                  CPLEX                 Time stable           11.796375ms           34.0                  
+gr4x6                 SCIP                  Time stable           3.354583ms            202.35000000000002    
+neos-5192052-neckar   ojAlgo-MIP            Time stable           1.721834ms            -1.167000000000001E7  
+egout                 HiGHS                 Time stable           8.752042ms            568.1007              
+supportcase16         SCIP                  Time stable           64.97ms               288.0                 
+enlight8              SCIP                  Time stable           2.290417ms            27.0                  
+mod013                ojAlgo-MIP            Time stable           35.336375ms           280.95                
+set1al                CPLEX                 Time stable           19.799542ms           15869.75              
+23588                 CPLEX                 Time stable           145.79625ms           8090.0                
+stein15               HiGHS                 Time stable           20.104959ms           9.0                   
+cracpb1               ojAlgo-MIP            Time stable           38.801917ms           22199.00000000045     
+gen                   HiGHS                 Time stable           13.471459ms           112313.362718         
+rgn                   ojAlgo-MIP            Time stable           88.346958ms           82.19999923999444     
+ran13x13              CPLEX                 Time stable           1098.779917ms         3252.0                
+neos-3611689-kaihu    HiGHS                 Time stable           999.554708ms          119.0                 
+misc03                ojAlgo-MIP            Time stable           114.282583ms          3359.999999999995     
+vpm1                  SCIP                  Time stable           13.567625ms           20.0                  
+bppc8-02              ojAlgo-MIP            Time stable           1635.279417ms         506.9999999999999     
+enigma                ojAlgo-MIP            Time stable           48.777166ms           0.0                   
+neos-1425699          ojAlgo-MIP            Time stable           0.918ms               3.179698977E9         
+pigeon-08             CPLEX                 Time stable           1238.012458ms         -7000.0               
+gt2                   ojAlgo-MIP            Time stable           33.175375ms           21166.0               
+p0201                 ojAlgo-MIP            Time stable           403.472583ms          7615.0                
+p0282                 SCIP                  Time stable           115.645375ms          258411.0              
+bell3a                ojAlgo-MIP            Time stable           1395.954458ms         878430.316            
+misc07                ojAlgo-MIP            Time stable           12577.017958ms        2809.999999999979     
+timtab1CUTS           SCIP                  Time stable           65710.075ms           764771.99999988       
+bell5                 ojAlgo-MIP            Time stable           9424.009292ms         8966406.49152         
+
+Iteration 5 with 35 model/solver pairs remaining 2026-08-22T18:37:17.493865Z
+-----------------------------------------------------------------------------
+f2gap40400            HiGHS                 Time stable           6.179792ms            20772.0               
+gr4x6                 HiGHS                 Time stable           6.950541ms            202.35                
+bell5                 CPLEX                 Time stable           8.501167ms            8966406.49152         
+bm23                  ojAlgo-MIP            Time stable           7.16525ms             34.0                  
+mik-250-20-75-2       CPLEX                 Time stable           311.568ms             -50768.0              
+lseu                  ojAlgo-MIP            Time stable           279.403125ms          1120.0                
+pk1                   CPLEX                 Time stable           4284.409166ms         11.0                  
+noswot                SCIP                  Time stable           8827.53975ms          -41.0                 
+misc02                ojAlgo-MIP            INVALID               UNSTABLE              
+stein9                SCIP                  Time stable           7.141416ms            5.0                   
+stein9                CPLEX                 Time stable           1.330417ms            5.0                   
+pk1                   ojAlgo-MIP            Time stable           6389.247541ms         10.99999999999999     
+timtab1CUTS           CPLEX                 Time stable           12345.98325ms         764771.9999997867     
+mas76                 ojAlgo-MIP            Time stable           9461.34625ms          40005.05414200004     
+bienst1               ojAlgo-MIP            Time stable           53795.174875ms        46.75000000000001     
+
+Iteration 6 with 20 model/solver pairs remaining 2026-08-22T18:39:26.323340Z
+-----------------------------------------------------------------------------
+enlight_hard          CPLEX                 Time stable           2.209625ms            37.0                  
+f2gap40400            CPLEX                 Time stable           6.25275ms             20772.0               
+egout                 SCIP                  Time stable           3.334875ms            568.1007              
+stein9                HiGHS                 Time stable           8.640042ms            5.0                   
+p0282                 CPLEX                 Time stable           26.167542ms           258411.0              
+23588                 ojAlgo-MIP            Time stable           533.024917ms          8089.999999999994     
+misc07                HiGHS                 Time stable           22876.666ms           2809.999999999692     
+
+Iteration 7 with 13 model/solver pairs remaining 2026-08-22T18:40:49.638178Z
+-----------------------------------------------------------------------------
+ran13x13              SCIP                  Time stable           16649.030208ms        3252.0000000000095    
+timtab1               SCIP                  Time stable           25942.54325ms         764771.9999997802     
+
+Iteration 8 with 11 model/solver pairs remaining 2026-08-22T18:42:11.068940Z
+-----------------------------------------------------------------------------
+set1cl                ojAlgo-MIP            Time stable           26.6975ms             6484.249999987936     
+flugpl                ojAlgo-MIP            Time stable           19.186292ms           1201500.0             
+bell3b                ojAlgo-MIP            Time stable           764.11675ms           1.178661789E7         
+
+Iteration 9 with 8 model/solver pairs remaining 2026-08-22T18:42:14.758027Z
+-----------------------------------------------------------------------------
+
+Iteration 10 with 8 model/solver pairs remaining 2026-08-22T18:42:15.178221Z
+-----------------------------------------------------------------------------
+air01                 ojAlgo-MIP            Time stable           8.981917ms            6796.0                
+p0291                 ojAlgo-MIP            Time stable           29.218875ms           5223.749              
+
+Iteration 11 with 6 model/solver pairs remaining 2026-08-22T18:42:15.777307Z
+-----------------------------------------------------------------------------
+sample2               SCIP                  Time stable           2.884208ms            375.00000000000006    
+p0548                 CPLEX                 Time stable           15.461875ms           8691.0                
+p0033                 ojAlgo-MIP            Time stable           6.0825ms              3088.99999999585      
+
+Iteration 12 with 3 model/solver pairs remaining 2026-08-22T18:42:16.044996Z
+-----------------------------------------------------------------------------
+
+Iteration 13 with 3 model/solver pairs remaining 2026-08-22T18:42:16.162151Z
+-----------------------------------------------------------------------------
+stein9                ojAlgo-MIP            Time stable           0.299083ms            5.0                   
+sentoy                ojAlgo-MIP            Time stable           15.107ms              -7772.0               
+misc01                ojAlgo-MIP            Time stable           24.991125ms           563.4999999999999     
+
+Final Results
+=====================================================================
+22433                 CPLEX                 OPTIMAL               58.672625ms           
+22433                 HiGHS                 OPTIMAL               2349.568292ms         
+22433                 SCIP                  OPTIMAL               928.671459ms          
+22433                 ojAlgo-MIP            OPTIMAL               238.684667ms          
+23588                 CPLEX                 OPTIMAL               145.79625ms           
+23588                 HiGHS                 OPTIMAL               4456.631209ms         
+23588                 SCIP                  OPTIMAL               2569.754042ms         
+23588                 ojAlgo-MIP            OPTIMAL               533.024917ms          
+aflow30a              CPLEX                 OPTIMAL               1411.680125ms         
+aflow30a              HiGHS                 OPTIMAL               7981.426166ms         
+aflow30a              SCIP                  OPTIMAL               12646.486875ms        
+aflow30a              ojAlgo-MIP            FAILED                TIMEOUT               
+air01                 CPLEX                 OPTIMAL               17.1865ms             
+air01                 HiGHS                 OPTIMAL               68.125625ms           
+air01                 SCIP                  OPTIMAL               47.177041ms           
+air01                 ojAlgo-MIP            OPTIMAL               8.981917ms            
+beavma                CPLEX                 OPTIMAL               19.571833ms           
+beavma                HiGHS                 OPTIMAL               209.862375ms          
+beavma                SCIP                  OPTIMAL               239.663333ms          
+beavma                ojAlgo-MIP            FAILED                TIMEOUT               
+bell3a                CPLEX                 OPTIMAL               29.661875ms           
+bell3a                HiGHS                 OPTIMAL               196.627209ms          
+bell3a                SCIP                  OPTIMAL               761.983458ms          
+bell3a                ojAlgo-MIP            OPTIMAL               1395.954458ms         
+bell3b                CPLEX                 OPTIMAL               35.025167ms           
+bell3b                HiGHS                 OPTIMAL               349.31875ms           
+bell3b                SCIP                  OPTIMAL               1781.435167ms         
+bell3b                ojAlgo-MIP            OPTIMAL               764.11675ms           
+bell4                 CPLEX                 OPTIMAL               27.82475ms            
+bell4                 HiGHS                 OPTIMAL               472.112833ms          
+bell4                 SCIP                  OPTIMAL               420.599083ms          
+bell4                 ojAlgo-MIP            FAILED                TIMEOUT               
+bell5                 CPLEX                 OPTIMAL               8.501167ms            
+bell5                 HiGHS                 OPTIMAL               319.425833ms          
+bell5                 SCIP                  OPTIMAL               88.436625ms           
+bell5                 ojAlgo-MIP            OPTIMAL               9424.009292ms         
+bienst1               CPLEX                 OPTIMAL               5160.0685ms           
+bienst1               HiGHS                 OPTIMAL               22668.394417ms        
+bienst1               SCIP                  OPTIMAL               60051.785084ms        
+bienst1               ojAlgo-MIP            OPTIMAL               53795.174875ms        
+blend2                CPLEX                 OPTIMAL               97.0845ms             
+blend2                HiGHS                 OPTIMAL               594.204875ms          
+blend2                SCIP                  OPTIMAL               528.728958ms          
+blend2                ojAlgo-MIP            FAILED                TIMEOUT               
+bm23                  CPLEX                 OPTIMAL               11.796375ms           
+bm23                  HiGHS                 OPTIMAL               81.603667ms           
+bm23                  SCIP                  OPTIMAL               132.494042ms          
+bm23                  ojAlgo-MIP            OPTIMAL               7.16525ms             
+bppc8-02              CPLEX                 OPTIMAL               58.694541ms           
+bppc8-02              HiGHS                 OPTIMAL               185.492833ms          
+bppc8-02              SCIP                  OPTIMAL               146.029667ms          
+bppc8-02              ojAlgo-MIP            OPTIMAL               1635.279417ms         
+cracpb1               CPLEX                 OPTIMAL               19.504625ms           
+cracpb1               HiGHS                 OPTIMAL               33.861375ms           
+cracpb1               SCIP                  OPTIMAL               83.579666ms           
+cracpb1               ojAlgo-MIP            OPTIMAL               38.801917ms           
+dcmulti               CPLEX                 OPTIMAL               61.429709ms           
+dcmulti               HiGHS                 OPTIMAL               649.075459ms          
+dcmulti               SCIP                  OPTIMAL               1523.547917ms         
+dcmulti               ojAlgo-MIP            OPTIMAL               1984.280625ms         
+egout                 CPLEX                 OPTIMAL               2.134167ms            
+egout                 HiGHS                 OPTIMAL               8.752042ms            
+egout                 SCIP                  OPTIMAL               3.334875ms            
+egout                 ojAlgo-MIP            OPTIMAL               737.612083ms          
+enigma                CPLEX                 OPTIMAL               24.839167ms           
+enigma                HiGHS                 OPTIMAL               117.836083ms          
+enigma                SCIP                  OPTIMAL               164.719792ms          
+enigma                ojAlgo-MIP            OPTIMAL               48.777166ms           
+enlight8              CPLEX                 OPTIMAL               2.065042ms            
+enlight8              HiGHS                 OPTIMAL               409.136583ms          
+enlight8              SCIP                  OPTIMAL               2.290417ms            
+enlight8              ojAlgo-MIP            OPTIMAL               1192.632583ms         
+enlight_hard          CPLEX                 OPTIMAL               2.209625ms            
+enlight_hard          HiGHS                 OPTIMAL               5192.654209ms         
+enlight_hard          SCIP                  OPTIMAL               3.017709ms            
+enlight_hard          ojAlgo-MIP            FAILED                TIMEOUT               
+exp-1-500-5-5         CPLEX                 OPTIMAL               732.259958ms          
+exp-1-500-5-5         HiGHS                 OPTIMAL               2596.504ms            
+exp-1-500-5-5         SCIP                  OPTIMAL               1432.628167ms         
+exp-1-500-5-5         ojAlgo-MIP            FAILED                TIMEOUT               
+f2gap40400            CPLEX                 OPTIMAL               6.25275ms             
+f2gap40400            HiGHS                 OPTIMAL               6.179792ms            
+f2gap40400            SCIP                  OPTIMAL               29.624792ms           
+f2gap40400            ojAlgo-MIP            OPTIMAL               404.838375ms          
+fixnet3               CPLEX                 OPTIMAL               37.351792ms           
+fixnet3               HiGHS                 OPTIMAL               65.296084ms           
+fixnet3               SCIP                  OPTIMAL               21.002708ms           
+fixnet3               ojAlgo-MIP            FAILED                TIMEOUT               
+fixnet4               CPLEX                 OPTIMAL               98.002958ms           
+fixnet4               HiGHS                 OPTIMAL               223.274583ms          
+fixnet4               SCIP                  OPTIMAL               318.328417ms          
+fixnet4               ojAlgo-MIP            FAILED                TIMEOUT               
+fixnet6               CPLEX                 OPTIMAL               119.877ms             
+fixnet6               HiGHS                 OPTIMAL               1651.621208ms         
+fixnet6               SCIP                  OPTIMAL               3997.171417ms         
+fixnet6               ojAlgo-MIP            FAILED                TIMEOUT               
+flugpl                CPLEX                 OPTIMAL               1.570666ms            
+flugpl                HiGHS                 OPTIMAL               46.273084ms           
+flugpl                SCIP                  OPTIMAL               21.902167ms           
+flugpl                ojAlgo-MIP            OPTIMAL               19.186292ms           
+gen                   CPLEX                 OPTIMAL               11.598ms              
+gen                   HiGHS                 OPTIMAL               13.471459ms           
+gen                   SCIP                  OPTIMAL               13.61475ms            
+gen                   ojAlgo-MIP            OPTIMAL               6567.572083ms         
+gr4x6                 CPLEX                 OPTIMAL               1.994ms               
+gr4x6                 HiGHS                 OPTIMAL               6.950541ms            
+gr4x6                 SCIP                  OPTIMAL               3.354583ms            
+gr4x6                 ojAlgo-MIP            OPTIMAL               1.787625ms            
+graphdraw-gemcutter   CPLEX                 OPTIMAL               9518.630667ms         
+graphdraw-gemcutter   HiGHS                 OPTIMAL               101012.581417ms       
+graphdraw-gemcutter   SCIP                  OPTIMAL               66698.602417ms        
+graphdraw-gemcutter   ojAlgo-MIP            FAILED                TIMEOUT               
+gsvm2rl3              CPLEX                 OPTIMAL               679.535667ms          
+gsvm2rl3              HiGHS                 OPTIMAL               5821.119583ms         
+gsvm2rl3              SCIP                  OPTIMAL               4324.906333ms         
+gsvm2rl3              ojAlgo-MIP            FAILED                TIMEOUT               
+gt2                   CPLEX                 OPTIMAL               5.652958ms            
+gt2                   HiGHS                 OPTIMAL               31.627458ms           
+gt2                   SCIP                  OPTIMAL               14.987375ms           
+gt2                   ojAlgo-MIP            OPTIMAL               33.175375ms           
+ic97_tension          CPLEX                 OPTIMAL               907.526583ms          
+ic97_tension          HiGHS                 OPTIMAL               14068.426542ms        
+ic97_tension          SCIP                  OPTIMAL               6597.806459ms         
+ic97_tension          ojAlgo-MIP            FAILED                TIMEOUT               
+lseu                  CPLEX                 OPTIMAL               19.823375ms           
+lseu                  HiGHS                 OPTIMAL               95.332208ms           
+lseu                  SCIP                  OPTIMAL               291.037709ms          
+lseu                  ojAlgo-MIP            OPTIMAL               279.403125ms          
+mas76                 CPLEX                 OPTIMAL               3882.705292ms         
+mas76                 HiGHS                 OPTIMAL               105703.923833ms       
+mas76                 SCIP                  OPTIMAL               27715.864458ms        
+mas76                 ojAlgo-MIP            OPTIMAL               9461.34625ms          
+mik-250-1-100-1       CPLEX                 OPTIMAL               593.812167ms          
+mik-250-1-100-1       HiGHS                 OPTIMAL               7719.101042ms         
+mik-250-1-100-1       SCIP                  OPTIMAL               53044.292334ms        
+mik-250-1-100-1       ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-1       CPLEX                 OPTIMAL               397.782916ms          
+mik-250-20-75-1       HiGHS                 OPTIMAL               2686.01375ms          
+mik-250-20-75-1       SCIP                  OPTIMAL               2167.0085ms           
+mik-250-20-75-1       ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-2       CPLEX                 OPTIMAL               311.568ms             
+mik-250-20-75-2       HiGHS                 OPTIMAL               2224.75975ms          
+mik-250-20-75-2       SCIP                  OPTIMAL               4172.582208ms         
+mik-250-20-75-2       ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-3       CPLEX                 OPTIMAL               565.107667ms          
+mik-250-20-75-3       HiGHS                 OPTIMAL               2264.418167ms         
+mik-250-20-75-3       SCIP                  OPTIMAL               1964.176084ms         
+mik-250-20-75-3       ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-4       CPLEX                 OPTIMAL               1888.152084ms         
+mik-250-20-75-4       HiGHS                 OPTIMAL               10390.081541ms        
+mik-250-20-75-4       SCIP                  OPTIMAL               10753.052583ms        
+mik-250-20-75-4       ojAlgo-MIP            FAILED                TIMEOUT               
+mik-250-20-75-5       CPLEX                 OPTIMAL               205.398541ms          
+mik-250-20-75-5       HiGHS                 OPTIMAL               2349.801834ms         
+mik-250-20-75-5       SCIP                  OPTIMAL               2880.123458ms         
+mik-250-20-75-5       ojAlgo-MIP            FAILED                TIMEOUT               
+misc01                CPLEX                 OPTIMAL               37.254792ms           
+misc01                HiGHS                 OPTIMAL               134.101416ms          
+misc01                SCIP                  OPTIMAL               157.915709ms          
+misc01                ojAlgo-MIP            OPTIMAL               24.991125ms           
+misc02                CPLEX                 OPTIMAL               17.575875ms           
+misc02                HiGHS                 OPTIMAL               30.501208ms           
+misc02                SCIP                  OPTIMAL               137.949958ms          
+misc02                ojAlgo-MIP            FAILED                UNSTABLE              
+misc03                CPLEX                 OPTIMAL               32.269125ms           
+misc03                HiGHS                 OPTIMAL               443.457125ms          
+misc03                SCIP                  OPTIMAL               910.957375ms          
+misc03                ojAlgo-MIP            OPTIMAL               114.282583ms          
+misc05                CPLEX                 OPTIMAL               35.507583ms           
+misc05                HiGHS                 OPTIMAL               208.941667ms          
+misc05                SCIP                  OPTIMAL               409.114125ms          
+misc05                ojAlgo-MIP            OPTIMAL               882.950542ms          
+misc07                CPLEX                 OPTIMAL               315.061791ms          
+misc07                HiGHS                 OPTIMAL               22876.666ms           
+misc07                SCIP                  OPTIMAL               1968.703042ms         
+misc07                ojAlgo-MIP            OPTIMAL               12577.017958ms        
+mod008                CPLEX                 OPTIMAL               22.113541ms           
+mod008                HiGHS                 OPTIMAL               599.92525ms           
+mod008                SCIP                  OPTIMAL               141.061292ms          
+mod008                ojAlgo-MIP            OPTIMAL               222.535583ms          
+mod013                CPLEX                 OPTIMAL               12.644125ms           
+mod013                HiGHS                 OPTIMAL               174.046542ms          
+mod013                SCIP                  OPTIMAL               601.946084ms          
+mod013                ojAlgo-MIP            OPTIMAL               35.336375ms           
+modglob               CPLEX                 OPTIMAL               31.946125ms           
+modglob               HiGHS                 OPTIMAL               428.336042ms          
+modglob               SCIP                  OPTIMAL               102.967375ms          
+modglob               ojAlgo-MIP            FAILED                TIMEOUT               
+neos-1425699          CPLEX                 OPTIMAL               1.824875ms            
+neos-1425699          HiGHS                 OPTIMAL               89.569458ms           
+neos-1425699          SCIP                  OPTIMAL               3.077625ms            
+neos-1425699          ojAlgo-MIP            OPTIMAL               0.918ms               
+neos-2624317-amur     CPLEX                 OPTIMAL               449.810875ms          
+neos-2624317-amur     HiGHS                 OPTIMAL               7769.984583ms         
+neos-2624317-amur     SCIP                  OPTIMAL               22192.780417ms        
+neos-2624317-amur     ojAlgo-MIP            FAILED                TIMEOUT               
+neos-3610040-iskar    CPLEX                 OPTIMAL               29.976625ms           
+neos-3610040-iskar    HiGHS                 OPTIMAL               942.282541ms          
+neos-3610040-iskar    SCIP                  OPTIMAL               785.365ms             
+neos-3610040-iskar    ojAlgo-MIP            FAILED                TIMEOUT               
+neos-3610051-istra    CPLEX                 OPTIMAL               85.705834ms           
+neos-3610051-istra    HiGHS                 OPTIMAL               1898.5425ms           
+neos-3610051-istra    SCIP                  OPTIMAL               1137.034375ms         
+neos-3610051-istra    ojAlgo-MIP            FAILED                TIMEOUT               
+neos-3610173-itata    CPLEX                 OPTIMAL               44.0435ms             
+neos-3610173-itata    HiGHS                 OPTIMAL               2203.053333ms         
+neos-3610173-itata    SCIP                  OPTIMAL               576.311875ms          
+neos-3610173-itata    ojAlgo-MIP            FAILED                TIMEOUT               
+neos-3611447-jijia    CPLEX                 OPTIMAL               52.936541ms           
+neos-3611447-jijia    HiGHS                 OPTIMAL               1016.1955ms           
+neos-3611447-jijia    SCIP                  OPTIMAL               481.446292ms          
+neos-3611447-jijia    ojAlgo-MIP            OPTIMAL               187396.3455ms         
+neos-3611689-kaihu    CPLEX                 OPTIMAL               167.679834ms          
+neos-3611689-kaihu    HiGHS                 OPTIMAL               999.554708ms          
+neos-3611689-kaihu    SCIP                  OPTIMAL               511.52925ms           
+neos-3611689-kaihu    ojAlgo-MIP            FAILED                TIMEOUT               
+neos-5192052-neckar   CPLEX                 OPTIMAL               2.703625ms            
+neos-5192052-neckar   HiGHS                 OPTIMAL               19.523875ms           
+neos-5192052-neckar   SCIP                  OPTIMAL               12.695125ms           
+neos-5192052-neckar   ojAlgo-MIP            OPTIMAL               1.721834ms            
+neos17                CPLEX                 OPTIMAL               736.661917ms          
+neos17                HiGHS                 OPTIMAL               3720.026666ms         
+neos17                SCIP                  OPTIMAL               3085.553834ms         
+neos17                ojAlgo-MIP            FAILED                TIMEOUT               
+nexp-50-20-1-1        CPLEX                 OPTIMAL               25.115541ms           
+nexp-50-20-1-1        HiGHS                 OPTIMAL               32.654791ms           
+nexp-50-20-1-1        SCIP                  OPTIMAL               112.030875ms          
+nexp-50-20-1-1        ojAlgo-MIP            FAILED                TIMEOUT               
+noswot                CPLEX                 OPTIMAL               13675.729375ms        
+noswot                HiGHS                 OPTIMAL               51890.504125ms        
+noswot                SCIP                  OPTIMAL               8827.53975ms          
+noswot                ojAlgo-MIP            FAILED                TIMEOUT               
+opt1217               CPLEX                 OPTIMAL               26.63825ms            
+opt1217               HiGHS                 OPTIMAL               89.392667ms           
+opt1217               SCIP                  OPTIMAL               72.940291ms           
+opt1217               ojAlgo-MIP            FAILED                FAILED                
+p0033                 CPLEX                 OPTIMAL               3.595ms               
+p0033                 HiGHS                 OPTIMAL               11.83875ms            
+p0033                 SCIP                  OPTIMAL               7.107625ms            
+p0033                 ojAlgo-MIP            OPTIMAL               6.0825ms              
+p0040                 CPLEX                 OPTIMAL               0.9755ms              
+p0040                 HiGHS                 OPTIMAL               3.671875ms            
+p0040                 SCIP                  OPTIMAL               2.004625ms            
+p0040                 ojAlgo-MIP            OPTIMAL               0.532541ms            
+p0201                 CPLEX                 OPTIMAL               47.087333ms           
+p0201                 HiGHS                 OPTIMAL               524.568416ms          
+p0201                 SCIP                  OPTIMAL               460.5335ms            
+p0201                 ojAlgo-MIP            OPTIMAL               403.472583ms          
+p0282                 CPLEX                 OPTIMAL               26.167542ms           
+p0282                 HiGHS                 OPTIMAL               110.075875ms          
+p0282                 SCIP                  OPTIMAL               115.645375ms          
+p0282                 ojAlgo-MIP            OPTIMAL               79.158542ms           
+p0291                 CPLEX                 OPTIMAL               3.556792ms            
+p0291                 HiGHS                 OPTIMAL               16.952542ms           
+p0291                 SCIP                  OPTIMAL               9.768375ms            
+p0291                 ojAlgo-MIP            OPTIMAL               29.218875ms           
+p0548                 CPLEX                 OPTIMAL               15.461875ms           
+p0548                 HiGHS                 OPTIMAL               42.603292ms           
+p0548                 SCIP                  OPTIMAL               48.441125ms           
+p0548                 ojAlgo-MIP            FAILED                TIMEOUT               
+pigeon-08             CPLEX                 OPTIMAL               1238.012458ms         
+pigeon-08             HiGHS                 OPTIMAL               13283.0255ms          
+pigeon-08             SCIP                  OPTIMAL               323.564042ms          
+pigeon-08             ojAlgo-MIP            OPTIMAL               102281.040167ms       
+pipex                 CPLEX                 OPTIMAL               20.69075ms            
+pipex                 HiGHS                 OPTIMAL               37.903792ms           
+pipex                 SCIP                  OPTIMAL               31.670333ms           
+pipex                 ojAlgo-MIP            OPTIMAL               61.380459ms           
+pk1                   CPLEX                 OPTIMAL               4284.409166ms         
+pk1                   HiGHS                 OPTIMAL               135194.295417ms       
+pk1                   SCIP                  OPTIMAL               65288.776416ms        
+pk1                   ojAlgo-MIP            OPTIMAL               6389.247541ms         
+pp08a                 CPLEX                 OPTIMAL               84.59375ms            
+pp08a                 HiGHS                 OPTIMAL               786.482209ms          
+pp08a                 SCIP                  OPTIMAL               694.376541ms          
+pp08a                 ojAlgo-MIP            FAILED                TIMEOUT               
+pp08aCUTS             CPLEX                 OPTIMAL               98.481417ms           
+pp08aCUTS             HiGHS                 OPTIMAL               986.19525ms           
+pp08aCUTS             SCIP                  OPTIMAL               962.506792ms          
+pp08aCUTS             ojAlgo-MIP            FAILED                TIMEOUT               
+prod1                 CPLEX                 OPTIMAL               3348.065625ms         
+prod1                 HiGHS                 OPTIMAL               18204.813334ms        
+prod1                 SCIP                  OPTIMAL               9361.938042ms         
+prod1                 ojAlgo-MIP            FAILED                TIMEOUT               
+prod2                 CPLEX                 OPTIMAL               18280.909209ms        
+prod2                 HiGHS                 OPTIMAL               78172.60075ms         
+prod2                 SCIP                  OPTIMAL               93486.98ms            
+prod2                 ojAlgo-MIP            FAILED                TIMEOUT               
+r50x360               CPLEX                 OPTIMAL               3298.276875ms         
+r50x360               HiGHS                 OPTIMAL               19576.903959ms        
+r50x360               SCIP                  OPTIMAL               21886.8875ms          
+r50x360               ojAlgo-MIP            FAILED                TIMEOUT               
+ran12x21              CPLEX                 OPTIMAL               3221.352667ms         
+ran12x21              HiGHS                 OPTIMAL               12258.815708ms        
+ran12x21              SCIP                  OPTIMAL               35339.141792ms        
+ran12x21              ojAlgo-MIP            FAILED                TIMEOUT               
+ran13x13              CPLEX                 OPTIMAL               1098.779917ms         
+ran13x13              HiGHS                 OPTIMAL               10220.373041ms        
+ran13x13              SCIP                  OPTIMAL               16649.030208ms        
+ran13x13              ojAlgo-MIP            FAILED                TIMEOUT               
+ran16x16              CPLEX                 OPTIMAL               8426.510541ms         
+ran16x16              HiGHS                 OPTIMAL               37113.436167ms        
+ran16x16              SCIP                  OPTIMAL               36710.296125ms        
+ran16x16              ojAlgo-MIP            FAILED                TIMEOUT               
+rgn                   CPLEX                 OPTIMAL               15.927041ms           
+rgn                   HiGHS                 OPTIMAL               130.100459ms          
+rgn                   SCIP                  OPTIMAL               163.266291ms          
+rgn                   ojAlgo-MIP            OPTIMAL               88.346958ms           
+rout                  CPLEX                 OPTIMAL               1200.028375ms         
+rout                  HiGHS                 OPTIMAL               20655.29475ms         
+rout                  SCIP                  OPTIMAL               5572.612167ms         
+rout                  ojAlgo-MIP            FAILED                TIMEOUT               
+sample2               CPLEX                 OPTIMAL               4.640708ms            
+sample2               HiGHS                 OPTIMAL               13.320417ms           
+sample2               SCIP                  OPTIMAL               2.884208ms            
+sample2               ojAlgo-MIP            OPTIMAL               11.678667ms           
+sentoy                CPLEX                 OPTIMAL               10.2515ms             
+sentoy                HiGHS                 OPTIMAL               112.145792ms          
+sentoy                SCIP                  OPTIMAL               205.996917ms          
+sentoy                ojAlgo-MIP            OPTIMAL               15.107ms              
+set1al                CPLEX                 OPTIMAL               19.799542ms           
+set1al                HiGHS                 OPTIMAL               49.25475ms            
+set1al                SCIP                  OPTIMAL               56.299792ms           
+set1al                ojAlgo-MIP            FAILED                TIMEOUT               
+set1ch                CPLEX                 OPTIMAL               76.349042ms           
+set1ch                HiGHS                 OPTIMAL               283.198292ms          
+set1ch                SCIP                  OPTIMAL               164.310625ms          
+set1ch                ojAlgo-MIP            FAILED                TIMEOUT               
+set1cl                CPLEX                 OPTIMAL               14.355916ms           
+set1cl                HiGHS                 OPTIMAL               45.277625ms           
+set1cl                SCIP                  OPTIMAL               12.523875ms           
+set1cl                ojAlgo-MIP            OPTIMAL               26.6975ms             
+sp150x300d            CPLEX                 OPTIMAL               63.511583ms           
+sp150x300d            HiGHS                 OPTIMAL               70.200292ms           
+sp150x300d            SCIP                  OPTIMAL               210.207417ms          
+sp150x300d            ojAlgo-MIP            FAILED                TIMEOUT               
+stein15               CPLEX                 OPTIMAL               2.813958ms            
+stein15               HiGHS                 OPTIMAL               20.104959ms           
+stein15               SCIP                  OPTIMAL               17.571709ms           
+stein15               ojAlgo-MIP            OPTIMAL               3.62975ms             
+stein27               CPLEX                 OPTIMAL               7.02225ms             
+stein27               HiGHS                 OPTIMAL               382.847542ms          
+stein27               SCIP                  OPTIMAL               96.894542ms           
+stein27               ojAlgo-MIP            OPTIMAL               312.215333ms          
+stein45               CPLEX                 OPTIMAL               1276.189208ms         
+stein45               HiGHS                 OPTIMAL               14501.897542ms        
+stein45               SCIP                  OPTIMAL               8819.39325ms          
+stein45               ojAlgo-MIP            OPTIMAL               16516.446916ms        
+stein9                CPLEX                 OPTIMAL               1.330417ms            
+stein9                HiGHS                 OPTIMAL               8.640042ms            
+stein9                SCIP                  OPTIMAL               7.141416ms            
+stein9                ojAlgo-MIP            OPTIMAL               0.299083ms            
+supportcase14         CPLEX                 OPTIMAL               14.871875ms           
+supportcase14         HiGHS                 OPTIMAL               48.207125ms           
+supportcase14         SCIP                  OPTIMAL               211.888625ms          
+supportcase14         ojAlgo-MIP            OPTIMAL               25.804084ms           
+supportcase16         CPLEX                 OPTIMAL               10.378083ms           
+supportcase16         HiGHS                 OPTIMAL               31.759459ms           
+supportcase16         SCIP                  OPTIMAL               64.97ms               
+supportcase16         ojAlgo-MIP            OPTIMAL               54.869708ms           
+timtab1               CPLEX                 OPTIMAL               18685.375291ms        
+timtab1               HiGHS                 OPTIMAL               32633.866875ms        
+timtab1               SCIP                  OPTIMAL               25942.54325ms         
+timtab1               ojAlgo-MIP            FAILED                TIMEOUT               
+timtab1CUTS           CPLEX                 OPTIMAL               12345.98325ms         
+timtab1CUTS           HiGHS                 OPTIMAL               39011.712542ms        
+timtab1CUTS           SCIP                  OPTIMAL               65710.075ms           
+timtab1CUTS           ojAlgo-MIP            FAILED                TIMEOUT               
+vpm1                  CPLEX                 OPTIMAL               5.284125ms            
+vpm1                  HiGHS                 OPTIMAL               11.134667ms           
+vpm1                  SCIP                  OPTIMAL               13.567625ms           
+vpm1                  ojAlgo-MIP            FAILED                TIMEOUT               
+vpm2                  CPLEX                 OPTIMAL               44.604709ms           
+vpm2                  HiGHS                 OPTIMAL               1106.810709ms         
+vpm2                  SCIP                  OPTIMAL               1291.232208ms         
+vpm2                  ojAlgo-MIP            FAILED                TIMEOUT               
+
+Models Solved
+=====================================================================
+CPLEX                 94 / 94               100%                  
+HiGHS                 94 / 94               100%                  
+SCIP                  94 / 94               100%                  
+ojAlgo-MIP            48 / 94               51%                   

@@ -90,14 +90,7 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
         return retVal;
     }
 
-    static void doBenchmark(final Configuration configuration) {
-
-        Set<ModelSolverPair> allWork = AbstractMIPLIB.createWorkSet(configuration);
-
-        AbstractBenchmark.doBenchmark(allWork, configuration);
-    }
-
-    static void loadExpectedValues(final Configuration configuration) {
+    private static void loadExpectedValues(final Configuration configuration) {
 
         try (BufferedReader reader = new BufferedReader(
                 new InputStreamReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_DIR + "miplib.solu")))) {
@@ -117,6 +110,15 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
         } catch (IOException cause) {
             throw new RuntimeException(cause);
         }
+    }
+
+    static void doBenchmark(final Configuration configuration) {
+
+        AbstractMIPLIB.loadExpectedValues(configuration);
+
+        Set<ModelSolverPair> allWork = AbstractMIPLIB.createWorkSet(configuration);
+
+        AbstractBenchmark.doBenchmark(allWork, configuration);
     }
 
 }

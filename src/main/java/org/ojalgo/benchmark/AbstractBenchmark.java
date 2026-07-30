@@ -36,6 +36,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import java.util.function.Supplier;
 
 import org.ojalgo.OjAlgoUtils;
 import org.ojalgo.benchmark.ForkedTask.ReturnValue;
@@ -81,12 +82,44 @@ public abstract class AbstractBenchmark {
     public static final class Configuration {
 
         public Set<String> investigate = Set.of();
+        /**
+         * Absolute paths to the native libraries to use, keyed by contender name. Anything not listed here is
+         * resolved the usual way - whatever the integration's own loader finds installed.
+         * <p>
+         * The library is loaded in the worker JVM before the integration initialises, and both the HiGHS and
+         * SCIP loaders check for an already-loaded library before searching, so that is the one they bind to.
+         * <p>
+         * One build per solver per run. Worker JVMs are reused, and a library, once loaded, stays loaded - so
+         * two builds of the same solver cannot be told apart within a single run. Compare builds by running
+         * again with a different path and a different {@link #outputPath}.
+         * <p>
+         * The libraries must be built for the machine the benchmark runs on - a Linux {@code .so} out of a
+         * Docker image will not load on macOS.
+         */
+        public final Map<String, String> libraries = new HashMap<>();
+        /**
+         * How many times, at most, to measure each model/solver pair.
+         * <p>
+         * Set to 1 and each pair is solved exactly once - enough to answer whether the solver manages the
+         * model at all, which for MIP is the interesting question. Above 1 the forked task repeats within its
+         * own budget on every pass, and a pair is done once two consecutive measurements agree.
+         * <p>
+         * At 1 the reported times are cold - one solve in a fresh JVM, including class loading, JIT warm-up
+         * and native library loading. On models that solve in milliseconds that overhead dominates, so read
+         * those times as "it worked", not as measurements, and don't compare them against a longer run.
+         */
+        public int maxIterations = DEFAULT_MAX_ITERATIONS;
         public int maxProbSize = 10_000;
         /**
          * ms
          */
         public long maxWaitTime = 1_000L * 60L * 5L;
         public int minProbSize = 1;
+        /**
+         * Where the results CSV is written. Give each configuration its own file when running the same models
+         * several times over.
+         */
+        public String outputPath = "./src/main/resources/benchmark_output.csv";
         public ParallelismSupplier parallelism = Parallelism.CORES.halve().adjustDown();
         public String pathPrefix;
         public String pathSuffix = ".SIF";
@@ -113,12 +146,12 @@ public abstract class AbstractBenchmark {
         public static final String HIGHS = "HiGHS";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
-        public static final String OJALGO_MIP = "ojAlgo-MIP";
         public static final String OJALGO_LP = "ojAlgo-LP";
         public static final String OJALGO_LP_DUAL_DENSE = "ojAlgo-LP-dual-D";
         public static final String OJALGO_LP_DUAL_SPARSE = "ojAlgo-LP-dual-S";
         public static final String OJALGO_LP_PRIM_DENSE = "ojAlgo-LP-prim-D";
         public static final String OJALGO_LP_PRIM_SPARSE = "ojAlgo-LP-prim-S";
+        public static final String OJALGO_MIP = "ojAlgo-MIP";
         public static final String OJALGO_QP = "ojAlgo-QP";
         public static final String OJALGO_QP_ADMM = "ojAlgo-QP-ADMM";
         public static final String OJALGO_QP_ASET = "ojAlgo-QP-ASET";
@@ -225,7 +258,12 @@ public abstract class AbstractBenchmark {
         /**
          * Does not match the expected value, or the reference solver
          */
-        WRONG;
+        WRONG,
+        /**
+         * Reported a solution that does not satisfy the model's constraints. Distinct from WRONG: the
+         * objective value can still agree with the reference while the solution itself is infeasible.
+         */
+        INVALID;
     }
 
     static final class ModelSize {
@@ -253,16 +291,22 @@ public abstract class AbstractBenchmark {
 
         private final List<TimedResult<Optimisation.Result>> all = new ArrayList<>();
         private final double myHalfRelativeTimeError;
+        private final int myMaxCount;
         private final NumberContext myValueAccuracy;
 
         public ResultsSet() {
-            this(ACCURACY, 0.1);
+            this(DEFAULT_MAX_ITERATIONS);
         }
 
-        private ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy) {
+        public ResultsSet(final int maxCount) {
+            this(ACCURACY, 0.1, maxCount);
+        }
+
+        private ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy, final int maxCount) {
             super();
             myValueAccuracy = valueAccuracy;
             myHalfRelativeTimeError = timeAccuracy / 2D;
+            myMaxCount = maxCount;
         }
 
         public TimedResult<Result> add(final ForkedTask.ReturnValue returnValue) {
@@ -327,16 +371,25 @@ public abstract class AbstractBenchmark {
             }
         }
 
+        public int count() {
+            return all.size();
+        }
+
+        /**
+         * True once no further measurements are wanted - either because the count is spent, or because the
+         * two most recent times agree closely enough that another one wouldn't tell us much. The count is
+         * checked first, so a max of 1 means "one measurement is all we're after".
+         */
         public boolean isStable() {
 
             int size = all.size();
 
-            if (size < 3) {
-                return false;
+            if (size >= myMaxCount) {
+                return true;
             }
 
-            if (size >= 20) {
-                return true;
+            if (size < 3) {
+                return false;
             }
 
             double duration1 = all.get(size - 1).duration.toDurationInMillis();
@@ -347,133 +400,155 @@ public abstract class AbstractBenchmark {
 
     }
 
+    /**
+     * The one bar everything is measured against. This is a speed benchmark, so it asks "not completely
+     * wrong" rather than asserting accuracy, and the same tolerance suits all three questions:
+     * <ul>
+     * <li>do repeated solves of a pair agree well enough to trust the timing,
+     * <li>does the value match the expected one (or the reference solver),
+     * <li>does the returned solution actually satisfy the model's constraints.
+     * </ul>
+     * Measured on this model set the margins are wide in every direction. Legitimate solves disagree by
+     * ~1E-4 at worst while genuinely wrong values are off by tens of percent. Residuals differ by two or
+     * three orders of magnitude between the dense and sparse stores (1E-10 against 1E-8 on one model, 1E-8
+     * against 1E-5 on another) without either being wrong, while a genuinely infeasible point was off by
+     * 1E+4. Note that feasibility is judged per constraint, with the precision applied relative to each
+     * limit, so the value has to suit small limits too.
+     */
     static final NumberContext ACCURACY = NumberContext.of(4);
+
+    static final int DEFAULT_MAX_ITERATIONS = 20;
 
     static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
             new CalendarDateDuration(30, CalendarDateUnit.MINUTE).convertTo(CalendarDateUnit.MILLIS));
 
-    static final Map<String, ExpressionsBasedModel.Integration<?>> INTEGRATIONS = new HashMap<>();
+    /**
+     * Suppliers rather than instances so that a solver's classes - and therefore its native libraries - are
+     * only loaded when that solver is actually used. OR-Tools in particular bundles its own libhighs, which
+     * the HiGHS integration would then bind to instead of the system one.
+     */
+    static final Map<String, Supplier<ExpressionsBasedModel.Integration<?>>> INTEGRATIONS = new HashMap<>();
     static final int WIDTH = 22;
 
     static {
 
-        INTEGRATIONS.put(Contender.ACM, SolverACM.INTEGRATION);
-        INTEGRATIONS.put(Contender.HIPPARCHUS, SolverHipparchus.INTEGRATION);
-        INTEGRATIONS.put(Contender.CPLEX, SolverCPLEX.INTEGRATION);
-        INTEGRATIONS.put(Contender.ORTOOLS, SolverORTools.INTEGRATION);
-        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.ACM, () -> SolverACM.INTEGRATION);
+        INTEGRATIONS.put(Contender.HIPPARCHUS, () -> SolverHipparchus.INTEGRATION);
+        INTEGRATIONS.put(Contender.CPLEX, () -> SolverCPLEX.INTEGRATION);
+        INTEGRATIONS.put(Contender.ORTOOLS, () -> SolverORTools.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.experimental = true;
         }));
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
-        INTEGRATIONS.put(Contender.JOPTIMIZER, SolverJOptimizer.INTEGRATION);
+        INTEGRATIONS.put(Contender.JOPTIMIZER, () -> SolverJOptimizer.INTEGRATION);
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_LP, LinearSolver.INTEGRATION);
-        INTEGRATIONS.put(Contender.OJALGO_MIP, IntegerSolver.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_LP, () -> LinearSolver.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_MIP, () -> IntegerSolver.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.CLARABEL, SolverClarabel.INTEGRATION);
-        INTEGRATIONS.put(Contender.HIGHS, SolverHiGHS.INTEGRATION);
+        INTEGRATIONS.put(Contender.CLARABEL, () -> SolverClarabel.INTEGRATION);
+        INTEGRATIONS.put(Contender.HIGHS, () -> SolverHiGHS.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.SCIP, SolverSCIP.INTEGRATION);
-        INTEGRATIONS.put(Contender.SSCLP, SolverSSCLP.INTEGRATION);
+        INTEGRATIONS.put(Contender.SCIP, () -> SolverSCIP.INTEGRATION);
+        INTEGRATIONS.put(Contender.SSCLP, () -> SolverSSCLP.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_DENSE, () -> LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_SPARSE, () -> LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
             opt.sparse = Boolean.TRUE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_DENSE, () -> LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().primal();
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_SPARSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_SPARSE, () -> LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().primal();
             opt.sparse = Boolean.TRUE;
         }));
 
-        INTEGRATIONS.put(Contender.OJALGO_QP_DENSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_DENSE_EXPERIMENTAL, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.FALSE;
             opt.experimental = true;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_SPARSE_EXPERIMENTAL, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_SPARSE_EXPERIMENTAL, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.experimental = true;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_DENSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_DENSE_STABLE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.FALSE;
             opt.experimental = false;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_SPARSE_STABLE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_SPARSE_STABLE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.experimental = false;
         }));
 
-        INTEGRATIONS.put(Contender.OJALGO_QP_CG_ID, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_CG_ID, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(ConjugateGradientSolver::new, Preconditioner::newIdentity);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_CG_JACOBI, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_CG_JACOBI, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(ConjugateGradientSolver::new, JacobiPreconditioner::new);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_CG_SSORP, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_CG_SSORP, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(ConjugateGradientSolver::new, SSORPreconditioner::new);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_ID, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_ID, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(MINRESSolver::new, Preconditioner::newIdentity);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_JACOBI, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_JACOBI, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(MINRESSolver::new, JacobiPreconditioner::new);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_SSORP, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_MINRES_SSORP, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(MINRESSolver::new, SSORPreconditioner::new);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_ID, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_ID, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(QMRSolver::new, Preconditioner::newIdentity);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_JACOBI, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_JACOBI, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(QMRSolver::new, JacobiPreconditioner::new);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_SSORP, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_QMR_SSORP, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.sparse = Boolean.TRUE;
             opt.convex().iterative(QMRSolver::new, SSORPreconditioner::new);
         }));
 
-        INTEGRATIONS.put(Contender.CLARABEL, SolverClarabel.INTEGRATION);
-        INTEGRATIONS.put(Contender.OJALGO_QP, ConvexSolver.INTEGRATION);
+        INTEGRATIONS.put(Contender.CLARABEL, () -> SolverClarabel.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_QP, () -> ConvexSolver.INTEGRATION);
 
-        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ADMM);
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_ASET, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_ASET, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
         }));
 
-        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_DENSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_DENSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.TRUE);
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_SPARSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_SPARSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.TRUE);
             opt.sparse = Boolean.TRUE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_DENSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_DENSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.FALSE);
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_SPARSE, ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_SPARSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.FALSE);
             opt.sparse = Boolean.TRUE;
@@ -490,11 +565,15 @@ public abstract class AbstractBenchmark {
         Map<ModelSolverPair, FailReason> totReasons = new ConcurrentHashMap<>();
         Map<String, ModelSize> modDim = new ConcurrentHashMap<>();
 
+        int workers = configuration.parallelism.getAsInt();
+        int threadsPerWorker = Parallelism.THREADS.divideBy(workers).getAsInt();
+
         int iterations = 0;
         Set<ModelSolverPair> iterDone = ConcurrentHashMap.newKeySet();
 
         BasicLogger.debug();
         BasicLogger.debug("Environment: {}", OjAlgoUtils.ENVIRONMENT);
+        BasicLogger.debug("Workers: {}, threads per worker: {}", workers, threadsPerWorker);
         BasicLogger.debug();
 
         do {
@@ -506,8 +585,8 @@ public abstract class AbstractBenchmark {
             BasicLogger.debug("Iteration {} with {} model/solver pairs remaining {}", iterations, allWork.size(), Instant.now());
             BasicLogger.debug("-----------------------------------------------------------------------------");
 
-            masterProcessor.process(allWork, configuration.parallelism,
-                    modelSolverPair -> AbstractBenchmark.doOnePair(configuration, slaveExecutor, totResults, totReasons, modDim, iterDone, modelSolverPair));
+            masterProcessor.process(allWork, configuration.parallelism, modelSolverPair -> AbstractBenchmark.doOnePair(configuration, slaveExecutor, totResults,
+                    totReasons, modDim, iterDone, threadsPerWorker, modelSolverPair));
 
             allWork.removeAll(iterDone);
 
@@ -515,11 +594,13 @@ public abstract class AbstractBenchmark {
 
         Map<ModelSolverPair, ResultsSet> sortedResults = new TreeMap<>(totResults);
 
-        try (TextLineWriter writer = TextLineWriter.of("./src/main/resources/benchmark_output.csv")) {
+        try (TextLineWriter writer = TextLineWriter.of(configuration.outputPath)) {
 
             CSVLineBuilder csv = writer.newCSVLineBuilder(ASCII.HT);
 
             csv.line("Model", "Solver", "Time", "nbVars", "nbExpr", "density");
+
+            Map<String, int[]> tally = new TreeMap<>();
 
             BasicLogger.debug();
             BasicLogger.debug("Final Results");
@@ -549,25 +630,40 @@ public abstract class AbstractBenchmark {
                     referenceResult = referenceResultsSet != null ? referenceResultsSet.fastest.result : null;
                 }
 
+                boolean solved;
+                FailReason reason;
                 if (expectedValue != null || referenceResult != null && referenceResult.getState().isOptimal()) {
-
                     double referenceValue = expectedValue != null ? expectedValue.doubleValue() : referenceResult.getValue();
+                    solved = state.isOptimal() && !ACCURACY.isDifferent(referenceValue, value);
+                    reason = totReasons.getOrDefault(work, FailReason.WRONG);
+                } else {
+                    solved = state.isOptimal();
+                    reason = totReasons.getOrDefault(work, FailReason.TIMEOUT);
+                }
 
-                    if (state.isOptimal() && !ACCURACY.isDifferent(referenceValue, value)) {
-                        BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
-                        csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
-                    } else {
-                        BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.WRONG));
-                        csv.line(model, solver, "", nbVars, nbExpr, density);
-                    }
+                // A point that does not satisfy the constraints is not a solve, whatever its objective value
+                // says. Both tests above look only at the value, so this has to be applied separately.
+                solved &= totReasons.get(work) != FailReason.INVALID;
 
-                } else if (state.isOptimal()) {
+                int[] counts = tally.computeIfAbsent(solver, k -> new int[2]);
+                counts[1]++;
+
+                if (solved) {
+                    counts[0]++;
                     BasicLogger.debugColumns(WIDTH, model, solver, state, duration);
                     csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
                 } else {
-                    BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, totReasons.getOrDefault(work, FailReason.TIMEOUT));
+                    BasicLogger.debugColumns(WIDTH, model, solver, Optimisation.State.FAILED, reason);
                     csv.line(model, solver, "", nbVars, nbExpr, density);
                 }
+            }
+
+            BasicLogger.debug();
+            BasicLogger.debug("Models Solved");
+            BasicLogger.debug("=====================================================================");
+            for (Entry<String, int[]> entry : tally.entrySet()) {
+                int[] counts = entry.getValue();
+                BasicLogger.debugColumns(WIDTH, entry.getKey(), counts[0] + " / " + counts[1], Math.round(100.0 * counts[0] / counts[1]) + "%");
             }
 
         } catch (IOException cause) {
@@ -578,22 +674,31 @@ public abstract class AbstractBenchmark {
 
     static void doOnePair(final Configuration configuration, final ExternalProcessExecutor executor, final Map<ModelSolverPair, ResultsSet> totResults,
             final Map<ModelSolverPair, FailReason> totReasons, final Map<String, ModelSize> modDim, final Set<ModelSolverPair> iterDone,
-            final ModelSolverPair modelSolverPair) {
+            final int threadsPerWorker, final ModelSolverPair modelSolverPair) {
 
         String path = configuration.path(modelSolverPair.model);
 
         BigDecimal expectedValue = configuration.values.get(modelSolverPair.model);
 
+        // One solve is all a capability test needs. When stabilising, though, the fork should use the
+        // whole budget every time - it has already paid for the JVM, the class loading and the parsing,
+        // and each repeat feeds the same measurement.
+        int maxSolves = configuration.maxIterations <= 1 ? 1 : 0;
+
+        // Capability is decided on the first pass; later passes only refine the timing.
+        boolean firstPass = !totResults.containsKey(modelSolverPair);
+
         Future<ForkedTask.ReturnValue> future = null;
         try {
 
-            future = executor.execute(ForkedTask.DESCRIPTOR, path, modelSolverPair.solver, configuration.maxWaitTime);
+            future = executor.execute(ForkedTask.DESCRIPTOR, path, modelSolverPair.solver, configuration.maxWaitTime, threadsPerWorker, maxSolves,
+                    configuration.libraries.getOrDefault(modelSolverPair.solver, ""), firstPass);
 
             ReturnValue subResults = future.get(configuration.maxWaitTime, TimeUnit.MILLISECONDS);
 
             modDim.computeIfAbsent(modelSolverPair.model, k -> new ModelSize(subResults.nbExpressions, subResults.nbVariables, subResults.density));
 
-            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
+            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
 
             if (subResults.result != null) {
 
@@ -613,6 +718,23 @@ public abstract class AbstractBenchmark {
                             "!= " + expectedValue);
                     totReasons.put(modelSolverPair, FailReason.WRONG);
                     iterDone.add(modelSolverPair);
+
+                } else if (!subResults.valid) {
+
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, fastest.result.getValue(),
+                            "value agrees, solution infeasible");
+                    totReasons.put(modelSolverPair, FailReason.INVALID);
+                    iterDone.add(modelSolverPair);
+
+                } else if (mainResults.count() == 1) {
+
+                    // Report the first pass whether or not the pair is done with - otherwise a stabilising
+                    // run shows nothing but failures until the third iteration.
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, "Solved", mainResults.fastest.duration,
+                            mainResults.fastest.result.getValue());
+                    if (mainResults.isStable()) {
+                        iterDone.add(modelSolverPair);
+                    }
 
                 } else if (mainResults.isStable()) {
 
@@ -642,7 +764,7 @@ public abstract class AbstractBenchmark {
                 }
             }
 
-            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
+            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
             mainResults.add(FAILED);
 
             BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
@@ -661,7 +783,7 @@ public abstract class AbstractBenchmark {
 
             BasicLogger.error("Error working with {}!", modelSolverPair);
 
-            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet());
+            ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
             mainResults.add(FAILED);
 
             BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.FAILED);
