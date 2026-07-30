@@ -59,6 +59,7 @@ import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Optimisation.State;
 import org.ojalgo.optimisation.convex.ConvexSolver;
 import org.ojalgo.optimisation.convex.ConvexSolver.Algorithm;
+import org.ojalgo.optimisation.integer.IntegerSolver;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.clarabel.SolverClarabel;
@@ -68,6 +69,7 @@ import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
 import org.ojalgo.optimisation.solver.scip.SolverSCIP;
+import org.ojalgo.optimisation.solver.ssclp.SolverSSCLP;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
@@ -111,6 +113,7 @@ public abstract class AbstractBenchmark {
         public static final String HIGHS = "HiGHS";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
+        public static final String OJALGO_MIP = "ojAlgo-MIP";
         public static final String OJALGO_LP = "ojAlgo-LP";
         public static final String OJALGO_LP_DUAL_DENSE = "ojAlgo-LP-dual-D";
         public static final String OJALGO_LP_DUAL_SPARSE = "ojAlgo-LP-dual-S";
@@ -138,6 +141,7 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
         public static final String ORTOOLS = "OR-Tools";
         public static final String SCIP = "SCIP";
+        public static final String SSCLP = "SSC-LP";
     }
 
     public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
@@ -365,11 +369,13 @@ public abstract class AbstractBenchmark {
         // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_LP, LinearSolver.INTEGRATION);
+        INTEGRATIONS.put(Contender.OJALGO_MIP, IntegerSolver.INTEGRATION);
 
         INTEGRATIONS.put(Contender.CLARABEL, SolverClarabel.INTEGRATION);
         INTEGRATIONS.put(Contender.HIGHS, SolverHiGHS.INTEGRATION);
 
         INTEGRATIONS.put(Contender.SCIP, SolverSCIP.INTEGRATION);
+        INTEGRATIONS.put(Contender.SSCLP, SolverSSCLP.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_LP_DUAL_DENSE, LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
