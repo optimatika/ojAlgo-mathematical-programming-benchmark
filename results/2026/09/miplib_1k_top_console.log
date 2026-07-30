@@ -1,0 +1,1739 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 2, threads per worker: 9
+
+
+Iteration 1 with 592 model/solver pairs remaining 2026-09-10T20:14:36.092333Z
+-----------------------------------------------------------------------------
+gr4x6                 HiGHS                 Solved                8.556875ms            202.35                
+timtab1               CPLEX                 Solved                7093.516416ms         764771.9999997886     
+aflow30a              HiGHS                 Solved                7586.454792ms         1158.0                
+bell4                 HiGHS                 Solved                418.063375ms          1.8542042122400157E7  
+gsvm2rl3              HiGHS                 Solved                5290.256209ms         0.3365275339619642    
+enlight8              CPLEX                 Solved                2.576834ms            27.0                  
+mod013                COPT                  Solved                79.840208ms           280.9499999999998     
+cracpb1               Xpress                Solved                14.129667ms           22199.0               
+gen-ip002             CPLEX                 Solved                48993.661083ms        -4783.7333916         
+p80x400b              Xpress                Solved                95387.160334ms        39667.00000000003     
+gen-ip016             Xpress                FAILED                TIMEOUT               
+noswot                Xpress                Solved                622.545291ms          -41.0                 
+pk1                   COPT                  Solved                3387.658667ms         10.9999999999995      
+supportcase20         Xpress                Solved                232.911375ms          45591.99999999996     
+bell4                 CPLEX                 Solved                26.637125ms           1.8541957238E7        
+opt1217               Xpress                Solved                61.833208ms           -16.0                 
+timtab1               HiGHS                 Solved                32331.422209ms        764771.9999998799     
+prod1                 Xpress                Solved                1399.687542ms         -56.0                 
+gsvm2rl3              CPLEX                 Solved                629.092125ms          0.3365275339619651    
+gr4x6                 CPLEX                 Solved                5.654209ms            202.35                
+neos-1430701          Xpress                Solved                525.600958ms          -77.0                 
+neos-5192052-neckar   CPLEX                 Solved                5.069625ms            -1.1670000000000002E7 
+misc01                Xpress                Solved                44.369875ms           563.5                 
+neos-3072252-nete     COPT                  Solved                11488.4325ms          1.1807698000000002E7  
+bell3b                COPT                  Solved                100.199542ms          1.17862554888E7       
+neos-5192052-neckar   Xpress                Solved                4.7415ms              -1.167E7              
+gsvm2rl5              Xpress                FAILED                TIMEOUT               
+mod008                CPLEX                 Solved                29.950917ms           307.0                 
+bienst1               Xpress                Solved                1483.210208ms         46.75                 
+enlight_hard          CPLEX                 Solved                4.601791ms            37.0                  
+timtab2               CPLEX                 FAILED                TIMEOUT               
+neos-1430701          CPLEX                 Solved                785.55725ms           -77.0                 
+neos-5192052-neckar   HiGHS                 Solved                20.305459ms           -1.167E7              
+p0548                 CPLEX                 Solved                21.096417ms           8691.0                
+pp08aCUTS             Xpress                Solved                254.707583ms          7350.0                
+dcmulti               CPLEX                 Solved                49.60025ms            188182.0              
+newdano               COPT                  Solved                296561.2545ms         65.66666666666659     
+bell5                 CPLEX                 Solved                15.381958ms           8966406.49152         
+enlight8              Xpress                Solved                0.635916ms            27.0                  
+aflow30a              CPLEX                 Solved                742.810625ms          1158.0                
+enlight8              HiGHS                 Solved                346.433958ms          27.00000000000374     
+gen-ip021             COPT                  Solved                31608.511ms           2361.4541951916       
+stein45               Xpress                Solved                1000.262042ms         30.0                  
+misc02                Xpress                Solved                8.9695ms              1690.0                
+markshare2            HiGHS                 FAILED                TIMEOUT               
+bell3a                COPT                  INVALID               878430.3153305104     value agrees, solution
+neos-3754480-nidda    HiGHS                 FAILED                TIMEOUT               
+gen-ip002             HiGHS                 FAILED                TIMEOUT               
+aflow30a              Xpress                Solved                662.317583ms          1158.0                
+stein45               CPLEX                 Solved                652.352125ms          30.0                  
+noswot                HiGHS                 Solved                42935.253375ms        -41.00000000000001    
+rgn                   Xpress                Solved                23.116708ms           82.19999924           
+gsvm2rl3              Xpress                Solved                683.198458ms          0.33652753396196355   
+neos-5140963-mincio   COPT                  Solved                140725.362708ms       14393.0               
+gen-ip016             CPLEX                 FAILED                TIMEOUT               
+noswot                CPLEX                 Solved                1309.196833ms         -41.0                 
+gen-ip054             COPT                  Solved                32536.588542ms        6840.965641791997     
+pigeon-10             CPLEX                 Solved                35.945042ms           -9000.0               
+markshare1            HiGHS                 FAILED                TIMEOUT               
+supportcase20         CPLEX                 Solved                39215.814792ms        45591.99999999998     
+exp-1-500-5-5         HiGHS                 Solved                2599.859708ms         65887.00000000013     
+mik-250-1-100-1       COPT                  Solved                939.76825ms           -66729.00000000001    
+bell5                 HiGHS                 Solved                315.099125ms          8966406.49152         
+p0201                 COPT                  Solved                41.564917ms           7615.0                
+neos15                COPT                  Solved                93119.082333ms        80598.43009686067     
+air01                 COPT                  Solved                24.874459ms           6796.0                
+gsvm2rl5              CPLEX                 FAILED                TIMEOUT               
+fixnet6               COPT                  Solved                1051.822583ms         3982.9999999999995    
+flugpl                Xpress                Solved                1.537583ms            1201500.0             
+misc01                CPLEX                 Solved                33.224875ms           563.5                 
+b-ball                Xpress                Solved                2.161125ms            -1.5                  
+mod008                HiGHS                 Solved                581.235458ms          306.9999999999855     
+pigeon-10             Xpress                Solved                78.286375ms           -9000.0               
+bienst1               CPLEX                 Solved                3276.981208ms         46.75                 
+rgn                   CPLEX                 Solved                17.949375ms           82.19999924           
+dcmulti               HiGHS                 Solved                625.76775ms           188182.0              
+prod2                 Xpress                Solved                16574.303416ms        -62.0                 
+danoint               COPT                  Solved                218915.373333ms       65.6666666666666      
+p0548                 Xpress                Solved                37.416417ms           8691.0                
+enlight_hard          HiGHS                 Solved                4491.340042ms         36.99999999999532     
+cracpb1               CPLEX                 Solved                17.906208ms           22199.0               
+timtab2               HiGHS                 FAILED                TIMEOUT               
+neos-1440460          HiGHS                 Solved                95183.4425ms          -179.24999999999997   
+gen-ip036             HiGHS                 Solved                280902.304916ms       -4606.6796098376      
+neos17                CPLEX                 Solved                491.423959ms          0.1500025774225774    
+gen-ip036             Xpress                Solved                18792.954792ms        -4606.6796098376      
+k16x240b              HiGHS                 FAILED                TIMEOUT               
+rgn                   HiGHS                 Solved                129.221875ms          82.19999923999774     
+bienst2               CPLEX                 Solved                8684.890583ms         54.6                  
+p0291                 Xpress                Solved                14.755167ms           5223.748999999994     
+mik-250-1-100-1       HiGHS                 Solved                7759.709ms            -66729.0              
+neos-3754480-nidda    Xpress                Solved                161757.170416ms       12941.738385630122    
+exp-1-500-5-5         COPT                  Solved                391.278084ms          65887.0               
+markshare1            COPT                  Solved                32559.4555ms          1.00000000000007      
+assign1-5-8           Xpress                FAILED                TIMEOUT               
+markshare1            Xpress                FAILED                TIMEOUT               
+air01                 HiGHS                 Solved                62.970875ms           6796.0                
+23588                 CPLEX                 Solved                117.618542ms          8090.0                
+gen-ip036             COPT                  Solved                81776.379875ms        -4606.6796098376      
+neos-3046601-motu     COPT                  Solved                125.761833ms          1459.0                
+neos15                HiGHS                 Solved                157362.328292ms       80598.43009686067     
+neos-3754480-nidda    COPT                  FAILED                TIMEOUT               
+neos-3611447-jijia    Xpress                Solved                109.284542ms          107.0                 
+misc05                Xpress                Solved                50.219459ms           2984.5                
+neos-2624317-amur     CPLEX                 Solved                145.917875ms          3.5223968             
+23588                 HiGHS                 Solved                3938.7315ms           8089.999999999969     
+flugpl                CPLEX                 Solved                2.416667ms            1201500.0             
+bienst2               HiGHS                 FAILED                TIMEOUT               
+pp08aCUTS             HiGHS                 Solved                880.462333ms          7350.000000017598     
+opt1217               HiGHS                 Solved                81.353125ms           -16.0                 
+gr4x6                 COPT                  Solved                33.683875ms           202.35                
+neos-3610040-iskar    CPLEX                 Solved                28.716834ms           37.0                  
+neos-2624317-amur     HiGHS                 Solved                6972.842958ms         3.5223968             
+p80x400b              HiGHS                 FAILED                TIMEOUT               
+markshare2            COPT                  FAILED                TIMEOUT               
+bienst1               HiGHS                 Solved                21082.100208ms        46.74999999999995     
+prod2                 CPLEX                 Solved                10263.815792ms        -62.00000000000003    
+bppc8-09              COPT                  Solved                124440.677542ms       472.0                 
+b-ball                CPLEX                 Solved                2.480958ms            -1.5                  
+bell4                 Xpress                Solved                244.267417ms          1.854219485299998E7   
+neos-1425699          Xpress                Solved                3.587667ms            3.179698977E9         
+bell5                 COPT                  INVALID               8966406.489222262     value agrees, solution
+markshare2            Xpress                FAILED                TIMEOUT               
+bell3b                HiGHS                 Solved                335.174292ms          1.17862305228E7       
+gr4x6                 Xpress                Solved                4.253792ms            202.35                
+timtab1               Xpress                Solved                3435.888667ms         764771.99999988       
+p0291                 HiGHS                 Solved                16.411125ms           5223.749              
+enlight8              COPT                  Solved                2.868292ms            27.0                  
+gen-ip002             Xpress                Solved                76810.002041ms        -4783.7333916         
+neos17                HiGHS                 Solved                3296.692833ms         0.15000257742257742   
+mod008                COPT                  Solved                49.023042ms           306.9999999999969     
+prod1                 CPLEX                 Solved                1512.98875ms          -56.00000000000003    
+fixnet6               CPLEX                 Solved                44.455583ms           3983.0                
+neos-1430701          HiGHS                 Solved                5097.224083ms         -77.00000000000024    
+bell4                 COPT                  Solved                81.513542ms           1.8541878398000002E7  
+bell5                 Xpress                Solved                33.873959ms           8966406.49152         
+misc03                Xpress                Solved                53.1445ms             3360.0                
+noswot                COPT                  Solved                13043.633792ms        -41.00000000000002    
+gen                   CPLEX                 Solved                11.418584ms           112313.362718         
+mod008                Xpress                Solved                52.260959ms           307.0                 
+timtab2               COPT                  FAILED                TIMEOUT               
+neos-5140963-mincio   HiGHS                 FAILED                TIMEOUT               
+enlight_hard          Xpress                Solved                1.8035ms              37.0                  
+timtab2               Xpress                FAILED                TIMEOUT               
+enlight_hard          COPT                  Solved                3.188208ms            37.0                  
+exp-1-500-5-5         Xpress                Solved                282.244041ms          65887.0               
+pigeon-10             HiGHS                 FAILED                TIMEOUT               
+neos-942830           COPT                  Solved                29501.33825ms         16.0                  
+timtab1               COPT                  Solved                18100.996291ms        764771.99999978       
+k16x240b              Xpress                Solved                16624.188708ms        11392.999999999996    
+mod013                CPLEX                 Solved                7.829167ms            280.95000000095       
+neos-1440460          Xpress                Solved                36800.447167ms        -179.25               
+gen-ip016             HiGHS                 FAILED                TIMEOUT               
+pp08aCUTS             COPT                  Solved                285.519083ms          7349.9999999999945    
+gen-ip054             CPLEX                 Solved                46647.137833ms        6840.965641792        
+stein15               CPLEX                 Solved                3.333084ms            9.0                   
+mik-250-20-75-5       COPT                  Solved                191.86075ms           -51532.0              
+modglob               HiGHS                 Solved                395.022625ms          2.0740508086308237E7  
+stein27               CPLEX                 Solved                11.324625ms           18.0                  
+supportcase16         Xpress                Solved                18.084583ms           288.0                 
+neos-3611689-kaihu    HiGHS                 Solved                900.054833ms          119.0                 
+stein45               COPT                  Solved                1670.946375ms         30.0                  
+markshare_5_0         COPT                  Solved                1742.882ms            1.00000000000002      
+mod013                Xpress                Solved                25.351041ms           280.95                
+opt1217               COPT                  Solved                65.620542ms           -16.0                 
+p0201                 CPLEX                 Solved                36.880083ms           7615.0                
+neos-5140963-mincio   CPLEX                 Solved                125598.008417ms       14393.0               
+gen                   HiGHS                 Solved                12.689583ms           112313.362718         
+pigeon-10             COPT                  Solved                62.27475ms            -9000.0               
+fixnet4               HiGHS                 Solved                192.506792ms          8936.000000000002     
+sp150x300d            CPLEX                 Solved                36.988666ms           69.0                  
+flugpl                COPT                  Solved                0.660959ms            1201500.0             
+p80x400b              COPT                  FAILED                TIMEOUT               
+neos-1440460          COPT                  Solved                26199.227959ms        -179.2500000000012    
+stein9                COPT                  Solved                17.123375ms           5.0                   
+breastcancer-regularizXpress                Solved                85030.176458ms        35.76784210526331     
+p0040                 Xpress                Solved                1.122208ms            62027.0               
+p0282                 HiGHS                 Solved                99.768209ms           258411.0              
+p0282                 Xpress                Solved                32.784875ms           258411.0              
+danoint               Xpress                Solved                94313.753416ms        65.66666666666669     
+p0040                 HiGHS                 Solved                4.693ms               62027.0               
+sp150x300d            Xpress                Solved                25.594375ms           69.0                  
+danoint               CPLEX                 Solved                85471.509708ms        65.66666666666666     
+sp150x300d            HiGHS                 Solved                62.070833ms           68.99999999999999     
+fixnet6               Xpress                Solved                391.765583ms          3983.0000000000005    
+rgn                   COPT                  Solved                240.987041ms          82.19999923999985     
+gsvm2rl5              COPT                  FAILED                TIMEOUT               
+bell3b                Xpress                Solved                148.385708ms          1.1786160617999999E7  
+neos5                 COPT                  Solved                24745.778875ms        14.99999999999962     
+neos-3072252-nete     Xpress                Solved                628.886625ms          1.1807697999996707E7  
+neos-1425699          HiGHS                 Solved                84.430125ms           3.179698977E9         
+neos-2652786-brda     COPT                  Solved                45456.637ms           4.7924996             
+gen-ip054             Xpress                Solved                53907.165208ms        6840.965641792        
+neos-3611689-kaihu    CPLEX                 Solved                58.343917ms           119.0                 
+mik-250-20-75-3       COPT                  Solved                151.834709ms          -52241.99999999999    
+neos-3611689-kaihu    Xpress                Solved                172.977084ms          118.9999999999999     
+gen-ip054             HiGHS                 FAILED                TIMEOUT               
+assign1-5-8           HiGHS                 FAILED                TIMEOUT               
+supportcase26         Xpress                Solved                15860.113333ms        1745.1241823460393    
+supportcase14         Xpress                Solved                17.352709ms           288.0                 
+bppc8-09              CPLEX                 Solved                403.377916ms          472.0                 
+neos-5192052-neckar   COPT                  Solved                10.063042ms           -1.167E7              
+cov1075               Xpress                Solved                2011.567875ms         20.0                  
+bm23                  COPT                  Solved                31.099292ms           34.0                  
+neos-3072252-nete     CPLEX                 Solved                954.030167ms          1.1807697999999996E7  
+misc07                Xpress                Solved                1276.618333ms         2810.000000000007     
+neos-3072252-nete     HiGHS                 FAILED                TIMEOUT               
+neos-1426635          CPLEX                 Solved                10914.450792ms        -176.0                
+22433                 CPLEX                 Solved                45.444917ms           21477.0               
+gen-ip021             Xpress                Solved                36023.938292ms        2361.4541951916       
+lseu                  CPLEX                 Solved                16.692334ms           1120.0                
+gen-ip021             CPLEX                 Solved                30607.811416ms        2361.4541951916       
+sentoy                HiGHS                 Solved                107.808042ms          -7772.0               
+gsvm2rl3              COPT                  FAILED                TIMEOUT               
+mik-250-20-75-4       COPT                  Solved                1102.427875ms         -52301.00000000001    
+aflow30a              COPT                  Solved                2263.061625ms         1158.0                
+control30-3-2-3       COPT                  FAILED                TIMEOUT               
+neos-3610173-itata    Xpress                Solved                186.578375ms          148.0                 
+22433                 Xpress                Solved                246.288458ms          21477.0               
+breastcancer-regularizCPLEX                 WRONG                 0.00223133429113      != 35.76784210526315  
+fixnet3               HiGHS                 Solved                56.597ms              51973.0               
+b-ball                COPT                  Solved                5.101667ms            -1.5                  
+neos-1430701          COPT                  Solved                588.897ms             -76.99999999999996    
+enlight13             COPT                  Solved                5.067333ms            71.0                  
+mik-250-20-75-1       COPT                  Solved                237.08925ms           -49716.00000000001    
+m100n500k4r1          Xpress                FAILED                TIMEOUT               
+beavma                CPLEX                 Solved                15.17625ms            383285.0              
+go19                  HiGHS                 FAILED                TIMEOUT               
+pp08a                 COPT                  Solved                125.338083ms          7349.999999999988     
+sample2               COPT                  Solved                16.265209ms           374.9999999999999     
+control30-3-2-3       Xpress                WRONG                 -32.67761304968499    != -17.25658927192    
+fixnet3               COPT                  Solved                69.65225ms            51973.0               
+bppc8-02              COPT                  Solved                24.058291ms           507.0                 
+pigeon-08             CPLEX                 Solved                472.999875ms          -7000.0               
+enlight13             Xpress                Solved                1.099292ms            71.0                  
+p0033                 COPT                  Solved                17.591958ms           3088.9999999999986    
+pp08a                 Xpress                Solved                164.525541ms          7350.000000000006     
+neos5                 HiGHS                 Solved                59060.5085ms          15.00000000021432     
+mas74                 COPT                  Solved                44108.372083ms        11801.18572899991     
+mik-250-20-75-1       Xpress                Solved                85.509542ms           -49716.0              
+air01                 CPLEX                 Solved                16.0935ms             6796.0                
+gen-ip021             HiGHS                 Solved                263950.128666ms       2361.4541951916       
+bppc8-02              Xpress                Solved                30.686417ms           507.0                 
+mik-250-20-75-2       COPT                  Solved                199.563583ms          -50768.00000000012    
+modglob               COPT                  Solved                69.368834ms           2.0740508086308237E7  
+pigeon-08             HiGHS                 Solved                10756.638875ms        -7000.0               
+cov1075               HiGHS                 Solved                27771.2045ms          20.00000000000036     
+fixnet4               COPT                  Solved                298.664417ms          8936.0                
+sample2               Xpress                Solved                11.118458ms           375.0                 
+k16x240b              CPLEX                 Solved                7416.834042ms         11393.0               
+f2gap40400            Xpress                Solved                13.986417ms           20772.0               
+k16x240               CPLEX                 Solved                15758.100833ms        10674.0               
+gen                   COPT                  Solved                35.16975ms            112319.83305          
+mod013                HiGHS                 Solved                156.208333ms          280.95000000000016    
+modglob               Xpress                Solved                126.561792ms          2.074050808630824E7   
+mik-250-1-100-1       CPLEX                 Solved                378.083875ms          -66729.0              
+mas74                 Xpress                Solved                56328.911917ms        11801.18572900001     
+stein45               HiGHS                 Solved                13677.596291ms        30.0                  
+mik-250-20-75-2       Xpress                Solved                64.623042ms           -50768.0              
+p0033                 Xpress                Solved                7.594042ms            3089.0                
+enlight15             COPT                  Solved                8328.453667ms         69.0                  
+neos-911970           COPT                  Solved                1934.987042ms         54.75999999999994     
+neos15                CPLEX                 Solved                37480.454917ms        80598.43009686061     
+p0033                 HiGHS                 Solved                10.170542ms           3089.0                
+23588                 COPT                  Solved                364.415458ms          8090.000000000001     
+bppc8-09              HiGHS                 FAILED                TIMEOUT               
+sentoy                COPT                  Solved                62.839375ms           -7772.0               
+markshare1            CPLEX                 FAILED                TIMEOUT               
+gsvm2rl5              HiGHS                 FAILED                TIMEOUT               
+control30-3-2-3       HiGHS                 FAILED                TIMEOUT               
+r50x360               CPLEX                 Solved                1707.371ms            1653.0000000000166    
+enlight15             Xpress                Solved                2.065667ms            69.0                  
+exp-1-500-5-5         CPLEX                 Solved                425.004417ms          65887.0               
+fixnet4               Xpress                Solved                106.134875ms          8936.0                
+fixnet6               HiGHS                 Solved                1577.246ms            3983.0                
+neos-3610173-itata    HiGHS                 Solved                2143.56375ms          148.0                 
+mas76                 COPT                  Solved                2354.483958ms         40005.05414194232     
+23588                 Xpress                Solved                448.286292ms          8090.000000000209     
+gen-ip036             CPLEX                 Solved                23477.252125ms        -4606.6796098376      
+breastcancer-regularizHiGHS                 FAILED                TIMEOUT               
+nexp-50-20-1-1        CPLEX                 Solved                20.534333ms           29.0                  
+pp08a                 HiGHS                 Solved                669.941333ms          7350.000000000001     
+danoint               HiGHS                 FAILED                TIMEOUT               
+mik-250-20-75-5       HiGHS                 Solved                2076.644208ms         -51532.00000000022    
+go19                  COPT                  FAILED                TIMEOUT               
+gen                   Xpress                Solved                12.332833ms           112313.362718         
+ran16x16              CPLEX                 Solved                3369.579625ms         3823.0                
+f2gap40400            COPT                  Solved                45.509792ms           20771.999999999978    
+gt2                   CPLEX                 Solved                8.248792ms            21166.0               
+set1ch                CPLEX                 Solved                71.515625ms           54543.0               
+22433                 HiGHS                 Solved                1953.443125ms         21476.99999999998     
+b-ball                HiGHS                 Solved                86.492917ms           -1.500001             
+neos-1425699          CPLEX                 Solved                3.207708ms            3.179698977E9         
+flugpl                HiGHS                 Solved                41.432333ms           1201500.0             
+fixnet3               Xpress                Solved                14.063041ms           51973.0               
+markshare2            CPLEX                 FAILED                TIMEOUT               
+go19                  Xpress                FAILED                TIMEOUT               
+bm23                  HiGHS                 Solved                80.149ms              34.0                  
+mas76                 Xpress                Solved                2739.253375ms         40005.05414200001     
+neos-3046615-murg     CPLEX                 FAILED                TIMEOUT               
+mik-250-20-75-4       HiGHS                 Solved                10355.400459ms        -52301.00000000885    
+assign1-5-8           CPLEX                 Solved                63195.263917ms        212.0                 
+sentoy                Xpress                Solved                37.924875ms           -7772.0               
+ej                    CPLEX                 FAILED                TIMEOUT               
+egout                 Xpress                Solved                5.233ms               568.1007              
+markshare_4_0         HiGHS                 Solved                79551.181708ms        1.00000000000018      
+r50x360               COPT                  Solved                2613.36425ms          1653.0000000000014    
+f2gap40400            HiGHS                 Solved                7.577667ms            20772.0               
+neos-1426635          COPT                  FAILED                TIMEOUT               
+vpm2                  HiGHS                 Solved                1139.659083ms         13.75                 
+pipex                 HiGHS                 Solved                38.435791ms           788.2629999997624     
+mik-250-20-75-3       CPLEX                 Solved                167.897792ms          -52242.00000005581    
+timtab1CUTS           Xpress                Solved                2145.603ms            764771.9999998801     
+ran14x18-disj-8       CPLEX                 Solved                26836.319125ms        3712.00000014606      
+mik-250-20-75-5       Xpress                Solved                141.549667ms          -51532.0              
+neos-3046615-murg     Xpress                Solved                1072.260209ms         1600.0                
+mas76                 CPLEX                 Solved                3937.426667ms         40005.054142          
+graphdraw-domain      Xpress                Solved                21776.193458ms        19686.00000000002     
+22433                 COPT                  Solved                175.088208ms          21476.99999999531     
+supportcase16         COPT                  Solved                24.69575ms            288.0                 
+mik-250-20-75-3       HiGHS                 Solved                1998.154625ms         -52242.00000000003    
+markshare_5_0         Xpress                FAILED                TIMEOUT               
+pipex                 CPLEX                 Solved                21.688959ms           788.263               
+gt2                   HiGHS                 Solved                27.403333ms           21166.0               
+neos-2657525-crna     HiGHS                 FAILED                TIMEOUT               
+ran16x16              COPT                  Solved                5821.785959ms         3822.9999999999627    
+f2gap40400            CPLEX                 Solved                8.746584ms            20772.0               
+sample2               HiGHS                 Solved                11.691541ms           375.0                 
+ran14x18-disj-8       HiGHS                 Solved                289983.694875ms       3712.0000059402296    
+neos-911970           HiGHS                 Solved                3920.42375ms          54.76000000000944     
+bppc8-02              HiGHS                 Solved                164.340542ms          507.0                 
+enlight13             HiGHS                 Solved                127519.90425ms        71.0                  
+mas74                 HiGHS                 FAILED                TIMEOUT               
+mik-250-20-75-4       CPLEX                 Solved                469.145833ms          -52300.99999999999    
+neos-911880           COPT                  Solved                2392.871416ms         54.75999999999998     
+graphdraw-domain      CPLEX                 Solved                16772.196083ms        19686.000000000007    
+neos5                 Xpress                Solved                10942.343625ms        15.0                  
+neos-911970           Xpress                Solved                744.259417ms          54.7600000000816      
+enlight15             CPLEX                 Solved                4.0915ms              69.0                  
+stein9                Xpress                Solved                0.347625ms            5.0                   
+breastcancer-regularizCOPT                  Solved                121545.085958ms       35.767842105263156    
+markshare_4_0         CPLEX                 Solved                1137.0795ms           1.0                   
+set1ch                HiGHS                 Solved                251.808417ms          54537.75              
+mik-250-20-75-2       HiGHS                 Solved                1994.243166ms         -50768.00000000276    
+p0040                 COPT                  Solved                2.820083ms            62027.0               
+enigma                HiGHS                 Solved                105.788916ms          0.0                   
+set1cl                Xpress                Solved                7.454ms               6484.25               
+neos-3610051-istra    COPT                  Solved                190.364417ms          49.0                  
+p0282                 COPT                  Solved                93.482292ms           258410.9999999998     
+bm23                  Xpress                Solved                26.859042ms           34.0                  
+ej                    Xpress                FAILED                TIMEOUT               
+dfn-gwin-UUM          COPT                  Solved                15275.995041ms        38752.00000000002     
+neos-2652786-brda     Xpress                Solved                55451.49075ms         4.7924996             
+rout                  CPLEX                 Solved                1115.625333ms         1077.559999999999     
+misc07                COPT                  Solved                462.357625ms          2810.0                
+timtab1CUTS           HiGHS                 Solved                33684.029542ms        764771.99999988       
+egout                 CPLEX                 Solved                2.870292ms            568.1007              
+stein15               COPT                  Solved                19.700958ms           9.0                   
+mik-250-20-75-5       CPLEX                 Solved                170.623625ms          -51532.0000000565     
+stein27               COPT                  Solved                54.551541ms           18.0                  
+mik-250-20-75-3       Xpress                Solved                61.120625ms           -52242.0              
+blend2                CPLEX                 Solved                65.647458ms           7.598985              
+mas74                 CPLEX                 Solved                28186.29275ms         11801.18572900001     
+rlp1                  CPLEX                 Solved                11.622708ms           15.0                  
+neos-3046615-murg     HiGHS                 FAILED                TIMEOUT               
+supportcase14         COPT                  Solved                25.630625ms           288.0                 
+mik-250-20-75-1       HiGHS                 Solved                2413.797791ms         -49716.00000000193    
+m100n500k4r1          COPT                  FAILED                TIMEOUT               
+m100n500k4r1          CPLEX                 Solved                2935.355917ms         -25.0                 
+enigma                CPLEX                 Solved                19.36175ms            0.0                   
+supportcase26         COPT                  Solved                234833.742292ms       1745.1241823460232    
+bppc8-02              CPLEX                 Solved                56.400459ms           507.0                 
+cov1075               COPT                  Solved                6280.081709ms         20.0                  
+neos-3610173-itata    CPLEX                 Solved                47.854292ms           148.0                 
+mas76                 HiGHS                 Solved                101412.495667ms       40005.05414181039     
+neos-2657525-crna     Xpress                Solved                159633.078458ms       1.8107480000002203    
+ic97_tension          Xpress                Solved                1024.138375ms         3942.000000000001     
+enlight15             HiGHS                 FAILED                TIMEOUT               
+nexp-50-20-1-1        HiGHS                 Solved                33.804375ms           29.0                  
+set1cl                CPLEX                 Solved                19.77575ms            6484.25               
+vpm1                  HiGHS                 Solved                12.445875ms           20.0                  
+neos-2657525-crna     CPLEX                 FAILED                TIMEOUT               
+blend2                Xpress                Solved                246.063166ms          7.598985              
+mik-250-20-75-4       Xpress                Solved                160.932958ms          -52301.0              
+neos-3611689-kaihu    COPT                  Solved                168.937792ms          119.0                 
+enlight13             CPLEX                 Solved                4.85025ms             71.0                  
+beavma                Xpress                Solved                34.393667ms           383285.00000000006    
+neos-911970           CPLEX                 Solved                776.053541ms          54.75999999999999     
+glass4                Xpress                Solved                14917.845292ms        1.2000126E9           
+k16x240               Xpress                Solved                12816.340333ms        10673.999999999985    
+neos-911880           HiGHS                 Solved                8802.138792ms         54.75999999998501     
+neos-2652786-brda     CPLEX                 Solved                258514.519458ms       4.7924996             
+bm23                  CPLEX                 Solved                10.610167ms           34.0                  
+dfn-gwin-UUM          CPLEX                 Solved                3160.008791ms         38752.0               
+neos-3610051-istra    HiGHS                 Solved                1653.091917ms         49.0                  
+neos-1425699          COPT                  Solved                6.186ms               3.179698977E9         
+neos-2652786-brda     HiGHS                 FAILED                TIMEOUT               
+bppc8-09              Xpress                Solved                988.92575ms           472.0000000000522     
+nexp-50-20-1-1        COPT                  Solved                61.172125ms           29.0                  
+p0291                 COPT                  Solved                25.882875ms           5223.749              
+set1ch                COPT                  Solved                265.877375ms          54537.75              
+neos-942830           Xpress                Solved                125341.674709ms       16.0000000000042      
+r50x360               HiGHS                 Solved                19138.489ms           1653.0000000009047    
+go19                  CPLEX                 FAILED                TIMEOUT               
+ej                    HiGHS                 FAILED                TIMEOUT               
+markshare_5_0         HiGHS                 FAILED                TIMEOUT               
+neos-1426635          HiGHS                 FAILED                TIMEOUT               
+cov1075               CPLEX                 Solved                843.234875ms          20.0                  
+neos-3610173-itata    COPT                  Solved                180.44775ms           148.0                 
+assign1-5-8           COPT                  FAILED                TIMEOUT               
+set1ch                Xpress                Solved                133.973708ms          54537.75              
+glass4                CPLEX                 Solved                12651.701875ms        1.2000126E9           
+lseu                  HiGHS                 Solved                96.470417ms           1120.0                
+pigeon-08             Xpress                Solved                190.685125ms          -7000.0               
+misc05                COPT                  Solved                66.472333ms           2984.5                
+neos-2657525-crna     COPT                  Solved                107856.054083ms       1.810748              
+ran14x18              CPLEX                 Solved                23619.586ms           3712.000000000006     
+gt2                   COPT                  Solved                12.137375ms           21165.99999999998     
+set1cl                HiGHS                 Solved                39.293625ms           6484.25               
+ic97_tension          CPLEX                 Solved                508.012792ms          3942.000000000001     
+neos-3046601-motu     Xpress                Solved                95.531542ms           1459.0                
+stein9                HiGHS                 Solved                8.231334ms            5.0                   
+ran16x16              HiGHS                 Solved                33689.960791ms        3823.0000000033283    
+egout                 HiGHS                 Solved                8.582792ms            568.1007              
+pipex                 Xpress                Solved                27.135375ms           788.263               
+p0033                 CPLEX                 Solved                4.45475ms             3089.0                
+graphdraw-gemcutter   COPT                  Solved                12225.737833ms        7118.5                
+pp08a                 CPLEX                 Solved                76.491166ms           7350.000000000001     
+bell3a                Xpress                Solved                21.483125ms           878430.316            
+ran14x18-disj-8       COPT                  Solved                53200.241375ms        3712.000000005218     
+neos-911880           Xpress                Solved                809.515542ms          54.75999999999954     
+neos-3610051-istra    Xpress                Solved                237.864208ms          49.0                  
+rout                  HiGHS                 Solved                20057.68475ms         1077.559999999991     
+misc02                COPT                  Solved                24.542875ms           1689.999999999993     
+rlp1                  HiGHS                 Solved                178.342167ms          15.0                  
+pigeon-08             COPT                  Solved                45.378916ms           -7000.0               
+ran14x18-disj-8       Xpress                Solved                23577.804542ms        3712.000000184572     
+vpm1                  CPLEX                 Solved                6.813375ms            20.0                  
+gt2                   Xpress                Solved                5.140333ms            21166.0               
+pipex                 COPT                  Solved                40.018708ms           788.263               
+sp150x300d            COPT                  Solved                64.104334ms           69.0                  
+timtab1CUTS           CPLEX                 Solved                4168.417708ms         764771.9999997803     
+control30-3-2-3       CPLEX                 FAILED                TIMEOUT               
+ran13x13              CPLEX                 Solved                584.268709ms          3252.0                
+blend2                HiGHS                 Solved                523.154875ms          7.598985              
+nexp-50-20-1-1        Xpress                Solved                16.052667ms           29.0                  
+k16x240               HiGHS                 FAILED                TIMEOUT               
+mik-250-20-75-2       CPLEX                 Solved                348.208ms             -50768.0              
+markshare_4_0         COPT                  Solved                224.756959ms          1.00000000368402      
+set1al                CPLEX                 Solved                28.176125ms           15869.75              
+mad                   CPLEX                 FAILED                TIMEOUT               
+stein15               HiGHS                 Solved                18.356334ms           9.0                   
+stein27               HiGHS                 Solved                331.54175ms           17.99999999999997     
+mik-250-20-75-1       CPLEX                 Solved                277.329083ms          -49716.0              
+supportcase16         HiGHS                 Solved                27.818042ms           288.0                 
+misc03                COPT                  Solved                124.115667ms          3360.0                
+markshare_4_0         Xpress                Solved                10985.800666ms        1.0                   
+modglob               CPLEX                 Solved                33.83025ms            2.074050808630825E7   
+beavma                HiGHS                 Solved                184.513209ms          383285.0              
+neos5                 CPLEX                 Solved                9587.864417ms         15.0                  
+neos-3611447-jijia    COPT                  Solved                100.765459ms          107.0                 
+p0201                 HiGHS                 Solved                476.124209ms          7615.0                
+sample2               CPLEX                 Solved                3.741583ms            375.0                 
+vpm2                  CPLEX                 Solved                35.529125ms           13.75                 
+ran12x21              CPLEX                 Solved                935.910208ms          3664.0                
+blend2                COPT                  Solved                118.989042ms          7.59898499999997      
+m100n500k4r1          HiGHS                 FAILED                TIMEOUT               
+cracpb1               COPT                  Solved                28.594916ms           22199.0               
+ic97_tension          COPT                  Solved                3509.43325ms          3942.0                
+ej                    COPT                  Solved                3.926ms               25508.0               
+prod1                 COPT                  Solved                2866.910875ms         -56.0                 
+sentoy                CPLEX                 Solved                11.538083ms           -7772.0               
+timtab1CUTS           COPT                  Solved                8270.466042ms         764771.99999978       
+supportcase20         COPT                  FAILED                TIMEOUT               
+k16x240b              COPT                  Solved                31014.800792ms        11393.000000000882    
+fixnet4               CPLEX                 Solved                49.606917ms           8936.0                
+gen-ip016             COPT                  FAILED                TIMEOUT               
+mad                   HiGHS                 FAILED                TIMEOUT               
+set1cl                COPT                  Solved                38.651916ms           6484.25               
+supportcase14         CPLEX                 Solved                14.062667ms           288.0                 
+neos-942830           HiGHS                 FAILED                TIMEOUT               
+misc05                HiGHS                 Solved                195.257959ms          2984.499999999992     
+egout                 COPT                  Solved                10.90375ms            568.1007              
+misc07                HiGHS                 Solved                25647.447458ms        2809.999999999692     
+ran16x16              Xpress                Solved                3539.010084ms         3823.0000000011173    
+graphdraw-gemcutter   Xpress                Solved                2757.811417ms         7118.500000000001     
+bell3a                HiGHS                 Solved                177.755708ms          878430.3159999811     
+supportcase26         CPLEX                 Solved                64749.675959ms        1745.1241823460268    
+graphdraw-gemcutter   CPLEX                 Solved                2156.731125ms         7118.5                
+graphdraw-gemcutter   HiGHS                 Solved                90481.020959ms        7118.499999997938     
+misc07                CPLEX                 Solved                170.551167ms          2810.0                
+supportcase14         HiGHS                 Solved                53.767917ms           288.0                 
+neos-942830           CPLEX                 Solved                36556.58775ms         16.0                  
+bienst1               COPT                  Solved                8359.33975ms          46.74999999999999     
+misc01                COPT                  Solved                60.117625ms           563.5                 
+newdano               Xpress                Solved                106949.561458ms       65.66666666685128     
+neos-3046601-motu     HiGHS                 FAILED                TIMEOUT               
+supportcase26         HiGHS                 FAILED                TIMEOUT               
+fixnet3               CPLEX                 Solved                46.900083ms           51973.0               
+r50x360               Xpress                Solved                2990.86725ms          1653.0                
+neos-3046615-murg     COPT                  Solved                1217.161708ms         1600.0                
+set1al                HiGHS                 Solved                47.536666ms           15869.75              
+neos-1426635          Xpress                FAILED                TIMEOUT               
+neos-3611447-jijia    CPLEX                 Solved                38.656917ms           107.0                 
+supportcase16         CPLEX                 Solved                11.36625ms            288.0                 
+stein15               Xpress                Solved                16.42425ms            9.0                   
+stein27               Xpress                Solved                30.704792ms           18.0                  
+air01                 Xpress                Solved                7.488625ms            6796.0                
+neos-3046601-motu     CPLEX                 FAILED                TIMEOUT               
+ran12x21              HiGHS                 Solved                10591.195583ms        3664.0000000000177    
+beavma                COPT                  Solved                127.385291ms          383285.0              
+k16x240               COPT                  Solved                66710.429584ms        10673.999999999927    
+neos-3611447-jijia    HiGHS                 Solved                848.698875ms          107.0                 
+pk1                   CPLEX                 Solved                2994.8595ms           11.0                  
+dfn-gwin-UUM          Xpress                Solved                20934.759083ms        38752.0               
+misc03                HiGHS                 Solved                382.318042ms          3359.999999999995     
+gen-ip002             COPT                  Solved                70618.258334ms        -4783.7333916         
+p0548                 COPT                  Solved                34.671791ms           8691.0                
+neos-3610040-iskar    HiGHS                 Solved                780.598958ms          36.99999999999999     
+p0040                 CPLEX                 Solved                1.447458ms            62027.0               
+pk1                   Xpress                Solved                5054.991417ms         10.99999999999999     
+glass4                COPT                  Solved                13843.638584ms        1.20001259999951E9    
+prod2                 COPT                  Solved                14804.305833ms        -62.0                 
+neos-5140963-mincio   Xpress                Solved                113190.065958ms       14393.0               
+mik-250-1-100-1       Xpress                Solved                2261.664791ms         -66729.0              
+p0282                 CPLEX                 Solved                20.668292ms           258411.0              
+neos15                Xpress                Solved                55543.897458ms        80598.43009686067     
+p0201                 Xpress                Solved                283.351167ms          7615.0                
+graphdraw-domain      COPT                  Solved                65199.160333ms        19685.99999999999     
+newdano               CPLEX                 Solved                53426.773625ms        65.66666666666666     
+vpm1                  COPT                  Solved                24.631125ms           20.0                  
+misc02                CPLEX                 Solved                16.397792ms           1690.0                
+ran12x21              Xpress                Solved                1442.140541ms         3664.0                
+ran14x18              COPT                  Solved                56343.9695ms          3711.9999999999845    
+rout                  COPT                  Solved                1780.261541ms         1077.56               
+rlp1                  Xpress                Solved                13.758292ms           15.0                  
+enigma                COPT                  Solved                53.100958ms           0.0                   
+rout                  Xpress                Solved                791.239375ms          1077.559999999999     
+dcmulti               COPT                  Solved                195.982959ms          188182.0              
+neos-911880           CPLEX                 Solved                3203.29325ms          54.75999999999999     
+set1al                COPT                  Solved                71.674292ms           15869.75              
+misc01                HiGHS                 Solved                113.458584ms          563.5000000000003     
+rlp1                  COPT                  Solved                55899.251625ms        15.0                  
+ran14x18              Xpress                Solved                25221.638458ms        3712.000000000237     
+neos-2624317-amur     Xpress                Solved                337.395667ms          3.522396800000173     
+vpm2                  COPT                  Solved                107.043458ms          13.749999999999995    
+ran13x13              COPT                  Solved                2081.766375ms         3252.000000000073     
+lseu                  Xpress                Solved                79.269834ms           1119.999999999999     
+neos17                COPT                  Solved                1497.838625ms         0.15000257742257736   
+misc03                CPLEX                 Solved                21.205541ms           3360.0                
+dfn-gwin-UUM          HiGHS                 Solved                148319.759583ms       38751.999999999935    
+neos17                Xpress                Solved                810.463375ms          0.15000257742257742   
+cracpb1               HiGHS                 Solved                36.519417ms           22199.0               
+mad                   COPT                  Solved                74216.124ms           0.0268                
+ran13x13              Xpress                Solved                689.722916ms          3252.0                
+ran12x21              COPT                  Solved                4750.028583ms         3664.0                
+set1al                Xpress                Solved                21.376167ms           15869.75              
+misc02                HiGHS                 Solved                27.329542ms           1690.0                
+ran13x13              HiGHS                 Solved                9305.815625ms         3252.0                
+enigma                Xpress                Solved                80.589834ms           0.0                   
+bienst2               Xpress                Solved                7845.433125ms         54.60000000000001     
+neos-1440460          CPLEX                 FAILED                TIMEOUT               
+ran14x18              HiGHS                 Solved                284272.1675ms         3712.000000000022     
+graphdraw-domain      HiGHS                 FAILED                TIMEOUT               
+neos-3754480-nidda    CPLEX                 FAILED                TIMEOUT               
+newdano               HiGHS                 FAILED                TIMEOUT               
+neos-2624317-amur     COPT                  Solved                2426.295083ms         3.5223968             
+vpm2                  Xpress                Solved                136.658458ms          13.749999999999998    
+bell3b                CPLEX                 Solved                38.975583ms           1.1786160618E7        
+stein9                CPLEX                 Solved                2.679291ms            5.0                   
+markshare_5_0         CPLEX                 Solved                1135.1585ms           1.0                   
+opt1217               CPLEX                 Solved                27.476875ms           -16.0                 
+bienst2               COPT                  Solved                20229.360041ms        54.59999999999997     
+p0291                 CPLEX                 Solved                4.541959ms            5223.748999999999     
+prod1                 HiGHS                 Solved                15300.308583ms        -56.0                 
+neos-3610040-iskar    COPT                  Solved                166.047125ms          37.0                  
+lseu                  COPT                  Solved                62.781667ms           1120.0                
+p80x400b              CPLEX                 Solved                49653.728625ms        39667.00000000127     
+neos-3610051-istra    CPLEX                 Solved                71.449209ms           49.0                  
+pk1                   HiGHS                 Solved                138797.948417ms       10.99999999999998     
+mad                   Xpress                FAILED                TIMEOUT               
+ic97_tension          HiGHS                 Solved                12198.912875ms        3942.0000000000014    
+misc05                CPLEX                 Solved                17.243792ms           2984.5                
+pp08aCUTS             CPLEX                 Solved                84.351ms              7350.0                
+vpm1                  Xpress                Solved                5.373625ms            20.0                  
+bell3a                CPLEX                 Solved                40.4245ms             878430.316            
+prod2                 HiGHS                 Solved                71939.9585ms          -62.0                 
+p0548                 HiGHS                 Solved                36.307333ms           8691.0                
+supportcase20         HiGHS                 FAILED                TIMEOUT               
+neos-3610040-iskar    Xpress                Solved                66.936709ms           37.0                  
+dcmulti               Xpress                Solved                174.933208ms          188182.0              
+glass4                HiGHS                 FAILED                TIMEOUT               
+
+Iteration 2 with 511 model/solver pairs remaining 2026-09-11T01:13:01.079337Z
+-----------------------------------------------------------------------------
+ran14x18-disj-8       HiGHS                 FAILED                TIMEOUT               
+ran14x18              HiGHS                 FAILED                TIMEOUT               
+
+Iteration 3 with 509 model/solver pairs remaining 2026-09-11T02:58:31.537271Z
+-----------------------------------------------------------------------------
+gr4x6                 HiGHS                 Time stable           7.917125ms            202.35                
+timtab1               CPLEX                 Time stable           7083.461459ms         764771.9999997886     
+aflow30a              HiGHS                 Time stable           7535.612375ms         1158.0                
+bell4                 HiGHS                 Time stable           415.5735ms            1.8542042122400157E7  
+enlight8              CPLEX                 Time stable           1.578459ms            27.0                  
+mod013                COPT                  Time stable           61.709125ms           280.9499999999998     
+cracpb1               Xpress                Time stable           12.969166ms           22199.0               
+gsvm2rl3              HiGHS                 Time stable           5290.256209ms         0.3365275339619642    
+gen-ip002             CPLEX                 Time stable           48993.661083ms        -4783.7333916         
+noswot                Xpress                Time stable           619.315208ms          -41.0                 
+p80x400b              Xpress                Time stable           95387.160334ms        39667.00000000003     
+supportcase20         Xpress                Time stable           204.973208ms          45591.99999999996     
+bell4                 CPLEX                 Time stable           26.637125ms           1.8541957238E7        
+opt1217               Xpress                Time stable           53.570459ms           -16.0                 
+pk1                   COPT                  Time stable           2937.530917ms         10.9999999999995      
+prod1                 Xpress                Time stable           1150.373125ms         -56.0                 
+gsvm2rl3              CPLEX                 Time stable           521.486417ms          0.3365275339619651    
+gr4x6                 CPLEX                 Time stable           3.211541ms            202.35                
+neos-1430701          Xpress                Time stable           438.407625ms          -77.0                 
+misc01                Xpress                Time stable           35.2915ms             563.5                 
+neos-3072252-nete     COPT                  Time stable           9777.563958ms         1.1807698000000002E7  
+bell3b                COPT                  Time stable           80.530625ms           1.17862554888E7       
+neos-5192052-neckar   Xpress                Time stable           3.049083ms            -1.167E7              
+mod008                CPLEX                 Time stable           27.485042ms           307.0                 
+bienst1               Xpress                Time stable           1249.384208ms         46.75                 
+enlight_hard          CPLEX                 Time stable           2.296875ms            37.0                  
+timtab1               HiGHS                 Time stable           28777.962166ms        764771.9999998799     
+neos-1430701          CPLEX                 Time stable           748.383917ms          -77.0                 
+neos-5192052-neckar   HiGHS                 Time stable           18.036708ms           -1.167E7              
+p0548                 CPLEX                 Time stable           17.678958ms           8691.0                
+pp08aCUTS             Xpress                Time stable           234.557375ms          7350.0                
+dcmulti               CPLEX                 Time stable           45.768458ms           188182.0              
+enlight8              Xpress                Time stable           0.519125ms            27.0                  
+aflow30a              CPLEX                 Time stable           742.810625ms          1158.0                
+enlight8              HiGHS                 Time stable           346.433958ms          27.00000000000374     
+gen-ip021             COPT                  Time stable           31608.511ms           2361.4541951916       
+stein45               Xpress                Time stable           1000.262042ms         30.0                  
+misc02                Xpress                Time stable           8.9695ms              1690.0                
+newdano               COPT                  Time stable           280333.426375ms       65.66666666666659     
+aflow30a              Xpress                Time stable           657.459583ms          1158.0                
+stein45               CPLEX                 Time stable           647.1405ms            30.0                  
+rgn                   Xpress                Time stable           18.671125ms           82.19999924           
+gsvm2rl3              Xpress                Time stable           618.794167ms          0.33652753396196355   
+noswot                HiGHS                 Time stable           42935.253375ms        -41.00000000000001    
+noswot                CPLEX                 Time stable           1288.674541ms         -41.0                 
+gen-ip054             COPT                  Time stable           32536.588542ms        6840.965641791997     
+pigeon-10             CPLEX                 Time stable           35.945042ms           -9000.0               
+neos-5140963-mincio   COPT                  Time stable           140725.362708ms       14393.0               
+exp-1-500-5-5         HiGHS                 Time stable           2474.442875ms         65887.00000000013     
+mik-250-1-100-1       COPT                  Time stable           815.296208ms          -66729.00000000001    
+bell5                 HiGHS                 Time stable           283.463625ms          8966406.49152         
+p0201                 COPT                  Time stable           40.343167ms           7615.0                
+supportcase20         CPLEX                 Time stable           33394.058167ms        45591.99999999998     
+air01                 COPT                  Time stable           22.359458ms           6796.0                
+bienst1               CPLEX                 Time stable           3276.981208ms         46.75                 
+fixnet6               COPT                  Time stable           932.181458ms          3982.9999999999995    
+flugpl                Xpress                Time stable           0.932542ms            1201500.0             
+misc01                CPLEX                 Time stable           29.530666ms           563.5                 
+b-ball                Xpress                Time stable           1.640416ms            -1.5                  
+mod008                HiGHS                 Time stable           548.064167ms          306.9999999999855     
+pigeon-10             Xpress                Time stable           71.964125ms           -9000.0               
+dcmulti               HiGHS                 Time stable           595.893833ms          188182.0              
+rgn                   CPLEX                 Time stable           17.766125ms           82.19999924           
+neos15                COPT                  Time stable           89989.768416ms        80598.43009686067     
+prod2                 Xpress                Time stable           16574.303416ms        -62.0                 
+p0548                 Xpress                Time stable           37.416417ms           8691.0                
+enlight_hard          HiGHS                 Time stable           4491.340042ms         36.99999999999532     
+danoint               COPT                  Time stable           218915.373333ms       65.6666666666666      
+neos-1440460          HiGHS                 Time stable           94583.912333ms        -179.24999999999997   
+neos17                CPLEX                 Time stable           488.448334ms          0.1500025774225774    
+gen-ip036             HiGHS                 Time stable           280902.304916ms       -4606.6796098376      
+gen-ip036             Xpress                Time stable           18613.103917ms        -4606.6796098376      
+rgn                   HiGHS                 Time stable           125.119125ms          82.19999923999774     
+bienst2               CPLEX                 Time stable           8370.753209ms         54.6                  
+p0291                 Xpress                Time stable           12.355209ms           5223.748999999994     
+mik-250-1-100-1       HiGHS                 Time stable           7692.835542ms         -66729.0              
+neos-3754480-nidda    Xpress                Time stable           161757.170416ms       12941.738385630122    
+exp-1-500-5-5         COPT                  Time stable           382.775167ms          65887.0               
+markshare1            COPT                  Time stable           27572.295042ms        1.00000000000007      
+air01                 HiGHS                 Time stable           60.373125ms           6796.0                
+23588                 CPLEX                 Time stable           110.39725ms           8090.0                
+gen-ip036             COPT                  Time stable           81096.267459ms        -4606.6796098376      
+neos-3046601-motu     COPT                  Time stable           123.782625ms          1459.0                
+neos-3611447-jijia    Xpress                Time stable           107.359083ms          107.0                 
+misc05                Xpress                Time stable           46.936541ms           2984.5                
+neos-2624317-amur     CPLEX                 Time stable           142.062958ms          3.5223968             
+23588                 HiGHS                 Time stable           3904.145667ms         8089.999999999969     
+flugpl                CPLEX                 Time stable           2.239625ms            1201500.0             
+pp08aCUTS             HiGHS                 Time stable           873.907958ms          7350.000000017598     
+opt1217               HiGHS                 Time stable           78.325334ms           -16.0                 
+gr4x6                 COPT                  Time stable           26.574792ms           202.35                
+neos-3610040-iskar    CPLEX                 Time stable           26.881667ms           37.0                  
+neos-2624317-amur     HiGHS                 Time stable           6918.727042ms         3.5223968             
+neos15                HiGHS                 Time stable           153730.3325ms         80598.43009686067     
+prod2                 CPLEX                 Time stable           8912.669792ms         -62.00000000000003    
+bienst1               HiGHS                 Time stable           20434.498667ms        46.74999999999995     
+b-ball                CPLEX                 Time stable           2.09025ms             -1.5                  
+bell4                 Xpress                Time stable           198.06075ms           1.854219485299998E7   
+bppc8-09              COPT                  Time stable           121468.388083ms       472.0                 
+bell3b                HiGHS                 Time stable           335.174292ms          1.17862305228E7       
+gr4x6                 Xpress                Time stable           3.889667ms            202.35                
+timtab1               Xpress                Time stable           3435.888667ms         764771.99999988       
+p0291                 HiGHS                 Time stable           15.34025ms            5223.749              
+enlight8              COPT                  Time stable           2.770666ms            27.0                  
+gen-ip002             Xpress                Time stable           61450.736208ms        -4783.7333916         
+neos17                HiGHS                 Time stable           3296.692833ms         0.15000257742257742   
+mod008                COPT                  Time stable           47.129ms              306.9999999999969     
+prod1                 CPLEX                 Time stable           1497.055167ms         -56.00000000000003    
+fixnet6               CPLEX                 Time stable           43.54675ms            3983.0                
+bell4                 COPT                  Time stable           73.298625ms           1.8541878398000002E7  
+bell5                 Xpress                Time stable           28.869708ms           8966406.49152         
+misc03                Xpress                Time stable           49.428292ms           3360.0                
+neos-1430701          HiGHS                 Time stable           5097.224083ms         -77.00000000000024    
+gen                   CPLEX                 Time stable           11.145ms              112313.362718         
+mod008                Xpress                Time stable           52.260959ms           307.0                 
+enlight_hard          Xpress                Time stable           0.595875ms            37.0                  
+enlight_hard          COPT                  Time stable           3.188208ms            37.0                  
+exp-1-500-5-5         Xpress                Time stable           282.244041ms          65887.0               
+noswot                COPT                  Time stable           12710.003958ms        -41.00000000000002    
+timtab1               COPT                  Time stable           18100.996291ms        764771.99999978       
+neos-942830           COPT                  Time stable           29501.33825ms         16.0                  
+mod013                CPLEX                 Time stable           7.829167ms            280.95000000095       
+k16x240b              Xpress                Time stable           16624.188708ms        11392.999999999996    
+neos-1440460          Xpress                Time stable           36800.447167ms        -179.25               
+pp08aCUTS             COPT                  Time stable           271.491792ms          7349.9999999999945    
+stein15               CPLEX                 Time stable           3.333084ms            9.0                   
+mik-250-20-75-5       COPT                  Time stable           191.86075ms           -51532.0              
+modglob               HiGHS                 Time stable           395.022625ms          2.0740508086308237E7  
+stein27               CPLEX                 Time stable           11.324625ms           18.0                  
+supportcase16         Xpress                Time stable           18.084583ms           288.0                 
+neos-3611689-kaihu    HiGHS                 Time stable           900.054833ms          119.0                 
+stein45               COPT                  Time stable           1670.946375ms         30.0                  
+markshare_5_0         COPT                  Time stable           1742.882ms            1.00000000000002      
+mod013                Xpress                Time stable           25.351041ms           280.95                
+opt1217               COPT                  Time stable           65.620542ms           -16.0                 
+p0201                 CPLEX                 Time stable           36.880083ms           7615.0                
+gen-ip054             CPLEX                 Time stable           46647.137833ms        6840.965641792        
+gen                   HiGHS                 Time stable           11.83825ms            112313.362718         
+pigeon-10             COPT                  Time stable           62.27475ms            -9000.0               
+fixnet4               HiGHS                 Time stable           192.506792ms          8936.000000000002     
+sp150x300d            CPLEX                 Time stable           36.988666ms           69.0                  
+flugpl                COPT                  Time stable           0.660959ms            1201500.0             
+neos-1440460          COPT                  Time stable           26199.227959ms        -179.2500000000012    
+neos-5140963-mincio   CPLEX                 Time stable           125598.008417ms       14393.0               
+stein9                COPT                  Time stable           16.061542ms           5.0                   
+p0040                 Xpress                Time stable           1.122208ms            62027.0               
+p0282                 HiGHS                 Time stable           99.768209ms           258411.0              
+p0282                 Xpress                Time stable           32.784875ms           258411.0              
+breastcancer-regularizXpress                Time stable           82341.89475ms         35.76784210526331     
+p0040                 HiGHS                 Time stable           3.072084ms            62027.0               
+sp150x300d            Xpress                Time stable           21.672459ms           69.0                  
+danoint               Xpress                Time stable           93809.841625ms        65.66666666666669     
+sp150x300d            HiGHS                 Time stable           62.070833ms           68.99999999999999     
+fixnet6               Xpress                Time stable           391.765583ms          3983.0000000000005    
+rgn                   COPT                  Time stable           230.673291ms          82.19999923999985     
+danoint               CPLEX                 Time stable           81139.423667ms        65.66666666666666     
+bell3b                Xpress                Time stable           145.648ms             1.1786160617999999E7  
+neos5                 COPT                  Time stable           23502.953459ms        14.99999999999962     
+neos-3072252-nete     Xpress                Time stable           615.724834ms          1.1807697999996707E7  
+neos-1425699          HiGHS                 Time stable           80.782208ms           3.179698977E9         
+neos-2652786-brda     COPT                  Time stable           45456.637ms           4.7924996             
+neos-3611689-kaihu    CPLEX                 Time stable           58.343917ms           119.0                 
+mik-250-20-75-3       COPT                  Time stable           151.834709ms          -52241.99999999999    
+neos-3611689-kaihu    Xpress                Time stable           172.977084ms          118.9999999999999     
+gen-ip054             Xpress                Time stable           53907.165208ms        6840.965641792        
+supportcase26         Xpress                Time stable           15860.113333ms        1745.1241823460393    
+neos-5192052-neckar   COPT                  Time stable           10.063042ms           -1.167E7              
+bppc8-09              CPLEX                 Time stable           403.377916ms          472.0                 
+bm23                  COPT                  Time stable           31.099292ms           34.0                  
+neos-3072252-nete     CPLEX                 Time stable           954.030167ms          1.1807697999999996E7  
+cov1075               Xpress                Time stable           2011.567875ms         20.0                  
+misc07                Xpress                Time stable           1276.618333ms         2810.000000000007     
+neos-1426635          CPLEX                 Time stable           10914.450792ms        -176.0                
+gen-ip021             Xpress                Time stable           36023.938292ms        2361.4541951916       
+lseu                  CPLEX                 Time stable           14.953208ms           1120.0                
+sentoy                HiGHS                 Time stable           106.671ms             -7772.0               
+mik-250-20-75-4       COPT                  Time stable           1102.427875ms         -52301.00000000001    
+aflow30a              COPT                  Time stable           2263.061625ms         1158.0                
+neos-3610173-itata    Xpress                Time stable           180.924083ms          148.0                 
+22433                 Xpress                Time stable           237.67625ms           21477.0               
+fixnet3               HiGHS                 Time stable           52.736417ms           51973.0               
+b-ball                COPT                  Time stable           4.855959ms            -1.5                  
+neos-1430701          COPT                  Time stable           586.6375ms            -76.99999999999996    
+enlight13             COPT                  Time stable           4.134875ms            71.0                  
+mik-250-20-75-1       COPT                  Time stable           230.612458ms          -49716.00000000001    
+beavma                CPLEX                 Time stable           15.17625ms            383285.0              
+gen-ip021             CPLEX                 Time stable           28971.509375ms        2361.4541951916       
+pp08a                 COPT                  Time stable           124.257416ms          7349.999999999988     
+sample2               COPT                  Time stable           15.523583ms           374.9999999999999     
+fixnet3               COPT                  Time stable           67.246959ms           51973.0               
+bppc8-02              COPT                  Time stable           23.3615ms             507.0                 
+pigeon-08             CPLEX                 Time stable           472.999875ms          -7000.0               
+enlight13             Xpress                Time stable           0.785333ms            71.0                  
+p0033                 COPT                  Time stable           17.217625ms           3088.9999999999986    
+pp08a                 Xpress                Time stable           164.525541ms          7350.000000000006     
+neos5                 HiGHS                 Time stable           59049.998292ms        15.00000000021432     
+mas74                 COPT                  Time stable           43831.791875ms        11801.18572899991     
+mik-250-20-75-1       Xpress                Time stable           83.082375ms           -49716.0              
+air01                 CPLEX                 Time stable           15.06925ms            6796.0                
+gen-ip021             HiGHS                 Time stable           262903.818584ms       2361.4541951916       
+bppc8-02              Xpress                Time stable           30.206917ms           507.0                 
+mik-250-20-75-2       COPT                  Time stable           199.563583ms          -50768.00000000012    
+modglob               COPT                  Time stable           67.99ms               2.0740508086308237E7  
+pigeon-08             HiGHS                 Time stable           10687.381375ms        -7000.0               
+cov1075               HiGHS                 Time stable           27771.2045ms          20.00000000000036     
+fixnet4               COPT                  Time stable           286.930958ms          8936.0                
+sample2               Xpress                Time stable           10.83675ms            375.0                 
+k16x240b              CPLEX                 Time stable           7326.209375ms         11393.0               
+f2gap40400            Xpress                Time stable           13.410041ms           20772.0               
+k16x240               CPLEX                 Time stable           15390.828167ms        10674.0               
+gen                   COPT                  Time stable           32.887ms              112319.83305          
+mod013                HiGHS                 Time stable           149.135208ms          280.95000000000016    
+modglob               Xpress                Time stable           116.667084ms          2.074050808630824E7   
+mik-250-1-100-1       CPLEX                 Time stable           370.770125ms          -66729.0              
+mas74                 Xpress                Time stable           55574.339666ms        11801.18572900001     
+stein45               HiGHS                 Time stable           13455.444042ms        30.0                  
+mik-250-20-75-2       Xpress                Time stable           63.797375ms           -50768.0              
+enlight15             COPT                  Time stable           8328.453667ms         69.0                  
+neos-911970           COPT                  Time stable           1907.909542ms         54.75999999999994     
+p0033                 HiGHS                 Time stable           10.170542ms           3089.0                
+23588                 COPT                  Time stable           364.415458ms          8090.000000000001     
+sentoy                COPT                  Time stable           61.271833ms           -7772.0               
+neos15                CPLEX                 Time stable           36260.913792ms        80598.43009686061     
+r50x360               CPLEX                 Time stable           1707.371ms            1653.0000000000166    
+exp-1-500-5-5         CPLEX                 Time stable           425.004417ms          65887.0               
+fixnet4               Xpress                Time stable           99.939916ms           8936.0                
+fixnet6               HiGHS                 Time stable           1522.200666ms         3983.0                
+neos-3610173-itata    HiGHS                 Time stable           2024.882042ms         148.0                 
+mas76                 COPT                  Time stable           2341.230875ms         40005.05414194232     
+23588                 Xpress                Time stable           448.286292ms          8090.000000000209     
+nexp-50-20-1-1        CPLEX                 Time stable           20.534333ms           29.0                  
+pp08a                 HiGHS                 Time stable           669.941333ms          7350.000000000001     
+mik-250-20-75-5       HiGHS                 Time stable           2076.644208ms         -51532.00000000022    
+gen                   Xpress                Time stable           11.039084ms           112313.362718         
+gen-ip036             CPLEX                 Time stable           23477.252125ms        -4606.6796098376      
+f2gap40400            COPT                  Time stable           44.093833ms           20771.999999999978    
+gt2                   CPLEX                 Time stable           6.5465ms              21166.0               
+set1ch                CPLEX                 Time stable           71.515625ms           54543.0               
+ran16x16              CPLEX                 Time stable           2798.716167ms         3823.0                
+b-ball                HiGHS                 Time stable           79.475083ms           -1.500001             
+flugpl                HiGHS                 Time stable           39.290625ms           1201500.0             
+fixnet3               Xpress                Time stable           11.402167ms           51973.0               
+bm23                  HiGHS                 Time stable           69.05375ms            34.0                  
+22433                 HiGHS                 Time stable           1895.803292ms         21476.99999999998     
+mas76                 Xpress                Time stable           2578.850375ms         40005.05414200001     
+mik-250-20-75-4       HiGHS                 Time stable           9779.892209ms         -52301.00000000885    
+sentoy                Xpress                Time stable           37.924875ms           -7772.0               
+egout                 Xpress                Time stable           3.924459ms            568.1007              
+markshare_4_0         HiGHS                 Time stable           79551.181708ms        1.00000000000018      
+r50x360               COPT                  Time stable           2613.36425ms          1653.0000000000014    
+f2gap40400            HiGHS                 Time stable           6.959625ms            20772.0               
+assign1-5-8           CPLEX                 Time stable           62078.698791ms        212.0                 
+vpm2                  HiGHS                 Time stable           1123.467375ms         13.75                 
+pipex                 HiGHS                 Time stable           38.214375ms           788.2629999997624     
+mik-250-20-75-3       CPLEX                 Time stable           160.087958ms          -52242.00000005581    
+timtab1CUTS           Xpress                Time stable           2071.072125ms         764771.9999998801     
+mik-250-20-75-5       Xpress                Time stable           121.97125ms           -51532.0              
+neos-3046615-murg     Xpress                Time stable           988.379958ms          1600.0                
+mas76                 CPLEX                 Time stable           3937.426667ms         40005.054142          
+ran14x18-disj-8       CPLEX                 Time stable           26836.319125ms        3712.00000014606      
+22433                 COPT                  Time stable           175.088208ms          21476.99999999531     
+supportcase16         COPT                  Time stable           24.413417ms           288.0                 
+mik-250-20-75-3       HiGHS                 Time stable           1998.154625ms         -52242.00000000003    
+pipex                 CPLEX                 Time stable           18.011333ms           788.263               
+gt2                   HiGHS                 Time stable           27.403333ms           21166.0               
+sample2               HiGHS                 Time stable           10.79725ms            375.0                 
+graphdraw-domain      Xpress                Time stable           20153.638459ms        19686.00000000002     
+bppc8-02              HiGHS                 Time stable           161.47225ms           507.0                 
+neos-911970           HiGHS                 Time stable           3914.941542ms         54.76000000000944     
+mik-250-20-75-4       CPLEX                 Time stable           452.968ms             -52300.99999999999    
+neos-911880           COPT                  Time stable           2290.535458ms         54.75999999999998     
+graphdraw-domain      CPLEX                 Time stable           16034.5805ms          19686.000000000007    
+neos5                 Xpress                Time stable           10387.546ms           15.0                  
+neos-911970           Xpress                Time stable           698.280292ms          54.7600000000816      
+enlight13             HiGHS                 Time stable           127293.470417ms       71.0                  
+markshare_4_0         CPLEX                 Time stable           1130.8245ms           1.0                   
+set1ch                HiGHS                 Time stable           249.531084ms          54537.75              
+mik-250-20-75-2       HiGHS                 Time stable           1988.374375ms         -50768.00000000276    
+p0040                 COPT                  Time stable           2.820083ms            62027.0               
+enigma                HiGHS                 Time stable           104.145583ms          0.0                   
+neos-3610051-istra    COPT                  Time stable           190.364417ms          49.0                  
+p0282                 COPT                  Time stable           93.482292ms           258410.9999999998     
+bm23                  Xpress                Time stable           25.819416ms           34.0                  
+breastcancer-regularizCOPT                  Time stable           121545.085958ms       35.767842105263156    
+neos-2652786-brda     Xpress                Time stable           55451.49075ms         4.7924996             
+rout                  CPLEX                 Time stable           1115.625333ms         1077.559999999999     
+misc07                COPT                  Time stable           462.357625ms          2810.0                
+stein15               COPT                  Time stable           19.067458ms           9.0                   
+mik-250-20-75-5       CPLEX                 Time stable           168.445625ms          -51532.0000000565     
+stein27               COPT                  Time stable           54.551541ms           18.0                  
+mik-250-20-75-3       Xpress                Time stable           60.159833ms           -52242.0              
+blend2                CPLEX                 Time stable           64.600208ms           7.598985              
+mas74                 CPLEX                 Time stable           27758.85625ms         11801.18572900001     
+mik-250-20-75-1       HiGHS                 Time stable           2296.673458ms         -49716.00000000193    
+timtab1CUTS           HiGHS                 Time stable           33684.029542ms        764771.99999988       
+m100n500k4r1          CPLEX                 Time stable           2756.247209ms         -25.0                 
+enigma                CPLEX                 Time stable           17.979125ms           0.0                   
+neos-2657525-crna     Xpress                Time stable           159633.078458ms       1.8107480000002203    
+bppc8-02              CPLEX                 Time stable           50.628125ms           507.0                 
+cov1075               COPT                  Time stable           5642.284584ms         20.0                  
+neos-3610173-itata    CPLEX                 Time stable           40.997292ms           148.0                 
+supportcase26         COPT                  Time stable           234833.742292ms       1745.1241823460232    
+ic97_tension          Xpress                Time stable           1020.334375ms         3942.000000000001     
+nexp-50-20-1-1        HiGHS                 Time stable           26.527875ms           29.0                  
+set1cl                CPLEX                 Time stable           12.277458ms           6484.25               
+vpm1                  HiGHS                 Time stable           8.622292ms            20.0                  
+glass4                Xpress                Time stable           12661.551791ms        1.2000126E9           
+blend2                Xpress                Time stable           190.500167ms          7.598985              
+mik-250-20-75-4       Xpress                Time stable           127.895584ms          -52301.0              
+neos-3611689-kaihu    COPT                  Time stable           141.722542ms          119.0                 
+enlight13             CPLEX                 Time stable           2.804541ms            71.0                  
+beavma                Xpress                Time stable           25.767292ms           383285.00000000006    
+neos-911970           CPLEX                 Time stable           651.046875ms          54.75999999999999     
+mas76                 HiGHS                 Time stable           96625.57725ms         40005.05414181039     
+k16x240               Xpress                Time stable           10727.291083ms        10673.999999999985    
+neos-911880           HiGHS                 Time stable           8767.699333ms         54.75999999998501     
+bm23                  CPLEX                 Time stable           10.610167ms           34.0                  
+dfn-gwin-UUM          CPLEX                 Time stable           3160.008791ms         38752.0               
+neos-3610051-istra    HiGHS                 Time stable           1653.091917ms         49.0                  
+bppc8-09              Xpress                Time stable           931.038958ms          472.0000000000522     
+nexp-50-20-1-1        COPT                  Time stable           60.091667ms           29.0                  
+p0291                 COPT                  Time stable           23.432166ms           5223.749              
+set1ch                COPT                  Time stable           259.307208ms          54537.75              
+neos-942830           Xpress                Time stable           125341.674709ms       16.0000000000042      
+r50x360               HiGHS                 Time stable           19138.489ms           1653.0000000009047    
+cov1075               CPLEX                 Time stable           790.399833ms          20.0                  
+neos-3610173-itata    COPT                  Time stable           168.349875ms          148.0                 
+neos-2652786-brda     CPLEX                 Time stable           258514.519458ms       4.7924996             
+set1ch                Xpress                Time stable           121.19775ms           54537.75              
+glass4                CPLEX                 Time stable           12331.733542ms        1.2000126E9           
+lseu                  HiGHS                 Time stable           93.429125ms           1120.0                
+pigeon-08             Xpress                Time stable           183.8645ms            -7000.0               
+misc05                COPT                  Time stable           63.708167ms           2984.5                
+neos-2657525-crna     COPT                  Time stable           107413.773792ms       1.810748              
+ran14x18              CPLEX                 Time stable           23443.878292ms        3712.000000000006     
+gt2                   COPT                  Time stable           11.771042ms           21165.99999999998     
+set1cl                HiGHS                 Time stable           37.4485ms             6484.25               
+ic97_tension          CPLEX                 Time stable           508.012792ms          3942.000000000001     
+neos-3046601-motu     Xpress                Time stable           95.531542ms           1459.0                
+stein9                HiGHS                 Time stable           7.712667ms            5.0                   
+ran16x16              HiGHS                 Time stable           33529.68075ms         3823.0000000033283    
+egout                 HiGHS                 Time stable           7.983375ms            568.1007              
+pipex                 Xpress                Time stable           26.254459ms           788.263               
+p0033                 CPLEX                 Time stable           2.875209ms            3089.0                
+graphdraw-gemcutter   COPT                  Time stable           12153.647416ms        7118.5                
+pp08a                 CPLEX                 Time stable           71.845917ms           7350.000000000001     
+bell3a                Xpress                Time stable           20.98375ms            878430.316            
+ran14x18-disj-8       COPT                  Time stable           53200.241375ms        3712.000000005218     
+neos-911880           Xpress                Time stable           703.15475ms           54.75999999999954     
+neos-3610051-istra    Xpress                Time stable           205.323708ms          49.0                  
+misc02                COPT                  Time stable           19.252042ms           1689.999999999993     
+rlp1                  HiGHS                 Time stable           164.141292ms          15.0                  
+pigeon-08             COPT                  Time stable           35.154834ms           -7000.0               
+rout                  HiGHS                 Time stable           19141.4235ms          1077.559999999991     
+pipex                 COPT                  Time stable           39.999042ms           788.263               
+sp150x300d            COPT                  Time stable           57.115791ms           69.0                  
+ran14x18-disj-8       Xpress                Time stable           22175.201917ms        3712.000000184572     
+ran13x13              CPLEX                 Time stable           584.268709ms          3252.0                
+timtab1CUTS           CPLEX                 Time stable           4108.283792ms         764771.9999997803     
+nexp-50-20-1-1        Xpress                Time stable           15.337917ms           29.0                  
+mik-250-20-75-2       CPLEX                 Time stable           271.106666ms          -50768.0              
+blend2                HiGHS                 Time stable           523.154875ms          7.598985              
+stein15               HiGHS                 Time stable           17.321625ms           9.0                   
+markshare_4_0         COPT                  Time stable           186.046625ms          1.00000000368402      
+mik-250-20-75-1       CPLEX                 Time stable           277.329083ms          -49716.0              
+stein27               HiGHS                 Time stable           331.54175ms           17.99999999999997     
+supportcase16         HiGHS                 Time stable           27.590916ms           288.0                 
+misc03                COPT                  Time stable           124.115667ms          3360.0                
+modglob               CPLEX                 Time stable           33.83025ms            2.074050808630825E7   
+beavma                HiGHS                 Time stable           184.513209ms          383285.0              
+neos5                 CPLEX                 Time stable           9587.864417ms         15.0                  
+neos-3611447-jijia    COPT                  Time stable           100.765459ms          107.0                 
+p0201                 HiGHS                 Time stable           476.124209ms          7615.0                
+vpm2                  CPLEX                 Time stable           35.529125ms           13.75                 
+markshare_4_0         Xpress                Time stable           10985.800666ms        1.0                   
+blend2                COPT                  Time stable           118.989042ms          7.59898499999997      
+cracpb1               COPT                  Time stable           27.426083ms           22199.0               
+ran12x21              CPLEX                 Time stable           935.910208ms          3664.0                
+ej                    COPT                  Time stable           3.926ms               25508.0               
+prod1                 COPT                  Time stable           2866.910875ms         -56.0                 
+sentoy                CPLEX                 Time stable           11.313334ms           -7772.0               
+ic97_tension          COPT                  Time stable           3509.43325ms          3942.0                
+timtab1CUTS           COPT                  Time stable           8093.951292ms         764771.99999978       
+fixnet4               CPLEX                 Time stable           42.059375ms           8936.0                
+set1cl                COPT                  Time stable           37.595333ms           6484.25               
+supportcase14         CPLEX                 Time stable           12.835084ms           288.0                 
+k16x240b              COPT                  Time stable           30156.314667ms        11393.000000000882    
+misc05                HiGHS                 Time stable           188.549375ms          2984.499999999992     
+supportcase26         CPLEX                 Time stable           61305.748375ms        1745.1241823460268    
+ran16x16              Xpress                Time stable           3013.288375ms         3823.0000000011173    
+misc07                HiGHS                 Time stable           24170.400459ms        2809.999999999692     
+bell3a                HiGHS                 Time stable           157.123917ms          878430.3159999811     
+graphdraw-gemcutter   Xpress                Time stable           2378.409792ms         7118.500000000001     
+graphdraw-gemcutter   CPLEX                 Time stable           2140.746375ms         7118.5                
+graphdraw-gemcutter   HiGHS                 Time stable           89761.813625ms        7118.499999997938     
+misc07                CPLEX                 Time stable           161.831125ms          2810.0                
+supportcase14         HiGHS                 Time stable           52.629125ms           288.0                 
+neos-942830           CPLEX                 Time stable           36556.58775ms         16.0                  
+bienst1               COPT                  Time stable           8359.33975ms          46.74999999999999     
+misc01                COPT                  Time stable           59.11775ms            563.5                 
+fixnet3               CPLEX                 Time stable           42.06525ms            51973.0               
+r50x360               Xpress                Time stable           2990.86725ms          1653.0                
+neos-3046615-murg     COPT                  Time stable           1212.747375ms         1600.0                
+set1al                HiGHS                 Time stable           47.536666ms           15869.75              
+neos-3611447-jijia    CPLEX                 Time stable           36.5465ms             107.0                 
+supportcase16         CPLEX                 Time stable           10.821042ms           288.0                 
+stein15               Xpress                Time stable           16.42425ms            9.0                   
+stein27               Xpress                Time stable           29.874834ms           18.0                  
+newdano               Xpress                Time stable           106949.561458ms       65.66666666685128     
+ran12x21              HiGHS                 Time stable           10480.286208ms        3664.0000000000177    
+beavma                COPT                  Time stable           105.065083ms          383285.0              
+k16x240               COPT                  Time stable           66710.429584ms        10673.999999999927    
+neos-3611447-jijia    HiGHS                 Time stable           833.291083ms          107.0                 
+pk1                   CPLEX                 Time stable           2979.66275ms          11.0                  
+gen-ip002             COPT                  Time stable           69986.82425ms         -4783.7333916         
+dfn-gwin-UUM          Xpress                Time stable           20874.535167ms        38752.0               
+misc03                HiGHS                 Time stable           382.318042ms          3359.999999999995     
+p0548                 COPT                  Time stable           32.975084ms           8691.0                
+neos-3610040-iskar    HiGHS                 Time stable           765.251041ms          36.99999999999999     
+p0040                 CPLEX                 Time stable           1.118125ms            62027.0               
+pk1                   Xpress                Time stable           5043.611ms            10.99999999999999     
+glass4                COPT                  Time stable           13843.638584ms        1.20001259999951E9    
+prod2                 COPT                  Time stable           14804.305833ms        -62.0                 
+neos-5140963-mincio   Xpress                Time stable           110781.48475ms        14393.0               
+mik-250-1-100-1       Xpress                Time stable           2260.720458ms         -66729.0              
+p0282                 CPLEX                 Time stable           18.321917ms           258411.0              
+neos15                Xpress                Time stable           55543.897458ms        80598.43009686067     
+p0201                 Xpress                Time stable           268.513666ms          7615.0                
+graphdraw-domain      COPT                  Time stable           65199.160333ms        19685.99999999999     
+newdano               CPLEX                 Time stable           53426.773625ms        65.66666666666666     
+vpm1                  COPT                  Time stable           21.410125ms           20.0                  
+misc02                CPLEX                 Time stable           13.576792ms           1690.0                
+ran12x21              Xpress                Time stable           1415.978709ms         3664.0                
+ran14x18              COPT                  Time stable           55018.605333ms        3711.9999999999845    
+rout                  COPT                  Time stable           1778.981084ms         1077.56               
+rlp1                  Xpress                Time stable           12.352042ms           15.0                  
+enigma                COPT                  Time stable           49.331375ms           0.0                   
+rout                  Xpress                Time stable           789.415708ms          1077.559999999999     
+dcmulti               COPT                  Time stable           195.982959ms          188182.0              
+neos-911880           CPLEX                 Time stable           3191.895125ms         54.75999999999999     
+set1al                COPT                  Time stable           71.229792ms           15869.75              
+misc01                HiGHS                 Time stable           113.223375ms          563.5000000000003     
+rlp1                  COPT                  Time stable           54117.870667ms        15.0                  
+ran14x18              Xpress                Time stable           25221.638458ms        3712.000000000237     
+neos-2624317-amur     Xpress                Time stable           334.464583ms          3.522396800000173     
+vpm2                  COPT                  Time stable           105.943083ms          13.749999999999995    
+ran13x13              COPT                  Time stable           2077.50475ms          3252.000000000073     
+lseu                  Xpress                Time stable           76.4945ms             1119.999999999999     
+neos17                COPT                  Time stable           1495.113625ms         0.15000257742257736   
+misc03                CPLEX                 Time stable           20.476416ms           3360.0                
+neos17                Xpress                Time stable           691.033792ms          0.15000257742257742   
+cracpb1               HiGHS                 Time stable           26.174625ms           22199.0               
+dfn-gwin-UUM          HiGHS                 Time stable           144038.842125ms       38751.999999999935    
+ran13x13              Xpress                Time stable           642.536125ms          3252.0                
+ran12x21              COPT                  Time stable           4595.0005ms           3664.0                
+set1al                Xpress                Time stable           19.062042ms           15869.75              
+misc02                HiGHS                 Time stable           25.710291ms           1690.0                
+ran13x13              HiGHS                 Time stable           8762.696083ms         3252.0                
+enigma                Xpress                Time stable           80.589834ms           0.0                   
+bienst2               Xpress                Time stable           7746.155541ms         54.60000000000001     
+mad                   COPT                  Time stable           66396.969583ms        0.0268                
+neos-2624317-amur     COPT                  Time stable           2294.035375ms         3.5223968             
+vpm2                  Xpress                Time stable           123.806833ms          13.749999999999998    
+bell3b                CPLEX                 Time stable           31.113625ms           1.1786160618E7        
+stein9                CPLEX                 Time stable           1.717125ms            5.0                   
+markshare_5_0         CPLEX                 Time stable           1114.869166ms         1.0                   
+bienst2               COPT                  Time stable           20128.967791ms        54.59999999999997     
+p0291                 CPLEX                 Time stable           4.020917ms            5223.748999999999     
+p80x400b              CPLEX                 Time stable           46938.192375ms        39667.00000000127     
+ic97_tension          HiGHS                 Time stable           12102.979041ms        3942.0000000000014    
+pp08aCUTS             CPLEX                 Time stable           77.831334ms           7350.0                
+bell3a                CPLEX                 Time stable           40.4245ms             878430.316            
+p0548                 HiGHS                 Time stable           34.993917ms           8691.0                
+neos-3610040-iskar    Xpress                Time stable           66.029833ms           37.0                  
+dcmulti               Xpress                Time stable           174.933208ms          188182.0              
+prod2                 HiGHS                 Time stable           67901.443042ms        -62.0                 
+
+Iteration 4 with 33 model/solver pairs remaining 2026-09-11T04:39:40.743749Z
+-----------------------------------------------------------------------------
+neos-5192052-neckar   CPLEX                 Time stable           2.868334ms            -1.1670000000000002E7 
+22433                 CPLEX                 Time stable           37.643959ms           21477.0               
+p0033                 Xpress                Time stable           7.071833ms            3089.0                
+f2gap40400            CPLEX                 Time stable           7.155333ms            20772.0               
+enlight15             CPLEX                 Time stable           3.155291ms            69.0                  
+rlp1                  CPLEX                 Time stable           11.029875ms           15.0                  
+supportcase14         COPT                  Time stable           17.535416ms           288.0                 
+vpm1                  CPLEX                 Time stable           5.597459ms            20.0                  
+set1al                CPLEX                 Time stable           19.228667ms           15869.75              
+neos-3610051-istra    CPLEX                 Time stable           52.023542ms           49.0                  
+misc05                CPLEX                 Time stable           15.809125ms           2984.5                
+vpm1                  Xpress                Time stable           4.972584ms            20.0                  
+
+Iteration 5 with 21 model/solver pairs remaining 2026-09-11T04:42:19.623507Z
+-----------------------------------------------------------------------------
+neos-1425699          Xpress                Time stable           2.550292ms            3.179698977E9         
+supportcase14         Xpress                Time stable           17.278709ms           288.0                 
+enlight15             Xpress                Time stable           1.012375ms            69.0                  
+set1cl                Xpress                Time stable           6.983292ms            6484.25               
+ran16x16              COPT                  Time stable           5821.785959ms         3822.9999999999627    
+neos-1425699          COPT                  Time stable           4.553416ms            3.179698977E9         
+gt2                   Xpress                Time stable           4.1755ms              21166.0               
+sample2               CPLEX                 Time stable           3.653125ms            375.0                 
+egout                 COPT                  Time stable           7.72825ms             568.1007              
+dfn-gwin-UUM          COPT                  Time stable           13041.658375ms        38752.00000000002     
+neos-3610040-iskar    COPT                  Time stable           136.909625ms          37.0                  
+lseu                  COPT                  Time stable           53.924625ms           1120.0                
+prod1                 HiGHS                 Time stable           14315.771417ms        -56.0                 
+pk1                   HiGHS                 Time stable           117658.08175ms        10.99999999999998     
+
+Iteration 6 with 7 model/solver pairs remaining 2026-09-11T04:44:58.387049Z
+-----------------------------------------------------------------------------
+bell5                 CPLEX                 Time stable           13.525708ms           8966406.49152         
+neos-1425699          CPLEX                 Time stable           2.0325ms              3.179698977E9         
+egout                 CPLEX                 Time stable           2.183458ms            568.1007              
+air01                 Xpress                Time stable           5.466958ms            6796.0                
+cracpb1               CPLEX                 Time stable           15.756917ms           22199.0               
+
+Iteration 7 with 2 model/solver pairs remaining 2026-09-11T04:44:58.695001Z
+-----------------------------------------------------------------------------
+opt1217               CPLEX                 Time stable           24.327792ms           -16.0                 
+
+Iteration 8 with 1 model/solver pairs remaining 2026-09-11T04:44:58.783953Z
+-----------------------------------------------------------------------------
+
+Iteration 9 with 1 model/solver pairs remaining 2026-09-11T04:44:58.823010Z
+-----------------------------------------------------------------------------
+
+Iteration 10 with 1 model/solver pairs remaining 2026-09-11T04:44:58.831482Z
+-----------------------------------------------------------------------------
+stein9                Xpress                Time stable           0.259083ms            5.0                   
+
+Final Results
+=====================================================================
+22433                 COPT                  OPTIMAL               175.088208ms          
+22433                 CPLEX                 OPTIMAL               37.643959ms           
+22433                 HiGHS                 OPTIMAL               1895.803292ms         
+22433                 Xpress                OPTIMAL               237.67625ms           
+23588                 COPT                  OPTIMAL               364.415458ms          
+23588                 CPLEX                 OPTIMAL               110.39725ms           
+23588                 HiGHS                 OPTIMAL               3904.145667ms         
+23588                 Xpress                OPTIMAL               448.286292ms          
+aflow30a              COPT                  OPTIMAL               2263.061625ms         
+aflow30a              CPLEX                 OPTIMAL               742.810625ms          
+aflow30a              HiGHS                 OPTIMAL               7535.612375ms         
+aflow30a              Xpress                OPTIMAL               657.459583ms          
+air01                 COPT                  OPTIMAL               22.359458ms           
+air01                 CPLEX                 OPTIMAL               15.06925ms            
+air01                 HiGHS                 OPTIMAL               60.373125ms           
+air01                 Xpress                OPTIMAL               5.466958ms            
+assign1-5-8           COPT                  FAILED                TIMEOUT               
+assign1-5-8           CPLEX                 OPTIMAL               62078.698791ms        
+assign1-5-8           HiGHS                 FAILED                TIMEOUT               
+assign1-5-8           Xpress                FAILED                TIMEOUT               
+b-ball                COPT                  OPTIMAL               4.855959ms            
+b-ball                CPLEX                 OPTIMAL               2.09025ms             
+b-ball                HiGHS                 OPTIMAL               79.475083ms           
+b-ball                Xpress                OPTIMAL               1.640416ms            
+beavma                COPT                  OPTIMAL               105.065083ms          
+beavma                CPLEX                 OPTIMAL               15.17625ms            
+beavma                HiGHS                 OPTIMAL               184.513209ms          
+beavma                Xpress                OPTIMAL               25.767292ms           
+bell3a                COPT                  FAILED                INVALID               
+bell3a                CPLEX                 OPTIMAL               40.4245ms             
+bell3a                HiGHS                 OPTIMAL               157.123917ms          
+bell3a                Xpress                OPTIMAL               20.98375ms            
+bell3b                COPT                  OPTIMAL               80.530625ms           
+bell3b                CPLEX                 OPTIMAL               31.113625ms           
+bell3b                HiGHS                 OPTIMAL               335.174292ms          
+bell3b                Xpress                OPTIMAL               145.648ms             
+bell4                 COPT                  OPTIMAL               73.298625ms           
+bell4                 CPLEX                 OPTIMAL               26.637125ms           
+bell4                 HiGHS                 OPTIMAL               415.5735ms            
+bell4                 Xpress                OPTIMAL               198.06075ms           
+bell5                 COPT                  FAILED                INVALID               
+bell5                 CPLEX                 OPTIMAL               13.525708ms           
+bell5                 HiGHS                 OPTIMAL               283.463625ms          
+bell5                 Xpress                OPTIMAL               28.869708ms           
+bienst1               COPT                  OPTIMAL               8359.33975ms          
+bienst1               CPLEX                 OPTIMAL               3276.981208ms         
+bienst1               HiGHS                 OPTIMAL               20434.498667ms        
+bienst1               Xpress                OPTIMAL               1249.384208ms         
+bienst2               COPT                  OPTIMAL               20128.967791ms        
+bienst2               CPLEX                 OPTIMAL               8370.753209ms         
+bienst2               HiGHS                 FAILED                TIMEOUT               
+bienst2               Xpress                OPTIMAL               7746.155541ms         
+blend2                COPT                  OPTIMAL               118.989042ms          
+blend2                CPLEX                 OPTIMAL               64.600208ms           
+blend2                HiGHS                 OPTIMAL               523.154875ms          
+blend2                Xpress                OPTIMAL               190.500167ms          
+bm23                  COPT                  OPTIMAL               31.099292ms           
+bm23                  CPLEX                 OPTIMAL               10.610167ms           
+bm23                  HiGHS                 OPTIMAL               69.05375ms            
+bm23                  Xpress                OPTIMAL               25.819416ms           
+bppc8-02              COPT                  OPTIMAL               23.3615ms             
+bppc8-02              CPLEX                 OPTIMAL               50.628125ms           
+bppc8-02              HiGHS                 OPTIMAL               161.47225ms           
+bppc8-02              Xpress                OPTIMAL               30.206917ms           
+bppc8-09              COPT                  OPTIMAL               121468.388083ms       
+bppc8-09              CPLEX                 OPTIMAL               403.377916ms          
+bppc8-09              HiGHS                 FAILED                TIMEOUT               
+bppc8-09              Xpress                OPTIMAL               931.038958ms          
+breastcancer-regularizCOPT                  OPTIMAL               121545.085958ms       
+breastcancer-regularizCPLEX                 FAILED                WRONG                 
+breastcancer-regularizHiGHS                 FAILED                TIMEOUT               
+breastcancer-regularizXpress                OPTIMAL               82341.89475ms         
+control30-3-2-3       COPT                  FAILED                TIMEOUT               
+control30-3-2-3       CPLEX                 FAILED                TIMEOUT               
+control30-3-2-3       HiGHS                 FAILED                TIMEOUT               
+control30-3-2-3       Xpress                FAILED                WRONG                 
+cov1075               COPT                  OPTIMAL               5642.284584ms         
+cov1075               CPLEX                 OPTIMAL               790.399833ms          
+cov1075               HiGHS                 OPTIMAL               27771.2045ms          
+cov1075               Xpress                OPTIMAL               2011.567875ms         
+cracpb1               COPT                  OPTIMAL               27.426083ms           
+cracpb1               CPLEX                 OPTIMAL               15.756917ms           
+cracpb1               HiGHS                 OPTIMAL               26.174625ms           
+cracpb1               Xpress                OPTIMAL               12.969166ms           
+danoint               COPT                  OPTIMAL               218915.373333ms       
+danoint               CPLEX                 OPTIMAL               81139.423667ms        
+danoint               HiGHS                 FAILED                TIMEOUT               
+danoint               Xpress                OPTIMAL               93809.841625ms        
+dcmulti               COPT                  OPTIMAL               195.982959ms          
+dcmulti               CPLEX                 OPTIMAL               45.768458ms           
+dcmulti               HiGHS                 OPTIMAL               595.893833ms          
+dcmulti               Xpress                OPTIMAL               174.933208ms          
+dfn-gwin-UUM          COPT                  OPTIMAL               13041.658375ms        
+dfn-gwin-UUM          CPLEX                 OPTIMAL               3160.008791ms         
+dfn-gwin-UUM          HiGHS                 OPTIMAL               144038.842125ms       
+dfn-gwin-UUM          Xpress                OPTIMAL               20874.535167ms        
+egout                 COPT                  OPTIMAL               7.72825ms             
+egout                 CPLEX                 OPTIMAL               2.183458ms            
+egout                 HiGHS                 OPTIMAL               7.983375ms            
+egout                 Xpress                OPTIMAL               3.924459ms            
+ej                    COPT                  OPTIMAL               3.926ms               
+ej                    CPLEX                 FAILED                TIMEOUT               
+ej                    HiGHS                 FAILED                TIMEOUT               
+ej                    Xpress                FAILED                TIMEOUT               
+enigma                COPT                  OPTIMAL               49.331375ms           
+enigma                CPLEX                 OPTIMAL               17.979125ms           
+enigma                HiGHS                 OPTIMAL               104.145583ms          
+enigma                Xpress                OPTIMAL               80.589834ms           
+enlight13             COPT                  OPTIMAL               4.134875ms            
+enlight13             CPLEX                 OPTIMAL               2.804541ms            
+enlight13             HiGHS                 OPTIMAL               127293.470417ms       
+enlight13             Xpress                OPTIMAL               0.785333ms            
+enlight15             COPT                  OPTIMAL               8328.453667ms         
+enlight15             CPLEX                 OPTIMAL               3.155291ms            
+enlight15             HiGHS                 FAILED                TIMEOUT               
+enlight15             Xpress                OPTIMAL               1.012375ms            
+enlight8              COPT                  OPTIMAL               2.770666ms            
+enlight8              CPLEX                 OPTIMAL               1.578459ms            
+enlight8              HiGHS                 OPTIMAL               346.433958ms          
+enlight8              Xpress                OPTIMAL               0.519125ms            
+enlight_hard          COPT                  OPTIMAL               3.188208ms            
+enlight_hard          CPLEX                 OPTIMAL               2.296875ms            
+enlight_hard          HiGHS                 OPTIMAL               4491.340042ms         
+enlight_hard          Xpress                OPTIMAL               0.595875ms            
+exp-1-500-5-5         COPT                  OPTIMAL               382.775167ms          
+exp-1-500-5-5         CPLEX                 OPTIMAL               425.004417ms          
+exp-1-500-5-5         HiGHS                 OPTIMAL               2474.442875ms         
+exp-1-500-5-5         Xpress                OPTIMAL               282.244041ms          
+f2gap40400            COPT                  OPTIMAL               44.093833ms           
+f2gap40400            CPLEX                 OPTIMAL               7.155333ms            
+f2gap40400            HiGHS                 OPTIMAL               6.959625ms            
+f2gap40400            Xpress                OPTIMAL               13.410041ms           
+fixnet3               COPT                  OPTIMAL               67.246959ms           
+fixnet3               CPLEX                 OPTIMAL               42.06525ms            
+fixnet3               HiGHS                 OPTIMAL               52.736417ms           
+fixnet3               Xpress                OPTIMAL               11.402167ms           
+fixnet4               COPT                  OPTIMAL               286.930958ms          
+fixnet4               CPLEX                 OPTIMAL               42.059375ms           
+fixnet4               HiGHS                 OPTIMAL               192.506792ms          
+fixnet4               Xpress                OPTIMAL               99.939916ms           
+fixnet6               COPT                  OPTIMAL               932.181458ms          
+fixnet6               CPLEX                 OPTIMAL               43.54675ms            
+fixnet6               HiGHS                 OPTIMAL               1522.200666ms         
+fixnet6               Xpress                OPTIMAL               391.765583ms          
+flugpl                COPT                  OPTIMAL               0.660959ms            
+flugpl                CPLEX                 OPTIMAL               2.239625ms            
+flugpl                HiGHS                 OPTIMAL               39.290625ms           
+flugpl                Xpress                OPTIMAL               0.932542ms            
+gen                   COPT                  OPTIMAL               32.887ms              
+gen                   CPLEX                 OPTIMAL               11.145ms              
+gen                   HiGHS                 OPTIMAL               11.83825ms            
+gen                   Xpress                OPTIMAL               11.039084ms           
+gen-ip002             COPT                  OPTIMAL               69986.82425ms         
+gen-ip002             CPLEX                 OPTIMAL               48993.661083ms        
+gen-ip002             HiGHS                 FAILED                TIMEOUT               
+gen-ip002             Xpress                OPTIMAL               61450.736208ms        
+gen-ip016             COPT                  FAILED                TIMEOUT               
+gen-ip016             CPLEX                 FAILED                TIMEOUT               
+gen-ip016             HiGHS                 FAILED                TIMEOUT               
+gen-ip016             Xpress                FAILED                TIMEOUT               
+gen-ip021             COPT                  OPTIMAL               31608.511ms           
+gen-ip021             CPLEX                 OPTIMAL               28971.509375ms        
+gen-ip021             HiGHS                 OPTIMAL               262903.818584ms       
+gen-ip021             Xpress                OPTIMAL               36023.938292ms        
+gen-ip036             COPT                  OPTIMAL               81096.267459ms        
+gen-ip036             CPLEX                 OPTIMAL               23477.252125ms        
+gen-ip036             HiGHS                 OPTIMAL               280902.304916ms       
+gen-ip036             Xpress                OPTIMAL               18613.103917ms        
+gen-ip054             COPT                  OPTIMAL               32536.588542ms        
+gen-ip054             CPLEX                 OPTIMAL               46647.137833ms        
+gen-ip054             HiGHS                 FAILED                TIMEOUT               
+gen-ip054             Xpress                OPTIMAL               53907.165208ms        
+glass4                COPT                  OPTIMAL               13843.638584ms        
+glass4                CPLEX                 OPTIMAL               12331.733542ms        
+glass4                HiGHS                 FAILED                TIMEOUT               
+glass4                Xpress                OPTIMAL               12661.551791ms        
+go19                  COPT                  FAILED                TIMEOUT               
+go19                  CPLEX                 FAILED                TIMEOUT               
+go19                  HiGHS                 FAILED                TIMEOUT               
+go19                  Xpress                FAILED                TIMEOUT               
+gr4x6                 COPT                  OPTIMAL               26.574792ms           
+gr4x6                 CPLEX                 OPTIMAL               3.211541ms            
+gr4x6                 HiGHS                 OPTIMAL               7.917125ms            
+gr4x6                 Xpress                OPTIMAL               3.889667ms            
+graphdraw-domain      COPT                  OPTIMAL               65199.160333ms        
+graphdraw-domain      CPLEX                 OPTIMAL               16034.5805ms          
+graphdraw-domain      HiGHS                 FAILED                TIMEOUT               
+graphdraw-domain      Xpress                OPTIMAL               20153.638459ms        
+graphdraw-gemcutter   COPT                  OPTIMAL               12153.647416ms        
+graphdraw-gemcutter   CPLEX                 OPTIMAL               2140.746375ms         
+graphdraw-gemcutter   HiGHS                 OPTIMAL               89761.813625ms        
+graphdraw-gemcutter   Xpress                OPTIMAL               2378.409792ms         
+gsvm2rl3              COPT                  FAILED                TIMEOUT               
+gsvm2rl3              CPLEX                 OPTIMAL               521.486417ms          
+gsvm2rl3              HiGHS                 OPTIMAL               5290.256209ms         
+gsvm2rl3              Xpress                OPTIMAL               618.794167ms          
+gsvm2rl5              COPT                  FAILED                TIMEOUT               
+gsvm2rl5              CPLEX                 FAILED                TIMEOUT               
+gsvm2rl5              HiGHS                 FAILED                TIMEOUT               
+gsvm2rl5              Xpress                FAILED                TIMEOUT               
+gt2                   COPT                  OPTIMAL               11.771042ms           
+gt2                   CPLEX                 OPTIMAL               6.5465ms              
+gt2                   HiGHS                 OPTIMAL               27.403333ms           
+gt2                   Xpress                OPTIMAL               4.1755ms              
+ic97_tension          COPT                  OPTIMAL               3509.43325ms          
+ic97_tension          CPLEX                 OPTIMAL               508.012792ms          
+ic97_tension          HiGHS                 OPTIMAL               12102.979041ms        
+ic97_tension          Xpress                OPTIMAL               1020.334375ms         
+k16x240               COPT                  OPTIMAL               66710.429584ms        
+k16x240               CPLEX                 OPTIMAL               15390.828167ms        
+k16x240               HiGHS                 FAILED                TIMEOUT               
+k16x240               Xpress                OPTIMAL               10727.291083ms        
+k16x240b              COPT                  OPTIMAL               30156.314667ms        
+k16x240b              CPLEX                 OPTIMAL               7326.209375ms         
+k16x240b              HiGHS                 FAILED                TIMEOUT               
+k16x240b              Xpress                OPTIMAL               16624.188708ms        
+lseu                  COPT                  OPTIMAL               53.924625ms           
+lseu                  CPLEX                 OPTIMAL               14.953208ms           
+lseu                  HiGHS                 OPTIMAL               93.429125ms           
+lseu                  Xpress                OPTIMAL               76.4945ms             
+m100n500k4r1          COPT                  FAILED                TIMEOUT               
+m100n500k4r1          CPLEX                 OPTIMAL               2756.247209ms         
+m100n500k4r1          HiGHS                 FAILED                TIMEOUT               
+m100n500k4r1          Xpress                FAILED                TIMEOUT               
+mad                   COPT                  OPTIMAL               66396.969583ms        
+mad                   CPLEX                 FAILED                TIMEOUT               
+mad                   HiGHS                 FAILED                TIMEOUT               
+mad                   Xpress                FAILED                TIMEOUT               
+markshare1            COPT                  OPTIMAL               27572.295042ms        
+markshare1            CPLEX                 FAILED                TIMEOUT               
+markshare1            HiGHS                 FAILED                TIMEOUT               
+markshare1            Xpress                FAILED                TIMEOUT               
+markshare2            COPT                  FAILED                TIMEOUT               
+markshare2            CPLEX                 FAILED                TIMEOUT               
+markshare2            HiGHS                 FAILED                TIMEOUT               
+markshare2            Xpress                FAILED                TIMEOUT               
+markshare_4_0         COPT                  OPTIMAL               186.046625ms          
+markshare_4_0         CPLEX                 OPTIMAL               1130.8245ms           
+markshare_4_0         HiGHS                 OPTIMAL               79551.181708ms        
+markshare_4_0         Xpress                OPTIMAL               10985.800666ms        
+markshare_5_0         COPT                  OPTIMAL               1742.882ms            
+markshare_5_0         CPLEX                 OPTIMAL               1114.869166ms         
+markshare_5_0         HiGHS                 FAILED                TIMEOUT               
+markshare_5_0         Xpress                FAILED                TIMEOUT               
+mas74                 COPT                  OPTIMAL               43831.791875ms        
+mas74                 CPLEX                 OPTIMAL               27758.85625ms         
+mas74                 HiGHS                 FAILED                TIMEOUT               
+mas74                 Xpress                OPTIMAL               55574.339666ms        
+mas76                 COPT                  OPTIMAL               2341.230875ms         
+mas76                 CPLEX                 OPTIMAL               3937.426667ms         
+mas76                 HiGHS                 OPTIMAL               96625.57725ms         
+mas76                 Xpress                OPTIMAL               2578.850375ms         
+mik-250-1-100-1       COPT                  OPTIMAL               815.296208ms          
+mik-250-1-100-1       CPLEX                 OPTIMAL               370.770125ms          
+mik-250-1-100-1       HiGHS                 OPTIMAL               7692.835542ms         
+mik-250-1-100-1       Xpress                OPTIMAL               2260.720458ms         
+mik-250-20-75-1       COPT                  OPTIMAL               230.612458ms          
+mik-250-20-75-1       CPLEX                 OPTIMAL               277.329083ms          
+mik-250-20-75-1       HiGHS                 OPTIMAL               2296.673458ms         
+mik-250-20-75-1       Xpress                OPTIMAL               83.082375ms           
+mik-250-20-75-2       COPT                  OPTIMAL               199.563583ms          
+mik-250-20-75-2       CPLEX                 OPTIMAL               271.106666ms          
+mik-250-20-75-2       HiGHS                 OPTIMAL               1988.374375ms         
+mik-250-20-75-2       Xpress                OPTIMAL               63.797375ms           
+mik-250-20-75-3       COPT                  OPTIMAL               151.834709ms          
+mik-250-20-75-3       CPLEX                 OPTIMAL               160.087958ms          
+mik-250-20-75-3       HiGHS                 OPTIMAL               1998.154625ms         
+mik-250-20-75-3       Xpress                OPTIMAL               60.159833ms           
+mik-250-20-75-4       COPT                  OPTIMAL               1102.427875ms         
+mik-250-20-75-4       CPLEX                 OPTIMAL               452.968ms             
+mik-250-20-75-4       HiGHS                 OPTIMAL               9779.892209ms         
+mik-250-20-75-4       Xpress                OPTIMAL               127.895584ms          
+mik-250-20-75-5       COPT                  OPTIMAL               191.86075ms           
+mik-250-20-75-5       CPLEX                 OPTIMAL               168.445625ms          
+mik-250-20-75-5       HiGHS                 OPTIMAL               2076.644208ms         
+mik-250-20-75-5       Xpress                OPTIMAL               121.97125ms           
+misc01                COPT                  OPTIMAL               59.11775ms            
+misc01                CPLEX                 OPTIMAL               29.530666ms           
+misc01                HiGHS                 OPTIMAL               113.223375ms          
+misc01                Xpress                OPTIMAL               35.2915ms             
+misc02                COPT                  OPTIMAL               19.252042ms           
+misc02                CPLEX                 OPTIMAL               13.576792ms           
+misc02                HiGHS                 OPTIMAL               25.710291ms           
+misc02                Xpress                OPTIMAL               8.9695ms              
+misc03                COPT                  OPTIMAL               124.115667ms          
+misc03                CPLEX                 OPTIMAL               20.476416ms           
+misc03                HiGHS                 OPTIMAL               382.318042ms          
+misc03                Xpress                OPTIMAL               49.428292ms           
+misc05                COPT                  OPTIMAL               63.708167ms           
+misc05                CPLEX                 OPTIMAL               15.809125ms           
+misc05                HiGHS                 OPTIMAL               188.549375ms          
+misc05                Xpress                OPTIMAL               46.936541ms           
+misc07                COPT                  OPTIMAL               462.357625ms          
+misc07                CPLEX                 OPTIMAL               161.831125ms          
+misc07                HiGHS                 OPTIMAL               24170.400459ms        
+misc07                Xpress                OPTIMAL               1276.618333ms         
+mod008                COPT                  OPTIMAL               47.129ms              
+mod008                CPLEX                 OPTIMAL               27.485042ms           
+mod008                HiGHS                 OPTIMAL               548.064167ms          
+mod008                Xpress                OPTIMAL               52.260959ms           
+mod013                COPT                  OPTIMAL               61.709125ms           
+mod013                CPLEX                 OPTIMAL               7.829167ms            
+mod013                HiGHS                 OPTIMAL               149.135208ms          
+mod013                Xpress                OPTIMAL               25.351041ms           
+modglob               COPT                  OPTIMAL               67.99ms               
+modglob               CPLEX                 OPTIMAL               33.83025ms            
+modglob               HiGHS                 OPTIMAL               395.022625ms          
+modglob               Xpress                OPTIMAL               116.667084ms          
+neos-1425699          COPT                  OPTIMAL               4.553416ms            
+neos-1425699          CPLEX                 OPTIMAL               2.0325ms              
+neos-1425699          HiGHS                 OPTIMAL               80.782208ms           
+neos-1425699          Xpress                OPTIMAL               2.550292ms            
+neos-1426635          COPT                  FAILED                TIMEOUT               
+neos-1426635          CPLEX                 OPTIMAL               10914.450792ms        
+neos-1426635          HiGHS                 FAILED                TIMEOUT               
+neos-1426635          Xpress                FAILED                TIMEOUT               
+neos-1430701          COPT                  OPTIMAL               586.6375ms            
+neos-1430701          CPLEX                 OPTIMAL               748.383917ms          
+neos-1430701          HiGHS                 OPTIMAL               5097.224083ms         
+neos-1430701          Xpress                OPTIMAL               438.407625ms          
+neos-1440460          COPT                  OPTIMAL               26199.227959ms        
+neos-1440460          CPLEX                 FAILED                TIMEOUT               
+neos-1440460          HiGHS                 OPTIMAL               94583.912333ms        
+neos-1440460          Xpress                OPTIMAL               36800.447167ms        
+neos-2624317-amur     COPT                  OPTIMAL               2294.035375ms         
+neos-2624317-amur     CPLEX                 OPTIMAL               142.062958ms          
+neos-2624317-amur     HiGHS                 OPTIMAL               6918.727042ms         
+neos-2624317-amur     Xpress                OPTIMAL               334.464583ms          
+neos-2652786-brda     COPT                  OPTIMAL               45456.637ms           
+neos-2652786-brda     CPLEX                 OPTIMAL               258514.519458ms       
+neos-2652786-brda     HiGHS                 FAILED                TIMEOUT               
+neos-2652786-brda     Xpress                OPTIMAL               55451.49075ms         
+neos-2657525-crna     COPT                  OPTIMAL               107413.773792ms       
+neos-2657525-crna     CPLEX                 FAILED                TIMEOUT               
+neos-2657525-crna     HiGHS                 FAILED                TIMEOUT               
+neos-2657525-crna     Xpress                OPTIMAL               159633.078458ms       
+neos-3046601-motu     COPT                  OPTIMAL               123.782625ms          
+neos-3046601-motu     CPLEX                 FAILED                TIMEOUT               
+neos-3046601-motu     HiGHS                 FAILED                TIMEOUT               
+neos-3046601-motu     Xpress                OPTIMAL               95.531542ms           
+neos-3046615-murg     COPT                  OPTIMAL               1212.747375ms         
+neos-3046615-murg     CPLEX                 FAILED                TIMEOUT               
+neos-3046615-murg     HiGHS                 FAILED                TIMEOUT               
+neos-3046615-murg     Xpress                OPTIMAL               988.379958ms          
+neos-3072252-nete     COPT                  OPTIMAL               9777.563958ms         
+neos-3072252-nete     CPLEX                 OPTIMAL               954.030167ms          
+neos-3072252-nete     HiGHS                 FAILED                TIMEOUT               
+neos-3072252-nete     Xpress                OPTIMAL               615.724834ms          
+neos-3610040-iskar    COPT                  OPTIMAL               136.909625ms          
+neos-3610040-iskar    CPLEX                 OPTIMAL               26.881667ms           
+neos-3610040-iskar    HiGHS                 OPTIMAL               765.251041ms          
+neos-3610040-iskar    Xpress                OPTIMAL               66.029833ms           
+neos-3610051-istra    COPT                  OPTIMAL               190.364417ms          
+neos-3610051-istra    CPLEX                 OPTIMAL               52.023542ms           
+neos-3610051-istra    HiGHS                 OPTIMAL               1653.091917ms         
+neos-3610051-istra    Xpress                OPTIMAL               205.323708ms          
+neos-3610173-itata    COPT                  OPTIMAL               168.349875ms          
+neos-3610173-itata    CPLEX                 OPTIMAL               40.997292ms           
+neos-3610173-itata    HiGHS                 OPTIMAL               2024.882042ms         
+neos-3610173-itata    Xpress                OPTIMAL               180.924083ms          
+neos-3611447-jijia    COPT                  OPTIMAL               100.765459ms          
+neos-3611447-jijia    CPLEX                 OPTIMAL               36.5465ms             
+neos-3611447-jijia    HiGHS                 OPTIMAL               833.291083ms          
+neos-3611447-jijia    Xpress                OPTIMAL               107.359083ms          
+neos-3611689-kaihu    COPT                  OPTIMAL               141.722542ms          
+neos-3611689-kaihu    CPLEX                 OPTIMAL               58.343917ms           
+neos-3611689-kaihu    HiGHS                 OPTIMAL               900.054833ms          
+neos-3611689-kaihu    Xpress                OPTIMAL               172.977084ms          
+neos-3754480-nidda    COPT                  FAILED                TIMEOUT               
+neos-3754480-nidda    CPLEX                 FAILED                TIMEOUT               
+neos-3754480-nidda    HiGHS                 FAILED                TIMEOUT               
+neos-3754480-nidda    Xpress                OPTIMAL               161757.170416ms       
+neos-5140963-mincio   COPT                  OPTIMAL               140725.362708ms       
+neos-5140963-mincio   CPLEX                 OPTIMAL               125598.008417ms       
+neos-5140963-mincio   HiGHS                 FAILED                TIMEOUT               
+neos-5140963-mincio   Xpress                OPTIMAL               110781.48475ms        
+neos-5192052-neckar   COPT                  OPTIMAL               10.063042ms           
+neos-5192052-neckar   CPLEX                 OPTIMAL               2.868334ms            
+neos-5192052-neckar   HiGHS                 OPTIMAL               18.036708ms           
+neos-5192052-neckar   Xpress                OPTIMAL               3.049083ms            
+neos-911880           COPT                  OPTIMAL               2290.535458ms         
+neos-911880           CPLEX                 OPTIMAL               3191.895125ms         
+neos-911880           HiGHS                 OPTIMAL               8767.699333ms         
+neos-911880           Xpress                OPTIMAL               703.15475ms           
+neos-911970           COPT                  OPTIMAL               1907.909542ms         
+neos-911970           CPLEX                 OPTIMAL               651.046875ms          
+neos-911970           HiGHS                 OPTIMAL               3914.941542ms         
+neos-911970           Xpress                OPTIMAL               698.280292ms          
+neos-942830           COPT                  OPTIMAL               29501.33825ms         
+neos-942830           CPLEX                 OPTIMAL               36556.58775ms         
+neos-942830           HiGHS                 FAILED                TIMEOUT               
+neos-942830           Xpress                OPTIMAL               125341.674709ms       
+neos15                COPT                  OPTIMAL               89989.768416ms        
+neos15                CPLEX                 OPTIMAL               36260.913792ms        
+neos15                HiGHS                 OPTIMAL               153730.3325ms         
+neos15                Xpress                OPTIMAL               55543.897458ms        
+neos17                COPT                  OPTIMAL               1495.113625ms         
+neos17                CPLEX                 OPTIMAL               488.448334ms          
+neos17                HiGHS                 OPTIMAL               3296.692833ms         
+neos17                Xpress                OPTIMAL               691.033792ms          
+neos5                 COPT                  OPTIMAL               23502.953459ms        
+neos5                 CPLEX                 OPTIMAL               9587.864417ms         
+neos5                 HiGHS                 OPTIMAL               59049.998292ms        
+neos5                 Xpress                OPTIMAL               10387.546ms           
+newdano               COPT                  OPTIMAL               280333.426375ms       
+newdano               CPLEX                 OPTIMAL               53426.773625ms        
+newdano               HiGHS                 FAILED                TIMEOUT               
+newdano               Xpress                OPTIMAL               106949.561458ms       
+nexp-50-20-1-1        COPT                  OPTIMAL               60.091667ms           
+nexp-50-20-1-1        CPLEX                 OPTIMAL               20.534333ms           
+nexp-50-20-1-1        HiGHS                 OPTIMAL               26.527875ms           
+nexp-50-20-1-1        Xpress                OPTIMAL               15.337917ms           
+noswot                COPT                  OPTIMAL               12710.003958ms        
+noswot                CPLEX                 OPTIMAL               1288.674541ms         
+noswot                HiGHS                 OPTIMAL               42935.253375ms        
+noswot                Xpress                OPTIMAL               619.315208ms          
+opt1217               COPT                  OPTIMAL               65.620542ms           
+opt1217               CPLEX                 OPTIMAL               24.327792ms           
+opt1217               HiGHS                 OPTIMAL               78.325334ms           
+opt1217               Xpress                OPTIMAL               53.570459ms           
+p0033                 COPT                  OPTIMAL               17.217625ms           
+p0033                 CPLEX                 OPTIMAL               2.875209ms            
+p0033                 HiGHS                 OPTIMAL               10.170542ms           
+p0033                 Xpress                OPTIMAL               7.071833ms            
+p0040                 COPT                  OPTIMAL               2.820083ms            
+p0040                 CPLEX                 OPTIMAL               1.118125ms            
+p0040                 HiGHS                 OPTIMAL               3.072084ms            
+p0040                 Xpress                OPTIMAL               1.122208ms            
+p0201                 COPT                  OPTIMAL               40.343167ms           
+p0201                 CPLEX                 OPTIMAL               36.880083ms           
+p0201                 HiGHS                 OPTIMAL               476.124209ms          
+p0201                 Xpress                OPTIMAL               268.513666ms          
+p0282                 COPT                  OPTIMAL               93.482292ms           
+p0282                 CPLEX                 OPTIMAL               18.321917ms           
+p0282                 HiGHS                 OPTIMAL               99.768209ms           
+p0282                 Xpress                OPTIMAL               32.784875ms           
+p0291                 COPT                  OPTIMAL               23.432166ms           
+p0291                 CPLEX                 OPTIMAL               4.020917ms            
+p0291                 HiGHS                 OPTIMAL               15.34025ms            
+p0291                 Xpress                OPTIMAL               12.355209ms           
+p0548                 COPT                  OPTIMAL               32.975084ms           
+p0548                 CPLEX                 OPTIMAL               17.678958ms           
+p0548                 HiGHS                 OPTIMAL               34.993917ms           
+p0548                 Xpress                OPTIMAL               37.416417ms           
+p80x400b              COPT                  FAILED                TIMEOUT               
+p80x400b              CPLEX                 OPTIMAL               46938.192375ms        
+p80x400b              HiGHS                 FAILED                TIMEOUT               
+p80x400b              Xpress                OPTIMAL               95387.160334ms        
+pigeon-08             COPT                  OPTIMAL               35.154834ms           
+pigeon-08             CPLEX                 OPTIMAL               472.999875ms          
+pigeon-08             HiGHS                 OPTIMAL               10687.381375ms        
+pigeon-08             Xpress                OPTIMAL               183.8645ms            
+pigeon-10             COPT                  OPTIMAL               62.27475ms            
+pigeon-10             CPLEX                 OPTIMAL               35.945042ms           
+pigeon-10             HiGHS                 FAILED                TIMEOUT               
+pigeon-10             Xpress                OPTIMAL               71.964125ms           
+pipex                 COPT                  OPTIMAL               39.999042ms           
+pipex                 CPLEX                 OPTIMAL               18.011333ms           
+pipex                 HiGHS                 OPTIMAL               38.214375ms           
+pipex                 Xpress                OPTIMAL               26.254459ms           
+pk1                   COPT                  OPTIMAL               2937.530917ms         
+pk1                   CPLEX                 OPTIMAL               2979.66275ms          
+pk1                   HiGHS                 OPTIMAL               117658.08175ms        
+pk1                   Xpress                OPTIMAL               5043.611ms            
+pp08a                 COPT                  OPTIMAL               124.257416ms          
+pp08a                 CPLEX                 OPTIMAL               71.845917ms           
+pp08a                 HiGHS                 OPTIMAL               669.941333ms          
+pp08a                 Xpress                OPTIMAL               164.525541ms          
+pp08aCUTS             COPT                  OPTIMAL               271.491792ms          
+pp08aCUTS             CPLEX                 OPTIMAL               77.831334ms           
+pp08aCUTS             HiGHS                 OPTIMAL               873.907958ms          
+pp08aCUTS             Xpress                OPTIMAL               234.557375ms          
+prod1                 COPT                  OPTIMAL               2866.910875ms         
+prod1                 CPLEX                 OPTIMAL               1497.055167ms         
+prod1                 HiGHS                 OPTIMAL               14315.771417ms        
+prod1                 Xpress                OPTIMAL               1150.373125ms         
+prod2                 COPT                  OPTIMAL               14804.305833ms        
+prod2                 CPLEX                 OPTIMAL               8912.669792ms         
+prod2                 HiGHS                 OPTIMAL               67901.443042ms        
+prod2                 Xpress                OPTIMAL               16574.303416ms        
+r50x360               COPT                  OPTIMAL               2613.36425ms          
+r50x360               CPLEX                 OPTIMAL               1707.371ms            
+r50x360               HiGHS                 OPTIMAL               19138.489ms           
+r50x360               Xpress                OPTIMAL               2990.86725ms          
+ran12x21              COPT                  OPTIMAL               4595.0005ms           
+ran12x21              CPLEX                 OPTIMAL               935.910208ms          
+ran12x21              HiGHS                 OPTIMAL               10480.286208ms        
+ran12x21              Xpress                OPTIMAL               1415.978709ms         
+ran13x13              COPT                  OPTIMAL               2077.50475ms          
+ran13x13              CPLEX                 OPTIMAL               584.268709ms          
+ran13x13              HiGHS                 OPTIMAL               8762.696083ms         
+ran13x13              Xpress                OPTIMAL               642.536125ms          
+ran14x18              COPT                  OPTIMAL               55018.605333ms        
+ran14x18              CPLEX                 OPTIMAL               23443.878292ms        
+ran14x18              HiGHS                 FAILED                TIMEOUT               
+ran14x18              Xpress                OPTIMAL               25221.638458ms        
+ran14x18-disj-8       COPT                  OPTIMAL               53200.241375ms        
+ran14x18-disj-8       CPLEX                 OPTIMAL               26836.319125ms        
+ran14x18-disj-8       HiGHS                 FAILED                TIMEOUT               
+ran14x18-disj-8       Xpress                OPTIMAL               22175.201917ms        
+ran16x16              COPT                  OPTIMAL               5821.785959ms         
+ran16x16              CPLEX                 OPTIMAL               2798.716167ms         
+ran16x16              HiGHS                 OPTIMAL               33529.68075ms         
+ran16x16              Xpress                OPTIMAL               3013.288375ms         
+rgn                   COPT                  OPTIMAL               230.673291ms          
+rgn                   CPLEX                 OPTIMAL               17.766125ms           
+rgn                   HiGHS                 OPTIMAL               125.119125ms          
+rgn                   Xpress                OPTIMAL               18.671125ms           
+rlp1                  COPT                  OPTIMAL               54117.870667ms        
+rlp1                  CPLEX                 OPTIMAL               11.029875ms           
+rlp1                  HiGHS                 OPTIMAL               164.141292ms          
+rlp1                  Xpress                OPTIMAL               12.352042ms           
+rout                  COPT                  OPTIMAL               1778.981084ms         
+rout                  CPLEX                 OPTIMAL               1115.625333ms         
+rout                  HiGHS                 OPTIMAL               19141.4235ms          
+rout                  Xpress                OPTIMAL               789.415708ms          
+sample2               COPT                  OPTIMAL               15.523583ms           
+sample2               CPLEX                 OPTIMAL               3.653125ms            
+sample2               HiGHS                 OPTIMAL               10.79725ms            
+sample2               Xpress                OPTIMAL               10.83675ms            
+sentoy                COPT                  OPTIMAL               61.271833ms           
+sentoy                CPLEX                 OPTIMAL               11.313334ms           
+sentoy                HiGHS                 OPTIMAL               106.671ms             
+sentoy                Xpress                OPTIMAL               37.924875ms           
+set1al                COPT                  OPTIMAL               71.229792ms           
+set1al                CPLEX                 OPTIMAL               19.228667ms           
+set1al                HiGHS                 OPTIMAL               47.536666ms           
+set1al                Xpress                OPTIMAL               19.062042ms           
+set1ch                COPT                  OPTIMAL               259.307208ms          
+set1ch                CPLEX                 OPTIMAL               71.515625ms           
+set1ch                HiGHS                 OPTIMAL               249.531084ms          
+set1ch                Xpress                OPTIMAL               121.19775ms           
+set1cl                COPT                  OPTIMAL               37.595333ms           
+set1cl                CPLEX                 OPTIMAL               12.277458ms           
+set1cl                HiGHS                 OPTIMAL               37.4485ms             
+set1cl                Xpress                OPTIMAL               6.983292ms            
+sp150x300d            COPT                  OPTIMAL               57.115791ms           
+sp150x300d            CPLEX                 OPTIMAL               36.988666ms           
+sp150x300d            HiGHS                 OPTIMAL               62.070833ms           
+sp150x300d            Xpress                OPTIMAL               21.672459ms           
+stein15               COPT                  OPTIMAL               19.067458ms           
+stein15               CPLEX                 OPTIMAL               3.333084ms            
+stein15               HiGHS                 OPTIMAL               17.321625ms           
+stein15               Xpress                OPTIMAL               16.42425ms            
+stein27               COPT                  OPTIMAL               54.551541ms           
+stein27               CPLEX                 OPTIMAL               11.324625ms           
+stein27               HiGHS                 OPTIMAL               331.54175ms           
+stein27               Xpress                OPTIMAL               29.874834ms           
+stein45               COPT                  OPTIMAL               1670.946375ms         
+stein45               CPLEX                 OPTIMAL               647.1405ms            
+stein45               HiGHS                 OPTIMAL               13455.444042ms        
+stein45               Xpress                OPTIMAL               1000.262042ms         
+stein9                COPT                  OPTIMAL               16.061542ms           
+stein9                CPLEX                 OPTIMAL               1.717125ms            
+stein9                HiGHS                 OPTIMAL               7.712667ms            
+stein9                Xpress                OPTIMAL               0.259083ms            
+supportcase14         COPT                  OPTIMAL               17.535416ms           
+supportcase14         CPLEX                 OPTIMAL               12.835084ms           
+supportcase14         HiGHS                 OPTIMAL               52.629125ms           
+supportcase14         Xpress                OPTIMAL               17.278709ms           
+supportcase16         COPT                  OPTIMAL               24.413417ms           
+supportcase16         CPLEX                 OPTIMAL               10.821042ms           
+supportcase16         HiGHS                 OPTIMAL               27.590916ms           
+supportcase16         Xpress                OPTIMAL               18.084583ms           
+supportcase20         COPT                  FAILED                TIMEOUT               
+supportcase20         CPLEX                 OPTIMAL               33394.058167ms        
+supportcase20         HiGHS                 FAILED                TIMEOUT               
+supportcase20         Xpress                OPTIMAL               204.973208ms          
+supportcase26         COPT                  OPTIMAL               234833.742292ms       
+supportcase26         CPLEX                 OPTIMAL               61305.748375ms        
+supportcase26         HiGHS                 FAILED                TIMEOUT               
+supportcase26         Xpress                OPTIMAL               15860.113333ms        
+timtab1               COPT                  OPTIMAL               18100.996291ms        
+timtab1               CPLEX                 OPTIMAL               7083.461459ms         
+timtab1               HiGHS                 OPTIMAL               28777.962166ms        
+timtab1               Xpress                OPTIMAL               3435.888667ms         
+timtab1CUTS           COPT                  OPTIMAL               8093.951292ms         
+timtab1CUTS           CPLEX                 OPTIMAL               4108.283792ms         
+timtab1CUTS           HiGHS                 OPTIMAL               33684.029542ms        
+timtab1CUTS           Xpress                OPTIMAL               2071.072125ms         
+timtab2               COPT                  FAILED                TIMEOUT               
+timtab2               CPLEX                 FAILED                TIMEOUT               
+timtab2               HiGHS                 FAILED                TIMEOUT               
+timtab2               Xpress                FAILED                TIMEOUT               
+vpm1                  COPT                  OPTIMAL               21.410125ms           
+vpm1                  CPLEX                 OPTIMAL               5.597459ms            
+vpm1                  HiGHS                 OPTIMAL               8.622292ms            
+vpm1                  Xpress                OPTIMAL               4.972584ms            
+vpm2                  COPT                  OPTIMAL               105.943083ms          
+vpm2                  CPLEX                 OPTIMAL               35.529125ms           
+vpm2                  HiGHS                 OPTIMAL               1123.467375ms         
+vpm2                  Xpress                OPTIMAL               123.806833ms          
+
+Models Solved
+=====================================================================
+COPT                  133 / 148             90%                   
+CPLEX                 133 / 148             90%                   
+HiGHS                 108 / 148             73%                   
+Xpress                135 / 148             91%                   

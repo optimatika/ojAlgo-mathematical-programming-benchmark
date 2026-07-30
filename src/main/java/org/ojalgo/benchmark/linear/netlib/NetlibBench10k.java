@@ -27,12 +27,14 @@ public final class NetlibBench10k extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
+        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.SCIP, Contender.HIGHS);
 
         configuration.maxProbSize = 10_000;
         configuration.pathPrefix = "/optimisation/netlib/";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
+        configuration.parallelism = Parallelism.EIGHT;
+
+        AbstractNetlib.loadExpectedValues(configuration);
 
         AbstractNetlib.doBenchmark(configuration);
     }
