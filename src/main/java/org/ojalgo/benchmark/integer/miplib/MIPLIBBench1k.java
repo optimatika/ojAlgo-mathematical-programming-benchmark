@@ -33,7 +33,7 @@ public final class MIPLIBBench1k extends AbstractMIPLIB {
         configuration.pathPrefix = "/optimisation/MIPLIB/";
         configuration.pathSuffix = ".mps";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
+        configuration.parallelism = Parallelism.EIGHT;
         configuration.maxIterations = 10;
 
         AbstractMIPLIB.doBenchmark(configuration);
