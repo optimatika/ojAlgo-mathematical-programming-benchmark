@@ -34,6 +34,8 @@ public final class NetlibBench1k extends AbstractNetlib {
         configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.ONE;
 
+        AbstractNetlib.loadExpectedValues(configuration);
+
         AbstractNetlib.doBenchmark(configuration);
     }
 

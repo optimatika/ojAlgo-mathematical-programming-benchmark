@@ -39,6 +39,8 @@ public final class NetlibInvestigate extends AbstractNetlib {
                 "GREENBEA", "GREENBEB", "MAROS", "MAROS-R7", "NESM", "PDS-02", "PEROLD", "PILOT", "PILOT-JA", "PILOT-WE", "PILOT4", "PILOT87", "PILOTNOV",
                 "QAP12", "QAP8", "SCSD8", "TRUSS", "WOOD1P", "WOODW", "AGG2", "GROW22", "SCTAP1", "STAIR", "ISRAEL");
 
+        AbstractNetlib.loadExpectedValues(configuration);
+
         AbstractNetlib.doBenchmark(configuration);
     }
 

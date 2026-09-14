@@ -19,23 +19,33 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.linear.netlib;
+package org.ojalgo.benchmark.integer.miplib;
+
+import java.util.Set;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class Netlib4Oj extends AbstractNetlib {
+/**
+ * A subset of the 94 MIPLIB models in ojAlgo's "easy set" that have caused problems.
+ */
+public final class MIPLIBTheEasySetStep2 extends AbstractMIPLIB {
+
+    public static final Set<String> MODELS = Set.of("blend2", "bm23", "lseu", "misc02", "misc03", "opt1217", "enigma", "p0291", "22433", "p0548", "pk1",
+            "neos-3610040-iskar", "neos-3610173-itata", "sentoy");
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE, Contender.OJALGO_LP_DUAL_SPARSE,
-                Contender.OJALGO_LP_DUAL_DENSE);
+        Configuration configuration = new Configuration(Contender.OJALGO_MIP, Contender.SCIP, Contender.HIGHS, Contender.CPLEX);
 
-        configuration.maxProbSize = 11_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
-        configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.FOUR;
+        configuration.investigate = MODELS;
 
-        AbstractNetlib.doBenchmark(configuration);
+        configuration.pathPrefix = "/optimisation/MIPLIB/";
+        configuration.pathSuffix = ".mps";
+        configuration.refeenceSolver = Contender.CPLEX;
+        configuration.parallelism = Parallelism.TWO;
+        configuration.maxProbSize = 1_000;
+
+        AbstractMIPLIB.doBenchmark(configuration);
     }
 
 }
