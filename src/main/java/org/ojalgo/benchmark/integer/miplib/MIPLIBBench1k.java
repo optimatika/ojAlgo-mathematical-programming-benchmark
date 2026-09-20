@@ -27,14 +27,14 @@ public final class MIPLIBBench1k extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.COPT, Contender.HIGHS, Contender.CPLEX, Contender.XPRESS);
+        Configuration configuration = new Configuration(Contender.COPT, Contender.HIGHS, Contender.SCIP, Contender.CPLEX, Contender.XPRESS, Contender.CPSAT);
 
         configuration.maxProbSize = 1_000;
         configuration.pathPrefix = "/optimisation/MIPLIB/";
         configuration.pathSuffix = ".mps";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.TWO;
-        configuration.maxIterations = 10;
+        configuration.parallelism = Parallelism.FOUR;
+        configuration.maxIterations = 3;
 
         AbstractMIPLIB.doBenchmark(configuration);
     }

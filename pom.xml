@@ -16,7 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.java>25</version.java>
-        <version.org.ojalgo>57.3.0</version.org.ojalgo>
+        <version.org.ojalgo>57.4.0-SNAPSHOT</version.org.ojalgo>
         <version.org.openjdk.jmh>1.37</version.org.openjdk.jmh>
         <uberjar.name>ojmpb</uberjar.name>
     </properties>
@@ -106,6 +106,31 @@
             <groupId>org.ojalgo</groupId>
             <artifactId>ojalgo-xpress</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ojalgo</groupId>
+            <artifactId>ojalgo-cpsat</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cplex</groupId>
+            <artifactId>cplex</artifactId>
+            <version>22.2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>mosek</groupId>
+            <artifactId>mosek</artifactId>
+            <version>11.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>copt</groupId>
+            <artifactId>copt</artifactId>
+            <version>8.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fico.xpress</groupId>
+            <artifactId>xprs</artifactId>
+            <version>47.01</version>
         </dependency>
     </dependencies>
     <build>

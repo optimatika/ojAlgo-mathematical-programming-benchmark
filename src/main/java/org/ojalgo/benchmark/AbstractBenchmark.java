@@ -67,9 +67,11 @@ import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.clarabel.SolverClarabel;
 import org.ojalgo.optimisation.solver.copt.SolverCOPT;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
+import org.ojalgo.optimisation.solver.cpsat.SolverCPSAT;
 import org.ojalgo.optimisation.solver.highs.SolverHiGHS;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
+import org.ojalgo.optimisation.solver.mosek.SolverMosek;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
 import org.ojalgo.optimisation.solver.scip.SolverSCIP;
 import org.ojalgo.optimisation.solver.ssclp.SolverSSCLP;
@@ -145,10 +147,13 @@ public abstract class AbstractBenchmark {
 
         public static final String ACM = "ACM";
         public static final String CLARABEL = "Clarabel";
+        public static final String COPT = "COPT";
         public static final String CPLEX = "CPLEX";
+        public static final String CPSAT = "CP-SAT";
         public static final String HIGHS = "HiGHS";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
+        public static final String MOSEK = "Mosek";
         public static final String OJALGO_LP = "ojAlgo-LP";
         public static final String OJALGO_LP_DUAL_DENSE = "ojAlgo-LP-dual-D";
         public static final String OJALGO_LP_DUAL_SPARSE = "ojAlgo-LP-dual-S";
@@ -178,7 +183,6 @@ public abstract class AbstractBenchmark {
         public static final String ORTOOLS = "OR-Tools";
         public static final String SCIP = "SCIP";
         public static final String SSCLP = "SSC-LP";
-        public static final String COPT = "COPT";
         public static final String XPRESS = "Xpress";
     }
 
@@ -253,6 +257,11 @@ public abstract class AbstractBenchmark {
          */
         FAILED,
         /**
+         * Reported a solution that does not satisfy the model's constraints. Distinct from WRONG: the
+         * objective value can still agree with the reference while the solution itself is infeasible.
+         */
+        INVALID,
+        /**
          * Hangs or takes too long
          */
         TIMEOUT,
@@ -263,12 +272,7 @@ public abstract class AbstractBenchmark {
         /**
          * Does not match the expected value, or the reference solver
          */
-        WRONG,
-        /**
-         * Reported a solution that does not satisfy the model's constraints. Distinct from WRONG: the
-         * objective value can still agree with the reference while the solution itself is infeasible.
-         */
-        INVALID;
+        WRONG;
     }
 
     static final class ModelSize {
@@ -440,13 +444,14 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.ACM, () -> SolverACM.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, () -> SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put(Contender.CPLEX, () -> SolverCPLEX.INTEGRATION);
+        INTEGRATIONS.put(Contender.CPSAT, () -> SolverCPSAT.INTEGRATION);
         INTEGRATIONS.put(Contender.ORTOOLS, () -> SolverORTools.INTEGRATION);
         INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.experimental = true;
         }));
         // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.JOPTIMIZER, () -> SolverJOptimizer.INTEGRATION);
-        // INTEGRATIONS.put("Mosek", SolverMosek.INTEGRATION);
+        INTEGRATIONS.put(Contender.MOSEK, () -> SolverMosek.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_LP, () -> LinearSolver.INTEGRATION);
         INTEGRATIONS.put(Contender.OJALGO_MIP, () -> IntegerSolver.INTEGRATION);
@@ -803,7 +808,7 @@ public abstract class AbstractBenchmark {
                 }
             }
 
-            BasicLogger.error("Error working with {}!", modelSolverPair);
+            BasicLogger.error(cause, "Error working with {}!", modelSolverPair);
 
             ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
             mainResults.add(FAILED);

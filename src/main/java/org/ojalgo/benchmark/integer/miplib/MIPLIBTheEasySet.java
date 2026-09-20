@@ -32,10 +32,10 @@ import org.ojalgo.concurrent.Parallelism;
  */
 public final class MIPLIBTheEasySet extends AbstractMIPLIB {
 
-    public static final Set<String> MODELS = Set.of("22433", "23588", "aflow30a", "air01", "beavma", "bell3a", "bell3b", "bell4", "bell5", "bienst1", "bienst2", "blend2",
-            "bm23", "bppc8-02", "cracpb1", "dcmulti", "dfn-gwin-UUM", "egout", "enigma", "enlight13", "enlight8", "enlight_hard", "exp-1-500-5-5", "f2gap40400",
-            "fixnet3", "fixnet4", "fixnet6", "flugpl", "gen", "gen-ip021", "gen-ip036", "gr4x6", "graphdraw-gemcutter", "gt2", "ic97_tension", "lseu",
-            "markshare_4_0", "mas76", "mik-250-1-100-1", "mik-250-20-75-1", "mik-250-20-75-2", "mik-250-20-75-3", "mik-250-20-75-4", "mik-250-20-75-5",
+    public static final Set<String> MODELS = Set.of("22433", "23588", "aflow30a", "air01", "beavma", "bell3a", "bell3b", "bell4", "bell5", "bienst1", "bienst2",
+            "blend2", "bm23", "bppc8-02", "cracpb1", "dcmulti", "dfn-gwin-UUM", "egout", "enigma", "enlight13", "enlight8", "enlight_hard", "exp-1-500-5-5",
+            "f2gap40400", "fixnet3", "fixnet4", "fixnet6", "flugpl", "gen", "gen-ip021", "gen-ip036", "gr4x6", "graphdraw-gemcutter", "gt2", "ic97_tension",
+            "lseu", "markshare_4_0", "mas76", "mik-250-1-100-1", "mik-250-20-75-1", "mik-250-20-75-2", "mik-250-20-75-3", "mik-250-20-75-4", "mik-250-20-75-5",
             "misc01", "misc02", "misc03", "misc05", "misc07", "mod008", "mod013", "modglob", "neos-1425699", "neos-1430701", "neos-2624317-amur",
             "neos-3610040-iskar", "neos-3610051-istra", "neos-3610173-itata", "neos-3611447-jijia", "neos-3611689-kaihu", "neos-5192052-neckar", "neos-911880",
             "neos-911970", "neos17", "neos5", "nexp-50-20-1-1", "noswot", "opt1217", "p0033", "p0040", "p0201", "p0282", "p0291", "p0548", "pigeon-08", "pipex",
@@ -45,13 +45,13 @@ public final class MIPLIBTheEasySet extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_MIP, Contender.SCIP, Contender.HIGHS, Contender.CPLEX);
+        Configuration configuration = new Configuration(Contender.OJALGO_MIP, Contender.SCIP, Contender.HIGHS, Contender.CPSAT);
 
         configuration.investigate = MODELS;
 
         configuration.pathPrefix = "/optimisation/MIPLIB/";
         configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = Contender.CPLEX;
+        configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.TWO;
         configuration.maxProbSize = 1_000;
 
