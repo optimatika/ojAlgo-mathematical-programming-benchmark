@@ -160,6 +160,10 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_LP_PRIM_DENSE = "ojAlgo-LP-prim-D";
         public static final String OJALGO_LP_PRIM_SPARSE = "ojAlgo-LP-prim-S";
         public static final String OJALGO_MIP = "ojAlgo-MIP";
+        public static final String OJALGO_MIP_DUAL_DENSE = "ojAlgo-MIP-dual-D";
+        public static final String OJALGO_MIP_DUAL_SPARSE = "ojAlgo-MIP-dual-S";
+        public static final String OJALGO_MIP_PRIM_DENSE = "ojAlgo-MIP-prim-D";
+        public static final String OJALGO_MIP_PRIM_SPARSE = "ojAlgo-MIP-prim-S";
         public static final String OJALGO_QP = "ojAlgo-QP";
         public static final String OJALGO_QP_ADMM = "ojAlgo-QP-ADMM";
         public static final String OJALGO_QP_ASET = "ojAlgo-QP-ASET";
@@ -478,6 +482,23 @@ public abstract class AbstractBenchmark {
             opt.sparse = Boolean.FALSE;
         }));
         INTEGRATIONS.put(Contender.OJALGO_LP_PRIM_SPARSE, () -> LinearSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().primal();
+            opt.sparse = Boolean.TRUE;
+        }));
+
+        INTEGRATIONS.put(Contender.OJALGO_MIP_DUAL_DENSE, () -> IntegerSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().dual();
+            opt.sparse = Boolean.FALSE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_MIP_DUAL_SPARSE, () -> IntegerSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().dual();
+            opt.sparse = Boolean.TRUE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_MIP_PRIM_DENSE, () -> IntegerSolver.INTEGRATION.withOptionsModifier(opt -> {
+            opt.linear().primal();
+            opt.sparse = Boolean.FALSE;
+        }));
+        INTEGRATIONS.put(Contender.OJALGO_MIP_PRIM_SPARSE, () -> IntegerSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().primal();
             opt.sparse = Boolean.TRUE;
         }));

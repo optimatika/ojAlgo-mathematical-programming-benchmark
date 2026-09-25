@@ -27,8 +27,10 @@ public final class Netlib4oj extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE, Contender.OJALGO_LP_DUAL_SPARSE,
-                Contender.OJALGO_LP_DUAL_DENSE);
+        //        Configuration configuration = new Configuration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE, Contender.OJALGO_LP_DUAL_SPARSE,
+        //                Contender.OJALGO_LP_DUAL_DENSE);
+
+        Configuration configuration = new Configuration(Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
 
         configuration.maxProbSize = 10_000;
         configuration.pathPrefix = "/optimisation/netlib/";

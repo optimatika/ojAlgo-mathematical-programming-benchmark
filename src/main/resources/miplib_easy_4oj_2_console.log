@@ -1,0 +1,1104 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 2, threads per worker: 9
+
+
+Iteration 1 with 412 model/solver pairs remaining 2026-09-24T20:33:33.670192Z
+-----------------------------------------------------------------------------
+blend2                ojAlgo-MIP-dual-D     Solved                900.325833ms          7.598985              
+set1al                ojAlgo-MIP-prim-S     Solved                1828.621167ms         15869.75              
+p0201                 ojAlgo-MIP-prim-D     Solved                1347.771458ms         7615.0                
+mik-250-20-75-5       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+timtab1CUTS           ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+blend2                ojAlgo-MIP-dual-S     Solved                952.700833ms          7.598985              
+modglob               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein9                ojAlgo-MIP-dual-S     Solved                5.509916ms            5.0                   
+egout                 ojAlgo-MIP-dual-D     Solved                327.4065ms            568.1007              
+p0201                 ojAlgo-MIP-prim-S     Solved                13953.208583ms        7615.0                
+egout                 ojAlgo-MIP-dual-S     Solved                321.000041ms          568.1007000000001     
+mik-250-20-75-4       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+timtab1CUTS           ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+pp08a                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+ic97_tension          ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+fixnet3               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-3       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+ic97_tension          ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+fixnet3               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-911970           ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+beavma                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bm23                  ojAlgo-MIP-dual-D     Solved                10.755291ms           34.0                  
+beavma                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+f2gap40400            ojAlgo-MIP-dual-S     Solved                184.210792ms          20772.0               
+lseu                  ojAlgo-MIP-dual-D     Solved                91.885084ms           1120.0                
+set1cl                ojAlgo-MIP-dual-S     Solved                40.285291ms           6484.25               
+lseu                  ojAlgo-MIP-prim-S     INVALID               UNSTABLE              
+enigma                ojAlgo-MIP-dual-S     Solved                14.225ms              0.0                   
+bm23                  ojAlgo-MIP-dual-S     Solved                3.982ms               34.0                  
+f2gap40400            ojAlgo-MIP-dual-D     Solved                192.245ms             20772.0               
+neos-911970           ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+gen-ip021             ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+lseu                  ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+enigma                ojAlgo-MIP-dual-D     INVALID               UNSTABLE              
+pk1                   ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+set1cl                ojAlgo-MIP-dual-D     Solved                45.529208ms           6484.25               
+pk1                   ojAlgo-MIP-prim-S     INVALID               UNSTABLE              
+mik-250-20-75-5       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+gen-ip021             ojAlgo-MIP-prim-S     INVALID               UNSTABLE              
+enlight13             ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+set1cl                ojAlgo-MIP-prim-S     Solved                238.519042ms          6484.250000000001     
+vpm1                  ojAlgo-MIP-dual-D     Solved                34725.793458ms        20.0                  
+fixnet3               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+pp08a                 ojAlgo-MIP-dual-D     Solved                58133.039917ms        7350.000000005014     
+ran12x21              ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+bm23                  ojAlgo-MIP-prim-D     WRONG                 35.0                  != 34                 
+neos5                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bppc8-02              ojAlgo-MIP-dual-D     Solved                831.833542ms          506.9999999999999     
+vpm1                  ojAlgo-MIP-dual-S     Solved                119411.073ms          20.0                  
+mik-250-20-75-1       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+ran13x13              ojAlgo-MIP-dual-S     Solved                157570.327542ms       3252.0                
+p0033                 ojAlgo-MIP-dual-S     Solved                9.477583ms            3089.0                
+bm23                  ojAlgo-MIP-prim-S     INVALID               UNSTABLE              
+fixnet3               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+lseu                  ojAlgo-MIP-dual-S     Solved                174.304542ms          1120.0                
+bppc8-02              ojAlgo-MIP-dual-S     Solved                1057.079166ms         507.0                 
+ic97_tension          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ic97_tension          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+pp08a                 ojAlgo-MIP-dual-S     Solved                49602.467209ms        7349.999999992509     
+fixnet6               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-3       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+ran12x21              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mas76                 ojAlgo-MIP-dual-D     Solved                4883.234459ms         40005.05414199994     
+ran13x13              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-2       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+pp08a                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos5                 ojAlgo-MIP-dual-S     Solved                226686.030583ms       15.0                  
+modglob               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mas76                 ojAlgo-MIP-dual-S     Solved                6515.686084ms         40005.05414199998     
+set1al                ojAlgo-MIP-dual-S     Solved                150.904958ms          15869.75              
+timtab1CUTS           ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+fixnet6               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mas76                 ojAlgo-MIP-prim-S     Solved                147638.154042ms       40005.05414199999     
+fixnet6               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos5                 ojAlgo-MIP-dual-D     Solved                275406.34325ms        14.99999999999995     
+vpm2                  ojAlgo-MIP-dual-D     Solved                146413.223917ms       13.75                 
+modglob               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mod013                ojAlgo-MIP-prim-S     Solved                119.58075ms           280.95                
+fixnet4               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+set1al                ojAlgo-MIP-dual-D     Solved                186.926417ms          15869.75              
+sample2               ojAlgo-MIP-dual-S     Solved                23.686417ms           375.0                 
+ran13x13              ojAlgo-MIP-dual-D     Solved                128625.576792ms       3252.0                
+timtab1CUTS           ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+p0033                 ojAlgo-MIP-dual-D     Solved                5.834625ms            3089.0                
+mod013                ojAlgo-MIP-prim-D     Solved                69.776542ms           280.95                
+mik-250-20-75-2       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+set1al                ojAlgo-MIP-prim-D     Solved                370.816292ms          15869.750000000005    
+vpm2                  ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+ran13x13              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ran12x21              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+modglob               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos5                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mod013                ojAlgo-MIP-dual-D     Solved                47.370916ms           280.95                
+sample2               ojAlgo-MIP-dual-D     Solved                17.006417ms           375.0                 
+ran12x21              ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-1       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+dcmulti               ojAlgo-MIP-prim-S     Solved                233692.440125ms       188182.0              
+aflow30a              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mod013                ojAlgo-MIP-dual-S     Solved                32.614ms              280.95                
+mik-250-20-75-2       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+set1ch                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+gt2                   ojAlgo-MIP-prim-D     Solved                181.23175ms           21166.0               
+bell4                 ojAlgo-MIP-prim-D     Solved                249198.164916ms       1.8541957238E7        
+r50x360               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+aflow30a              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+ran16x16              ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+enigma                ojAlgo-MIP-prim-S     Solved                33.836875ms           0.0                   
+nexp-50-20-1-1        ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-2       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+22433                 ojAlgo-MIP-dual-D     Solved                267.449916ms          21476.99999999951     
+r50x360               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+set1ch                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-1-100-1       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ran16x16              ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+sp150x300d            ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+timtab1               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell5                 ojAlgo-MIP-prim-D     Solved                7500.06525ms          8966413.70538         
+mik-250-20-75-3       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+dcmulti               ojAlgo-MIP-prim-D     Solved                4241.008375ms         188182.0              
+fixnet6               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+timtab1               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bell5                 ojAlgo-MIP-prim-S     Solved                287189.664375ms       8966406.49152         
+neos-3611689-kaihu    ojAlgo-MIP-dual-S     Solved                24237.520334ms        118.9999999999637     
+mik-250-20-75-3       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos17                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein15               ojAlgo-MIP-dual-S     Solved                13.521917ms           9.0                   
+pigeon-08             ojAlgo-MIP-dual-D     Solved                51259.305292ms        -7000.0               
+mik-250-20-75-4       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein27               ojAlgo-MIP-dual-S     Solved                123.148083ms          18.0                  
+egout                 ojAlgo-MIP-prim-D     Solved                154.587042ms          568.1007              
+noswot                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3610173-itata    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-1-100-1       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+pigeon-08             ojAlgo-MIP-dual-S     Solved                29856.067625ms        -7000.0               
+rout                  ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+sp150x300d            ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+pigeon-08             ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+p0201                 ojAlgo-MIP-dual-S     Solved                244.04825ms           7615.0                
+neos-3610173-itata    ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-3610173-itata    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+egout                 ojAlgo-MIP-prim-S     Solved                393.830041ms          568.1007              
+noswot                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+stein45               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+22433                 ojAlgo-MIP-dual-S     Solved                133.680792ms          21476.99999999998     
+rout                  ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3610173-itata    ojAlgo-MIP-dual-S     Solved                42085.458584ms        147.9999999999383     
+enigma                ojAlgo-MIP-prim-D     Solved                23.991375ms           0.0                   
+neos17                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+gen-ip021             ojAlgo-MIP-dual-D     Solved                29044.889792ms        2361.4541951916       
+pigeon-08             ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+set1cl                ojAlgo-MIP-prim-D     Solved                196.124334ms          6484.25               
+stein45               ojAlgo-MIP-prim-D     Solved                24950.725167ms        30.0                  
+neos17                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos17                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bienst1               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+gen-ip021             ojAlgo-MIP-dual-S     Solved                33566.157375ms        2361.4541951916       
+air01                 ojAlgo-MIP-prim-D     Solved                50.478792ms           6796.0                
+gen-ip036             ojAlgo-MIP-dual-S     Solved                36994.589083ms        -4606.6796098376      
+rout                  ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-1425699          ojAlgo-MIP-dual-D     Solved                4.271917ms            3.179698977E9         
+rout                  ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+air01                 ojAlgo-MIP-prim-S     Solved                104.158458ms          6796.0                
+mik-250-1-100-1       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+blend2                ojAlgo-MIP-prim-S     WRONG                 8.031306              != 7.598985           
+ran16x16              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-1425699          ojAlgo-MIP-dual-S     Solved                6.156875ms            3.179698977E9         
+r50x360               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+blend2                ojAlgo-MIP-prim-D     WRONG                 8.031306              != 7.598985           
+p0201                 ojAlgo-MIP-dual-D     Solved                206.431792ms          7615.0                
+exp-1-500-5-5         ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+beavma                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein15               ojAlgo-MIP-dual-D     Solved                4.558667ms            9.0                   
+stein27               ojAlgo-MIP-dual-D     Solved                143.06975ms           18.0                  
+gen-ip036             ojAlgo-MIP-dual-D     Solved                30874.82025ms         -4606.6796098376      
+timtab1               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+beavma                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+gen-ip036             ojAlgo-MIP-prim-D     Solved                27002.60275ms         -4605.3733746644      
+mik-250-1-100-1       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+air01                 ojAlgo-MIP-dual-S     Solved                28.207542ms           6796.0                
+mod008                ojAlgo-MIP-dual-D     Solved                126.690708ms          307.0                 
+mod008                ojAlgo-MIP-prim-D     Solved                7652.282125ms         307.0                 
+gen-ip036             ojAlgo-MIP-prim-S     Solved                83234.026708ms        -4605.3733746644      
+timtab1               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+air01                 ojAlgo-MIP-dual-D     Solved                26.766833ms           6796.0                
+mod008                ojAlgo-MIP-prim-S     Solved                8454.717084ms         307.0                 
+exp-1-500-5-5         ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+set1ch                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mod008                ojAlgo-MIP-dual-S     Solved                117.069792ms          307.0                 
+set1ch                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-1425699          ojAlgo-MIP-prim-D     Solved                14.08ms               3.179698977E9         
+ran16x16              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+gt2                   ojAlgo-MIP-dual-D     Solved                21.607625ms           21166.0               
+exp-1-500-5-5         ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+r50x360               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+gt2                   ojAlgo-MIP-dual-S     Solved                20.914125ms           21166.0               
+gt2                   ojAlgo-MIP-prim-S     Solved                471.789791ms          21166.0               
+exp-1-500-5-5         ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+opt1217               ojAlgo-MIP-dual-D     FAILED                UNSTABLE              
+stein45               ojAlgo-MIP-dual-D     Solved                3559.416084ms         30.0                  
+prod1                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+gen                   ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+cracpb1               ojAlgo-MIP-dual-S     Solved                37.790917ms           22199.0               
+misc01                ojAlgo-MIP-dual-D     Solved                26.248333ms           563.4999999999993     
+neos-1425699          ojAlgo-MIP-prim-S     Solved                12.905959ms           3.179698977E9         
+stein45               ojAlgo-MIP-dual-S     Solved                3924.271541ms         30.0                  
+supportcase14         ojAlgo-MIP-prim-D     Solved                97.491167ms           288.0                 
+flugpl                ojAlgo-MIP-dual-D     Solved                2.600042ms            1201500.0             
+gen                   ojAlgo-MIP-prim-D     Solved                22603.101416ms        112313.36271789065    
+noswot                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+misc07                ojAlgo-MIP-prim-D     Solved                31783.055334ms        2809.999999999992     
+neos-5192052-neckar   ojAlgo-MIP-dual-S     Solved                8.806125ms            -1.1670000000000002E7 
+supportcase14         ojAlgo-MIP-prim-S     Solved                790.496333ms          288.0                 
+noswot                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+stein15               ojAlgo-MIP-prim-S     Solved                32.6795ms             9.0                   
+prod2                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+enlight_hard          ojAlgo-MIP-dual-S     Solved                23294.920875ms        37.0                  
+neos-1430701          ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+sentoy                ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+stein27               ojAlgo-MIP-prim-S     Solved                3306.54075ms          18.0                  
+neos-3611689-kaihu    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+misc07                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein15               ojAlgo-MIP-prim-D     Solved                11.712875ms           9.0                   
+opt1217               ojAlgo-MIP-dual-S     FAILED                UNSTABLE              
+stein27               ojAlgo-MIP-prim-D     Solved                261.017ms             18.0                  
+enlight_hard          ojAlgo-MIP-dual-D     Solved                88656.557208ms        37.0                  
+prod1                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-3611689-kaihu    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-1430701          ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+bell5                 ojAlgo-MIP-dual-S     Solved                3019.216792ms         8966406.49152         
+neos-3611447-jijia    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+enlight8              ojAlgo-MIP-dual-D     Solved                923.517042ms          27.0                  
+bienst2               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+23588                 ojAlgo-MIP-dual-D     Solved                285.208375ms          8090.000000000011     
+bell5                 ojAlgo-MIP-dual-D     Solved                1831.188375ms         8966406.49152         
+aflow30a              ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+misc03                ojAlgo-MIP-dual-D     Solved                53.826625ms           3359.999999999994     
+rgn                   ojAlgo-MIP-dual-S     Solved                73.176459ms           82.19999923991978     
+graphdraw-gemcutter   ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+supportcase16         ojAlgo-MIP-prim-D     Solved                161.295625ms          288.0                 
+neos-3611447-jijia    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-dual-D     Solved                296849.073042ms       54.60000000000001     
+prod2                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+sp150x300d            ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+enlight8              ojAlgo-MIP-dual-S     Solved                1189.524875ms         27.0                  
+p0548                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-dual-S     Solved                245804.867459ms       1.8542141198E7        
+misc02                ojAlgo-MIP-dual-S     Solved                11.338542ms           1690.0                
+graphdraw-gemcutter   ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+p0282                 ojAlgo-MIP-prim-D     Solved                704.273ms             258411.0              
+supportcase16         ojAlgo-MIP-prim-S     Solved                1352.289583ms         288.0                 
+bienst1               ojAlgo-MIP-dual-S     Solved                29166.421708ms        46.74999999999998     
+flugpl                ojAlgo-MIP-dual-S     Solved                1.836958ms            1201500.0             
+bell4                 ojAlgo-MIP-dual-D     Solved                30874.166875ms        1.8541825838E7        
+p0040                 ojAlgo-MIP-prim-D     Solved                5.803459ms            62027.0               
+misc02                ojAlgo-MIP-dual-D     Solved                7.181625ms            1689.999999999999     
+p0282                 ojAlgo-MIP-prim-S     Solved                10085.846209ms        258411.0              
+sp150x300d            ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+cracpb1               ojAlgo-MIP-dual-D     Solved                46.752959ms           22199.0               
+rgn                   ojAlgo-MIP-dual-D     Solved                125.430083ms          82.19999923996671     
+misc01                ojAlgo-MIP-dual-S     Solved                41.30375ms            563.4999999999999     
+p0040                 ojAlgo-MIP-prim-S     Solved                10.674958ms           62027.0               
+flugpl                ojAlgo-MIP-prim-S     Solved                5.11875ms             1201500.0             
+22433                 ojAlgo-MIP-prim-S     Solved                96459.524542ms        21477.0               
+bienst1               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bienst1               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+rgn                   ojAlgo-MIP-prim-S     Solved                323.493042ms          82.19999923999355     
+gen                   ojAlgo-MIP-dual-D     Solved                572.731583ms          112313.36271799773    
+flugpl                ojAlgo-MIP-prim-D     Solved                4.767541ms            1201500.0000000002    
+prod2                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+22433                 ojAlgo-MIP-prim-D     Solved                6013.222583ms         21477.0               
+bienst2               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+23588                 ojAlgo-MIP-prim-D     Solved                5786.646667ms         8090.000000000004     
+neos-2624317-amur     ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+p0548                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+dcmulti               ojAlgo-MIP-dual-D     Solved                859.391291ms          188182.0              
+prod1                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3610040-iskar    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+23588                 ojAlgo-MIP-dual-S     Solved                252.412625ms          8089.999999999998     
+neos-3611689-kaihu    ojAlgo-MIP-dual-D     Solved                79641.079292ms        118.9999999999649     
+23588                 ojAlgo-MIP-prim-S     Solved                145770.598875ms       8089.999999999999     
+aflow30a              ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+p0033                 ojAlgo-MIP-prim-D     Solved                8.194292ms            3089.0                
+prod2                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+sentoy                ojAlgo-MIP-dual-D     Solved                41.777833ms           -7772.0               
+neos-5192052-neckar   ojAlgo-MIP-dual-D     Solved                6.736666ms            -1.167000000000001E7  
+p0033                 ojAlgo-MIP-prim-S     Solved                22.383458ms           3089.0                
+neos-5192052-neckar   ojAlgo-MIP-prim-S     Solved                6.014667ms            -1.1669999999999996E7 
+neos-3610040-iskar    ojAlgo-MIP-dual-D     Solved                248419.643833ms       36.99999999988488     
+vpm1                  ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+sentoy                ojAlgo-MIP-prim-S     WRONG                 -7758.0               != -7772              
+prod1                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+dcmulti               ojAlgo-MIP-dual-S     Solved                287.702916ms          188186.49999993257    
+sentoy                ojAlgo-MIP-dual-S     Solved                25.669375ms           -7772.0               
+neos-3610040-iskar    ojAlgo-MIP-dual-S     Solved                165512.140333ms       36.9999999999886      
+sample2               ojAlgo-MIP-prim-D     Solved                9.481916ms            375.00000000000006    
+gen                   ojAlgo-MIP-dual-S     Solved                151.502583ms          112313.36271795914    
+neos-5192052-neckar   ojAlgo-MIP-prim-D     Solved                2.136333ms            -1.1669999999999996E7 
+neos-3610040-iskar    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+vpm1                  ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+sample2               ojAlgo-MIP-prim-S     Solved                40.917167ms           375.00000000000006    
+mik-250-20-75-1       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+vpm2                  ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+pipex                 ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+f2gap40400            ojAlgo-MIP-prim-S     Solved                102316.9235ms         20772.0               
+mik-250-20-75-1       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+p0548                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+supportcase16         ojAlgo-MIP-dual-S     Solved                89.545666ms           288.0                 
+markshare_4_0         ojAlgo-MIP-prim-S     Solved                13653.594875ms        1.0                   
+gr4x6                 ojAlgo-MIP-prim-S     Solved                17.014917ms           202.35                
+bell3b                ojAlgo-MIP-dual-S     Solved                936.543209ms          1.1786925366E7        
+pipex                 ojAlgo-MIP-prim-S     INVALID               UNSTABLE              
+pk1                   ojAlgo-MIP-dual-D     Solved                3943.283958ms         10.99999999999994     
+supportcase16         ojAlgo-MIP-dual-D     Solved                59.41675ms            288.0                 
+bppc8-02              ojAlgo-MIP-prim-S     WRONG                 513.0                 != 506.9999999999998  
+f2gap40400            ojAlgo-MIP-prim-D     Solved                3166.689208ms         20772.0               
+gr4x6                 ojAlgo-MIP-prim-D     Solved                4.169416ms            202.35                
+vpm2                  ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mas76                 ojAlgo-MIP-prim-D     Solved                29680.108834ms        40005.05414199999     
+graphdraw-gemcutter   ojAlgo-MIP-dual-S     Solved                173445.930375ms       7118.5                
+enlight_hard          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-1430701          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+misc07                ojAlgo-MIP-dual-S     Solved                4387.942417ms         2809.99999999999      
+markshare_4_0         ojAlgo-MIP-prim-D     Solved                11488.256125ms        0.99999999999999      
+p0548                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-1430701          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+dfn-gwin-UUM          ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+cracpb1               ojAlgo-MIP-prim-S     Solved                206636.018833ms       22199.0               
+graphdraw-gemcutter   ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+enlight8              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bppc8-02              ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+dfn-gwin-UUM          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+misc01                ojAlgo-MIP-prim-D     Solved                82.188917ms           563.4999999999999     
+enlight13             ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+dfn-gwin-UUM          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+pk1                   ojAlgo-MIP-dual-S     Solved                3545.61575ms          10.99999999999993     
+enlight8              ojAlgo-MIP-prim-D     Solved                161703.985458ms       27.0                  
+p0040                 ojAlgo-MIP-dual-D     Solved                5.507792ms            62027.0               
+p0282                 ojAlgo-MIP-dual-D     Solved                88.972959ms           258411.0              
+neos-911970           ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+misc01                ojAlgo-MIP-prim-S     Solved                339.70775ms           563.5                 
+p0282                 ojAlgo-MIP-dual-S     Solved                101.445708ms          258411.0              
+p0040                 ojAlgo-MIP-dual-S     Solved                1.382667ms            62027.0               
+cracpb1               ojAlgo-MIP-prim-D     Solved                7326.883875ms         22199.0               
+enlight13             ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+dfn-gwin-UUM          ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+rgn                   ojAlgo-MIP-prim-D     Solved                92.454542ms           82.19999923999896     
+neos-911970           ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+p0291                 ojAlgo-MIP-dual-S     Solved                40.58125ms            5223.749              
+neos-3610051-istra    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3611447-jijia    ojAlgo-MIP-dual-D     Solved                114871.489125ms       106.9999999947854     
+enlight13             ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+misc02                ojAlgo-MIP-prim-D     Solved                14.704459ms           1690.0                
+misc05                ojAlgo-MIP-dual-D     Solved                349.735125ms          2984.499999999999     
+misc02                ojAlgo-MIP-prim-S     Solved                29.850208ms           1690.0                
+p0291                 ojAlgo-MIP-dual-D     Solved                56.989875ms           5223.749              
+neos-911880           ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+misc03                ojAlgo-MIP-prim-D     Solved                298.867083ms          3359.999999999993     
+markshare_4_0         ojAlgo-MIP-dual-D     Solved                6108.764583ms         0.99999999999993      
+neos-911880           ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+misc03                ojAlgo-MIP-prim-S     Solved                3820.041083ms         3359.999999999996     
+misc03                ojAlgo-MIP-dual-S     Solved                132.738958ms          3359.999999999999     
+neos-3611447-jijia    ojAlgo-MIP-dual-S     Solved                59225.941334ms        106.9999999998625     
+opt1217               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell3a                ojAlgo-MIP-dual-D     Solved                649.842417ms          878430.316            
+p0291                 ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+pipex                 ojAlgo-MIP-dual-S     Solved                65.083042ms           788.263               
+enlight_hard          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+gr4x6                 ojAlgo-MIP-dual-S     Solved                21.335625ms           202.35                
+misc07                ojAlgo-MIP-dual-D     Solved                4788.089542ms         2809.999999999984     
+supportcase14         ojAlgo-MIP-dual-S     Solved                48.757542ms           288.0                 
+stein9                ojAlgo-MIP-prim-D     Solved                2.760166ms            5.0                   
+markshare_4_0         ojAlgo-MIP-dual-S     Solved                6046.061667ms         0.99999999999997      
+p0291                 ojAlgo-MIP-prim-S     INVALID               UNSTABLE              
+pipex                 ojAlgo-MIP-dual-D     Solved                28.683833ms           788.263               
+gr4x6                 ojAlgo-MIP-dual-D     Solved                1.84925ms             202.35                
+stein9                ojAlgo-MIP-prim-S     Solved                4.472083ms            5.0                   
+bell3b                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+supportcase14         ojAlgo-MIP-dual-D     Solved                56.76775ms            288.0                 
+opt1217               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bell3b                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell3b                ojAlgo-MIP-dual-D     Solved                993.409042ms          1.1786160618E7        
+neos-911880           ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+stein9                ojAlgo-MIP-dual-D     Solved                4.50575ms             5.0                   
+misc05                ojAlgo-MIP-prim-D     Solved                514.6705ms            2984.499999999999     
+neos-3610051-istra    ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bell3a                ojAlgo-MIP-prim-D     Solved                2637.842958ms         878430.316            
+pp08aCUTS             ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell3a                ojAlgo-MIP-dual-S     Solved                606.514125ms          878430.316            
+pp08aCUTS             ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-3610051-istra    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-911880           ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+misc05                ojAlgo-MIP-prim-S     Solved                2729.157667ms         2984.499999999999     
+misc05                ojAlgo-MIP-dual-S     Solved                428.614416ms          2984.499999999799     
+bell3a                ojAlgo-MIP-prim-S     Solved                10491.918583ms        878430.316            
+pp08aCUTS             ojAlgo-MIP-dual-D     Solved                48699.637375ms        7350.00000000725      
+neos-3610051-istra    ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+pp08aCUTS             ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+
+Iteration 2 with 206 model/solver pairs remaining 2026-09-25T05:28:21.603330Z
+-----------------------------------------------------------------------------
+bell5                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+
+Iteration 3 with 203 model/solver pairs remaining 2026-09-25T06:33:04.620785Z
+-----------------------------------------------------------------------------
+set1al                ojAlgo-MIP-prim-S     Time stable           1828.621167ms         15869.75              
+egout                 ojAlgo-MIP-dual-D     Time stable           303.169542ms          568.1007000000001     
+blend2                ojAlgo-MIP-dual-S     Time stable           952.700833ms          7.598985              
+f2gap40400            ojAlgo-MIP-dual-S     Time stable           178.635542ms          20772.0               
+set1cl                ojAlgo-MIP-dual-S     Time stable           31.877125ms           6484.25               
+bm23                  ojAlgo-MIP-dual-S     Time stable           3.58625ms             34.0                  
+vpm1                  ojAlgo-MIP-dual-D     Time stable           34698.344375ms        20.0                  
+bppc8-02              ojAlgo-MIP-dual-D     Time stable           831.833542ms          506.9999999999999     
+pp08a                 ojAlgo-MIP-dual-D     Time stable           58133.039917ms        7350.000000005014     
+p0033                 ojAlgo-MIP-dual-S     Time stable           3.791709ms            3089.0                
+set1al                ojAlgo-MIP-dual-S     Time stable           103.927166ms          15869.75              
+neos5                 ojAlgo-MIP-dual-S     Time stable           226686.030583ms       15.0                  
+mod013                ojAlgo-MIP-prim-S     Time stable           85.1035ms             280.95                
+mod013                ojAlgo-MIP-dual-D     Time stable           14.468792ms           280.95                
+enigma                ojAlgo-MIP-prim-S     Time stable           33.836875ms           0.0                   
+22433                 ojAlgo-MIP-dual-D     Time stable           220.193958ms          21477.00000000001     
+pigeon-08             ojAlgo-MIP-dual-D     Time stable           51259.305292ms        -7000.0               
+stein15               ojAlgo-MIP-dual-S     Time stable           3.628875ms            9.0                   
+p0201                 ojAlgo-MIP-dual-S     Time stable           214.859209ms          7615.0                
+22433                 ojAlgo-MIP-dual-S     Time stable           113.779417ms          21476.99999999998     
+gen-ip021             ojAlgo-MIP-dual-D     Time stable           26999.039583ms        2361.4541951916       
+gen-ip021             ojAlgo-MIP-dual-S     Time stable           33566.157375ms        2361.4541951916       
+air01                 ojAlgo-MIP-prim-S     Time stable           86.43875ms            6796.0                
+gen-ip036             ojAlgo-MIP-dual-S     Time stable           36994.589083ms        -4606.6796098376      
+stein15               ojAlgo-MIP-dual-D     Time stable           1.210292ms            9.0                   
+gen-ip036             ojAlgo-MIP-dual-D     Time stable           30874.82025ms         -4606.6796098376      
+air01                 ojAlgo-MIP-dual-S     Time stable           11.878958ms           6796.0                
+mod008                ojAlgo-MIP-dual-D     Time stable           89.923083ms           307.0                 
+mod008                ojAlgo-MIP-prim-S     Time stable           8454.717084ms         307.0                 
+mod008                ojAlgo-MIP-dual-S     Time stable           81.073833ms           307.0                 
+gt2                   ojAlgo-MIP-dual-D     Time stable           19.239292ms           21166.0               
+cracpb1               ojAlgo-MIP-dual-S     Time stable           30.466834ms           22199.0               
+flugpl                ojAlgo-MIP-dual-D     Time stable           1.013041ms            1201500.0             
+gen-ip036             ojAlgo-MIP-prim-S     Time stable           73253.078667ms        -4605.3733746644      
+gen                   ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+stein15               ojAlgo-MIP-prim-S     Time stable           19.573834ms           9.0                   
+misc07                ojAlgo-MIP-prim-D     Time stable           29118.497042ms        2809.999999999994     
+stein27               ojAlgo-MIP-prim-S     Time stable           2275.70275ms          18.0                  
+enlight8              ojAlgo-MIP-dual-D     Time stable           923.517042ms          27.0                  
+23588                 ojAlgo-MIP-dual-D     Time stable           255.0185ms            8089.999999999998     
+rgn                   ojAlgo-MIP-dual-S     Time stable           73.176459ms           82.19999923991978     
+supportcase16         ojAlgo-MIP-prim-D     Time stable           130.316917ms          288.0                 
+enlight8              ojAlgo-MIP-dual-S     Time stable           1011.822083ms         27.0                  
+p0282                 ojAlgo-MIP-prim-D     Time stable           704.273ms             258411.0              
+bienst1               ojAlgo-MIP-dual-S     Time stable           26458.697917ms        46.74999999999999     
+p0040                 ojAlgo-MIP-prim-S     Time stable           6.952625ms            62027.0               
+gen                   ojAlgo-MIP-dual-D     Time stable           555.876583ms          112313.36271799773    
+22433                 ojAlgo-MIP-prim-D     Time stable           3891.53525ms          21477.0               
+22433                 ojAlgo-MIP-prim-S     Time stable           96459.524542ms        21477.0               
+dcmulti               ojAlgo-MIP-dual-D     Time stable           751.385584ms          188182.0              
+23588                 ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+23588                 ojAlgo-MIP-dual-S     Time stable           252.165458ms          8090.0                
+neos-3611689-kaihu    ojAlgo-MIP-dual-D     Time stable           79641.079292ms        118.9999999999649     
+p0033                 ojAlgo-MIP-prim-D     Time stable           2.858125ms            3089.0                
+p0033                 ojAlgo-MIP-prim-S     Time stable           14.712875ms           3089.0                
+dcmulti               ojAlgo-MIP-dual-S     Time stable           287.702916ms          188186.49999993257    
+sentoy                ojAlgo-MIP-dual-S     Time stable           13.309667ms           -7772.0               
+neos-5192052-neckar   ojAlgo-MIP-prim-D     Time stable           2.118083ms            -1.1669999999999996E7 
+sample2               ojAlgo-MIP-prim-S     Time stable           28.346625ms           375.0                 
+f2gap40400            ojAlgo-MIP-prim-S     Time stable           81215.937291ms        20772.0               
+gr4x6                 ojAlgo-MIP-prim-S     Time stable           7.72525ms             202.35                
+bell3b                ojAlgo-MIP-dual-S     Time stable           936.543209ms          1.1786925366E7        
+pk1                   ojAlgo-MIP-dual-D     Time stable           3322.1065ms           11.00000000000035     
+supportcase16         ojAlgo-MIP-dual-D     Time stable           54.851333ms           288.0                 
+f2gap40400            ojAlgo-MIP-prim-D     Time stable           2428.418ms            20772.0               
+gr4x6                 ojAlgo-MIP-prim-D     Time stable           2.633166ms            202.35                
+markshare_4_0         ojAlgo-MIP-prim-S     Time stable           12055.71925ms         0.99999999999999      
+misc07                ojAlgo-MIP-dual-S     Time stable           4368.757833ms         2809.999999999971     
+mas76                 ojAlgo-MIP-prim-D     Time stable           23110.988458ms        40005.05414199999     
+p0040                 ojAlgo-MIP-dual-D     Time stable           0.555583ms            62027.0               
+p0282                 ojAlgo-MIP-dual-D     Time stable           67.817875ms           258411.0              
+misc01                ojAlgo-MIP-prim-S     Time stable           208.257333ms          563.4999999999998     
+p0040                 ojAlgo-MIP-dual-S     Time stable           0.635958ms            62027.0               
+rgn                   ojAlgo-MIP-prim-D     Time stable           87.407667ms           82.19999923999896     
+misc03                ojAlgo-MIP-prim-D     Time stable           247.273708ms          3359.999999999988     
+enlight8              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bell3a                ojAlgo-MIP-dual-D     Time stable           649.441417ms          878430.316            
+misc07                ojAlgo-MIP-dual-D     Time stable           4760.212542ms         2809.999999999944     
+markshare_4_0         ojAlgo-MIP-dual-S     Time stable           5490.739375ms         1.00000000000001      
+pipex                 ojAlgo-MIP-dual-D     Time stable           18.279459ms           788.263               
+gr4x6                 ojAlgo-MIP-dual-D     Time stable           0.974584ms            202.35                
+supportcase14         ojAlgo-MIP-dual-D     Time stable           31.793083ms           288.0                 
+neos-3611447-jijia    ojAlgo-MIP-dual-S     Time stable           53019.793458ms        106.9999999999687     
+misc05                ojAlgo-MIP-prim-D     Time stable           313.620125ms          2984.499999999999     
+bell3a                ojAlgo-MIP-prim-D     Time stable           2637.842958ms         878430.316            
+misc05                ojAlgo-MIP-prim-S     Time stable           2729.157667ms         2984.499999999999     
+misc05                ojAlgo-MIP-dual-S     Time stable           428.614416ms          2984.499999999799     
+pp08aCUTS             ojAlgo-MIP-dual-D     APPROXIMATE           UNSTABLE              
+
+Iteration 4 with 115 model/solver pairs remaining 2026-09-25T07:33:19.721103Z
+-----------------------------------------------------------------------------
+stein9                ojAlgo-MIP-dual-S     Time stable           0.598333ms            5.0                   
+egout                 ojAlgo-MIP-dual-S     Time stable           273.955584ms          568.1007000000001     
+f2gap40400            ojAlgo-MIP-dual-D     Time stable           171.739625ms          20772.0               
+set1cl                ojAlgo-MIP-prim-S     Time stable           235.211583ms          6484.25               
+p0201                 ojAlgo-MIP-prim-S     Time stable           11267.262167ms        7615.0                
+bppc8-02              ojAlgo-MIP-dual-S     Time stable           932.247334ms          506.9999999999999     
+set1al                ojAlgo-MIP-dual-D     Time stable           186.926417ms          15869.75              
+p0033                 ojAlgo-MIP-dual-D     Time stable           2.321917ms            3089.0                
+sample2               ojAlgo-MIP-dual-D     Time stable           4.565875ms            375.0                 
+dcmulti               ojAlgo-MIP-prim-S     Time stable           53129.67625ms         188182.0              
+bell4                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+pigeon-08             ojAlgo-MIP-dual-S     Time stable           28890.472834ms        -7000.0               
+set1cl                ojAlgo-MIP-prim-D     Time stable           95.025375ms           6484.25               
+stein45               ojAlgo-MIP-prim-D     Time stable           23523.537792ms        30.0                  
+neos-1425699          ojAlgo-MIP-prim-D     Time stable           2.21625ms             3.179698977E9         
+misc01                ojAlgo-MIP-dual-D     Time stable           11.644375ms           563.4999999999992     
+neos-1425699          ojAlgo-MIP-prim-S     Time stable           7.762125ms            3.179698977E9         
+stein45               ojAlgo-MIP-dual-D     Time stable           3559.416084ms         30.0                  
+neos-5192052-neckar   ojAlgo-MIP-dual-S     Time stable           2.155667ms            -1.1670000000000002E7 
+stein45               ojAlgo-MIP-dual-S     Time stable           3611.878333ms         30.0                  
+misc02                ojAlgo-MIP-dual-S     Time stable           4.661916ms            1690.0                
+flugpl                ojAlgo-MIP-dual-S     Time stable           1.090667ms            1201500.0             
+p0040                 ojAlgo-MIP-prim-D     Time stable           1.678917ms            62027.0               
+cracpb1               ojAlgo-MIP-dual-D     Time stable           46.752959ms           22199.0               
+misc01                ojAlgo-MIP-dual-S     Time stable           31.968916ms           563.4999999999999     
+sentoy                ojAlgo-MIP-dual-D     Time stable           8.785834ms            -7772.0               
+neos-5192052-neckar   ojAlgo-MIP-dual-D     Time stable           2.09625ms             -1.167000000000001E7  
+neos-5192052-neckar   ojAlgo-MIP-prim-S     Time stable           3.749125ms            -1.1669999999999996E7 
+markshare_4_0         ojAlgo-MIP-prim-D     Time stable           10589.711208ms        0.99999999999997      
+p0282                 ojAlgo-MIP-dual-S     Time stable           56.480083ms           258411.0              
+cracpb1               ojAlgo-MIP-prim-D     Time stable           5998.917667ms         22199.0               
+misc05                ojAlgo-MIP-dual-D     Time stable           200.731167ms          2984.499999999999     
+misc02                ojAlgo-MIP-prim-S     Time stable           29.850208ms           1690.0                
+p0291                 ojAlgo-MIP-dual-D     Time stable           20.430375ms           5223.749              
+markshare_4_0         ojAlgo-MIP-dual-D     Time stable           5138.655541ms         0.99999999999995      
+cracpb1               ojAlgo-MIP-prim-S     Time stable           160294.970459ms       22199.0               
+stein9                ojAlgo-MIP-dual-D     Time stable           0.39875ms             5.0                   
+bell3a                ojAlgo-MIP-prim-S     Time stable           10491.918583ms        878430.316            
+
+Iteration 5 with 77 model/solver pairs remaining 2026-09-25T08:12:53.064747Z
+-----------------------------------------------------------------------------
+set1cl                ojAlgo-MIP-dual-D     Time stable           38.905958ms           6484.25               
+vpm1                  ojAlgo-MIP-dual-S     Time stable           36629.724416ms        20.0                  
+lseu                  ojAlgo-MIP-dual-S     Time stable           36.912041ms           1120.0                
+mas76                 ojAlgo-MIP-dual-D     Time stable           3318.816167ms         40005.054142          
+set1al                ojAlgo-MIP-prim-D     Time stable           370.816292ms          15869.750000000005    
+air01                 ojAlgo-MIP-prim-D     Time stable           34.598083ms           6796.0                
+p0201                 ojAlgo-MIP-dual-D     Time stable           133.686667ms          7615.0                
+air01                 ojAlgo-MIP-dual-D     Time stable           9.245209ms            6796.0                
+gt2                   ojAlgo-MIP-prim-S     Time stable           471.789791ms          21166.0               
+supportcase14         ojAlgo-MIP-prim-D     Time stable           83.341084ms           288.0                 
+supportcase16         ojAlgo-MIP-prim-S     Time stable           1326.52925ms          288.0                 
+misc02                ojAlgo-MIP-dual-D     Time stable           6.17125ms             1689.999999999999     
+p0282                 ojAlgo-MIP-prim-S     Time stable           8702.133916ms         258411.0              
+flugpl                ojAlgo-MIP-prim-S     Time stable           4.106083ms            1201500.0             
+flugpl                ojAlgo-MIP-prim-D     Time stable           1.08925ms             1201500.0             
+gen                   ojAlgo-MIP-dual-S     Time stable           151.502583ms          112313.36271795914    
+supportcase16         ojAlgo-MIP-dual-S     Time stable           45.593875ms           288.0                 
+misc01                ojAlgo-MIP-prim-D     Time stable           29.437792ms           563.5                 
+p0291                 ojAlgo-MIP-dual-S     Time stable           17.776459ms           5223.749              
+misc03                ojAlgo-MIP-dual-S     Time stable           110.17275ms           3359.999999999995     
+pipex                 ojAlgo-MIP-dual-S     Time stable           18.879125ms           788.263               
+gr4x6                 ojAlgo-MIP-dual-S     Time stable           1.245833ms            202.35                
+stein9                ojAlgo-MIP-prim-D     Time stable           0.824542ms            5.0                   
+
+Iteration 6 with 54 model/solver pairs remaining 2026-09-25T08:41:59.081373Z
+-----------------------------------------------------------------------------
+blend2                ojAlgo-MIP-dual-D     Time stable           854.738541ms          7.598985              
+enigma                ojAlgo-MIP-dual-S     Time stable           14.225ms              0.0                   
+pp08a                 ojAlgo-MIP-dual-S     Time stable           48390.630125ms        7349.999999980113     
+neos5                 ojAlgo-MIP-dual-D     Time stable           227302.407458ms       15.0                  
+sample2               ojAlgo-MIP-dual-S     Time stable           4.40425ms             375.0                 
+mod013                ojAlgo-MIP-prim-D     Time stable           25.286083ms           280.95                
+mod013                ojAlgo-MIP-dual-S     Time stable           10.689834ms           280.95                
+egout                 ojAlgo-MIP-prim-D     Time stable           154.587042ms          568.1007              
+egout                 ojAlgo-MIP-prim-S     Time stable           322.342375ms          568.1007              
+neos-1425699          ojAlgo-MIP-dual-D     Time stable           0.864167ms            3.179698977E9         
+neos-1425699          ojAlgo-MIP-dual-S     Time stable           0.942625ms            3.179698977E9         
+neos-3610173-itata    ojAlgo-MIP-dual-S     Time stable           42085.458584ms        147.9999999999383     
+stein15               ojAlgo-MIP-prim-D     Time stable           4.162208ms            9.0                   
+enlight_hard          ojAlgo-MIP-dual-S     Time stable           16538.004083ms        37.0                  
+rgn                   ojAlgo-MIP-dual-D     Time stable           81.834125ms           82.1999992399091      
+rgn                   ojAlgo-MIP-prim-S     Time stable           323.493042ms          82.19999923999355     
+neos-3610040-iskar    ojAlgo-MIP-dual-S     Time stable           106126.340917ms       36.99999999954757     
+pk1                   ojAlgo-MIP-dual-S     Time stable           3545.61575ms          10.99999999999993     
+neos-3611447-jijia    ojAlgo-MIP-dual-D     Time stable           76338.150583ms        106.9999999999489     
+misc02                ojAlgo-MIP-prim-D     Time stable           4.4525ms              1690.0                
+misc03                ojAlgo-MIP-prim-S     Time stable           2521.940041ms         3359.999999999991     
+supportcase14         ojAlgo-MIP-dual-S     Time stable           28.91925ms            288.0                 
+bell3a                ojAlgo-MIP-dual-S     Time stable           606.514125ms          878430.316            
+graphdraw-gemcutter   ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+
+Iteration 7 with 30 model/solver pairs remaining 2026-09-25T09:10:31.844615Z
+-----------------------------------------------------------------------------
+ran13x13              ojAlgo-MIP-dual-S     Time stable           135353.824041ms       3252.0                
+ran13x13              ojAlgo-MIP-dual-D     Time stable           121574.129209ms       3252.0                
+stein27               ojAlgo-MIP-prim-D     Time stable           195.492791ms          18.0                  
+bell5                 ojAlgo-MIP-dual-S     Time stable           1377.344459ms         8966406.49152         
+23588                 ojAlgo-MIP-prim-S     Time stable           124073.791ms          8090.000000000006     
+stein9                ojAlgo-MIP-prim-S     Time stable           2.432959ms            5.0                   
+
+Iteration 8 with 24 model/solver pairs remaining 2026-09-25T09:28:26.531497Z
+-----------------------------------------------------------------------------
+stein27               ojAlgo-MIP-dual-D     Time stable           59.354125ms           18.0                  
+gen-ip036             ojAlgo-MIP-prim-D     Time stable           27002.60275ms         -4605.3733746644      
+sample2               ojAlgo-MIP-prim-D     Time stable           6.791125ms            375.00000000000006    
+
+Iteration 9 with 21 model/solver pairs remaining 2026-09-25T09:40:42.378627Z
+-----------------------------------------------------------------------------
+mas76                 ojAlgo-MIP-dual-S     Time stable           4423.362667ms         40005.05414200001     
+stein27               ojAlgo-MIP-dual-S     Time stable           80.113042ms           18.0                  
+gt2                   ojAlgo-MIP-dual-S     Time stable           10.312875ms           21166.0               
+supportcase14         ojAlgo-MIP-prim-S     Time stable           517.516459ms          288.0                 
+misc03                ojAlgo-MIP-dual-D     Time stable           50.765875ms           3359.999999999998     
+bell4                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+
+Iteration 10 with 15 model/solver pairs remaining 2026-09-25T09:53:19.394488Z
+-----------------------------------------------------------------------------
+p0201                 ojAlgo-MIP-prim-D     Time stable           820.859041ms          7615.0                
+bell3b                ojAlgo-MIP-dual-D     Time stable           498.407292ms          1.1786160618E7        
+neos-3610040-iskar    ojAlgo-MIP-dual-D     Time stable           174798.8435ms         36.99999999956006     
+
+Iteration 11 with 12 model/solver pairs remaining 2026-09-25T10:03:45.862430Z
+-----------------------------------------------------------------------------
+bm23                  ojAlgo-MIP-dual-D     Time stable           2.305917ms            34.0                  
+mas76                 ojAlgo-MIP-prim-S     Time stable           71888.296292ms        40005.05414199999     
+bell5                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+
+Iteration 12 with 9 model/solver pairs remaining 2026-09-25T10:13:32.457522Z
+-----------------------------------------------------------------------------
+vpm2                  ojAlgo-MIP-dual-D     Time stable           122634.846167ms       13.75                 
+mod008                ojAlgo-MIP-prim-D     Time stable           5651.966083ms         307.0                 
+
+Iteration 13 with 7 model/solver pairs remaining 2026-09-25T10:19:40.110477Z
+-----------------------------------------------------------------------------
+gt2                   ojAlgo-MIP-prim-D     Time stable           105.929166ms          21166.0               
+dcmulti               ojAlgo-MIP-prim-D     Time stable           3843.566292ms         188183.5              
+
+Iteration 14 with 5 model/solver pairs remaining 2026-09-25T10:23:38.014682Z
+-----------------------------------------------------------------------------
+enigma                ojAlgo-MIP-prim-D     INVALID               UNSTABLE              
+
+Iteration 15 with 4 model/solver pairs remaining 2026-09-25T10:28:06.729272Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 4 model/solver pairs remaining 2026-09-25T10:31:55.186388Z
+-----------------------------------------------------------------------------
+neos-3611689-kaihu    ojAlgo-MIP-dual-S     Time stable           24237.520334ms        118.9999999999637     
+bell5                 ojAlgo-MIP-dual-D     Time stable           1831.188375ms         8966406.49152         
+
+Iteration 17 with 2 model/solver pairs remaining 2026-09-25T10:35:00.694847Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 2 model/solver pairs remaining 2026-09-25T10:36:17.552107Z
+-----------------------------------------------------------------------------
+lseu                  ojAlgo-MIP-dual-D     Time stable           23.130375ms           1120.0                
+
+Iteration 19 with 1 model/solver pairs remaining 2026-09-25T10:39:02.173197Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 1 model/solver pairs remaining 2026-09-25T10:41:34.312721Z
+-----------------------------------------------------------------------------
+enlight_hard          ojAlgo-MIP-dual-D     Time stable           15997.933791ms        37.0                  
+
+Final Results
+=====================================================================
+22433                 ojAlgo-MIP-dual-D     OPTIMAL               220.193958ms          
+22433                 ojAlgo-MIP-dual-S     OPTIMAL               113.779417ms          
+22433                 ojAlgo-MIP-prim-D     OPTIMAL               3891.53525ms          
+22433                 ojAlgo-MIP-prim-S     OPTIMAL               96459.524542ms        
+23588                 ojAlgo-MIP-dual-D     OPTIMAL               255.0185ms            
+23588                 ojAlgo-MIP-dual-S     OPTIMAL               252.165458ms          
+23588                 ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+23588                 ojAlgo-MIP-prim-S     OPTIMAL               124073.791ms          
+aflow30a              ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+aflow30a              ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+aflow30a              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+aflow30a              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+air01                 ojAlgo-MIP-dual-D     OPTIMAL               9.245209ms            
+air01                 ojAlgo-MIP-dual-S     OPTIMAL               11.878958ms           
+air01                 ojAlgo-MIP-prim-D     OPTIMAL               34.598083ms           
+air01                 ojAlgo-MIP-prim-S     OPTIMAL               86.43875ms            
+beavma                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+beavma                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+beavma                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+beavma                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell3a                ojAlgo-MIP-dual-D     OPTIMAL               649.441417ms          
+bell3a                ojAlgo-MIP-dual-S     OPTIMAL               606.514125ms          
+bell3a                ojAlgo-MIP-prim-D     OPTIMAL               2637.842958ms         
+bell3a                ojAlgo-MIP-prim-S     OPTIMAL               10491.918583ms        
+bell3b                ojAlgo-MIP-dual-D     OPTIMAL               498.407292ms          
+bell3b                ojAlgo-MIP-dual-S     OPTIMAL               936.543209ms          
+bell3b                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bell3b                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bell4                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bell5                 ojAlgo-MIP-dual-D     OPTIMAL               1831.188375ms         
+bell5                 ojAlgo-MIP-dual-S     OPTIMAL               1377.344459ms         
+bell5                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bell5                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bienst1               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bienst1               ojAlgo-MIP-dual-S     OPTIMAL               26458.697917ms        
+bienst1               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bienst1               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+bienst2               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+blend2                ojAlgo-MIP-dual-D     OPTIMAL               854.738541ms          
+blend2                ojAlgo-MIP-dual-S     OPTIMAL               952.700833ms          
+blend2                ojAlgo-MIP-prim-D     FAILED                WRONG                 
+blend2                ojAlgo-MIP-prim-S     FAILED                WRONG                 
+bm23                  ojAlgo-MIP-dual-D     OPTIMAL               2.305917ms            
+bm23                  ojAlgo-MIP-dual-S     OPTIMAL               3.58625ms             
+bm23                  ojAlgo-MIP-prim-D     FAILED                WRONG                 
+bm23                  ojAlgo-MIP-prim-S     FAILED                UNSTABLE              
+bppc8-02              ojAlgo-MIP-dual-D     OPTIMAL               831.833542ms          
+bppc8-02              ojAlgo-MIP-dual-S     OPTIMAL               932.247334ms          
+bppc8-02              ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+bppc8-02              ojAlgo-MIP-prim-S     FAILED                WRONG                 
+cracpb1               ojAlgo-MIP-dual-D     OPTIMAL               46.752959ms           
+cracpb1               ojAlgo-MIP-dual-S     OPTIMAL               30.466834ms           
+cracpb1               ojAlgo-MIP-prim-D     OPTIMAL               5998.917667ms         
+cracpb1               ojAlgo-MIP-prim-S     OPTIMAL               160294.970459ms       
+dcmulti               ojAlgo-MIP-dual-D     OPTIMAL               751.385584ms          
+dcmulti               ojAlgo-MIP-dual-S     OPTIMAL               287.702916ms          
+dcmulti               ojAlgo-MIP-prim-D     OPTIMAL               3843.566292ms         
+dcmulti               ojAlgo-MIP-prim-S     OPTIMAL               53129.67625ms         
+dfn-gwin-UUM          ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+dfn-gwin-UUM          ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+dfn-gwin-UUM          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+dfn-gwin-UUM          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+egout                 ojAlgo-MIP-dual-D     OPTIMAL               303.169542ms          
+egout                 ojAlgo-MIP-dual-S     OPTIMAL               273.955584ms          
+egout                 ojAlgo-MIP-prim-D     OPTIMAL               154.587042ms          
+egout                 ojAlgo-MIP-prim-S     OPTIMAL               322.342375ms          
+enigma                ojAlgo-MIP-dual-D     FAILED                UNSTABLE              
+enigma                ojAlgo-MIP-dual-S     OPTIMAL               14.225ms              
+enigma                ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+enigma                ojAlgo-MIP-prim-S     OPTIMAL               33.836875ms           
+enlight13             ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+enlight13             ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+enlight13             ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+enlight13             ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+enlight8              ojAlgo-MIP-dual-D     OPTIMAL               923.517042ms          
+enlight8              ojAlgo-MIP-dual-S     OPTIMAL               1011.822083ms         
+enlight8              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+enlight8              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+enlight_hard          ojAlgo-MIP-dual-D     OPTIMAL               15997.933791ms        
+enlight_hard          ojAlgo-MIP-dual-S     OPTIMAL               16538.004083ms        
+enlight_hard          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+enlight_hard          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+exp-1-500-5-5         ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+exp-1-500-5-5         ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+exp-1-500-5-5         ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+exp-1-500-5-5         ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+f2gap40400            ojAlgo-MIP-dual-D     OPTIMAL               171.739625ms          
+f2gap40400            ojAlgo-MIP-dual-S     OPTIMAL               178.635542ms          
+f2gap40400            ojAlgo-MIP-prim-D     OPTIMAL               2428.418ms            
+f2gap40400            ojAlgo-MIP-prim-S     OPTIMAL               81215.937291ms        
+fixnet3               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+fixnet3               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+fixnet3               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+fixnet3               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+fixnet4               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+fixnet6               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+fixnet6               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+fixnet6               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+fixnet6               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+flugpl                ojAlgo-MIP-dual-D     OPTIMAL               1.013041ms            
+flugpl                ojAlgo-MIP-dual-S     OPTIMAL               1.090667ms            
+flugpl                ojAlgo-MIP-prim-D     OPTIMAL               1.08925ms             
+flugpl                ojAlgo-MIP-prim-S     OPTIMAL               4.106083ms            
+gen                   ojAlgo-MIP-dual-D     OPTIMAL               555.876583ms          
+gen                   ojAlgo-MIP-dual-S     OPTIMAL               151.502583ms          
+gen                   ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+gen                   ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+gen-ip021             ojAlgo-MIP-dual-D     OPTIMAL               26999.039583ms        
+gen-ip021             ojAlgo-MIP-dual-S     OPTIMAL               33566.157375ms        
+gen-ip021             ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+gen-ip021             ojAlgo-MIP-prim-S     FAILED                UNSTABLE              
+gen-ip036             ojAlgo-MIP-dual-D     OPTIMAL               30874.82025ms         
+gen-ip036             ojAlgo-MIP-dual-S     OPTIMAL               36994.589083ms        
+gen-ip036             ojAlgo-MIP-prim-D     OPTIMAL               27002.60275ms         
+gen-ip036             ojAlgo-MIP-prim-S     OPTIMAL               73253.078667ms        
+gr4x6                 ojAlgo-MIP-dual-D     OPTIMAL               0.974584ms            
+gr4x6                 ojAlgo-MIP-dual-S     OPTIMAL               1.245833ms            
+gr4x6                 ojAlgo-MIP-prim-D     OPTIMAL               2.633166ms            
+gr4x6                 ojAlgo-MIP-prim-S     OPTIMAL               7.72525ms             
+graphdraw-gemcutter   ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+graphdraw-gemcutter   ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+graphdraw-gemcutter   ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+graphdraw-gemcutter   ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+gt2                   ojAlgo-MIP-dual-D     OPTIMAL               19.239292ms           
+gt2                   ojAlgo-MIP-dual-S     OPTIMAL               10.312875ms           
+gt2                   ojAlgo-MIP-prim-D     OPTIMAL               105.929166ms          
+gt2                   ojAlgo-MIP-prim-S     OPTIMAL               471.789791ms          
+ic97_tension          ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+ic97_tension          ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+ic97_tension          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ic97_tension          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+lseu                  ojAlgo-MIP-dual-D     OPTIMAL               23.130375ms           
+lseu                  ojAlgo-MIP-dual-S     OPTIMAL               36.912041ms           
+lseu                  ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+lseu                  ojAlgo-MIP-prim-S     FAILED                UNSTABLE              
+markshare_4_0         ojAlgo-MIP-dual-D     OPTIMAL               5138.655541ms         
+markshare_4_0         ojAlgo-MIP-dual-S     OPTIMAL               5490.739375ms         
+markshare_4_0         ojAlgo-MIP-prim-D     OPTIMAL               10589.711208ms        
+markshare_4_0         ojAlgo-MIP-prim-S     OPTIMAL               12055.71925ms         
+mas76                 ojAlgo-MIP-dual-D     OPTIMAL               3318.816167ms         
+mas76                 ojAlgo-MIP-dual-S     OPTIMAL               4423.362667ms         
+mas76                 ojAlgo-MIP-prim-D     OPTIMAL               23110.988458ms        
+mas76                 ojAlgo-MIP-prim-S     OPTIMAL               71888.296292ms        
+mik-250-1-100-1       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-1-100-1       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mik-250-1-100-1       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-1-100-1       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-1       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-1       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mik-250-20-75-1       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-20-75-1       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-2       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-2       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mik-250-20-75-2       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-20-75-2       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-3       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-3       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mik-250-20-75-3       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-20-75-3       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+misc01                ojAlgo-MIP-dual-D     OPTIMAL               11.644375ms           
+misc01                ojAlgo-MIP-dual-S     OPTIMAL               31.968916ms           
+misc01                ojAlgo-MIP-prim-D     OPTIMAL               29.437792ms           
+misc01                ojAlgo-MIP-prim-S     OPTIMAL               208.257333ms          
+misc02                ojAlgo-MIP-dual-D     OPTIMAL               6.17125ms             
+misc02                ojAlgo-MIP-dual-S     OPTIMAL               4.661916ms            
+misc02                ojAlgo-MIP-prim-D     OPTIMAL               4.4525ms              
+misc02                ojAlgo-MIP-prim-S     OPTIMAL               29.850208ms           
+misc03                ojAlgo-MIP-dual-D     OPTIMAL               50.765875ms           
+misc03                ojAlgo-MIP-dual-S     OPTIMAL               110.17275ms           
+misc03                ojAlgo-MIP-prim-D     OPTIMAL               247.273708ms          
+misc03                ojAlgo-MIP-prim-S     OPTIMAL               2521.940041ms         
+misc05                ojAlgo-MIP-dual-D     OPTIMAL               200.731167ms          
+misc05                ojAlgo-MIP-dual-S     OPTIMAL               428.614416ms          
+misc05                ojAlgo-MIP-prim-D     OPTIMAL               313.620125ms          
+misc05                ojAlgo-MIP-prim-S     OPTIMAL               2729.157667ms         
+misc07                ojAlgo-MIP-dual-D     OPTIMAL               4760.212542ms         
+misc07                ojAlgo-MIP-dual-S     OPTIMAL               4368.757833ms         
+misc07                ojAlgo-MIP-prim-D     OPTIMAL               29118.497042ms        
+misc07                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+mod008                ojAlgo-MIP-dual-D     OPTIMAL               89.923083ms           
+mod008                ojAlgo-MIP-dual-S     OPTIMAL               81.073833ms           
+mod008                ojAlgo-MIP-prim-D     OPTIMAL               5651.966083ms         
+mod008                ojAlgo-MIP-prim-S     OPTIMAL               8454.717084ms         
+mod013                ojAlgo-MIP-dual-D     OPTIMAL               14.468792ms           
+mod013                ojAlgo-MIP-dual-S     OPTIMAL               10.689834ms           
+mod013                ojAlgo-MIP-prim-D     OPTIMAL               25.286083ms           
+mod013                ojAlgo-MIP-prim-S     OPTIMAL               85.1035ms             
+modglob               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+modglob               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+modglob               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+modglob               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-1425699          ojAlgo-MIP-dual-D     OPTIMAL               0.864167ms            
+neos-1425699          ojAlgo-MIP-dual-S     OPTIMAL               0.942625ms            
+neos-1425699          ojAlgo-MIP-prim-D     OPTIMAL               2.21625ms             
+neos-1425699          ojAlgo-MIP-prim-S     OPTIMAL               7.762125ms            
+neos-1430701          ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-1430701          ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-1430701          ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-1430701          ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-2624317-amur     ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3610040-iskar    ojAlgo-MIP-dual-D     OPTIMAL               174798.8435ms         
+neos-3610040-iskar    ojAlgo-MIP-dual-S     OPTIMAL               106126.340917ms       
+neos-3610040-iskar    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-3610040-iskar    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3610051-istra    ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-3610051-istra    ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-3610051-istra    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-3610051-istra    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3610173-itata    ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-3610173-itata    ojAlgo-MIP-dual-S     OPTIMAL               42085.458584ms        
+neos-3610173-itata    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-3610173-itata    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3611447-jijia    ojAlgo-MIP-dual-D     OPTIMAL               76338.150583ms        
+neos-3611447-jijia    ojAlgo-MIP-dual-S     OPTIMAL               53019.793458ms        
+neos-3611447-jijia    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-3611447-jijia    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-3611689-kaihu    ojAlgo-MIP-dual-D     OPTIMAL               79641.079292ms        
+neos-3611689-kaihu    ojAlgo-MIP-dual-S     OPTIMAL               24237.520334ms        
+neos-3611689-kaihu    ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-3611689-kaihu    ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-5192052-neckar   ojAlgo-MIP-dual-D     OPTIMAL               2.09625ms             
+neos-5192052-neckar   ojAlgo-MIP-dual-S     OPTIMAL               2.155667ms            
+neos-5192052-neckar   ojAlgo-MIP-prim-D     OPTIMAL               2.118083ms            
+neos-5192052-neckar   ojAlgo-MIP-prim-S     OPTIMAL               3.749125ms            
+neos-911880           ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-911880           ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-911880           ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-911880           ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos-911970           ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos-911970           ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos-911970           ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos-911970           ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos17                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+neos17                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+neos17                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos17                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+neos5                 ojAlgo-MIP-dual-D     OPTIMAL               227302.407458ms       
+neos5                 ojAlgo-MIP-dual-S     OPTIMAL               226686.030583ms       
+neos5                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+neos5                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+nexp-50-20-1-1        ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+noswot                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+noswot                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+noswot                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+noswot                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+opt1217               ojAlgo-MIP-dual-D     FAILED                UNSTABLE              
+opt1217               ojAlgo-MIP-dual-S     FAILED                UNSTABLE              
+opt1217               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+opt1217               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+p0033                 ojAlgo-MIP-dual-D     OPTIMAL               2.321917ms            
+p0033                 ojAlgo-MIP-dual-S     OPTIMAL               3.791709ms            
+p0033                 ojAlgo-MIP-prim-D     OPTIMAL               2.858125ms            
+p0033                 ojAlgo-MIP-prim-S     OPTIMAL               14.712875ms           
+p0040                 ojAlgo-MIP-dual-D     OPTIMAL               0.555583ms            
+p0040                 ojAlgo-MIP-dual-S     OPTIMAL               0.635958ms            
+p0040                 ojAlgo-MIP-prim-D     OPTIMAL               1.678917ms            
+p0040                 ojAlgo-MIP-prim-S     OPTIMAL               6.952625ms            
+p0201                 ojAlgo-MIP-dual-D     OPTIMAL               133.686667ms          
+p0201                 ojAlgo-MIP-dual-S     OPTIMAL               214.859209ms          
+p0201                 ojAlgo-MIP-prim-D     OPTIMAL               820.859041ms          
+p0201                 ojAlgo-MIP-prim-S     OPTIMAL               11267.262167ms        
+p0282                 ojAlgo-MIP-dual-D     OPTIMAL               67.817875ms           
+p0282                 ojAlgo-MIP-dual-S     OPTIMAL               56.480083ms           
+p0282                 ojAlgo-MIP-prim-D     OPTIMAL               704.273ms             
+p0282                 ojAlgo-MIP-prim-S     OPTIMAL               8702.133916ms         
+p0291                 ojAlgo-MIP-dual-D     OPTIMAL               20.430375ms           
+p0291                 ojAlgo-MIP-dual-S     OPTIMAL               17.776459ms           
+p0291                 ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+p0291                 ojAlgo-MIP-prim-S     FAILED                UNSTABLE              
+p0548                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+p0548                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+p0548                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+p0548                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+pigeon-08             ojAlgo-MIP-dual-D     OPTIMAL               51259.305292ms        
+pigeon-08             ojAlgo-MIP-dual-S     OPTIMAL               28890.472834ms        
+pigeon-08             ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+pigeon-08             ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+pipex                 ojAlgo-MIP-dual-D     OPTIMAL               18.279459ms           
+pipex                 ojAlgo-MIP-dual-S     OPTIMAL               18.879125ms           
+pipex                 ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+pipex                 ojAlgo-MIP-prim-S     FAILED                UNSTABLE              
+pk1                   ojAlgo-MIP-dual-D     OPTIMAL               3322.1065ms           
+pk1                   ojAlgo-MIP-dual-S     OPTIMAL               3545.61575ms          
+pk1                   ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+pk1                   ojAlgo-MIP-prim-S     FAILED                UNSTABLE              
+pp08a                 ojAlgo-MIP-dual-D     OPTIMAL               58133.039917ms        
+pp08a                 ojAlgo-MIP-dual-S     OPTIMAL               48390.630125ms        
+pp08a                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+pp08a                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+pp08aCUTS             ojAlgo-MIP-dual-D     FAILED                UNSTABLE              
+pp08aCUTS             ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+pp08aCUTS             ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+pp08aCUTS             ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+prod1                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+prod1                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+prod1                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+prod1                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+prod2                 ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+prod2                 ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+prod2                 ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+prod2                 ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+r50x360               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+r50x360               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+r50x360               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+r50x360               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+ran12x21              ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+ran12x21              ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+ran12x21              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ran12x21              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+ran13x13              ojAlgo-MIP-dual-D     OPTIMAL               121574.129209ms       
+ran13x13              ojAlgo-MIP-dual-S     OPTIMAL               135353.824041ms       
+ran13x13              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ran13x13              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+ran16x16              ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+ran16x16              ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+ran16x16              ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+ran16x16              ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+rgn                   ojAlgo-MIP-dual-D     OPTIMAL               81.834125ms           
+rgn                   ojAlgo-MIP-dual-S     OPTIMAL               73.176459ms           
+rgn                   ojAlgo-MIP-prim-D     OPTIMAL               87.407667ms           
+rgn                   ojAlgo-MIP-prim-S     OPTIMAL               323.493042ms          
+rout                  ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+rout                  ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+rout                  ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+rout                  ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+sample2               ojAlgo-MIP-dual-D     OPTIMAL               4.565875ms            
+sample2               ojAlgo-MIP-dual-S     OPTIMAL               4.40425ms             
+sample2               ojAlgo-MIP-prim-D     OPTIMAL               6.791125ms            
+sample2               ojAlgo-MIP-prim-S     OPTIMAL               28.346625ms           
+sentoy                ojAlgo-MIP-dual-D     OPTIMAL               8.785834ms            
+sentoy                ojAlgo-MIP-dual-S     OPTIMAL               13.309667ms           
+sentoy                ojAlgo-MIP-prim-D     FAILED                UNSTABLE              
+sentoy                ojAlgo-MIP-prim-S     FAILED                WRONG                 
+set1al                ojAlgo-MIP-dual-D     OPTIMAL               186.926417ms          
+set1al                ojAlgo-MIP-dual-S     OPTIMAL               103.927166ms          
+set1al                ojAlgo-MIP-prim-D     OPTIMAL               370.816292ms          
+set1al                ojAlgo-MIP-prim-S     OPTIMAL               1828.621167ms         
+set1ch                ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+set1ch                ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+set1ch                ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+set1ch                ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+set1cl                ojAlgo-MIP-dual-D     OPTIMAL               38.905958ms           
+set1cl                ojAlgo-MIP-dual-S     OPTIMAL               31.877125ms           
+set1cl                ojAlgo-MIP-prim-D     OPTIMAL               95.025375ms           
+set1cl                ojAlgo-MIP-prim-S     OPTIMAL               235.211583ms          
+sp150x300d            ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+sp150x300d            ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+sp150x300d            ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+sp150x300d            ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein15               ojAlgo-MIP-dual-D     OPTIMAL               1.210292ms            
+stein15               ojAlgo-MIP-dual-S     OPTIMAL               3.628875ms            
+stein15               ojAlgo-MIP-prim-D     OPTIMAL               4.162208ms            
+stein15               ojAlgo-MIP-prim-S     OPTIMAL               19.573834ms           
+stein27               ojAlgo-MIP-dual-D     OPTIMAL               59.354125ms           
+stein27               ojAlgo-MIP-dual-S     OPTIMAL               80.113042ms           
+stein27               ojAlgo-MIP-prim-D     OPTIMAL               195.492791ms          
+stein27               ojAlgo-MIP-prim-S     OPTIMAL               2275.70275ms          
+stein45               ojAlgo-MIP-dual-D     OPTIMAL               3559.416084ms         
+stein45               ojAlgo-MIP-dual-S     OPTIMAL               3611.878333ms         
+stein45               ojAlgo-MIP-prim-D     OPTIMAL               23523.537792ms        
+stein45               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+stein9                ojAlgo-MIP-dual-D     OPTIMAL               0.39875ms             
+stein9                ojAlgo-MIP-dual-S     OPTIMAL               0.598333ms            
+stein9                ojAlgo-MIP-prim-D     OPTIMAL               0.824542ms            
+stein9                ojAlgo-MIP-prim-S     OPTIMAL               2.432959ms            
+supportcase14         ojAlgo-MIP-dual-D     OPTIMAL               31.793083ms           
+supportcase14         ojAlgo-MIP-dual-S     OPTIMAL               28.91925ms            
+supportcase14         ojAlgo-MIP-prim-D     OPTIMAL               83.341084ms           
+supportcase14         ojAlgo-MIP-prim-S     OPTIMAL               517.516459ms          
+supportcase16         ojAlgo-MIP-dual-D     OPTIMAL               54.851333ms           
+supportcase16         ojAlgo-MIP-dual-S     OPTIMAL               45.593875ms           
+supportcase16         ojAlgo-MIP-prim-D     OPTIMAL               130.316917ms          
+supportcase16         ojAlgo-MIP-prim-S     OPTIMAL               1326.52925ms          
+timtab1               ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+timtab1               ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+timtab1               ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+timtab1               ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+timtab1CUTS           ojAlgo-MIP-dual-D     FAILED                TIMEOUT               
+timtab1CUTS           ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+timtab1CUTS           ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+timtab1CUTS           ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+vpm1                  ojAlgo-MIP-dual-D     OPTIMAL               34698.344375ms        
+vpm1                  ojAlgo-MIP-dual-S     OPTIMAL               36629.724416ms        
+vpm1                  ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+vpm1                  ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+vpm2                  ojAlgo-MIP-dual-D     OPTIMAL               122634.846167ms       
+vpm2                  ojAlgo-MIP-dual-S     FAILED                TIMEOUT               
+vpm2                  ojAlgo-MIP-prim-D     FAILED                TIMEOUT               
+vpm2                  ojAlgo-MIP-prim-S     FAILED                TIMEOUT               
+
+Models Solved
+=====================================================================
+ojAlgo-MIP-dual-D     60 / 103              58%                   
+ojAlgo-MIP-dual-S     62 / 103              60%                   
+ojAlgo-MIP-prim-D     36 / 103              35%                   
+ojAlgo-MIP-prim-S     36 / 103              35%                   

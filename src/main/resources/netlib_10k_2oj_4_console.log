@@ -1,0 +1,649 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 4, threads per worker: 5
+
+
+Iteration 1 with 194 model/solver pairs remaining 2026-09-25T12:47:34.905799Z
+-----------------------------------------------------------------------------
+SHIP04S               ojAlgo-LP-dual-S      Solved                8.565708ms            1798714.7004453917    
+KB2                   ojAlgo-LP-dual-D      Solved                0.738ms               -1749.9001299062088   
+SCSD6                 ojAlgo-LP-dual-S      Solved                10.1015ms             50.50000007826232     
+SHARE1B               ojAlgo-LP-dual-S      Solved                3.17925ms             -76589.31857918583    
+SCORPION              ojAlgo-LP-dual-S      Solved                3.520167ms            1878.124822738108     
+SHIP12L               ojAlgo-LP-dual-S      Solved                15.239125ms           1470187.9193292644    
+FINNIS                ojAlgo-LP-dual-D      Solved                10.966ms              172791.06559561152    
+MODSZK1               ojAlgo-LP-dual-S      Solved                29.022958ms           320.6197290641473     
+BOEING1               ojAlgo-LP-dual-D      Solved                12.392791ms           -335.21356750707395   
+SHIP04S               ojAlgo-LP-dual-D      Solved                4.998291ms            1798714.700445392     
+STAIR                 ojAlgo-LP-dual-D      Solved                25.34ms               -251.2669511929634    
+SCSD6                 ojAlgo-LP-dual-D      Solved                16.114125ms           50.500000078262744    
+SHARE1B               ojAlgo-LP-dual-D      Solved                2.196875ms            -76589.3185791862     
+SHIP12L               ojAlgo-LP-dual-D      Solved                45.29175ms            1470187.919329265     
+KB2                   ojAlgo-LP-dual-S      Solved                0.730167ms            -1749.9001299062054   
+SCFXM1                ojAlgo-LP-dual-D      Solved                6.574792ms            18416.759028349155    
+MAROS                 ojAlgo-LP-dual-S      Solved                24.425708ms           -58063.74370112596    
+BEACONFD              ojAlgo-LP-dual-D      Solved                2.516917ms            33592.48580719995     
+STAIR                 ojAlgo-LP-dual-S      Solved                8.5875ms              -251.2669511929635    
+MODSZK1               ojAlgo-LP-dual-D      Solved                267.777ms             320.6197291202955     
+SCAGR7                ojAlgo-LP-dual-S      Solved                1.398667ms            -2331389.8243309837   
+BEACONFD              ojAlgo-LP-dual-S      Solved                1.496292ms            33592.485807201636    
+SCRS8                 ojAlgo-LP-dual-D      Solved                27.775666ms           904.2969538007854     
+BRANDY                ojAlgo-LP-dual-D      Solved                3.167042ms            1518.5098964881192    
+VTP-BASE              ojAlgo-LP-dual-D      Solved                0.528459ms            129831.46246136136    
+GREENBEA              ojAlgo-LP-dual-S      Solved                421.06525ms           -7.255524812984596E7  
+SCAGR7                ojAlgo-LP-dual-D      Solved                2.119917ms            -2331389.8243309823   
+SC105                 ojAlgo-LP-dual-D      Solved                1.579208ms            -52.20206121170722    
+BRANDY                ojAlgo-LP-dual-S      Solved                4.100458ms            1518.5098964881176    
+FINNIS                ojAlgo-LP-dual-S      Solved                5.240375ms            172791.06559561158    
+BOEING2               ojAlgo-LP-dual-S      Solved                1.675833ms            -315.01872801520295   
+SCFXM2                ojAlgo-LP-dual-S      Solved                11.583292ms           36660.261564998815    
+VTP-BASE              ojAlgo-LP-dual-S      Solved                0.860084ms            129831.46246136136    
+PDS-02                ojAlgo-LP-dual-S      Solved                134.84725ms           2.885786201E10        
+RECIPELP              ojAlgo-LP-dual-S      Solved                0.172041ms            -266.616              
+PILOT-WE              ojAlgo-LP-dual-D      Solved                1593.345875ms         -2720107.532834981    
+PDS-02                ojAlgo-LP-dual-D      Solved                3214.355583ms         2.8857862010000004E10 
+SC105                 ojAlgo-LP-dual-S      Solved                0.54575ms             -52.20206121170722    
+SCSD8                 ojAlgo-LP-dual-S      Solved                28.044917ms           904.9999999254645     
+SHARE2B               ojAlgo-LP-dual-S      Solved                0.726458ms            -415.73224074141945   
+CAPRI                 ojAlgo-LP-dual-S      Solved                2.557375ms            2690.0129137681624    
+RECIPELP              ojAlgo-LP-dual-D      Solved                0.208042ms            -266.616              
+SCFXM3                ojAlgo-LP-dual-D      Solved                79.05425ms            54901.25454975103     
+SCSD8                 ojAlgo-LP-dual-D      Solved                151.649417ms          904.9999999254671     
+SHARE2B               ojAlgo-LP-dual-D      Solved                0.321125ms            -415.73224074142047   
+SCRS8                 ojAlgo-LP-dual-S      Solved                7.618958ms            904.2969538007911     
+D2Q06C                ojAlgo-LP-dual-S      Solved                725.310292ms          122784.21081418984    
+MAROS-R7              ojAlgo-LP-dual-S      Solved                593.439792ms          1497185.166479644     
+BOEING1               ojAlgo-LP-dual-S      Solved                8.510666ms            -335.21356750712675   
+CAPRI                 ojAlgo-LP-dual-D      Solved                2.833375ms            2690.0129137681593    
+SCFXM1                ojAlgo-LP-dual-S      Solved                3.824291ms            18416.759028348948    
+SEBA                  ojAlgo-LP-dual-S      Solved                6.753916ms            15711.600000000064    
+GROW15                ojAlgo-LP-dual-D      Solved                12.975208ms           -1.068709412935747E8  
+ETAMACRO              ojAlgo-LP-dual-D      Solved                17.796083ms           -755.7152329911767    
+BOEING2               ojAlgo-LP-dual-D      Solved                1.060209ms            -315.0187280151958    
+MAROS-R7              ojAlgo-LP-dual-D      Solved                19030.077167ms        1497185.1664796658    
+SCFXM2                ojAlgo-LP-dual-D      Solved                30.741ms              36660.26156499875     
+D2Q06C                ojAlgo-LP-dual-D      Solved                29484.008084ms        122784.21081466033    
+SEBA                  ojAlgo-LP-dual-D      Solved                15.783167ms           15711.600000000002    
+PILOT-WE              ojAlgo-LP-dual-S      Solved                161.14375ms           -2720107.5328448443   
+GROW15                ojAlgo-LP-dual-S      Solved                6.467875ms            -1.0687094129357533E8 
+ETAMACRO              ojAlgo-LP-dual-S      Solved                7.291875ms            -755.7152329911875    
+MAROS                 ojAlgo-LP-dual-D      Solved                134.757458ms          -58063.743701130814   
+SCORPION              ojAlgo-LP-dual-D      Solved                2.386ms               1878.1248227381082    
+SC205                 ojAlgo-LP-dual-D      Solved                2.304833ms            -52.20206121170737    
+BLEND                 ojAlgo-LP-dual-S      Solved                0.814791ms            -30.812149845828156   
+PILOTNOV              ojAlgo-LP-dual-D      Solved                701.165583ms          -4497.276188218663    
+80BAU3B               ojAlgo-LP-dual-S      Solved                304.4855ms            987224.1924090901     
+WOODW                 ojAlgo-LP-dual-D      Solved                571.223375ms          1.30447633308365      
+GANGES                ojAlgo-LP-dual-S      Solved                13.535708ms           -109585.73612927829   
+AGG                   ojAlgo-LP-dual-D      Solved                1.113291ms            -3.599176728657674E7  
+BLEND                 ojAlgo-LP-dual-D      Solved                0.241042ms            -30.812149845832206   
+PILOTNOV              ojAlgo-LP-dual-S      Solved                99.836292ms           -4497.276188218871    
+AGG                   ojAlgo-LP-dual-S      Solved                0.929833ms            -3.599176728657651E7  
+STOCFOR1              ojAlgo-LP-dual-S      Solved                0.1745ms              -41131.976219436416   
+PILOT87               ojAlgo-LP-dual-S      Solved                4457.13825ms          301.7103473331067     
+AFIRO                 ojAlgo-LP-dual-D      Solved                0.026417ms            -464.75314285714285   
+SC205                 ojAlgo-LP-dual-S      Solved                1.2365ms              -52.20206121170722    
+STOCFOR1              ojAlgo-LP-dual-D      Solved                0.207ms               -41131.97621943642    
+WOODW                 ojAlgo-LP-dual-S      Solved                119.189583ms          1.30447633308422      
+PILOT87               ojAlgo-LP-dual-D      Solved                46808.211541ms        301.7103473316204     
+GREENBEA              ojAlgo-LP-dual-D      FAILED                TIMEOUT               
+QAP12                 ojAlgo-LP-dual-D      FAILED                TIMEOUT               
+AFIRO                 ojAlgo-LP-dual-S      Solved                1.648708ms            -464.75314285714285   
+PILOT                 ojAlgo-LP-dual-S      Solved                1527.058792ms         -557.4897292840785    
+SCAGR25               ojAlgo-LP-dual-S      Solved                11.978209ms           -1.4753433060768522E7 
+80BAU3B               ojAlgo-LP-dual-D      Solved                7616.652625ms         987224.1924090587     
+KEN-07                ojAlgo-LP-dual-S      Solved                98.966208ms           -6.79520443381687E8   
+BNL2                  ojAlgo-LP-dual-S      Solved                149.7525ms            1811.2365403585452    
+STOCFOR2              ojAlgo-LP-dual-S      Solved                44.741375ms           -39024.40853788203    
+BNL2                  ojAlgo-LP-dual-D      Solved                3113.954042ms         1811.2365403585386    
+SHIP08L               ojAlgo-LP-dual-S      Solved                21.268208ms           1909055.2113891323    
+WOOD1P                ojAlgo-LP-dual-D      Solved                59.6365ms             1.44290241157332      
+BNL1                  ojAlgo-LP-dual-D      Solved                128.045791ms          1977.6295615225442    
+GANGES                ojAlgo-LP-dual-D      Solved                67.902542ms           -109585.73612927813   
+STOCFOR2              ojAlgo-LP-dual-D      Solved                1274.973708ms         -39024.40853788195    
+FFFFF800              ojAlgo-LP-dual-D      Solved                31.130042ms           555679.5648175685     
+BORE3D                ojAlgo-LP-dual-S      Solved                0.793167ms            1373.0803942084929    
+ADLITTLE              ojAlgo-LP-dual-D      Solved                0.212083ms            225494.96316237937    
+SHIP08L               ojAlgo-LP-dual-D      Solved                21.283458ms           1909055.2113891314    
+STANDMPS              ojAlgo-LP-dual-D      Solved                3.902959ms            1406.0175000000002    
+FFFFF800              ojAlgo-LP-dual-S      Solved                11.14475ms            555679.5648174963     
+BNL1                  ojAlgo-LP-dual-S      Solved                27.163458ms           1977.629561522881     
+BORE3D                ojAlgo-LP-dual-D      Solved                0.937833ms            1373.0803942084926    
+STANDMPS              ojAlgo-LP-dual-S      Solved                2.426333ms            1406.0175             
+SCAGR25               ojAlgo-LP-dual-D      Solved                19.073375ms           -1.475343306076841E7  
+ADLITTLE              ojAlgo-LP-dual-S      Solved                0.231292ms            225494.96316238042    
+STANDATA              ojAlgo-LP-dual-D      Solved                1.901667ms            1257.6994999999997    
+GROW22                ojAlgo-LP-dual-D      Solved                29.423084ms           -1.6083433648256242E8 
+SHIP08S               ojAlgo-LP-dual-S      Solved                4.095083ms            1920098.2105346199    
+KEN-07                ojAlgo-LP-dual-D      Solved                720.601875ms          -6.795204433816962E8  
+DEGEN3                ojAlgo-LP-dual-D      Solved                2996.297625ms         -987.2940000000282    
+PILOT-JA              ojAlgo-LP-dual-D      INVALID               -6113.136506743205    value agrees, solution
+STANDATA              ojAlgo-LP-dual-S      Solved                1.311084ms            1257.6994999999997    
+GROW22                ojAlgo-LP-dual-S      Solved                11.151834ms           -1.6083433648256296E8 
+SHIP08S               ojAlgo-LP-dual-D      Solved                7.897542ms            1920098.2105346194    
+QAP8                  ojAlgo-LP-dual-S      Solved                359.43625ms           203.50000000010053    
+QAP8                  ojAlgo-LP-dual-D      Solved                2081.824125ms         203.50000000214396    
+CYCLE                 ojAlgo-LP-dual-D      Solved                2266.494125ms         -5.226393024902938    
+DEGEN2                ojAlgo-LP-dual-S      Solved                16.761334ms           -1435.178             
+TUFF                  ojAlgo-LP-dual-S      Solved                3.932375ms            0.2921477650936128    
+SC50A                 ojAlgo-LP-dual-S      Solved                0.084ms               -64.57507705856447    
+CRE-A                 ojAlgo-LP-dual-S      Solved                68.176458ms           2.3595407064423967E7  
+E226                  ojAlgo-LP-dual-D      Solved                4.9045ms              -11.638929066371647   
+CYCLE                 ojAlgo-LP-dual-S      Solved                85.644834ms           -5.226393024894102    
+WOOD1P                ojAlgo-LP-dual-S      Solved                38.302208ms           1.44290241157341      
+GFRD-PNC              ojAlgo-LP-dual-D      Solved                14.702834ms           6902235.999548805     
+LOTFI                 ojAlgo-LP-dual-S      Solved                1.263291ms            -25.26470606188001    
+SHIP12S               ojAlgo-LP-dual-S      Solved                5.137167ms            1489236.1344061291    
+SHIP12S               ojAlgo-LP-dual-D      Solved                13.35525ms            1489236.1344061291    
+E226                  ojAlgo-LP-dual-S      Solved                4.354333ms            -11.638929066370517   
+SC50A                 ojAlgo-LP-dual-D      Solved                0.064167ms            -64.57507705856452    
+CRE-C                 ojAlgo-LP-dual-D      Solved                360.418708ms          2.5275116140880305E7  
+LOTFI                 ojAlgo-LP-dual-D      Solved                1.192916ms            -25.26470606188001    
+DEGEN3                ojAlgo-LP-dual-S      Solved                231.392ms             -987.294              
+SHELL                 ojAlgo-LP-dual-S      Solved                7.411375ms            1.208825346E9         
+SC50B                 ojAlgo-LP-dual-S      Solved                0.081708ms            -69.99999999999999    
+ISRAEL                ojAlgo-LP-dual-D      Solved                1.33825ms             -896644.8218630458    
+TUFF                  ojAlgo-LP-dual-D      Solved                6.262791ms            0.2921477650936119    
+SHELL                 ojAlgo-LP-dual-D      Solved                14.856ms              1.208825346E9         
+SC50B                 ojAlgo-LP-dual-D      Solved                0.068542ms            -70.00000000000001    
+CZPROB                ojAlgo-LP-dual-D      Solved                66.021542ms           2185196.698856643     
+GROW7                 ojAlgo-LP-dual-S      Solved                1.650459ms            -4.77878118147115E7   
+CRE-C                 ojAlgo-LP-dual-S      Solved                51.395334ms           2.5275116140880212E7  
+GFRD-PNC              ojAlgo-LP-dual-S      Solved                6.242834ms            6902235.999548811     
+SCSD1                 ojAlgo-LP-dual-S      Solved                1.589458ms            8.666666674333346     
+STANDGUB              ojAlgo-LP-dual-S      Solved                1.098292ms            1257.6994999999997    
+STANDGUB              ojAlgo-LP-dual-D      Solved                1.6735ms              1257.6994999999997    
+CZPROB                ojAlgo-LP-dual-S      Solved                26.497417ms           2185196.6988565773    
+PILOT-JA              ojAlgo-LP-dual-S      INVALID               -6113.13650676498     value agrees, solution
+GROW7                 ojAlgo-LP-dual-D      Solved                1.911416ms            -4.7787811814711526E7 
+FIT1P                 ojAlgo-LP-dual-D      Solved                279.323458ms          9146.378092420933     
+PILOT4                ojAlgo-LP-dual-S      Solved                47.840334ms           -2581.1392588838917   
+SCSD1                 ojAlgo-LP-dual-D      Solved                1.798208ms            8.666666674333346     
+PILOT                 ojAlgo-LP-dual-D      Solved                11018.643833ms        -557.4897295472865    
+FIT1P                 ojAlgo-LP-dual-S      Solved                38.132083ms           9146.378092420926     
+ISRAEL                ojAlgo-LP-dual-S      Solved                1.965709ms            -896644.8218630458    
+PEROLD                ojAlgo-LP-dual-D      Solved                564.848ms             -9380.755278227978    
+PILOT4                ojAlgo-LP-dual-D      Solved                155.372333ms          -2581.139258881077    
+PEROLD                ojAlgo-LP-dual-S      Solved                100.43675ms           -9380.755278235349    
+AGG2                  ojAlgo-LP-dual-S      Solved                2.127583ms            -2.023925235597711E7  
+BANDM                 ojAlgo-LP-dual-S      Solved                6.52ms                -158.62801845012066   
+FIT1D                 ojAlgo-LP-dual-S      Solved                9.500292ms            -9146.378092420924    
+SCTAP3                ojAlgo-LP-dual-S      Solved                27.287584ms           1424.0000000000002    
+AGG2                  ojAlgo-LP-dual-D      Solved                3.235375ms            -2.0239252355977096E7 
+BANDM                 ojAlgo-LP-dual-D      Solved                11.354167ms           -158.62801845010875   
+D6CUBE                ojAlgo-LP-dual-D      Solved                287.702875ms          315.49166666668475    
+AGG3                  ojAlgo-LP-dual-S      Solved                1.858417ms            1.0312115935089223E7  
+SCFXM3                ojAlgo-LP-dual-S      Solved                16.614334ms           54901.25454975145     
+FORPLAN               ojAlgo-LP-dual-S      Solved                3.545167ms            -664.2189612722041    
+SIERRA                ojAlgo-LP-dual-S      Solved                7.79825ms             1.5394362183631927E7  
+TRUSS                 ojAlgo-LP-dual-S      Solved                733.8555ms            458815.8471856168     
+FORPLAN               ojAlgo-LP-dual-D      Solved                5.714709ms            -664.2189612721024    
+AGG3                  ojAlgo-LP-dual-D      Solved                2.689542ms            1.031211593508922E7   
+D6CUBE                ojAlgo-LP-dual-S      Solved                103.359917ms          315.4916666666818     
+SIERRA                ojAlgo-LP-dual-D      Solved                24.312834ms           1.5394362183631925E7  
+SCTAP2                ojAlgo-LP-dual-D      Solved                79.818875ms           1724.807142857144     
+SCTAP1                ojAlgo-LP-dual-S      Solved                2.673625ms            1412.2500000000002    
+25FV47                ojAlgo-LP-dual-S      Solved                120.177542ms          5501.845888286747     
+SHIP04L               ojAlgo-LP-dual-S      Solved                2.676625ms            1793324.5379703555    
+SCTAP1                ojAlgo-LP-dual-D      Solved                5.810958ms            1412.250000000001     
+SCTAP3                ojAlgo-LP-dual-D      Solved                275.206959ms          1424.0000000000034    
+25FV47                ojAlgo-LP-dual-D      Solved                723.841541ms          5501.845888307632     
+GREENBEB              ojAlgo-LP-dual-S      Solved                424.719458ms          -4302260.261206587    
+SHIP04L               ojAlgo-LP-dual-D      Solved                6.805833ms            1793324.5379703555    
+DEGEN2                ojAlgo-LP-dual-D      Solved                38.875083ms           -1435.178000000012    
+NESM                  ojAlgo-LP-dual-S      Solved                86.651416ms           1.4076036487562729E7  
+SCTAP2                ojAlgo-LP-dual-S      Solved                11.934958ms           1724.8071428571434    
+CRE-A                 ojAlgo-LP-dual-D      Solved                631.910709ms          2.359540706097176E7   
+FIT1D                 ojAlgo-LP-dual-D      Solved                8.77825ms             -9146.378092420922    
+NESM                  ojAlgo-LP-dual-D      Solved                553.390833ms          1.4076036487562707E7  
+GREENBEB              ojAlgo-LP-dual-D      Solved                8394.191709ms         -4302260.261206074    
+QAP12                 ojAlgo-LP-dual-S      FAILED                TIMEOUT               
+TRUSS                 ojAlgo-LP-dual-D      Solved                13269.724ms           458815.8471856032     
+
+Iteration 2 with 189 model/solver pairs remaining 2026-09-25T12:54:11.631845Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 189 model/solver pairs remaining 2026-09-25T12:57:06.866600Z
+-----------------------------------------------------------------------------
+SHIP04S               ojAlgo-LP-dual-S      Time stable           1.683083ms            1798714.7004453917    
+SCORPION              ojAlgo-LP-dual-S      Time stable           1.037458ms            1878.124822738108     
+SHARE1B               ojAlgo-LP-dual-S      Time stable           1.079125ms            -76589.31857918583    
+MODSZK1               ojAlgo-LP-dual-S      Time stable           19.88475ms            320.6197290641473     
+BOEING1               ojAlgo-LP-dual-D      Time stable           11.246417ms           -335.21356750707395   
+MAROS                 ojAlgo-LP-dual-S      Time stable           22.440583ms           -58063.74370112596    
+STAIR                 ojAlgo-LP-dual-D      Time stable           14.062833ms           -251.2669511929634    
+SHARE1B               ojAlgo-LP-dual-D      Time stable           1.1545ms              -76589.3185791862     
+SCSD6                 ojAlgo-LP-dual-D      Time stable           10.304833ms           50.500000078262744    
+SCFXM1                ojAlgo-LP-dual-D      Time stable           5.624125ms            18416.759028349155    
+BEACONFD              ojAlgo-LP-dual-D      Time stable           0.595375ms            33592.48580719995     
+STAIR                 ojAlgo-LP-dual-S      Time stable           8.067875ms            -251.2669511929635    
+SHIP12L               ojAlgo-LP-dual-D      Time stable           30.78425ms            1470187.919329265     
+SCAGR7                ojAlgo-LP-dual-S      Time stable           0.560208ms            -2331389.8243309837   
+BEACONFD              ojAlgo-LP-dual-S      Time stable           0.797417ms            33592.485807201636    
+SCRS8                 ojAlgo-LP-dual-D      Time stable           25.728375ms           904.2969538007854     
+BRANDY                ojAlgo-LP-dual-D      Time stable           2.900542ms            1518.5098964881192    
+PDS-02                ojAlgo-LP-dual-S      Time stable           134.84725ms           2.885786201E10        
+BRANDY                ojAlgo-LP-dual-S      Time stable           3.004709ms            1518.5098964881176    
+FINNIS                ojAlgo-LP-dual-S      Time stable           4.218542ms            172791.06559561158    
+BOEING2               ojAlgo-LP-dual-S      Time stable           0.86625ms             -315.01872801520295   
+MODSZK1               ojAlgo-LP-dual-D      Time stable           267.777ms             320.6197291202955     
+SCFXM2                ojAlgo-LP-dual-S      Time stable           10.21875ms            36660.261564998815    
+SCSD8                 ojAlgo-LP-dual-S      Time stable           27.693375ms           904.9999999254645     
+SHARE2B               ojAlgo-LP-dual-S      Time stable           0.545375ms            -415.73224074141945   
+SCSD8                 ojAlgo-LP-dual-D      Time stable           151.649417ms          904.9999999254671     
+D2Q06C                ojAlgo-LP-dual-S      Time stable           725.310292ms          122784.21081418984    
+PILOT-WE              ojAlgo-LP-dual-D      Time stable           1593.345875ms         -2720107.532834981    
+BOEING1               ojAlgo-LP-dual-S      Time stable           6.77175ms             -335.21356750712675   
+CAPRI                 ojAlgo-LP-dual-D      Time stable           2.319084ms            2690.0129137681593    
+SCFXM1                ojAlgo-LP-dual-S      Time stable           3.436375ms            18416.759028348948    
+SEBA                  ojAlgo-LP-dual-S      Time stable           6.337291ms            15711.600000000064    
+GROW15                ojAlgo-LP-dual-D      Time stable           11.71925ms            -1.068709412935747E8  
+ETAMACRO              ojAlgo-LP-dual-D      Time stable           17.1465ms             -755.7152329911767    
+BOEING2               ojAlgo-LP-dual-D      Time stable           0.906459ms            -315.0187280151958    
+MAROS-R7              ojAlgo-LP-dual-S      Time stable           542.449125ms          1497185.166479644     
+SCFXM2                ojAlgo-LP-dual-D      Time stable           29.610167ms           36660.26156499875     
+PILOT-WE              ojAlgo-LP-dual-S      Time stable           153.907875ms          -2720107.5328448443   
+GROW15                ojAlgo-LP-dual-S      Time stable           6.266166ms            -1.0687094129357533E8 
+MAROS                 ojAlgo-LP-dual-D      Time stable           132.237041ms          -58063.743701130814   
+SCORPION              ojAlgo-LP-dual-D      Time stable           1.895542ms            1878.1248227381082    
+SC205                 ojAlgo-LP-dual-D      Time stable           2.214042ms            -52.20206121170737    
+PILOTNOV              ojAlgo-LP-dual-D      Time stable           673.874084ms          -4497.276188218663    
+80BAU3B               ojAlgo-LP-dual-S      Time stable           282.998375ms          987224.1924090901     
+PDS-02                ojAlgo-LP-dual-D      Time stable           2767.663875ms         2.8857862010000004E10 
+GANGES                ojAlgo-LP-dual-S      Time stable           13.535708ms           -109585.73612927829   
+AGG                   ojAlgo-LP-dual-D      Time stable           1.113291ms            -3.599176728657674E7  
+PILOTNOV              ojAlgo-LP-dual-S      Time stable           99.836292ms           -4497.276188218871    
+AGG                   ojAlgo-LP-dual-S      Time stable           0.929833ms            -3.599176728657651E7  
+WOODW                 ojAlgo-LP-dual-D      Time stable           546.686291ms          1.30447633308365      
+SC205                 ojAlgo-LP-dual-S      Time stable           1.087875ms            -52.20206121170722    
+WOODW                 ojAlgo-LP-dual-S      Time stable           105.02075ms           1.30447633308422      
+PILOT87               ojAlgo-LP-dual-S      Time stable           4176.353542ms         301.7103473331067     
+MAROS-R7              ojAlgo-LP-dual-D      Time stable           14284.626209ms        1497185.1664796658    
+80BAU3B               ojAlgo-LP-dual-D      Time stable           7616.652625ms         987224.1924090587     
+PILOT                 ojAlgo-LP-dual-S      Time stable           1428.8075ms           -557.4897292840785    
+BNL2                  ojAlgo-LP-dual-S      Time stable           145.340292ms          1811.2365403585452    
+STOCFOR2              ojAlgo-LP-dual-S      Time stable           40.306ms              -39024.40853788203    
+D2Q06C                ojAlgo-LP-dual-D      Time stable           27168.374916ms        122784.21081466033    
+GANGES                ojAlgo-LP-dual-D      Time stable           66.744916ms           -109585.73612927813   
+STOCFOR2              ojAlgo-LP-dual-D      Time stable           1274.973708ms         -39024.40853788195    
+BORE3D                ojAlgo-LP-dual-S      Time stable           0.688875ms            1373.0803942084929    
+KEN-07                ojAlgo-LP-dual-D      Time stable           720.601875ms          -6.795204433816962E8  
+STANDMPS              ojAlgo-LP-dual-D      Time stable           3.902959ms            1406.0175000000002    
+SHIP08L               ojAlgo-LP-dual-D      Time stable           21.283042ms           1909055.2113891314    
+FFFFF800              ojAlgo-LP-dual-S      Time stable           10.584916ms           555679.5648174963     
+BORE3D                ojAlgo-LP-dual-D      Time stable           0.756417ms            1373.0803942084926    
+STANDATA              ojAlgo-LP-dual-D      Time stable           1.901667ms            1257.6994999999997    
+SHIP08S               ojAlgo-LP-dual-S      Time stable           3.783042ms            1920098.2105346199    
+STANDATA              ojAlgo-LP-dual-S      Time stable           1.176584ms            1257.6994999999997    
+GROW22                ojAlgo-LP-dual-S      Time stable           11.151834ms           -1.6083433648256296E8 
+CYCLE                 ojAlgo-LP-dual-D      Time stable           2176.358875ms         -5.226393024902938    
+QAP8                  ojAlgo-LP-dual-D      Time stable           2066.653334ms         203.50000000214396    
+CRE-A                 ojAlgo-LP-dual-S      Time stable           66.369667ms           2.3595407064423967E7  
+DEGEN2                ojAlgo-LP-dual-S      Time stable           16.748417ms           -1435.178             
+TUFF                  ojAlgo-LP-dual-S      Time stable           3.861541ms            0.2921477650936128    
+CYCLE                 ojAlgo-LP-dual-S      Time stable           85.644834ms           -5.226393024894102    
+CRE-C                 ojAlgo-LP-dual-D      Time stable           360.418708ms          2.5275116140880305E7  
+LOTFI                 ojAlgo-LP-dual-S      Time stable           1.04375ms             -25.26470606188001    
+SHIP12S               ojAlgo-LP-dual-S      Time stable           4.959375ms            1489236.1344061291    
+SHIP12S               ojAlgo-LP-dual-D      Time stable           13.042708ms           1489236.1344061291    
+E226                  ojAlgo-LP-dual-S      Time stable           4.354333ms            -11.638929066370517   
+DEGEN3                ojAlgo-LP-dual-S      Time stable           231.392ms             -987.294              
+LOTFI                 ojAlgo-LP-dual-D      Time stable           0.955542ms            -25.26470606188001    
+CZPROB                ojAlgo-LP-dual-D      Time stable           66.021542ms           2185196.698856643     
+GROW7                 ojAlgo-LP-dual-S      Time stable           1.596208ms            -4.77878118147115E7   
+SCSD1                 ojAlgo-LP-dual-S      Time stable           1.148667ms            8.666666674333346     
+STANDGUB              ojAlgo-LP-dual-S      Time stable           1.098292ms            1257.6994999999997    
+STANDGUB              ojAlgo-LP-dual-D      Time stable           1.576917ms            1257.6994999999997    
+FIT1P                 ojAlgo-LP-dual-D      Time stable           279.323458ms          9146.378092420933     
+GROW7                 ojAlgo-LP-dual-D      Time stable           1.666833ms            -4.7787811814711526E7 
+SCSD1                 ojAlgo-LP-dual-D      Time stable           1.500583ms            8.666666674333346     
+PEROLD                ojAlgo-LP-dual-D      Time stable           564.848ms             -9380.755278227978    
+FIT1P                 ojAlgo-LP-dual-S      Time stable           36.487125ms           9146.378092420926     
+ISRAEL                ojAlgo-LP-dual-S      Time stable           1.255209ms            -896644.8218630458    
+PILOT4                ojAlgo-LP-dual-D      Time stable           155.372333ms          -2581.139258881077    
+TRUSS                 ojAlgo-LP-dual-S      Time stable           733.8555ms            458815.8471856168     
+PEROLD                ojAlgo-LP-dual-S      Time stable           100.43675ms           -9380.755278235349    
+AGG2                  ojAlgo-LP-dual-S      Time stable           1.608417ms            -2.023925235597711E7  
+BANDM                 ojAlgo-LP-dual-S      Time stable           6.252ms               -158.62801845012066   
+SCTAP3                ojAlgo-LP-dual-S      Time stable           25.280709ms           1424.0000000000002    
+BANDM                 ojAlgo-LP-dual-D      Time stable           11.328375ms           -158.62801845010875   
+D6CUBE                ojAlgo-LP-dual-D      Time stable           287.702875ms          315.49166666668475    
+AGG3                  ojAlgo-LP-dual-S      Time stable           1.656208ms            1.0312115935089223E7  
+FORPLAN               ojAlgo-LP-dual-S      Time stable           3.545167ms            -664.2189612722041    
+SIERRA                ojAlgo-LP-dual-S      Time stable           7.692417ms            1.5394362183631927E7  
+D6CUBE                ojAlgo-LP-dual-S      Time stable           103.359917ms          315.4916666666818     
+FORPLAN               ojAlgo-LP-dual-D      Time stable           5.526375ms            -664.2189612721024    
+AGG3                  ojAlgo-LP-dual-D      Time stable           2.689542ms            1.031211593508922E7   
+SCTAP2                ojAlgo-LP-dual-D      Time stable           79.818875ms           1724.807142857144     
+25FV47                ojAlgo-LP-dual-S      Time stable           120.177542ms          5501.845888286747     
+SCTAP1                ojAlgo-LP-dual-S      Time stable           2.554292ms            1412.2500000000002    
+25FV47                ojAlgo-LP-dual-D      Time stable           723.841541ms          5501.845888307632     
+SHIP04L               ojAlgo-LP-dual-S      Time stable           2.676625ms            1793324.5379703555    
+SCTAP1                ojAlgo-LP-dual-D      Time stable           5.810958ms            1412.250000000001     
+SCTAP3                ojAlgo-LP-dual-D      Time stable           275.206959ms          1424.0000000000034    
+GREENBEB              ojAlgo-LP-dual-S      Time stable           424.719458ms          -4302260.261206587    
+NESM                  ojAlgo-LP-dual-S      Time stable           86.651416ms           1.4076036487562729E7  
+SCTAP2                ojAlgo-LP-dual-S      Time stable           11.777625ms           1724.8071428571434    
+CRE-A                 ojAlgo-LP-dual-D      Time stable           631.910709ms          2.359540706097176E7   
+PILOT                 ojAlgo-LP-dual-D      Time stable           11018.643833ms        -557.4897295472865    
+TRUSS                 ojAlgo-LP-dual-D      Time stable           13269.724ms           458815.8471856032     
+
+Iteration 4 with 67 model/solver pairs remaining 2026-09-25T12:59:48.224364Z
+-----------------------------------------------------------------------------
+SHIP04S               ojAlgo-LP-dual-D      Time stable           2.9155ms              1798714.700445392     
+SCAGR25               ojAlgo-LP-dual-S      Time stable           8.110709ms            -1.4753433060768522E7 
+KEN-07                ojAlgo-LP-dual-S      Time stable           90.297959ms           -6.79520443381687E8   
+WOOD1P                ojAlgo-LP-dual-D      Time stable           46.733459ms           1.44290241157332      
+BNL1                  ojAlgo-LP-dual-D      Time stable           117.556875ms          1977.6295615225442    
+FFFFF800              ojAlgo-LP-dual-D      Time stable           27.74175ms            555679.5648175685     
+BNL1                  ojAlgo-LP-dual-S      Time stable           25.548459ms           1977.629561522881     
+GREENBEA              ojAlgo-LP-dual-S      Time stable           421.06525ms           -7.255524812984596E7  
+GROW22                ojAlgo-LP-dual-D      Time stable           28.397334ms           -1.6083433648256242E8 
+QAP8                  ojAlgo-LP-dual-S      Time stable           326.89225ms           203.50000000010053    
+ISRAEL                ojAlgo-LP-dual-D      Time stable           1.33825ms             -896644.8218630458    
+CRE-C                 ojAlgo-LP-dual-S      Time stable           51.395334ms           2.5275116140880212E7  
+FIT1D                 ojAlgo-LP-dual-S      Time stable           8.672166ms            -9146.378092420924    
+AGG2                  ojAlgo-LP-dual-D      Time stable           3.235375ms            -2.0239252355977096E7 
+SCFXM3                ojAlgo-LP-dual-S      Time stable           15.519084ms           54901.25454975145     
+SIERRA                ojAlgo-LP-dual-D      Time stable           24.025208ms           1.5394362183631925E7  
+GREENBEB              ojAlgo-LP-dual-D      Time stable           7113.779084ms         -4302260.261206074    
+
+Iteration 5 with 50 model/solver pairs remaining 2026-09-25T13:01:19.656281Z
+-----------------------------------------------------------------------------
+CAPRI                 ojAlgo-LP-dual-S      Time stable           1.880625ms            2690.0129137681624    
+SCRS8                 ojAlgo-LP-dual-S      Time stable           7.2905ms              904.2969538007911     
+SEBA                  ojAlgo-LP-dual-D      Time stable           14.211583ms           15711.600000000002    
+SCFXM3                ojAlgo-LP-dual-D      Time stable           72.254041ms           54901.25454975103     
+STANDMPS              ojAlgo-LP-dual-S      Time stable           2.166167ms            1406.0175             
+PILOT4                ojAlgo-LP-dual-S      Time stable           44.234333ms           -2581.1392588838917   
+DEGEN2                ojAlgo-LP-dual-D      Time stable           38.875083ms           -1435.178000000012    
+NESM                  ojAlgo-LP-dual-D      Time stable           537.838292ms          1.4076036487562707E7  
+DEGEN3                ojAlgo-LP-dual-D      Time stable           2390.119791ms         -987.2940000000282    
+PILOT87               ojAlgo-LP-dual-D      Time stable           27385.577291ms        301.7103473316204     
+
+Iteration 6 with 40 model/solver pairs remaining 2026-09-25T13:02:49.649143Z
+-----------------------------------------------------------------------------
+SHIP12L               ojAlgo-LP-dual-S      Time stable           9.116583ms            1470187.9193292644    
+ETAMACRO              ojAlgo-LP-dual-S      Time stable           5.9915ms              -755.7152329911875    
+KB2                   ojAlgo-LP-dual-D      Time stable           0.075834ms            -1749.9001299062088   
+FINNIS                ojAlgo-LP-dual-D      Time stable           7.426625ms            172791.06559561152    
+SC50A                 ojAlgo-LP-dual-S      Time stable           0.072084ms            -64.57507705856447    
+SCAGR25               ojAlgo-LP-dual-D      Time stable           16.473875ms           -1.475343306076841E7  
+SHIP08S               ojAlgo-LP-dual-D      Time stable           7.7525ms              1920098.2105346194    
+GFRD-PNC              ojAlgo-LP-dual-D      Time stable           14.376834ms           6902235.999548805     
+SC50B                 ojAlgo-LP-dual-S      Time stable           0.075917ms            -69.99999999999999    
+SHELL                 ojAlgo-LP-dual-S      Time stable           7.411375ms            1.208825346E9         
+SHIP04L               ojAlgo-LP-dual-D      Time stable           6.805833ms            1793324.5379703555    
+FIT1D                 ojAlgo-LP-dual-D      Time stable           7.859875ms            -9146.378092420922    
+
+Iteration 7 with 28 model/solver pairs remaining 2026-09-25T13:02:57.248652Z
+-----------------------------------------------------------------------------
+SCAGR7                ojAlgo-LP-dual-D      Time stable           0.355083ms            -2331389.8243309823   
+ADLITTLE              ojAlgo-LP-dual-D      Time stable           0.146709ms            225494.96316237937    
+GFRD-PNC              ojAlgo-LP-dual-S      Time stable           6.242834ms            6902235.999548811     
+SHELL                 ojAlgo-LP-dual-D      Time stable           13.690417ms           1.208825346E9         
+BNL2                  ojAlgo-LP-dual-D      Time stable           2314.985042ms         1811.2365403585386    
+
+Iteration 8 with 23 model/solver pairs remaining 2026-09-25T13:03:04.858156Z
+-----------------------------------------------------------------------------
+SC105                 ojAlgo-LP-dual-D      Time stable           0.297666ms            -52.20206121170722    
+VTP-BASE              ojAlgo-LP-dual-D      Time stable           0.129584ms            129831.46246136136    
+SHARE2B               ojAlgo-LP-dual-D      Time stable           0.232834ms            -415.73224074142047   
+BLEND                 ojAlgo-LP-dual-S      Time stable           0.309292ms            -30.812149845828156   
+ADLITTLE              ojAlgo-LP-dual-S      Time stable           0.204875ms            225494.96316238042    
+SCSD6                 ojAlgo-LP-dual-S      Time stable           4.215417ms            50.50000007826232     
+CZPROB                ojAlgo-LP-dual-S      Time stable           26.2695ms             2185196.6988565773    
+
+Iteration 9 with 16 model/solver pairs remaining 2026-09-25T13:03:05.030137Z
+-----------------------------------------------------------------------------
+E226                  ojAlgo-LP-dual-D      Time stable           4.582417ms            -11.638929066371647   
+TUFF                  ojAlgo-LP-dual-D      Time stable           5.919458ms            0.2921477650936119    
+
+Iteration 10 with 14 model/solver pairs remaining 2026-09-25T13:03:05.243919Z
+-----------------------------------------------------------------------------
+
+Iteration 11 with 14 model/solver pairs remaining 2026-09-25T13:03:05.399976Z
+-----------------------------------------------------------------------------
+SHIP08L               ojAlgo-LP-dual-S      Time stable           6.074ms               1909055.2113891323    
+
+Iteration 12 with 13 model/solver pairs remaining 2026-09-25T13:03:05.533163Z
+-----------------------------------------------------------------------------
+WOOD1P                ojAlgo-LP-dual-S      Time stable           27.166292ms           1.44290241157341      
+
+Iteration 13 with 12 model/solver pairs remaining 2026-09-25T13:03:05.656775Z
+-----------------------------------------------------------------------------
+
+Iteration 14 with 12 model/solver pairs remaining 2026-09-25T13:03:05.669698Z
+-----------------------------------------------------------------------------
+
+Iteration 15 with 12 model/solver pairs remaining 2026-09-25T13:03:05.683158Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 12 model/solver pairs remaining 2026-09-25T13:03:05.699726Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 12 model/solver pairs remaining 2026-09-25T13:03:05.713391Z
+-----------------------------------------------------------------------------
+
+Iteration 18 with 12 model/solver pairs remaining 2026-09-25T13:03:05.728563Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 12 model/solver pairs remaining 2026-09-25T13:03:05.742468Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 12 model/solver pairs remaining 2026-09-25T13:03:05.756974Z
+-----------------------------------------------------------------------------
+KB2                   ojAlgo-LP-dual-S      Time stable           0.105417ms            -1749.9001299062054   
+RECIPELP              ojAlgo-LP-dual-S      Time stable           0.086292ms            -266.616              
+SC105                 ojAlgo-LP-dual-S      Time stable           0.21325ms             -52.20206121170722    
+VTP-BASE              ojAlgo-LP-dual-S      Time stable           0.1375ms              129831.46246136136    
+RECIPELP              ojAlgo-LP-dual-D      Time stable           0.090209ms            -266.616              
+AFIRO                 ojAlgo-LP-dual-D      Time stable           0.0175ms              -464.75314285714285   
+AFIRO                 ojAlgo-LP-dual-S      Time stable           0.022ms               -464.75314285714285   
+SC50A                 ojAlgo-LP-dual-D      Time stable           0.05425ms             -64.57507705856452    
+BLEND                 ojAlgo-LP-dual-D      Time stable           0.226375ms            -30.812149845832206   
+STOCFOR1              ojAlgo-LP-dual-S      Time stable           0.151625ms            -41131.976219436416   
+STOCFOR1              ojAlgo-LP-dual-D      Time stable           0.16175ms             -41131.97621943642    
+SC50B                 ojAlgo-LP-dual-D      Time stable           0.059041ms            -70.00000000000001    
+
+Final Results
+=====================================================================
+25FV47                ojAlgo-LP-dual-D      OPTIMAL               723.841541ms          
+25FV47                ojAlgo-LP-dual-S      OPTIMAL               120.177542ms          
+80BAU3B               ojAlgo-LP-dual-D      OPTIMAL               7616.652625ms         
+80BAU3B               ojAlgo-LP-dual-S      OPTIMAL               282.998375ms          
+ADLITTLE              ojAlgo-LP-dual-D      OPTIMAL               0.146709ms            
+ADLITTLE              ojAlgo-LP-dual-S      OPTIMAL               0.204875ms            
+AFIRO                 ojAlgo-LP-dual-D      OPTIMAL               0.0175ms              
+AFIRO                 ojAlgo-LP-dual-S      OPTIMAL               0.022ms               
+AGG                   ojAlgo-LP-dual-D      OPTIMAL               1.113291ms            
+AGG                   ojAlgo-LP-dual-S      OPTIMAL               0.929833ms            
+AGG2                  ojAlgo-LP-dual-D      OPTIMAL               3.235375ms            
+AGG2                  ojAlgo-LP-dual-S      OPTIMAL               1.608417ms            
+AGG3                  ojAlgo-LP-dual-D      OPTIMAL               2.689542ms            
+AGG3                  ojAlgo-LP-dual-S      OPTIMAL               1.656208ms            
+BANDM                 ojAlgo-LP-dual-D      OPTIMAL               11.328375ms           
+BANDM                 ojAlgo-LP-dual-S      OPTIMAL               6.252ms               
+BEACONFD              ojAlgo-LP-dual-D      OPTIMAL               0.595375ms            
+BEACONFD              ojAlgo-LP-dual-S      OPTIMAL               0.797417ms            
+BLEND                 ojAlgo-LP-dual-D      OPTIMAL               0.226375ms            
+BLEND                 ojAlgo-LP-dual-S      OPTIMAL               0.309292ms            
+BNL1                  ojAlgo-LP-dual-D      OPTIMAL               117.556875ms          
+BNL1                  ojAlgo-LP-dual-S      OPTIMAL               25.548459ms           
+BNL2                  ojAlgo-LP-dual-D      OPTIMAL               2314.985042ms         
+BNL2                  ojAlgo-LP-dual-S      OPTIMAL               145.340292ms          
+BOEING1               ojAlgo-LP-dual-D      OPTIMAL               11.246417ms           
+BOEING1               ojAlgo-LP-dual-S      OPTIMAL               6.77175ms             
+BOEING2               ojAlgo-LP-dual-D      OPTIMAL               0.906459ms            
+BOEING2               ojAlgo-LP-dual-S      OPTIMAL               0.86625ms             
+BORE3D                ojAlgo-LP-dual-D      OPTIMAL               0.756417ms            
+BORE3D                ojAlgo-LP-dual-S      OPTIMAL               0.688875ms            
+BRANDY                ojAlgo-LP-dual-D      OPTIMAL               2.900542ms            
+BRANDY                ojAlgo-LP-dual-S      OPTIMAL               3.004709ms            
+CAPRI                 ojAlgo-LP-dual-D      OPTIMAL               2.319084ms            
+CAPRI                 ojAlgo-LP-dual-S      OPTIMAL               1.880625ms            
+CRE-A                 ojAlgo-LP-dual-D      OPTIMAL               631.910709ms          
+CRE-A                 ojAlgo-LP-dual-S      OPTIMAL               66.369667ms           
+CRE-C                 ojAlgo-LP-dual-D      OPTIMAL               360.418708ms          
+CRE-C                 ojAlgo-LP-dual-S      OPTIMAL               51.395334ms           
+CYCLE                 ojAlgo-LP-dual-D      OPTIMAL               2176.358875ms         
+CYCLE                 ojAlgo-LP-dual-S      OPTIMAL               85.644834ms           
+CZPROB                ojAlgo-LP-dual-D      OPTIMAL               66.021542ms           
+CZPROB                ojAlgo-LP-dual-S      OPTIMAL               26.2695ms             
+D2Q06C                ojAlgo-LP-dual-D      OPTIMAL               27168.374916ms        
+D2Q06C                ojAlgo-LP-dual-S      OPTIMAL               725.310292ms          
+D6CUBE                ojAlgo-LP-dual-D      OPTIMAL               287.702875ms          
+D6CUBE                ojAlgo-LP-dual-S      OPTIMAL               103.359917ms          
+DEGEN2                ojAlgo-LP-dual-D      OPTIMAL               38.875083ms           
+DEGEN2                ojAlgo-LP-dual-S      OPTIMAL               16.748417ms           
+DEGEN3                ojAlgo-LP-dual-D      OPTIMAL               2390.119791ms         
+DEGEN3                ojAlgo-LP-dual-S      OPTIMAL               231.392ms             
+E226                  ojAlgo-LP-dual-D      OPTIMAL               4.582417ms            
+E226                  ojAlgo-LP-dual-S      OPTIMAL               4.354333ms            
+ETAMACRO              ojAlgo-LP-dual-D      OPTIMAL               17.1465ms             
+ETAMACRO              ojAlgo-LP-dual-S      OPTIMAL               5.9915ms              
+FFFFF800              ojAlgo-LP-dual-D      OPTIMAL               27.74175ms            
+FFFFF800              ojAlgo-LP-dual-S      OPTIMAL               10.584916ms           
+FINNIS                ojAlgo-LP-dual-D      OPTIMAL               7.426625ms            
+FINNIS                ojAlgo-LP-dual-S      OPTIMAL               4.218542ms            
+FIT1D                 ojAlgo-LP-dual-D      OPTIMAL               7.859875ms            
+FIT1D                 ojAlgo-LP-dual-S      OPTIMAL               8.672166ms            
+FIT1P                 ojAlgo-LP-dual-D      OPTIMAL               279.323458ms          
+FIT1P                 ojAlgo-LP-dual-S      OPTIMAL               36.487125ms           
+FORPLAN               ojAlgo-LP-dual-D      OPTIMAL               5.526375ms            
+FORPLAN               ojAlgo-LP-dual-S      OPTIMAL               3.545167ms            
+GANGES                ojAlgo-LP-dual-D      OPTIMAL               66.744916ms           
+GANGES                ojAlgo-LP-dual-S      OPTIMAL               13.535708ms           
+GFRD-PNC              ojAlgo-LP-dual-D      OPTIMAL               14.376834ms           
+GFRD-PNC              ojAlgo-LP-dual-S      OPTIMAL               6.242834ms            
+GREENBEA              ojAlgo-LP-dual-D      FAILED                TIMEOUT               
+GREENBEA              ojAlgo-LP-dual-S      OPTIMAL               421.06525ms           
+GREENBEB              ojAlgo-LP-dual-D      OPTIMAL               7113.779084ms         
+GREENBEB              ojAlgo-LP-dual-S      OPTIMAL               424.719458ms          
+GROW15                ojAlgo-LP-dual-D      OPTIMAL               11.71925ms            
+GROW15                ojAlgo-LP-dual-S      OPTIMAL               6.266166ms            
+GROW22                ojAlgo-LP-dual-D      OPTIMAL               28.397334ms           
+GROW22                ojAlgo-LP-dual-S      OPTIMAL               11.151834ms           
+GROW7                 ojAlgo-LP-dual-D      OPTIMAL               1.666833ms            
+GROW7                 ojAlgo-LP-dual-S      OPTIMAL               1.596208ms            
+ISRAEL                ojAlgo-LP-dual-D      OPTIMAL               1.33825ms             
+ISRAEL                ojAlgo-LP-dual-S      OPTIMAL               1.255209ms            
+KB2                   ojAlgo-LP-dual-D      OPTIMAL               0.075834ms            
+KB2                   ojAlgo-LP-dual-S      OPTIMAL               0.105417ms            
+KEN-07                ojAlgo-LP-dual-D      OPTIMAL               720.601875ms          
+KEN-07                ojAlgo-LP-dual-S      OPTIMAL               90.297959ms           
+LOTFI                 ojAlgo-LP-dual-D      OPTIMAL               0.955542ms            
+LOTFI                 ojAlgo-LP-dual-S      OPTIMAL               1.04375ms             
+MAROS                 ojAlgo-LP-dual-D      OPTIMAL               132.237041ms          
+MAROS                 ojAlgo-LP-dual-S      OPTIMAL               22.440583ms           
+MAROS-R7              ojAlgo-LP-dual-D      OPTIMAL               14284.626209ms        
+MAROS-R7              ojAlgo-LP-dual-S      OPTIMAL               542.449125ms          
+MODSZK1               ojAlgo-LP-dual-D      OPTIMAL               267.777ms             
+MODSZK1               ojAlgo-LP-dual-S      OPTIMAL               19.88475ms            
+NESM                  ojAlgo-LP-dual-D      OPTIMAL               537.838292ms          
+NESM                  ojAlgo-LP-dual-S      OPTIMAL               86.651416ms           
+PDS-02                ojAlgo-LP-dual-D      OPTIMAL               2767.663875ms         
+PDS-02                ojAlgo-LP-dual-S      OPTIMAL               134.84725ms           
+PEROLD                ojAlgo-LP-dual-D      OPTIMAL               564.848ms             
+PEROLD                ojAlgo-LP-dual-S      OPTIMAL               100.43675ms           
+PILOT                 ojAlgo-LP-dual-D      OPTIMAL               11018.643833ms        
+PILOT                 ojAlgo-LP-dual-S      OPTIMAL               1428.8075ms           
+PILOT-JA              ojAlgo-LP-dual-D      FAILED                INVALID               
+PILOT-JA              ojAlgo-LP-dual-S      FAILED                INVALID               
+PILOT-WE              ojAlgo-LP-dual-D      OPTIMAL               1593.345875ms         
+PILOT-WE              ojAlgo-LP-dual-S      OPTIMAL               153.907875ms          
+PILOT4                ojAlgo-LP-dual-D      OPTIMAL               155.372333ms          
+PILOT4                ojAlgo-LP-dual-S      OPTIMAL               44.234333ms           
+PILOT87               ojAlgo-LP-dual-D      OPTIMAL               27385.577291ms        
+PILOT87               ojAlgo-LP-dual-S      OPTIMAL               4176.353542ms         
+PILOTNOV              ojAlgo-LP-dual-D      OPTIMAL               673.874084ms          
+PILOTNOV              ojAlgo-LP-dual-S      OPTIMAL               99.836292ms           
+QAP12                 ojAlgo-LP-dual-D      FAILED                TIMEOUT               
+QAP12                 ojAlgo-LP-dual-S      FAILED                TIMEOUT               
+QAP8                  ojAlgo-LP-dual-D      OPTIMAL               2066.653334ms         
+QAP8                  ojAlgo-LP-dual-S      OPTIMAL               326.89225ms           
+RECIPELP              ojAlgo-LP-dual-D      OPTIMAL               0.090209ms            
+RECIPELP              ojAlgo-LP-dual-S      OPTIMAL               0.086292ms            
+SC105                 ojAlgo-LP-dual-D      OPTIMAL               0.297666ms            
+SC105                 ojAlgo-LP-dual-S      OPTIMAL               0.21325ms             
+SC205                 ojAlgo-LP-dual-D      OPTIMAL               2.214042ms            
+SC205                 ojAlgo-LP-dual-S      OPTIMAL               1.087875ms            
+SC50A                 ojAlgo-LP-dual-D      OPTIMAL               0.05425ms             
+SC50A                 ojAlgo-LP-dual-S      OPTIMAL               0.072084ms            
+SC50B                 ojAlgo-LP-dual-D      OPTIMAL               0.059041ms            
+SC50B                 ojAlgo-LP-dual-S      OPTIMAL               0.075917ms            
+SCAGR25               ojAlgo-LP-dual-D      OPTIMAL               16.473875ms           
+SCAGR25               ojAlgo-LP-dual-S      OPTIMAL               8.110709ms            
+SCAGR7                ojAlgo-LP-dual-D      OPTIMAL               0.355083ms            
+SCAGR7                ojAlgo-LP-dual-S      OPTIMAL               0.560208ms            
+SCFXM1                ojAlgo-LP-dual-D      OPTIMAL               5.624125ms            
+SCFXM1                ojAlgo-LP-dual-S      OPTIMAL               3.436375ms            
+SCFXM2                ojAlgo-LP-dual-D      OPTIMAL               29.610167ms           
+SCFXM2                ojAlgo-LP-dual-S      OPTIMAL               10.21875ms            
+SCFXM3                ojAlgo-LP-dual-D      OPTIMAL               72.254041ms           
+SCFXM3                ojAlgo-LP-dual-S      OPTIMAL               15.519084ms           
+SCORPION              ojAlgo-LP-dual-D      OPTIMAL               1.895542ms            
+SCORPION              ojAlgo-LP-dual-S      OPTIMAL               1.037458ms            
+SCRS8                 ojAlgo-LP-dual-D      OPTIMAL               25.728375ms           
+SCRS8                 ojAlgo-LP-dual-S      OPTIMAL               7.2905ms              
+SCSD1                 ojAlgo-LP-dual-D      OPTIMAL               1.500583ms            
+SCSD1                 ojAlgo-LP-dual-S      OPTIMAL               1.148667ms            
+SCSD6                 ojAlgo-LP-dual-D      OPTIMAL               10.304833ms           
+SCSD6                 ojAlgo-LP-dual-S      OPTIMAL               4.215417ms            
+SCSD8                 ojAlgo-LP-dual-D      OPTIMAL               151.649417ms          
+SCSD8                 ojAlgo-LP-dual-S      OPTIMAL               27.693375ms           
+SCTAP1                ojAlgo-LP-dual-D      OPTIMAL               5.810958ms            
+SCTAP1                ojAlgo-LP-dual-S      OPTIMAL               2.554292ms            
+SCTAP2                ojAlgo-LP-dual-D      OPTIMAL               79.818875ms           
+SCTAP2                ojAlgo-LP-dual-S      OPTIMAL               11.777625ms           
+SCTAP3                ojAlgo-LP-dual-D      OPTIMAL               275.206959ms          
+SCTAP3                ojAlgo-LP-dual-S      OPTIMAL               25.280709ms           
+SEBA                  ojAlgo-LP-dual-D      OPTIMAL               14.211583ms           
+SEBA                  ojAlgo-LP-dual-S      OPTIMAL               6.337291ms            
+SHARE1B               ojAlgo-LP-dual-D      OPTIMAL               1.1545ms              
+SHARE1B               ojAlgo-LP-dual-S      OPTIMAL               1.079125ms            
+SHARE2B               ojAlgo-LP-dual-D      OPTIMAL               0.232834ms            
+SHARE2B               ojAlgo-LP-dual-S      OPTIMAL               0.545375ms            
+SHELL                 ojAlgo-LP-dual-D      OPTIMAL               13.690417ms           
+SHELL                 ojAlgo-LP-dual-S      OPTIMAL               7.411375ms            
+SHIP04L               ojAlgo-LP-dual-D      OPTIMAL               6.805833ms            
+SHIP04L               ojAlgo-LP-dual-S      OPTIMAL               2.676625ms            
+SHIP04S               ojAlgo-LP-dual-D      OPTIMAL               2.9155ms              
+SHIP04S               ojAlgo-LP-dual-S      OPTIMAL               1.683083ms            
+SHIP08L               ojAlgo-LP-dual-D      OPTIMAL               21.283042ms           
+SHIP08L               ojAlgo-LP-dual-S      OPTIMAL               6.074ms               
+SHIP08S               ojAlgo-LP-dual-D      OPTIMAL               7.7525ms              
+SHIP08S               ojAlgo-LP-dual-S      OPTIMAL               3.783042ms            
+SHIP12L               ojAlgo-LP-dual-D      OPTIMAL               30.78425ms            
+SHIP12L               ojAlgo-LP-dual-S      OPTIMAL               9.116583ms            
+SHIP12S               ojAlgo-LP-dual-D      OPTIMAL               13.042708ms           
+SHIP12S               ojAlgo-LP-dual-S      OPTIMAL               4.959375ms            
+SIERRA                ojAlgo-LP-dual-D      OPTIMAL               24.025208ms           
+SIERRA                ojAlgo-LP-dual-S      OPTIMAL               7.692417ms            
+STAIR                 ojAlgo-LP-dual-D      OPTIMAL               14.062833ms           
+STAIR                 ojAlgo-LP-dual-S      OPTIMAL               8.067875ms            
+STANDATA              ojAlgo-LP-dual-D      OPTIMAL               1.901667ms            
+STANDATA              ojAlgo-LP-dual-S      OPTIMAL               1.176584ms            
+STANDGUB              ojAlgo-LP-dual-D      OPTIMAL               1.576917ms            
+STANDGUB              ojAlgo-LP-dual-S      OPTIMAL               1.098292ms            
+STANDMPS              ojAlgo-LP-dual-D      OPTIMAL               3.902959ms            
+STANDMPS              ojAlgo-LP-dual-S      OPTIMAL               2.166167ms            
+STOCFOR1              ojAlgo-LP-dual-D      OPTIMAL               0.16175ms             
+STOCFOR1              ojAlgo-LP-dual-S      OPTIMAL               0.151625ms            
+STOCFOR2              ojAlgo-LP-dual-D      OPTIMAL               1274.973708ms         
+STOCFOR2              ojAlgo-LP-dual-S      OPTIMAL               40.306ms              
+TRUSS                 ojAlgo-LP-dual-D      OPTIMAL               13269.724ms           
+TRUSS                 ojAlgo-LP-dual-S      OPTIMAL               733.8555ms            
+TUFF                  ojAlgo-LP-dual-D      OPTIMAL               5.919458ms            
+TUFF                  ojAlgo-LP-dual-S      OPTIMAL               3.861541ms            
+VTP-BASE              ojAlgo-LP-dual-D      OPTIMAL               0.129584ms            
+VTP-BASE              ojAlgo-LP-dual-S      OPTIMAL               0.1375ms              
+WOOD1P                ojAlgo-LP-dual-D      OPTIMAL               46.733459ms           
+WOOD1P                ojAlgo-LP-dual-S      OPTIMAL               27.166292ms           
+WOODW                 ojAlgo-LP-dual-D      OPTIMAL               546.686291ms          
+WOODW                 ojAlgo-LP-dual-S      OPTIMAL               105.02075ms           
+
+Models Solved
+=====================================================================
+ojAlgo-LP-dual-D      94 / 97               97%                   
+ojAlgo-LP-dual-S      95 / 97               98%                   
