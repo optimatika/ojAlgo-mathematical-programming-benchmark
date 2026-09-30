@@ -29,7 +29,7 @@ import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
-public final class MarosMeszarosBenchmark extends AbstractBenchmark {
+public final class MarosMeszarosBenchmark2 extends AbstractBenchmark {
 
     static final String[] ONE_MODEL = { "MOSARQP2" };
 
@@ -55,7 +55,9 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
     //    static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_NULLSPACE_DENSE, Contender.OJALGO_QP_NULLSPACE_SPARSE,
     //            Contender.OJALGO_QP_PLAIN_DENSE, Contender.OJALGO_QP_PLAIN_SPARSE };
 
-    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL, Contender.GUROBI, Contender.COPT };
+    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_ASET_NULLSPACE_DENSE,
+            Contender.OJALGO_QP_ASET_NULLSPACE_SPARSE, Contender.OJALGO_QP_ASET_PLAIN_DENSE, Contender.OJALGO_QP_ASET_PLAIN_SPARSE, Contender.CLARABEL,
+            Contender.GUROBI, Contender.COPT };
 
     //static final String[] SOLVERS = { Contender.CLARABEL4J, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_ASET };
 
@@ -92,7 +94,7 @@ public final class MarosMeszarosBenchmark extends AbstractBenchmark {
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
         configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.TWO;
-        configuration.maxIterations = 3;
+        configuration.maxIterations = 20;
 
         for (Entry<String, ModelInfo> entry : MarosMeszarosModels.getModelInfo().entrySet()) {
             configuration.values.put(entry.getKey(), entry.getValue().OPT);

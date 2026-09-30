@@ -3,6 +3,8 @@ package org.ojalgo.benchmark;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.List;
 import java.util.function.Supplier;
 
 import org.ojalgo.benchmark.AbstractBenchmark.ResultsSet;
@@ -11,6 +13,7 @@ import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation.Result;
+import org.ojalgo.optimisation.Variable;
 import org.ojalgo.type.Stopwatch.TimedResult;
 
 public abstract class ForkedTask {
@@ -95,7 +98,15 @@ public abstract class ForkedTask {
 
             simplified.options.parallelism(threads);
 
+            // Solving sets the variable values, and they would be used to warm-start the next solve
+            List<Variable> variables = simplified.getVariables();
+            List<BigDecimal> initialValues = variables.stream().map(Variable::getValue).toList();
+
             do {
+
+                for (int i = 0; i < variables.size(); i++) {
+                    variables.get(i).setValue(initialValues.get(i));
+                }
 
                 TimedResult<Result> meassured = AbstractBenchmark.meassure(simplified, integration);
 

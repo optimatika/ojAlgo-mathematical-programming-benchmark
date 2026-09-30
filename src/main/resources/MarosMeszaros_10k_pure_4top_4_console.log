@@ -1,0 +1,594 @@
+WARNING: Unknown module: ojalgo specified to --patch-module
+WARNING: Unknown module: ojalgo specified to --add-reads
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 4, threads per worker: 5
+
+
+Iteration 1 with 192 model/solver pairs remaining 2026-09-29T14:20:11.559129Z
+-----------------------------------------------------------------------------
+HS118                 QPCBLEND              COPT                  Gurobi                Solved                Solved                1.827042ms            2.51875ms             664.8204500001063     -0.007842542774396959 
+
+CVXQP2_S              COPT                  Solved                6.855709ms            8120.940477251733     
+LASER                 ojAlgo-QP             Solved                17.686375ms           2409601.3445665766    
+MOSARQP1              COPT                  Solved                17.381125ms           -952.8754430312603    
+DUAL4                 COPT                  Solved                5.3885ms              0.746090841813025     
+POWELL20              COPT                  Solved                53.565667ms           5.208958281242757E10  
+LASER                 Clarabel              Solved                12.453917ms           2409601.3455973454    
+QPCSTAIR              Clarabel              Solved                15.678542ms           6204387.476095291     
+CVXQP3_S              ojAlgo-QP             Solved                10.224208ms           11943.432202309948    
+DUALC2                Gurobi                Solved                0.174292ms            3551.3076928595256    
+AUG3DCQP              COPT                  Solved                15.749458ms           993.3621465257148     
+S268                  Clarabel              Solved                0.580875ms            1.0827727501628553E-6 
+CONT-050              COPT                  Solved                19.0645ms             -4.563850904340323    
+CVXQP2_M              Clarabel              Solved                30.202209ms           820155.4310161147     
+HS51                  COPT                  Solved                0.429458ms            0.0                   
+CVXQP2_M              ojAlgo-QP             Solved                39.971917ms           820155.4310868877     
+DUAL3                 Gurobi                Solved                8.690417ms            0.13575583923254167   
+QPTEST                COPT                  Solved                1.791541ms            4.371875000000043     
+HS35                  COPT                  Solved                1.833292ms            0.11111111111356      
+HS21                  Gurobi                Solved                0.094708ms            -99.95999999993074    
+CONT-050              Gurobi                Solved                26.038084ms           -4.563850904321343    
+AUG3DC                Gurobi                Solved                16.830666ms           771.2624386889588     
+STCQP2                Gurobi                Solved                61.068ms              22327.31329227068     
+DUALC5                COPT                  Solved                1.558542ms            427.23232677646814    
+CVXQP1_S              Gurobi                Solved                2.135042ms            11590.718120011501    
+QPCBOEI2              Clarabel              Solved                4.561292ms            8171962.244346138     
+S268                  ojAlgo-QP             Solved                0.107041ms            1.9521E-23            
+QPCSTAIR              ojAlgo-QP             Solved                189.337041ms          6204386.979693689     
+DUAL3                 COPT                  Solved                10.560625ms           0.13575583687665527   
+DUALC1                Gurobi                Solved                0.46825ms             6155.25082955423      
+AUG3DC                COPT                  Solved                14.1965ms             771.2624386889589     
+CVXQP3_M              Gurobi                Solved                95.714708ms           1362828.8383703805    
+HUESTIS               COPT                  Solved                27.749166ms           3.482446385499014E11  
+DUAL2                 Gurobi                Solved                5.9165ms              0.033733676122793724  
+QPCBOEI2              ojAlgo-QP             Solved                676.191292ms          8171962.495059085     
+CVXQP1_L              Gurobi                Solved                1312.100667ms         1.0870488996350516E8  
+DUALC5                Clarabel              Solved                0.982041ms            427.23232755418167    
+HS35MOD               Gurobi                Solved                0.146833ms            0.2500000067466616    
+VALUES                Clarabel              Solved                5.40225ms             -1.3966211433271045   
+DUALC5                ojAlgo-QP             Solved                0.5295ms              427.23232677639356    
+AUG3DCQP              Gurobi                Solved                25.5995ms             993.3621471456556     
+CVXQP2_L              COPT                  Solved                814.853417ms          8.184245826284124E7   
+KSIP                  Clarabel              Solved                13.454541ms           0.5757979412419589    
+HUESTIS               Clarabel              INFEASIBLE            UNSTABLE              
+MOSARQP2              Clarabel              Solved                7.858958ms            -1597.4821175167976   
+AUG3DCQP              Clarabel              Solved                29.754542ms           993.3621465254229     
+GENHS28               COPT                  Solved                0.420875ms            0.9271736937663944    
+CVXQP2_S              Gurobi                Solved                1.035917ms            8120.940477270524     
+AUG3DCQP              ojAlgo-QP             Solved                65.963375ms           993.3621465050519     
+QPCBOEI1              Clarabel              Solved                7.770584ms            1.1503914009770427E7  
+DUAL2                 COPT                  Solved                5.265959ms            0.03373367612271657   
+HS21                  ojAlgo-QP             Solved                0.065833ms            -99.96                
+STCQP2                COPT                  Solved                57.887ms              22327.31327242951     
+DUAL4                 Clarabel              Solved                2.617708ms            0.7460908637621803    
+HS53                  COPT                  Solved                0.893792ms            4.0930232558139314    
+CVXQP2_S              Clarabel              Solved                1.046667ms            8120.940477251413     
+TAME                  Clarabel              Solved                0.100792ms            0.0                   
+CVXQP2_L              Clarabel              Solved                9767.28575ms          8.18424582629042E7    
+HS35MOD               Clarabel              Solved                0.229958ms            0.25000000119037485   
+MOSARQP1              Gurobi                Solved                12.749167ms           -952.8754425226556    
+QPCBOEI1              Gurobi                Solved                5.8545ms              1.150391400976825E7   
+DUAL4                 ojAlgo-QP             Solved                2.894042ms            0.7460908418021085    
+HUESTIS               Gurobi                Solved                25.816042ms           3.4824463873345074E11 
+YAO                   Gurobi                Solved                18.4025ms             197.70425593583417    
+TAME                  ojAlgo-QP             Solved                0.100791ms            0.0                   
+HS35MOD               ojAlgo-QP             Solved                0.083ms               0.25                  
+MOSARQP2              ojAlgo-QP             Solved                47.877458ms           -1597.4821174957456   
+CVXQP2_M              COPT                  Solved                30.404333ms           820155.4310207053     
+HS21                  Clarabel              Solved                0.123209ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Solved                88.827ms              0.5757979412401084    
+CVXQP1_M              Gurobi                Solved                50.769625ms           1087511.5690383678    
+TAME                  Gurobi                Solved                0.071917ms            0.0                   
+CVXQP3_S              COPT                  Solved                3.58075ms             11943.432202307842    
+HUES-MOD              Clarabel              INFEASIBLE            UNSTABLE              
+DUAL1                 COPT                  Solved                4.8985ms              0.03501296573658537   
+YAO                   ojAlgo-QP             APPROXIMATE           UNSTABLE              
+LASER                 COPT                  Solved                21.273916ms           2409601.345596795     
+HS268                 COPT                  Solved                2.245458ms            1.5113906332890895E-10
+CONT-050              Clarabel              Solved                52.227291ms           -4.563850904324673    
+CVXQP2_S              ojAlgo-QP             Solved                96.775667ms           8120.940477250763     
+YAO                   Clarabel              APPROXIMATE           UNSTABLE              
+QPCBLEND              COPT                  Solved                2.18ms                -0.007842542877205832 
+KSIP                  Gurobi                Solved                12.154042ms           0.5757979412405396    
+STCQP1                COPT                  Solved                32.210667ms           155143.55470395705    
+QPCBOEI1              ojAlgo-QP             Solved                10702.848375ms        1.1503914009768289E7  
+CVXQP1_M              ojAlgo-QP             Solved                70.281834ms           1087511.56731044      
+HS52                  COPT                  Solved                0.681792ms            5.326647564469917     
+HUES-MOD              ojAlgo-QP             Solved                73.161667ms           3.482444393273373E7   
+MOSARQP2              Gurobi                Solved                8.584041ms            -1597.4821173216978   
+CVXQP1_M              Clarabel              Solved                49.201125ms           1087511.5673276735    
+HS76                  COPT                  Solved                1.122833ms            -4.681818181679441    
+QPCSTAIR              Gurobi                Solved                10.194666ms           6204387.476086542     
+VALUES                ojAlgo-QP             Solved                11.3965ms             -1.3966211447135068   
+DUAL4                 Gurobi                Solved                2.851666ms            0.7460908477143318    
+YAO                   COPT                  Solved                22.912958ms           197.7042559402473     
+S268                  Gurobi                Solved                0.127208ms            7.921358603821931E-6  
+QPCBLEND              Clarabel              Solved                1.778875ms            -0.007842542798814777 
+DUALC8                COPT                  Solved                1.545583ms            18309.358832735277    
+QPTEST                ojAlgo-QP             Solved                0.074208ms            4.371875              
+CVXQP2_M              Gurobi                Solved                25.302667ms           820155.4310174701     
+QPCBLEND              ojAlgo-QP             Solved                45.018209ms           -0.007842543074214593 
+HS35                  Clarabel              Solved                0.246625ms            0.11111111118286      
+DUAL2                 Clarabel              Solved                4.765583ms            0.03373368031007675   
+HS35MOD               COPT                  Solved                1.827042ms            0.250000000000537     
+CONT-050              ojAlgo-QP             Solved                1560.354375ms         -4.563850903450709    
+DUAL2                 ojAlgo-QP             Solved                2.389167ms            0.03373367612271745   
+QPTEST                Clarabel              Solved                0.098458ms            4.371875001943586     
+HS35                  ojAlgo-QP             Solved                0.040958ms            0.11111111111111334   
+CVXQP2_L              ojAlgo-QP             Solved                13130.610542ms        8.184245826451105E7   
+HS51                  Clarabel              Solved                0.164042ms            0.0                   
+HS51                  ojAlgo-QP             Solved                0.192334ms            4.13106175527E-17     
+HUES-MOD              Gurobi                Solved                23.213916ms           3.48244638733452E7    
+CVXQP3_L              COPT                  Solved                2504.782292ms         1.157111044830693E8   
+CVXQP2_L              Gurobi                Solved                873.394125ms          8.184245826981708E7   
+HS53                  Gurobi                Solved                0.125042ms            4.093023255813933     
+DUALC2                ojAlgo-QP             Solved                1.57975ms             3551.307692670844     
+MOSARQP1              Clarabel              Solved                15.847042ms           -952.8754430307338    
+AUG3DC                ojAlgo-QP             Solved                33.816625ms           771.2624386889596     
+DUALC1                COPT                  Solved                1.898167ms            6155.2508300025265    
+DUALC2                Clarabel              Solved                0.202ms               3551.307695741058     
+AUG3DC                Clarabel              Solved                9.797458ms            771.2624386889584     
+CVXQP3_M              ojAlgo-QP             Solved                556.642125ms          1362828.7415021106    
+CVXQP1_S              Clarabel              Solved                1.133ms               11590.7181194325      
+CVXQP3_M              Clarabel              Solved                68.799916ms           1362828.7416041286    
+DUAL3                 Clarabel              Solved                6.829042ms            0.1357558965708443    
+DUAL3                 ojAlgo-QP             Solved                4.217292ms            0.13575583686602102   
+QPCBOEI2              Gurobi                Solved                2.121791ms            8171962.244330432     
+CVXQP1_S              COPT                  Solved                3.465125ms            11590.71811942291     
+HS118                 Clarabel              Solved                0.299583ms            664.8204500023853     
+HUESTIS               ojAlgo-QP             Solved                79.602792ms           3.482444393273373E11  
+DUALC5                Gurobi                Solved                0.119708ms            427.2323284666975     
+MOSARQP1              ojAlgo-QP             Solved                282.80675ms           -952.8754427805984    
+CVXQP3_M              COPT                  Solved                58.100292ms           1362828.741604744     
+HS118                 ojAlgo-QP             Solved                0.734334ms            664.8204500000802     
+HS52                  Gurobi                Solved                0.076083ms            5.326647564469947     
+HS76                  Gurobi                Solved                0.088292ms            -4.681818181242489    
+STCQP1                Gurobi                Solved                18.176958ms           155143.55474736833    
+DUALC1                ojAlgo-QP             Solved                0.127ms               6155.250829463377     
+QPCBOEI2              COPT                  Solved                4.12925ms             8171962.244330406     
+DUALC1                Clarabel              Solved                0.280209ms            6155.250871874518     
+DUALC2                COPT                  Solved                1.404084ms            3551.3076926707517    
+CVXQP3_L              Gurobi                Solved                5158.856416ms         1.1571110967832589E8  
+CVXQP1_S              ojAlgo-QP             Solved                120.728209ms          11590.71811942676     
+STCQP1                Clarabel              Solved                62.012708ms           155143.55470396916    
+HUES-MOD              COPT                  Solved                29.7435ms             3.4824463854989916E7  
+CVXQP1_L              Clarabel              Solved                14797.452875ms        1.0870479991559933E8  
+HS53                  ojAlgo-QP             Solved                0.062875ms            4.093023255813954     
+TAME                  COPT                  Solved                0.652958ms            0.0                   
+CVXQP3_L              Clarabel              Solved                14390.482666ms        1.1571110449425064E8  
+POWELL20              Gurobi                Solved                263.967541ms          5.208958281249842E10  
+HS118                 Gurobi                Solved                0.163875ms            664.8204500062724     
+HS268                 Clarabel              Solved                0.1085ms              1.0827727501628553E-6 
+STCQP1                ojAlgo-QP             Solved                18.862958ms           155143.55470403298    
+S268                  COPT                  Solved                2.12575ms             1.5113906332890895E-10
+DUAL1                 Gurobi                Solved                4.606792ms            0.03501296855864166   
+DUALC8                Gurobi                Solved                0.163208ms            18309.358832820424    
+HS21                  COPT                  Solved                0.895541ms            -99.95999999997561    
+HS268                 ojAlgo-QP             Solved                0.026666ms            1.9521E-23            
+HS53                  Clarabel              Solved                0.08825ms             4.093023255813974     
+CVXQP1_L              COPT                  Solved                1412.797791ms         1.0870479970876637E8  
+GENHS28               ojAlgo-QP             Solved                0.040917ms            0.9271736939195341    
+GENHS28               Clarabel              Solved                0.076125ms            0.9271736937663944    
+POWELL20              Clarabel              Solved                96.822167ms           5.208958281259555E10  
+POWELL20              ojAlgo-QP             APPROXIMATE           UNSTABLE              
+KSIP                  COPT                  Solved                102.935ms             0.5757979412401049    
+DUALC8                Clarabel              Solved                0.139125ms            18309.359650070946    
+HS51                  Gurobi                Solved                0.076625ms            6.6E-27               
+CVXQP3_S              Gurobi                Solved                3.038208ms            11943.432202879196    
+QPTEST                Gurobi                Solved                0.066667ms            4.371875004581603     
+QPCBOEI1              COPT                  Solved                8.170583ms            1.1503914009768227E7  
+QPCSTAIR              COPT                  Solved                10.803375ms           6204387.476082529     
+MOSARQP2              COPT                  Solved                10.005042ms           -1597.4821175229827   
+HS35                  Gurobi                Solved                0.069167ms            0.11111111111710445   
+STCQP2                Clarabel              Solved                63.360583ms           22327.313272420346    
+DUAL1                 Clarabel              Solved                3.463833ms            0.03501298755196928   
+HS76                  ojAlgo-QP             Solved                0.026292ms            -4.681818181818182    
+LASER                 Gurobi                Solved                18.512709ms           2409601.3455968034    
+HS52                  ojAlgo-QP             Solved                0.03025ms             5.326647576871785     
+CVXQP3_S              Clarabel              Solved                1.540042ms            11943.432202316648    
+GENHS28               Gurobi                Solved                0.084334ms            0.9271736937664032    
+STCQP2                ojAlgo-QP             Solved                19.7655ms             22327.313272417538    
+VALUES                COPT                  FAILED                UNSTABLE              
+DUAL1                 ojAlgo-QP             Solved                1.78225ms             0.0350129657334766    
+DUALC8                ojAlgo-QP             Solved                0.056ms               18309.35883273631     
+HS52                  Clarabel              Solved                0.032916ms            5.326647564469917     
+HS76                  Clarabel              Solved                0.046042ms            -4.681818181738655    
+HS268                 Gurobi                Solved                0.081625ms            7.921358603821931E-6  
+CVXQP1_M              COPT                  Solved                40.9025ms             1087511.567838513     
+CVXQP1_L              ojAlgo-QP             Solved                35979.26175ms         1.0870479976878767E8  
+CVXQP3_L              ojAlgo-QP             Solved                142184.769291ms       1.1571110348156732E8  
+VALUES                Gurobi                FAILED                TIMEOUT               
+
+Iteration 2 with 185 model/solver pairs remaining 2026-09-29T14:25:18.604010Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 185 model/solver pairs remaining 2026-09-29T14:28:16.879676Z
+-----------------------------------------------------------------------------
+HS118                 COPT                  Time stable           0.796708ms            664.8204500001063     
+LASER                 ojAlgo-QP             Time stable           4.799584ms            2409601.3445665766    
+POWELL20              COPT                  Time stable           35.0055ms             5.208958281242757E10  
+QPCBLEND              Gurobi                Time stable           2.51875ms             -0.007842542774396959 
+MOSARQP1              COPT                  Time stable           14.674917ms           -952.8754430312603    
+CVXQP2_S              COPT                  Time stable           4.02175ms             8120.940477251733     
+LASER                 Clarabel              Time stable           7.447792ms            2409601.3455973454    
+DUAL4                 COPT                  Time stable           5.148208ms            0.746090841813025     
+QPCSTAIR              Clarabel              Time stable           10.573042ms           6204387.476095291     
+AUG3DCQP              COPT                  Time stable           15.749458ms           993.3621465257148     
+DUALC2                Gurobi                Time stable           0.174292ms            3551.3076928595256    
+CVXQP3_S              ojAlgo-QP             Time stable           8.877959ms            11943.432202309948    
+CVXQP2_M              ojAlgo-QP             Time stable           31.459333ms           820155.4310868877     
+S268                  Clarabel              Time stable           0.28125ms             1.0827727501628553E-6 
+CVXQP2_M              Clarabel              Time stable           27.033291ms           820155.4310161147     
+HS51                  COPT                  Time stable           0.405ms               0.0                   
+DUAL3                 Gurobi                Time stable           6.754792ms            0.13575583923254167   
+HS35                  COPT                  Time stable           1.085958ms            0.11111111111356      
+CONT-050              COPT                  Time stable           17.729416ms           -4.563850904340323    
+QPTEST                COPT                  Time stable           1.002958ms            4.371875000000043     
+HS21                  Gurobi                Time stable           0.050208ms            -99.95999999993074    
+CONT-050              Gurobi                Time stable           26.038084ms           -4.563850904321343    
+AUG3DC                Gurobi                Time stable           16.830666ms           771.2624386889588     
+STCQP2                Gurobi                Time stable           61.068ms              22327.31329227068     
+DUALC5                COPT                  Time stable           1.22175ms             427.23232677646814    
+CVXQP1_S              Gurobi                Time stable           1.513584ms            11590.718120011501    
+QPCBOEI2              Clarabel              Time stable           3.18475ms             8171962.244346138     
+S268                  ojAlgo-QP             Time stable           0.026875ms            1.9521E-23            
+QPCSTAIR              ojAlgo-QP             Time stable           189.337041ms          6204386.979693689     
+DUAL3                 COPT                  Time stable           9.818083ms            0.13575583687665527   
+CVXQP3_M              Gurobi                Time stable           95.714708ms           1362828.8383703805    
+DUALC1                Gurobi                Time stable           0.287458ms            6155.25082955423      
+AUG3DC                COPT                  Time stable           11.000833ms           771.2624386889589     
+HUESTIS               COPT                  Time stable           27.749166ms           3.482446385499014E11  
+DUAL2                 Gurobi                Time stable           5.9165ms              0.033733676122793724  
+QPCBOEI2              ojAlgo-QP             Time stable           662.127958ms          8171962.495059085     
+CVXQP1_L              Gurobi                Time stable           1298.601666ms         1.0870488996350516E8  
+DUALC5                Clarabel              Time stable           0.108416ms            427.23232755418167    
+HS35MOD               Gurobi                Time stable           0.067292ms            0.2500000067466616    
+VALUES                Clarabel              Time stable           3.507959ms            -1.3966211433271045   
+DUALC5                ojAlgo-QP             Time stable           0.05175ms             427.23232677639356    
+AUG3DCQP              Gurobi                Time stable           20.796917ms           993.3621471456556     
+CVXQP2_L              COPT                  Time stable           801.819541ms          8.184245826284127E7   
+KSIP                  Clarabel              Time stable           13.454541ms           0.5757979412419589    
+MOSARQP2              Clarabel              Time stable           7.858958ms            -1597.4821175167976   
+AUG3DCQP              Clarabel              Time stable           29.754542ms           993.3621465254229     
+GENHS28               COPT                  Time stable           0.394709ms            0.9271736937663944    
+CVXQP2_S              Gurobi                Time stable           1.035917ms            8120.940477270524     
+AUG3DCQP              ojAlgo-QP             Time stable           65.963375ms           993.3621465050519     
+QPCBOEI1              Clarabel              Time stable           7.770584ms            1.1503914009770427E7  
+DUAL2                 COPT                  Time stable           5.265959ms            0.03373367612271657   
+HS21                  ojAlgo-QP             Time stable           0.065833ms            -99.96                
+STCQP2                COPT                  Time stable           53.389625ms           22327.31327242951     
+DUAL4                 Clarabel              Time stable           2.617708ms            0.7460908637621803    
+HS53                  COPT                  Time stable           0.79875ms             4.0930232558139314    
+CVXQP2_S              Clarabel              Time stable           1.046667ms            8120.940477251413     
+TAME                  Clarabel              Time stable           0.100792ms            0.0                   
+HS35MOD               Clarabel              Time stable           0.120875ms            0.25000000119037485   
+MOSARQP1              Gurobi                Time stable           10.12ms               -952.8754425226556    
+QPCBOEI1              Gurobi                Time stable           4.266667ms            1.150391400976825E7   
+DUAL4                 ojAlgo-QP             Time stable           2.032417ms            0.7460908418021085    
+HUESTIS               Gurobi                Time stable           20.71675ms            3.4824463873345074E11 
+YAO                   Gurobi                Time stable           16.160667ms           197.70425593583417    
+TAME                  ojAlgo-QP             Time stable           0.052542ms            0.0                   
+HS35MOD               ojAlgo-QP             Time stable           0.053583ms            0.25                  
+MOSARQP2              ojAlgo-QP             Time stable           42.8695ms             -1597.4821174957456   
+CVXQP2_M              COPT                  Time stable           30.404333ms           820155.4310207053     
+HS21                  Clarabel              Time stable           0.095167ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Time stable           53.464833ms           0.5757979412401084    
+CVXQP1_M              Gurobi                Time stable           47.973375ms           1087511.5690383678    
+TAME                  Gurobi                Time stable           0.064625ms            0.0                   
+CVXQP3_S              COPT                  Time stable           3.3645ms              11943.432202307842    
+DUAL1                 COPT                  Time stable           4.8985ms              0.03501296573658537   
+LASER                 COPT                  Time stable           21.273916ms           2409601.345596795     
+HS268                 COPT                  Time stable           1.97225ms             1.5113906332890895E-10
+CONT-050              Clarabel              Time stable           52.227291ms           -4.563850904324673    
+CVXQP2_S              ojAlgo-QP             Time stable           96.775667ms           8120.940477250763     
+QPCBLEND              COPT                  Time stable           2.18ms                -0.007842542877205832 
+KSIP                  Gurobi                Time stable           12.154042ms           0.5757979412405396    
+STCQP1                COPT                  Time stable           31.106666ms           155143.55470395705    
+CONT-050              ojAlgo-QP             Time stable           1440.064041ms         -4.563850903450709    
+CVXQP1_M              ojAlgo-QP             Time stable           57.346416ms           1087511.56731044      
+HS52                  COPT                  Time stable           0.513625ms            5.326647564469917     
+HUES-MOD              ojAlgo-QP             Time stable           68.637791ms           3.482444393273373E7   
+MOSARQP2              Gurobi                Time stable           8.304125ms            -1597.4821173216978   
+CVXQP1_M              Clarabel              Time stable           42.41525ms            1087511.5673276735    
+HS76                  COPT                  Time stable           0.992667ms            -4.681818181679441    
+QPCSTAIR              Gurobi                Time stable           9.67725ms             6204387.476086542     
+VALUES                ojAlgo-QP             Time stable           10.069625ms           -1.3966211447135068   
+DUAL4                 Gurobi                Time stable           2.851666ms            0.7460908477143318    
+YAO                   COPT                  Time stable           18.613542ms           197.7042559402473     
+S268                  Gurobi                Time stable           0.093583ms            7.921358603821931E-6  
+QPCBLEND              Clarabel              Time stable           1.040917ms            -0.007842542798814777 
+DUALC8                COPT                  Time stable           0.930375ms            18309.358832735277    
+QPTEST                ojAlgo-QP             Time stable           0.023583ms            4.371875              
+CVXQP2_M              Gurobi                Time stable           24.487333ms           820155.4310174701     
+QPCBLEND              ojAlgo-QP             Time stable           36.521708ms           -0.007842543074214593 
+HS35                  Clarabel              Time stable           0.06575ms             0.11111111118286      
+DUAL2                 Clarabel              Time stable           4.033958ms            0.03373368031007675   
+HS35MOD               COPT                  Time stable           1.827042ms            0.250000000000537     
+QPCBOEI1              ojAlgo-QP             Time stable           8680.914708ms         1.1503914009768289E7  
+DUAL2                 ojAlgo-QP             Time stable           2.389167ms            0.03373367612271745   
+QPTEST                Clarabel              Time stable           0.081167ms            4.371875001943586     
+HS35                  ojAlgo-QP             Time stable           0.03875ms             0.11111111111111334   
+CVXQP2_L              Clarabel              Time stable           9346.777375ms         8.18424582629042E7    
+HS51                  Clarabel              Time stable           0.164042ms            0.0                   
+HS51                  ojAlgo-QP             Time stable           0.092541ms            4.13106175527E-17     
+HUES-MOD              Gurobi                Time stable           23.213916ms           3.48244638733452E7    
+CVXQP3_L              COPT                  Time stable           2184.001166ms         1.1571110449769558E8  
+CVXQP2_L              Gurobi                Time stable           776.862917ms          8.184245826981708E7   
+HS53                  Gurobi                Time stable           0.102041ms            4.093023255813933     
+DUALC2                ojAlgo-QP             Time stable           0.183917ms            3551.307692670844     
+MOSARQP1              Clarabel              Time stable           13.324125ms           -952.8754430307338    
+CVXQP2_L              ojAlgo-QP             Time stable           12713.807791ms        8.184245826451105E7   
+DUALC1                COPT                  Time stable           1.330542ms            6155.2508300025265    
+DUALC2                Clarabel              Time stable           0.09775ms             3551.307695741058     
+AUG3DC                Clarabel              Time stable           7.423833ms            771.2624386889584     
+AUG3DC                ojAlgo-QP             Time stable           33.816625ms           771.2624386889596     
+CVXQP1_S              Clarabel              Time stable           1.133ms               11590.7181194325      
+CVXQP3_M              Clarabel              Time stable           62.05925ms            1362828.7416041286    
+DUAL3                 Clarabel              Time stable           5.91825ms             0.1357558965708443    
+DUAL3                 ojAlgo-QP             Time stable           2.653375ms            0.13575583686602102   
+QPCBOEI2              Gurobi                Time stable           1.932792ms            8171962.244330432     
+CVXQP1_S              COPT                  Time stable           2.961375ms            11590.71811942291     
+HS118                 Clarabel              Time stable           0.220958ms            664.8204500023853     
+HUESTIS               ojAlgo-QP             Time stable           74.359583ms           3.482444393273373E11  
+DUALC5                Gurobi                Time stable           0.101459ms            427.2323284666975     
+CVXQP3_M              ojAlgo-QP             Time stable           527.645375ms          1362828.7415021106    
+CVXQP3_M              COPT                  Time stable           52.649084ms           1362828.7416045454    
+HS118                 ojAlgo-QP             Time stable           0.165958ms            664.8204500000802     
+HS52                  Gurobi                Time stable           0.067166ms            5.326647564469947     
+HS76                  Gurobi                Time stable           0.070625ms            -4.681818181242489    
+MOSARQP1              ojAlgo-QP             Time stable           269.874625ms          -952.8754427805984    
+DUALC1                ojAlgo-QP             Time stable           0.127ms               6155.250829463377     
+QPCBOEI2              COPT                  Time stable           4.12925ms             8171962.244330406     
+DUALC1                Clarabel              Time stable           0.189375ms            6155.250871874518     
+DUALC2                COPT                  Time stable           1.323709ms            3551.3076926707517    
+STCQP1                Gurobi                Time stable           18.176958ms           155143.55474736833    
+CVXQP1_S              ojAlgo-QP             Time stable           120.728209ms          11590.71811942676     
+STCQP1                Clarabel              Time stable           62.012708ms           155143.55470396916    
+HUES-MOD              COPT                  Time stable           27.892708ms           3.4824463854989916E7  
+CVXQP3_L              Gurobi                Time stable           5158.856416ms         1.1571110967832589E8  
+HS53                  ojAlgo-QP             Time stable           0.062875ms            4.093023255813954     
+TAME                  COPT                  Time stable           0.516625ms            0.0                   
+CVXQP1_L              Clarabel              Time stable           13936.823875ms        1.0870479991559933E8  
+POWELL20              Gurobi                Time stable           263.967541ms          5.208958281249842E10  
+HS118                 Gurobi                Time stable           0.144667ms            664.8204500062724     
+HS268                 Clarabel              Time stable           0.087208ms            1.0827727501628553E-6 
+STCQP1                ojAlgo-QP             Time stable           18.862958ms           155143.55470403298    
+S268                  COPT                  Time stable           2.12575ms             1.5113906332890895E-10
+DUAL1                 Gurobi                Time stable           4.335125ms            0.03501296855864166   
+DUALC8                Gurobi                Time stable           0.150708ms            18309.358832820424    
+HS21                  COPT                  Time stable           0.89275ms             -99.95999999997561    
+HS268                 ojAlgo-QP             Time stable           0.022667ms            1.9521E-23            
+HS53                  Clarabel              Time stable           0.078542ms            4.093023255813974     
+CVXQP1_L              COPT                  Time stable           1349.560291ms         1.0870479973846214E8  
+GENHS28               ojAlgo-QP             Time stable           0.03375ms             0.9271736939195341    
+GENHS28               Clarabel              Time stable           0.052791ms            0.9271736937663944    
+POWELL20              Clarabel              Time stable           91.184083ms           5.208958281259555E10  
+KSIP                  COPT                  Time stable           76.697583ms           0.5757979412401049    
+DUALC8                Clarabel              Time stable           0.119ms               18309.359650070946    
+HS51                  Gurobi                Time stable           0.06725ms             6.6E-27               
+CVXQP3_S              Gurobi                Time stable           2.505583ms            11943.432202879196    
+QPTEST                Gurobi                Time stable           0.061667ms            4.371875004581603     
+QPCBOEI1              COPT                  Time stable           8.170583ms            1.1503914009768227E7  
+QPCSTAIR              COPT                  Time stable           10.765458ms           6204387.476082529     
+MOSARQP2              COPT                  Time stable           10.005042ms           -1597.4821175229827   
+HS35                  Gurobi                Time stable           0.06275ms             0.11111111111710445   
+STCQP2                Clarabel              Time stable           60.675042ms           22327.313272420346    
+DUAL1                 Clarabel              Time stable           3.389875ms            0.03501298755196928   
+HS76                  ojAlgo-QP             Time stable           0.026292ms            -4.681818181818182    
+LASER                 Gurobi                Time stable           16.968209ms           2409601.3455968034    
+HS52                  ojAlgo-QP             Time stable           0.017666ms            5.326647576871785     
+CVXQP3_S              Clarabel              Time stable           1.125709ms            11943.432202316648    
+GENHS28               Gurobi                Time stable           0.084334ms            0.9271736937664032    
+STCQP2                ojAlgo-QP             Time stable           19.7655ms             22327.313272417538    
+DUAL1                 ojAlgo-QP             Time stable           1.677333ms            0.0350129657334766    
+DUALC8                ojAlgo-QP             Time stable           0.056ms               18309.35883273631     
+HS52                  Clarabel              Time stable           0.032916ms            5.326647564469917     
+HS76                  Clarabel              Time stable           0.046042ms            -4.681818181738655    
+HS268                 Gurobi                Time stable           0.081625ms            7.921358603821931E-6  
+CVXQP1_M              COPT                  Time stable           40.738583ms           1087511.567838513     
+CVXQP3_L              Clarabel              Time stable           12901.935167ms        1.1571110449425064E8  
+CVXQP1_L              ojAlgo-QP             Time stable           29163.196791ms        1.0870479976878767E8  
+CVXQP3_L              ojAlgo-QP             Time stable           132953.865875ms       1.1571110348156732E8  
+
+Final Results
+=====================================================================
+AUG3DC                COPT                  OPTIMAL               11.000833ms           
+AUG3DC                Clarabel              OPTIMAL               7.423833ms            
+AUG3DC                Gurobi                OPTIMAL               16.830666ms           
+AUG3DC                ojAlgo-QP             OPTIMAL               33.816625ms           
+AUG3DCQP              COPT                  OPTIMAL               15.749458ms           
+AUG3DCQP              Clarabel              OPTIMAL               29.754542ms           
+AUG3DCQP              Gurobi                OPTIMAL               20.796917ms           
+AUG3DCQP              ojAlgo-QP             OPTIMAL               65.963375ms           
+CONT-050              COPT                  OPTIMAL               17.729416ms           
+CONT-050              Clarabel              OPTIMAL               52.227291ms           
+CONT-050              Gurobi                OPTIMAL               26.038084ms           
+CONT-050              ojAlgo-QP             OPTIMAL               1440.064041ms         
+CVXQP1_L              COPT                  OPTIMAL               1349.560291ms         
+CVXQP1_L              Clarabel              OPTIMAL               13936.823875ms        
+CVXQP1_L              Gurobi                OPTIMAL               1298.601666ms         
+CVXQP1_L              ojAlgo-QP             OPTIMAL               29163.196791ms        
+CVXQP1_M              COPT                  OPTIMAL               40.738583ms           
+CVXQP1_M              Clarabel              OPTIMAL               42.41525ms            
+CVXQP1_M              Gurobi                OPTIMAL               47.973375ms           
+CVXQP1_M              ojAlgo-QP             OPTIMAL               57.346416ms           
+CVXQP1_S              COPT                  OPTIMAL               2.961375ms            
+CVXQP1_S              Clarabel              OPTIMAL               1.133ms               
+CVXQP1_S              Gurobi                OPTIMAL               1.513584ms            
+CVXQP1_S              ojAlgo-QP             OPTIMAL               120.728209ms          
+CVXQP2_L              COPT                  OPTIMAL               801.819541ms          
+CVXQP2_L              Clarabel              OPTIMAL               9346.777375ms         
+CVXQP2_L              Gurobi                OPTIMAL               776.862917ms          
+CVXQP2_L              ojAlgo-QP             OPTIMAL               12713.807791ms        
+CVXQP2_M              COPT                  OPTIMAL               30.404333ms           
+CVXQP2_M              Clarabel              OPTIMAL               27.033291ms           
+CVXQP2_M              Gurobi                OPTIMAL               24.487333ms           
+CVXQP2_M              ojAlgo-QP             OPTIMAL               31.459333ms           
+CVXQP2_S              COPT                  OPTIMAL               4.02175ms             
+CVXQP2_S              Clarabel              OPTIMAL               1.046667ms            
+CVXQP2_S              Gurobi                OPTIMAL               1.035917ms            
+CVXQP2_S              ojAlgo-QP             OPTIMAL               96.775667ms           
+CVXQP3_L              COPT                  OPTIMAL               2184.001166ms         
+CVXQP3_L              Clarabel              OPTIMAL               12901.935167ms        
+CVXQP3_L              Gurobi                OPTIMAL               5158.856416ms         
+CVXQP3_L              ojAlgo-QP             OPTIMAL               132953.865875ms       
+CVXQP3_M              COPT                  OPTIMAL               52.649084ms           
+CVXQP3_M              Clarabel              OPTIMAL               62.05925ms            
+CVXQP3_M              Gurobi                OPTIMAL               95.714708ms           
+CVXQP3_M              ojAlgo-QP             OPTIMAL               527.645375ms          
+CVXQP3_S              COPT                  OPTIMAL               3.3645ms              
+CVXQP3_S              Clarabel              OPTIMAL               1.125709ms            
+CVXQP3_S              Gurobi                OPTIMAL               2.505583ms            
+CVXQP3_S              ojAlgo-QP             OPTIMAL               8.877959ms            
+DUAL1                 COPT                  OPTIMAL               4.8985ms              
+DUAL1                 Clarabel              OPTIMAL               3.389875ms            
+DUAL1                 Gurobi                OPTIMAL               4.335125ms            
+DUAL1                 ojAlgo-QP             OPTIMAL               1.677333ms            
+DUAL2                 COPT                  OPTIMAL               5.265959ms            
+DUAL2                 Clarabel              OPTIMAL               4.033958ms            
+DUAL2                 Gurobi                OPTIMAL               5.9165ms              
+DUAL2                 ojAlgo-QP             OPTIMAL               2.389167ms            
+DUAL3                 COPT                  OPTIMAL               9.818083ms            
+DUAL3                 Clarabel              OPTIMAL               5.91825ms             
+DUAL3                 Gurobi                OPTIMAL               6.754792ms            
+DUAL3                 ojAlgo-QP             OPTIMAL               2.653375ms            
+DUAL4                 COPT                  OPTIMAL               5.148208ms            
+DUAL4                 Clarabel              OPTIMAL               2.617708ms            
+DUAL4                 Gurobi                OPTIMAL               2.851666ms            
+DUAL4                 ojAlgo-QP             OPTIMAL               2.032417ms            
+DUALC1                COPT                  OPTIMAL               1.330542ms            
+DUALC1                Clarabel              OPTIMAL               0.189375ms            
+DUALC1                Gurobi                OPTIMAL               0.287458ms            
+DUALC1                ojAlgo-QP             OPTIMAL               0.127ms               
+DUALC2                COPT                  OPTIMAL               1.323709ms            
+DUALC2                Clarabel              OPTIMAL               0.09775ms             
+DUALC2                Gurobi                OPTIMAL               0.174292ms            
+DUALC2                ojAlgo-QP             OPTIMAL               0.183917ms            
+DUALC5                COPT                  OPTIMAL               1.22175ms             
+DUALC5                Clarabel              OPTIMAL               0.108416ms            
+DUALC5                Gurobi                OPTIMAL               0.101459ms            
+DUALC5                ojAlgo-QP             OPTIMAL               0.05175ms             
+DUALC8                COPT                  OPTIMAL               0.930375ms            
+DUALC8                Clarabel              OPTIMAL               0.119ms               
+DUALC8                Gurobi                OPTIMAL               0.150708ms            
+DUALC8                ojAlgo-QP             OPTIMAL               0.056ms               
+GENHS28               COPT                  OPTIMAL               0.394709ms            
+GENHS28               Clarabel              OPTIMAL               0.052791ms            
+GENHS28               Gurobi                OPTIMAL               0.084334ms            
+GENHS28               ojAlgo-QP             OPTIMAL               0.03375ms             
+HS118                 COPT                  OPTIMAL               0.796708ms            
+HS118                 Clarabel              OPTIMAL               0.220958ms            
+HS118                 Gurobi                OPTIMAL               0.144667ms            
+HS118                 ojAlgo-QP             OPTIMAL               0.165958ms            
+HS21                  COPT                  OPTIMAL               0.89275ms             
+HS21                  Clarabel              OPTIMAL               0.095167ms            
+HS21                  Gurobi                OPTIMAL               0.050208ms            
+HS21                  ojAlgo-QP             OPTIMAL               0.065833ms            
+HS268                 COPT                  OPTIMAL               1.97225ms             
+HS268                 Clarabel              OPTIMAL               0.087208ms            
+HS268                 Gurobi                OPTIMAL               0.081625ms            
+HS268                 ojAlgo-QP             OPTIMAL               0.022667ms            
+HS35                  COPT                  OPTIMAL               1.085958ms            
+HS35                  Clarabel              OPTIMAL               0.06575ms             
+HS35                  Gurobi                OPTIMAL               0.06275ms             
+HS35                  ojAlgo-QP             OPTIMAL               0.03875ms             
+HS35MOD               COPT                  OPTIMAL               1.827042ms            
+HS35MOD               Clarabel              OPTIMAL               0.120875ms            
+HS35MOD               Gurobi                OPTIMAL               0.067292ms            
+HS35MOD               ojAlgo-QP             OPTIMAL               0.053583ms            
+HS51                  COPT                  OPTIMAL               0.405ms               
+HS51                  Clarabel              OPTIMAL               0.164042ms            
+HS51                  Gurobi                OPTIMAL               0.06725ms             
+HS51                  ojAlgo-QP             OPTIMAL               0.092541ms            
+HS52                  COPT                  OPTIMAL               0.513625ms            
+HS52                  Clarabel              OPTIMAL               0.032916ms            
+HS52                  Gurobi                OPTIMAL               0.067166ms            
+HS52                  ojAlgo-QP             OPTIMAL               0.017666ms            
+HS53                  COPT                  OPTIMAL               0.79875ms             
+HS53                  Clarabel              OPTIMAL               0.078542ms            
+HS53                  Gurobi                OPTIMAL               0.102041ms            
+HS53                  ojAlgo-QP             OPTIMAL               0.062875ms            
+HS76                  COPT                  OPTIMAL               0.992667ms            
+HS76                  Clarabel              OPTIMAL               0.046042ms            
+HS76                  Gurobi                OPTIMAL               0.070625ms            
+HS76                  ojAlgo-QP             OPTIMAL               0.026292ms            
+HUES-MOD              COPT                  OPTIMAL               27.892708ms           
+HUES-MOD              Clarabel              FAILED                UNSTABLE              
+HUES-MOD              Gurobi                OPTIMAL               23.213916ms           
+HUES-MOD              ojAlgo-QP             OPTIMAL               68.637791ms           
+HUESTIS               COPT                  OPTIMAL               27.749166ms           
+HUESTIS               Clarabel              FAILED                UNSTABLE              
+HUESTIS               Gurobi                OPTIMAL               20.71675ms            
+HUESTIS               ojAlgo-QP             OPTIMAL               74.359583ms           
+KSIP                  COPT                  OPTIMAL               76.697583ms           
+KSIP                  Clarabel              OPTIMAL               13.454541ms           
+KSIP                  Gurobi                OPTIMAL               12.154042ms           
+KSIP                  ojAlgo-QP             OPTIMAL               53.464833ms           
+LASER                 COPT                  OPTIMAL               21.273916ms           
+LASER                 Clarabel              OPTIMAL               7.447792ms            
+LASER                 Gurobi                OPTIMAL               16.968209ms           
+LASER                 ojAlgo-QP             OPTIMAL               4.799584ms            
+MOSARQP1              COPT                  OPTIMAL               14.674917ms           
+MOSARQP1              Clarabel              OPTIMAL               13.324125ms           
+MOSARQP1              Gurobi                OPTIMAL               10.12ms               
+MOSARQP1              ojAlgo-QP             OPTIMAL               269.874625ms          
+MOSARQP2              COPT                  OPTIMAL               10.005042ms           
+MOSARQP2              Clarabel              OPTIMAL               7.858958ms            
+MOSARQP2              Gurobi                OPTIMAL               8.304125ms            
+MOSARQP2              ojAlgo-QP             OPTIMAL               42.8695ms             
+POWELL20              COPT                  OPTIMAL               35.0055ms             
+POWELL20              Clarabel              OPTIMAL               91.184083ms           
+POWELL20              Gurobi                OPTIMAL               263.967541ms          
+POWELL20              ojAlgo-QP             FAILED                UNSTABLE              
+QPCBLEND              COPT                  OPTIMAL               2.18ms                
+QPCBLEND              Clarabel              OPTIMAL               1.040917ms            
+QPCBLEND              Gurobi                OPTIMAL               2.51875ms             
+QPCBLEND              ojAlgo-QP             OPTIMAL               36.521708ms           
+QPCBOEI1              COPT                  OPTIMAL               8.170583ms            
+QPCBOEI1              Clarabel              OPTIMAL               7.770584ms            
+QPCBOEI1              Gurobi                OPTIMAL               4.266667ms            
+QPCBOEI1              ojAlgo-QP             OPTIMAL               8680.914708ms         
+QPCBOEI2              COPT                  OPTIMAL               4.12925ms             
+QPCBOEI2              Clarabel              OPTIMAL               3.18475ms             
+QPCBOEI2              Gurobi                OPTIMAL               1.932792ms            
+QPCBOEI2              ojAlgo-QP             OPTIMAL               662.127958ms          
+QPCSTAIR              COPT                  OPTIMAL               10.765458ms           
+QPCSTAIR              Clarabel              OPTIMAL               10.573042ms           
+QPCSTAIR              Gurobi                OPTIMAL               9.67725ms             
+QPCSTAIR              ojAlgo-QP             OPTIMAL               189.337041ms          
+QPTEST                COPT                  OPTIMAL               1.002958ms            
+QPTEST                Clarabel              OPTIMAL               0.081167ms            
+QPTEST                Gurobi                OPTIMAL               0.061667ms            
+QPTEST                ojAlgo-QP             OPTIMAL               0.023583ms            
+S268                  COPT                  OPTIMAL               2.12575ms             
+S268                  Clarabel              OPTIMAL               0.28125ms             
+S268                  Gurobi                OPTIMAL               0.093583ms            
+S268                  ojAlgo-QP             OPTIMAL               0.026875ms            
+STCQP1                COPT                  OPTIMAL               31.106666ms           
+STCQP1                Clarabel              OPTIMAL               62.012708ms           
+STCQP1                Gurobi                OPTIMAL               18.176958ms           
+STCQP1                ojAlgo-QP             OPTIMAL               18.862958ms           
+STCQP2                COPT                  OPTIMAL               53.389625ms           
+STCQP2                Clarabel              OPTIMAL               60.675042ms           
+STCQP2                Gurobi                OPTIMAL               61.068ms              
+STCQP2                ojAlgo-QP             OPTIMAL               19.7655ms             
+TAME                  COPT                  OPTIMAL               0.516625ms            
+TAME                  Clarabel              OPTIMAL               0.100792ms            
+TAME                  Gurobi                OPTIMAL               0.064625ms            
+TAME                  ojAlgo-QP             OPTIMAL               0.052542ms            
+VALUES                COPT                  FAILED                UNSTABLE              
+VALUES                Clarabel              OPTIMAL               3.507959ms            
+VALUES                Gurobi                FAILED                TIMEOUT               
+VALUES                ojAlgo-QP             OPTIMAL               10.069625ms           
+YAO                   COPT                  OPTIMAL               18.613542ms           
+YAO                   Clarabel              FAILED                UNSTABLE              
+YAO                   Gurobi                OPTIMAL               16.160667ms           
+YAO                   ojAlgo-QP             FAILED                UNSTABLE              
+
+Models Solved
+=====================================================================
+COPT                  47 / 48               98%                   
+Clarabel              45 / 48               94%                   
+Gurobi                47 / 48               98%                   
+ojAlgo-QP             46 / 48               96%                   

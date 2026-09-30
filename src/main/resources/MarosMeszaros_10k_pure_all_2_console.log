@@ -1,0 +1,1322 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 2, threads per worker: 9
+
+
+Iteration 1 with 432 model/solver pairs remaining 2026-09-29T21:18:26.790204Z
+-----------------------------------------------------------------------------
+HS268                 ojAlgo-QP-ADMM        Solved                0.703083ms            7.852086178471296E-10 
+HS118                 COPT                  Solved                1.863041ms            664.8204500001063     
+CVXQP2_S              COPT                  Solved                4.740416ms            8120.940477251733     
+HS35MOD               ojAlgo-QP-ASET-NSP-S  Solved                0.259208ms            0.25                  
+MOSARQP1              COPT                  Solved                20.609458ms           -952.8754430312603    
+HS53                  ojAlgo-QP-ADMM        Solved                0.205416ms            4.093023255653535     
+DUAL2                 ojAlgo-QP-ASET-PLN-S  Solved                90.616458ms           0.03373367612271781   
+CVXQP2_M              ojAlgo-QP             Solved                39.382875ms           820155.4310868877     
+DUAL3                 ojAlgo-QP-ASET-PLN-D  Solved                30.254208ms           0.13575583686602685   
+STCQP1                ojAlgo-QP-ASET-NSP-S  Solved                10187.7965ms          155143.55470395708    
+DUAL3                 Gurobi                Solved                8.205417ms            0.13575584229390808   
+HS35                  COPT                  Solved                1.74175ms             0.11111111111356      
+QPTEST                COPT                  Solved                1.685333ms            4.371875000000043     
+CVXQP2_L              ojAlgo-QP-ADMM        Solved                10702.188375ms        8.184245826451105E7   
+DUAL1                 ojAlgo-QP-ASET-PLN-S  Solved                58.683959ms           0.03501296573347697   
+HS76                  ojAlgo-QP-ADMM        Solved                0.090458ms            -4.681818181945759    
+HS52                  ojAlgo-QP-ADMM        Solved                0.061167ms            5.326647564153959     
+STCQP2                ojAlgo-QP-ASET-NSP-D  Solved                645.375167ms          22327.313272416683    
+DUAL2                 ojAlgo-QP-ASET-PLN-D  Solved                20.080167ms           0.03373367612271781   
+STCQP2                ojAlgo-QP-ASET-NSP-S  Solved                1012.146917ms         22327.313272416683    
+DUAL2                 Gurobi                Solved                5.536541ms            0.033733676122793724  
+CONT-050              ojAlgo-QP-ADMM        Solved                1378.57775ms          -4.563850903450709    
+DUAL4                 ojAlgo-QP-ASET-PLN-S  Solved                20.715834ms           0.7460908418021085    
+VALUES                ojAlgo-QP-ASET-PLN-D  Solved                525.542208ms          -1.3966211447140557   
+AUG3DCQP              Gurobi                Solved                22.988791ms           993.3621471456556     
+AUG3DCQP              Clarabel              Solved                28.346916ms           993.3621465254229     
+CVXQP2_L              ojAlgo-QP             Solved                10803.673834ms        8.184245826451105E7   
+CVXQP1_M              ojAlgo-QP-ASET-NSP-D  Solved                18906.050208ms        1087511.5673559299    
+AUG3DCQP              ojAlgo-QP-ASET-PLN-S  Solved                116469.744208ms       993.3621465251049     
+HS51                  ojAlgo-QP-ADMM        Solved                0.038375ms            0.0                   
+AUG3DC                ojAlgo-QP-ADMM        Solved                26.310875ms           771.2624386889596     
+HS21                  ojAlgo-QP             Solved                0.039458ms            -99.96                
+VALUES                ojAlgo-QP-ASET-PLN-S  Solved                425.20775ms           -1.3966211447140557   
+DUAL4                 Clarabel              Solved                4.187666ms            0.7460908637621803    
+TAME                  Clarabel              Solved                0.1685ms              0.0                   
+YAO                   ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+HS35MOD               Clarabel              Solved                0.727208ms            0.25000000119037485   
+VALUES                Gurobi                FAILED                TIMEOUT               
+YAO                   Gurobi                Solved                16.31675ms            197.70425593574183    
+CVXQP1_M              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CONT-050              ojAlgo-QP-ASET-NSP-D  Solved                2137.661458ms         -4.563850904324675    
+QPCBLEND              ojAlgo-QP-ADMM        Solved                10.049541ms           -0.007842545715963965 
+AUG3DCQP              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+DUAL3                 ojAlgo-QP-ASET-PLN-S  Solved                166.6615ms            0.13575583686602538   
+QPCSTAIR              ojAlgo-QP-ASET-PLN-S  Solved                9584.556791ms         6204387.47613934      
+TAME                  Gurobi                Solved                0.134542ms            0.0                   
+CVXQP3_S              COPT                  Solved                5.947584ms            11943.432202307842    
+TAME                  ojAlgo-QP-ASET-NSP-S  Solved                0.199541ms            0.0                   
+TAME                  ojAlgo-QP-ASET-PLN-D  Solved                0.102875ms            0.0                   
+YAO                   ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+LASER                 COPT                  Solved                32.12375ms            2409601.345596795     
+DUAL4                 ojAlgo-QP-ASET-PLN-D  Solved                10.36575ms            0.7460908418021001    
+CONT-050              ojAlgo-QP             Solved                1416.584292ms         -4.563850903450709    
+TAME                  ojAlgo-QP-ASET-NSP-D  Solved                0.165084ms            0.0                   
+CVXQP1_M              ojAlgo-QP             Solved                61.836083ms           1087511.56731044      
+HS35MOD               ojAlgo-QP-ASET-NSP-D  Solved                0.096625ms            0.25                  
+CVXQP2_M              ojAlgo-QP-ADMM        Solved                32.183709ms           820155.4310868877     
+TAME                  ojAlgo-QP-ASET-PLN-S  Solved                0.090875ms            0.0                   
+CVXQP1_L              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+QPCSTAIR              Gurobi                Solved                10.775417ms           6204387.476086542     
+DUAL4                 Gurobi                Solved                3.730292ms            0.7460908477143318    
+QPCSTAIR              ojAlgo-QP-ASET-PLN-D  Solved                3715.31225ms          6204387.476083117     
+HS268                 ojAlgo-QP-ASET-NSP-D  Solved                0.132583ms            4.3151E-24            
+QPCBLEND              Clarabel              Solved                1.507875ms            -0.007842542798814777 
+CVXQP1_L              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP2_L              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+QPCBLEND              ojAlgo-QP             Solved                54.16425ms            -0.007842543074190106 
+AUG3DCQP              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+DUAL2                 Clarabel              Solved                11.57625ms            0.03373368031007675   
+AUG3DCQP              ojAlgo-QP-ASET-NSP-D  Solved                64527.841625ms        993.3621465251036     
+STCQP1                ojAlgo-QP-ADMM        Solved                26.911916ms           155143.55470403298    
+CVXQP3_M              ojAlgo-QP-ADMM        Solved                592.502458ms          1362828.7415021106    
+CVXQP1_L              Clarabel              Solved                11587.5135ms          1.0870479991559933E8  
+CVXQP1_L              ojAlgo-QP             Solved                35037.97875ms         1.0870479976878767E8  
+HS51                  Clarabel              Solved                0.197041ms            0.0                   
+CVXQP1_S              ojAlgo-QP-ADMM        Solved                1.985167ms            11590.718125154137    
+HS51                  ojAlgo-QP             Solved                0.1475ms              4.13106175527E-17     
+CVXQP3_L              COPT                  Solved                1526.880666ms         1.157111044830693E8   
+DUALC1                COPT                  Solved                1.98225ms             6155.2508300025265    
+AUG3DC                ojAlgo-QP-ASET-NSP-S  Solved                1406.155583ms         771.2624386889565     
+CONT-050              ojAlgo-QP-ASET-NSP-S  Solved                7612.770666ms         -4.563850904324675    
+CVXQP2_L              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+DUAL3                 Clarabel              Solved                6.0655ms              0.1357558965708443    
+STCQP2                ojAlgo-QP-ADMM        Solved                21.319667ms           22327.313272417538    
+DUALC5                ojAlgo-QP-ASET-PLN-S  Solved                1.917958ms            427.23232677639356    
+POWELL20              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP1_S              COPT                  Solved                4.306792ms            11590.71811942291     
+DUALC5                Gurobi                Solved                0.215583ms            427.2323284666975     
+CVXQP3_M              COPT                  Solved                56.205375ms           1362828.741604744     
+AUG3DC                ojAlgo-QP-ASET-NSP-D  Solved                1463.515833ms         771.2624386889565     
+HS118                 ojAlgo-QP             Solved                2.83675ms             664.820450000018      
+QPCBOEI2              COPT                  Solved                5.970125ms            8171962.244330406     
+DUALC2                COPT                  Solved                2.968834ms            3551.3076926707517    
+DUALC8                ojAlgo-QP-ASET-PLN-S  Solved                1.055791ms            18309.35883290303     
+HS53                  ojAlgo-QP             Solved                0.154166ms            4.093023191194527     
+DUAL1                 Gurobi                Solved                4.877834ms            0.03501296855864166   
+DUALC8                Gurobi                Solved                0.224042ms            18309.358832820424    
+DUAL1                 ojAlgo-QP-ASET-PLN-D  Solved                13.347666ms           0.03501296573347623   
+HS53                  Clarabel              Solved                0.535375ms            4.093023255813974     
+CVXQP3_L              ojAlgo-QP-ADMM        Solved                133802.245208ms       1.1571110348156732E8  
+KSIP                  COPT                  Solved                61.763334ms           0.5757979412401049    
+DUALC8                ojAlgo-QP-ASET-PLN-D  Solved                0.911083ms            18309.35883273598     
+DUALC8                Clarabel              Solved                0.2465ms              18309.359650070946    
+HS35MOD               ojAlgo-QP-ADMM        Solved                0.065292ms            0.25                  
+QPCBOEI1              COPT                  Solved                13.561542ms           1.1503914009768227E7  
+CVXQP2_M              ojAlgo-QP-ASET-NSP-D  Solved                34867.276ms           820155.431044739      
+MOSARQP2              COPT                  Solved                14.904416ms           -1597.4821175229827   
+HS268                 ojAlgo-QP-ASET-NSP-S  Solved                0.13225ms             1.9521E-23            
+DUAL1                 Clarabel              Solved                3.737167ms            0.03501298755196928   
+HS76                  ojAlgo-QP             Solved                0.135042ms            -4.681818181818182    
+HS52                  ojAlgo-QP             Solved                0.066125ms            5.326647576871785     
+MOSARQP1              ojAlgo-QP-ADMM        Solved                255.072583ms          -952.8754427805984    
+POWELL20              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+HS52                  Clarabel              Solved                0.353333ms            5.326647564469917     
+HS76                  Clarabel              Solved                0.317ms               -4.681818181738655    
+STCQP1                ojAlgo-QP-ASET-NSP-D  Solved                6335.376ms            155143.55470395705    
+VALUES                ojAlgo-QP-ASET-NSP-S  Solved                3358.514125ms         -1.3966211447140557   
+CVXQP1_S              ojAlgo-QP-ASET-NSP-D  Solved                9.823959ms            11590.718119653988    
+QPCBLEND              ojAlgo-QP-ASET-PLN-D  Solved                62.779875ms           -0.007842543074099493 
+LASER                 ojAlgo-QP             Solved                14.995ms              2409601.3445665766    
+CVXQP3_M              ojAlgo-QP-ASET-NSP-D  Solved                3893.319667ms         1362828.7416028955    
+CVXQP2_M              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+QPCBLEND              ojAlgo-QP-ASET-PLN-S  Solved                69.694292ms           -0.007842543074169516 
+CVXQP3_S              ojAlgo-QP             Solved                5.719792ms            11943.432202309947    
+HS21                  ojAlgo-QP-ASET-NSP-D  Solved                0.122291ms            -99.96                
+KSIP                  ojAlgo-QP-ADMM        APPROXIMATE           UNSTABLE              
+QPCSTAIR              Clarabel              Solved                12.480208ms           6204387.476095291     
+DUALC2                Gurobi                Solved                0.192666ms            3551.3076928595256    
+S268                  Clarabel              Solved                0.227583ms            1.0827727501628553E-6 
+CVXQP2_M              Clarabel              Solved                28.104083ms           820155.4310161147     
+CVXQP1_S              ojAlgo-QP-ASET-NSP-S  Solved                74.329958ms           11590.71811942676     
+VALUES                ojAlgo-QP-ASET-NSP-D  Solved                3198.7865ms           -1.3966211447140557   
+CVXQP3_M              ojAlgo-QP-ASET-NSP-S  Solved                8978.167083ms         1362828.7416028958    
+DUAL1                 ojAlgo-QP-ASET-NSP-D  Solved                8.328167ms            0.03501296573347623   
+CONT-050              Gurobi                Solved                26.037333ms           -4.563850904321097    
+QPCBOEI2              ojAlgo-QP             Solved                447.355458ms          8171962.244281324     
+DUALC5                COPT                  Solved                1.615208ms            427.23232677646814    
+STCQP2                ojAlgo-QP-ASET-PLN-S  Solved                986.960542ms          22327.313272416683    
+CVXQP1_L              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+AUG3DC                ojAlgo-QP-ASET-PLN-S  Solved                1647.492292ms         771.2624386889565     
+DUAL1                 ojAlgo-QP-ASET-NSP-S  Solved                50.259ms              0.0350129657334766    
+DUALC1                Gurobi                Solved                0.311166ms            6155.25082955423      
+AUG3DCQP              ojAlgo-QP-ADMM        Solved                69.640541ms           993.3621465050519     
+AUG3DC                COPT                  Solved                13.311916ms           771.2624386889589     
+DUAL2                 ojAlgo-QP-ASET-NSP-S  Solved                96.299041ms           0.03373367612271817   
+HUESTIS               COPT                  Solved                34.855625ms           3.482446385499014E11  
+CVXQP3_L              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+HS21                  ojAlgo-QP-ASET-NSP-S  Solved                0.227291ms            -99.96                
+POWELL20              ojAlgo-QP-ADMM        APPROXIMATE           UNSTABLE              
+CVXQP2_L              Clarabel              Solved                7945.255917ms         8.18424582629042E7    
+CVXQP2_L              COPT                  Solved                642.167625ms          8.184245826284127E7   
+DUAL2                 ojAlgo-QP-ASET-NSP-D  Solved                29.261542ms           0.03373367612271817   
+AUG3DC                ojAlgo-QP-ASET-PLN-D  Solved                1393.500333ms         771.2624386889565     
+VALUES                Clarabel              Solved                4.969542ms            -1.3966211433271045   
+DUAL3                 ojAlgo-QP-ASET-NSP-D  Solved                15.743208ms           0.13575583686602102   
+QPCBOEI1              ojAlgo-QP             Solved                13821.370208ms        1.1503914009758707E7  
+HS35MOD               ojAlgo-QP-ASET-PLN-D  Solved                0.051125ms            0.25                  
+CVXQP3_L              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+HUESTIS               Clarabel              INFEASIBLE            UNSTABLE              
+GENHS28               COPT                  Solved                0.770209ms            0.9271736937663944    
+AUG3DCQP              ojAlgo-QP             Solved                69.344333ms           993.3621465050519     
+DUAL3                 ojAlgo-QP-ASET-NSP-S  Solved                99.284458ms           0.13575583686602102   
+STCQP2                COPT                  Solved                50.551667ms           22327.31327242951     
+HUESTIS               ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+HUESTIS               ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+HS35MOD               ojAlgo-QP             Solved                0.272125ms            0.25                  
+MOSARQP2              ojAlgo-QP             Solved                47.88275ms            -1597.4821174957456   
+CVXQP2_M              COPT                  Solved                36.838375ms           820155.4310207053     
+DUAL4                 ojAlgo-QP-ASET-NSP-D  Solved                18.7515ms             0.7460908418021085    
+S268                  ojAlgo-QP-ASET-NSP-D  Solved                0.129042ms            4.3151E-24            
+CVXQP1_M              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QP-ASET-NSP-S  Solved                54325.159916ms        -952.8754430312603    
+HS268                 COPT                  Solved                3.059292ms            1.5113906332890895E-10
+QPCSTAIR              ojAlgo-QP-ASET-NSP-S  Solved                5836.518125ms         6204387.476082434     
+CVXQP2_S              ojAlgo-QP             Solved                543.691208ms          8120.940477250763     
+YAO                   Clarabel              APPROXIMATE           UNSTABLE              
+DUAL4                 ojAlgo-QP-ASET-NSP-S  Solved                40.295375ms           0.7460908418021085    
+QPCBLEND              COPT                  Solved                3.725958ms            -0.007842542877205832 
+STCQP1                COPT                  Solved                37.208417ms           155143.55470395705    
+S268                  ojAlgo-QP-ASET-NSP-S  Solved                0.084042ms            1.9521E-23            
+MOSARQP2              ojAlgo-QP-ASET-NSP-D  Solved                13252.37975ms         -1597.482117523427    
+HS35MOD               ojAlgo-QP-ASET-PLN-S  Solved                0.050167ms            0.25                  
+CVXQP1_M              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+CVXQP1_M              Clarabel              Solved                43.937ms              1087511.5673276735    
+QPCSTAIR              ojAlgo-QP-ASET-NSP-D  Solved                905.060958ms          6204387.476082435     
+S268                  ojAlgo-QP-ASET-PLN-S  Solved                0.17775ms             1.9521E-23            
+YAO                   COPT                  Solved                21.084542ms           197.7042559402473     
+MOSARQP2              ojAlgo-QP-ASET-NSP-S  Solved                8550.529125ms         -1597.4821175234272   
+HS53                  ojAlgo-QP-ASET-NSP-D  Solved                0.13975ms             4.093023255813952     
+DUALC8                COPT                  Solved                1.697791ms            18309.358832735277    
+CVXQP1_L              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-QP-ASET-NSP-S  Solved                78400.868667ms        1.1503914009770634E7  
+HS118                 ojAlgo-QP-ASET-NSP-S  Solved                0.874375ms            664.820450000018      
+S268                  ojAlgo-QP-ASET-PLN-D  Solved                0.172917ms            4.3151E-24            
+HS52                  ojAlgo-QP-ASET-NSP-S  Solved                0.107917ms            5.326647576871785     
+CVXQP2_M              ojAlgo-QP-ASET-PLN-D  Solved                57232.202334ms        820155.4310465128     
+HUES-MOD              Gurobi                Solved                40.014833ms           3.48244638733452E7    
+QPCBOEI1              ojAlgo-QP-ASET-NSP-D  Solved                5868.228292ms         1.150391400983401E7   
+HS76                  ojAlgo-QP-ASET-NSP-S  Solved                0.107042ms            -4.681818181818182    
+YAO                   ojAlgo-QP-ADMM        APPROXIMATE           UNSTABLE              
+CVXQP2_S              ojAlgo-QP-ASET-NSP-D  Solved                25.270708ms           8120.940477488787     
+HS118                 ojAlgo-QP-ASET-NSP-D  Solved                0.2805ms              664.8204500000327     
+MOSARQP1              Clarabel              Solved                19.730042ms           -952.8754430307338    
+CVXQP2_L              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+AUG3DC                ojAlgo-QP             Solved                36.889791ms           771.2624386889596     
+DUALC8                ojAlgo-QP-ADMM        Solved                0.784208ms            18309.358884790363    
+AUG3DC                Clarabel              Solved                10.413792ms           771.2624386889584     
+QPCBOEI2              ojAlgo-QP-ASET-NSP-S  Solved                196.344ms             8171962.244356997     
+CVXQP3_M              ojAlgo-QP             Solved                486.960708ms          1362828.7415021106    
+CVXQP1_S              Clarabel              Solved                1.867584ms            11590.7181194325      
+CVXQP2_S              ojAlgo-QP-ASET-NSP-S  Solved                251.359458ms          8120.940477250705     
+CVXQP3_M              Clarabel              Solved                58.43ms               1362828.7416041286    
+HS53                  ojAlgo-QP-ASET-NSP-S  Solved                0.167292ms            4.093023255813952     
+MOSARQP1              ojAlgo-QP             Solved                248.3145ms            -952.8754427805984    
+QPCBOEI2              ojAlgo-QP-ASET-NSP-D  Solved                128.636709ms          8171962.244358017     
+CVXQP3_S              ojAlgo-QP-ASET-NSP-D  Solved                2.24575ms             11943.432202309956    
+CVXQP2_L              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+HS51                  ojAlgo-QP-ASET-NSP-D  Solved                0.249875ms            4.13106175527E-17     
+CVXQP3_L              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+LASER                 ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP1_S              ojAlgo-QP             Solved                83.992417ms           11590.71811942676     
+STCQP1                ojAlgo-QP-ASET-PLN-S  Solved                10286.955958ms        155143.55470395708    
+STCQP1                Clarabel              Solved                56.04825ms            155143.55470396916    
+CVXQP3_L              ojAlgo-QP             Solved                136400.268625ms       1.1571110348156732E8  
+CVXQP3_L              Clarabel              Solved                11404.138375ms        1.1571110449425064E8  
+CVXQP3_S              ojAlgo-QP-ASET-NSP-S  Solved                7.093792ms            11943.432202309947    
+HS268                 Clarabel              Solved                0.206791ms            1.0827727501628553E-6 
+STCQP1                ojAlgo-QP             Solved                21.524875ms           155143.55470403298    
+CVXQP1_M              ojAlgo-QP-ADMM        Solved                55.273541ms           1087511.56731044      
+HS268                 ojAlgo-QP             Solved                0.127083ms            1.9521E-23            
+POWELL20              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP1_L              COPT                  Solved                1086.396667ms         1.0870479970876637E8  
+GENHS28               ojAlgo-QP             Solved                0.203375ms            0.9271736939195341    
+STCQP2                ojAlgo-QP-ASET-PLN-D  Solved                624.079208ms          22327.313272416683    
+GENHS28               Clarabel              Solved                0.191125ms            0.9271736937663944    
+POWELL20              Clarabel              Solved                91.016333ms           5.208958281259555E10  
+POWELL20              ojAlgo-QP             APPROXIMATE           UNSTABLE              
+GENHS28               ojAlgo-QP-ASET-PLN-D  Solved                0.105541ms            0.9271736939195341    
+HS268                 ojAlgo-QP-ASET-PLN-S  Solved                0.173834ms            1.9521E-23            
+HS76                  ojAlgo-QP-ASET-NSP-D  Solved                0.103417ms            -4.681818181818182    
+QPTEST                Gurobi                Solved                0.103167ms            4.371875004581603     
+HS52                  ojAlgo-QP-ASET-NSP-D  Solved                0.043166ms            5.326647576871785     
+HS35                  Gurobi                Solved                0.089458ms            0.11111111111710445   
+STCQP2                Clarabel              Solved                59.908916ms           22327.313272420346    
+HS268                 ojAlgo-QP-ASET-PLN-D  Solved                0.058333ms            4.3151E-24            
+HUESTIS               ojAlgo-QP-ADMM        Solved                79.531583ms           3.482444393273373E11  
+GENHS28               ojAlgo-QP-ASET-PLN-S  Solved                0.049208ms            0.9271736939195341    
+STCQP2                ojAlgo-QP             Solved                23.191291ms           22327.313272417538    
+CVXQP1_L              ojAlgo-QP-ADMM        Solved                31429.671375ms        1.0870479976878767E8  
+POWELL20              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+HS51                  ojAlgo-QP-ASET-NSP-S  Solved                0.232042ms            4.13106175527E-17     
+LASER                 ojAlgo-QP-ASET-NSP-D  Solved                62007.120208ms        2409600.7799155847    
+CVXQP1_M              COPT                  Solved                44.651ms              1087511.567838513     
+STCQP1                ojAlgo-QP-ASET-PLN-D  Solved                6137.29ms             155143.55470395705    
+POWELL20              COPT                  Solved                43.277125ms           5.208958281242757E10  
+DUALC1                ojAlgo-QP-ASET-NSP-S  Solved                1.179625ms            6155.250829471818     
+DUALC5                ojAlgo-QP-ADMM        Solved                0.508542ms            427.2323275616733     
+DUAL4                 COPT                  Solved                4.621458ms            0.746090841813025     
+LASER                 Clarabel              Solved                10.467292ms           2409601.3455973454    
+AUG3DCQP              COPT                  Solved                14.519ms              993.3621465257148     
+QPTEST                ojAlgo-QP-ASET-PLN-D  Solved                0.073958ms            4.371875              
+QPCSTAIR              ojAlgo-QP             Solved                176.082917ms          6204386.979693689     
+DUALC2                ojAlgo-QP-ASET-NSP-D  Solved                0.26675ms             3551.307797033195     
+CVXQP1_S              ojAlgo-QP-ASET-PLN-S  Solved                132.809667ms          11590.71811942677     
+HS21                  Gurobi                Solved                0.068875ms            -99.95999999993074    
+CVXQP2_M              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP1_S              Gurobi                Solved                3.04375ms             11590.718120011501    
+MOSARQP1              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+QPCBOEI2              Clarabel              Solved                4.581416ms            8171962.244346138     
+S268                  ojAlgo-QP             Solved                0.469791ms            1.9521E-23            
+CVXQP3_M              Gurobi                Solved                94.460583ms           1362828.7870555902    
+DUAL3                 COPT                  Solved                9.9575ms              0.13575583687665527   
+HS21                  ojAlgo-QP-ASET-PLN-D  Solved                0.153625ms            -99.96                
+CVXQP1_S              ojAlgo-QP-ASET-PLN-D  Solved                18.535208ms           11590.718148185751    
+HUES-MOD              ojAlgo-QP-ADMM        Solved                76.995833ms           3.482444393273373E7   
+CVXQP3_M              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+DUALC1                ojAlgo-QP-ASET-NSP-D  Solved                1.859167ms            6155.250829463202     
+HS21                  ojAlgo-QP-ASET-PLN-S  Solved                0.198834ms            -99.96                
+CVXQP2_S              ojAlgo-QP-ASET-PLN-S  Solved                400.713ms             8120.940477250763     
+QPCBOEI1              ojAlgo-QP-ASET-PLN-D  Solved                8035.569833ms         1.1503914009800244E7  
+DUALC5                ojAlgo-QP             Solved                0.63725ms             427.23232677639356    
+KSIP                  Clarabel              Solved                12.9425ms             0.5757979412419589    
+MOSARQP2              ojAlgo-QP-ASET-PLN-D  Solved                10913.166334ms        -1597.482117523427    
+MOSARQP2              Clarabel              Solved                9.500167ms            -1597.4821175167976   
+CVXQP2_S              Gurobi                Solved                1.419792ms            8120.940477270524     
+KSIP                  ojAlgo-QP-ASET-PLN-D  Solved                21.423667ms           0.5757979412401084    
+QPCBOEI1              Clarabel              Solved                8.366208ms            1.1503914009770427E7  
+DUAL2                 COPT                  Solved                6.672625ms            0.03373367612271657   
+CVXQP2_S              ojAlgo-QP-ASET-PLN-D  Solved                20.180625ms           8120.940498232463     
+CVXQP2_S              Clarabel              Solved                0.977667ms            8120.940477251413     
+CVXQP3_L              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+MOSARQP1              Gurobi                Solved                14.195625ms           -952.8754425226556    
+QPCBOEI1              Gurobi                Solved                5.535042ms            1.150391400976825E7   
+DUALC2                ojAlgo-QP-ASET-NSP-S  Solved                1.876042ms            3551.3116846166695    
+DUAL1                 COPT                  Solved                6.538ms               0.03501296573658537   
+YAO                   ojAlgo-QP             APPROXIMATE           UNSTABLE              
+GENHS28               ojAlgo-QP-ADMM        Solved                0.116792ms            0.9271736937663881    
+MOSARQP2              ojAlgo-QP-ASET-PLN-S  Solved                7757.269416ms         -1597.4821175234272   
+KSIP                  Gurobi                Solved                12.390667ms           0.5757979412405373    
+HUES-MOD              ojAlgo-QP             Solved                58.19725ms            3.482444393273373E7   
+KSIP                  ojAlgo-QP-ASET-NSP-S  Solved                34.557916ms           0.5757979412401084    
+MOSARQP2              Gurobi                Solved                8.911042ms            -1597.4821173216978   
+KSIP                  ojAlgo-QP-ASET-PLN-S  Solved                33.374459ms           0.5757979412401084    
+VALUES                ojAlgo-QP             Solved                10.744417ms           -1.3966211447135068   
+DUALC1                ojAlgo-QP-ADMM        Solved                0.3165ms              6155.252014226321     
+KSIP                  ojAlgo-QP-ASET-NSP-D  Solved                20.624541ms           0.5757979412401084    
+VALUES                ojAlgo-QP-ADMM        Solved                10.401542ms           -1.3966211447135068   
+HS35MOD               COPT                  Solved                3.406041ms            0.250000000000537     
+DUAL2                 ojAlgo-QP             Solved                83.591708ms           0.03373367612271781   
+MOSARQP1              ojAlgo-QP-ASET-PLN-S  Solved                89211.044ms           -952.8754430312603    
+QPCBOEI2              ojAlgo-QP-ASET-PLN-D  Solved                219.249042ms          8171962.448193279     
+HS53                  Gurobi                Solved                0.296875ms            4.093023255813933     
+HS53                  ojAlgo-QP-ASET-PLN-D  Solved                0.097917ms            4.093023247315109     
+HUES-MOD              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+QPCBOEI2              ojAlgo-QP-ASET-PLN-S  Solved                511.968875ms          8171962.244281324     
+QPCBOEI1              ojAlgo-QP-ASET-PLN-S  Solved                14024.401875ms        1.1503914009758707E7  
+DUAL3                 ojAlgo-QP             Solved                102.880666ms          0.13575583686602538   
+QPCBOEI2              Gurobi                Solved                2.107042ms            8171962.244330432     
+HS118                 Clarabel              Solved                0.6575ms              664.8204500023853     
+HUESTIS               ojAlgo-QP             Solved                66.927083ms           3.482444393273373E11  
+HS53                  ojAlgo-QP-ASET-PLN-S  Solved                0.115084ms            4.093023191194527     
+HS52                  Gurobi                Solved                0.102625ms            5.326647564469947     
+HS76                  Gurobi                Solved                0.106791ms            -4.681818181242489    
+QPCSTAIR              ojAlgo-QP-ADMM        Solved                189.959583ms          6204386.979693689     
+QPTEST                ojAlgo-QP-ASET-NSP-D  Solved                0.065167ms            4.371875              
+HS52                  ojAlgo-QP-ASET-PLN-D  Solved                0.0645ms              5.326647576871785     
+HS35                  ojAlgo-QP-ASET-NSP-D  Solved                0.058042ms            0.11111111111111334   
+HS76                  ojAlgo-QP-ASET-PLN-D  Solved                0.0885ms              -4.681818181818182    
+HS118                 ojAlgo-QP-ASET-PLN-D  Solved                0.572292ms            664.8204500000327     
+HS118                 Gurobi                Solved                0.175583ms            664.8204500062724     
+HS52                  ojAlgo-QP-ASET-PLN-S  Solved                0.03375ms             5.326647576871785     
+S268                  COPT                  Solved                3.895167ms            1.5113906332890895E-10
+HS118                 ojAlgo-QP-ASET-PLN-S  Solved                0.236583ms            664.820450000018      
+HS76                  ojAlgo-QP-ASET-PLN-S  Solved                0.04925ms             -4.681818181818182    
+CVXQP3_S              ojAlgo-QP-ASET-PLN-S  Solved                259.343167ms          11943.432202310021    
+DUALC2                ojAlgo-QP-ADMM        Solved                0.091042ms            3551.3077867744105    
+HS51                  Gurobi                Solved                0.072125ms            6.6E-27               
+CVXQP3_S              Gurobi                Solved                2.311458ms            11943.432202879196    
+GENHS28               ojAlgo-QP-ASET-NSP-D  Solved                0.038917ms            0.9271736939195341    
+HS51                  ojAlgo-QP-ASET-PLN-D  Solved                0.021458ms            4.13106175527E-17     
+QPCSTAIR              COPT                  Solved                11.494125ms           6204387.476082529     
+HUES-MOD              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP3_S              ojAlgo-QP-ASET-PLN-D  Solved                28.840958ms           11943.432246335373    
+LASER                 Gurobi                Solved                20.804459ms           2409601.345596804     
+CVXQP3_S              Clarabel              Solved                2.172625ms            11943.432202316648    
+VALUES                COPT                  FAILED                UNSTABLE              
+DUAL1                 ojAlgo-QP             Solved                58.799958ms           0.03501296573347697   
+QPTEST                ojAlgo-QP-ASET-NSP-S  Solved                0.093958ms            4.371875              
+LASER                 ojAlgo-QP-ASET-PLN-D  Solved                62441.02025ms         2409600.7799155847    
+HS51                  ojAlgo-QP-ASET-PLN-S  Solved                0.083542ms            4.13106175527E-17     
+GENHS28               ojAlgo-QP-ASET-NSP-S  Solved                0.101208ms            0.9271736939195341    
+HS35                  ojAlgo-QP-ASET-NSP-S  Solved                0.068542ms            0.11111111111111334   
+DUALC8                ojAlgo-QP             Solved                0.197708ms            18309.35883290303     
+S268                  ojAlgo-QP-ADMM        Solved                0.158875ms            7.852086178471296E-10 
+CVXQP1_L              Gurobi                Solved                1030.70675ms          1.0870489466073301E8  
+QPCBLEND              Gurobi                Solved                0.889333ms            -0.007842542774396959 
+DUALC2                ojAlgo-QP-ASET-PLN-S  Solved                0.22075ms             3551.3082234735452    
+TAME                  ojAlgo-QP-ADMM        Solved                0.061208ms            0.0                   
+CONT-050              COPT                  Solved                13.336917ms           -4.563850904340323    
+MOSARQP2              ojAlgo-QP-ADMM        Solved                43.176917ms           -1597.4821174957456   
+QPCBOEI2              ojAlgo-QP-ADMM        APPROXIMATE           UNSTABLE              
+HS51                  COPT                  Solved                0.531542ms            0.0                   
+DUALC2                ojAlgo-QP-ASET-PLN-D  Solved                0.135042ms            3551.3077036739983    
+LASER                 ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+STCQP2                Gurobi                Solved                73.980709ms           22327.31329314305     
+AUG3DC                Gurobi                Solved                12.863625ms           771.2624386889588     
+DUALC8                ojAlgo-QP-ASET-NSP-S  Solved                2.953ms               18309.35884639353     
+DUALC1                ojAlgo-QP-ASET-PLN-S  Solved                2.821791ms            6155.250829463377     
+CONT-050              ojAlgo-QP-ASET-PLN-D  Solved                222798.210875ms       -4.563850904334202    
+YAO                   ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-QP-ADMM        APPROXIMATE           UNSTABLE              
+DUALC1                ojAlgo-QP-ASET-PLN-D  Solved                0.917833ms            6155.250829462685     
+CVXQP2_S              ojAlgo-QP-ADMM        Solved                2.605583ms            8120.940477252187     
+DUALC5                Clarabel              Solved                0.505709ms            427.23232755418167    
+HS35MOD               Gurobi                Solved                0.120375ms            0.2500000067466616    
+QPTEST                ojAlgo-QP-ADMM        Solved                0.100667ms            4.371875              
+DUALC5                ojAlgo-QP-ASET-PLN-D  Solved                0.89575ms             427.23232677639356    
+HS35                  ojAlgo-QP-ADMM        Solved                0.074833ms            0.11111111114136445   
+LASER                 ojAlgo-QP-ADMM        Solved                6.378917ms            2409601.3445665766    
+HS53                  COPT                  Solved                1.089875ms            4.0930232558139314    
+DUAL4                 ojAlgo-QP             Solved                18.829458ms           0.7460908418021085    
+HUESTIS               Gurobi                Solved                21.491125ms           3.4824463873345074E11 
+CONT-050              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+TAME                  ojAlgo-QP             Solved                0.247708ms            0.0                   
+CVXQP3_S              ojAlgo-QP-ADMM        Solved                4.555833ms            11943.432202199467    
+HS21                  Clarabel              Solved                0.242833ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Solved                33.368375ms           0.5757979412401084    
+YAO                   ojAlgo-QP-ASET-NSP-D  Solved                215200.55175ms        197.7049754620232     
+CVXQP1_M              Gurobi                Solved                54.149667ms           1087511.5684757375    
+HUES-MOD              Clarabel              INFEASIBLE            UNSTABLE              
+CONT-050              Clarabel              Solved                54.544125ms           -4.563850904324673    
+HS118                 ojAlgo-QP-ADMM        Solved                1.035917ms            664.8204510820071     
+HS52                  COPT                  Solved                0.646583ms            5.326647564469917     
+HS76                  COPT                  Solved                2.065666ms            -4.681818181679441    
+DUAL1                 ojAlgo-QP-ADMM        Solved                5.624375ms            0.03501296728448917   
+DUALC5                ojAlgo-QP-ASET-NSP-S  Solved                0.815083ms            427.23232677638896    
+S268                  Gurobi                Solved                0.131708ms            7.921358603821931E-6  
+HUES-MOD              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+HS21                  ojAlgo-QP-ADMM        Solved                0.659333ms            -99.96                
+QPTEST                ojAlgo-QP             Solved                0.763167ms            4.371875              
+CVXQP2_M              Gurobi                Solved                75.779542ms           820155.4310147046     
+HS35                  Clarabel              Solved                1.005167ms            0.11111111118286      
+QPTEST                Clarabel              Solved                0.718875ms            4.371875001943586     
+HS35                  ojAlgo-QP             Solved                0.70775ms             0.11111111111111334   
+HUESTIS               ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP2_L              Gurobi                Solved                652.921917ms          8.184245827771086E7   
+DUALC2                ojAlgo-QP             Solved                1.621125ms            3551.3082234735452    
+DUAL2                 ojAlgo-QP-ADMM        Solved                5.909083ms            0.033733676363988975  
+DUALC2                Clarabel              Solved                0.503625ms            3551.307695741058     
+HUESTIS               ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+DUALC5                ojAlgo-QP-ASET-NSP-D  Solved                1.670792ms            427.23232677638896    
+STCQP1                Gurobi                Solved                23.362458ms           155143.55474736833    
+QPCBLEND              ojAlgo-QP-ASET-NSP-S  Solved                57.319791ms           -0.007842543074190106 
+DUAL3                 ojAlgo-QP-ADMM        Solved                12.675333ms           0.13575584163683044   
+DUALC1                ojAlgo-QP             Solved                0.713208ms            6155.250829463377     
+DUALC1                Clarabel              Solved                0.68875ms             6155.250871874518     
+CVXQP3_L              Gurobi                Solved                4607.567791ms         1.1571110542203602E8  
+HUES-MOD              COPT                  Solved                28.2595ms             3.4824463854989916E7  
+TAME                  COPT                  Solved                0.674083ms            0.0                   
+POWELL20              Gurobi                Solved                293.038125ms          5.208958281250049E10  
+DUALC8                ojAlgo-QP-ASET-NSP-D  Solved                0.320875ms            18309.358832735667    
+HS21                  COPT                  Solved                1.1065ms              -99.95999999997561    
+DUAL4                 ojAlgo-QP-ADMM        Solved                2.574375ms            0.7460908653706344    
+HS35                  ojAlgo-QP-ASET-PLN-S  Solved                0.074583ms            0.11111111111111334   
+QPTEST                ojAlgo-QP-ASET-PLN-S  Solved                0.052333ms            4.371875              
+HS35                  ojAlgo-QP-ASET-PLN-D  Solved                0.064583ms            0.11111111111111334   
+GENHS28               Gurobi                Solved                0.100417ms            0.9271736937664032    
+QPCBLEND              ojAlgo-QP-ASET-NSP-D  Solved                19.682709ms           -0.007842543074190106 
+HS268                 Gurobi                Solved                0.099959ms            7.921358603821931E-6  
+HUES-MOD              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+
+Iteration 2 with 379 model/solver pairs remaining 2026-09-29T23:28:54.205790Z
+-----------------------------------------------------------------------------
+
+Iteration 3 with 379 model/solver pairs remaining 2026-09-29T23:54:36.452029Z
+-----------------------------------------------------------------------------
+HS118                 COPT                  Time stable           1.718042ms            664.8204500001063     
+CVXQP2_S              COPT                  Time stable           4.740416ms            8120.940477251733     
+DUAL2                 ojAlgo-QP-ASET-PLN-S  Time stable           86.657792ms           0.03373367612271781   
+MOSARQP1              COPT                  Time stable           19.526709ms           -952.8754430312603    
+STCQP1                ojAlgo-QP-ASET-NSP-S  Time stable           9321.540791ms         155143.55470395708    
+HS35                  COPT                  Time stable           1.227541ms            0.11111111111356      
+QPTEST                COPT                  Time stable           1.319625ms            4.371875000000043     
+STCQP2                ojAlgo-QP-ASET-NSP-D  Time stable           622.721708ms          22327.313272416683    
+DUAL1                 ojAlgo-QP-ASET-PLN-S  Time stable           58.683959ms           0.03501296573347697   
+CVXQP2_L              ojAlgo-QP-ADMM        Time stable           10644.702ms           8.184245826451105E7   
+DUAL2                 ojAlgo-QP-ASET-PLN-D  Time stable           15.914083ms           0.03373367612271781   
+STCQP2                ojAlgo-QP-ASET-NSP-S  Time stable           960.124459ms          22327.313272416683    
+CONT-050              ojAlgo-QP-ADMM        Time stable           1375.957ms            -4.563850903450709    
+DUAL4                 ojAlgo-QP-ASET-PLN-S  Time stable           19.976958ms           0.7460908418021085    
+VALUES                ojAlgo-QP-ASET-PLN-D  Time stable           506.254709ms          -1.3966211447140557   
+CVXQP2_L              ojAlgo-QP             Time stable           10775.061917ms        8.184245826451105E7   
+AUG3DC                ojAlgo-QP-ADMM        Time stable           24.651333ms           771.2624386889596     
+DUAL4                 Clarabel              Time stable           2.659958ms            0.7460908637621803    
+YAO                   Gurobi                Time stable           13.795083ms           197.70425593574183    
+CONT-050              ojAlgo-QP-ASET-NSP-D  Time stable           1147.561ms            -4.563850904324675    
+QPCBLEND              ojAlgo-QP-ADMM        Time stable           4.675ms               -0.007842545715963965 
+DUAL3                 ojAlgo-QP-ASET-PLN-S  Time stable           114.58925ms           0.13575583686602538   
+QPCSTAIR              ojAlgo-QP-ASET-PLN-S  Time stable           7180.413542ms         6204387.47613934      
+LASER                 COPT                  Time stable           24.540333ms           2409601.345596795     
+CONT-050              ojAlgo-QP             Time stable           1372.846583ms         -4.563850903450709    
+CVXQP1_M              ojAlgo-QP             Time stable           54.499209ms           1087511.56731044      
+CVXQP2_M              ojAlgo-QP-ADMM        Time stable           27.462166ms           820155.4310868877     
+QPCSTAIR              Gurobi                Time stable           9.171167ms            6204387.476086542     
+DUAL4                 Gurobi                Time stable           2.653709ms            0.7460908477143318    
+QPCBLEND              Clarabel              Time stable           0.869958ms            -0.007842542798814777 
+QPCBLEND              ojAlgo-QP             Time stable           42.234167ms           -0.007842543074190106 
+AUG3DCQP              ojAlgo-QP-ASET-PLN-S  Time stable           103946.001083ms       993.3621465251049     
+CVXQP1_L              ojAlgo-QP             Time stable           31921.958042ms        1.0870479976878767E8  
+CVXQP3_M              ojAlgo-QP-ADMM        Time stable           565.703292ms          1362828.7415021106    
+AUG3DCQP              ojAlgo-QP-ASET-NSP-D  Time stable           64527.841625ms        993.3621465251036     
+CVXQP3_L              COPT                  Time stable           1526.880666ms         1.157111044830693E8   
+DUALC1                COPT                  Time stable           1.727083ms            6155.2508300025265    
+AUG3DC                ojAlgo-QP-ASET-NSP-S  Time stable           1406.155583ms         771.2624386889565     
+CVXQP1_L              Clarabel              Time stable           11304.086458ms        1.0870479991559933E8  
+CONT-050              ojAlgo-QP-ASET-NSP-S  Time stable           7612.770666ms         -4.563850904324675    
+CVXQP3_M              COPT                  Time stable           53.183458ms           1362828.7416045454    
+AUG3DC                ojAlgo-QP-ASET-NSP-D  Time stable           1463.515833ms         771.2624386889565     
+QPCBOEI2              COPT                  Time stable           5.816125ms            8171962.244330406     
+DUAL1                 Gurobi                Time stable           4.321958ms            0.03501296855864166   
+KSIP                  COPT                  Time stable           61.763334ms           0.5757979412401049    
+QPCBOEI1              COPT                  Time stable           9.909833ms            1.1503914009768227E7  
+CVXQP2_M              ojAlgo-QP-ASET-NSP-D  Time stable           34867.276ms           820155.431044739      
+MOSARQP1              ojAlgo-QP-ADMM        Time stable           249.131ms             -952.8754427805984    
+STCQP1                ojAlgo-QP-ASET-NSP-D  Time stable           6180.199125ms         155143.55470395705    
+CVXQP3_L              ojAlgo-QP-ADMM        Time stable           133802.245208ms       1.1571110348156732E8  
+QPCBLEND              ojAlgo-QP-ASET-PLN-D  Time stable           54.204375ms           -0.007842543074099493 
+VALUES                ojAlgo-QP-ASET-NSP-S  Time stable           3184.903583ms         -1.3966211447140557   
+QPCSTAIR              Clarabel              Time stable           12.044792ms           6204387.476095291     
+CVXQP2_M              Clarabel              Time stable           25.393083ms           820155.4310161147     
+DUAL1                 ojAlgo-QP-ASET-NSP-D  Time stable           5.946292ms            0.03501296573347623   
+CONT-050              Gurobi                Time stable           21.518208ms           -4.563850904321097    
+QPCBOEI2              ojAlgo-QP             Time stable           430.025625ms          8171962.244281324     
+DUALC5                COPT                  Time stable           1.566833ms            427.23232677646814    
+STCQP2                ojAlgo-QP-ASET-PLN-S  Time stable           949.795333ms          22327.313272416683    
+AUG3DC                ojAlgo-QP-ASET-PLN-S  Time stable           1445.852042ms         771.2624386889565     
+DUAL1                 ojAlgo-QP-ASET-NSP-S  Time stable           34.549833ms           0.0350129657334766    
+AUG3DCQP              ojAlgo-QP-ADMM        Time stable           58.560791ms           993.3621465050519     
+HUESTIS               COPT                  Time stable           25.296083ms           3.482446385499014E11  
+CVXQP3_M              ojAlgo-QP-ASET-NSP-S  Time stable           8978.167083ms         1362828.7416028958    
+CVXQP2_L              COPT                  Time stable           642.167625ms          8.184245826284127E7   
+AUG3DC                ojAlgo-QP-ASET-PLN-D  Time stable           1393.500333ms         771.2624386889565     
+CVXQP2_L              Clarabel              Time stable           7944.5595ms           8.18424582629042E7    
+AUG3DCQP              ojAlgo-QP             Time stable           54.078ms              993.3621465050519     
+DUAL3                 ojAlgo-QP-ASET-NSP-S  Time stable           63.160583ms           0.13575583686602102   
+STCQP2                COPT                  Time stable           45.757833ms           22327.31327242951     
+MOSARQP2              ojAlgo-QP             Time stable           39.150709ms           -1597.4821174957456   
+CVXQP2_M              COPT                  Time stable           29.3245ms             820155.4310207053     
+QPCBOEI1              ojAlgo-QP             Time stable           12843.573666ms        1.1503914009758707E7  
+HS268                 COPT                  Time stable           3.059292ms            1.5113906332890895E-10
+QPCSTAIR              ojAlgo-QP-ASET-NSP-S  Time stable           4182.812959ms         6204387.476082434     
+CVXQP2_S              ojAlgo-QP             Time stable           402.567708ms          8120.940477250763     
+DUAL4                 ojAlgo-QP-ASET-NSP-S  Time stable           31.929ms              0.7460908418021085    
+QPCBLEND              COPT                  Time stable           2.630667ms            -0.007842542877205832 
+MOSARQP2              ojAlgo-QP-ASET-NSP-D  Time stable           11047.020833ms        -1597.482117523427    
+CVXQP1_M              Clarabel              Time stable           42.908208ms           1087511.5673276735    
+QPCSTAIR              ojAlgo-QP-ASET-NSP-D  Time stable           715.503959ms          6204387.476082435     
+MOSARQP2              ojAlgo-QP-ASET-NSP-S  Time stable           8373.859792ms         -1597.4821175234272   
+DUALC8                COPT                  Time stable           1.697791ms            18309.358832735277    
+MOSARQP1              ojAlgo-QP-ASET-NSP-S  Time stable           54325.159916ms        -952.8754430312603    
+CVXQP2_M              ojAlgo-QP-ASET-PLN-D  Time stable           57125.800167ms        820155.4310465128     
+QPCBOEI2              ojAlgo-QP-ASET-NSP-S  Time stable           184.007ms             8171962.244356997     
+CVXQP3_M              ojAlgo-QP             Time stable           482.004792ms          1362828.7415021106    
+CVXQP1_S              Clarabel              Time stable           1.017291ms            11590.7181194325      
+CVXQP2_S              ojAlgo-QP-ASET-NSP-S  Time stable           251.359458ms          8120.940477250705     
+CVXQP3_M              Clarabel              Time stable           56.13275ms            1362828.7416041286    
+MOSARQP1              ojAlgo-QP             Time stable           245.920916ms          -952.8754427805984    
+CVXQP3_S              ojAlgo-QP-ASET-NSP-D  Time stable           1.689167ms            11943.432202309956    
+STCQP1                Clarabel              Time stable           53.846417ms           155143.55470396916    
+STCQP1                ojAlgo-QP-ASET-PLN-S  Time stable           8437.8835ms           155143.55470395708    
+CVXQP3_L              Clarabel              Time stable           11404.138375ms        1.1571110449425064E8  
+CVXQP1_M              ojAlgo-QP-ADMM        Time stable           54.681084ms           1087511.56731044      
+CVXQP1_L              COPT                  Time stable           1078.419667ms         1.0870479970876637E8  
+STCQP2                ojAlgo-QP-ASET-PLN-D  Time stable           612.955375ms          22327.313272416683    
+POWELL20              Clarabel              Time stable           84.59675ms            5.208958281259555E10  
+STCQP2                Clarabel              Time stable           53.205417ms           22327.313272420346    
+HUESTIS               ojAlgo-QP-ADMM        Time stable           64.464875ms           3.482444393273373E11  
+STCQP2                ojAlgo-QP             Time stable           18.55425ms            22327.313272417538    
+CVXQP3_L              ojAlgo-QP             Time stable           126698.041875ms       1.1571110348156732E8  
+CVXQP1_L              ojAlgo-QP-ADMM        Time stable           28992.378708ms        1.0870479976878767E8  
+CVXQP1_M              COPT                  Time stable           44.2795ms             1087511.567838513     
+STCQP1                ojAlgo-QP-ASET-PLN-D  Time stable           6137.29ms             155143.55470395705    
+POWELL20              COPT                  Time stable           40.825209ms           5.208958281242757E10  
+LASER                 Clarabel              Time stable           7.939167ms            2409601.3455973454    
+QPCSTAIR              ojAlgo-QP             Time stable           176.082917ms          6204386.979693689     
+CVXQP1_S              ojAlgo-QP-ASET-PLN-S  Time stable           132.809667ms          11590.71811942677     
+QPCBOEI2              Clarabel              Time stable           3.010083ms            8171962.244346138     
+CVXQP3_M              Gurobi                Time stable           94.460583ms           1362828.7870555902    
+DUAL3                 COPT                  Time stable           7.711542ms            0.13575583687665527   
+CVXQP1_S              ojAlgo-QP-ASET-PLN-D  Time stable           11.2085ms             11590.718148185751    
+HUES-MOD              ojAlgo-QP-ADMM        Time stable           73.342417ms           3.482444393273373E7   
+CVXQP2_S              ojAlgo-QP-ASET-PLN-S  Time stable           400.713ms             8120.940477250763     
+QPCBOEI1              ojAlgo-QP-ASET-PLN-D  Time stable           7353.4495ms           1.1503914009800244E7  
+KSIP                  Clarabel              Time stable           11.237125ms           0.5757979412419589    
+MOSARQP2              Clarabel              Time stable           7.666166ms            -1597.4821175167976   
+CVXQP2_S              Gurobi                Time stable           0.958542ms            8120.940477270524     
+QPCBOEI1              Clarabel              Time stable           7.710333ms            1.1503914009770427E7  
+DUAL2                 COPT                  Time stable           5.56325ms             0.03373367612271657   
+CVXQP2_S              ojAlgo-QP-ASET-PLN-D  Time stable           18.619084ms           8120.940498232463     
+CVXQP2_S              Clarabel              Time stable           0.809ms               8120.940477251413     
+LASER                 ojAlgo-QP-ASET-NSP-D  Time stable           62007.120208ms        2409600.7799155847    
+MOSARQP1              Gurobi                Time stable           10.5005ms             -952.8754425226556    
+DUAL1                 COPT                  Time stable           4.832ms               0.03501296573658537   
+MOSARQP2              ojAlgo-QP-ASET-PLN-S  Time stable           7757.269416ms         -1597.4821175234272   
+KSIP                  Gurobi                Time stable           11.294791ms           0.5757979412405373    
+HUES-MOD              ojAlgo-QP             Time stable           58.19725ms            3.482444393273373E7   
+KSIP                  ojAlgo-QP-ASET-NSP-S  Time stable           33.187125ms           0.5757979412401084    
+MOSARQP2              Gurobi                Time stable           8.022083ms            -1597.4821173216978   
+KSIP                  ojAlgo-QP-ASET-PLN-S  Time stable           33.195333ms           0.5757979412401084    
+VALUES                ojAlgo-QP             Time stable           9.28525ms             -1.3966211447135068   
+KSIP                  ojAlgo-QP-ASET-NSP-D  Time stable           20.564875ms           0.5757979412401084    
+VALUES                ojAlgo-QP-ADMM        Time stable           9.192458ms            -1.3966211447135068   
+HS35MOD               COPT                  Time stable           2.35725ms             0.250000000000537     
+DUAL2                 ojAlgo-QP             Time stable           68.966959ms           0.03373367612271781   
+QPCBOEI2              ojAlgo-QP-ASET-PLN-D  Time stable           82.641709ms           8171962.448193279     
+QPCBOEI2              ojAlgo-QP-ASET-PLN-S  Time stable           448.932917ms          8171962.244281324     
+QPCBOEI1              ojAlgo-QP-ASET-PLN-S  Time stable           12838.61675ms         1.1503914009758707E7  
+DUAL3                 ojAlgo-QP             Time stable           98.179042ms           0.13575583686602538   
+QPCBOEI2              Gurobi                Time stable           1.550584ms            8171962.244330432     
+HUESTIS               ojAlgo-QP             Time stable           63.287167ms           3.482444393273373E11  
+QPCSTAIR              ojAlgo-QP-ADMM        Time stable           165.653042ms          6204386.979693689     
+CVXQP3_S              ojAlgo-QP-ASET-PLN-S  Time stable           237.691209ms          11943.432202310021    
+CVXQP3_S              Gurobi                Time stable           2.311458ms            11943.432202879196    
+QPCSTAIR              COPT                  Time stable           10.654ms              6204387.476082529     
+CVXQP3_S              ojAlgo-QP-ASET-PLN-D  Time stable           21.981667ms           11943.432246335373    
+LASER                 Gurobi                Time stable           15.946667ms           2409601.345596804     
+CVXQP3_S              Clarabel              Time stable           1.059458ms            11943.432202316648    
+DUAL1                 ojAlgo-QP             Time stable           52.603541ms           0.03501296573347697   
+MOSARQP1              ojAlgo-QP-ASET-PLN-S  Time stable           57770.357708ms        -952.8754430312603    
+CVXQP1_L              Gurobi                Time stable           1030.70675ms          1.0870489466073301E8  
+HS51                  COPT                  Time stable           0.531542ms            0.0                   
+LASER                 ojAlgo-QP-ASET-PLN-D  Time stable           62441.02025ms         2409600.7799155847    
+STCQP2                Gurobi                Time stable           73.810041ms           22327.31329314305     
+AUG3DC                Gurobi                Time stable           10.5935ms             771.2624386889588     
+CVXQP2_S              ojAlgo-QP-ADMM        Time stable           0.504125ms            8120.940477252187     
+LASER                 ojAlgo-QP-ADMM        Time stable           4.51475ms             2409601.3445665766    
+HS53                  COPT                  Time stable           0.947584ms            4.0930232558139314    
+DUAL4                 ojAlgo-QP             Time stable           16.578958ms           0.7460908418021085    
+CVXQP3_S              ojAlgo-QP-ADMM        Time stable           1.205ms               11943.432202199467    
+KSIP                  ojAlgo-QP             Time stable           33.368375ms           0.5757979412401084    
+CONT-050              ojAlgo-QP-ASET-PLN-D  Time stable           222798.210875ms       -4.563850904334202    
+CVXQP1_M              Gurobi                Time stable           54.149667ms           1087511.5684757375    
+CONT-050              Clarabel              Time stable           54.544125ms           -4.563850904324673    
+HS52                  COPT                  Time stable           0.518292ms            5.326647564469917     
+HS76                  COPT                  Time stable           1.529542ms            -4.681818181679441    
+DUAL1                 ojAlgo-QP-ADMM        Time stable           3.504125ms            0.03501296728448917   
+CVXQP2_M              Gurobi                Time stable           31.25275ms            820155.4310147046     
+CVXQP2_L              Gurobi                Time stable           652.921917ms          8.184245827771086E7   
+DUAL2                 ojAlgo-QP-ADMM        Time stable           3.987792ms            0.033733676363988975  
+DUAL3                 ojAlgo-QP-ADMM        Time stable           6.113375ms            0.13575584163683044   
+CVXQP3_L              Gurobi                Time stable           4607.567791ms         1.1571110542203602E8  
+HUES-MOD              COPT                  Time stable           28.2595ms             3.4824463854989916E7  
+TAME                  COPT                  Time stable           0.674083ms            0.0                   
+HS21                  COPT                  Time stable           1.1065ms              -99.95999999997561    
+DUAL4                 ojAlgo-QP-ADMM        Time stable           1.624667ms            0.7460908653706344    
+YAO                   ojAlgo-QP-ASET-NSP-D  Time stable           215200.55175ms        197.7049754620232     
+
+Iteration 4 with 199 model/solver pairs remaining 2026-09-30T00:20:19.996538Z
+-----------------------------------------------------------------------------
+DUAL2                 Gurobi                Time stable           4.671417ms            0.033733676122793724  
+AUG3DCQP              Gurobi                Time stable           20.918ms              993.3621471456556     
+VALUES                ojAlgo-QP-ASET-PLN-S  Time stable           405.417416ms          -1.3966211447140557   
+DUAL3                 Clarabel              Time stable           4.771958ms            0.1357558965708443    
+CVXQP1_S              COPT                  Time stable           3.425416ms            11590.71811942291     
+MOSARQP2              COPT                  Time stable           12.140625ms           -1597.4821175229827   
+CVXQP1_S              ojAlgo-QP-ASET-NSP-S  Time stable           71.48025ms            11590.71811942676     
+VALUES                ojAlgo-QP-ASET-NSP-D  Time stable           2707.795833ms         -1.3966211447140557   
+STCQP1                COPT                  Time stable           28.492417ms           155143.55470395705    
+YAO                   COPT                  Time stable           17.535917ms           197.7042559402473     
+CVXQP1_M              ojAlgo-QP-ASET-NSP-D  Time stable           17163.12275ms         1087511.5673559299    
+QPCBOEI1              ojAlgo-QP-ASET-NSP-D  Time stable           3879.411083ms         1.150391400983401E7   
+CVXQP2_S              ojAlgo-QP-ASET-NSP-D  Time stable           12.454583ms           8120.940477488787     
+MOSARQP1              Clarabel              Time stable           10.186ms              -952.8754430307338    
+AUG3DC                ojAlgo-QP             Time stable           24.534458ms           771.2624386889596     
+QPCBOEI2              ojAlgo-QP-ASET-NSP-D  Time stable           89.041708ms           8171962.244358017     
+CVXQP1_S              ojAlgo-QP             Time stable           68.080167ms           11590.71811942676     
+CVXQP3_S              ojAlgo-QP-ASET-NSP-S  Time stable           2.69825ms             11943.432202309947    
+S268                  COPT                  Time stable           2.994625ms            1.5113906332890895E-10
+QPCBOEI1              ojAlgo-QP-ASET-NSP-S  Time stable           56758.811542ms        1.1503914009770634E7  
+
+Iteration 5 with 179 model/solver pairs remaining 2026-09-30T00:23:06.125101Z
+-----------------------------------------------------------------------------
+CVXQP2_M              ojAlgo-QP             Time stable           29.717208ms           820155.4310868877     
+STCQP1                ojAlgo-QP-ADMM        Time stable           18.014583ms           155143.55470403298    
+QPCSTAIR              ojAlgo-QP-ASET-PLN-D  Time stable           2733.032416ms         6204387.476083117     
+QPCBLEND              ojAlgo-QP-ASET-PLN-S  Time stable           65.176875ms           -0.007842543074169516 
+DUAL2                 ojAlgo-QP-ASET-NSP-S  Time stable           87.254917ms           0.03373367612271817   
+DUAL2                 ojAlgo-QP-ASET-NSP-D  Time stable           19.249542ms           0.03373367612271817   
+VALUES                Clarabel              Time stable           2.9045ms              -1.3966211433271045   
+DUAL3                 ojAlgo-QP-ASET-NSP-D  Time stable           11.11025ms            0.13575583686602102   
+DUAL4                 ojAlgo-QP-ASET-NSP-D  Time stable           8.272333ms            0.7460908418021085    
+AUG3DC                Clarabel              Time stable           4.225083ms            771.2624386889584     
+CVXQP1_S              Gurobi                Time stable           1.221ms               11590.718120011501    
+KSIP                  ojAlgo-QP-ASET-PLN-D  Time stable           21.423667ms           0.5757979412401084    
+QPCBLEND              Gurobi                Time stable           0.765958ms            -0.007842542774396959 
+CONT-050              COPT                  Time stable           12.123084ms           -4.563850904340323    
+STCQP1                Gurobi                Time stable           15.747916ms           155143.55474736833    
+MOSARQP2              ojAlgo-QP-ASET-PLN-D  Time stable           10913.166334ms        -1597.482117523427    
+
+Iteration 6 with 163 model/solver pairs remaining 2026-09-30T00:23:57.567236Z
+-----------------------------------------------------------------------------
+DUAL3                 ojAlgo-QP-ASET-PLN-D  Time stable           20.716834ms           0.13575583686602685   
+CVXQP3_S              COPT                  Time stable           4.097167ms            11943.432202307842    
+DUALC2                COPT                  Time stable           2.071041ms            3551.3076926707517    
+CVXQP3_S              ojAlgo-QP             Time stable           2.610083ms            11943.432202309947    
+AUG3DC                COPT                  Time stable           8.210542ms            771.2624386889589     
+MOSARQP2              ojAlgo-QP-ADMM        Time stable           39.71925ms            -1597.4821174957456   
+HUESTIS               Gurobi                Time stable           14.407125ms           3.4824463873345074E11 
+QPCBLEND              ojAlgo-QP-ASET-NSP-S  Time stable           44.3435ms             -0.007842543074190106 
+
+Iteration 7 with 155 model/solver pairs remaining 2026-09-30T00:24:10.649978Z
+-----------------------------------------------------------------------------
+DUAL3                 Gurobi                Time stable           6.390542ms            0.13575584229390808   
+DUAL2                 Clarabel              Time stable           3.578083ms            0.03373368031007675   
+CVXQP1_S              ojAlgo-QP-ADMM        Time stable           1.559334ms            11590.718125154137    
+AUG3DCQP              Clarabel              Time stable           24.703333ms           993.3621465254229     
+DUAL1                 Clarabel              Time stable           3.060083ms            0.03501298755196928   
+STCQP2                ojAlgo-QP-ADMM        Time stable           16.533209ms           22327.313272417538    
+HUES-MOD              Gurobi                Time stable           14.931583ms           3.48244638733452E7    
+STCQP1                ojAlgo-QP             Time stable           14.47325ms            155143.55470403298    
+DUAL4                 COPT                  Time stable           3.525083ms            0.746090841813025     
+AUG3DCQP              COPT                  Time stable           9.082667ms            993.3621465257148     
+QPCBOEI1              Gurobi                Time stable           3.968625ms            1.150391400976825E7   
+POWELL20              Gurobi                Time stable           287.814708ms          5.208958281250049E10  
+QPCBLEND              ojAlgo-QP-ASET-NSP-D  Time stable           14.158125ms           -0.007842543074190106 
+CVXQP3_M              ojAlgo-QP-ASET-NSP-D  Time stable           3762.884459ms         1362828.7416028955    
+
+Iteration 8 with 141 model/solver pairs remaining 2026-09-30T00:24:23.622072Z
+-----------------------------------------------------------------------------
+DUAL4                 ojAlgo-QP-ASET-PLN-D  Time stable           6.413542ms            0.7460908418021001    
+DUAL1                 ojAlgo-QP-ASET-PLN-D  Time stable           10.547667ms           0.03501296573347623   
+
+Iteration 9 with 139 model/solver pairs remaining 2026-09-30T00:24:23.789619Z
+-----------------------------------------------------------------------------
+
+Iteration 10 with 139 model/solver pairs remaining 2026-09-30T00:24:23.902980Z
+-----------------------------------------------------------------------------
+
+Iteration 11 with 139 model/solver pairs remaining 2026-09-30T00:24:24.034753Z
+-----------------------------------------------------------------------------
+
+Iteration 12 with 139 model/solver pairs remaining 2026-09-30T00:24:24.155337Z
+-----------------------------------------------------------------------------
+
+Iteration 13 with 139 model/solver pairs remaining 2026-09-30T00:24:24.277856Z
+-----------------------------------------------------------------------------
+LASER                 ojAlgo-QP             Time stable           4.160708ms            2409601.3445665766    
+
+Iteration 14 with 138 model/solver pairs remaining 2026-09-30T00:24:24.551057Z
+-----------------------------------------------------------------------------
+
+Iteration 15 with 138 model/solver pairs remaining 2026-09-30T00:24:24.754881Z
+-----------------------------------------------------------------------------
+
+Iteration 16 with 138 model/solver pairs remaining 2026-09-30T00:24:24.920679Z
+-----------------------------------------------------------------------------
+
+Iteration 17 with 138 model/solver pairs remaining 2026-09-30T00:24:25.073324Z
+-----------------------------------------------------------------------------
+GENHS28               COPT                  Time stable           0.28925ms             0.9271736937663944    
+CVXQP1_S              ojAlgo-QP-ASET-NSP-D  Time stable           5.247458ms            11590.718119653988    
+
+Iteration 18 with 136 model/solver pairs remaining 2026-09-30T00:24:25.213597Z
+-----------------------------------------------------------------------------
+
+Iteration 19 with 136 model/solver pairs remaining 2026-09-30T00:24:25.325458Z
+-----------------------------------------------------------------------------
+
+Iteration 20 with 136 model/solver pairs remaining 2026-09-30T00:24:25.437583Z
+-----------------------------------------------------------------------------
+HS35MOD               ojAlgo-QP-ASET-NSP-S  Time stable           0.00575ms             0.25                  
+HS53                  ojAlgo-QP-ADMM        Time stable           0.010917ms            4.093023255653535     
+HS268                 ojAlgo-QP-ADMM        Time stable           0.021667ms            7.852086178471296E-10 
+HS76                  ojAlgo-QP-ADMM        Time stable           0.012625ms            -4.681818181945759    
+HS52                  ojAlgo-QP-ADMM        Time stable           0.007375ms            5.326647564153959     
+HS51                  ojAlgo-QP-ADMM        Time stable           0.008416ms            0.0                   
+HS21                  ojAlgo-QP             Time stable           0.00475ms             -99.96                
+TAME                  Clarabel              Time stable           0.021834ms            0.0                   
+HS35MOD               Clarabel              Time stable           0.0345ms              0.25000000119037485   
+TAME                  Gurobi                Time stable           0.047667ms            0.0                   
+TAME                  ojAlgo-QP-ASET-NSP-S  Time stable           0.008666ms            0.0                   
+TAME                  ojAlgo-QP-ASET-NSP-D  Time stable           0.007458ms            0.0                   
+HS35MOD               ojAlgo-QP-ASET-NSP-D  Time stable           0.005291ms            0.25                  
+TAME                  ojAlgo-QP-ASET-PLN-D  Time stable           0.004417ms            0.0                   
+TAME                  ojAlgo-QP-ASET-PLN-S  Time stable           0.004833ms            0.0                   
+HS268                 ojAlgo-QP-ASET-NSP-D  Time stable           0.011333ms            4.3151E-24            
+HS51                  Clarabel              Time stable           0.0155ms              0.0                   
+HS51                  ojAlgo-QP             Time stable           0.006708ms            4.13106175527E-17     
+DUALC5                ojAlgo-QP-ASET-PLN-S  Time stable           0.065042ms            427.23232677639356    
+DUALC5                Gurobi                Time stable           0.08275ms             427.2323284666975     
+HS118                 ojAlgo-QP             Time stable           0.169ms               664.820450000018      
+HS53                  ojAlgo-QP             Time stable           0.010541ms            4.093023191194527     
+DUALC8                ojAlgo-QP-ASET-PLN-S  Time stable           0.08475ms             18309.35883290303     
+HS53                  Clarabel              Time stable           0.032459ms            4.093023255813974     
+DUALC8                Gurobi                Time stable           0.139375ms            18309.358832820424    
+DUALC8                ojAlgo-QP-ASET-PLN-D  Time stable           0.040125ms            18309.35883273598     
+DUALC8                Clarabel              Time stable           0.083959ms            18309.359650070946    
+HS35MOD               ojAlgo-QP-ADMM        Time stable           0.006791ms            0.25                  
+HS268                 ojAlgo-QP-ASET-NSP-S  Time stable           0.013375ms            1.9521E-23            
+HS52                  ojAlgo-QP             Time stable           0.006208ms            5.326647576871785     
+HS76                  ojAlgo-QP             Time stable           0.009333ms            -4.681818181818182    
+HS52                  Clarabel              Time stable           0.015917ms            5.326647564469917     
+HS21                  ojAlgo-QP-ASET-NSP-D  Time stable           0.004958ms            -99.96                
+HS76                  Clarabel              Time stable           0.028208ms            -4.681818181738655    
+DUALC2                Gurobi                Time stable           0.092584ms            3551.3076928595256    
+S268                  Clarabel              Time stable           0.046916ms            1.0827727501628553E-6 
+HS21                  ojAlgo-QP-ASET-NSP-S  Time stable           0.004666ms            -99.96                
+HS35MOD               ojAlgo-QP-ASET-PLN-D  Time stable           0.005125ms            0.25                  
+HS35MOD               ojAlgo-QP             Time stable           0.006375ms            0.25                  
+S268                  ojAlgo-QP-ASET-NSP-D  Time stable           0.010709ms            4.3151E-24            
+DUALC1                Gurobi                Time stable           0.154458ms            6155.25082955423      
+HS35MOD               ojAlgo-QP-ASET-PLN-S  Time stable           0.005917ms            0.25                  
+S268                  ojAlgo-QP-ASET-NSP-S  Time stable           0.013709ms            1.9521E-23            
+S268                  ojAlgo-QP-ASET-PLN-S  Time stable           0.01375ms             1.9521E-23            
+HS53                  ojAlgo-QP-ASET-NSP-D  Time stable           0.015917ms            4.093023255813952     
+S268                  ojAlgo-QP-ASET-PLN-D  Time stable           0.01025ms             4.3151E-24            
+HS52                  ojAlgo-QP-ASET-NSP-S  Time stable           0.005459ms            5.326647576871785     
+HS118                 ojAlgo-QP-ASET-NSP-S  Time stable           0.159709ms            664.820450000018      
+HS76                  ojAlgo-QP-ASET-NSP-S  Time stable           0.009625ms            -4.681818181818182    
+HS118                 ojAlgo-QP-ASET-NSP-D  Time stable           0.111208ms            664.8204500000327     
+HS53                  ojAlgo-QP-ASET-NSP-S  Time stable           0.015917ms            4.093023255813952     
+HS51                  ojAlgo-QP-ASET-NSP-D  Time stable           0.006958ms            4.13106175527E-17     
+DUALC8                ojAlgo-QP-ADMM        Time stable           0.057333ms            18309.358884790363    
+HS268                 ojAlgo-QP             Time stable           0.011083ms            1.9521E-23            
+HS268                 Clarabel              Time stable           0.046833ms            1.0827727501628553E-6 
+GENHS28               ojAlgo-QP             Time stable           0.014875ms            0.9271736939195341    
+GENHS28               Clarabel              Time stable           0.021875ms            0.9271736937663944    
+HS268                 ojAlgo-QP-ASET-PLN-S  Time stable           0.012708ms            1.9521E-23            
+GENHS28               ojAlgo-QP-ASET-PLN-D  Time stable           0.014708ms            0.9271736939195341    
+HS76                  ojAlgo-QP-ASET-NSP-D  Time stable           0.008833ms            -4.681818181818182    
+HS52                  ojAlgo-QP-ASET-NSP-D  Time stable           0.007ms               5.326647576871785     
+QPTEST                Gurobi                Time stable           0.052334ms            4.371875004581603     
+HS35                  Gurobi                Time stable           0.052458ms            0.11111111111710445   
+HS268                 ojAlgo-QP-ASET-PLN-D  Time stable           0.010125ms            4.3151E-24            
+GENHS28               ojAlgo-QP-ASET-PLN-S  Time stable           0.014791ms            0.9271736939195341    
+HS51                  ojAlgo-QP-ASET-NSP-S  Time stable           0.006ms               4.13106175527E-17     
+DUALC5                ojAlgo-QP-ADMM        Time stable           0.026ms               427.2323275616733     
+DUALC1                ojAlgo-QP-ASET-NSP-S  Time stable           0.112708ms            6155.250829471818     
+QPTEST                ojAlgo-QP-ASET-PLN-D  Time stable           0.005458ms            4.371875              
+HS21                  Gurobi                Time stable           0.039042ms            -99.95999999993074    
+DUALC2                ojAlgo-QP-ASET-NSP-D  Time stable           0.04925ms             3551.307797033195     
+HS21                  ojAlgo-QP-ASET-PLN-D  Time stable           0.004792ms            -99.96                
+S268                  ojAlgo-QP             Time stable           0.012292ms            1.9521E-23            
+HS21                  ojAlgo-QP-ASET-PLN-S  Time stable           0.005541ms            -99.96                
+DUALC1                ojAlgo-QP-ASET-NSP-D  Time stable           0.069125ms            6155.250829463202     
+DUALC2                ojAlgo-QP-ASET-NSP-S  Time stable           0.077542ms            3551.3116846166695    
+DUALC5                ojAlgo-QP             Time stable           0.050583ms            427.23232677639356    
+GENHS28               ojAlgo-QP-ADMM        Time stable           0.019ms               0.9271736937663881    
+HS53                  Gurobi                Time stable           0.061917ms            4.093023255813933     
+HS53                  ojAlgo-QP-ASET-PLN-D  Time stable           0.00875ms             4.093023247315109     
+HS118                 Clarabel              Time stable           0.10975ms             664.8204500023853     
+HS53                  ojAlgo-QP-ASET-PLN-S  Time stable           0.010916ms            4.093023191194527     
+DUALC1                ojAlgo-QP-ADMM        Time stable           0.231875ms            6155.252014226321     
+HS52                  Gurobi                Time stable           0.050709ms            5.326647564469947     
+QPTEST                ojAlgo-QP-ASET-NSP-D  Time stable           0.005708ms            4.371875              
+HS76                  Gurobi                Time stable           0.05675ms             -4.681818181242489    
+HS52                  ojAlgo-QP-ASET-PLN-D  Time stable           0.006583ms            5.326647576871785     
+HS76                  ojAlgo-QP-ASET-PLN-D  Time stable           0.0075ms              -4.681818181818182    
+HS35                  ojAlgo-QP-ASET-NSP-D  Time stable           0.005125ms            0.11111111111111334   
+HS118                 ojAlgo-QP-ASET-PLN-D  Time stable           0.111666ms            664.8204500000327     
+HS52                  ojAlgo-QP-ASET-PLN-S  Time stable           0.006542ms            5.326647576871785     
+HS118                 Gurobi                Time stable           0.129292ms            664.8204500062724     
+HS76                  ojAlgo-QP-ASET-PLN-S  Time stable           0.010708ms            -4.681818181818182    
+DUALC2                HS118                 ojAlgo-QP-ADMM        ojAlgo-QP-ASET-PLN-S  Time stable           Time stable           0.051375ms            0.157959ms            3551.3077867744105    664.820450000018      
+
+GENHS28               ojAlgo-QP-ASET-NSP-D  Time stable           0.013709ms            0.9271736939195341    
+HS51                  Gurobi                Time stable           0.051416ms            6.6E-27               
+HS51                  ojAlgo-QP-ASET-PLN-D  Time stable           0.006ms               4.13106175527E-17     
+QPTEST                ojAlgo-QP-ASET-NSP-S  Time stable           0.005333ms            4.371875              
+HS51                  ojAlgo-QP-ASET-PLN-S  Time stable           0.006209ms            4.13106175527E-17     
+GENHS28               ojAlgo-QP-ASET-NSP-S  Time stable           0.013792ms            0.9271736939195341    
+HS35                  ojAlgo-QP-ASET-NSP-S  Time stable           0.006375ms            0.11111111111111334   
+S268                  ojAlgo-QP-ADMM        Time stable           0.021417ms            7.852086178471296E-10 
+DUALC8                ojAlgo-QP             Time stable           0.051333ms            18309.35883290303     
+TAME                  ojAlgo-QP-ADMM        Time stable           0.006666ms            0.0                   
+DUALC2                ojAlgo-QP-ASET-PLN-D  Time stable           0.052875ms            3551.3077036739983    
+DUALC2                ojAlgo-QP-ASET-PLN-S  Time stable           0.08025ms             3551.3082234735452    
+DUALC8                ojAlgo-QP-ASET-NSP-S  Time stable           0.075667ms            18309.35884639353     
+DUALC1                ojAlgo-QP-ASET-PLN-D  Time stable           0.045041ms            6155.250829462685     
+DUALC1                ojAlgo-QP-ASET-PLN-S  Time stable           0.088541ms            6155.250829463377     
+DUALC5                Clarabel              Time stable           0.05725ms             427.23232755418167    
+QPTEST                ojAlgo-QP-ADMM        Time stable           0.009708ms            4.371875              
+HS35MOD               Gurobi                Time stable           0.051625ms            0.2500000067466616    
+HS35                  ojAlgo-QP-ADMM        Time stable           0.007666ms            0.11111111114136445   
+DUALC5                ojAlgo-QP-ASET-PLN-D  Time stable           0.040042ms            427.23232677639356    
+TAME                  ojAlgo-QP             Time stable           0.006042ms            0.0                   
+HS21                  Clarabel              Time stable           0.0305ms              -99.95999999999633    
+DUALC5                ojAlgo-QP-ASET-NSP-S  Time stable           0.059167ms            427.23232677638896    
+S268                  Gurobi                Time stable           0.07425ms             7.921358603821931E-6  
+HS21                  ojAlgo-QP-ADMM        Time stable           0.008125ms            -99.96                
+QPTEST                ojAlgo-QP             Time stable           0.006667ms            4.371875              
+HS35                  Clarabel              Time stable           0.025375ms            0.11111111118286      
+HS118                 ojAlgo-QP-ADMM        Time stable           0.258416ms            664.8204510820071     
+QPTEST                Clarabel              Time stable           0.027583ms            4.371875001943586     
+HS35                  ojAlgo-QP             Time stable           0.005959ms            0.11111111111111334   
+DUALC2                ojAlgo-QP             Time stable           0.069375ms            3551.3082234735452    
+DUALC2                Clarabel              Time stable           0.064625ms            3551.307695741058     
+DUALC5                ojAlgo-QP-ASET-NSP-D  Time stable           0.042709ms            427.23232677638896    
+DUALC1                Clarabel              Time stable           0.093959ms            6155.250871874518     
+DUALC1                ojAlgo-QP             Time stable           0.055375ms            6155.250829463377     
+HS35                  ojAlgo-QP-ASET-PLN-S  Time stable           0.005875ms            0.11111111111111334   
+QPTEST                ojAlgo-QP-ASET-PLN-S  Time stable           0.005209ms            4.371875              
+HS35                  ojAlgo-QP-ASET-PLN-D  Time stable           0.005166ms            0.11111111111111334   
+GENHS28               Gurobi                Time stable           0.07425ms             0.9271736937664032    
+DUALC8                ojAlgo-QP-ASET-NSP-D  Time stable           0.044667ms            18309.358832735667    
+HS268                 Gurobi                Time stable           0.074ms               7.921358603821931E-6  
+
+Final Results
+=====================================================================
+AUG3DC                COPT                  OPTIMAL               8.210542ms            
+AUG3DC                Clarabel              OPTIMAL               4.225083ms            
+AUG3DC                Gurobi                OPTIMAL               10.5935ms             
+AUG3DC                ojAlgo-QP             OPTIMAL               24.534458ms           
+AUG3DC                ojAlgo-QP-ADMM        OPTIMAL               24.651333ms           
+AUG3DC                ojAlgo-QP-ASET-NSP-D  OPTIMAL               1463.515833ms         
+AUG3DC                ojAlgo-QP-ASET-NSP-S  OPTIMAL               1406.155583ms         
+AUG3DC                ojAlgo-QP-ASET-PLN-D  OPTIMAL               1393.500333ms         
+AUG3DC                ojAlgo-QP-ASET-PLN-S  OPTIMAL               1445.852042ms         
+AUG3DCQP              COPT                  OPTIMAL               9.082667ms            
+AUG3DCQP              Clarabel              OPTIMAL               24.703333ms           
+AUG3DCQP              Gurobi                OPTIMAL               20.918ms              
+AUG3DCQP              ojAlgo-QP             OPTIMAL               54.078ms              
+AUG3DCQP              ojAlgo-QP-ADMM        OPTIMAL               58.560791ms           
+AUG3DCQP              ojAlgo-QP-ASET-NSP-D  OPTIMAL               64527.841625ms        
+AUG3DCQP              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+AUG3DCQP              ojAlgo-QP-ASET-PLN-S  OPTIMAL               103946.001083ms       
+CONT-050              COPT                  OPTIMAL               12.123084ms           
+CONT-050              Clarabel              OPTIMAL               54.544125ms           
+CONT-050              Gurobi                OPTIMAL               21.518208ms           
+CONT-050              ojAlgo-QP             OPTIMAL               1372.846583ms         
+CONT-050              ojAlgo-QP-ADMM        OPTIMAL               1375.957ms            
+CONT-050              ojAlgo-QP-ASET-NSP-D  OPTIMAL               1147.561ms            
+CONT-050              ojAlgo-QP-ASET-NSP-S  OPTIMAL               7612.770666ms         
+CONT-050              ojAlgo-QP-ASET-PLN-D  OPTIMAL               222798.210875ms       
+CONT-050              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP1_L              COPT                  OPTIMAL               1078.419667ms         
+CVXQP1_L              Clarabel              OPTIMAL               11304.086458ms        
+CVXQP1_L              Gurobi                OPTIMAL               1030.70675ms          
+CVXQP1_L              ojAlgo-QP             OPTIMAL               31921.958042ms        
+CVXQP1_L              ojAlgo-QP-ADMM        OPTIMAL               28992.378708ms        
+CVXQP1_L              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+CVXQP1_L              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP1_L              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+CVXQP1_L              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP1_M              COPT                  OPTIMAL               44.2795ms             
+CVXQP1_M              Clarabel              OPTIMAL               42.908208ms           
+CVXQP1_M              Gurobi                OPTIMAL               54.149667ms           
+CVXQP1_M              ojAlgo-QP             OPTIMAL               54.499209ms           
+CVXQP1_M              ojAlgo-QP-ADMM        OPTIMAL               54.681084ms           
+CVXQP1_M              ojAlgo-QP-ASET-NSP-D  OPTIMAL               17163.12275ms         
+CVXQP1_M              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+CVXQP1_M              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP1_S              COPT                  OPTIMAL               3.425416ms            
+CVXQP1_S              Clarabel              OPTIMAL               1.017291ms            
+CVXQP1_S              Gurobi                OPTIMAL               1.221ms               
+CVXQP1_S              ojAlgo-QP             OPTIMAL               68.080167ms           
+CVXQP1_S              ojAlgo-QP-ADMM        OPTIMAL               1.559334ms            
+CVXQP1_S              ojAlgo-QP-ASET-NSP-D  OPTIMAL               5.247458ms            
+CVXQP1_S              ojAlgo-QP-ASET-NSP-S  OPTIMAL               71.48025ms            
+CVXQP1_S              ojAlgo-QP-ASET-PLN-D  OPTIMAL               11.2085ms             
+CVXQP1_S              ojAlgo-QP-ASET-PLN-S  OPTIMAL               132.809667ms          
+CVXQP2_L              COPT                  OPTIMAL               642.167625ms          
+CVXQP2_L              Clarabel              OPTIMAL               7944.5595ms           
+CVXQP2_L              Gurobi                OPTIMAL               652.921917ms          
+CVXQP2_L              ojAlgo-QP             OPTIMAL               10775.061917ms        
+CVXQP2_L              ojAlgo-QP-ADMM        OPTIMAL               10644.702ms           
+CVXQP2_L              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+CVXQP2_L              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP2_L              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+CVXQP2_L              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP2_M              COPT                  OPTIMAL               29.3245ms             
+CVXQP2_M              Clarabel              OPTIMAL               25.393083ms           
+CVXQP2_M              Gurobi                OPTIMAL               31.25275ms            
+CVXQP2_M              ojAlgo-QP             OPTIMAL               29.717208ms           
+CVXQP2_M              ojAlgo-QP-ADMM        OPTIMAL               27.462166ms           
+CVXQP2_M              ojAlgo-QP-ASET-NSP-D  OPTIMAL               34867.276ms           
+CVXQP2_M              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP2_M              ojAlgo-QP-ASET-PLN-D  OPTIMAL               57125.800167ms        
+CVXQP2_M              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP2_S              COPT                  OPTIMAL               4.740416ms            
+CVXQP2_S              Clarabel              OPTIMAL               0.809ms               
+CVXQP2_S              Gurobi                OPTIMAL               0.958542ms            
+CVXQP2_S              ojAlgo-QP             OPTIMAL               402.567708ms          
+CVXQP2_S              ojAlgo-QP-ADMM        OPTIMAL               0.504125ms            
+CVXQP2_S              ojAlgo-QP-ASET-NSP-D  OPTIMAL               12.454583ms           
+CVXQP2_S              ojAlgo-QP-ASET-NSP-S  OPTIMAL               251.359458ms          
+CVXQP2_S              ojAlgo-QP-ASET-PLN-D  OPTIMAL               18.619084ms           
+CVXQP2_S              ojAlgo-QP-ASET-PLN-S  OPTIMAL               400.713ms             
+CVXQP3_L              COPT                  OPTIMAL               1526.880666ms         
+CVXQP3_L              Clarabel              OPTIMAL               11404.138375ms        
+CVXQP3_L              Gurobi                OPTIMAL               4607.567791ms         
+CVXQP3_L              ojAlgo-QP             OPTIMAL               126698.041875ms       
+CVXQP3_L              ojAlgo-QP-ADMM        OPTIMAL               133802.245208ms       
+CVXQP3_L              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+CVXQP3_L              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+CVXQP3_L              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+CVXQP3_L              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP3_M              COPT                  OPTIMAL               53.183458ms           
+CVXQP3_M              Clarabel              OPTIMAL               56.13275ms            
+CVXQP3_M              Gurobi                OPTIMAL               94.460583ms           
+CVXQP3_M              ojAlgo-QP             OPTIMAL               482.004792ms          
+CVXQP3_M              ojAlgo-QP-ADMM        OPTIMAL               565.703292ms          
+CVXQP3_M              ojAlgo-QP-ASET-NSP-D  OPTIMAL               3762.884459ms         
+CVXQP3_M              ojAlgo-QP-ASET-NSP-S  OPTIMAL               8978.167083ms         
+CVXQP3_M              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+CVXQP3_M              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+CVXQP3_S              COPT                  OPTIMAL               4.097167ms            
+CVXQP3_S              Clarabel              OPTIMAL               1.059458ms            
+CVXQP3_S              Gurobi                OPTIMAL               2.311458ms            
+CVXQP3_S              ojAlgo-QP             OPTIMAL               2.610083ms            
+CVXQP3_S              ojAlgo-QP-ADMM        OPTIMAL               1.205ms               
+CVXQP3_S              ojAlgo-QP-ASET-NSP-D  OPTIMAL               1.689167ms            
+CVXQP3_S              ojAlgo-QP-ASET-NSP-S  OPTIMAL               2.69825ms             
+CVXQP3_S              ojAlgo-QP-ASET-PLN-D  OPTIMAL               21.981667ms           
+CVXQP3_S              ojAlgo-QP-ASET-PLN-S  OPTIMAL               237.691209ms          
+DUAL1                 COPT                  OPTIMAL               4.832ms               
+DUAL1                 Clarabel              OPTIMAL               3.060083ms            
+DUAL1                 Gurobi                OPTIMAL               4.321958ms            
+DUAL1                 ojAlgo-QP             OPTIMAL               52.603541ms           
+DUAL1                 ojAlgo-QP-ADMM        OPTIMAL               3.504125ms            
+DUAL1                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               5.946292ms            
+DUAL1                 ojAlgo-QP-ASET-NSP-S  OPTIMAL               34.549833ms           
+DUAL1                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               10.547667ms           
+DUAL1                 ojAlgo-QP-ASET-PLN-S  OPTIMAL               58.683959ms           
+DUAL2                 COPT                  OPTIMAL               5.56325ms             
+DUAL2                 Clarabel              OPTIMAL               3.578083ms            
+DUAL2                 Gurobi                OPTIMAL               4.671417ms            
+DUAL2                 ojAlgo-QP             OPTIMAL               68.966959ms           
+DUAL2                 ojAlgo-QP-ADMM        OPTIMAL               3.987792ms            
+DUAL2                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               19.249542ms           
+DUAL2                 ojAlgo-QP-ASET-NSP-S  OPTIMAL               87.254917ms           
+DUAL2                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               15.914083ms           
+DUAL2                 ojAlgo-QP-ASET-PLN-S  OPTIMAL               86.657792ms           
+DUAL3                 COPT                  OPTIMAL               7.711542ms            
+DUAL3                 Clarabel              OPTIMAL               4.771958ms            
+DUAL3                 Gurobi                OPTIMAL               6.390542ms            
+DUAL3                 ojAlgo-QP             OPTIMAL               98.179042ms           
+DUAL3                 ojAlgo-QP-ADMM        OPTIMAL               6.113375ms            
+DUAL3                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               11.11025ms            
+DUAL3                 ojAlgo-QP-ASET-NSP-S  OPTIMAL               63.160583ms           
+DUAL3                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               20.716834ms           
+DUAL3                 ojAlgo-QP-ASET-PLN-S  OPTIMAL               114.58925ms           
+DUAL4                 COPT                  OPTIMAL               3.525083ms            
+DUAL4                 Clarabel              OPTIMAL               2.659958ms            
+DUAL4                 Gurobi                OPTIMAL               2.653709ms            
+DUAL4                 ojAlgo-QP             OPTIMAL               16.578958ms           
+DUAL4                 ojAlgo-QP-ADMM        OPTIMAL               1.624667ms            
+DUAL4                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               8.272333ms            
+DUAL4                 ojAlgo-QP-ASET-NSP-S  OPTIMAL               31.929ms              
+DUAL4                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               6.413542ms            
+DUAL4                 ojAlgo-QP-ASET-PLN-S  OPTIMAL               19.976958ms           
+DUALC1                COPT                  OPTIMAL               1.727083ms            
+DUALC1                Clarabel              OPTIMAL               0.093959ms            
+DUALC1                Gurobi                OPTIMAL               0.154458ms            
+DUALC1                ojAlgo-QP             OPTIMAL               0.055375ms            
+DUALC1                ojAlgo-QP-ADMM        OPTIMAL               0.231875ms            
+DUALC1                ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.069125ms            
+DUALC1                ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.112708ms            
+DUALC1                ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.045041ms            
+DUALC1                ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.088541ms            
+DUALC2                COPT                  OPTIMAL               2.071041ms            
+DUALC2                Clarabel              OPTIMAL               0.064625ms            
+DUALC2                Gurobi                OPTIMAL               0.092584ms            
+DUALC2                ojAlgo-QP             OPTIMAL               0.069375ms            
+DUALC2                ojAlgo-QP-ADMM        OPTIMAL               0.051375ms            
+DUALC2                ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.04925ms             
+DUALC2                ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.077542ms            
+DUALC2                ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.052875ms            
+DUALC2                ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.08025ms             
+DUALC5                COPT                  OPTIMAL               1.566833ms            
+DUALC5                Clarabel              OPTIMAL               0.05725ms             
+DUALC5                Gurobi                OPTIMAL               0.08275ms             
+DUALC5                ojAlgo-QP             OPTIMAL               0.050583ms            
+DUALC5                ojAlgo-QP-ADMM        OPTIMAL               0.026ms               
+DUALC5                ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.042709ms            
+DUALC5                ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.059167ms            
+DUALC5                ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.040042ms            
+DUALC5                ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.065042ms            
+DUALC8                COPT                  OPTIMAL               1.697791ms            
+DUALC8                Clarabel              OPTIMAL               0.083959ms            
+DUALC8                Gurobi                OPTIMAL               0.139375ms            
+DUALC8                ojAlgo-QP             OPTIMAL               0.051333ms            
+DUALC8                ojAlgo-QP-ADMM        OPTIMAL               0.057333ms            
+DUALC8                ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.044667ms            
+DUALC8                ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.075667ms            
+DUALC8                ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.040125ms            
+DUALC8                ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.08475ms             
+GENHS28               COPT                  OPTIMAL               0.28925ms             
+GENHS28               Clarabel              OPTIMAL               0.021875ms            
+GENHS28               Gurobi                OPTIMAL               0.07425ms             
+GENHS28               ojAlgo-QP             OPTIMAL               0.014875ms            
+GENHS28               ojAlgo-QP-ADMM        OPTIMAL               0.019ms               
+GENHS28               ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.013709ms            
+GENHS28               ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.013792ms            
+GENHS28               ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.014708ms            
+GENHS28               ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.014791ms            
+HS118                 COPT                  OPTIMAL               1.718042ms            
+HS118                 Clarabel              OPTIMAL               0.10975ms             
+HS118                 Gurobi                OPTIMAL               0.129292ms            
+HS118                 ojAlgo-QP             OPTIMAL               0.169ms               
+HS118                 ojAlgo-QP-ADMM        OPTIMAL               0.258416ms            
+HS118                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.111208ms            
+HS118                 ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.159709ms            
+HS118                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.111666ms            
+HS118                 ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.157959ms            
+HS21                  COPT                  OPTIMAL               1.1065ms              
+HS21                  Clarabel              OPTIMAL               0.0305ms              
+HS21                  Gurobi                OPTIMAL               0.039042ms            
+HS21                  ojAlgo-QP             OPTIMAL               0.00475ms             
+HS21                  ojAlgo-QP-ADMM        OPTIMAL               0.008125ms            
+HS21                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.004958ms            
+HS21                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.004666ms            
+HS21                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.004792ms            
+HS21                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.005541ms            
+HS268                 COPT                  OPTIMAL               3.059292ms            
+HS268                 Clarabel              OPTIMAL               0.046833ms            
+HS268                 Gurobi                OPTIMAL               0.074ms               
+HS268                 ojAlgo-QP             OPTIMAL               0.011083ms            
+HS268                 ojAlgo-QP-ADMM        OPTIMAL               0.021667ms            
+HS268                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.011333ms            
+HS268                 ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.013375ms            
+HS268                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.010125ms            
+HS268                 ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.012708ms            
+HS35                  COPT                  OPTIMAL               1.227541ms            
+HS35                  Clarabel              OPTIMAL               0.025375ms            
+HS35                  Gurobi                OPTIMAL               0.052458ms            
+HS35                  ojAlgo-QP             OPTIMAL               0.005959ms            
+HS35                  ojAlgo-QP-ADMM        OPTIMAL               0.007666ms            
+HS35                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.005125ms            
+HS35                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.006375ms            
+HS35                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.005166ms            
+HS35                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.005875ms            
+HS35MOD               COPT                  OPTIMAL               2.35725ms             
+HS35MOD               Clarabel              OPTIMAL               0.0345ms              
+HS35MOD               Gurobi                OPTIMAL               0.051625ms            
+HS35MOD               ojAlgo-QP             OPTIMAL               0.006375ms            
+HS35MOD               ojAlgo-QP-ADMM        OPTIMAL               0.006791ms            
+HS35MOD               ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.005291ms            
+HS35MOD               ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.00575ms             
+HS35MOD               ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.005125ms            
+HS35MOD               ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.005917ms            
+HS51                  COPT                  OPTIMAL               0.531542ms            
+HS51                  Clarabel              OPTIMAL               0.0155ms              
+HS51                  Gurobi                OPTIMAL               0.051416ms            
+HS51                  ojAlgo-QP             OPTIMAL               0.006708ms            
+HS51                  ojAlgo-QP-ADMM        OPTIMAL               0.008416ms            
+HS51                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.006958ms            
+HS51                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.006ms               
+HS51                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.006ms               
+HS51                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.006209ms            
+HS52                  COPT                  OPTIMAL               0.518292ms            
+HS52                  Clarabel              OPTIMAL               0.015917ms            
+HS52                  Gurobi                OPTIMAL               0.050709ms            
+HS52                  ojAlgo-QP             OPTIMAL               0.006208ms            
+HS52                  ojAlgo-QP-ADMM        OPTIMAL               0.007375ms            
+HS52                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.007ms               
+HS52                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.005459ms            
+HS52                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.006583ms            
+HS52                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.006542ms            
+HS53                  COPT                  OPTIMAL               0.947584ms            
+HS53                  Clarabel              OPTIMAL               0.032459ms            
+HS53                  Gurobi                OPTIMAL               0.061917ms            
+HS53                  ojAlgo-QP             OPTIMAL               0.010541ms            
+HS53                  ojAlgo-QP-ADMM        OPTIMAL               0.010917ms            
+HS53                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.015917ms            
+HS53                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.015917ms            
+HS53                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.00875ms             
+HS53                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.010916ms            
+HS76                  COPT                  OPTIMAL               1.529542ms            
+HS76                  Clarabel              OPTIMAL               0.028208ms            
+HS76                  Gurobi                OPTIMAL               0.05675ms             
+HS76                  ojAlgo-QP             OPTIMAL               0.009333ms            
+HS76                  ojAlgo-QP-ADMM        OPTIMAL               0.012625ms            
+HS76                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.008833ms            
+HS76                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.009625ms            
+HS76                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.0075ms              
+HS76                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.010708ms            
+HUES-MOD              COPT                  OPTIMAL               28.2595ms             
+HUES-MOD              Clarabel              FAILED                UNSTABLE              
+HUES-MOD              Gurobi                OPTIMAL               14.931583ms           
+HUES-MOD              ojAlgo-QP             OPTIMAL               58.19725ms            
+HUES-MOD              ojAlgo-QP-ADMM        OPTIMAL               73.342417ms           
+HUES-MOD              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+HUES-MOD              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+HUES-MOD              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+HUES-MOD              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+HUESTIS               COPT                  OPTIMAL               25.296083ms           
+HUESTIS               Clarabel              FAILED                UNSTABLE              
+HUESTIS               Gurobi                OPTIMAL               14.407125ms           
+HUESTIS               ojAlgo-QP             OPTIMAL               63.287167ms           
+HUESTIS               ojAlgo-QP-ADMM        OPTIMAL               64.464875ms           
+HUESTIS               ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+HUESTIS               ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+HUESTIS               ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+HUESTIS               ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+KSIP                  COPT                  OPTIMAL               61.763334ms           
+KSIP                  Clarabel              OPTIMAL               11.237125ms           
+KSIP                  Gurobi                OPTIMAL               11.294791ms           
+KSIP                  ojAlgo-QP             OPTIMAL               33.368375ms           
+KSIP                  ojAlgo-QP-ADMM        FAILED                UNSTABLE              
+KSIP                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               20.564875ms           
+KSIP                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               33.187125ms           
+KSIP                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               21.423667ms           
+KSIP                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               33.195333ms           
+LASER                 COPT                  OPTIMAL               24.540333ms           
+LASER                 Clarabel              OPTIMAL               7.939167ms            
+LASER                 Gurobi                OPTIMAL               15.946667ms           
+LASER                 ojAlgo-QP             OPTIMAL               4.160708ms            
+LASER                 ojAlgo-QP-ADMM        OPTIMAL               4.51475ms             
+LASER                 ojAlgo-QP-ASET-NSP-D  OPTIMAL               62007.120208ms        
+LASER                 ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+LASER                 ojAlgo-QP-ASET-PLN-D  OPTIMAL               62441.02025ms         
+LASER                 ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+MOSARQP1              COPT                  OPTIMAL               19.526709ms           
+MOSARQP1              Clarabel              OPTIMAL               10.186ms              
+MOSARQP1              Gurobi                OPTIMAL               10.5005ms             
+MOSARQP1              ojAlgo-QP             OPTIMAL               245.920916ms          
+MOSARQP1              ojAlgo-QP-ADMM        OPTIMAL               249.131ms             
+MOSARQP1              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QP-ASET-NSP-S  OPTIMAL               54325.159916ms        
+MOSARQP1              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QP-ASET-PLN-S  OPTIMAL               57770.357708ms        
+MOSARQP2              COPT                  OPTIMAL               12.140625ms           
+MOSARQP2              Clarabel              OPTIMAL               7.666166ms            
+MOSARQP2              Gurobi                OPTIMAL               8.022083ms            
+MOSARQP2              ojAlgo-QP             OPTIMAL               39.150709ms           
+MOSARQP2              ojAlgo-QP-ADMM        OPTIMAL               39.71925ms            
+MOSARQP2              ojAlgo-QP-ASET-NSP-D  OPTIMAL               11047.020833ms        
+MOSARQP2              ojAlgo-QP-ASET-NSP-S  OPTIMAL               8373.859792ms         
+MOSARQP2              ojAlgo-QP-ASET-PLN-D  OPTIMAL               10913.166334ms        
+MOSARQP2              ojAlgo-QP-ASET-PLN-S  OPTIMAL               7757.269416ms         
+POWELL20              COPT                  OPTIMAL               40.825209ms           
+POWELL20              Clarabel              OPTIMAL               84.59675ms            
+POWELL20              Gurobi                OPTIMAL               287.814708ms          
+POWELL20              ojAlgo-QP             FAILED                UNSTABLE              
+POWELL20              ojAlgo-QP-ADMM        FAILED                UNSTABLE              
+POWELL20              ojAlgo-QP-ASET-NSP-D  FAILED                TIMEOUT               
+POWELL20              ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+POWELL20              ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+POWELL20              ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+QPCBLEND              COPT                  OPTIMAL               2.630667ms            
+QPCBLEND              Clarabel              OPTIMAL               0.869958ms            
+QPCBLEND              Gurobi                OPTIMAL               0.765958ms            
+QPCBLEND              ojAlgo-QP             OPTIMAL               42.234167ms           
+QPCBLEND              ojAlgo-QP-ADMM        OPTIMAL               4.675ms               
+QPCBLEND              ojAlgo-QP-ASET-NSP-D  OPTIMAL               14.158125ms           
+QPCBLEND              ojAlgo-QP-ASET-NSP-S  OPTIMAL               44.3435ms             
+QPCBLEND              ojAlgo-QP-ASET-PLN-D  OPTIMAL               54.204375ms           
+QPCBLEND              ojAlgo-QP-ASET-PLN-S  OPTIMAL               65.176875ms           
+QPCBOEI1              COPT                  OPTIMAL               9.909833ms            
+QPCBOEI1              Clarabel              OPTIMAL               7.710333ms            
+QPCBOEI1              Gurobi                OPTIMAL               3.968625ms            
+QPCBOEI1              ojAlgo-QP             OPTIMAL               12843.573666ms        
+QPCBOEI1              ojAlgo-QP-ADMM        FAILED                UNSTABLE              
+QPCBOEI1              ojAlgo-QP-ASET-NSP-D  OPTIMAL               3879.411083ms         
+QPCBOEI1              ojAlgo-QP-ASET-NSP-S  OPTIMAL               56758.811542ms        
+QPCBOEI1              ojAlgo-QP-ASET-PLN-D  OPTIMAL               7353.4495ms           
+QPCBOEI1              ojAlgo-QP-ASET-PLN-S  OPTIMAL               12838.61675ms         
+QPCBOEI2              COPT                  OPTIMAL               5.816125ms            
+QPCBOEI2              Clarabel              OPTIMAL               3.010083ms            
+QPCBOEI2              Gurobi                OPTIMAL               1.550584ms            
+QPCBOEI2              ojAlgo-QP             OPTIMAL               430.025625ms          
+QPCBOEI2              ojAlgo-QP-ADMM        FAILED                UNSTABLE              
+QPCBOEI2              ojAlgo-QP-ASET-NSP-D  OPTIMAL               89.041708ms           
+QPCBOEI2              ojAlgo-QP-ASET-NSP-S  OPTIMAL               184.007ms             
+QPCBOEI2              ojAlgo-QP-ASET-PLN-D  OPTIMAL               82.641709ms           
+QPCBOEI2              ojAlgo-QP-ASET-PLN-S  OPTIMAL               448.932917ms          
+QPCSTAIR              COPT                  OPTIMAL               10.654ms              
+QPCSTAIR              Clarabel              OPTIMAL               12.044792ms           
+QPCSTAIR              Gurobi                OPTIMAL               9.171167ms            
+QPCSTAIR              ojAlgo-QP             OPTIMAL               176.082917ms          
+QPCSTAIR              ojAlgo-QP-ADMM        OPTIMAL               165.653042ms          
+QPCSTAIR              ojAlgo-QP-ASET-NSP-D  OPTIMAL               715.503959ms          
+QPCSTAIR              ojAlgo-QP-ASET-NSP-S  OPTIMAL               4182.812959ms         
+QPCSTAIR              ojAlgo-QP-ASET-PLN-D  OPTIMAL               2733.032416ms         
+QPCSTAIR              ojAlgo-QP-ASET-PLN-S  OPTIMAL               7180.413542ms         
+QPTEST                COPT                  OPTIMAL               1.319625ms            
+QPTEST                Clarabel              OPTIMAL               0.027583ms            
+QPTEST                Gurobi                OPTIMAL               0.052334ms            
+QPTEST                ojAlgo-QP             OPTIMAL               0.006667ms            
+QPTEST                ojAlgo-QP-ADMM        OPTIMAL               0.009708ms            
+QPTEST                ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.005708ms            
+QPTEST                ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.005333ms            
+QPTEST                ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.005458ms            
+QPTEST                ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.005209ms            
+S268                  COPT                  OPTIMAL               2.994625ms            
+S268                  Clarabel              OPTIMAL               0.046916ms            
+S268                  Gurobi                OPTIMAL               0.07425ms             
+S268                  ojAlgo-QP             OPTIMAL               0.012292ms            
+S268                  ojAlgo-QP-ADMM        OPTIMAL               0.021417ms            
+S268                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.010709ms            
+S268                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.013709ms            
+S268                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.01025ms             
+S268                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.01375ms             
+STCQP1                COPT                  OPTIMAL               28.492417ms           
+STCQP1                Clarabel              OPTIMAL               53.846417ms           
+STCQP1                Gurobi                OPTIMAL               15.747916ms           
+STCQP1                ojAlgo-QP             OPTIMAL               14.47325ms            
+STCQP1                ojAlgo-QP-ADMM        OPTIMAL               18.014583ms           
+STCQP1                ojAlgo-QP-ASET-NSP-D  OPTIMAL               6180.199125ms         
+STCQP1                ojAlgo-QP-ASET-NSP-S  OPTIMAL               9321.540791ms         
+STCQP1                ojAlgo-QP-ASET-PLN-D  OPTIMAL               6137.29ms             
+STCQP1                ojAlgo-QP-ASET-PLN-S  OPTIMAL               8437.8835ms           
+STCQP2                COPT                  OPTIMAL               45.757833ms           
+STCQP2                Clarabel              OPTIMAL               53.205417ms           
+STCQP2                Gurobi                OPTIMAL               73.810041ms           
+STCQP2                ojAlgo-QP             OPTIMAL               18.55425ms            
+STCQP2                ojAlgo-QP-ADMM        OPTIMAL               16.533209ms           
+STCQP2                ojAlgo-QP-ASET-NSP-D  OPTIMAL               622.721708ms          
+STCQP2                ojAlgo-QP-ASET-NSP-S  OPTIMAL               960.124459ms          
+STCQP2                ojAlgo-QP-ASET-PLN-D  OPTIMAL               612.955375ms          
+STCQP2                ojAlgo-QP-ASET-PLN-S  OPTIMAL               949.795333ms          
+TAME                  COPT                  OPTIMAL               0.674083ms            
+TAME                  Clarabel              OPTIMAL               0.021834ms            
+TAME                  Gurobi                OPTIMAL               0.047667ms            
+TAME                  ojAlgo-QP             OPTIMAL               0.006042ms            
+TAME                  ojAlgo-QP-ADMM        OPTIMAL               0.006666ms            
+TAME                  ojAlgo-QP-ASET-NSP-D  OPTIMAL               0.007458ms            
+TAME                  ojAlgo-QP-ASET-NSP-S  OPTIMAL               0.008666ms            
+TAME                  ojAlgo-QP-ASET-PLN-D  OPTIMAL               0.004417ms            
+TAME                  ojAlgo-QP-ASET-PLN-S  OPTIMAL               0.004833ms            
+VALUES                COPT                  FAILED                UNSTABLE              
+VALUES                Clarabel              OPTIMAL               2.9045ms              
+VALUES                Gurobi                FAILED                TIMEOUT               
+VALUES                ojAlgo-QP             OPTIMAL               9.28525ms             
+VALUES                ojAlgo-QP-ADMM        OPTIMAL               9.192458ms            
+VALUES                ojAlgo-QP-ASET-NSP-D  OPTIMAL               2707.795833ms         
+VALUES                ojAlgo-QP-ASET-NSP-S  OPTIMAL               3184.903583ms         
+VALUES                ojAlgo-QP-ASET-PLN-D  OPTIMAL               506.254709ms          
+VALUES                ojAlgo-QP-ASET-PLN-S  OPTIMAL               405.417416ms          
+YAO                   COPT                  OPTIMAL               17.535917ms           
+YAO                   Clarabel              FAILED                UNSTABLE              
+YAO                   Gurobi                OPTIMAL               13.795083ms           
+YAO                   ojAlgo-QP             FAILED                UNSTABLE              
+YAO                   ojAlgo-QP-ADMM        FAILED                UNSTABLE              
+YAO                   ojAlgo-QP-ASET-NSP-D  OPTIMAL               215200.55175ms        
+YAO                   ojAlgo-QP-ASET-NSP-S  FAILED                TIMEOUT               
+YAO                   ojAlgo-QP-ASET-PLN-D  FAILED                TIMEOUT               
+YAO                   ojAlgo-QP-ASET-PLN-S  FAILED                TIMEOUT               
+
+Models Solved
+=====================================================================
+COPT                  47 / 48               98%                   
+Clarabel              45 / 48               94%                   
+Gurobi                47 / 48               98%                   
+ojAlgo-QP             46 / 48               96%                   
+ojAlgo-QP-ADMM        43 / 48               90%                   
+ojAlgo-QP-ASET-NSP-D  41 / 48               85%                   
+ojAlgo-QP-ASET-NSP-S  37 / 48               77%                   
+ojAlgo-QP-ASET-PLN-D  37 / 48               77%                   
+ojAlgo-QP-ASET-PLN-S  36 / 48               75%                   

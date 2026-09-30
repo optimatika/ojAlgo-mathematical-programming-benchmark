@@ -27,7 +27,8 @@ public final class MIPLIBBench1k extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.COPT, Contender.HIGHS, Contender.SCIP, Contender.CPLEX, Contender.XPRESS, Contender.CPSAT);
+        Configuration configuration = new Configuration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP, Contender.HIGHS,
+                Contender.MOSEK);
 
         configuration.maxProbSize = 1_000;
         configuration.pathPrefix = "/optimisation/MIPLIB/";

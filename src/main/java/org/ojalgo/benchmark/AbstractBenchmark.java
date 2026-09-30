@@ -68,11 +68,13 @@ import org.ojalgo.optimisation.solver.clarabel.SolverClarabel;
 import org.ojalgo.optimisation.solver.copt.SolverCOPT;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
 import org.ojalgo.optimisation.solver.cpsat.SolverCPSAT;
+import org.ojalgo.optimisation.solver.gurobi.SolverGurobi;
 import org.ojalgo.optimisation.solver.highs.SolverHiGHS;
 import org.ojalgo.optimisation.solver.hipparchus.SolverHipparchus;
 import org.ojalgo.optimisation.solver.joptimizer.SolverJOptimizer;
 import org.ojalgo.optimisation.solver.mosek.SolverMosek;
 import org.ojalgo.optimisation.solver.ortools.SolverORTools;
+import org.ojalgo.optimisation.solver.osqp.SolverOSQP;
 import org.ojalgo.optimisation.solver.scip.SolverSCIP;
 import org.ojalgo.optimisation.solver.ssclp.SolverSSCLP;
 import org.ojalgo.optimisation.solver.xpress.SolverXpress;
@@ -150,6 +152,7 @@ public abstract class AbstractBenchmark {
         public static final String COPT = "COPT";
         public static final String CPLEX = "CPLEX";
         public static final String CPSAT = "CP-SAT";
+        public static final String GUROBI = "Gurobi";
         public static final String HIGHS = "HiGHS";
         public static final String HIPPARCHUS = "Hipparchus";
         public static final String JOPTIMIZER = "JOptimizer";
@@ -175,16 +178,17 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP_MINRES_ID = "ojAlgo-QP-MINRES-id";
         public static final String OJALGO_QP_MINRES_JACOBI = "ojAlgo-QP-MINRES-jacobi";
         public static final String OJALGO_QP_MINRES_SSORP = "ojAlgo-QP-MINRES-ssorp";
-        public static final String OJALGO_QP_NULLSPACE_DENSE = "ojAlgo-QP-NSP-D";
-        public static final String OJALGO_QP_NULLSPACE_SPARSE = "ojAlgo-QP-NSP-S";
-        public static final String OJALGO_QP_PLAIN_DENSE = "ojAlgo-QP-PLAIN-D";
-        public static final String OJALGO_QP_PLAIN_SPARSE = "ojAlgo-QP-PLAIN-S";
+        public static final String OJALGO_QP_ASET_NULLSPACE_DENSE = "ojAlgo-QP-ASET-NSP-D";
+        public static final String OJALGO_QP_ASET_NULLSPACE_SPARSE = "ojAlgo-QP-ASET-NSP-S";
+        public static final String OJALGO_QP_ASET_PLAIN_DENSE = "ojAlgo-QP-ASET-PLN-D";
+        public static final String OJALGO_QP_ASET_PLAIN_SPARSE = "ojAlgo-QP-ASET-PLN-S";
         public static final String OJALGO_QP_QMR_ID = "ojAlgo-QP-QMR-id";
         public static final String OJALGO_QP_QMR_JACOBI = "ojAlgo-QP-QMR-jacobi";
         public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QP-QMR-ssorp";
         public static final String OJALGO_QP_SPARSE_EXPERIMENTAL = "ojAlgo-QP-S-exp";
         public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
         public static final String ORTOOLS = "OR-Tools";
+        public static final String OSQP = "OSQP";
         public static final String SCIP = "SCIP";
         public static final String SSCLP = "SSC-LP";
         public static final String XPRESS = "Xpress";
@@ -450,10 +454,7 @@ public abstract class AbstractBenchmark {
         INTEGRATIONS.put(Contender.CPLEX, () -> SolverCPLEX.INTEGRATION);
         INTEGRATIONS.put(Contender.CPSAT, () -> SolverCPSAT.INTEGRATION);
         INTEGRATIONS.put(Contender.ORTOOLS, () -> SolverORTools.INTEGRATION);
-        INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
-            opt.experimental = true;
-        }));
-        // INTEGRATIONS.put("Gurobi", SolverGurobi.INTEGRATION);
+        INTEGRATIONS.put(Contender.GUROBI, () -> SolverGurobi.INTEGRATION);
         INTEGRATIONS.put(Contender.JOPTIMIZER, () -> SolverJOptimizer.INTEGRATION);
         INTEGRATIONS.put(Contender.MOSEK, () -> SolverMosek.INTEGRATION);
 
@@ -462,6 +463,7 @@ public abstract class AbstractBenchmark {
 
         INTEGRATIONS.put(Contender.CLARABEL, () -> SolverClarabel.INTEGRATION);
         INTEGRATIONS.put(Contender.HIGHS, () -> SolverHiGHS.INTEGRATION);
+        INTEGRATIONS.put(Contender.OSQP, () -> SolverOSQP.INTEGRATION);
 
         INTEGRATIONS.put(Contender.SCIP, () -> SolverSCIP.INTEGRATION);
         INTEGRATIONS.put(Contender.SSCLP, () -> SolverSSCLP.INTEGRATION);
@@ -558,6 +560,7 @@ public abstract class AbstractBenchmark {
         }));
 
         INTEGRATIONS.put(Contender.CLARABEL, () -> SolverClarabel.INTEGRATION);
+
         INTEGRATIONS.put(Contender.OJALGO_QP, () -> ConvexSolver.INTEGRATION);
 
         INTEGRATIONS.put(Contender.OJALGO_QP_ADMM, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
@@ -567,22 +570,22 @@ public abstract class AbstractBenchmark {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
         }));
 
-        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_DENSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_ASET_NULLSPACE_DENSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.TRUE);
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_NULLSPACE_SPARSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_ASET_NULLSPACE_SPARSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.TRUE);
             opt.sparse = Boolean.TRUE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_DENSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_ASET_PLAIN_DENSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.FALSE);
             opt.sparse = Boolean.FALSE;
         }));
-        INTEGRATIONS.put(Contender.OJALGO_QP_PLAIN_SPARSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
+        INTEGRATIONS.put(Contender.OJALGO_QP_ASET_PLAIN_SPARSE, () -> ConvexSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.convex().algorithm(Algorithm.ACTIVE_SET);
             opt.convex().projection(Boolean.FALSE);
             opt.sparse = Boolean.TRUE;
