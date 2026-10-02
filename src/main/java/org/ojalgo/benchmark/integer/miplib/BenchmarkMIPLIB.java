@@ -19,25 +19,34 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.qplib;
+package org.ojalgo.benchmark.integer.miplib;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class QPLIBBenchmark extends AbstractQPLIB {
+/**
+ * Used for published MIPLIB results. The 4 included solvers are:
+ * <ul>
+ * <li>ojAlgo
+ * <li>The best Java (Open Source) alternative: SSC-LP
+ * <li>The best Open Source (Native) alternative: SCIP
+ * <li>One more...
+ * </ul>
+ */
+public final class BenchmarkMIPLIB extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_QP, Contender.CLARABEL, Contender.HIGHS);
+        Configuration configuration = new Configuration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP, Contender.HIGHS,
+                Contender.MOSEK);
 
-        configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/QPLIB/";
-        configuration.pathSuffix = ".lp";
+        configuration.maxProbSize = 1_000;
+        configuration.pathPrefix = "/optimisation/MIPLIB/";
+        configuration.pathSuffix = ".mps";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.EIGHT;
+        configuration.parallelism = Parallelism.FOUR;
+        configuration.maxIterations = 3;
 
-        AbstractQPLIB.loadExpectedValues(configuration);
-
-        AbstractQPLIB.doBenchmark(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
+        AbstractMIPLIB.doBenchmark(configuration);
     }
 
 }

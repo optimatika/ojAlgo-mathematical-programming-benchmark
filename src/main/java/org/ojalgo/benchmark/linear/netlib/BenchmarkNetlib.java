@@ -19,25 +19,33 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.integer.miplib;
+package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class MIPLIBBench1k extends AbstractMIPLIB {
+/**
+ * Used for published Netlib results. The 4 included solvers are:
+ * <ul>
+ * <li>ojAlgo
+ * <li>The best Java (Open Source) alternative: Hipparchus
+ * <li>The best Open Source (Native) alternative: HiGHS
+ * <li>One more...
+ * </ul>
+ */
+public final class BenchmarkNetlib extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP, Contender.HIGHS,
-                Contender.MOSEK);
+        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.SCIP, Contender.HIGHS);
 
-        configuration.maxProbSize = 1_000;
-        configuration.pathPrefix = "/optimisation/MIPLIB/";
-        configuration.pathSuffix = ".mps";
+        configuration.maxProbSize = 10_000;
+        configuration.pathPrefix = "/optimisation/netlib/";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.FOUR;
-        configuration.maxIterations = 3;
+        configuration.parallelism = Parallelism.EIGHT;
 
-        AbstractMIPLIB.doBenchmark(configuration);
+        AbstractNetlib.loadExpectedValues(configuration);
+
+        AbstractNetlib.doBenchmark(configuration);
     }
 
 }

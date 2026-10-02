@@ -14,6 +14,7 @@ import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Variable;
+import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch.TimedResult;
 
 public abstract class ForkedTask {
@@ -22,10 +23,17 @@ public abstract class ForkedTask {
 
         private static final long serialVersionUID = 1L;
 
+        /**
+         * Whether all the solves agreed with each other - the same state and value every time.
+         */
+        public final boolean consistent;
         public final double density;
         public final int nbExpressions;
         public final int nbVariables;
         public final String result;
+        /**
+         * The middle of the last three solve times, ms - NaN if there is no result.
+         */
         public final double time;
         /**
          * Whether the returned solution actually satisfies the constraints of the model that was solved. A
@@ -34,10 +42,12 @@ public abstract class ForkedTask {
          */
         public final boolean valid;
 
-        ReturnValue(final String result, final double time, final int nbVariables, final int nbExpressions, final double density, final boolean valid) {
+        ReturnValue(final String result, final double time, final boolean consistent, final int nbVariables, final int nbExpressions, final double density,
+                final boolean valid) {
             super();
             this.result = result;
             this.time = time;
+            this.consistent = consistent;
             this.nbVariables = nbVariables;
             this.nbExpressions = nbExpressions;
             this.density = density;
@@ -57,15 +67,17 @@ public abstract class ForkedTask {
      * @param libraryPath Absolute path to the native library to use, or empty to let the integration find one
      *                    itself. Loading it here, before the integration initialises, is what makes it the
      *                    one the integration binds to.
-     * @param validate    Whether to check that the solution satisfies the model's constraints. Only meaningful
-     *                    on a pair's first pass - that is where capability is decided - and the check walks
-     *                    every expression in BigDecimal, so it is not worth repeating while stabilising times.
+     * @param validate    Whether to check that the solution satisfies the model's constraints. Only
+     *                    meaningful on a pair's first pass - that is where capability is decided - and the
+     *                    check walks every expression in BigDecimal, so it is not worth repeating while
+     *                    stabilising times.
      */
     public static ReturnValue execute(final String modelFilePath, final String contenderSolverName, final long maxWaitTime, final int threads,
             final int maxSolves, final String libraryPath, final boolean validate) {
 
-        long instanceTime = Long.MAX_VALUE;
-        long remainingTime = maxWaitTime / 2L;
+        // ms - exact, so that sub-millisecond solves use up the budget too
+        double instanceTime = Double.MAX_VALUE;
+        double remainingTime = maxWaitTime / 2D;
         int nbSolves = 0;
 
         if (libraryPath != null && !libraryPath.isEmpty()) {
@@ -102,6 +114,8 @@ public abstract class ForkedTask {
             List<Variable> variables = simplified.getVariables();
             List<BigDecimal> initialValues = variables.stream().map(Variable::getValue).toList();
 
+            // Repeat until the budget is spent or the last three times agree - or as soon as a solve isn't optimal,
+            // or doesn't agree with the others, as then the pair has failed and there is nothing more to measure
             do {
 
                 for (int i = 0; i < variables.size(); i++) {
@@ -110,29 +124,29 @@ public abstract class ForkedTask {
 
                 TimedResult<Result> meassured = AbstractBenchmark.meassure(simplified, integration);
 
-                instanceTime = meassured.duration.toDurationInMillis();
+                instanceTime = meassured.duration.convertTo(CalendarDateUnit.MILLIS).measure;
                 remainingTime -= instanceTime;
                 nbSolves++;
 
                 resultsSet.add(meassured);
 
-            } while (nbSolves != maxSolves && instanceTime < remainingTime && !resultsSet.isStable());
+            } while (nbSolves != maxSolves && instanceTime < remainingTime && resultsSet.result().getState().isOptimal() && !resultsSet.isStable());
 
         } catch (IOException cause) {
             throw new RuntimeException(cause);
         }
 
-        TimedResult<Result> fastest = resultsSet.fastest;
+        Result result = resultsSet.result();
 
-        if (fastest != null) {
+        if (result != null) {
 
-            boolean valid = !validate || solved.validate(fastest.result, AbstractBenchmark.ACCURACY);
+            boolean valid = !validate || solved.validate(result, AbstractBenchmark.ACCURACY);
 
-            return new ReturnValue(fastest.result.toString(), fastest.duration.measure, nbVariables, nbExpressions, density, valid);
+            return new ReturnValue(result.toString(), resultsSet.medianTime(), resultsSet.isConsistent(), nbVariables, nbExpressions, density, valid);
 
         } else {
 
-            return new ReturnValue(null, Double.NaN, nbVariables, nbExpressions, density, false);
+            return new ReturnValue(null, Double.NaN, true, nbVariables, nbExpressions, density, false);
         }
     }
 

@@ -19,24 +19,32 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.linear.netlib;
+package org.ojalgo.benchmark.linear.burkardt;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class NetlibBench10k extends AbstractNetlib {
+/**
+ * Used for published Burkardt results. The 4 included solvers are:
+ * <ul>
+ * <li>ojAlgo
+ * <li>The best Java (Open Source) alternative: Hipparchus
+ * <li>The best Open Source (Native) alternative: HiGHS
+ * <li>One more...
+ * </ul>
+ */
+public final class BenchmarkBurkardt extends AbstractBurkardt {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.SCIP, Contender.HIGHS);
+        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
 
         configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
+        configuration.pathPrefix = "/optimisation/burkardt/";
+        configuration.pathSuffix = ".mps";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.EIGHT;
+        configuration.parallelism = Parallelism.ONE;
 
-        AbstractNetlib.loadExpectedValues(configuration);
-
-        AbstractNetlib.doBenchmark(configuration);
+        AbstractBurkardt.doBenchmark(configuration);
     }
 
 }

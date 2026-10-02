@@ -19,23 +19,34 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.linear.burkardt;
+package org.ojalgo.benchmark.qplib;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class BurkardtBenchmark extends AbstractBurkardt {
+/**
+ * Used for published QPLIB results. The 4 included solvers are:
+ * <ul>
+ * <li>ojAlgo
+ * <li>The best Java (Open Source) alternative: Hipparchus
+ * <li>The best Open Source (Native) alternative: Clarabel
+ * <li>One more...
+ * </ul>
+ */
+public final class BenchmarkQPLIB extends AbstractQPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
+        Configuration configuration = new Configuration(Contender.OJALGO_QP, Contender.CLARABEL, Contender.HIGHS);
 
         configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/burkardt/";
-        configuration.pathSuffix = ".mps";
+        configuration.pathPrefix = "/optimisation/QPLIB/";
+        configuration.pathSuffix = ".lp";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
+        configuration.parallelism = Parallelism.EIGHT;
 
-        AbstractBurkardt.doBenchmark(configuration);
+        AbstractQPLIB.loadExpectedValues(configuration);
+
+        AbstractQPLIB.doBenchmark(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
     }
 
 }

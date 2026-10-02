@@ -25,9 +25,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.Instant;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
@@ -78,6 +77,7 @@ import org.ojalgo.optimisation.solver.osqp.SolverOSQP;
 import org.ojalgo.optimisation.solver.scip.SolverSCIP;
 import org.ojalgo.optimisation.solver.ssclp.SolverSSCLP;
 import org.ojalgo.optimisation.solver.xpress.SolverXpress;
+import org.ojalgo.random.SampleSet;
 import org.ojalgo.type.CalendarDateDuration;
 import org.ojalgo.type.CalendarDateUnit;
 import org.ojalgo.type.Stopwatch;
@@ -109,11 +109,15 @@ public abstract class AbstractBenchmark {
          * <p>
          * Set to 1 and each pair is solved exactly once - enough to answer whether the solver manages the
          * model at all, which for MIP is the interesting question. Above 1 the forked task repeats within its
-         * own budget on every pass, and a pair is done once two consecutive measurements agree.
+         * own budget on every pass, until its last three times agree, and reports the middle one. The pair is
+         * done once the last three passes agree the same way, and its time is the middle one of those.
          * <p>
-         * At 1 the reported times are cold - one solve in a fresh JVM, including class loading, JIT warm-up
-         * and native library loading. On models that solve in milliseconds that overhead dominates, so read
-         * those times as "it worked", not as measurements, and don't compare them against a longer run.
+         * At 1 the reported time is a single sample, and how warm it is depends on what the worker JVM ran
+         * before. Worker JVMs are reused across pairs and only restarted after a timeout or failure, so the
+         * first solve with a given solver in a worker includes class loading, JIT warm-up, native library
+         * loading and environment creation, while later ones don't. On models that solve in milliseconds that
+         * difference dominates, so read those times as "it worked", not as measurements, and don't compare
+         * them against a longer run.
          */
         public int maxIterations = DEFAULT_MAX_ITERATIONS;
         public int maxProbSize = 10_000;
@@ -170,6 +174,10 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP = "ojAlgo-QP";
         public static final String OJALGO_QP_ADMM = "ojAlgo-QP-ADMM";
         public static final String OJALGO_QP_ASET = "ojAlgo-QP-ASET";
+        public static final String OJALGO_QP_ASET_NULLSPACE_DENSE = "ojAlgo-QP-ASET-NSP-D";
+        public static final String OJALGO_QP_ASET_NULLSPACE_SPARSE = "ojAlgo-QP-ASET-NSP-S";
+        public static final String OJALGO_QP_ASET_PLAIN_DENSE = "ojAlgo-QP-ASET-PLN-D";
+        public static final String OJALGO_QP_ASET_PLAIN_SPARSE = "ojAlgo-QP-ASET-PLN-S";
         public static final String OJALGO_QP_CG_ID = "ojAlgo-QP-CG-id";
         public static final String OJALGO_QP_CG_JACOBI = "ojAlgo-QP-CG-jacobi";
         public static final String OJALGO_QP_CG_SSORP = "ojAlgo-QP-CG-ssorp";
@@ -178,10 +186,6 @@ public abstract class AbstractBenchmark {
         public static final String OJALGO_QP_MINRES_ID = "ojAlgo-QP-MINRES-id";
         public static final String OJALGO_QP_MINRES_JACOBI = "ojAlgo-QP-MINRES-jacobi";
         public static final String OJALGO_QP_MINRES_SSORP = "ojAlgo-QP-MINRES-ssorp";
-        public static final String OJALGO_QP_ASET_NULLSPACE_DENSE = "ojAlgo-QP-ASET-NSP-D";
-        public static final String OJALGO_QP_ASET_NULLSPACE_SPARSE = "ojAlgo-QP-ASET-NSP-S";
-        public static final String OJALGO_QP_ASET_PLAIN_DENSE = "ojAlgo-QP-ASET-PLN-D";
-        public static final String OJALGO_QP_ASET_PLAIN_SPARSE = "ojAlgo-QP-ASET-PLN-S";
         public static final String OJALGO_QP_QMR_ID = "ojAlgo-QP-QMR-id";
         public static final String OJALGO_QP_QMR_JACOBI = "ojAlgo-QP-QMR-jacobi";
         public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QP-QMR-ssorp";
@@ -278,7 +282,8 @@ public abstract class AbstractBenchmark {
          */
         UNSTABLE,
         /**
-         * Does not match the expected value, or the reference solver
+         * Does not match the expected value, or the reference solver - or claims something other than
+         * optimal, such as infeasible, unbounded or merely feasible
          */
         WRONG;
     }
@@ -298,21 +303,49 @@ public abstract class AbstractBenchmark {
 
     }
 
+    /**
+     * Collects the measurements of one model/solver pair. Only the last three times count: measuring is done
+     * once they agree - the slowest and the fastest within 10% of the middle one - and the middle one is
+     * what's reported. Earlier times are dropped, as they're from before the JVM was warm, or before the CPU
+     * had heated up. The middle one rather than the fastest, because for a solver that isn't deterministic -
+     * parallel branch-and-bound, anything multi-threaded - the fastest is the luckiest.
+     * <p>
+     * Used at two levels: within a forked task each solve is one {@link #add(TimedResult)}, and the task
+     * returns the middle of its last three. In the main process each forked task is one
+     * {@link #add(ForkedTask.ReturnValue)}, and what's reported is the middle of the last three of those.
+     * <p>
+     * Every result is compared against the first one. Should one disagree - a different state, or a value
+     * that differs - the state is downgraded, and stays that way, so the pair can't count as solved.
+     */
     static final class ResultsSet {
 
-        static boolean isSimilar(final double value1, final double value2, final double halfRelativeError) {
-            return (Math.abs(value1 - value2) / (value1 + value2) < halfRelativeError);
-        }
+        private static final int WINDOW = 3;
 
-        public TimedResult<Optimisation.Result> fastest;
-
-        private final List<TimedResult<Optimisation.Result>> all = new ArrayList<>();
-        private final double myHalfRelativeTimeError;
+        private boolean myConsistent = true;
+        private int myCount = 0;
+        /**
+         * The last {@link #WINDOW} times, ms, in a ring
+         */
+        private final double[] myLastTimes = new double[WINDOW];
         private final int myMaxCount;
+        /**
+         * The middle of the last times, ms
+         */
+        private double myMedian = Double.NaN;
+        private int myNbTimes = 0;
+        /**
+         * The difference between the slowest and the fastest of the last times, ms
+         */
+        private double myRange = Double.NaN;
+        private Optimisation.Result myResult = null;
+        private final double myTimeAccuracy;
         private final NumberContext myValueAccuracy;
 
+        /**
+         * No cap on the count - for the forked task, which is bounded by its time budget instead.
+         */
         public ResultsSet() {
-            this(DEFAULT_MAX_ITERATIONS);
+            this(Integer.MAX_VALUE);
         }
 
         public ResultsSet(final int maxCount) {
@@ -322,97 +355,127 @@ public abstract class AbstractBenchmark {
         private ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy, final int maxCount) {
             super();
             myValueAccuracy = valueAccuracy;
-            myHalfRelativeTimeError = timeAccuracy / 2D;
+            myTimeAccuracy = timeAccuracy;
             myMaxCount = maxCount;
         }
 
-        public TimedResult<Result> add(final ForkedTask.ReturnValue returnValue) {
+        /**
+         * @return The result of that forked task (not the aggregate), or null if it didn't return one.
+         */
+        public Result add(final ForkedTask.ReturnValue returnValue) {
 
-            if (returnValue == null) {
-                fastest = FAILED;
-                return null;
-            }
-
-            if (returnValue.result == null || Double.isNaN(returnValue.time)) {
-                fastest = FAILED;
+            if (returnValue == null || returnValue.result == null) {
+                this.add(FAILED.result);
                 return null;
             }
 
             Optimisation.Result result = Optimisation.Result.parse(returnValue.result);
 
-            CalendarDateDuration duration = new CalendarDateDuration(returnValue.time, CalendarDateUnit.MILLIS);
+            this.add(result, returnValue.time);
 
-            TimedResult<Result> another = new TimedResult<>(result, duration);
-
-            this.add(another);
-
-            return another;
+            return result;
         }
 
         public void add(final TimedResult<Result> another) {
 
             Objects.requireNonNull(another);
 
-            Result anotherR = another.result;
-            CalendarDateDuration anotherD = another.duration;
-
-            if (anotherR == null || anotherD == null) {
-                fastest = FAILED;
-                return;
-            }
-
-            all.add(another);
-
-            if (fastest != null) {
-
-                Result fastestR = fastest.result;
-                CalendarDateDuration fastestD = fastest.duration;
-
-                State stateF = fastestR.getState();
-                State stateA = anotherR.getState();
-
-                double valueF = fastestR.getValue();
-                double valueA = anotherR.getValue();
-
-                if (stateF != stateA) {
-                    fastest = new TimedResult<>(anotherR.withState(Optimisation.State.INVALID), anotherD);
-                } else if (myValueAccuracy.isDifferent(valueF, valueA)) {
-                    fastest = new TimedResult<>(anotherR.withState(Optimisation.State.APPROXIMATE), anotherD);
-                } else if (fastestD.measure > anotherD.measure) {
-                    fastest = another;
-                }
-
+            if (another.result == null || another.duration == null) {
+                this.add(FAILED.result);
             } else {
-
-                fastest = another;
+                this.add(another.result, another.duration.convertTo(CalendarDateUnit.MILLIS).measure);
             }
         }
 
         public int count() {
-            return all.size();
+            return myCount;
+        }
+
+        /**
+         * False once any result has disagreed with the first one.
+         */
+        public boolean isConsistent() {
+            return myConsistent;
         }
 
         /**
          * True once no further measurements are wanted - either because the count is spent, or because the
-         * two most recent times agree closely enough that another one wouldn't tell us much. The count is
+         * last three times agree: the slowest and the fastest within 10% of the middle one. The count is
          * checked first, so a max of 1 means "one measurement is all we're after".
          */
         public boolean isStable() {
 
-            int size = all.size();
-
-            if (size >= myMaxCount) {
+            if (myCount >= myMaxCount) {
                 return true;
             }
 
-            if (size < 3) {
+            if (myNbTimes < WINDOW) {
                 return false;
             }
 
-            double duration1 = all.get(size - 1).duration.toDurationInMillis();
-            double duration2 = all.get(size - 2).duration.toDurationInMillis();
+            return myRange < myTimeAccuracy * myMedian;
+        }
 
-            return ResultsSet.isSimilar(duration1, duration2, myHalfRelativeTimeError);
+        /**
+         * The first result, its state downgraded if a later one disagreed, together with the middle of the
+         * last three times (or fewer, if there aren't three yet). {@link AbstractBenchmark#FAILED} if there
+         * are no times, null if nothing was added.
+         */
+        public TimedResult<Result> median() {
+
+            if (myResult == null) {
+                return null;
+            }
+
+            if (Double.isNaN(myMedian)) {
+                return FAILED;
+            }
+
+            return new TimedResult<>(myResult, new CalendarDateDuration(myMedian, CalendarDateUnit.MILLIS));
+        }
+
+        /**
+         * The middle of the last three times (or fewer, if there aren't three yet), ms - NaN if there are
+         * none.
+         */
+        public double medianTime() {
+            return myMedian;
+        }
+
+        /**
+         * The first result, its state downgraded if a later one disagreed.
+         */
+        public Result result() {
+            return myResult;
+        }
+
+        private void add(final Result result) {
+            this.add(result, Double.NaN);
+        }
+
+        private void add(final Result result, final double time) {
+
+            myCount++;
+
+            if (myResult == null) {
+                myResult = result;
+            } else if (myResult.getState() != result.getState()) {
+                myResult = myResult.withState(Optimisation.State.INVALID);
+                myConsistent = false;
+            } else if (myValueAccuracy.isDifferent(myResult.getValue(), result.getValue())) {
+                myResult = myResult.withState(Optimisation.State.APPROXIMATE);
+                myConsistent = false;
+            }
+
+            if (!Double.isNaN(time)) {
+
+                myLastTimes[myNbTimes % WINDOW] = time;
+                myNbTimes++;
+
+                SampleSet window = SampleSet.wrap(Arrays.copyOf(myLastTimes, Math.min(myNbTimes, WINDOW)));
+                myMedian = window.getMedian();
+                myRange = window.getRange();
+            }
         }
 
     }
@@ -659,7 +722,7 @@ public abstract class AbstractBenchmark {
             for (Entry<ModelSolverPair, ResultsSet> entry : sortedResults.entrySet()) {
 
                 ModelSolverPair work = entry.getKey();
-                TimedResult<Result> result = entry.getValue().fastest;
+                TimedResult<Result> result = entry.getValue().median();
 
                 String model = work.model;
                 String solver = work.solver;
@@ -678,7 +741,7 @@ public abstract class AbstractBenchmark {
                 if (configuration.refeenceSolver != null) {
                     ModelSolverPair referenceModelSolverPair = new ModelSolverPair(model, configuration.refeenceSolver);
                     ResultsSet referenceResultsSet = sortedResults.get(referenceModelSolverPair);
-                    referenceResult = referenceResultsSet != null ? referenceResultsSet.fastest.result : null;
+                    referenceResult = referenceResultsSet != null ? referenceResultsSet.result() : null;
                 }
 
                 boolean solved;
@@ -755,43 +818,56 @@ public abstract class AbstractBenchmark {
 
                 // Have a result
 
-                TimedResult<Result> fastest = mainResults.add(subResults);
+                Result latest = mainResults.add(subResults);
 
-                if (!fastest.result.getState().isOptimal()) {
+                if (!subResults.consistent || !mainResults.isConsistent()) {
 
-                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, fastest.result.getState(), FailReason.UNSTABLE);
+                    // Repeated solves, within this pass or across passes, didn't agree
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, latest.getState(), FailReason.UNSTABLE);
                     totReasons.put(modelSolverPair, FailReason.UNSTABLE);
                     iterDone.add(modelSolverPair);
 
-                } else if (expectedValue != null && ACCURACY.isDifferent(expectedValue.doubleValue(), fastest.result.getValue())) {
+                } else if (!latest.getState().isOptimal()) {
 
-                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, fastest.result.getValue(),
-                            "!= " + expectedValue);
+                    // Consistently not optimal - infeasible, unbounded, only feasible...
+                    FailReason reason = latest.getState() == Optimisation.State.FAILED ? FailReason.FAILED : FailReason.WRONG;
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, latest.getState(), reason);
+                    totReasons.put(modelSolverPair, reason);
+                    iterDone.add(modelSolverPair);
+
+                } else if (expectedValue != null && ACCURACY.isDifferent(expectedValue.doubleValue(), latest.getValue())) {
+
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, latest.getValue(), "!= " + expectedValue);
                     totReasons.put(modelSolverPair, FailReason.WRONG);
                     iterDone.add(modelSolverPair);
 
                 } else if (!subResults.valid) {
 
-                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, fastest.result.getValue(),
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, latest.getValue(),
                             "value agrees, solution infeasible");
                     totReasons.put(modelSolverPair, FailReason.INVALID);
                     iterDone.add(modelSolverPair);
 
-                } else if (mainResults.count() == 1) {
+                } else {
 
-                    // Report the first pass whether or not the pair is done with - otherwise a stabilising
-                    // run shows nothing but failures until the third iteration.
-                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, "Solved", mainResults.fastest.duration,
-                            mainResults.fastest.result.getValue());
-                    if (mainResults.isStable()) {
-                        iterDone.add(modelSolverPair);
+                    // Report every pass, whether or not the pair is done with, so progress can be followed
+                    boolean stable = mainResults.isStable();
+
+                    String what;
+                    if (mainResults.count() == 1) {
+                        what = "Solved";
+                    } else if (stable) {
+                        what = "Time stable";
+                    } else {
+                        what = "Time not stable";
                     }
 
-                } else if (mainResults.isStable()) {
+                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, what, mainResults.median().duration,
+                            mainResults.median().result.getValue());
 
-                    BasicLogger.debugColumns(WIDTH, modelSolverPair.model, modelSolverPair.solver, "Time stable", mainResults.fastest.duration,
-                            mainResults.fastest.result.getValue());
-                    iterDone.add(modelSolverPair);
+                    if (stable) {
+                        iterDone.add(modelSolverPair);
+                    }
                 }
 
             } else {

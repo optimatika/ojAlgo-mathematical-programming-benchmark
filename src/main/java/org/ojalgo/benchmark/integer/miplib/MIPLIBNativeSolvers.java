@@ -34,7 +34,7 @@ import org.ojalgo.concurrent.Parallelism;
  * available models run out somewhere below 20k, so that range is the whole of what is left.
  * <p>
  * One solve per pair, so the measure is how many models each solver gets through. The reported times are a
- * single cold sample each - fine for spotting order-of-magnitude differences, not for close comparisons.
+ * single sample each - fine for spotting order-of-magnitude differences, not for close comparisons.
  */
 public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
 

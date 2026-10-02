@@ -23,7 +23,16 @@ package org.ojalgo.benchmark.linear.meszaros;
 
 import org.ojalgo.concurrent.Parallelism;
 
-public final class MeszarosBenchmark extends AbstractMeszaros {
+/**
+ * Used for published Meszaros results. The 4 included solvers are:
+ * <ul>
+ * <li>ojAlgo
+ * <li>The best Java (Open Source) alternative: Hipparchus
+ * <li>The best Open Source (Native) alternative: HiGHS
+ * <li>One more...
+ * </ul>
+ */
+public final class BenchmarkMeszaros extends AbstractMeszaros {
 
     public static void main(final String[] args) {
 

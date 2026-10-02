@@ -28,15 +28,22 @@ import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
-public final class MarosMeszarosBenchmark2 extends AbstractMarosMeszaros {
+/**
+ * Used for published MarosMeszaros results. The 4 included solvers are:
+ * <ul>
+ * <li>ojAlgo
+ * <li>The best Java (Open Source) alternative: SSC-LP
+ * <li>The best Open Source (Native) alternative: SCIP
+ * <li>One more...
+ * </ul>
+ */
+public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
-    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.OJALGO_QP_ADMM, Contender.OJALGO_QP_ASET_NULLSPACE_DENSE,
-            Contender.OJALGO_QP_ASET_NULLSPACE_SPARSE, Contender.OJALGO_QP_ASET_PLAIN_DENSE, Contender.OJALGO_QP_ASET_PLAIN_SPARSE, Contender.CLARABEL,
-            Contender.GUROBI, Contender.COPT };
+    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL, Contender.GUROBI, Contender.COPT };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
-    private static int MAX_DIM = 10_000;
+    private static int MAX_DIM = 1_000;
     private static int MIN_DIM = 1;
 
     static {
@@ -60,7 +67,7 @@ public final class MarosMeszarosBenchmark2 extends AbstractMarosMeszaros {
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
         configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.TWO;
-        configuration.maxIterations = 20;
+        configuration.maxIterations = 3;
 
         // Keyed by the names used here - the README's are different (no underscores)
         for (String model : ALL_MODELS) {
