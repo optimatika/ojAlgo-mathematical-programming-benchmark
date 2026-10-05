@@ -39,11 +39,11 @@ import org.ojalgo.concurrent.Parallelism;
  */
 public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
-    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL, Contender.GUROBI, Contender.COPT };
+    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL, Contender.COPT };
 
     static final Set<ModelSolverPair> WORK = new HashSet<>();
 
-    private static int MAX_DIM = 1_000;
+    private static int MAX_DIM = 10_000;
     private static int MIN_DIM = 1;
 
     static {
@@ -66,8 +66,8 @@ public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
         configuration.pathPrefix = "/optimisation/marosmeszaros/";
         configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.TWO;
-        configuration.maxIterations = 3;
+        configuration.parallelism = Parallelism.FOUR;
+        configuration.maxIterations = 20;
 
         // Keyed by the names used here - the README's are different (no underscores)
         for (String model : ALL_MODELS) {
