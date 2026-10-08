@@ -43,32 +43,12 @@ import org.ojalgo.concurrent.Parallelism;
  */
 public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
 
-    /**
-     * Available models by variable count: 205 below 1k, 204 in 1k-5k, 74 in 5k-20k, none above.
-     */
-    private static final int MIN_SIZE = 1_000;
-    private static final int MAX_SIZE = 2_000;
-
-    /**
-     * Wall clock is dominated by the pairs that never finish - roughly {@code failures x TIMEOUT / workers} -
-     * and on models this size a good share will be failures. That product, not the solving, is what decides
-     * how long a run takes.
-     */
-    private static final long TIMEOUT = 1_000L * 60L * 3L;
-
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP,
-                Contender.HIGHS, Contender.MOSEK, Contender.CPSAT);
+        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.CPLEX, Contender.SCIP, Contender.HIGHS, Contender.CPSAT, Contender.XPRESS,
+                Contender.COPT, Contender.MOSEK);
 
-        configuration.minProbSize = MIN_SIZE;
-        configuration.maxProbSize = MAX_SIZE;
-
-        configuration.maxIterations = 1;
-        configuration.maxWaitTime = TIMEOUT;
-        configuration.parallelism = Parallelism.TWO;
-
-        configuration.label = MIN_SIZE + "_" + MAX_SIZE;
+        configuration.parallelism = Parallelism.EIGHT;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

@@ -1,0 +1,473 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 8, threads per worker: 3
+Models: 148 of 738 within size limits (285 not shipped), solvers: 7
+Worker library path: /Applications/copt80/lib:/Applications/CPLEX_Studio_Community222/cplex/bin/arm64_osx:/Applications/mosek/11.2/tools/platform/osxaarch64/bin:/Applications/FICO Xpress/xpressmp/lib:/Users/apete/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Worker environment: DYLD_LIBRARY_PATH=/Applications/FICO Xpress/xpressmp/lib
+Worker environment: GRB_LICENSE_FILE=/Users/apete/gurobi.lic
+Worker environment: LD_LIBRARY_PATH=/Applications/FICO Xpress/xpressmp/lib
+Worker environment: XPAUTH_PATH=/Applications/FICO Xpress/xpressmp/bin/xpauth.xpr
+Worker environment: XPRESSDIR=/Applications/FICO Xpress/xpressmp
+
+
+Iteration 1 with 1036 model/solver pairs remaining 2026-10-08T15:26:53.812706Z
+-----------------------------------------------------------------------------
+enlight8              CPLEX                 Solved                2.416417ms            27.0                  
+gr4x6                 HiGHS                 Solved                10.265833ms           202.35                
+mod013                COPT                  Solved                57.603667ms           280.9500000000001     
+gr4x6                 CPLEX                 Solved                2.715917ms            202.35                
+neos-1430701          Xpress                Solved                791.255833ms          -77.0                 
+mod013                SCIP                  Solved                846.405667ms          280.95                
+neos-5192052-neckar   CPLEX                 Solved                3.163458ms            -1.1670000000000002E7 
+misc01                Xpress                Solved                100.622541ms          563.5                 
+exp-1-500-5-5         Mosek                 Solved                4858.456333ms         65887.00000000003     
+fixnet4               CP-SAT                Solved                4353.227083ms         8936.0                
+neos-5192052-neckar   Xpress                Solved                3.705583ms            -1.1669999999999994E7 
+timtab1               CPLEX                 Solved                15716.184208ms        764771.9999997802     
+enlight_hard          CPLEX                 Solved                3.504459ms            37.0                  
+neos-1430701          CPLEX                 Solved                1272.74775ms          -77.0                 
+neos-5192052-neckar   HiGHS                 Solved                33.29525ms            -1.167E7              
+p0548                 CPLEX                 Solved                26.813667ms           8691.0                
+pp08aCUTS             Xpress                Solved                243.86ms              7349.999999999988     
+p0548                 Mosek                 Solved                67.815416ms           8691.0                
+enlight8              Xpress                Solved                0.939584ms            27.0                  
+enlight8              HiGHS                 Solved                473.377167ms          27.00000000000374     
+neos-3072252-nete     COPT                  Solved                28785.274042ms        1.1807697999999972E7  
+gen-ip002             CPLEX                 Solved                108669.098375ms       -4783.7333916         
+misc02                Xpress                Solved                12.591416ms           1690.0                
+timtab1               HiGHS                 Solved                39538.83025ms         764771.9999998799     
+gen-ip021             COPT                  Solved                99675.085833ms        2361.4541951916       
+gr4x6                 Mosek                 Solved                5.782042ms            202.35000000000002    
+fixnet3               CP-SAT                Solved                6387.375333ms         51973.0               
+neos-3754480-nidda    Mosek                 FAILED                TIMEOUT               
+p80x400b              Xpress                FAILED                TIMEOUT               
+danoint               CP-SAT                FAILED                TIMEOUT               
+pigeon-10             CPLEX                 Solved                70.326ms              -9000.0               
+exp-1-500-5-5         HiGHS                 Solved                2867.850875ms         65887.00000000013     
+mik-250-1-100-1       COPT                  Solved                2347.845541ms         -66729.0              
+timtab2               CPLEX                 FAILED                TIMEOUT               
+gen-ip021             SCIP                  Solved                246594.544166ms       2361.4541951916       
+neos-3754480-nidda    HiGHS                 FAILED                TIMEOUT               
+gen-ip002             HiGHS                 FAILED                TIMEOUT               
+lseu                  CP-SAT                Solved                171.0075ms            1120.0                
+fixnet6               COPT                  Solved                934.500792ms          3982.9999999999986    
+flugpl                Xpress                Solved                1.401792ms            1201500.0             
+misc01                CPLEX                 Solved                39.027375ms           563.5                 
+pigeon-10             Xpress                Solved                97.308375ms           -9000.0               
+mod013                Mosek                 Solved                71.461292ms           280.95                
+neos-942830           CP-SAT                Solved                135321.739875ms       16.0                  
+mik-250-1-100-1       SCIP                  Solved                49111.843292ms        -66729.00000000003    
+p0548                 Xpress                Solved                44.609625ms           8691.0                
+enlight_hard          HiGHS                 Solved                6071.552834ms         36.99999999999532     
+fixnet6               SCIP                  Solved                4682.529584ms         3983.0                
+gen-ip002             Mosek                 Solved                265715.932958ms       -4783.7333916         
+gen-ip021             CP-SAT                FAILED                TIMEOUT               
+neos15                COPT                  Solved                280215.851209ms       80598.43009686065     
+neos17                CPLEX                 Solved                426.027292ms          0.1500025774225774    
+neos-1440460          HiGHS                 Solved                118241.889208ms       -179.24999999999997   
+exp-1-500-5-5         SCIP                  Solved                1266.22275ms          65887.00000000003     
+beavma                CP-SAT                Solved                145.060291ms          383285.0              
+neos-3072252-nete     CP-SAT                FAILED                TIMEOUT               
+exp-1-500-5-5         COPT                  Solved                460.685209ms          65887.00000000001     
+mik-250-1-100-1       HiGHS                 Solved                8363.236583ms         -66729.0              
+23588                 CPLEX                 Solved                289.035875ms          8090.0                
+fixnet6               Mosek                 Solved                388.446292ms          3982.9999999999995    
+neos15                SCIP                  FAILED                TIMEOUT               
+timtab2               HiGHS                 FAILED                TIMEOUT               
+danoint               COPT                  FAILED                TIMEOUT               
+neos-3072252-nete     Mosek                 Solved                2015.089042ms         1.1807698000000002E7  
+neos-3611447-jijia    Xpress                Solved                139.411417ms          107.0                 
+neos-5192052-neckar   Mosek                 Solved                5.682333ms            -1.1670000000000006E7 
+misc05                Xpress                Solved                70.811875ms           2984.5                
+danoint               SCIP                  FAILED                TIMEOUT               
+p0548                 SCIP                  Solved                57.705209ms           8691.0                
+neos15                HiGHS                 Solved                179071.227542ms       80598.43009686067     
+23588                 HiGHS                 Solved                5383.566208ms         8089.999999999969     
+k16x240b              HiGHS                 FAILED                TIMEOUT               
+flugpl                CPLEX                 Solved                2.045958ms            1201500.0             
+neos-3754480-nidda    Xpress                FAILED                TIMEOUT               
+mik-250-1-100-1       CP-SAT                Solved                140.167583ms          -66729.0              
+pp08aCUTS             HiGHS                 Solved                1217.16525ms          7350.000000017598     
+gr4x6                 COPT                  Solved                10.347916ms           202.35                
+neos-2652786-brda     CP-SAT                FAILED                TIMEOUT               
+neos-3610040-iskar    CPLEX                 Solved                53.608333ms           37.0                  
+neos-3754480-nidda    SCIP                  FAILED                TIMEOUT               
+neos-3754480-nidda    COPT                  FAILED                TIMEOUT               
+gr4x6                 SCIP                  Solved                5.145167ms            202.35000000000002    
+timtab2               Mosek                 FAILED                TIMEOUT               
+enlight_hard          Mosek                 Solved                29127.751041ms        36.99999999999991     
+neos15                CP-SAT                FAILED                TIMEOUT               
+gr4x6                 Xpress                Solved                3.245042ms            202.35                
+danoint               Mosek                 FAILED                TIMEOUT               
+timtab1               Xpress                Solved                8173.561542ms         764771.9999998801     
+neos-1440460          Mosek                 FAILED                TIMEOUT               
+enlight8              COPT                  Solved                4.369958ms            27.0                  
+misc02                Mosek                 Solved                96.131666ms           1690.0                
+neos17                HiGHS                 Solved                4463.232209ms         0.15000257742257742   
+k16x240b              Mosek                 FAILED                TIMEOUT               
+enlight_hard          SCIP                  Solved                5.234041ms            37.0                  
+fixnet6               CPLEX                 Solved                145.913791ms          3983.0                
+neos-1430701          HiGHS                 Solved                6862.081333ms         -77.00000000000024    
+flugpl                Mosek                 Solved                18.396041ms           1201500.0             
+misc03                Xpress                Solved                72.311042ms           3360.0                
+enlight8              SCIP                  Solved                3.576542ms            27.0                  
+stein9                CP-SAT                Solved                2.765875ms            5.0                   
+p80x400b              HiGHS                 FAILED                TIMEOUT               
+timtab1               SCIP                  Solved                47535.79075ms         764771.9999997801     
+enlight_hard          Xpress                Solved                1.396125ms            37.0                  
+gen-ip002             Xpress                Solved                183132.088875ms       -4783.7333916         
+misc01                Mosek                 Solved                358.530459ms          563.5                 
+enlight_hard          COPT                  Solved                3.146584ms            37.0                  
+k16x240               CP-SAT                FAILED                TIMEOUT               
+exp-1-500-5-5         Xpress                Solved                450.785459ms          65887.00000000015     
+enlight8              Mosek                 Solved                898.141708ms          27.0                  
+timtab1               Mosek                 FAILED                TIMEOUT               
+gen-ip021             Mosek                 Solved                167235.748541ms       2361.4541951916       
+exp-1-500-5-5         CP-SAT                FAILED                TIMEOUT               
+neos-942830           COPT                  Solved                77515.301541ms        16.00000000000366     
+timtab2               COPT                  FAILED                TIMEOUT               
+timtab1               COPT                  Solved                26515.048875ms        764771.99999978       
+mod013                CPLEX                 Solved                14.80575ms            280.95                
+timtab2               Xpress                FAILED                TIMEOUT               
+enlight8              CP-SAT                Solved                35.394125ms           27.0                  
+pp08aCUTS             SCIP                  Solved                739.610958ms          7350.000000000001     
+pp08aCUTS             COPT                  Solved                273.219042ms          7349.9999999999945    
+mik-250-20-75-5       SCIP                  Solved                3585.871791ms         -51532.00000000056    
+pigeon-10             HiGHS                 FAILED                TIMEOUT               
+stein15               CPLEX                 Solved                3.639041ms            9.0                   
+mik-250-20-75-5       COPT                  Solved                204.062833ms          -51532.00000000003    
+neos-3072252-nete     SCIP                  FAILED                TIMEOUT               
+supportcase16         Xpress                Solved                18.069625ms           288.0                 
+mod013                Xpress                Solved                38.858834ms           280.9499999999998     
+gr4x6                 CP-SAT                Solved                9.6675ms              202.35                
+k16x240b              Xpress                Solved                29251.408792ms        11393.00000000079     
+pigeon-10             COPT                  Solved                68.347125ms           -9000.0               
+fixnet4               HiGHS                 Solved                255.344791ms          8936.000000000002     
+flugpl                COPT                  Solved                0.6865ms              1201500.0             
+neos-3754480-nidda    CP-SAT                FAILED                TIMEOUT               
+neos-942830           SCIP                  FAILED                TIMEOUT               
+stein9                COPT                  Solved                8.626458ms            5.0                   
+neos-1440460          COPT                  Solved                69455.951604ms        -179.24999999999997   
+p0040                 Xpress                Solved                1.492458ms            62027.0               
+gen-ip002             CP-SAT                FAILED                TIMEOUT               
+p0282                 HiGHS                 Solved                125.149417ms          258411.0              
+p0282                 Xpress                Solved                30.532958ms           258411.0              
+neos-1440460          Xpress                FAILED                TIMEOUT               
+enlight_hard          CP-SAT                Solved                171.552208ms          37.0                  
+p80x400b              COPT                  FAILED                TIMEOUT               
+p80x400b              SCIP                  FAILED                TIMEOUT               
+p0040                 HiGHS                 Solved                4.964042ms            62027.0               
+neos-1440460          SCIP                  FAILED                TIMEOUT               
+flugpl                SCIP                  Solved                25.693125ms           1201500.0             
+fixnet6               Xpress                Solved                497.820125ms          3983.0000000000005    
+breastcancer-regularizXpress                Solved                297137.386708ms       35.767842105263156    
+misc03                Mosek                 Solved                607.736083ms          3359.999999999999     
+23588                 Mosek                 Solved                823.064625ms          8090.0                
+mik-250-20-75-4       SCIP                  Solved                23402.386583ms        -52301.00000000014    
+egout                 CP-SAT                Solved                13.916417ms           568.1007              
+neos5                 SCIP                  FAILED                TIMEOUT               
+neos-3611447-jijia    Mosek                 Solved                463.734916ms          107.0                 
+neos-3072252-nete     Xpress                Solved                836.011208ms          1.1807698000000019E7  
+fixnet3               Mosek                 Solved                105.087333ms          51973.0               
+pigeon-10             SCIP                  Solved                9680.771208ms         -9000.0               
+mik-250-20-75-3       COPT                  Solved                252.443041ms          -52242.0              
+markshare_4_0         CP-SAT                Solved                22302.610083ms        1.0                   
+rlp1                  CP-SAT                Solved                5313.057834ms         15.0                  
+mik-250-20-75-3       SCIP                  Solved                3013.945042ms         -52242.00000000032    
+rout                  CP-SAT                Solved                8630.120791ms         1077.56               
+supportcase14         Xpress                Solved                20.217ms              288.0                 
+neos-5192052-neckar   COPT                  Solved                19.213042ms           -1.167E7              
+supportcase14         Mosek                 Solved                79.825459ms           287.99999999999886    
+misc01                CP-SAT                Solved                9.445583ms            563.5                 
+fixnet4               Mosek                 Solved                486.202042ms          8935.999999999998     
+p0548                 CP-SAT                FAILED                TIMEOUT               
+neos-3072252-nete     CPLEX                 Solved                1280.553625ms         1.1807697999999993E7  
+neos-2652786-brda     COPT                  Solved                110693.452417ms       4.7924996             
+22433                 CPLEX                 Solved                53.909208ms           21477.0               
+neos5                 COPT                  Solved                40283.308875ms        14.99999999999951     
+misc07                Xpress                Solved                2473.283416ms         2810.000000000022     
+misc05                Mosek                 Solved                273.709417ms          2984.499999999974     
+lseu                  CPLEX                 Solved                22.115709ms           1120.0                
+mik-250-20-75-4       COPT                  Solved                578.397458ms          -52301.0              
+neos-1430701          SCIP                  Solved                3036.057125ms         -77.0                 
+22433                 Xpress                Solved                290.785084ms          21477.0               
+stein9                SCIP                  Solved                7.850541ms            5.0                   
+mik-250-20-75-2       SCIP                  Solved                4958.416375ms         -50768.00000000006    
+breastcancer-regularizCPLEX                 WRONG                 1.00222906156902      != 35.76784210526315  
+neos-5192052-neckar   SCIP                  Solved                14.967208ms           -1.167E7              
+misc02                CP-SAT                Solved                5.726709ms            1690.0                
+fixnet3               HiGHS                 Solved                82.867542ms           51973.0               
+danoint               Xpress                FAILED                TIMEOUT               
+pp08aCUTS             Mosek                 Solved                650.313084ms          7350.000000000002     
+set1cl                CP-SAT                Solved                33.357667ms           6484.25               
+neos-1430701          COPT                  Solved                3014.197667ms         -76.99999999999999    
+mik-250-20-75-1       SCIP                  Solved                2715.874375ms         -49716.00000000016    
+enlight13             COPT                  Solved                4.492834ms            71.0                  
+mik-250-20-75-1       COPT                  Solved                239.637792ms          -49716.0              
+beavma                CPLEX                 Solved                22.647959ms           383285.0              
+gen-ip021             Xpress                Solved                104236.024042ms       2361.4541951916       
+sample2               COPT                  Solved                12.777917ms           374.99999999999994    
+enlight13             SCIP                  Solved                8.142042ms            71.0                  
+fixnet3               COPT                  Solved                83.492417ms           51973.0               
+supportcase16         Mosek                 Solved                108.876791ms          287.99999999999426    
+sample2               SCIP                  Solved                4.902667ms            375.0                 
+p0033                 COPT                  Solved                13.289291ms           3088.9999999999986    
+stein9                Mosek                 Solved                2.907708ms            5.0                   
+danoint               CPLEX                 FAILED                TIMEOUT               
+fixnet3               SCIP                  Solved                27.800917ms           51973.0               
+neos-942830           Mosek                 FAILED                TIMEOUT               
+dfn-gwin-UUM          CP-SAT                INFEASIBLE            WRONG                 
+bppc8-02              Xpress                Solved                42.895375ms           507.0                 
+mik-250-20-75-2       COPT                  Solved                146.207042ms          -50768.00000000001    
+gen-ip021             CPLEX                 Solved                46271.410542ms        2361.4541951916       
+misc07                Mosek                 Solved                3341.180916ms         2810.0                
+neos5                 Mosek                 Solved                64141.8006045ms       15.0                  
+fixnet4               COPT                  Solved                327.931875ms          8936.0                
+neos5                 HiGHS                 Solved                83911.562208ms        15.00000000021432     
+f2gap40400            Xpress                Solved                14.966875ms           20772.0               
+neos-3072252-nete     HiGHS                 FAILED                TIMEOUT               
+neos-3610040-iskar    CP-SAT                Solved                69.134666ms           37.0                  
+mod013                HiGHS                 Solved                200.176292ms          280.95000000000016    
+neos-1430701          Mosek                 Solved                2242.9195ms           -77.0                 
+k16x240b              CPLEX                 Solved                29996.134917ms        11393.000000162061    
+mik-250-1-100-1       CPLEX                 Solved                539.09325ms           -66729.0              
+k16x240               CPLEX                 Solved                96489.494416ms        10674.000000006645    
+fixnet4               SCIP                  Solved                917.680917ms          8936.000000000027     
+enlight15             SCIP                  Solved                9.694209ms            69.0                  
+mas74                 Xpress                Solved                115235.378125ms       11801.18572900001     
+neos-911970           COPT                  Solved                4881.556709ms         54.76                 
+enlight15             COPT                  Solved                14065.830125ms        69.0                  
+neos-911970           SCIP                  Solved                9009.875708ms         54.76                 
+23588                 COPT                  Solved                595.027834ms          8090.0                
+p0040                 SCIP                  Solved                2.343042ms            62027.0               
+23588                 SCIP                  Solved                2773.601833ms         8089.999999999999     
+p0282                 SCIP                  Solved                133.013917ms          258411.0              
+exp-1-500-5-5         CPLEX                 Solved                1130.508291ms         65887.0               
+neos17                CP-SAT                FAILED                TIMEOUT               
+fixnet4               Xpress                Solved                108.577791ms          8936.0                
+mad                   CP-SAT                INFEASIBLE            WRONG                 
+fixnet6               HiGHS                 Solved                1823.033334ms         3983.0                
+23588                 Xpress                Solved                548.476542ms          8090.000000001685     
+neos15                CPLEX                 Solved                45459.10725ms         80598.43009686071     
+gen-ip021             HiGHS                 FAILED                TIMEOUT               
+nexp-50-20-1-1        CPLEX                 Solved                29.794583ms           29.0                  
+p80x400b              Mosek                 FAILED                TIMEOUT               
+m100n500k4r1          SCIP                  FAILED                TIMEOUT               
+mik-250-20-75-5       HiGHS                 Solved                2594.652ms            -51532.00000000022    
+p0282                 Mosek                 Solved                148.259959ms          258411.0              
+ran16x16              CPLEX                 Solved                5557.743792ms         3823.0                
+p0040                 Mosek                 Solved                1.895708ms            62026.9999999999      
+22433                 HiGHS                 Solved                2487.100666ms         21476.99999999998     
+enlight15             Mosek                 FAILED                TIMEOUT               
+flugpl                HiGHS                 Solved                52.290417ms           1201500.0             
+fixnet3               Xpress                Solved                18.854917ms           51973.0               
+ic97_tension          CP-SAT                FAILED                TIMEOUT               
+pigeon-10             Mosek                 Solved                195390.492917ms       -9000.0               
+neos-2652786-brda     SCIP                  FAILED                TIMEOUT               
+mas76                 Xpress                Solved                8155.240333ms         40005.05414200001     
+breastcancer-regularizHiGHS                 FAILED                TIMEOUT               
+set1al                CP-SAT                Solved                39.752ms              15869.75              
+mik-250-20-75-4       HiGHS                 Solved                12883.748291ms        -52301.00000000885    
+egout                 Xpress                Solved                3.04425ms             568.1007              
+danoint               HiGHS                 FAILED                TIMEOUT               
+p0033                 Mosek                 Solved                25.079208ms           3088.999999999912     
+supportcase26         CP-SAT                INFEASIBLE            WRONG                 
+go19                  COPT                  FAILED                TIMEOUT               
+r50x360               COPT                  Solved                3239.318ms            1652.9999999999936    
+stein27               CP-SAT                Solved                80.747958ms           18.0                  
+f2gap40400            HiGHS                 Solved                9.494083ms            20772.0               
+pipex                 HiGHS                 Solved                51.254416ms           788.2629999997624     
+timtab1CUTS           Xpress                Solved                10372.70275ms         764771.9999997802     
+p0040                 CP-SAT                Solved                3.453209ms            62027.0               
+r50x360               SCIP                  Solved                32377.005417ms        1653.0000000000032    
+mik-250-20-75-5       Xpress                Solved                176.274875ms          -51532.0              
+ran12x21              CP-SAT                FAILED                TIMEOUT               
+neos-3046615-murg     Xpress                Solved                2298.496834ms         1600.0                
+neos-911970           Mosek                 FAILED                TIMEOUT               
+22433                 COPT                  Solved                284.814709ms          21476.99999999998     
+graphdraw-domain      Xpress                Solved                107058.89925ms        19686.0               
+neos-3610173-itata    Mosek                 Solved                524.43775ms           148.0                 
+p0282                 CP-SAT                Solved                68.346292ms           258411.0              
+ran16x16              SCIP                  Solved                56769.317542000004ms  3823.0                
+enlight13             Mosek                 FAILED                TIMEOUT               
+rout                  Mosek                 Solved                5672.565459ms         1077.56               
+pipex                 CPLEX                 Solved                23.592291ms           788.262999999995      
+neos-2652786-brda     Mosek                 FAILED                TIMEOUT               
+neos-1426635          COPT                  FAILED                TIMEOUT               
+f2gap40400            CPLEX                 Solved                8.022208ms            20772.0               
+neos-1426635          SCIP                  FAILED                TIMEOUT               
+nexp-50-20-1-1        Mosek                 Solved                34.107667ms           29.0                  
+neos-911880           SCIP                  Solved                7229.361167ms         54.76000000000003     
+bppc8-02              HiGHS                 Solved                213.72075ms           507.0                 
+neos-911970           HiGHS                 Solved                5094.025209ms         54.76000000000944     
+ran16x16              COPT                  Solved                10322.825833ms        3823.0                
+markshare_5_0         Xpress                FAILED                TIMEOUT               
+neos-911880           COPT                  Solved                51869.9985835ms       54.76                 
+graphdraw-domain      CPLEX                 Solved                82112.971208ms        19686.000000000044    
+graphdraw-gemcutter   CP-SAT                FAILED                TIMEOUT               
+neos-911970           Xpress                Solved                4415.595916ms         54.75999999999864     
+stein9                Xpress                Solved                0.467625ms            5.0                   
+neos5                 Xpress                Solved                30368.394167ms        15.0                  
+22433                 SCIP                  Solved                1595.133583ms         21477.0               
+set1ch                HiGHS                 Solved                296.601875ms          54537.75              
+p0040                 COPT                  Solved                2.231792ms            62027.0               
+enigma                HiGHS                 Solved                120.463917ms          0.0                   
+set1cl                Xpress                Solved                9.027334ms            6484.25               
+p0282                 COPT                  Solved                116.435125ms          258410.99999999997    
+rlp1                  Mosek                 FAILED                TIMEOUT               
+pipex                 Mosek                 Solved                37.406875ms           788.263               
+neos-2657525-crna     HiGHS                 FAILED                TIMEOUT               
+ran14x18-disj-8       HiGHS                 FAILED                TIMEOUT               
+rout                  CPLEX                 Solved                1470.931583ms         1077.559999999999     
+ej                    Xpress                FAILED                TIMEOUT               
+egout                 CPLEX                 Solved                2.98075ms             568.1007              
+stein15               COPT                  Solved                17.460833ms           9.0                   
+go19                  SCIP                  FAILED                TIMEOUT               
+mik-250-20-75-2       Mosek                 Solved                797.835625ms          -50768.0              
+mik-250-20-75-3       Xpress                Solved                89.166583ms           -52242.0              
+set1ch                Mosek                 Solved                246.162291ms          54537.75              
+timtab1CUTS           HiGHS                 Solved                42586.711708ms        764771.99999988       
+rlp1                  CPLEX                 Solved                13.675125ms           15.0                  
+neos-3611689-kaihu    SCIP                  Solved                517.180375ms          119.0                 
+neos-2652786-brda     Xpress                Solved                263888.1175ms         4.7924996             
+stein15               SCIP                  Solved                21.1085ms             9.0                   
+enigma                CPLEX                 Solved                27.991666ms           0.0                   
+breastcancer-regularizSCIP                  FAILED                TIMEOUT               
+sample2               Mosek                 Solved                45.729208ms           375.0                 
+bppc8-02              CPLEX                 Solved                73.089042ms           507.0                 
+p0033                 SCIP                  Solved                11.079208ms           3089.0                
+breastcancer-regularizCOPT                  FAILED                TIMEOUT               
+mik-250-20-75-1       Mosek                 Solved                1202.846917ms         -49716.0              
+r50x360               Mosek                 Solved                10053.846ms           1653.0000000000068    
+nexp-50-20-1-1        HiGHS                 Solved                40.227166ms           29.0                  
+set1cl                CPLEX                 Solved                21.147959ms           6484.25               
+mik-250-20-75-4       Xpress                Solved                246.839625ms          -52301.0              
+neos-3611689-kaihu    COPT                  Solved                200.153542ms          119.0                 
+sp150x300d            CP-SAT                Solved                57.790875ms           69.0                  
+beavma                Xpress                Solved                22.432417ms           383284.99999999965    
+neos-3046615-murg     HiGHS                 FAILED                TIMEOUT               
+ran16x16              Mosek                 Solved                17659.80175ms         3823.0                
+neos-911970           CPLEX                 Solved                2490.388625ms         54.75999999999997     
+go19                  Mosek                 FAILED                TIMEOUT               
+supportcase26         SCIP                  FAILED                TIMEOUT               
+neos-911880           Mosek                 FAILED                TIMEOUT               
+neos-911880           HiGHS                 Solved                11571.486958ms        54.75999999998501     
+bm23                  CPLEX                 Solved                19.849833ms           34.0                  
+nexp-50-20-1-1        SCIP                  Solved                256.898333ms          29.0                  
+mik-250-20-75-4       Mosek                 Solved                3936.7ms              -52301.0              
+neos-1425699          SCIP                  Solved                4.599333ms            3.179698977E9         
+neos-1425699          COPT                  Solved                6.829792ms            3.179698977E9         
+nexp-50-20-1-1        COPT                  Solved                60.07025ms            29.0                  
+k16x240               Xpress                Solved                37674.31725ms         10674.00000000001     
+set1ch                COPT                  Solved                329.257792ms          54543.0               
+supportcase26         COPT                  FAILED                TIMEOUT               
+r50x360               HiGHS                 Solved                23771.218375ms        1653.0000000009047    
+graphdraw-domain      Mosek                 Solved                186574.265417ms       19686.0               
+neos-2657525-crna     Xpress                FAILED                TIMEOUT               
+neos-3046615-murg     Mosek                 FAILED                TIMEOUT               
+neos-2652786-brda     CPLEX                 FAILED                TIMEOUT               
+graphdraw-gemcutter   Mosek                 Solved                40741.523167ms        7118.5                
+mik-250-20-75-3       Mosek                 Solved                776.373792ms          -52242.0              
+cov1075               CPLEX                 Solved                1069.784667ms         20.0                  
+neos-3610173-itata    COPT                  Solved                159.637875ms          148.0                 
+pipex                 SCIP                  Solved                40.00775ms            788.263               
+neos-2652786-brda     HiGHS                 FAILED                TIMEOUT               
+assign1-5-8           SCIP                  FAILED                TIMEOUT               
+ej                    HiGHS                 FAILED                TIMEOUT               
+set1ch                Xpress                Solved                109.826583ms          54537.75              
+markshare_5_0         HiGHS                 FAILED                TIMEOUT               
+lseu                  HiGHS                 Solved                128.628917ms          1120.0                
+pigeon-08             Xpress                Solved                220.841208ms          -7000.0               
+neos-911880           CP-SAT                FAILED                TIMEOUT               
+neos-1426635          HiGHS                 FAILED                TIMEOUT               
+assign1-5-8           COPT                  FAILED                TIMEOUT               
+neos-3610173-itata    SCIP                  Solved                752.234917ms          148.0                 
+set1cl                HiGHS                 Solved                60.073542ms           6484.25               
+neos-3611689-kaihu    Mosek                 Solved                373.286625ms          119.0                 
+neos-3046601-motu     Xpress                Solved                94.142416ms           1459.0                
+neos-1440460          CP-SAT                FAILED                TIMEOUT               
+stein9                HiGHS                 Solved                11.906209ms           5.0                   
+ran14x18-disj-8       Mosek                 Solved                213062.635458ms       3711.999998150609     
+egout                 HiGHS                 Solved                11.890291ms           568.1007              
+pipex                 Xpress                Solved                21.576ms              788.263               
+opt1217               CP-SAT                Solved                1840.483583ms         -16.0                 
+ran14x18              CPLEX                 Solved                70529.575813ms        3712.0                
+pigeon-08             SCIP                  Solved                383.609625ms          -7000.0               
+neos-2657525-crna     COPT                  FAILED                TIMEOUT               
+pp08a                 CPLEX                 Solved                140.880583ms          7350.0                
+ran16x16              HiGHS                 Solved                46823.56725ms         3823.0000000033283    
+neos-911880           Xpress                Solved                2348.021ms            54.75999999999986     
+rlp1                  HiGHS                 Solved                216.125167ms          15.0                  
+22433                 Mosek                 Solved                206.676167ms          21476.99999999984     
+pigeon-08             COPT                  Solved                50.543416ms           -7000.0               
+rout                  HiGHS                 Solved                24795.371333ms        1077.559999999991     
+pipex                 COPT                  Solved                68.840792ms           788.263               
+neos-2657525-crna     SCIP                  FAILED                TIMEOUT               
+graphdraw-gemcutter   COPT                  Solved                55769.3528125ms       7118.499999999998     
+ran14x18-disj-8       Xpress                Solved                77536.692958ms        3712.0000001992717    
+pigeon-08             Mosek                 Solved                2910.635334ms         -7000.0               
+timtab1CUTS           CPLEX                 Solved                10623.78525ms         764771.99999978       
+ran14x18-disj-8       COPT                  Solved                161618.485959ms       3711.9999995373178    
+nexp-50-20-1-1        Xpress                Solved                22.387625ms           29.0                  
+ran13x13              CPLEX                 Solved                1196.783ms            3252.0                
+mik-250-20-75-5       Mosek                 Solved                987.471625ms          -51532.0              
+set1al                CPLEX                 Solved                25.71825ms            15869.75              
+stein15               HiGHS                 Solved                24.963708ms           9.0                   
+beavma                HiGHS                 Solved                262.351792ms          383285.0              
+graphdraw-gemcutter   SCIP                  Solved                101190.67275ms        7118.499999999999     
+k16x240b              CP-SAT                FAILED                TIMEOUT               
+p80x400b              CP-SAT                FAILED                TIMEOUT               
+ran14x18-disj-8       SCIP                  FAILED                TIMEOUT               
+gt2                   CP-SAT                FAILED                TIMEOUT               
+k16x240               HiGHS                 FAILED                TIMEOUT               
+ej                    COPT                  Solved                2.445041ms            25508.0               
+breastcancer-regularizMosek                 FAILED                TIMEOUT               
+egout                 SCIP                  Solved                5.697333ms            568.1007              
+lseu                  Mosek                 Solved                144.870541ms          1120.0                
+set1cl                COPT                  Solved                49.803958ms           6484.25               
+neos-2657525-crna     Mosek                 FAILED                TIMEOUT               
+ran14x18              Mosek                 Solved                187526.452ms          3712.0                
+timtab1CUTS           COPT                  Solved                21736.538167ms        764771.9999997801     
+egout                 COPT                  Solved                7.597916ms            568.1007              
+ej                    SCIP                  Solved                19726.34075ms         25508.0               
+neos-3610040-iskar    Mosek                 Solved                678.844375ms          37.0                  
+ran16x16              Xpress                Solved                12973.914542ms        3823.0                
+assign1-5-8           Mosek                 FAILED                TIMEOUT               
+graphdraw-gemcutter   Xpress                Solved                8339.1745ms           7118.500000000001     
+supportcase20         COPT                  FAILED                TIMEOUT               
+graphdraw-gemcutter   CPLEX                 Solved                8302.1005ms           7118.500000000003     
+mod008                CP-SAT                Solved                446.216833ms          307.0                 
+neos-911970           CP-SAT                FAILED                TIMEOUT               
+supportcase26         CPLEX                 Solved                155878.014959ms       1745.124182346034     
+graphdraw-gemcutter   HiGHS                 Solved                109343.832459ms       7118.499999997938     
+supportcase20         SCIP                  FAILED                TIMEOUT               
+bell5                 CP-SAT                FAILED                TIMEOUT               
+beavma                Mosek                 Solved                50.894625ms           383285.0              
+neos-3046615-murg     SCIP                  FAILED                TIMEOUT               
+r50x360               Xpress                Solved                3251.310042ms         1653.0000000004704    
+neos-3046615-murg     COPT                  Solved                1259.351ms            1600.0                
+set1al                HiGHS                 Solved                55.960959ms           15869.75              
+timtab1CUTS           SCIP                  Solved                53011.7449585ms       764771.99999978       
+stein45               CP-SAT                Solved                8807.050042ms         30.0                  
+stein15               Xpress                Solved                16.43975ms            9.0                   
+air01                 Xpress                Solved                12.431167ms           6796.0                
+k16x240               Mosek                 FAILED                TIMEOUT               
+beavma                COPT                  Solved                102.018375ms          383285.0              
+gsvm2rl5              CP-SAT                FAILED                TIMEOUT               
+timtab2               SCIP                  FAILED                TIMEOUT               
+neos-3046601-motu     HiGHS                 FAILED                TIMEOUT               
+pk1                   CPLEX                 Solved                4843.044375ms         11.0                  
+supportcase26         HiGHS                 FAILED                TIMEOUT               
+neos-1426635          Xpress                FAILED                TIMEOUT               
+beavma                SCIP                  Solved                245.155166ms          383285.0              
+ran13x13              SCIP                  Solved                22382.664625ms        3252.0000000000005    
+k16x240               COPT                  Solved                165904.2905ms         10673.999999999969    
+p0548                 COPT                  Solved                67.527208ms           8691.0                
+set1ch                SCIP                  Solved                194.667916ms          54537.75000000001     
+p0040                 CPLEX                 Solved                1.355625ms            62027.0               
+neos-3610040-iskar    HiGHS                 Solved                1047.652ms            36.99999999999999     
+rgn                   CP-SAT                Solved                196.4515ms            82.19999924           
+gen-ip002             COPT                  Solved                173259.262042ms       -4783.7333916         
+pk1                   Xpress                Solved                12727.115292ms        11.00000000000002     
+neos-1425699          Mosek                 Solved                1.882541ms            3.179698977E9         
+f2gap40400            CP-SAT                Solved                27.273208ms           20772.0               
