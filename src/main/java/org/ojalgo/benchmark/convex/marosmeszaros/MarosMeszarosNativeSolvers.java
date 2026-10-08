@@ -38,7 +38,7 @@ public final class MarosMeszarosNativeSolvers extends AbstractMarosMeszaros {
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
 
-        configuration.parallelism = Parallelism.EIGHT;
+        configuration.parallelism = Parallelism.FOUR;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

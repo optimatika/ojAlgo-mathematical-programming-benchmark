@@ -41,13 +41,12 @@ public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP);
+        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP,
+                Contender.JOPTIMIZER);
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
-        // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());
 
-        configuration.parallelism = Parallelism.FOUR;
-        configuration.maxIterations = 20;
+        configuration.parallelism = Parallelism.EIGHT;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

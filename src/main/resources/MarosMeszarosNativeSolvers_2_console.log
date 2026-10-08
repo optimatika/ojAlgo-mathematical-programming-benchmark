@@ -1,0 +1,59 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 2, threads per worker: 9
+Models: 1 of 1 within size limits (0 not shipped), solvers: 9
+Worker library path: /Applications/copt80/lib:/Applications/CPLEX_Studio_Community222/cplex/bin/arm64_osx:/Applications/mosek/11.2/tools/platform/osxaarch64/bin:/Applications/FICO Xpress/xpressmp/lib:/Users/apete/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Worker environment: DYLD_LIBRARY_PATH=/Applications/FICO Xpress/xpressmp/lib
+Worker environment: GRB_LICENSE_FILE=/Users/apete/gurobi.lic
+Worker environment: LD_LIBRARY_PATH=/Applications/FICO Xpress/xpressmp/lib
+Worker environment: XPAUTH_PATH=/Applications/FICO Xpress/xpressmp/bin/xpauth.xpr
+Worker environment: XPRESSDIR=/Applications/FICO Xpress/xpressmp
+
+
+Iteration 1 with 9 model/solver pairs remaining 2026-10-08T19:59:50.176284Z
+-----------------------------------------------------------------------------
+YAO                   OSQP                  APPROXIMATE           WRONG                 
+YAO                   CPLEX                 FAILED                FAILED                
+YAO                   COPT                  Solved                21.568834ms           197.7042559402473     
+YAO                   Xpress                FAILED                FAILED                
+YAO                   HiGHS                 Solved                40.895042ms           197.70425594032164    
+YAO                   Gurobi                FAILED                FAILED                
+YAO                   Mosek                 Solved                38.373375ms           197.70422822461856    
+YAO                   Clarabel              APPROXIMATE           WRONG                 
+YAO                   SCIP                  WRONG                 196.1771029033658     != 197.70426          
+
+Iteration 2 with 3 model/solver pairs remaining 2026-10-08T19:59:57.377586Z
+-----------------------------------------------------------------------------
+YAO                   COPT                  Time not stable       20.9385625ms          197.7042559402473     
+YAO                   Mosek                 Time not stable       38.632875ms           197.70422822461856    
+YAO                   HiGHS                 Time not stable       42.210708499999996ms  197.70425594032164    
+
+Iteration 3 with 3 model/solver pairs remaining 2026-10-08T19:59:57.600405Z
+-----------------------------------------------------------------------------
+YAO                   COPT                  Time stable           20.3245ms             197.7042559402473     
+YAO                   HiGHS                 Time stable           40.895042ms           197.70425594032164    
+YAO                   Mosek                 Time stable           38.373375ms           197.70422822461856    
+
+Final Results
+=====================================================================
+YAO                   COPT                  OPTIMAL               20.3245ms             
+YAO                   CPLEX                 FAILED                FAILED                
+YAO                   Clarabel              FAILED                WRONG                 
+YAO                   Gurobi                FAILED                FAILED                
+YAO                   HiGHS                 OPTIMAL               40.895042ms           
+YAO                   Mosek                 OPTIMAL               38.373375ms           
+YAO                   OSQP                  FAILED                WRONG                 
+YAO                   SCIP                  FAILED                WRONG                 
+YAO                   Xpress                FAILED                FAILED                
+
+Models Solved
+=====================================================================
+COPT                  1 / 1                 100%                  
+CPLEX                 0 / 1                 0%                    
+Clarabel              0 / 1                 0%                    
+Gurobi                0 / 1                 0%                    
+HiGHS                 1 / 1                 100%                  
+Mosek                 1 / 1                 100%                  
+OSQP                  0 / 1                 0%                    
+SCIP                  0 / 1                 0%                    
+Xpress                0 / 1                 0%                    
