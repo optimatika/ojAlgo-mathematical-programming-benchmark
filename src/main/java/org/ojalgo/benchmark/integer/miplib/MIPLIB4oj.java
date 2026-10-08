@@ -26,16 +26,17 @@ import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * The ojAlgo MIP solver variants - dual/primal, dense/sparse - on the {@link AbstractMIPLIB#EASY_SET}.
+ * The ojAlgo MIP solver variants - dual/primal, dense/sparse - against each other.
  */
-public final class MIPLIBTheEasySet4oj extends AbstractMIPLIB {
+public final class MIPLIB4oj extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
         Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.OJALGO_MIP_DUAL_DENSE, Contender.OJALGO_MIP_DUAL_SPARSE,
                 Contender.OJALGO_MIP_PRIM_DENSE, Contender.OJALGO_MIP_PRIM_SPARSE);
 
-        configuration.models.retainAll(EASY_SET);
+        configuration.minProbSize = 1;
+        configuration.maxProbSize = 1_000;
 
         configuration.parallelism = Parallelism.TWO;
 

@@ -26,14 +26,17 @@ import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * The native solvers against each other - which models each of them can solve.
+ * The native solvers against each other - which models each of them can solve. ojAlgo is not included.
  * <p>
  * Whatever is installed on this machine, through the plain integrations. No library paths, no build variants:
- * those questions belong to {@link MIPLIBSolverBuilds}, and to the Docker image comparison.
+ * those questions belong to the Docker image comparison - or set {@link Configuration#libraries} and
+ * {@link Configuration#label}.
  * <p>
  * Models are selected by size rather than by name - every model in {@code MIPLIB.dat} with a variable count
- * in {@code [MIN_SIZE, MAX_SIZE]}. Below 1k is where the {@link AbstractMIPLIB#EASY_SET} came from - the
- * models all of COPT, CPLEX, HiGHS, SCIP and Xpress solve. The available models run out somewhere below 20k.
+ * in {@code [MIN_SIZE, MAX_SIZE]}. The available models run out somewhere below 20k.
+ * <p>
+ * This is what defines the {@link AbstractMIPLIB#EASY_SET}: run it on the models up to 1k, and the easy set
+ * is the models that all of COPT, CPLEX, HiGHS, SCIP and Xpress solve.
  * <p>
  * One solve per pair, so the measure is how many models each solver gets through. The reported times are a
  * single sample each - fine for spotting order-of-magnitude differences, not for close comparisons.
@@ -56,7 +59,7 @@ public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
     public static void main(final String[] args) {
 
         Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP,
-                Contender.HIGHS, Contender.MOSEK);
+                Contender.HIGHS, Contender.MOSEK, Contender.CPSAT);
 
         configuration.minProbSize = MIN_SIZE;
         configuration.maxProbSize = MAX_SIZE;

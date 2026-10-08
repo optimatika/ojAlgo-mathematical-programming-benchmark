@@ -37,6 +37,7 @@ import org.ojalgo.optimisation.convex.ConvexSolver.Algorithm;
 import org.ojalgo.optimisation.integer.IntegerSolver;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
+import org.ojalgo.optimisation.solver.choco.SolverChoco;
 import org.ojalgo.optimisation.solver.clarabel.SolverClarabel;
 import org.ojalgo.optimisation.solver.copt.SolverCOPT;
 import org.ojalgo.optimisation.solver.cplex.SolverCPLEX;
@@ -60,6 +61,7 @@ import org.ojalgo.optimisation.solver.xpress.SolverXpress;
 public final class Contender {
 
     public static final String ACM = "ACM";
+    public static final String CHOCO = "Choco";
     public static final String CLARABEL = "Clarabel";
     public static final String COPT = "COPT";
     public static final String CPLEX = "CPLEX";
@@ -99,6 +101,10 @@ public final class Contender {
     public static final String OJALGO_QP_QMR_SSORP = "ojAlgo-QP-QMR-ssorp";
     public static final String OJALGO_QP_SPARSE_EXPERIMENTAL = "ojAlgo-QP-S-exp";
     public static final String OJALGO_QP_SPARSE_STABLE = "ojAlgo-QP-S-stbl";
+    /**
+     * Not included in any benchmark by default. It bundles its own libhighs, and in a reused worker JVM that
+     * is the one the HiGHS integration would then bind to.
+     */
     public static final String ORTOOLS = "OR-Tools";
     public static final String OSQP = "OSQP";
     public static final String SCIP = "SCIP";
@@ -115,6 +121,7 @@ public final class Contender {
     static {
 
         INTEGRATIONS.put(Contender.ACM, () -> SolverACM.INTEGRATION);
+        INTEGRATIONS.put(Contender.CHOCO, () -> SolverChoco.INTEGRATION);
         INTEGRATIONS.put(Contender.HIPPARCHUS, () -> SolverHipparchus.INTEGRATION);
         INTEGRATIONS.put(Contender.CPLEX, () -> SolverCPLEX.INTEGRATION);
         INTEGRATIONS.put(Contender.CPSAT, () -> SolverCPSAT.INTEGRATION);

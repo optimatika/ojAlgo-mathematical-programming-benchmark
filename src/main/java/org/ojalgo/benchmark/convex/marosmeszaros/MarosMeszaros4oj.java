@@ -26,13 +26,16 @@ import org.ojalgo.benchmark.Contender;
 import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
+/**
+ * Different ojAlgo QP solver configurations against each other.
+ */
 public final class MarosMeszaros4oj extends AbstractMarosMeszaros {
 
     public static void main(final String[] args) {
 
         Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.OJALGO_QP_ADMM,
                 Contender.OJALGO_QP_ASET_NULLSPACE_DENSE, Contender.OJALGO_QP_ASET_NULLSPACE_SPARSE, Contender.OJALGO_QP_ASET_PLAIN_DENSE,
-                Contender.OJALGO_QP_ASET_PLAIN_SPARSE, Contender.CLARABEL, Contender.GUROBI, Contender.COPT);
+                Contender.OJALGO_QP_ASET_PLAIN_SPARSE);
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
         // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());

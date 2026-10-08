@@ -44,11 +44,12 @@ ojAlgo's built-in solvers are compared against integrations with:
 | [Hipparchus](https://hipparchus.org/) | Open source Java LP/QP (Apache Commons Math successor) |
 | [JOptimizer](http://www.joptimizer.com/) | Open source Java QP |
 | SSC-LP | Open source Java LP/MIP |
+| [Choco](https://choco-solver.org/) | Open source Java constraint programming (integer models) |
 | [Clarabel](https://github.com/oxfordcontrol/Clarabel.java) | Open source QP/conic |
 | [HiGHS](https://highs.dev/) | Open source LP/MIP/QP |
 | [OSQP](https://osqp.org/) | Open source QP |
 | [SCIP](https://www.scipopt.org/) | Open source MIP/MINLP |
-| [OR-Tools](https://developers.google.com/optimization) | Google's optimisation suite |
+| [OR-Tools](https://developers.google.com/optimization) | Google's optimisation suite - not included in any benchmark by default |
 | [CP-SAT](https://developers.google.com/optimization/cp/cp_solver) | OR-Tools' constraint programming solver |
 | [COPT](https://www.shanshu.ai/copt) | Commercial LP/MIP/QP/conic |
 | [CPLEX](https://www.ibm.com/products/ilog-cplex-optimization-studio) | Commercial LP/MIP/QP |
@@ -100,7 +101,17 @@ Each model set has its own package with:
 
 - `AbstractXYZ` - everything specific to that set. A factory, `newConfiguration(String... solvers)`, that returns a `Configuration` with the full set of models, the file paths and the expected values. Where the set has a metadata file, also `filter(configuration, predicate)`.
 - `BenchmarkXYZ` - the standard configuration for that set - for Netlib, Maros-Meszaros and MIPLIB, the one used for published results.
-- Other subclasses - experiments: comparing ojAlgo configurations, finding the best native solver, comparing solver builds...
+- Other subclasses - experiments.
+
+The three published sets each have the same three experiments:
+
+| Class | Compares | Netlib | Maros-Meszaros | MIPLIB |
+|-------|----------|--------|----------------|--------|
+| `XYZ4oj` | ojAlgo configurations | ojAlgo-LP primal/dual, dense/sparse | ojAlgo-QP ADMM and active set variants | ojAlgo-MIP primal/dual, dense/sparse |
+| `XYZJavaSolvers` | Pure Java solvers - the best Java alternative, with ojAlgo as baseline | ACM, Hipparchus, JOptimizer, SSC-LP | Hipparchus, JOptimizer | SSC-LP, Choco |
+| `XYZNativeSolvers` | All other solvers - the best over all, without ojAlgo | HiGHS, SCIP, CPLEX, Gurobi, COPT, Xpress, Mosek, Clarabel | Clarabel, OSQP, HiGHS, SCIP, CPLEX, Gurobi, COPT, Xpress, Mosek | Gurobi, CPLEX, Xpress, COPT, SCIP, HiGHS, Mosek, CP-SAT |
+
+For Netlib and Maros-Meszaros they use the same models as the published benchmark. For MIPLIB only `BenchmarkMIPLIB` uses the "easy set" - the other MIPLIB classes use the full set with their own size limits. `MIPLIBNativeSolvers` is what defines the easy set: the models up to 1k that all of COPT, CPLEX, HiGHS, SCIP and Xpress solve.
 
 The models to run are normally selected by filtering the full set:
 
@@ -129,19 +140,25 @@ Each run writes two files to `./src/main/resources/`, named after the class whos
 
 For example `BenchmarkNetlib_1_output.csv`. Use `label` to keep different runs of the same class apart - different solver builds, different size ranges...
 
-## Native libraries
+## Native solvers
 
-The worker JVMs are started with the main JVM's `java.library.path`, so set it when launching the benchmark.
+Where the native solvers are installed is set in `native-solvers.properties`, in the project root - edit it to match your own setup. Nothing solver specific needs to be in the launch configuration.
 
-CPLEX needs it to point at the installation matching the `cplex` jar in the pom - 22.2.0.0. For example, on macOS:
-
-```sh
--Djava.library.path=/Applications/CPLEX_Studio_Community222/cplex/bin/arm64_osx
+```properties
+CPLEX.library.path=/Applications/CPLEX_Studio_Community222/cplex/bin/arm64_osx
+Xpress.library.path=/Applications/FICO Xpress/xpressmp/lib
+Xpress.env.XPRESSDIR=/Applications/FICO Xpress/xpressmp
 ```
 
-A different version fails with an `UnsatisfiedLinkError` (`CPXopenCPLEX`). Without CPLEX the reference values for the smaller models are missing, and those models are only checked to be OPTIMAL and feasible.
+- `<Solver>.library.path` - added to `java.library.path` of the worker JVMs, ahead of the main JVM's own
+- `<Solver>.env.<NAME>` - an environment variable set for the worker JVMs
 
-HiGHS and SCIP find an installed library themselves. To use a specific build instead, set its path in `configuration.libraries` - see `MIPLIBSolverBuilds`. The commercial solvers need their own installation and licence.
+The settings are applied to the worker JVMs that do the solving, and logged at the start of every run. The main JVM needs none of them. Solvers that are not installed can be left out.
+
+- CPLEX needs the installation matching the `cplex` jar in the pom - 22.2.0.0. A different version fails with an `UnsatisfiedLinkError` (`CPXopenCPLEX`). Without CPLEX the reference values for the smaller models are missing, and those models are only checked to be OPTIMAL and feasible.
+- Gurobi's native libraries come with its jar - only the licence is needed.
+- HiGHS and SCIP find an installed library themselves. To use a specific build instead, set its path in `configuration.libraries`, and give the run a `label`.
+- Clarabel, OSQP and the pure Java solvers need nothing.
 
 ## Building and running
 

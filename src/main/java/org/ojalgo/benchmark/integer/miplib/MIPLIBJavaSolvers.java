@@ -19,35 +19,27 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.convex.marosmeszaros;
+package org.ojalgo.benchmark.integer.miplib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * Used for published MarosMeszaros results. The 4 included solvers are:
- * <ul>
- * <li>ojAlgo
- * <li>The best Java (Open Source) alternative: Hipparchus
- * <li>The best Open Source (Native) alternative: SCIP
- * <li>One more: Clarabel
- * </ul>
- * Published results are always produced with parallelism 1 - a single worker. Anything more is only to get
- * results faster.
+ * The pure Java MIP solvers against each other - which is the best Java alternative to ojAlgo. ojAlgo is
+ * included as a baseline.
  */
-public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
+public final class MIPLIBJavaSolvers extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP);
+        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.OJALGO_MIP, Contender.SSCLP, Contender.CHOCO);
 
-        AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
-        // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());
+        configuration.minProbSize = 1;
+        configuration.maxProbSize = 1_000;
 
-        configuration.parallelism = Parallelism.FOUR;
-        configuration.maxIterations = 20;
+        configuration.parallelism = Parallelism.TWO;
+        configuration.maxIterations = 3;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

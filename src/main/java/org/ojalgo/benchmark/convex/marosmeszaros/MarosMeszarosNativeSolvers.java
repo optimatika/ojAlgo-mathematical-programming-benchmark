@@ -27,27 +27,18 @@ import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * Used for published MarosMeszaros results. The 4 included solvers are:
- * <ul>
- * <li>ojAlgo
- * <li>The best Java (Open Source) alternative: Hipparchus
- * <li>The best Open Source (Native) alternative: SCIP
- * <li>One more: Clarabel
- * </ul>
- * Published results are always produced with parallelism 1 - a single worker. Anything more is only to get
- * results faster.
+ * The native QP solvers against each other - which is the best solver over all. ojAlgo is not included.
  */
-public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
+public final class MarosMeszarosNativeSolvers extends AbstractMarosMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP);
+        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.CLARABEL, Contender.OSQP, Contender.HIGHS, Contender.SCIP,
+                Contender.CPLEX, Contender.GUROBI, Contender.COPT, Contender.XPRESS, Contender.MOSEK);
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
-        // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());
 
-        configuration.parallelism = Parallelism.FOUR;
-        configuration.maxIterations = 20;
+        configuration.parallelism = Parallelism.EIGHT;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

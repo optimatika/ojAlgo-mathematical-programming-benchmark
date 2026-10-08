@@ -35,6 +35,9 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
      * The 103 MIPLIB models in ojAlgo's "easy set". Essentially these are models that have been in one (any)
      * of the MIPLIB editions, have no more than 1k variables or constraints and have been verified to be
      * solvable by each of COPT, CPLEX, HiGHS, SCIP and Xpress within this benchmark's timeout setting.
+     * <p>
+     * Determined with {@link MIPLIBNativeSolvers}, and only used by {@link BenchmarkMIPLIB} - all other MIPLIB
+     * benchmarks use the full set, with their own size limits.
      */
     static final Set<String> EASY_SET = Set.of("22433", "23588", "aflow30a", "air01", "beavma", "bell3a", "bell3b", "bell4", "bell5", "bienst1", "bienst2",
             "blend2", "bm23", "bppc8-02", "cracpb1", "dcmulti", "dfn-gwin-UUM", "egout", "enigma", "enlight13", "enlight8", "enlight_hard", "exp-1-500-5-5",

@@ -25,6 +25,9 @@ import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
+/**
+ * Different ojAlgo LP solver configurations against each other.
+ */
 public final class Netlib4oj extends AbstractNetlib {
 
     public static void main(final String[] args) {

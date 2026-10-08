@@ -21,9 +21,11 @@
  */
 package org.ojalgo.benchmark;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
+import java.io.Reader;
 import java.io.Writer;
 import java.math.BigDecimal;
 import java.nio.CharBuffer;
@@ -34,10 +36,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
+import java.util.Properties;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -51,6 +55,7 @@ import org.ojalgo.benchmark.ForkedTask.ReturnValue;
 import org.ojalgo.concurrent.ExternalProcessExecutor;
 import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.concurrent.ParallelismSupplier;
+import org.ojalgo.concurrent.ProcessOptions;
 import org.ojalgo.concurrent.ProcessingService;
 import org.ojalgo.netio.ASCII;
 import org.ojalgo.netio.BasicLogger;
@@ -502,6 +507,11 @@ public abstract class AbstractBenchmark {
      * Where the results and console logs are written.
      */
     static final String OUTPUT_DIR = "./src/main/resources/";
+    /**
+     * Where the native solvers are installed - library paths and environment variables for the worker JVMs.
+     * See the file itself for the format.
+     */
+    static final String NATIVE_SOLVERS = "./native-solvers.properties";
     static final int WIDTH = 22;
 
     /**
@@ -589,6 +599,9 @@ public abstract class AbstractBenchmark {
         log.println("Workers: {}, threads per worker: {}", workers, threadsPerWorker);
         log.println("Models: {} of {} within size limits ({} not shipped), solvers: {}", modDim.size(), configuration.models.size(), nbMissing,
                 configuration.solvers.length);
+
+        ProcessOptions workerOptions = AbstractBenchmark.newWorkerOptions(log);
+
         log.println();
 
         if (!references.isEmpty()) {
@@ -600,7 +613,7 @@ public abstract class AbstractBenchmark {
             Map<String, BigDecimal> referenceValues = new ConcurrentHashMap<>();
 
             masterProcessor.process(references.keySet(), configuration.parallelism, model -> AbstractBenchmark.doOneReference(configuration, log,
-                    slaveExecutor, threadsPerWorker, model, references.get(model), referenceValues));
+                    slaveExecutor, workerOptions, threadsPerWorker, model, references.get(model), referenceValues));
 
             configuration.values.putAll(referenceValues);
         }
@@ -615,7 +628,7 @@ public abstract class AbstractBenchmark {
             log.println("-----------------------------------------------------------------------------");
 
             masterProcessor.process(allWork, configuration.parallelism, modelSolverPair -> AbstractBenchmark.doOnePair(configuration, log, slaveExecutor,
-                    totResults, totReasons, modDim, iterDone, threadsPerWorker, modelSolverPair));
+                    workerOptions, totResults, totReasons, modDim, iterDone, threadsPerWorker, modelSolverPair));
 
             allWork.removeAll(iterDone);
 
@@ -694,8 +707,8 @@ public abstract class AbstractBenchmark {
     }
 
     static void doOnePair(final Configuration configuration, final BasicLogger log, final ExternalProcessExecutor executor,
-            final Map<ModelSolverPair, ResultsSet> totResults, final Map<ModelSolverPair, FailReason> totReasons, final Map<String, ModelSize> modDim,
-            final Set<ModelSolverPair> iterDone, final int threadsPerWorker, final ModelSolverPair modelSolverPair) {
+            final ProcessOptions workerOptions, final Map<ModelSolverPair, ResultsSet> totResults, final Map<ModelSolverPair, FailReason> totReasons,
+            final Map<String, ModelSize> modDim, final Set<ModelSolverPair> iterDone, final int threadsPerWorker, final ModelSolverPair modelSolverPair) {
 
         String path = configuration.path(modelSolverPair.model);
 
@@ -712,8 +725,8 @@ public abstract class AbstractBenchmark {
         Future<ForkedTask.ReturnValue> future = null;
         try {
 
-            future = executor.execute(ForkedTask.DESCRIPTOR, path, modelSolverPair.solver, configuration.maxWaitTime, threadsPerWorker, maxSolves,
-                    configuration.libraries.getOrDefault(modelSolverPair.solver, ""), firstPass);
+            future = executor.execute(ForkedTask.DESCRIPTOR, workerOptions, path, modelSolverPair.solver, configuration.maxWaitTime, threadsPerWorker,
+                    maxSolves, configuration.libraries.getOrDefault(modelSolverPair.solver, ""), firstPass);
 
             ReturnValue subResults = future.get(configuration.maxWaitTime, TimeUnit.MILLISECONDS);
 
@@ -831,12 +844,13 @@ public abstract class AbstractBenchmark {
      * it is optimal and the solution feasible.
      */
     static void doOneReference(final Configuration configuration, final BasicLogger log, final ExternalProcessExecutor executor,
-            final int threadsPerWorker, final String model, final String solver, final Map<String, BigDecimal> referenceValues) {
+            final ProcessOptions workerOptions, final int threadsPerWorker, final String model, final String solver,
+            final Map<String, BigDecimal> referenceValues) {
 
         Future<ForkedTask.ReturnValue> future = null;
         try {
 
-            future = executor.execute(ForkedTask.DESCRIPTOR, configuration.path(model), solver, configuration.maxWaitTime, threadsPerWorker, 1,
+            future = executor.execute(ForkedTask.DESCRIPTOR, workerOptions, configuration.path(model), solver, configuration.maxWaitTime, threadsPerWorker, 1,
                     configuration.libraries.getOrDefault(solver, ""), true);
 
             ReturnValue returnValue = future.get(configuration.maxWaitTime, TimeUnit.MILLISECONDS);
@@ -879,6 +893,62 @@ public abstract class AbstractBenchmark {
 
     static TimedResult<Result> meassure(final ExpressionsBasedModel model, final ExpressionsBasedModel.Integration<?> integration) {
         return Stopwatch.meassure(() -> AbstractBenchmark.solve(model, integration));
+    }
+
+    /**
+     * The options for the worker JVMs: the library paths and environment variables from
+     * {@link #NATIVE_SOLVERS}, and native access enabled. The main JVM's own java.library.path is kept, after
+     * the configured directories. The main JVM itself needs none of this - only the workers load solvers.
+     */
+    static ProcessOptions newWorkerOptions(final BasicLogger log) {
+
+        Properties settings = new Properties();
+
+        Path file = Path.of(NATIVE_SOLVERS);
+        if (Files.exists(file)) {
+            try (Reader reader = Files.newBufferedReader(file)) {
+                settings.load(reader);
+            } catch (IOException cause) {
+                throw new RuntimeException(cause);
+            }
+        } else {
+            log.println("No {} - native solvers only find what is on the default library path", NATIVE_SOLVERS);
+        }
+
+        Set<String> libraryPath = new LinkedHashSet<>();
+        Map<String, String> env = new TreeMap<>();
+
+        for (String key : new TreeSet<>(settings.stringPropertyNames())) {
+
+            String value = settings.getProperty(key).trim();
+
+            if (key.endsWith(".library.path")) {
+                libraryPath.addAll(Arrays.asList(value.split(File.pathSeparator)));
+            } else if (key.contains(".env.")) {
+                String name = key.substring(key.indexOf(".env.") + 5);
+                env.merge(name, value, (previous, another) -> name.endsWith("PATH") ? previous + File.pathSeparator + another : another);
+            } else {
+                log.println("Ignoring {} in {}", key, NATIVE_SOLVERS);
+            }
+        }
+
+        String inherited = System.getProperty("java.library.path");
+        if (inherited != null) {
+            libraryPath.addAll(Arrays.asList(inherited.split(File.pathSeparator)));
+        }
+        libraryPath.remove("");
+
+        ProcessOptions.Builder builder = new ProcessOptions.Builder().enableNativeAccessAllUnnamed(true);
+
+        if (!libraryPath.isEmpty()) {
+            builder.systemProperty("java.library.path", String.join(File.pathSeparator, libraryPath));
+        }
+        env.forEach(builder::env);
+
+        log.println("Worker library path: {}", String.join(File.pathSeparator, libraryPath));
+        env.forEach((name, value) -> log.println("Worker environment: {}={}", name, value));
+
+        return builder.build();
     }
 
     /**

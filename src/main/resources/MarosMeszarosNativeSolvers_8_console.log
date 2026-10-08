@@ -1,0 +1,131 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 8, threads per worker: 3
+Models: 48 of 65 within size limits (17 not shipped), solvers: 9
+Worker library path: /Applications/copt80/lib:/Applications/CPLEX_Studio_Community222/cplex/bin/arm64_osx:/Applications/mosek/11.2/tools/platform/osxaarch64/bin:/Applications/FICO Xpress/xpressmp/lib:/Users/apete/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Worker environment: DYLD_LIBRARY_PATH=/Applications/FICO Xpress/xpressmp/lib
+Worker environment: GRB_LICENSE_FILE=/Users/apete/gurobi.lic
+Worker environment: LD_LIBRARY_PATH=/Applications/FICO Xpress/xpressmp/lib
+Worker environment: XPAUTH_PATH=/Applications/FICO Xpress/xpressmp/bin/xpauth.xpr
+Worker environment: XPRESSDIR=/Applications/FICO Xpress/xpressmp
+
+
+Iteration 1 with 432 model/solver pairs remaining 2026-10-08T14:50:22.697323Z
+-----------------------------------------------------------------------------
+HS118                 COPT                  CVXQP2_S              COPT                  Solved                0.958041ms            664.8204500001063     Solved                
+3.922792ms            8120.940477251733     
+DUAL3                 Gurobi                FAILED                FAILED                
+CVXQP3_S              OSQP                  Solved                2.929416ms            11943.432202307433    
+HS35                  COPT                  Solved                0.653917ms            0.11111111111356      
+DUALC2                CPLEX                 Solved                1.385625ms            3551.307695643078     
+CVXQP3_S              Mosek                 Solved                3.775083ms            11943.434882612015    
+DUALC1                HiGHS                 Solved                0.773209ms            6155.250829462891     
+QPTEST                COPT                  Solved                1.575208ms            4.371875000000043     
+DUALC1                OSQP                  Solved                0.601916ms            6155.250829462685     
+GENHS28               CPLEX                 Solved                0.982791ms            0.9271736937663807    
+GENHS28               HiGHS                 Solved                0.794917ms            0.9271736937664037    
+HS118                 SCIP                  Solved                8.403667ms            664.8204432680035     
+DUALC2                HiGHS                 Solved                2.395875ms            3551.3076926710633    
+HUESTIS               Xpress                FAILED                FAILED                
+DUAL2                 Gurobi                FAILED                FAILED                
+DUALC2                Xpress                Solved                2.742917ms            3551.3115629729205    
+AUG3DCQP              Gurobi                FAILED                FAILED                
+DUALC2                OSQP                  Solved                0.407042ms            3551.3076926705958    
+MOSARQP1              COPT                  Solved                14.387375ms           -952.8754430312603    
+GENHS28               Xpress                Solved                0.804709ms            0.9271736937980285    
+DUAL4                 Clarabel              Solved                3.290958ms            0.7460908637621803    
+TAME                  Clarabel              Solved                0.215791ms            0.0                   
+QPCBOEI2              Mosek                 Solved                5.343334ms            8171960.043741205     
+VALUES                Gurobi                FAILED                FAILED                
+HS35MOD               Clarabel              Solved                0.154084ms            0.25000000119037485   
+LASER                 Mosek                 Solved                18.879667ms           2409601.3440729547    
+YAO                   Gurobi                FAILED                FAILED                
+QPCBOEI2              SCIP                  Solved                40.463959ms           8171960.862721457     
+GENHS28               Mosek                 Solved                0.464333ms            0.9271736937663906    
+AUG3DCQP              Clarabel              Solved                38.985416ms           993.3621465254229     
+TAME                  Gurobi                FAILED                FAILED                
+DUALC1                Xpress                Solved                2.099792ms            6155.254519052556     
+CVXQP3_S              COPT                  Solved                4.590958ms            11943.432202307842    
+MOSARQP2              OSQP                  Solved                22.427958ms           -1597.4821175234272   
+HUESTIS               CPLEX                 FAILED                FAILED                
+HS35                  SCIP                  Solved                17.172167ms           0.11111129948513043   
+DUALC1                CPLEX                 Solved                1.850667ms            6155.2508400609095    
+QPCSTAIR              Gurobi                FAILED                FAILED                
+QPTEST                SCIP                  Solved                9.089917ms            4.371875958731258     
+LASER                 COPT                  Solved                23.157666ms           2409601.345596795     
+HS118                 Mosek                 Solved                0.375083ms            664.8204499999712     
+DUAL4                 Gurobi                FAILED                FAILED                
+HS35                  Mosek                 Solved                0.447833ms            0.11111111234229111   
+KSIP                  OSQP                  APPROXIMATE           WRONG                 
+QPTEST                Mosek                 Solved                0.314708ms            4.371874999784931     
+HUES-MOD              CPLEX                 FAILED                FAILED                
+DUALC8                Xpress                FAILED                FAILED                
+QPCBLEND              Clarabel              Solved                1.929416ms            -0.007842542798814777 
+DUAL2                 Clarabel              Solved                11.984958ms           0.03373368031007675   
+LASER                 Xpress                FAILED                FAILED                
+DUALC5                HiGHS                 Solved                1.055334ms            427.2323267763867     
+QPCSTAIR              Xpress                FAILED                FAILED                
+QPCBOEI2              HiGHS                 Solved                4.878667ms            8171962.244332694     
+HS51                  Clarabel              Solved                0.100625ms            0.0                   
+CVXQP3_S              Xpress                Solved                3.63275ms             11943.492488238868    
+HS118                 OSQP                  Solved                0.562666ms            664.8204499999999     
+QPCBOEI1              SCIP                  Solved                122.214417ms          1.1503913971767146E7  
+DUALC5                OSQP                  Solved                0.247292ms            427.23232677639356    
+CVXQP3_S              SCIP                  Solved                468.986292ms          11943.432217713324    
+HS118                 HiGHS                 Solved                0.930042ms            664.82045             
+CVXQP1_S              SCIP                  Solved                4060.748333ms         11590.718117431725    
+CVXQP3_L              COPT                  Solved                3382.973958ms         1.157111044830693E8   
+CVXQP2_S              OSQP                  Solved                0.86575ms             8120.94047725068      
+CVXQP2_S              Mosek                 Solved                2.033459ms            8120.940737571225     
+DUALC1                COPT                  Solved                1.248083ms            6155.2508300025265    
+QPCBOEI1              OSQP                  APPROXIMATE           WRONG                 
+QPCBOEI1              Mosek                 INVALID               1.1503902800728384E7  value agrees, solution
+DUAL3                 Clarabel              Solved                7.252917ms            0.1357558965708443    
+S268                  Xpress                WRONG                 0.020475996894656522  != 5.7310705E-7       
+CVXQP1_S              COPT                  Solved                3.222709ms            11590.71811942291     
+DUALC5                Gurobi                FAILED                FAILED                
+CVXQP3_M              COPT                  Solved                105.638125ms          1362828.741604744     
+DUALC1                SCIP                  Solved                15.256416ms           6155.2589073318195    
+QPCBOEI2              OSQP                  APPROXIMATE           WRONG                 
+QPCBOEI2              Xpress                FAILED                FAILED                
+CVXQP3_M              Mosek                 Solved                182.169334ms          1362828.7402466256    
+QPCBOEI2              COPT                  Solved                5.056709ms            8171962.244330406     
+CVXQP1_S              Mosek                 Solved                1.832417ms            11590.718321330405    
+DUALC2                COPT                  Solved                1.674916ms            3551.3076926707517    
+KSIP                  Mosek                 Solved                6.463125ms            0.5757979402878544    
+QPTEST                CPLEX                 Solved                4.041167ms            4.37187500545178      
+DUALC1                Mosek                 Solved                0.843459ms            6157.391302412271     
+HS35                  CPLEX                 Solved                6.361458ms            0.11111112951084967   
+LASER                 HiGHS                 UNEXPLORED            WRONG                 
+DUAL1                 Gurobi                FAILED                FAILED                
+MOSARQP2              Mosek                 Solved                17.300166ms           -1597.482158903844    
+DUALC8                Gurobi                FAILED                FAILED                
+DUALC2                SCIP                  Solved                14.127625ms           3551.312133308603     
+CVXQP3_S              HiGHS                 Solved                2.033916ms            11943.432202309956    
+HS53                  Clarabel              Solved                0.215125ms            4.093023255813974     
+KSIP                  COPT                  Solved                161.615042ms          0.5757979412401049    
+DUALC8                Clarabel              Solved                0.189417ms            18309.359650070946    
+KSIP                  SCIP                  Solved                950.952625ms          0.57579795775922      
+LASER                 OSQP                  Solved                7.272167ms            2409601.3455967973    
+VALUES                Xpress                FAILED                FAILED                
+QPCBOEI1              COPT                  Solved                7.346ms               1.1503914009768227E7  
+DUALC5                Xpress                Solved                0.910417ms            427.2343390352517     
+CVXQP2_S              SCIP                  Solved                6891.940708ms         8120.940488536915     
+MOSARQP2              COPT                  Solved                11.319ms              -1597.4821175229827   
+DUAL1                 Clarabel              Solved                4.1405ms              0.03501298755196928   
+DUALC2                Mosek                 Solved                0.339541ms            3551.307717061361     
+DUALC8                HiGHS                 Solved                0.789458ms            18309.358832737144    
+S268                  Mosek                 WRONG                 3.12350043882405E-4   != 5.7310705E-7       
+MOSARQP1              Mosek                 Solved                25.876459ms           -952.875442875291     
+QPCBOEI1              Xpress                FAILED                FAILED                
+HS52                  Clarabel              Solved                0.080625ms            5.326647564469917     
+CVXQP2_S              Xpress                Solved                2.056875ms            8120.941786428831     
+HS76                  Clarabel              Solved                0.074625ms            -4.681818181738655    
+CVXQP1_S              HiGHS                 Solved                1.188875ms            11590.718119426752    
+DUAL1                 HiGHS                 Solved                2.695208ms            0.035012965733629366  
+DUALC8                OSQP                  Solved                0.106125ms            18309.358832733815    
+CVXQP3_M              HiGHS                 Solved                73.969709ms           1362828.740601967     
+MOSARQP1              Xpress                FAILED                FAILED                
+CVXQP1_S              CPLEX                 Solved                3.478ms               11590.718131765005    
+QPCSTAIR              Clarabel              Solved                11.201584ms           6204387.476095291     
+DUALC2                Gurobi                FAILED                FAILED                
