@@ -21,10 +21,8 @@
  */
 package org.ojalgo.benchmark.convex.marosmeszaros;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
@@ -32,49 +30,27 @@ import org.ojalgo.concurrent.Parallelism;
  * Used for published MarosMeszaros results. The 4 included solvers are:
  * <ul>
  * <li>ojAlgo
- * <li>The best Java (Open Source) alternative: SSC-LP
+ * <li>The best Java (Open Source) alternative: Hipparchus
  * <li>The best Open Source (Native) alternative: SCIP
- * <li>One more...
+ * <li>One more: Clarabel
  * </ul>
+ * Published results are always produced with parallelism 1 - a single worker. Anything more is only to get
+ * results faster.
  */
 public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
-    static final String[] SOLVERS = { Contender.OJALGO_QP, Contender.CLARABEL, Contender.COPT };
-
-    static final Set<ModelSolverPair> WORK = new HashSet<>();
-
-    private static int MAX_DIM = 10_000;
-    private static int MIN_DIM = 1;
-
-    static {
-
-        for (String mod : ALL_MODELS) {
-            ModelInfo modelInfo = MarosMeszarosModels.getModelInfo(mod);
-
-            if (modelInfo.isPureQP() && modelInfo.M <= MAX_DIM && modelInfo.N <= MAX_DIM && modelInfo.N >= MIN_DIM) {
-                // if (modelInfo.isPureQP() && modelInfo.isSmall()) {
-                for (String sol : SOLVERS) {
-                    WORK.add(new ModelSolverPair(mod, sol));
-                }
-            }
-        }
-    }
-
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration();
+        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.SCIP,
+                Contender.CLARABEL);
 
-        configuration.pathPrefix = "/optimisation/marosmeszaros/";
-        configuration.refeenceSolver = null;
+        AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
+        // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());
+
         configuration.parallelism = Parallelism.FOUR;
         configuration.maxIterations = 20;
 
-        // Keyed by the names used here - the README's are different (no underscores)
-        for (String model : ALL_MODELS) {
-            configuration.values.put(model, MarosMeszarosModels.getModelInfo(model).OPT);
-        }
-
-        AbstractBenchmark.doBenchmark(WORK, configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

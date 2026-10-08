@@ -21,63 +21,25 @@
  */
 package org.ojalgo.benchmark.linear.burkardt;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.ojalgo.benchmark.AbstractBenchmark;
-import org.ojalgo.netio.BasicLogger;
-import org.ojalgo.netio.TextLineReader;
-import org.ojalgo.optimisation.ExpressionsBasedModel;
-import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 
 abstract class AbstractBurkardt extends AbstractBenchmark {
 
     private static final String RESOURCE_DIR = "optimisation/burkardt/";
 
-    private static Set<ModelSolverPair> createWorkSet(final Configuration configuration) {
+    /**
+     * All models listed in {@code BURKARDT.dat}. There are no expected values for this set.
+     */
+    static Configuration newConfiguration(final String... solvers) {
 
-        Set<ModelSolverPair> retVal = new HashSet<>();
+        Configuration configuration = new Configuration(solvers);
 
-        try (TextLineReader reader = new TextLineReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_DIR + "BURKARDT.dat"))) {
+        configuration.pathPrefix = "/" + RESOURCE_DIR;
+        configuration.pathSuffix = ".mps";
 
-            reader.forEach(line -> {
+        configuration.models.addAll(AbstractBenchmark.readIndex(RESOURCE_DIR + "BURKARDT.dat"));
 
-                try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_DIR + line + ".mps")) {
-
-                    ExpressionsBasedModel model = ExpressionsBasedModel.parse(input, FileFormat.MPS);
-
-                    ExpressionsBasedModel.Description description = model.describe();
-
-                    if ((configuration.investigate.isEmpty() || configuration.investigate.contains(line))
-                            && description.nbVariables >= configuration.minProbSize && description.nbVariables <= configuration.maxProbSize
-                            && description.countConstraints() <= configuration.maxProbSize) {
-                        for (String solver : configuration.solvers) {
-                            retVal.add(new ModelSolverPair(line, solver));
-                        }
-                    }
-
-                } catch (IOException cause) {
-                    BasicLogger.debug("Problem with model {}!", line);
-                    throw new RuntimeException(cause);
-                }
-
-            });
-
-        } catch (IOException cause) {
-            BasicLogger.debug("Problem reading list of models!");
-            throw new RuntimeException(cause);
-        }
-
-        return retVal;
-    }
-
-    static void doBenchmark(final Configuration configuration) {
-
-        Set<ModelSolverPair> allWork = AbstractBurkardt.createWorkSet(configuration);
-
-        AbstractBenchmark.doBenchmark(allWork, configuration);
+        return configuration;
     }
 
 }

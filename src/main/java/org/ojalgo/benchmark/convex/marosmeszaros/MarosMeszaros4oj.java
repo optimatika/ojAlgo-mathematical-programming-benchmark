@@ -19,25 +19,28 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.qplib;
+package org.ojalgo.benchmark.convex.marosmeszaros;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
+import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
 import org.ojalgo.concurrent.Parallelism;
 
-public final class QPLIBBenchmark2 extends AbstractQPLIB {
+public final class MarosMeszaros4oj extends AbstractMarosMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.CLARABEL, Contender.SCIP);
+        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.OJALGO_QP_ADMM,
+                Contender.OJALGO_QP_ASET_NULLSPACE_DENSE, Contender.OJALGO_QP_ASET_NULLSPACE_SPARSE, Contender.OJALGO_QP_ASET_PLAIN_DENSE,
+                Contender.OJALGO_QP_ASET_PLAIN_SPARSE, Contender.CLARABEL, Contender.GUROBI, Contender.COPT);
 
-        configuration.maxProbSize = 50;
-        configuration.pathPrefix = "/optimisation/QPLIB/";
-        configuration.pathSuffix = ".lp";
-        configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.EIGHT;
+        AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
+        // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());
 
-        AbstractQPLIB.loadExpectedValues(configuration);
+        configuration.parallelism = Parallelism.TWO;
+        configuration.maxIterations = 20;
 
-        AbstractQPLIB.doBenchmark(configuration, info -> true);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

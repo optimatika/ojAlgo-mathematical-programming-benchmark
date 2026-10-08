@@ -19,24 +19,22 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package org.ojalgo.benchmark.linear.netlib;
+package org.ojalgo.benchmark.qplib;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
-public final class NetlibBench1k extends AbstractNetlib {
+public final class QPLIBNativeSolvers extends AbstractQPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
+        Configuration configuration = AbstractQPLIB.newConfiguration(Contender.CLARABEL, Contender.SCIP);
 
-        configuration.maxProbSize = 1_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
-        configuration.refeenceSolver = null;
-        configuration.parallelism = Parallelism.ONE;
+        configuration.maxProbSize = 50;
+        configuration.parallelism = Parallelism.EIGHT;
 
-        AbstractNetlib.loadExpectedValues(configuration);
-
-        AbstractNetlib.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

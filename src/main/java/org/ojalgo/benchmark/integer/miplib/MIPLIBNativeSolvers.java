@@ -21,17 +21,19 @@
  */
 package org.ojalgo.benchmark.integer.miplib;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * HiGHS against SCIP on the larger MIPLIB models - the ones the "easy set" leaves out.
+ * The native solvers against each other - which models each of them can solve.
  * <p>
- * Whatever HiGHS and SCIP are installed on this machine, through the plain integrations. No library paths, no
- * build variants: those questions belong to the Docker image comparison, which is a separate exercise.
+ * Whatever is installed on this machine, through the plain integrations. No library paths, no build variants:
+ * those questions belong to {@link MIPLIBSolverBuilds}, and to the Docker image comparison.
  * <p>
  * Models are selected by size rather than by name - every model in {@code MIPLIB.dat} with a variable count
- * in {@code [MIN_SIZE, MAX_SIZE]}. {@code MIPLIBTheEasySet} covers everything below 1k variables, and the
- * available models run out somewhere below 20k, so that range is the whole of what is left.
+ * in {@code [MIN_SIZE, MAX_SIZE]}. Below 1k is where the {@link AbstractMIPLIB#EASY_SET} came from - the
+ * models all of COPT, CPLEX, HiGHS, SCIP and Xpress solve. The available models run out somewhere below 20k.
  * <p>
  * One solve per pair, so the measure is how many models each solver gets through. The reported times are a
  * single sample each - fine for spotting order-of-magnitude differences, not for close comparisons.
@@ -53,13 +55,9 @@ public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.HIGHS, Contender.SCIP);
+        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP,
+                Contender.HIGHS, Contender.MOSEK);
 
-        configuration.pathPrefix = "/optimisation/MIPLIB/";
-        configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = null;
-
-        // Empty means every model in MIPLIB.dat, then filtered by size.
         configuration.minProbSize = MIN_SIZE;
         configuration.maxProbSize = MAX_SIZE;
 
@@ -67,9 +65,9 @@ public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
         configuration.maxWaitTime = TIMEOUT;
         configuration.parallelism = Parallelism.TWO;
 
-        configuration.outputPath = "./src/main/resources/miplib_native_" + MIN_SIZE + "_" + MAX_SIZE + "_output.csv";
+        configuration.label = MIN_SIZE + "_" + MAX_SIZE;
 
-        AbstractMIPLIB.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

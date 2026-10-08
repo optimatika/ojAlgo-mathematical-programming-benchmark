@@ -21,6 +21,8 @@
  */
 package org.ojalgo.benchmark.linear.netlib;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
@@ -31,21 +33,18 @@ import org.ojalgo.concurrent.Parallelism;
  * <li>The best Open Source (Native) alternative: HiGHS
  * <li>One more...
  * </ul>
+ * Published results are always produced with parallelism 1 - a single worker. Anything more is only to get
+ * results faster.
  */
 public final class BenchmarkNetlib extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.SCIP, Contender.HIGHS);
+        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.HIGHS, Contender.SSCLP);
 
-        configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
-        configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.EIGHT;
 
-        AbstractNetlib.loadExpectedValues(configuration);
-
-        AbstractNetlib.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

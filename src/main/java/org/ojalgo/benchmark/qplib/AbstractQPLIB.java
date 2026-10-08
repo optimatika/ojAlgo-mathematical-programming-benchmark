@@ -21,74 +21,47 @@
  */
 package org.ojalgo.benchmark.qplib;
 
-import java.io.IOException;
-import java.util.HashSet;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.function.Predicate;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.qplib.QPLIBModels.ModelInfo;
-import org.ojalgo.netio.BasicLogger;
-import org.ojalgo.netio.TextLineReader;
 
 abstract class AbstractQPLIB extends AbstractBenchmark {
 
     private static final String RESOURCE_DIR = "optimisation/QPLIB/";
 
-    static Set<ModelSolverPair> createWorkSet(final Configuration configuration, final Predicate<ModelInfo> filter) {
-
-        Set<ModelSolverPair> retVal = new HashSet<>();
-
-        try (TextLineReader reader = new TextLineReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_DIR + "QPLIB.dat"))) {
-
-            reader.forEach(line -> {
-
-                ModelInfo info = QPLIBModels.getModelInfo(line);
-
-                if (info == null) {
-                    BasicLogger.debug("No metadata for model {}!", line);
-                    return;
-                }
-
-                if (info.nvars < configuration.minProbSize || info.nvars > configuration.maxProbSize || info.ncons > configuration.maxProbSize) {
-                    return;
-                }
-
-                if (!configuration.investigate.isEmpty() && !configuration.investigate.contains(line)) {
-                    return;
-                }
-
-                if (filter != null && !filter.test(info)) {
-                    return;
-                }
-
-                for (String solver : configuration.solvers) {
-                    retVal.add(new ModelSolverPair(line, solver));
-                }
-            });
-
-        } catch (IOException cause) {
-            BasicLogger.debug("Problem reading list of models!");
-            throw new RuntimeException(cause);
-        }
-
-        return retVal;
+    /**
+     * Keeps only the models whose metadata, from {@code instancedata.csv}, satisfies the predicate. Models
+     * without metadata are dropped.
+     */
+    static void filter(final Configuration configuration, final Predicate<ModelInfo> predicate) {
+        configuration.models.removeIf(model -> {
+            ModelInfo info = QPLIBModels.getModelInfo(model);
+            return info == null || !predicate.test(info);
+        });
     }
 
-    static void doBenchmark(final Configuration configuration, final Predicate<ModelInfo> filter) {
+    /**
+     * All models listed in {@code QPLIB.dat}, with the objective values from {@code instancedata.csv} as
+     * expected values - where there is one.
+     */
+    static Configuration newConfiguration(final String... solvers) {
 
-        Set<ModelSolverPair> allWork = AbstractQPLIB.createWorkSet(configuration, filter);
+        Configuration configuration = new Configuration(solvers);
 
-        AbstractBenchmark.doBenchmark(allWork, configuration);
-    }
+        configuration.pathPrefix = "/" + RESOURCE_DIR;
+        configuration.pathSuffix = ".lp";
 
-    static void loadExpectedValues(final Configuration configuration) {
+        configuration.models.addAll(AbstractBenchmark.readIndex(RESOURCE_DIR + "QPLIB.dat"));
+
         for (Entry<String, ModelInfo> entry : QPLIBModels.getModelInfo().entrySet()) {
             if (entry.getValue().solobjvalue != null) {
                 configuration.values.put(entry.getKey(), entry.getValue().solobjvalue);
             }
         }
+
+        return configuration;
     }
 
 }

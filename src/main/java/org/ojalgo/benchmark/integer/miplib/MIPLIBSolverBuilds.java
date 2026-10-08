@@ -21,8 +21,8 @@
  */
 package org.ojalgo.benchmark.integer.miplib;
 
-import java.util.Set;
-
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.netio.BasicLogger;
 
@@ -55,16 +55,9 @@ public final class MIPLIBSolverBuilds extends AbstractMIPLIB {
     private static final String HIGHS_LIB = "";
     private static final String SCIP_LIB = "";
 
-    /**
-     * The four slowest models of the easy set, plus {@code neos-2624317-amur} - the one the Homebrew SCIP
-     * cannot solve at all while OR-Tools' does it in under 30s. Slow models are where builds have room to
-     * differ; the fast ones agree on everything and only add wall-clock.
-     */
-    private static final Set<String> MODELS = MIPLIBTheEasySet.MODELS;
-
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.HIGHS, Contender.SCIP);
+        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.HIGHS, Contender.SCIP);
 
         if (!HIGHS_LIB.isEmpty()) {
             configuration.libraries.put(Contender.HIGHS, HIGHS_LIB);
@@ -73,11 +66,8 @@ public final class MIPLIBSolverBuilds extends AbstractMIPLIB {
             configuration.libraries.put(Contender.SCIP, SCIP_LIB);
         }
 
-        configuration.investigate = MODELS;
+        configuration.models.retainAll(EASY_SET);
 
-        configuration.pathPrefix = "/optimisation/MIPLIB/";
-        configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = null;
         configuration.maxProbSize = 10_000;
 
         // Which models the build solves is the question - not how fast - so one pass each.
@@ -89,14 +79,14 @@ public final class MIPLIBSolverBuilds extends AbstractMIPLIB {
         configuration.parallelism = Parallelism.TWO;
         configuration.maxWaitTime = 1_000L * 60L * 5L;
 
-        configuration.outputPath = "./src/main/resources/miplib_builds_" + LABEL + "_output.csv";
+        configuration.label = LABEL;
 
         BasicLogger.debug();
         BasicLogger.debug("Solver build: {}", LABEL);
         BasicLogger.debug("HiGHS: {}", HIGHS_LIB.isEmpty() ? "<installed>" : HIGHS_LIB);
         BasicLogger.debug("SCIP: {}", SCIP_LIB.isEmpty() ? "<installed>" : SCIP_LIB);
 
-        AbstractMIPLIB.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

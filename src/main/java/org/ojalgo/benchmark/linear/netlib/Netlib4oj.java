@@ -21,25 +21,22 @@
  */
 package org.ojalgo.benchmark.linear.netlib;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 public final class Netlib4oj extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        //        Configuration configuration = new Configuration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE, Contender.OJALGO_LP_DUAL_SPARSE,
-        //                Contender.OJALGO_LP_DUAL_DENSE);
+        //        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE,
+        //                Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
+        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
 
-        configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/netlib/";
-        configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.FOUR;
 
-        AbstractNetlib.loadExpectedValues(configuration);
-
-        AbstractNetlib.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

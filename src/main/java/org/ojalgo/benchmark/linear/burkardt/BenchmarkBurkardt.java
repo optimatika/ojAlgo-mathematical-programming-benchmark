@@ -21,10 +21,12 @@
  */
 package org.ojalgo.benchmark.linear.burkardt;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * Used for published Burkardt results. The 4 included solvers are:
+ * The standard Burkardt benchmark (not used for published results). The 4 included solvers are:
  * <ul>
  * <li>ojAlgo
  * <li>The best Java (Open Source) alternative: Hipparchus
@@ -36,15 +38,11 @@ public final class BenchmarkBurkardt extends AbstractBurkardt {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
+        Configuration configuration = AbstractBurkardt.newConfiguration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.SCIP, Contender.HIGHS);
 
-        configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/burkardt/";
-        configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.ONE;
 
-        AbstractBurkardt.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

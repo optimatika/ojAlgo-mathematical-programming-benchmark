@@ -21,6 +21,8 @@
  */
 package org.ojalgo.benchmark.integer.miplib;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
@@ -29,24 +31,25 @@ import org.ojalgo.concurrent.Parallelism;
  * <li>ojAlgo
  * <li>The best Java (Open Source) alternative: SSC-LP
  * <li>The best Open Source (Native) alternative: SCIP
- * <li>One more...
+ * <li>One more: HiGHS
  * </ul>
+ * The models are the {@link AbstractMIPLIB#EASY_SET}.
+ * <p>
+ * Published results are always produced with parallelism 1 - a single worker. Anything more is only to get
+ * results faster.
  */
 public final class BenchmarkMIPLIB extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.GUROBI, Contender.CPLEX, Contender.XPRESS, Contender.COPT, Contender.SCIP, Contender.HIGHS,
-                Contender.MOSEK);
+        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.OJALGO_MIP, Contender.SSCLP, Contender.SCIP, Contender.HIGHS);
 
-        configuration.maxProbSize = 1_000;
-        configuration.pathPrefix = "/optimisation/MIPLIB/";
-        configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = null;
+        configuration.models.retainAll(EASY_SET);
+
         configuration.parallelism = Parallelism.FOUR;
         configuration.maxIterations = 3;
 
-        AbstractMIPLIB.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

@@ -21,10 +21,12 @@
  */
 package org.ojalgo.benchmark.linear.meszaros;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * Used for published Meszaros results. The 4 included solvers are:
+ * The standard Meszaros benchmark (not used for published results). The 4 included solvers are:
  * <ul>
  * <li>ojAlgo
  * <li>The best Java (Open Source) alternative: Hipparchus
@@ -36,15 +38,11 @@ public final class BenchmarkMeszaros extends AbstractMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.ORTOOLS, Contender.HIGHS);
+        Configuration configuration = AbstractMeszaros.newConfiguration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.SCIP, Contender.HIGHS);
 
-        configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/meszaros/";
-        configuration.pathSuffix = ".mps";
-        configuration.refeenceSolver = null;
         configuration.parallelism = Parallelism.ONE;
 
-        AbstractMeszaros.doBenchmark(configuration);
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }

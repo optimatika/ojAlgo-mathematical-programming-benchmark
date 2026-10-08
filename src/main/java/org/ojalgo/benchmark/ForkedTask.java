@@ -84,7 +84,7 @@ public abstract class ForkedTask {
             System.load(libraryPath);
         }
 
-        Supplier<Integration<?>> supplier = AbstractBenchmark.INTEGRATIONS.get(contenderSolverName);
+        Supplier<Integration<?>> supplier = Contender.INTEGRATIONS.get(contenderSolverName);
         Integration<?> integration = supplier != null ? supplier.get() : null;
 
         ResultsSet resultsSet = new ResultsSet();

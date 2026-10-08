@@ -21,32 +21,30 @@
  */
 package org.ojalgo.benchmark.qplib;
 
+import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.benchmark.Contender;
 import org.ojalgo.concurrent.Parallelism;
 
 /**
- * Used for published QPLIB results. The 4 included solvers are:
+ * The standard QPLIB benchmark (not used for published results). The 4 included solvers are:
  * <ul>
  * <li>ojAlgo
  * <li>The best Java (Open Source) alternative: Hipparchus
  * <li>The best Open Source (Native) alternative: Clarabel
- * <li>One more...
+ * <li>One more: HiGHS
  * </ul>
  */
 public final class BenchmarkQPLIB extends AbstractQPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = new Configuration(Contender.OJALGO_QP, Contender.CLARABEL, Contender.HIGHS);
+        Configuration configuration = AbstractQPLIB.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.HIGHS);
 
-        configuration.maxProbSize = 10_000;
-        configuration.pathPrefix = "/optimisation/QPLIB/";
-        configuration.pathSuffix = ".lp";
-        configuration.refeenceSolver = null;
+        AbstractQPLIB.filter(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
+
         configuration.parallelism = Parallelism.EIGHT;
 
-        AbstractQPLIB.loadExpectedValues(configuration);
-
-        AbstractQPLIB.doBenchmark(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
+        AbstractBenchmark.doBenchmark(configuration);
     }
 
 }
