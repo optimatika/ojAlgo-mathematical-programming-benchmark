@@ -31,8 +31,8 @@ import org.ojalgo.concurrent.Parallelism;
  * <ul>
  * <li>ojAlgo
  * <li>The best Java (Open Source) alternative: Hipparchus
- * <li>The best Open Source (Native) alternative: SCIP
- * <li>One more: Clarabel
+ * <li>The best Open Source (Native) alternative: Clarabel
+ * <li>One more: OSQP, JOptimizer or what ever you want to experiment with
  * </ul>
  * Published results are always produced with parallelism 1 - a single worker. Anything more is only to get
  * results faster.
@@ -41,12 +41,11 @@ public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP,
-                Contender.JOPTIMIZER);
+        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP);
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
 
-        configuration.parallelism = Parallelism.EIGHT;
+        configuration.parallelism = Parallelism.ONE;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

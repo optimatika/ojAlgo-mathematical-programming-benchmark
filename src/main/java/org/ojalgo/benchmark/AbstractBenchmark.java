@@ -113,7 +113,7 @@ public abstract class AbstractBenchmark {
          * difference dominates, so read those times as "it worked", not as measurements, and don't compare
          * them against a longer run.
          */
-        public int maxIterations = DEFAULT_MAX_ITERATIONS;
+        public int maxIterations = 20;
         /**
          * Models with more variables, or more constraints, than this are left out. Checked on the parsed
          * model.
@@ -497,8 +497,6 @@ public abstract class AbstractBenchmark {
      * value has to suit small limits too.
      */
     static final NumberContext ACCURACY = NumberContext.of(4);
-
-    static final int DEFAULT_MAX_ITERATIONS = 20;
 
     static final TimedResult<Optimisation.Result> FAILED = new TimedResult<>(Optimisation.Result.of(0.0, Optimisation.State.FAILED),
             new CalendarDateDuration(30, CalendarDateUnit.MINUTE).convertTo(CalendarDateUnit.MILLIS));
