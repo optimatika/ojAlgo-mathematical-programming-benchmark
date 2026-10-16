@@ -32,19 +32,8 @@ import java.nio.CharBuffer;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Objects;
-import java.util.Properties;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
@@ -135,19 +124,20 @@ public abstract class AbstractBenchmark {
          */
         public final Set<String> models = new TreeSet<>();
         /**
-         * The number of worker JVMs solving concurrently. Published results always use a single worker -
-         * more only to get results faster.
+         * The number of worker JVMs solving concurrently. Published results always use a single worker - more
+         * only to get results faster.
          */
         public ParallelismSupplier parallelism = Parallelism.ONE;
         public String pathPrefix;
         public String pathSuffix;
         public final String[] solvers;
         /**
-         * Expected (optimal) objective values, keyed by model name - from the model set's metadata, where there
-         * is any. A model without one is solved once with a reference solver before the benchmark starts, and
-         * that value is used instead - see {@link AbstractBenchmark#referenceSolver(ExpressionsBasedModel)}.
-         * Not when {@link #maxIterations} is 1 - that is only to test which solvers can solve which models. A
-         * model that still has no expected value is only checked to be OPTIMAL and feasible.
+         * Expected (optimal) objective values, keyed by model name - from the model set's metadata, where
+         * there is any. A model without one is solved once with a reference solver before the benchmark
+         * starts, and that value is used instead - see
+         * {@link AbstractBenchmark#referenceSolver(ExpressionsBasedModel)}. Not when {@link #maxIterations}
+         * is 1 - that is only to test which solvers can solve which models. A model that still has no
+         * expected value is only checked to be OPTIMAL and feasible.
          */
         public final Map<String, BigDecimal> values = new HashMap<>();
 
@@ -515,8 +505,8 @@ public abstract class AbstractBenchmark {
     /**
      * Runs every one of {@link Configuration#models} that is within the size limits, with every one of
      * {@link Configuration#solvers}. Each model is parsed once, here, to check its size - a model that is
-     * missing, or fails to parse, is left out. The index files also list the models that are
-     * too large to be shipped (more than 10k variables or constraints), so missing files are only counted.
+     * missing, or fails to parse, is left out. The index files also list the models that are too large to be
+     * shipped (more than 10k variables or constraints), so missing files are only counted.
      * <p>
      * Writes two files to {@link #OUTPUT_DIR}, both named after the class whose main method called this -
      * plus {@link Configuration#label} and the number of workers: the results, {@code *_output.csv}, and
@@ -610,8 +600,8 @@ public abstract class AbstractBenchmark {
 
             Map<String, BigDecimal> referenceValues = new ConcurrentHashMap<>();
 
-            masterProcessor.process(references.keySet(), configuration.parallelism, model -> AbstractBenchmark.doOneReference(configuration, log,
-                    slaveExecutor, workerOptions, threadsPerWorker, model, references.get(model), referenceValues));
+            masterProcessor.process(references.keySet(), configuration.parallelism, model -> AbstractBenchmark.doOneReference(configuration, log, slaveExecutor,
+                    workerOptions, threadsPerWorker, model, references.get(model), referenceValues));
 
             configuration.values.putAll(referenceValues);
         }
@@ -704,9 +694,34 @@ public abstract class AbstractBenchmark {
 
     }
 
-    static void doOnePair(final Configuration configuration, final BasicLogger log, final ExternalProcessExecutor executor,
-            final ProcessOptions workerOptions, final Map<ModelSolverPair, ResultsSet> totResults, final Map<ModelSolverPair, FailReason> totReasons,
-            final Map<String, ModelSize> modDim, final Set<ModelSolverPair> iterDone, final int threadsPerWorker, final ModelSolverPair modelSolverPair) {
+    /**
+     * The model names listed in a model set's index file, such as {@code NETLIB.dat} - one per line, blank
+     * lines and lines starting with '#' ignored.
+     */
+    protected static List<String> readIndex(final String resource) {
+
+        List<String> retVal = new ArrayList<>();
+
+        try (TextLineReader reader = new TextLineReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(resource))) {
+
+            reader.forEach(line -> {
+                String name = line.trim();
+                if (!name.isEmpty() && !name.startsWith("#")) {
+                    retVal.add(name);
+                }
+            });
+
+        } catch (IOException cause) {
+            BasicLogger.debug("Problem reading list of models {}!", resource);
+            throw new RuntimeException(cause);
+        }
+
+        return retVal;
+    }
+
+    static void doOnePair(final Configuration configuration, final BasicLogger log, final ExternalProcessExecutor executor, final ProcessOptions workerOptions,
+            final Map<ModelSolverPair, ResultsSet> totResults, final Map<ModelSolverPair, FailReason> totReasons, final Map<String, ModelSize> modDim,
+            final Set<ModelSolverPair> iterDone, final int threadsPerWorker, final ModelSolverPair modelSolverPair) {
 
         String path = configuration.path(modelSolverPair.model);
 
@@ -943,35 +958,7 @@ public abstract class AbstractBenchmark {
         }
         env.forEach(builder::env);
 
-        log.println("Worker library path: {}", String.join(File.pathSeparator, libraryPath));
-        env.forEach((name, value) -> log.println("Worker environment: {}={}", name, value));
-
         return builder.build();
-    }
-
-    /**
-     * The model names listed in a model set's index file, such as {@code NETLIB.dat} - one per line, blank
-     * lines and lines starting with '#' ignored.
-     */
-    protected static List<String> readIndex(final String resource) {
-
-        List<String> retVal = new ArrayList<>();
-
-        try (TextLineReader reader = new TextLineReader(Thread.currentThread().getContextClassLoader().getResourceAsStream(resource))) {
-
-            reader.forEach(line -> {
-                String name = line.trim();
-                if (!name.isEmpty() && !name.startsWith("#")) {
-                    retVal.add(name);
-                }
-            });
-
-        } catch (IOException cause) {
-            BasicLogger.debug("Problem reading list of models {}!", resource);
-            throw new RuntimeException(cause);
-        }
-
-        return retVal;
     }
 
     /**

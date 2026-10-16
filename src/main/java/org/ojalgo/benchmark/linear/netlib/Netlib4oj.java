@@ -32,12 +32,11 @@ public final class Netlib4oj extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        //        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE,
-        //                Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
-
-        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
+        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE,
+                Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
 
         configuration.parallelism = Parallelism.FOUR;
+        configuration.maxIterations = 1;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
