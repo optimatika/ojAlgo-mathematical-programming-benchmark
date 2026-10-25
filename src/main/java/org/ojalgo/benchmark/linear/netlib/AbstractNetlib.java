@@ -12,9 +12,9 @@ abstract class AbstractNetlib extends AbstractBenchmark {
     private static final String RESOURCE_DIR = "optimisation/netlib/";
 
     /**
-     * Optimal objective values for every model the {@code optimisation-models} artifact ships. See the
-     * header of {@code NETLIB.solu} for where each value comes from - most are the published ones, nine had
-     * to be computed because the Netlib README leaves them out.
+     * Optimal objective values for every model the {@code optimisation-models} artifact ships. See the header
+     * of {@code NETLIB.solu} for where each value comes from - most are the published ones, nine had to be
+     * computed because the Netlib README leaves them out.
      */
     private static void loadExpectedValues(final Configuration configuration) {
 

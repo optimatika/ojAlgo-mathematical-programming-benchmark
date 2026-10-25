@@ -46,8 +46,8 @@ public final class QPLIBModels {
         name, solsource, donor, nvars, ncons, nbinvars, nintvars, nsemi, nnlvars, nnlbinvars, nnlintvars, nnlsemi, nboundedvars, nsingleboundedvars, nsos1,
         nsos2, objsense, nobjnz, nobjnlnz, njacobiannz, njacobiannlnz, nlaghessiannz, nlaghessiandiagnz, nobjquadnz, nobjquaddiagnz, nobjquadnegev,
         nobjquadposev, objtype, objcurvature, conscurvature, nconvexnlcons, nconcavenlcons, nindefinitenlcons, nlincons, nquadcons, ndiagquadcons,
-        nlaghessianblocks, laghessianminblocksize, laghessianmaxblocksize, laghessianavgblocksize, solobjvalue, solinfeasibility, probtype, nlinfunc,
-        nquadfunc, nnlfunc, nz, nlnz, ncontvars, convex, density, nldensity, objquaddensity, objquadproblevfrac
+        nlaghessianblocks, laghessianminblocksize, laghessianmaxblocksize, laghessianavgblocksize, solobjvalue, solinfeasibility, probtype, nlinfunc, nquadfunc,
+        nnlfunc, nz, nlnz, ncontvars, convex, density, nldensity, objquaddensity, objquadproblevfrac
     }
 
     public static final class ModelInfo {
