@@ -40,7 +40,7 @@ public final class BenchmarkNetlib extends AbstractNetlib {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.HIGHS, Contender.COPT);
+        Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.HIGHS, Contender.SCIP);
 
         configuration.parallelism = Parallelism.FOUR;
 
