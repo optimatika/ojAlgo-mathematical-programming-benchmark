@@ -560,7 +560,7 @@ public abstract class AbstractBenchmark {
                 if (description.nbVariables >= configuration.minProbSize && description.nbVariables <= configuration.maxProbSize
                         && description.countConstraints() <= configuration.maxProbSize) {
 
-                    modDim.put(model, new ModelSize(parsed.countExpressions(), parsed.countVariables(), parsed.objective().density()));
+                    modDim.put(model, new ModelSize(parsed.countExpressions(), parsed.countVariables(), parsed.density()));
 
                     for (String solver : configuration.solvers) {
                         allWork.add(new ModelSolverPair(model, solver));
