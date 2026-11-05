@@ -103,7 +103,7 @@ public abstract class ForkedTask {
 
             nbVariables = parsedMPS.countVariables();
             nbExpressions = parsedMPS.countExpressions();
-            density = parsedMPS.objective().density();
+            density = parsedMPS.density();
 
             ExpressionsBasedModel simplified = parsedMPS.simplify();
             solved = simplified;
