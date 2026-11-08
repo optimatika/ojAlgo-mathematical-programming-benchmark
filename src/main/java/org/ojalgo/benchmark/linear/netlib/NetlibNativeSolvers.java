@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * The native LP solvers against each other - which is the best solver over all. ojAlgo is not included.
@@ -34,8 +33,6 @@ public final class NetlibNativeSolvers extends AbstractNetlib {
 
         Configuration configuration = AbstractNetlib.newConfiguration(Contender.HIGHS, Contender.SCIP, Contender.CLARABEL, Contender.COPT, Contender.XPRESS,
                 Contender.MOSEK);
-
-        configuration.parallelism = Parallelism.FOUR;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

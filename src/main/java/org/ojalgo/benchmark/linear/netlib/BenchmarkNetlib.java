@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * Used for published Netlib results. The 4 included solvers are:
@@ -41,8 +40,6 @@ public final class BenchmarkNetlib extends AbstractNetlib {
     public static void main(final String[] args) {
 
         Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP, Contender.HIPPARCHUS, Contender.HIGHS, Contender.SCIP);
-
-        configuration.parallelism = Parallelism.FOUR;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

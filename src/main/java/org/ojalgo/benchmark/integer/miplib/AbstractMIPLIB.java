@@ -28,6 +28,7 @@ import java.math.BigDecimal;
 import java.util.Set;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
+import org.ojalgo.concurrent.Parallelism;
 
 abstract class AbstractMIPLIB extends AbstractBenchmark {
 
@@ -64,6 +65,7 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
         configuration.pathPrefix = "/" + RESOURCE_DIR;
         configuration.pathSuffix = ".mps";
         configuration.maxProbSize = 1_000;
+        configuration.parallelism = Parallelism.TWO;
 
         configuration.models.addAll(AbstractBenchmark.readIndex(RESOURCE_DIR + "MIPLIB.dat"));
 

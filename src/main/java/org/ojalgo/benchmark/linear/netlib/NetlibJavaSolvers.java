@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * The pure Java LP solvers against each other - which is the best Java alternative to ojAlgo. ojAlgo is
@@ -35,8 +34,6 @@ public final class NetlibJavaSolvers extends AbstractNetlib {
 
         Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP, Contender.ACM, Contender.HIPPARCHUS, Contender.JOPTIMIZER,
                 Contender.SSCLP);
-
-        configuration.parallelism = Parallelism.FOUR;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

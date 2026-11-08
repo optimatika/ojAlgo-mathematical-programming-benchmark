@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.linear.netlib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * Different ojAlgo LP solver configurations against each other.
@@ -34,9 +33,6 @@ public final class Netlib4oj extends AbstractNetlib {
 
         Configuration configuration = AbstractNetlib.newConfiguration(Contender.OJALGO_LP_PRIM_SPARSE, Contender.OJALGO_LP_PRIM_DENSE,
                 Contender.OJALGO_LP_DUAL_SPARSE, Contender.OJALGO_LP_DUAL_DENSE);
-
-        configuration.parallelism = Parallelism.FOUR;
-        configuration.maxIterations = 1;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
