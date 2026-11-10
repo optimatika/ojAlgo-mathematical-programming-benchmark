@@ -24,7 +24,6 @@ package org.ojalgo.benchmark.convex.marosmeszaros;
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
 import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * Different ojAlgo QP solver configurations against each other.
@@ -38,10 +37,6 @@ public final class MarosMeszaros4oj extends AbstractMarosMeszaros {
                 Contender.OJALGO_QP_ASET_PLAIN_SPARSE);
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
-        // AbstractMarosMeszaros.filter(configuration, info -> info.isPureQP() && info.isSmall());
-
-        configuration.parallelism = Parallelism.TWO;
-        configuration.maxIterations = 20;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

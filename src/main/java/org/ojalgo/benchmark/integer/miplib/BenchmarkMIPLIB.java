@@ -46,8 +46,7 @@ public final class BenchmarkMIPLIB extends AbstractMIPLIB {
 
         configuration.models.retainAll(EASY_SET);
 
-        configuration.parallelism = Parallelism.FOUR;
-        configuration.maxIterations = 3;
+        configuration.parallelism = Parallelism.ONE;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

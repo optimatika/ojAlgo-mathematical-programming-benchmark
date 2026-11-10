@@ -42,7 +42,7 @@ public final class BenchmarkQPLIB extends AbstractQPLIB {
 
         AbstractQPLIB.filter(configuration, info -> info.isContinuous() && info.isConvex() && info.isLinearlyConstrained() && info.isQP());
 
-        configuration.parallelism = Parallelism.EIGHT;
+        configuration.parallelism = Parallelism.ONE;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

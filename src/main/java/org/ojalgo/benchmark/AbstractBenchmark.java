@@ -102,7 +102,7 @@ public abstract class AbstractBenchmark {
          * difference dominates, so read those times as "it worked", not as measurements, and don't compare
          * them against a longer run.
          */
-        public int maxIterations = 20;
+        public int maxIterations = 10;
         /**
          * Models with more variables, or more constraints, than this are left out. Checked on the parsed
          * model.
@@ -127,7 +127,7 @@ public abstract class AbstractBenchmark {
          * The number of worker JVMs solving concurrently. Published results always use a single worker - more
          * only to get results faster.
          */
-        public ParallelismSupplier parallelism = Parallelism.ONE;
+        public ParallelismSupplier parallelism = Parallelism.SIX;
         public String pathPrefix;
         public String pathSuffix;
         public final String[] solvers;
@@ -286,6 +286,10 @@ public abstract class AbstractBenchmark {
          * The middle of the last times, ms
          */
         private double myMedian = Double.NaN;
+        /**
+         * The average of the last times, ms
+         */
+        private double myAverage = Double.NaN;
         private int myNbTimes = 0;
         /**
          * The difference between the slowest and the fastest of the last times, ms
@@ -303,7 +307,7 @@ public abstract class AbstractBenchmark {
         }
 
         public ResultsSet(final int maxCount) {
-            this(ACCURACY, 0.1, maxCount);
+            this(ACCURACY, 0.2, maxCount);
         }
 
         private ResultsSet(final NumberContext valueAccuracy, final double timeAccuracy, final int maxCount) {
@@ -367,7 +371,8 @@ public abstract class AbstractBenchmark {
                 return false;
             }
 
-            return myRange < myTimeAccuracy * myMedian;
+            // 0.2 means ±10% of the returned value
+            return myRange <= myTimeAccuracy * Math.max(myAverage, myMedian);
         }
 
         /**
@@ -428,6 +433,7 @@ public abstract class AbstractBenchmark {
 
                 SampleSet window = SampleSet.wrap(Arrays.copyOf(myLastTimes, Math.min(myNbTimes, WINDOW)));
                 myMedian = window.getMedian();
+                myAverage = window.getMean();
                 myRange = window.getRange();
             }
         }

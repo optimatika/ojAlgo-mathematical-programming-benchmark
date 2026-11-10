@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.math.BigDecimal;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
-import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineReader;
 
@@ -50,8 +49,6 @@ abstract class AbstractNetlib extends AbstractBenchmark {
         configuration.models.addAll(AbstractBenchmark.readIndex(RESOURCE_DIR + "NETLIB.dat"));
 
         AbstractNetlib.loadExpectedValues(configuration);
-
-        configuration.parallelism = Parallelism.FOUR;
 
         return configuration;
     }
