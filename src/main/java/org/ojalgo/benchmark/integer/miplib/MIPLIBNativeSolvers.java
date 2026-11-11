@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.integer.miplib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * The native solvers against each other - which models each of them can solve. ojAlgo is not included.
@@ -47,8 +46,6 @@ public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
 
         Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.CPLEX, Contender.SCIP, Contender.HIGHS, Contender.CPSAT, Contender.XPRESS,
                 Contender.COPT, Contender.MOSEK);
-
-        configuration.parallelism = Parallelism.EIGHT;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

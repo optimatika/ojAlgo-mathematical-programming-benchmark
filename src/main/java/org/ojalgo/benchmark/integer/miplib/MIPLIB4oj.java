@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.integer.miplib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * The ojAlgo MIP solver variants - dual/primal, dense/sparse - against each other.
@@ -35,10 +34,7 @@ public final class MIPLIB4oj extends AbstractMIPLIB {
         Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.OJALGO_MIP_DUAL_DENSE, Contender.OJALGO_MIP_DUAL_SPARSE,
                 Contender.OJALGO_MIP_PRIM_DENSE, Contender.OJALGO_MIP_PRIM_SPARSE);
 
-        configuration.minProbSize = 1;
-        configuration.maxProbSize = 1_000;
-
-        configuration.parallelism = Parallelism.TWO;
+        configuration.models.retainAll(EASY_SET);
 
         AbstractBenchmark.doBenchmark(configuration);
     }

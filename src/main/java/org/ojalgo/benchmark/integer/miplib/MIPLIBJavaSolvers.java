@@ -23,7 +23,6 @@ package org.ojalgo.benchmark.integer.miplib;
 
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * The pure Java MIP solvers against each other - which is the best Java alternative to ojAlgo. ojAlgo is
@@ -37,9 +36,6 @@ public final class MIPLIBJavaSolvers extends AbstractMIPLIB {
 
         configuration.minProbSize = 1;
         configuration.maxProbSize = 1_000;
-
-        configuration.parallelism = Parallelism.TWO;
-        configuration.maxIterations = 3;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
