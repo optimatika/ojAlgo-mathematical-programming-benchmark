@@ -32,7 +32,8 @@ public abstract class ForkedTask {
         public final int nbVariables;
         public final String result;
         /**
-         * The middle of the last three solve times, ms - NaN if there is no result.
+         * The median of the last three solve times, ms - with only two, their mean, with only one, that one.
+         * NaN if there is no result.
          */
         public final double time;
         /**
@@ -56,14 +57,20 @@ public abstract class ForkedTask {
 
     }
 
+    /**
+     * The share of {@code maxWaitTime} the solve loop leaves unused, so that the fork returns what it has
+     * measured before the caller gives up on it.
+     */
+    private static final double RESERVE = 0.1;
+
     static final MethodDescriptor DESCRIPTOR = MethodDescriptor.of(ForkedTask.class, "execute", String.class, String.class, long.class, int.class, int.class,
             String.class, boolean.class);
 
     /**
      * @param maxSolves   The number of times to solve the model. Anything less than 1 means "as many as fit
-     *                    within half of {@code maxWaitTime}, or until the times stabilise" - repeat that many
-     *                    times to get a reliable measurement. Pass 1 to solve once, which is all that's
-     *                    needed when the question is whether the solver manages at all.
+     *                    within {@code maxWaitTime}, less {@link #RESERVE}, or until the times stabilise" -
+     *                    repeat that many times to get a reliable measurement. Pass 1 to solve once, which is
+     *                    all that's needed when the question is whether the solver manages at all.
      * @param libraryPath Absolute path to the native library to use, or empty to let the integration find one
      *                    itself. Loading it here, before the integration initialises, is what makes it the
      *                    one the integration binds to.
@@ -75,9 +82,17 @@ public abstract class ForkedTask {
     public static ReturnValue execute(final String modelFilePath, final String contenderSolverName, final long maxWaitTime, final int threads,
             final int maxSolves, final String libraryPath, final boolean validate) {
 
-        // ms - exact, so that sub-millisecond solves use up the budget too
-        double instanceTime = Double.MAX_VALUE;
-        double remainingTime = maxWaitTime / 2D;
+        long start = System.nanoTime();
+
+        // ms. The caller gives up on this fork maxWaitTime after handing it over, and then everything measured
+        // here is lost. So the budget is the wall-clock time since this method started - parsing, simplifying
+        // and resetting count, not only the solves - less a reserve for what isn't covered: the hand-over,
+        // validating and returning the result, and the next solve taking longer than the latest one.
+        double budget = (1D - RESERVE) * maxWaitTime;
+        // The next solve is assumed to take as long as the latest one did - before the first, the whole budget,
+        // which just fits.
+        double instanceTime = budget;
+        double remainingTime = budget;
         int nbSolves = 0;
 
         if (libraryPath != null && !libraryPath.isEmpty()) {
@@ -114,8 +129,9 @@ public abstract class ForkedTask {
             List<Variable> variables = simplified.getVariables();
             List<BigDecimal> initialValues = variables.stream().map(Variable::getValue).toList();
 
-            // Repeat until the budget is spent or the last three times agree - or as soon as a solve isn't optimal,
-            // or doesn't agree with the others, as then the pair has failed and there is nothing more to measure
+            // Repeat while the next solve is expected to fit in what is left of the budget, until the last three
+            // times agree - or until a solve isn't optimal, or doesn't agree with the others, as then the pair
+            // has failed and there is nothing more to measure
             do {
 
                 for (int i = 0; i < variables.size(); i++) {
@@ -125,12 +141,12 @@ public abstract class ForkedTask {
                 TimedResult<Result> meassured = AbstractBenchmark.meassure(simplified, integration);
 
                 instanceTime = meassured.duration.convertTo(CalendarDateUnit.MILLIS).measure;
-                remainingTime -= instanceTime;
+                remainingTime = budget - (System.nanoTime() - start) / 1_000_000D;
                 nbSolves++;
 
                 resultsSet.add(meassured);
 
-            } while (nbSolves != maxSolves && instanceTime < remainingTime && resultsSet.result().getState().isOptimal() && !resultsSet.isStable());
+            } while (nbSolves != maxSolves && instanceTime <= remainingTime && resultsSet.result().getState().isOptimal() && !resultsSet.isStable());
 
         } catch (IOException cause) {
             throw new RuntimeException(cause);

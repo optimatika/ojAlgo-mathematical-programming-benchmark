@@ -1,0 +1,145 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 1, threads per worker: 18
+Models: 6 of 6 within size limits (0 not shipped), solvers: 4
+
+
+Iteration 1 with 24 model/solver pairs remaining 2026-11-13T06:07:20.087005Z
+-----------------------------------------------------------------------------
+gen-ip021             CPLEX                 Solved                21481.527292ms        2361.4541951916       
+neos5                 SCIP                  FAILED                TIMEOUT               
+gsvm2rl3              SCIP                  Solved                5121.014167ms         0.33652753396196505   
+rlp1                  SCIP                  Solved                11143.376375ms        14.999999999996888    
+gsvm2rl3              HiGHS                 Solved                4874.126209ms         0.33652753396196494   
+bienst2               CPLEX                 Solved                6072.679292ms         54.6                  
+rlp1                  CP-SAT                Solved                1197.658833ms         15.0                  
+neos5                 HiGHS                 Solved                55978.602416ms        15.00000000021431     
+neos5                 CP-SAT                Solved                15386.92075ms         15.0                  
+gsvm2rl3              CP-SAT                WRONG                 0.6000000000000002    != 0.33652753         
+gen-ip036             CPLEX                 Solved                38307.45875ms         -4606.6796098376      
+bienst2               SCIP                  Solved                124035.879313ms       54.6                  
+gsvm2rl3              CPLEX                 Solved                371.8385ms            0.33652753396196533   
+gen-ip036             SCIP                  Solved                142764.32725ms        -4606.6796098376      
+bienst2               CP-SAT                FAILED                TIMEOUT               
+rlp1                  CPLEX                 Solved                20.509ms              15.0                  
+bienst2               HiGHS                 Solved                282820.138125ms       54.59999999999993     
+gen-ip021             SCIP                  Solved                155482.80625ms        2361.4541951916       
+neos5                 CPLEX                 Solved                7856.385291ms         15.0                  
+rlp1                  HiGHS                 Solved                163.198459ms          15.0                  
+gen-ip036             HiGHS                 Solved                263158.61675ms        -4606.6796098376      
+gen-ip021             CP-SAT                Solved                255482.458875ms       2361.4541951916       
+gen-ip021             HiGHS                 Solved                242668.418709ms       2361.4541951916       
+gen-ip036             CP-SAT                Solved                243577.939792ms       -4606.6796098376      
+
+Iteration 2 with 21 model/solver pairs remaining 2026-11-13T06:56:18.572757Z
+-----------------------------------------------------------------------------
+gen-ip021             CPLEX                 Time not stable       21583.9284585ms       2361.4541951916       
+gsvm2rl3              SCIP                  Time not stable       5271.600396ms         0.33652753396196505   
+rlp1                  SCIP                  Time not stable       11263.3773125ms       14.999999999996888    
+gsvm2rl3              HiGHS                 Time not stable       4902.1569375ms        0.33652753396196494   
+bienst2               CPLEX                 Time not stable       6091.007396ms         54.6                  
+rlp1                  CP-SAT                Time not stable       968.945979ms          15.0                  
+neos5                 HiGHS                 Time not stable       56265.5051455ms       15.00000000021431     
+neos5                 CP-SAT                Time not stable       15181.092729ms        15.0                  
+gen-ip036             CPLEX                 Time not stable       38506.791417ms        -4606.6796098376      
+bienst2               SCIP                  Time not stable       125147.57008375ms     54.6                  
+gsvm2rl3              CPLEX                 Time not stable       360.7216045ms         0.33652753396196533   
+gen-ip036             SCIP                  Time not stable       143962.541958ms       -4606.6796098376      
+rlp1                  CPLEX                 Time not stable       21.886354ms           15.0                  
+bienst2               HiGHS                 Time not stable       283626.4709375ms      54.59999999999993     
+gen-ip021             SCIP                  Time not stable       157009.747604ms       2361.4541951916       
+neos5                 CPLEX                 Time not stable       7951.795937ms         15.0                  
+rlp1                  HiGHS                 Time not stable       163.8068755ms         15.0                  
+gen-ip036             HiGHS                 Time not stable       264886.978396ms       -4606.6796098376      
+gen-ip021             CP-SAT                Time not stable       256149.075333ms       2361.4541951916       
+gen-ip021             HiGHS                 Time not stable       243623.562396ms       2361.4541951916       
+gen-ip036             CP-SAT                Time not stable       241092.9392295ms      -4606.6796098376      
+
+Iteration 3 with 21 model/solver pairs remaining 2026-11-13T07:37:13.854504Z
+-----------------------------------------------------------------------------
+gen-ip021             CPLEX                 Time stable           21686.329625ms        2361.4541951916       
+gsvm2rl3              SCIP                  Time stable           5387.423125ms         0.33652753396196505   
+rlp1                  SCIP                  Time stable           11317.413459ms        14.999999999996888    
+gsvm2rl3              HiGHS                 Time stable           4930.187666ms         0.33652753396196494   
+bienst2               CPLEX                 Time stable           6109.3355ms           54.6                  
+rlp1                  CP-SAT                Time not stable       1197.658833ms         15.0                  
+neos5                 HiGHS                 Time stable           56032.527166ms        15.00000000021431     
+neos5                 CP-SAT                Time not stable       15386.92075ms         15.0                  
+gen-ip036             CPLEX                 Time stable           38448.958334ms        -4606.6796098376      
+bienst2               SCIP                  Time stable           124725.125396ms       54.6                  
+gsvm2rl3              CPLEX                 Time stable           357.261209ms          0.33652753396196533   
+gen-ip036             SCIP                  Time stable           142764.32725ms        -4606.6796098376      
+rlp1                  CPLEX                 Time stable           22.890125ms           15.0                  
+bienst2               HiGHS                 Time stable           283678.569708ms       54.59999999999993     
+gen-ip021             SCIP                  Time stable           158535.154875ms       2361.4541951916       
+neos5                 CPLEX                 Time stable           7983.126208ms         15.0                  
+rlp1                  HiGHS                 Time stable           163.941334ms          15.0                  
+gen-ip036             HiGHS                 Time stable           266366.600584ms       -4606.6796098376      
+gen-ip021             CP-SAT                FAILED                UNSTABLE              
+gen-ip021             HiGHS                 Time stable           244578.706083ms       2361.4541951916       
+gen-ip036             CP-SAT                Time not stable       238607.938667ms       -4606.6796098376      
+
+Iteration 4 with 3 model/solver pairs remaining 2026-11-13T08:19:09.382713Z
+-----------------------------------------------------------------------------
+rlp1                  CP-SAT                Time not stable       1141.868ms            15.0                  
+neos5                 CP-SAT                Time not stable       14975.264708ms        15.0                  
+gen-ip036             CP-SAT                Time not stable       211332.970959ms       -4606.6796098376      
+
+Iteration 5 with 3 model/solver pairs remaining 2026-11-13T08:23:47.818710Z
+-----------------------------------------------------------------------------
+rlp1                  CP-SAT                Time stable           1215.736083ms         15.0                  
+neos5                 CP-SAT                Time not stable       14997.198ms           15.0                  
+gen-ip036             CP-SAT                Time not stable       162292.849917ms       -4606.6796098376      
+
+Iteration 6 with 2 model/solver pairs remaining 2026-11-13T08:27:28.052409Z
+-----------------------------------------------------------------------------
+neos5                 CP-SAT                Time not stable       14997.198ms           15.0                  
+gen-ip036             CP-SAT                Time not stable       175777.801833ms       -4606.6796098376      
+
+Iteration 7 with 2 model/solver pairs remaining 2026-11-13T08:34:48.545242Z
+-----------------------------------------------------------------------------
+neos5                 CP-SAT                Time not stable       16003.896042ms        15.0                  
+gen-ip036             CP-SAT                Time not stable       162292.849917ms       -4606.6796098376      
+
+Iteration 8 with 2 model/solver pairs remaining 2026-11-13T08:41:05.196593Z
+-----------------------------------------------------------------------------
+neos5                 CP-SAT                Time not stable       16003.896042ms        15.0                  
+gen-ip036             CP-SAT                FAILED                UNSTABLE              
+
+Iteration 9 with 1 model/solver pairs remaining 2026-11-13T08:47:14.335432Z
+-----------------------------------------------------------------------------
+neos5                 CP-SAT                Time stable           16003.896042ms        15.0                  
+
+Final Results
+=====================================================================
+bienst2               CP-SAT                FAILED                TIMEOUT               
+bienst2               CPLEX                 OPTIMAL               6109.3355ms           
+bienst2               HiGHS                 OPTIMAL               283678.569708ms       
+bienst2               SCIP                  OPTIMAL               124725.125396ms       
+gen-ip021             CP-SAT                FAILED                UNSTABLE              
+gen-ip021             CPLEX                 OPTIMAL               21686.329625ms        
+gen-ip021             HiGHS                 OPTIMAL               244578.706083ms       
+gen-ip021             SCIP                  OPTIMAL               158535.154875ms       
+gen-ip036             CP-SAT                FAILED                UNSTABLE              
+gen-ip036             CPLEX                 OPTIMAL               38448.958334ms        
+gen-ip036             HiGHS                 OPTIMAL               266366.600584ms       
+gen-ip036             SCIP                  OPTIMAL               142764.32725ms        
+gsvm2rl3              CP-SAT                FAILED                WRONG                 
+gsvm2rl3              CPLEX                 OPTIMAL               357.261209ms          
+gsvm2rl3              HiGHS                 OPTIMAL               4930.187666ms         
+gsvm2rl3              SCIP                  OPTIMAL               5387.423125ms         
+neos5                 CP-SAT                OPTIMAL               16003.896042ms        
+neos5                 CPLEX                 OPTIMAL               7983.126208ms         
+neos5                 HiGHS                 OPTIMAL               56032.527166ms        
+neos5                 SCIP                  FAILED                TIMEOUT               
+rlp1                  CP-SAT                OPTIMAL               1215.736083ms         
+rlp1                  CPLEX                 OPTIMAL               22.890125ms           
+rlp1                  HiGHS                 OPTIMAL               163.941334ms          
+rlp1                  SCIP                  OPTIMAL               11317.413459ms        
+
+Models Solved
+=====================================================================
+CP-SAT                2 / 6                 33%                   
+CPLEX                 6 / 6                 100%                  
+HiGHS                 6 / 6                 100%                  
+SCIP                  5 / 6                 83%                   

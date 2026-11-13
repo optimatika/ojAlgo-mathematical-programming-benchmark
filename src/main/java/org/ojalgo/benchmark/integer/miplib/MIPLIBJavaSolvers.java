@@ -34,8 +34,11 @@ public final class MIPLIBJavaSolvers extends AbstractMIPLIB {
 
         Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.OJALGO_MIP, Contender.SSCLP, Contender.CHOCO);
 
-        configuration.minProbSize = 1;
-        configuration.maxProbSize = 1_000;
+        configuration.models.retainAll(EASY_SET);
+        configuration.models.removeAll(UNSTABLE);
+
+        // configuration.parallelism = Parallelism.TWO;
+        // configuration.parallelism = Parallelism.THREE;
 
         AbstractBenchmark.doBenchmark(configuration);
     }

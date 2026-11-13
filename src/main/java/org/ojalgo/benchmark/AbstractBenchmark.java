@@ -232,7 +232,8 @@ public abstract class AbstractBenchmark {
          */
         TIMEOUT,
         /**
-         * Not always the same results between executions (a variation on WRONG)
+         * Not always the same results between executions (a variation on WRONG) - that includes solving
+         * within the time limit on one pass and timing out on a later one
          */
         UNSTABLE,
         /**
@@ -275,6 +276,10 @@ public abstract class AbstractBenchmark {
 
         private static final int WINDOW = 3;
 
+        /**
+         * The average of the last times, ms
+         */
+        private double myAverage = Double.NaN;
         private boolean myConsistent = true;
         private int myCount = 0;
         /**
@@ -286,10 +291,6 @@ public abstract class AbstractBenchmark {
          * The middle of the last times, ms
          */
         private double myMedian = Double.NaN;
-        /**
-         * The average of the last times, ms
-         */
-        private double myAverage = Double.NaN;
         private int myNbTimes = 0;
         /**
          * The difference between the slowest and the fastest of the last times, ms
@@ -376,9 +377,9 @@ public abstract class AbstractBenchmark {
         }
 
         /**
-         * The first result, its state downgraded if a later one disagreed, together with the middle of the
-         * last three times (or fewer, if there aren't three yet). {@link AbstractBenchmark#FAILED} if there
-         * are no times, null if nothing was added.
+         * The first result, its state downgraded if a later one disagreed, together with
+         * {@link #medianTime()}. {@link AbstractBenchmark#FAILED} if there are no times, null if nothing was
+         * added.
          */
         public TimedResult<Result> median() {
 
@@ -394,8 +395,8 @@ public abstract class AbstractBenchmark {
         }
 
         /**
-         * The middle of the last three times (or fewer, if there aren't three yet), ms - NaN if there are
-         * none.
+         * The median of the last three times, ms. Until there are three, it's the median of those there are:
+         * with two, their mean, with one, that one. NaN if there are none.
          */
         public double medianTime() {
             return myMedian;
@@ -498,14 +499,14 @@ public abstract class AbstractBenchmark {
             new CalendarDateDuration(30, CalendarDateUnit.MINUTE).convertTo(CalendarDateUnit.MILLIS));
 
     /**
-     * Where the results and console logs are written.
-     */
-    static final String OUTPUT_DIR = "./src/main/resources/";
-    /**
      * Where the native solvers are installed - library paths and environment variables for the worker JVMs.
      * See the file itself for the format.
      */
     static final String NATIVE_SOLVERS = "./native-solvers.properties";
+    /**
+     * Where the results and console logs are written.
+     */
+    static final String OUTPUT_DIR = "./src/main/resources/";
     static final int WIDTH = 22;
 
     /**
@@ -789,7 +790,9 @@ public abstract class AbstractBenchmark {
 
                 } else {
 
-                    // Report every pass, whether or not the pair is done with, so progress can be followed
+                    // Report every pass, whether or not the pair is done with, so progress can be followed. The
+                    // middle of the last three is what's reported in the end, and this pass's own time next to
+                    // it - the middle one hides an outlier, which can still be what keeps the times unstable.
                     boolean stable = mainResults.isStable();
 
                     String what;
@@ -802,7 +805,7 @@ public abstract class AbstractBenchmark {
                     }
 
                     log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, what, mainResults.median().duration,
-                            mainResults.median().result.getValue());
+                            new CalendarDateDuration(subResults.time, CalendarDateUnit.MILLIS), mainResults.median().result.getValue());
 
                     if (stable) {
                         iterDone.add(modelSolverPair);
@@ -833,8 +836,13 @@ public abstract class AbstractBenchmark {
             ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
             mainResults.add(FAILED);
 
-            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
-            totReasons.put(modelSolverPair, FailReason.TIMEOUT);
+            // The fork returns before the deadline whenever it has a measurement, so a timeout means a single
+            // solve took too long. On the first pass that's a plain timeout. On a later pass the same solve has
+            // already finished in time, so its times vary too much to be measured.
+            FailReason reason = firstPass ? FailReason.TIMEOUT : FailReason.UNSTABLE;
+
+            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), reason);
+            totReasons.put(modelSolverPair, reason);
             iterDone.add(modelSolverPair);
 
         } catch (Exception cause) {

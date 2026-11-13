@@ -27,25 +27,20 @@ import org.ojalgo.benchmark.Contender;
 /**
  * The native solvers against each other - which models each of them can solve. ojAlgo is not included.
  * <p>
- * Whatever is installed on this machine, through the plain integrations. No library paths, no build variants:
- * those questions belong to the Docker image comparison - or set {@link Configuration#libraries} and
- * {@link Configuration#label}.
- * <p>
- * Models are selected by size rather than by name - every model in {@code MIPLIB.dat} with a variable count
- * in {@code [MIN_SIZE, MAX_SIZE]}. The available models run out somewhere below 20k.
- * <p>
- * This is what defines the {@link AbstractMIPLIB#EASY_SET}: run it on the models up to 1k, and the easy set
- * is the models that all of COPT, CPLEX, HiGHS, SCIP and Xpress solve.
- * <p>
- * One solve per pair, so the measure is how many models each solver gets through. The reported times are a
- * single sample each - fine for spotting order-of-magnitude differences, not for close comparisons.
+ * Running this, on the models up to 1k, is what defines the {@link AbstractMIPLIB#EASY_SET} - the models that
+ * HiGHS, SCIP and at least one more solve.
  */
 public final class MIPLIBNativeSolvers extends AbstractMIPLIB {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.CPLEX, Contender.SCIP, Contender.HIGHS, Contender.CPSAT, Contender.XPRESS,
-                Contender.COPT, Contender.MOSEK);
+        Configuration configuration = AbstractMIPLIB.newConfiguration(Contender.CPLEX, Contender.SCIP, Contender.HIGHS, Contender.CPSAT);
+
+        // configuration.models.retainAll(UNSTABLE);
+
+        // configuration.parallelism = Parallelism.ONE;
+        // configuration.parallelism = Parallelism.TWO;
+        // configuration.parallelism = Parallelism.THREE;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
