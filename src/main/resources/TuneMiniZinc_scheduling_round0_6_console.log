@@ -1,0 +1,189 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3
+Models: 87 of 87 within size limits (0 not shipped), solvers: 1
+
+
+Iteration 1 with 87 model/solver pairs remaining 2026-11-21T06:57:31.267536Z
+-----------------------------------------------------------------------------
+cyclic-rcpsp__medium_1MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.1     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__503            MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICKFMG-3-100   Solved                9806.8435ms           9806.8435ms           172500.0              
+jobshop2__la04        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_33 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la06 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__54             MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop__jobshop_la22 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_vw3x3MIP-BB-ICKFMG-3-100   Solved                12.202542ms           12.202542ms           256.0                 
+openshop__j7per10-1   MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+cargo__challenge06_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_2        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-ICKFMG-3-100   Solved                20225.986583ms        20225.986583ms        55.0                  
+openshop__gp10-4      MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-wet__j30_1_3-wetMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__easy_3  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   Solved                42272.355417ms        42272.355417ms        328.0                 
+jobshop2__mt10        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   Solved                2558.866458ms         2558.866458ms         242.0                 
+spot5__1502           MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge01_0s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-100   Solved                761.670875ms          761.670875ms          513.0                 
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__4ShipsMMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_4        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   Solved                6183.941708ms         6183.941708ms         348.0                 
+openshop__j8per0-2    MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+train__instance.13    MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+
+Final Results
+=====================================================================
+cargo__challenge01_0s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+filters__dct_1_1      MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+filters__dct_4_4      MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+filters__fir_1_1      MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+flexible-jobshop__easyMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la04        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+jobshop2__mt06        MIP-BB-ICKFMG-3-100   OPTIMAL               20225.986583ms        
+jobshop2__mt10        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la06 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_vw3x3MIP-BB-ICKFMG-3-100   OPTIMAL               12.202542ms           
+mrcpsp__mm_j10_j10_54_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+openshop__j7per10-1   MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+openshop__j8per0-2    MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_33 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-100   OPTIMAL               761.670875ms          
+rcpsp__data_pack_pack0MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICKFMG-3-100   OPTIMAL               9806.8435ms           
+ship-schedule__4ShipsMMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_4        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__1502           MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__503            MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__54             MIP-BB-ICKFMG-3-100   FAILED                WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   OPTIMAL               2558.866458ms         
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   OPTIMAL               42272.355417ms        
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   OPTIMAL               6183.941708ms         
+train__instance.1     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.13    MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+
+Models Solved
+=====================================================================
+MIP-BB-ICKFMG-3-100   7 / 87                8%                    

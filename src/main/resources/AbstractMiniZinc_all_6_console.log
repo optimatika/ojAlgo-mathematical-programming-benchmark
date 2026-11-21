@@ -1,0 +1,1098 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3
+Models: 135 of 292 within size limits (0 not shipped), solvers: 4
+
+
+Iteration 1 with 540 model/solver pairs remaining 2026-11-21T18:12:41.021044Z
+-----------------------------------------------------------------------------
+other/nfc__bockmayr_12MIP-BB+DF-ICKFMG-3-100Solved                88.694083ms           88.694083ms           438.0                 
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-Solved                96.308291ms           96.308291ms           287.0                 
+assignment-location/faMIP-BB-ICKFMG-3-100-B Solved                97.370291ms           97.370291ms           5708.0                
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B Solved                116.954ms             116.954ms             0.0                   
+puzzle/nmseq__020     MIP-BB+DF-ICKFMG-3-100Solved                56.447917ms           56.447917ms           0.0                   
+packing-cutting/2DBinPMIP-DF-ICKFMG-3-100-B Solved                139.573875ms          139.573875ms          6.0                   
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B Solved                5.258ms               5.258ms               0.0                   
+sequencing/cars__cars1MIP-BB+DF-ICKFMG-3-100Solved                83.83575ms            83.83575ms            0.0                   
+scheduling/jobshop2__mMIP-BB+DF+LD-ICKFMG-3-Solved                385.1155ms            385.1155ms            55.0                  
+assignment-location/faMIP-DF-ICKFMG-3-100-B Solved                4.844666ms            4.844666ms            5708.0                
+puzzle/magicseq__030  MIP-BB+DF-ICKFMG-3-100Solved                177.168166ms          177.168166ms          0.0                   
+puzzle/latin-squares__MIP-BB-ICKFMG-3-100-B Solved                1.483459ms            1.483459ms            0.0                   
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-Solved                7.081375ms            7.081375ms            324.0                 
+puzzle/knights__08_12 MIP-BB+DF-ICKFMG-3-100Solved                505.332625ms          505.332625ms          0.0                   
+sequencing/carseq__tesMIP-DF-ICKFMG-3-100-B Solved                1.771625ms            1.771625ms            0.0                   
+design/langford__l_2_1MIP-DF-ICKFMG-3-100-B Solved                682.432583ms          682.432583ms          0.0                   
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-Solved                5.483167ms            5.483167ms            59.0                  
+design/still_life__3x8MIP-BB+DF-ICKFMG-3-100Solved                702.072ms             702.072ms             12.0                  
+scheduling/stochastic-MIP-BB+DF+LD-ICKFMG-3-Solved                227.935583ms          227.935583ms          242.0                 
+design/ghoulomb__3-3-3MIP-BB+DF+LD-ICKFMG-3-Solved                3.830917ms            3.830917ms            3.0                   
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                1541.800583ms         1541.800583ms         17.0                  
+packing-cutting/templaMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/latin-squares__MIP-DF-ICKFMG-3-100-B Solved                42.227042ms           42.227042ms           0.0                   
+other/parity-learning_MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+other/nfc__12_2_10    MIP-BB+DF-ICKFMG-3-100Solved                2.587792ms            2.587792ms            848.0                 
+design/costas-array__6MIP-BB-ICKFMG-3-100-B Solved                76.027666ms           76.027666ms           0.0                   
+assignment-location/hrMIP-BB-ICKFMG-3-100-B Solved                15.708292ms           15.708292ms           8.0                   
+puzzle/QCP__qcp-10-67-MIP-BB+DF+LD-ICKFMG-3-Solved                256.56875ms           256.56875ms           0.0                   
+assignment-location/ciMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+packing-cutting/templaMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+design/still_life2__stMIP-BB+DF-ICKFMG-3-100Solved                48.433916ms           48.433916ms           16.0                  
+design/triangular__n10MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+scheduling/stochastic-MIP-BB-ICKFMG-3-100-B Solved                1531.273375ms         1531.273375ms         348.0                 
+other/parity-learning_MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B Solved                4.410333ms            4.410333ms            0.0                   
+design/still_life__2x4MIP-BB-ICKFMG-3-100-B Solved                2.611834ms            2.611834ms            6.0                   
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                1685.877708ms         1685.877708ms         14.0                  
+sequencing/carseq__tesMIP-BB-ICKFMG-3-100-B Solved                1.731125ms            1.731125ms            0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                117.330709ms          117.330709ms          191.0                 
+design/still_life__4x4MIP-BB+DF-ICKFMG-3-100Solved                96.521292ms           96.521292ms           8.0                   
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-Solved                1.708459ms            1.708459ms            42.0                  
+design/golomb__05     MIP-BB+DF+LD-ICKFMG-3-Solved                36.911833ms           36.911833ms           11.0                  
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B Solved                0.759ms               0.759ms               0.0                   
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B Solved                5.015375ms            5.015375ms            0.0                   
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                2.324791ms            2.324791ms            0.0                   
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B Solved                145.747125ms          145.747125ms          191.0                 
+puzzle/fillomino__01  MIP-BB-ICKFMG-3-100-B Solved                202.940916ms          202.940916ms          0.0                   
+packing-cutting/rectanMIP-BB+DF-ICKFMG-3-100Solved                0.406042ms            0.406042ms            0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                841.343167ms          841.343167ms          14.0                  
+puzzle/magicseq__020  MIP-BB+DF-ICKFMG-3-100Solved                8.403833ms            8.403833ms            0.0                   
+assignment-location/hrMIP-DF-ICKFMG-3-100-B Solved                6.861125ms            6.861125ms            8.0                   
+design/langford__l_2_1MIP-BB-ICKFMG-3-100-B Solved                569.108958ms          569.108958ms          0.0                   
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/latin-squares__MIP-BB+DF-ICKFMG-3-100Solved                31.38325ms            31.38325ms            0.0                   
+sequencing/talent_scheMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/still_life__4x4MIP-DF-ICKFMG-3-100-B Solved                75.527084ms           75.527084ms           8.0                   
+other/parity-learning_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-Solved                1.764417ms            1.764417ms            88.0                  
+packing-cutting/templaMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/areas__5_5_9   MIP-BB+DF-ICKFMG-3-100Solved                93.749583ms           93.749583ms           0.0                   
+design/costas-array__4MIP-BB-ICKFMG-3-100-B Solved                1.845292ms            1.845292ms            0.0                   
+packing-cutting/rectanMIP-DF-ICKFMG-3-100-B Solved                0.469292ms            0.469292ms            0.0                   
+sequencing/talent_scheMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+packing-cutting/2DBinPMIP-BB+DF+LD-ICKFMG-3-Solved                16.639292ms           16.639292ms           6.0                   
+design/schur_numbers__MIP-BB-ICKFMG-3-100-B Solved                8.862375ms            8.862375ms            0.0                   
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100Solved                14.971833ms           14.971833ms           0.0                   
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B Solved                0.802709ms            0.802709ms            0.0                   
+puzzle/fillomino__01  MIP-DF-ICKFMG-3-100-B Solved                143.256917ms          143.256917ms          0.0                   
+other/parity-learning_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/magicseq__030  MIP-DF-ICKFMG-3-100-B Solved                34.131583ms           34.131583ms           0.0                   
+packing-cutting/templaMIP-BB-ICKFMG-3-100-B Solved                5924.633166ms         5924.633166ms         418.0                 
+scheduling/stochastic-MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/queens__008    MIP-BB-ICKFMG-3-100-B Solved                119.00325ms           119.00325ms           0.0                   
+graph/maximum-dag__25_MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+scheduling/jobshop__joMIP-BB-ICKFMG-3-100-B Solved                1.789875ms            1.789875ms            256.0                 
+scheduling/filters__fiMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-Solved                1.818833ms            1.818833ms            220.0                 
+other/nfc__12_2_10    MIP-DF-ICKFMG-3-100-B Solved                0.368542ms            0.368542ms            848.0                 
+puzzle/knights__08_12 MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+assignment-location/ciMIP-BB+DF+LD-ICKFMG-3-Solved                168.02825ms           168.02825ms           31.0                  
+design/schur_numbers__MIP-DF-ICKFMG-3-100-B Solved                1.689792ms            1.689792ms            0.0                   
+routing/vrp__P-n16-k8.MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+design/still_life2__stMIP-BB+DF-ICKFMG-3-100Solved                3029.276417ms         3029.276417ms         28.0                  
+puzzle/latin-squares__MIP-BB-ICKFMG-3-100-B Solved                72.837166ms           72.837166ms           0.0                   
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                2.295458ms            2.295458ms            7.0                   
+design/langford__l_2_1MIP-BB+DF-ICKFMG-3-100Solved                530.410958ms          530.410958ms          0.0                   
+puzzle/quasigroup7__05MIP-BB+DF-ICKFMG-3-100Solved                83.125459ms           83.125459ms           0.0                   
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+packing-cutting/templaMIP-BB+DF-ICKFMG-3-100Solved                5677.793875ms         5677.793875ms         418.0                 
+puzzle/areas__3_3_3   MIP-BB+DF+LD-ICKFMG-3-Solved                4.140958ms            4.140958ms            0.0                   
+design/still_life__2x4MIP-DF-ICKFMG-3-100-B Solved                1.78825ms             1.78825ms             6.0                   
+routing/trucking__12  MIP-BB+DF-ICKFMG-3-100Solved                4.190792ms            4.190792ms            245.0                 
+design/schur_numbers__MIP-DF-ICKFMG-3-100-B Solved                44.042541ms           44.042541ms           0.0                   
+scheduling/jobshop2__lMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/knights__08_10 MIP-DF-ICKFMG-3-100-B Solved                186.229666ms          186.229666ms          0.0                   
+routing/trucking__05  MIP-BB+DF+LD-ICKFMG-3-Solved                1.1065ms              1.1065ms              287.0                 
+puzzle/tents__tents_1 MIP-BB+DF+LD-ICKFMG-3-Solved                0.044917ms            0.044917ms            0.0                   
+puzzle/queens__004    MIP-BB+DF+LD-ICKFMG-3-Solved                1.387167ms            1.387167ms            0.0                   
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                1855.662291ms         1855.662291ms         2.0                   
+assignment-location/maMIP-BB+DF+LD-ICKFMG-3-Solved                27.501917ms           27.501917ms           1000.0                
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100Solved                1.872792ms            1.872792ms            0.0                   
+routing/trucking__01  MIP-BB+DF+LD-ICKFMG-3-Solved                1.013584ms            1.013584ms            220.0                 
+packing-cutting/cutstoMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/langford__l_2_0MIP-BB+DF-ICKFMG-3-100Solved                0.850667ms            0.850667ms            0.0                   
+assignment-location/raMIP-BB+DF-ICKFMG-3-100Solved                746.268542ms          746.268542ms          370.0                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/debruijn_binaryMIP-BB+DF-ICKFMG-3-100Solved                6.447375ms            6.447375ms            0.0                   
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-Solved                1.989584ms            1.989584ms            224.0                 
+puzzle/alpha__alpha   MIP-BB+DF+LD-ICKFMG-3-Solved                223.802167ms          223.802167ms          0.0                   
+puzzle/knights__08_10 MIP-BB+DF-ICKFMG-3-100Solved                94.239833ms           94.239833ms           0.0                   
+puzzle/tents__tents_2 MIP-BB+DF+LD-ICKFMG-3-Solved                0.835541ms            0.835541ms            0.0                   
+routing/trucking__14  MIP-BB+DF+LD-ICKFMG-3-Solved                5.248667ms            5.248667ms            580.0                 
+assignment-location/raMIP-DF-ICKFMG-3-100-B Solved                912.553875ms          912.553875ms          370.0                 
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B Solved                9.137125ms            9.137125ms            0.0                   
+design/langford__l_2_0MIP-DF-ICKFMG-3-100-B Solved                0.560333ms            0.560333ms            0.0                   
+sequencing/cars__cars1MIP-BB-ICKFMG-3-100-B Solved                14.943375ms           14.943375ms           0.0                   
+design/still_life2__stMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/amaze__amaze   MIP-BB-ICKFMG-3-100-B Solved                139.285917ms          139.285917ms          12.0                  
+packing-cutting/cutstoMIP-BB-ICKFMG-3-100-B Solved                0.745ms               0.745ms               4.0                   
+packing-cutting/2DBinPMIP-BB-ICKFMG-3-100-B Solved                244.897959ms          244.897959ms          6.0                   
+design/bibd__06_03_02 MIP-BB+DF+LD-ICKFMG-3-Solved                217.548542ms          217.548542ms          0.0                   
+other/nfc__24_4_10    MIP-BB+DF-ICKFMG-3-100Solved                0.681333ms            0.681333ms            1912.0                
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+assignment-location/maMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+design/schur_numbers__MIP-BB+DF-ICKFMG-3-100Solved                32.348583ms           32.348583ms           0.0                   
+assignment-location/ciMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-Solved                1.982958ms            1.982958ms            0.0                   
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-Solved                1.335792ms            1.335792ms            210.0                 
+sequencing/talent_scheMIP-BB+DF+LD-ICKFMG-3-Solved                337.985458ms          337.985458ms          36.0                  
+puzzle/tents__tents_3 MIP-BB+DF+LD-ICKFMG-3-Solved                6.988ms               6.988ms               0.0                   
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B Solved                11.905917ms           11.905917ms           0.0                   
+scheduling/rcpsp__dataMIP-BB-ICKFMG-3-100-B Solved                91.69475ms            91.69475ms            513.0                 
+graph/maximum-dag__31_MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+graph/maximum-dag__15_MIP-BB+DF+LD-ICKFMG-3-Solved                233.287792ms          233.287792ms          46.0                  
+assignment-location/faMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+scheduling/jobshop2__lMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B Solved                2.795291ms            2.795291ms            144.0                 
+sequencing/open_stacksMIP-BB-ICKFMG-3-100-B Solved                3001.541625ms         3001.541625ms         3.0                   
+packing-cutting/cutstoMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/nonogram__non_mMIP-BB+DF+LD-ICKFMG-3-Solved                1.792208ms            1.792208ms            0.0                   
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                2851.821625ms         2851.821625ms         2.0                   
+puzzle/amaze__amaze   MIP-BB+DF+LD-ICKFMG-3-Solved                136.154083ms          136.154083ms          12.0                  
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                42.490042ms           42.490042ms           1.0                   
+packing-cutting/templaMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B Solved                1591.144042ms         1591.144042ms         38.0                  
+other/parity-learning_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100Solved                1.778541ms            1.778541ms            0.0                   
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-Solved                2.05425ms             2.05425ms             0.0                   
+routing/trucking__12  MIP-BB+DF+LD-ICKFMG-3-Solved                2.840083ms            2.840083ms            245.0                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                6849.486584ms         6849.486584ms         38.0                  
+design/costas-array__4MIP-BB+DF-ICKFMG-3-100Solved                1.531833ms            1.531833ms            0.0                   
+packing-cutting/cutstoMIP-BB+DF-ICKFMG-3-100Solved                1.028375ms            1.028375ms            4.0                   
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100Solved                12.148084ms           12.148084ms           0.0                   
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100Solved                0.709084ms            0.709084ms            0.0                   
+puzzle/areas__5_5_9   MIP-DF-ICKFMG-3-100-B Solved                24.357125ms           24.357125ms           0.0                   
+puzzle/areas__5_5_9   MIP-BB-ICKFMG-3-100-B Solved                78.371791ms           78.371791ms           0.0                   
+puzzle/nonogram__non_mMIP-DF-ICKFMG-3-100-B Solved                1.929458ms            1.929458ms            0.0                   
+assignment-location/phMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+graph/sugiyama__g3_7_7MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/magicseq__005  MIP-BB+DF-ICKFMG-3-100Solved                0.759458ms            0.759458ms            0.0                   
+design/still_life2__stMIP-DF-ICKFMG-3-100-B Solved                3488.197334ms         3488.197334ms         28.0                  
+configuration/java-autMIP-BB+DF+LD-ICKFMG-3-Solved                1.198917ms            1.198917ms            -43.0                 
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B Solved                47.010875ms           47.010875ms           0.0                   
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B Solved                1.535208ms            1.535208ms            0.0                   
+packing-cutting/2DBinPMIP-DF-ICKFMG-3-100-B Solved                24.107958ms           24.107958ms           6.0                   
+puzzle/nonogram__non_mMIP-BB-ICKFMG-3-100-B Solved                2.684542ms            2.684542ms            0.0                   
+design/still_life2__stMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+other/nfc__12_2_5     MIP-BB-ICKFMG-3-100-B Solved                0.416416ms            0.416416ms            1074.0                
+routing/trucking__01  MIP-BB+DF-ICKFMG-3-100Solved                0.993958ms            0.993958ms            220.0                 
+design/still_life2__stMIP-BB+DF+LD-ICKFMG-3-Solved                5505.338291ms         5505.338291ms         28.0                  
+assignment-location/phMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+packing-cutting/2DBinPMIP-BB-ICKFMG-3-100-B Solved                29.284792ms           29.284792ms           6.0                   
+other/nfc__24_4_10    MIP-BB-ICKFMG-3-100-B Solved                0.845208ms            0.845208ms            1912.0                
+puzzle/areas__3_3_3   MIP-BB+DF-ICKFMG-3-100Solved                3.924916ms            3.924916ms            0.0                   
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B Solved                22.603166ms           22.603166ms           39992.0               
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                5630.444875ms         5630.444875ms         38.0                  
+routing/prize-collectiMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+other/nfc__bockmayr_12MIP-DF-ICKFMG-3-100-B Solved                0.332333ms            0.332333ms            438.0                 
+sequencing/talent_scheMIP-BB-ICKFMG-3-100-B Solved                584.92ms              584.92ms              36.0                  
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                15.132833ms           15.132833ms           1.0                   
+assignment-location/raMIP-BB+DF+LD-ICKFMG-3-Solved                296.4275ms            296.4275ms            370.0                 
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B Solved                2.928625ms            2.928625ms            0.0                   
+other/nfc__12_2_10    MIP-BB-ICKFMG-3-100-B Solved                0.342625ms            0.342625ms            848.0                 
+routing/trucking__14  MIP-BB+DF-ICKFMG-3-100Solved                5.070708ms            5.070708ms            580.0                 
+design/bibd__06_03_02 MIP-BB+DF-ICKFMG-3-100Solved                6891.519542ms         6891.519542ms         0.0                   
+scheduling/filters__fiMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+other/nfc__12_2_5     MIP-DF-ICKFMG-3-100-B Solved                0.40575ms             0.40575ms             1074.0                
+scheduling/filters__fiMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+sequencing/talent_scheMIP-DF-ICKFMG-3-100-B Solved                621.707833ms          621.707833ms          36.0                  
+assignment-location/maMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+design/still_life2__stMIP-DF-ICKFMG-3-100-B Solved                2250.283959ms         2250.283959ms         16.0                  
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                7244.014041ms         7244.014041ms         2.0                   
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-Solved                2.866417ms            2.866417ms            144.0                 
+other/parity-learning_MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+scheduling/jobshop2__mMIP-BB+DF-ICKFMG-3-100Solved                110.526334ms          110.526334ms          55.0                  
+design/golfers__golferMIP-BB+DF-ICKFMG-3-100Solved                12.135041ms           12.135041ms           0.0                   
+design/langford__l_2_0MIP-BB-ICKFMG-3-100-B Solved                0.524625ms            0.524625ms            0.0                   
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B Solved                75.149166ms           75.149166ms           0.0                   
+design/still_life__2x4MIP-BB+DF+LD-ICKFMG-3-Solved                1.594792ms            1.594792ms            6.0                   
+puzzle/alpha__alpha   MIP-BB+DF-ICKFMG-3-100Solved                303.608542ms          303.608542ms          0.0                   
+other/nfc__bockmayr_12MIP-BB+DF+LD-ICKFMG-3-Solved                0.410459ms            0.410459ms            438.0                 
+scheduling/stochastic-MIP-BB+DF-ICKFMG-3-100Solved                389.705708ms          389.705708ms          328.0                 
+sequencing/open_stacksMIP-BB+DF+LD-ICKFMG-3-Solved                454.5485ms            454.5485ms            3.0                   
+design/debruijn_binaryMIP-BB-ICKFMG-3-100-B Solved                6.599708ms            6.599708ms            0.0                   
+assignment-location/faMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+puzzle/tents__tents_3 MIP-BB+DF-ICKFMG-3-100Solved                6.8525ms              6.8525ms              0.0                   
+routing/tpp__tpp_3_3_2MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/rectanMIP-BB+DF-ICKFMG-3-100Solved                0.648708ms            0.648708ms            0.0                   
+packing-cutting/marketMIP-BB+DF-ICKFMG-3-100Solved                133.101ms             133.101ms             0.0                   
+puzzle/knights__08_04 MIP-BB+DF-ICKFMG-3-100Solved                4.978167ms            4.978167ms            0.0                   
+sequencing/carseq__tesMIP-BB+DF-ICKFMG-3-100Solved                0.659375ms            0.659375ms            0.0                   
+packing-cutting/rectanMIP-BB-ICKFMG-3-100-B Solved                0.269125ms            0.269125ms            0.0                   
+assignment-location/hrMIP-BB+DF-ICKFMG-3-100Solved                5.87025ms             5.87025ms             8.0                   
+other/parity-learning_MIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+assignment-location/phMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+packing-cutting/2DBinPMIP-BB+DF-ICKFMG-3-100Solved                66.550375ms           66.550375ms           6.0                   
+puzzle/magicseq__010  MIP-BB+DF-ICKFMG-3-100Solved                2.395666ms            2.395666ms            0.0                   
+design/schur_numbers__MIP-BB-ICKFMG-3-100-B Solved                20.369458ms           20.369458ms           0.0                   
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B Solved                1.75075ms             1.75075ms             0.0                   
+graph/maximum-dag__25_MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B Solved                1.402208ms            1.402208ms            0.0                   
+scheduling/rcpsp__dataMIP-BB+DF-ICKFMG-3-100Solved                67.480333ms           67.480333ms           513.0                 
+scheduling/jobshop__joMIP-DF-ICKFMG-3-100-B Solved                0.665541ms            0.665541ms            256.0                 
+design/p1f__4         MIP-BB+DF+LD-ICKFMG-3-Solved                46.554875ms           46.554875ms           28.0                  
+graph/maximum-dag__15_MIP-BB-ICKFMG-3-100-B Solved                3769.044584ms         3769.044584ms         46.0                  
+scheduling/jobshop2__lMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/amaze__amaze   MIP-DF-ICKFMG-3-100-B Solved                277.1175ms            277.1175ms            12.0                  
+scheduling/stochastic-MIP-BB+DF-ICKFMG-3-100Solved                1840.038916ms         1840.038916ms         348.0                 
+design/schur_numbers__MIP-BB-ICKFMG-3-100-B Solved                1.294125ms            1.294125ms            0.0                   
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B Solved                25.481375ms           25.481375ms           0.0                   
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B Solved                0.662167ms            0.662167ms            287.0                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                1.480375ms            1.480375ms            0.0                   
+puzzle/queens__008    MIP-BB+DF-ICKFMG-3-100Solved                40.133ms              40.133ms              0.0                   
+routing/tpp__tpp_3_3_2MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+sequencing/talent_scheMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+graph/maximum-dag__31_MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+design/still_life2__stMIP-BB+DF+LD-ICKFMG-3-Solved                6396.6865ms           6396.6865ms           18.0                  
+scheduling/jobshop__joMIP-BB+DF+LD-ICKFMG-3-Solved                0.797084ms            0.797084ms            256.0                 
+sequencing/open_stacksMIP-DF-ICKFMG-3-100-B Solved                1009.934625ms         1009.934625ms         3.0                   
+assignment-location/faMIP-BB+DF-ICKFMG-3-100Solved                1.663292ms            1.663292ms            5708.0                
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/fillomino__01  MIP-BB+DF+LD-ICKFMG-3-Solved                64.188584ms           64.188584ms           0.0                   
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B Solved                2.124541ms            2.124541ms            59.0                  
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-Solved                39.207833ms           39.207833ms           0.0                   
+routing/trucking__05  MIP-BB+DF-ICKFMG-3-100Solved                0.713042ms            0.713042ms            287.0                 
+design/schur_numbers__MIP-DF-ICKFMG-3-100-B Solved                6.784083ms            6.784083ms            0.0                   
+design/ghoulomb__3-4-6MIP-BB+DF-ICKFMG-3-100Solved                204.057917ms          204.057917ms          6.0                   
+puzzle/latin-squares__MIP-BB+DF-ICKFMG-3-100Solved                0.45075ms             0.45075ms             0.0                   
+design/still_life2__stMIP-BB+DF+LD-ICKFMG-3-Solved                50.594833ms           50.594833ms           16.0                  
+design/golomb__05     MIP-BB-ICKFMG-3-100-B Solved                43.616459ms           43.616459ms           11.0                  
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/quasigroup7__05MIP-BB-ICKFMG-3-100-B Solved                74.519125ms           74.519125ms           0.0                   
+assignment-location/phMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+graph/maximum-dag__25_MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+assignment-location/maMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B Solved                2.404125ms            2.404125ms            144.0                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                1.371292ms            1.371292ms            7.0                   
+configuration/java-autMIP-DF-ICKFMG-3-100-B Solved                0.78525ms             0.78525ms             -43.0                 
+other/nfc__18_3_5     MIP-BB+DF-ICKFMG-3-100Solved                0.31625ms             0.31625ms             1338.0                
+design/costas-array__6MIP-BB+DF-ICKFMG-3-100Solved                26.272291ms           26.272291ms           0.0                   
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-Solved                2.218833ms            2.218833ms            0.0                   
+other/parity-learning_MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                65.378583ms           65.378583ms           191.0                 
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B Solved                1.04975ms             1.04975ms             42.0                  
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100Solved                1.922625ms            1.922625ms            0.0                   
+graph/grid-colouring__MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B Solved                0.936041ms            0.936041ms            210.0                 
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B Solved                1.142833ms            1.142833ms            224.0                 
+scheduling/jobshop2__lMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                4628.260167ms         4628.260167ms         28.0                  
+puzzle/magicseq__005  MIP-BB-ICKFMG-3-100-B Solved                0.681042ms            0.681042ms            0.0                   
+assignment-location/phMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B Solved                1.382791ms            1.382791ms            42.0                  
+routing/vrp__P-n16-k8.MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/golomb__05     MIP-DF-ICKFMG-3-100-B Solved                84.482917ms           84.482917ms           11.0                  
+puzzle/latin-squares__MIP-BB+DF+LD-ICKFMG-3-Solved                36.036875ms           36.036875ms           0.0                   
+design/bibd__06_03_02 MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+sequencing/talent_scheMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+scheduling/stochastic-MIP-DF-ICKFMG-3-100-B Solved                196.935041ms          196.935041ms          242.0                 
+design/p1f__4         MIP-BB-ICKFMG-3-100-B Solved                59.614041ms           59.614041ms           28.0                  
+assignment-location/maMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/schur_numbers__MIP-BB+DF+LD-ICKFMG-3-Solved                33.31875ms            33.31875ms            0.0                   
+puzzle/QCP__qcp-10-67-MIP-DF-ICKFMG-3-100-B Solved                72.948208ms           72.948208ms           0.0                   
+routing/trucking__05  MIP-BB-ICKFMG-3-100-B Solved                0.741875ms            0.741875ms            287.0                 
+scheduling/rcpsp__dataMIP-BB+DF+LD-ICKFMG-3-Solved                58.281958ms           58.281958ms           513.0                 
+scheduling/stochastic-MIP-BB+DF+LD-ICKFMG-3-Solved                641.572042ms          641.572042ms          348.0                 
+packing-cutting/2DBinPMIP-BB+DF-ICKFMG-3-100Solved                33.70975ms            33.70975ms            6.0                   
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B Solved                1.916875ms            1.916875ms            88.0                  
+scheduling/jobshop2__mMIP-DF-ICKFMG-3-100-B Solved                254.647458ms          254.647458ms          55.0                  
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B Solved                2.141833ms            2.141833ms            324.0                 
+design/golomb__03     MIP-BB-ICKFMG-3-100-B Solved                0.66125ms             0.66125ms             3.0                   
+packing-cutting/templaMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B Solved                2.10125ms             2.10125ms             59.0                  
+assignment-location/maMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+packing-cutting/templaMIP-BB+DF+LD-ICKFMG-3-Solved                2688.692209ms         2688.692209ms         418.0                 
+design/triangular__n10MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B Solved                0.97125ms             0.97125ms             220.0                 
+design/p1f__4         MIP-DF-ICKFMG-3-100-B Solved                49.103334ms           49.103334ms           28.0                  
+routing/trucking__05  MIP-DF-ICKFMG-3-100-B Solved                0.716833ms            0.716833ms            287.0                 
+puzzle/knights__08_10 MIP-BB+DF+LD-ICKFMG-3-Solved                70.733166ms           70.733166ms           0.0                   
+design/ghoulomb__3-3-3MIP-DF-ICKFMG-3-100-B Solved                1.111083ms            1.111083ms            3.0                   
+assignment-location/ciMIP-BB+DF-ICKFMG-3-100Solved                124.404916ms          124.404916ms          31.0                  
+scheduling/filters__fiMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+assignment-location/maMIP-BB+DF-ICKFMG-3-100Solved                25.502625ms           25.502625ms           1000.0                
+sequencing/carseq__tesMIP-BB+DF+LD-ICKFMG-3-Solved                0.873084ms            0.873084ms            0.0                   
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B Solved                1.289417ms            1.289417ms            324.0                 
+packing-cutting/2DBinPMIP-BB+DF+LD-ICKFMG-3-Solved                62.705458ms           62.705458ms           6.0                   
+puzzle/queens__004    MIP-BB+DF-ICKFMG-3-100Solved                1.092875ms            1.092875ms            0.0                   
+graph/maximum-dag__31_MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B Solved                0.832125ms            0.832125ms            220.0                 
+scheduling/jobshop2__mMIP-BB-ICKFMG-3-100-B Solved                254.669833ms          254.669833ms          55.0                  
+routing/vrp__P-n16-k8.MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/tents__tents_1 MIP-BB+DF-ICKFMG-3-100Solved                0.025459ms            0.025459ms            0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                5481.542709ms         5481.542709ms         17.0                  
+assignment-location/maMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+graph/maximum-dag__15_MIP-BB+DF-ICKFMG-3-100Solved                525.580167ms          525.580167ms          46.0                  
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B Solved                1.1805ms              1.1805ms              224.0                 
+graph/maximum-dag__15_MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B Solved                0.876708ms            0.876708ms            210.0                 
+design/schur_numbers__MIP-BB+DF+LD-ICKFMG-3-Solved                6.301042ms            6.301042ms            0.0                   
+assignment-location/ciMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+scheduling/stochastic-MIP-BB-ICKFMG-3-100-B Solved                386.334666ms          386.334666ms          242.0                 
+puzzle/knights__08_12 MIP-BB+DF+LD-ICKFMG-3-Solved                412.264208ms          412.264208ms          0.0                   
+puzzle/tents__tents_2 MIP-BB+DF-ICKFMG-3-100Solved                0.802666ms            0.802666ms            0.0                   
+design/langford__l_2_0MIP-BB+DF+LD-ICKFMG-3-Solved                0.589834ms            0.589834ms            0.0                   
+graph/sugiyama__g3_7_7MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-Solved                9.514417ms            9.514417ms            0.0                   
+packing-cutting/cutstoMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100Solved                74.585291ms           74.585291ms           0.0                   
+puzzle/magicseq__005  MIP-DF-ICKFMG-3-100-B Solved                0.826875ms            0.826875ms            0.0                   
+design/costas-array__6MIP-BB+DF+LD-ICKFMG-3-Solved                45.617292ms           45.617292ms           0.0                   
+design/bibd__06_03_02 MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100Solved                29.302042ms           29.302042ms           0.0                   
+puzzle/latin-squares__MIP-BB+DF+LD-ICKFMG-3-Solved                0.592791ms            0.592791ms            0.0                   
+assignment-location/maMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                16.5885ms             16.5885ms             1.0                   
+puzzle/alpha__alpha   MIP-DF-ICKFMG-3-100-B Solved                367.081125ms          367.081125ms          0.0                   
+routing/trucking__14  MIP-DF-ICKFMG-3-100-B Solved                4.826541ms            4.826541ms            580.0                 
+design/ghoulomb__3-3-3MIP-BB+DF-ICKFMG-3-100Solved                1.469125ms            1.469125ms            3.0                   
+design/schur_numbers__MIP-BB+DF+LD-ICKFMG-3-Solved                1.768334ms            1.768334ms            0.0                   
+scheduling/stochastic-MIP-BB+DF-ICKFMG-3-100Solved                60.14025ms            60.14025ms            242.0                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                587.164125ms          587.164125ms          17.0                  
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B Solved                1.620291ms            1.620291ms            0.0                   
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100Solved                2.04275ms             2.04275ms             59.0                  
+assignment-location/ciMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+graph/sugiyama__g3_7_7MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B Solved                91.716541ms           91.716541ms           0.0                   
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B Solved                0.651916ms            0.651916ms            287.0                 
+graph/maximum-dag__31_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/QCP__qcp-10-67-MIP-BB+DF-ICKFMG-3-100Solved                85.8275ms             85.8275ms             0.0                   
+assignment-location/faMIP-BB+DF+LD-ICKFMG-3-Solved                2.070208ms            2.070208ms            5708.0                
+puzzle/magicseq__030  MIP-BB+DF+LD-ICKFMG-3-Solved                26.73675ms            26.73675ms            0.0                   
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B Solved                2.224416ms            2.224416ms            0.0                   
+graph/maximum-dag__25_MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+packing-cutting/rectanMIP-BB+DF+LD-ICKFMG-3-Solved                0.4145ms              0.4145ms              0.0                   
+routing/trucking__01  MIP-DF-ICKFMG-3-100-B Solved                1.030167ms            1.030167ms            220.0                 
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100Solved                1.268042ms            1.268042ms            42.0                  
+assignment-location/ciMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+design/golomb__05     MIP-BB+DF-ICKFMG-3-100Solved                51.152583ms           51.152583ms           11.0                  
+design/costas-array__4MIP-BB+DF+LD-ICKFMG-3-Solved                1.479916ms            1.479916ms            0.0                   
+puzzle/areas__3_3_3   MIP-DF-ICKFMG-3-100-B Solved                2.869333ms            2.869333ms            0.0                   
+design/still_life__4x4MIP-BB+DF+LD-ICKFMG-3-Solved                133.751833ms          133.751833ms          8.0                   
+packing-cutting/marketMIP-BB-ICKFMG-3-100-B Solved                333.446292ms          333.446292ms          0.0                   
+design/golomb__03     MIP-DF-ICKFMG-3-100-B Solved                0.56025ms             0.56025ms             3.0                   
+puzzle/tents__tents_1 MIP-DF-ICKFMG-3-100-B Solved                0.017375ms            0.017375ms            0.0                   
+design/still_life__3x8MIP-BB+DF+LD-ICKFMG-3-Solved                286.250542ms          286.250542ms          12.0                  
+routing/trucking__12  MIP-DF-ICKFMG-3-100-B Solved                2.982125ms            2.982125ms            245.0                 
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100Solved                1.111292ms            1.111292ms            88.0                  
+assignment-location/faMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+assignment-location/ciMIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/areas__5_5_9   MIP-BB+DF+LD-ICKFMG-3-Solved                38.073083ms           38.073083ms           0.0                   
+puzzle/nmseq__020     MIP-BB+DF+LD-ICKFMG-3-Solved                9.522292ms            9.522292ms            0.0                   
+assignment-location/phMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+other/parity-learning_MIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                17.801916ms           17.801916ms           39992.0               
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                1537.926583ms         1537.926583ms         14.0                  
+other/nfc__12_2_5     MIP-BB+DF+LD-ICKFMG-3-Solved                0.328416ms            0.328416ms            1074.0                
+design/debruijn_binaryMIP-DF-ICKFMG-3-100-B Solved                5.183375ms            5.183375ms            0.0                   
+puzzle/magicseq__020  MIP-BB+DF+LD-ICKFMG-3-Solved                7.004459ms            7.004459ms            0.0                   
+configuration/java-autMIP-BB-ICKFMG-3-100-B Solved                1.047ms               1.047ms               -43.0                 
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B Solved                0.8705ms              0.8705ms              88.0                  
+design/golomb__03     MIP-BB+DF-ICKFMG-3-100Solved                0.451958ms            0.451958ms            3.0                   
+graph/maximum-dag__25_MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/vrp__P-n16-k8.MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+scheduling/jobshop2__lMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+puzzle/knights__08_04 MIP-BB+DF+LD-ICKFMG-3-Solved                5.406417ms            5.406417ms            0.0                   
+puzzle/quasigroup7__05MIP-DF-ICKFMG-3-100-B Solved                82.069834ms           82.069834ms           0.0                   
+assignment-location/hrMIP-BB+DF+LD-ICKFMG-3-Solved                5.709958ms            5.709958ms            8.0                   
+puzzle/queens__004    MIP-BB-ICKFMG-3-100-B Solved                1.359042ms            1.359042ms            0.0                   
+puzzle/knights__08_04 MIP-DF-ICKFMG-3-100-B Solved                4.132667ms            4.132667ms            0.0                   
+puzzle/magicseq__010  MIP-DF-ICKFMG-3-100-B Solved                3.47675ms             3.47675ms             0.0                   
+scheduling/stochastic-MIP-BB-ICKFMG-3-100-B Solved                1443.222209ms         1443.222209ms         328.0                 
+design/triangular__n10MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+routing/tpp__tpp_3_3_2MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+design/schur_numbers__MIP-BB+DF-ICKFMG-3-100Solved                1.777ms               1.777ms               0.0                   
+puzzle/tents__tents_2 MIP-BB-ICKFMG-3-100-B Solved                0.618583ms            0.618583ms            0.0                   
+other/nfc__18_3_5     MIP-DF-ICKFMG-3-100-B Solved                0.3105ms              0.3105ms              1338.0                
+puzzle/tents__tents_1 MIP-BB-ICKFMG-3-100-B Solved                0.027875ms            0.027875ms            0.0                   
+puzzle/tents__tents_3 MIP-DF-ICKFMG-3-100-B Solved                6.423958ms            6.423958ms            0.0                   
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B Solved                1.531667ms            1.531667ms            7.0                   
+graph/grid-colouring__MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/still_life__2x4MIP-BB+DF-ICKFMG-3-100Solved                1.551917ms            1.551917ms            6.0                   
+design/golfers__golferMIP-BB+DF+LD-ICKFMG-3-Solved                10.306459ms           10.306459ms           0.0                   
+routing/prize-collectiMIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+design/ghoulomb__3-4-6MIP-BB-ICKFMG-3-100-B Solved                874.31875ms           874.31875ms           6.0                   
+design/still_life2__stMIP-BB-ICKFMG-3-100-B Solved                53.938334ms           53.938334ms           16.0                  
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                53.283791ms           53.283791ms           191.0                 
+other/parity-learning_MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+puzzle/knights__08_04 MIP-BB-ICKFMG-3-100-B Solved                4.9875ms              4.9875ms              0.0                   
+puzzle/queens__004    MIP-DF-ICKFMG-3-100-B Solved                1.042958ms            1.042958ms            0.0                   
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/queens__008    MIP-BB+DF+LD-ICKFMG-3-Solved                90.84675ms            90.84675ms            0.0                   
+sequencing/open_stacksMIP-BB+DF-ICKFMG-3-100Solved                492.132333ms          492.132333ms          3.0                   
+scheduling/stochastic-MIP-BB+DF+LD-ICKFMG-3-Solved                386.77825ms           386.77825ms           328.0                 
+routing/prize-collectiMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/tents__tents_3 MIP-BB-ICKFMG-3-100-B Solved                6.302917ms            6.302917ms            0.0                   
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+other/nfc__24_4_10    MIP-BB+DF+LD-ICKFMG-3-Solved                0.692ms               0.692ms               1912.0                
+puzzle/magicseq__020  MIP-BB-ICKFMG-3-100-B Solved                10.181083ms           10.181083ms           0.0                   
+packing-cutting/marketMIP-DF-ICKFMG-3-100-B Solved                87.783959ms           87.783959ms           0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                1.763208ms            1.763208ms            7.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/magicseq__010  MIP-BB+DF+LD-ICKFMG-3-Solved                2.641625ms            2.641625ms            0.0                   
+puzzle/tents__tents_2 MIP-DF-ICKFMG-3-100-B Solved                0.625792ms            0.625792ms            0.0                   
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                23.12175ms            23.12175ms            39992.0               
+scheduling/stochastic-MIP-DF-ICKFMG-3-100-B Solved                5626.966084ms         5626.966084ms         328.0                 
+other/nfc__bockmayr_12MIP-BB-ICKFMG-3-100-B Solved                0.270709ms            0.270709ms            438.0                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                21.200708ms           21.200708ms           39992.0               
+assignment-location/raMIP-BB-ICKFMG-3-100-B Solved                2164.433917ms         2164.433917ms         370.0                 
+other/nfc__24_4_10    MIP-DF-ICKFMG-3-100-B Solved                0.506125ms            0.506125ms            1912.0                
+packing-cutting/rectanMIP-BB+DF+LD-ICKFMG-3-Solved                0.643708ms            0.643708ms            0.0                   
+other/nfc__18_3_5     MIP-BB-ICKFMG-3-100-B Solved                0.311792ms            0.311792ms            1338.0                
+packing-cutting/marketMIP-BB+DF+LD-ICKFMG-3-Solved                23.035334ms           23.035334ms           0.0                   
+graph/maximum-dag__25_MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+puzzle/fillomino__01  MIP-BB+DF-ICKFMG-3-100Solved                37.983792ms           37.983792ms           0.0                   
+graph/maximum-dag__25_MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+packing-cutting/cutstoMIP-BB+DF+LD-ICKFMG-3-Solved                0.916583ms            0.916583ms            4.0                   
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B Solved                2.82825ms             2.82825ms             0.0                   
+design/golfers__golferMIP-BB-ICKFMG-3-100-B Solved                15.396208ms           15.396208ms           0.0                   
+graph/grid-colouring__MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/magicseq__020  MIP-DF-ICKFMG-3-100-B Solved                6.841708ms            6.841708ms            0.0                   
+other/nfc__18_3_5     MIP-BB+DF+LD-ICKFMG-3-Solved                0.4585ms              0.4585ms              1338.0                
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/nmseq__020     MIP-BB-ICKFMG-3-100-B Solved                8.421291ms            8.421291ms            0.0                   
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100Solved                0.86225ms             0.86225ms             210.0                 
+scheduling/jobshop__joMIP-BB+DF-ICKFMG-3-100Solved                0.995334ms            0.995334ms            256.0                 
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-Solved                8.308416ms            8.308416ms            0.0                   
+packing-cutting/rectanMIP-DF-ICKFMG-3-100-B Solved                0.43675ms             0.43675ms             0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+scheduling/jobshop2__lMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/quasigroup7__05MIP-BB+DF+LD-ICKFMG-3-Solved                80.397833ms           80.397833ms           0.0                   
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+assignment-location/maMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100Solved                1.331667ms            1.331667ms            0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-Solved                6917.182209ms         6917.182209ms         28.0                  
+design/p1f__4         MIP-BB+DF-ICKFMG-3-100Solved                59.121709ms           59.121709ms           28.0                  
+puzzle/magicseq__010  MIP-BB-ICKFMG-3-100-B Solved                2.461708ms            2.461708ms            0.0                   
+packing-cutting/rectanMIP-BB-ICKFMG-3-100-B Solved                0.477291ms            0.477291ms            0.0                   
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+design/debruijn_binaryMIP-BB+DF+LD-ICKFMG-3-Solved                6.169ms               6.169ms               0.0                   
+routing/tpp__tpp_3_3_2MIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+puzzle/nmseq__020     MIP-DF-ICKFMG-3-100-B Solved                19.211459ms           19.211459ms           0.0                   
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100Solved                1.096167ms            1.096167ms            220.0                 
+assignment-location/ciMIP-DF-ICKFMG-3-100-B Solved                322.867292ms          322.867292ms          31.0                  
+design/golfers__golferMIP-DF-ICKFMG-3-100-B Solved                18.44375ms            18.44375ms            0.0                   
+routing/prize-collectiMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B Solved                44.622458ms           44.622458ms           0.0                   
+assignment-location/ciMIP-BB-ICKFMG-3-100-B Solved                48.585709ms           48.585709ms           31.0                  
+design/still_life2__stMIP-BB-ICKFMG-3-100-B Solved                6633.727167ms         6633.727167ms         28.0                  
+design/ghoulomb__3-4-6MIP-BB+DF+LD-ICKFMG-3-Solved                85.224875ms           85.224875ms           6.0                   
+assignment-location/maMIP-BB-ICKFMG-3-100-B Solved                35.594125ms           35.594125ms           1000.0                
+scheduling/jobshop2__lMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+design/still_life__3x8MIP-BB-ICKFMG-3-100-B Solved                634.591ms             634.591ms             12.0                  
+graph/maximum-dag__25_MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+sequencing/cars__cars1MIP-BB+DF+LD-ICKFMG-3-Solved                16.722ms              16.722ms              0.0                   
+packing-cutting/cutstoMIP-DF-ICKFMG-3-100-B Solved                0.767625ms            0.767625ms            4.0                   
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100Solved                1.248833ms            1.248833ms            324.0                 
+other/nfc__12_2_5     MIP-BB+DF-ICKFMG-3-100Solved                0.262375ms            0.262375ms            1074.0                
+design/golomb__03     MIP-BB+DF+LD-ICKFMG-3-Solved                0.592041ms            0.592041ms            3.0                   
+assignment-location/maMIP-DF-ICKFMG-3-100-B Solved                35.874542ms           35.874542ms           1000.0                
+graph/grid-colouring__MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+graph/maximum-dag__25_MIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/still_life2__stMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+design/costas-array__4MIP-DF-ICKFMG-3-100-B Solved                1.695166ms            1.695166ms            0.0                   
+sequencing/talent_scheMIP-BB+DF-ICKFMG-3-100Solved                349.321875ms          349.321875ms          36.0                  
+design/still_life__4x4MIP-BB-ICKFMG-3-100-B Solved                199.890417ms          199.890417ms          8.0                   
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-Solved                1.490542ms            1.490542ms            0.0                   
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B Solved                15.017791ms           15.017791ms           0.0                   
+routing/trucking__01  MIP-BB-ICKFMG-3-100-B Solved                0.922667ms            0.922667ms            220.0                 
+design/still_life__3x8MIP-DF-ICKFMG-3-100-B Solved                819.1705ms            819.1705ms            12.0                  
+puzzle/amaze__amaze   MIP-BB+DF-ICKFMG-3-100Solved                152.572834ms          152.572834ms          12.0                  
+puzzle/queens__008    MIP-DF-ICKFMG-3-100-B Solved                47.192208ms           47.192208ms           0.0                   
+puzzle/knights__08_10 MIP-BB-ICKFMG-3-100-B Solved                1175.080041ms         1175.080041ms         0.0                   
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B Solved                137.551ms             137.551ms             1.0                   
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100Solved                1.087666ms            1.087666ms            224.0                 
+packing-cutting/cutstoMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-Solved                0.549583ms            0.549583ms            0.0                   
+puzzle/alpha__alpha   MIP-BB-ICKFMG-3-100-B Solved                522.248584ms          522.248584ms          0.0                   
+configuration/java-autMIP-BB+DF-ICKFMG-3-100Solved                1.070166ms            1.070166ms            -43.0                 
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-Solved                1.351833ms            1.351833ms            0.0                   
+routing/trucking__14  MIP-BB-ICKFMG-3-100-B Solved                5.713625ms            5.713625ms            580.0                 
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100Solved                2.657292ms            2.657292ms            144.0                 
+puzzle/latin-squares__MIP-DF-ICKFMG-3-100-B Solved                0.473167ms            0.473167ms            0.0                   
+design/schur_numbers__MIP-BB+DF-ICKFMG-3-100Solved                8.52425ms             8.52425ms             0.0                   
+design/langford__l_2_1MIP-BB+DF+LD-ICKFMG-3-Solved                343.596542ms          343.596542ms          0.0                   
+scheduling/jobshop2__lMIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+scheduling/rcpsp__dataMIP-DF-ICKFMG-3-100-B Solved                71.831292ms           71.831292ms           513.0                 
+design/costas-array__6MIP-DF-ICKFMG-3-100-B Solved                23.606458ms           23.606458ms           0.0                   
+assignment-location/ciMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+design/triangular__n10MIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100Solved                2940.308792ms         2940.308792ms         38.0                  
+other/nfc__12_2_10    MIP-BB+DF+LD-ICKFMG-3-Solved                0.314459ms            0.314459ms            848.0                 
+puzzle/knights__08_12 MIP-BB-ICKFMG-3-100-B Solved                493.636291ms          493.636291ms          0.0                   
+design/ghoulomb__3-3-3MIP-BB-ICKFMG-3-100-B Solved                1.079458ms            1.079458ms            3.0                   
+other/parity-learning_MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+puzzle/areas__3_3_3   MIP-BB-ICKFMG-3-100-B Solved                2.628167ms            2.628167ms            0.0                   
+puzzle/magicseq__005  MIP-BB+DF+LD-ICKFMG-3-Solved                0.753041ms            0.753041ms            0.0                   
+design/ghoulomb__3-4-6MIP-DF-ICKFMG-3-100-B Solved                447.646ms             447.646ms             6.0                   
+puzzle/magicseq__030  MIP-BB-ICKFMG-3-100-B Solved                23.086583ms           23.086583ms           0.0                   
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100Solved                0.589458ms            0.589458ms            287.0                 
+puzzle/nonogram__non_mMIP-BB+DF-ICKFMG-3-100Solved                1.488625ms            1.488625ms            0.0                   
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100Solved                1.83125ms             1.83125ms             0.0                   
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B Solved                1.704542ms            1.704542ms            0.0                   
+assignment-location/ciMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-Solved                31.708375ms           31.708375ms           0.0                   
+puzzle/QCP__qcp-10-67-MIP-BB-ICKFMG-3-100-B Solved                79.684875ms           79.684875ms           0.0                   
+routing/trucking__12  MIP-BB-ICKFMG-3-100-B Solved                2.578875ms            2.578875ms            245.0                 
+sequencing/cars__cars1MIP-DF-ICKFMG-3-100-B Solved                16.077583ms           16.077583ms           0.0                   
+assignment-location/faMIP-BB-ICKFMG-3-100-B FEASIBLE              WRONG                 
+assignment-location/phMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+graph/sugiyama__g3_7_7MIP-BB+DF+LD-ICKFMG-3-FEASIBLE              WRONG                 
+other/parity-learning_MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+assignment-location/phMIP-BB+DF-ICKFMG-3-100FEASIBLE              WRONG                 
+
+Final Results
+=====================================================================
+assignment-location/ciMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               168.02825ms           
+assignment-location/ciMIP-BB+DF-ICKFMG-3-100OPTIMAL               124.404916ms          
+assignment-location/ciMIP-BB-ICKFMG-3-100-B OPTIMAL               48.585709ms           
+assignment-location/ciMIP-DF-ICKFMG-3-100-B OPTIMAL               322.867292ms          
+assignment-location/ciMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/ciMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/ciMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/ciMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+assignment-location/ciMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/ciMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/ciMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/ciMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/faMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.070208ms            
+assignment-location/faMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.663292ms            
+assignment-location/faMIP-BB-ICKFMG-3-100-B OPTIMAL               97.370291ms           
+assignment-location/faMIP-DF-ICKFMG-3-100-B OPTIMAL               4.844666ms            
+assignment-location/faMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/faMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/faMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/faMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+assignment-location/hrMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               5.709958ms            
+assignment-location/hrMIP-BB+DF-ICKFMG-3-100OPTIMAL               5.87025ms             
+assignment-location/hrMIP-BB-ICKFMG-3-100-B OPTIMAL               15.708292ms           
+assignment-location/hrMIP-DF-ICKFMG-3-100-B OPTIMAL               6.861125ms            
+assignment-location/maMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               27.501917ms           
+assignment-location/maMIP-BB+DF-ICKFMG-3-100OPTIMAL               25.502625ms           
+assignment-location/maMIP-BB-ICKFMG-3-100-B OPTIMAL               35.594125ms           
+assignment-location/maMIP-DF-ICKFMG-3-100-B OPTIMAL               35.874542ms           
+assignment-location/maMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/maMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/maMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/maMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/maMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/maMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/maMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/maMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/phMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/phMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/phMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/phMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/phMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+assignment-location/phMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+assignment-location/phMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+assignment-location/phMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+assignment-location/raMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               296.4275ms            
+assignment-location/raMIP-BB+DF-ICKFMG-3-100OPTIMAL               746.268542ms          
+assignment-location/raMIP-BB-ICKFMG-3-100-B OPTIMAL               2164.433917ms         
+assignment-location/raMIP-DF-ICKFMG-3-100-B OPTIMAL               912.553875ms          
+configuration/java-autMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.198917ms            
+configuration/java-autMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.070166ms            
+configuration/java-autMIP-BB-ICKFMG-3-100-B OPTIMAL               1.047ms               
+configuration/java-autMIP-DF-ICKFMG-3-100-B OPTIMAL               0.78525ms             
+design/bibd__06_03_02 MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               217.548542ms          
+design/bibd__06_03_02 MIP-BB+DF-ICKFMG-3-100OPTIMAL               6891.519542ms         
+design/bibd__06_03_02 MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+design/bibd__06_03_02 MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+design/costas-array__4MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.479916ms            
+design/costas-array__4MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.531833ms            
+design/costas-array__4MIP-BB-ICKFMG-3-100-B OPTIMAL               1.845292ms            
+design/costas-array__4MIP-DF-ICKFMG-3-100-B OPTIMAL               1.695166ms            
+design/costas-array__6MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               45.617292ms           
+design/costas-array__6MIP-BB+DF-ICKFMG-3-100OPTIMAL               26.272291ms           
+design/costas-array__6MIP-BB-ICKFMG-3-100-B OPTIMAL               76.027666ms           
+design/costas-array__6MIP-DF-ICKFMG-3-100-B OPTIMAL               23.606458ms           
+design/debruijn_binaryMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               6.169ms               
+design/debruijn_binaryMIP-BB+DF-ICKFMG-3-100OPTIMAL               6.447375ms            
+design/debruijn_binaryMIP-BB-ICKFMG-3-100-B OPTIMAL               6.599708ms            
+design/debruijn_binaryMIP-DF-ICKFMG-3-100-B OPTIMAL               5.183375ms            
+design/ghoulomb__3-3-3MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               3.830917ms            
+design/ghoulomb__3-3-3MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.469125ms            
+design/ghoulomb__3-3-3MIP-BB-ICKFMG-3-100-B OPTIMAL               1.079458ms            
+design/ghoulomb__3-3-3MIP-DF-ICKFMG-3-100-B OPTIMAL               1.111083ms            
+design/ghoulomb__3-4-6MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               85.224875ms           
+design/ghoulomb__3-4-6MIP-BB+DF-ICKFMG-3-100OPTIMAL               204.057917ms          
+design/ghoulomb__3-4-6MIP-BB-ICKFMG-3-100-B OPTIMAL               874.31875ms           
+design/ghoulomb__3-4-6MIP-DF-ICKFMG-3-100-B OPTIMAL               447.646ms             
+design/golfers__golferMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               10.306459ms           
+design/golfers__golferMIP-BB+DF-ICKFMG-3-100OPTIMAL               12.135041ms           
+design/golfers__golferMIP-BB-ICKFMG-3-100-B OPTIMAL               15.396208ms           
+design/golfers__golferMIP-DF-ICKFMG-3-100-B OPTIMAL               18.44375ms            
+design/golomb__03     MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.592041ms            
+design/golomb__03     MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.451958ms            
+design/golomb__03     MIP-BB-ICKFMG-3-100-B OPTIMAL               0.66125ms             
+design/golomb__03     MIP-DF-ICKFMG-3-100-B OPTIMAL               0.56025ms             
+design/golomb__05     MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               36.911833ms           
+design/golomb__05     MIP-BB+DF-ICKFMG-3-100OPTIMAL               51.152583ms           
+design/golomb__05     MIP-BB-ICKFMG-3-100-B OPTIMAL               43.616459ms           
+design/golomb__05     MIP-DF-ICKFMG-3-100-B OPTIMAL               84.482917ms           
+design/langford__l_2_0MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.589834ms            
+design/langford__l_2_0MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.850667ms            
+design/langford__l_2_0MIP-BB-ICKFMG-3-100-B OPTIMAL               0.524625ms            
+design/langford__l_2_0MIP-DF-ICKFMG-3-100-B OPTIMAL               0.560333ms            
+design/langford__l_2_1MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               343.596542ms          
+design/langford__l_2_1MIP-BB+DF-ICKFMG-3-100OPTIMAL               530.410958ms          
+design/langford__l_2_1MIP-BB-ICKFMG-3-100-B OPTIMAL               569.108958ms          
+design/langford__l_2_1MIP-DF-ICKFMG-3-100-B OPTIMAL               682.432583ms          
+design/p1f__4         MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               46.554875ms           
+design/p1f__4         MIP-BB+DF-ICKFMG-3-100OPTIMAL               59.121709ms           
+design/p1f__4         MIP-BB-ICKFMG-3-100-B OPTIMAL               59.614041ms           
+design/p1f__4         MIP-DF-ICKFMG-3-100-B OPTIMAL               49.103334ms           
+design/schur_numbers__MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               33.31875ms            
+design/schur_numbers__MIP-BB+DF-ICKFMG-3-100OPTIMAL               32.348583ms           
+design/schur_numbers__MIP-BB-ICKFMG-3-100-B OPTIMAL               20.369458ms           
+design/schur_numbers__MIP-DF-ICKFMG-3-100-B OPTIMAL               44.042541ms           
+design/schur_numbers__MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.768334ms            
+design/schur_numbers__MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.777ms               
+design/schur_numbers__MIP-BB-ICKFMG-3-100-B OPTIMAL               1.294125ms            
+design/schur_numbers__MIP-DF-ICKFMG-3-100-B OPTIMAL               1.689792ms            
+design/schur_numbers__MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               6.301042ms            
+design/schur_numbers__MIP-BB+DF-ICKFMG-3-100OPTIMAL               8.52425ms             
+design/schur_numbers__MIP-BB-ICKFMG-3-100-B OPTIMAL               8.862375ms            
+design/schur_numbers__MIP-DF-ICKFMG-3-100-B OPTIMAL               6.784083ms            
+design/still_life2__stMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               50.594833ms           
+design/still_life2__stMIP-BB+DF-ICKFMG-3-100OPTIMAL               48.433916ms           
+design/still_life2__stMIP-BB-ICKFMG-3-100-B OPTIMAL               53.938334ms           
+design/still_life2__stMIP-DF-ICKFMG-3-100-B OPTIMAL               2250.283959ms         
+design/still_life2__stMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               6396.6865ms           
+design/still_life2__stMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+design/still_life2__stMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+design/still_life2__stMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+design/still_life2__stMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               5505.338291ms         
+design/still_life2__stMIP-BB+DF-ICKFMG-3-100OPTIMAL               3029.276417ms         
+design/still_life2__stMIP-BB-ICKFMG-3-100-B OPTIMAL               6633.727167ms         
+design/still_life2__stMIP-DF-ICKFMG-3-100-B OPTIMAL               3488.197334ms         
+design/still_life__2x4MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.594792ms            
+design/still_life__2x4MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.551917ms            
+design/still_life__2x4MIP-BB-ICKFMG-3-100-B OPTIMAL               2.611834ms            
+design/still_life__2x4MIP-DF-ICKFMG-3-100-B OPTIMAL               1.78825ms             
+design/still_life__3x8MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               286.250542ms          
+design/still_life__3x8MIP-BB+DF-ICKFMG-3-100OPTIMAL               702.072ms             
+design/still_life__3x8MIP-BB-ICKFMG-3-100-B OPTIMAL               634.591ms             
+design/still_life__3x8MIP-DF-ICKFMG-3-100-B OPTIMAL               819.1705ms            
+design/still_life__4x4MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               133.751833ms          
+design/still_life__4x4MIP-BB+DF-ICKFMG-3-100OPTIMAL               96.521292ms           
+design/still_life__4x4MIP-BB-ICKFMG-3-100-B OPTIMAL               199.890417ms          
+design/still_life__4x4MIP-DF-ICKFMG-3-100-B OPTIMAL               75.527084ms           
+design/triangular__n10MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+design/triangular__n10MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+design/triangular__n10MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+design/triangular__n10MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+graph/grid-colouring__MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+graph/grid-colouring__MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+graph/grid-colouring__MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+graph/grid-colouring__MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__15_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               233.287792ms          
+graph/maximum-dag__15_MIP-BB+DF-ICKFMG-3-100OPTIMAL               525.580167ms          
+graph/maximum-dag__15_MIP-BB-ICKFMG-3-100-B OPTIMAL               3769.044584ms         
+graph/maximum-dag__15_MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__25_MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__25_MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+graph/maximum-dag__25_MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__31_MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+graph/maximum-dag__31_MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+graph/maximum-dag__31_MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__31_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/sugiyama__g3_7_7MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+graph/sugiyama__g3_7_7MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+graph/sugiyama__g3_7_7MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+graph/sugiyama__g3_7_7MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+other/nfc__12_2_10    MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.314459ms            
+other/nfc__12_2_10    MIP-BB+DF-ICKFMG-3-100OPTIMAL               2.587792ms            
+other/nfc__12_2_10    MIP-BB-ICKFMG-3-100-B OPTIMAL               0.342625ms            
+other/nfc__12_2_10    MIP-DF-ICKFMG-3-100-B OPTIMAL               0.368542ms            
+other/nfc__12_2_5     MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.328416ms            
+other/nfc__12_2_5     MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.262375ms            
+other/nfc__12_2_5     MIP-BB-ICKFMG-3-100-B OPTIMAL               0.416416ms            
+other/nfc__12_2_5     MIP-DF-ICKFMG-3-100-B OPTIMAL               0.40575ms             
+other/nfc__18_3_5     MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.4585ms              
+other/nfc__18_3_5     MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.31625ms             
+other/nfc__18_3_5     MIP-BB-ICKFMG-3-100-B OPTIMAL               0.311792ms            
+other/nfc__18_3_5     MIP-DF-ICKFMG-3-100-B OPTIMAL               0.3105ms              
+other/nfc__24_4_10    MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.692ms               
+other/nfc__24_4_10    MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.681333ms            
+other/nfc__24_4_10    MIP-BB-ICKFMG-3-100-B OPTIMAL               0.845208ms            
+other/nfc__24_4_10    MIP-DF-ICKFMG-3-100-B OPTIMAL               0.506125ms            
+other/nfc__bockmayr_12MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.410459ms            
+other/nfc__bockmayr_12MIP-BB+DF-ICKFMG-3-100OPTIMAL               88.694083ms           
+other/nfc__bockmayr_12MIP-BB-ICKFMG-3-100-B OPTIMAL               0.270709ms            
+other/nfc__bockmayr_12MIP-DF-ICKFMG-3-100-B OPTIMAL               0.332333ms            
+other/parity-learning_MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+other/parity-learning_MIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+other/parity-learning_MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+other/parity-learning_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+other/parity-learning_MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+other/parity-learning_MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+other/parity-learning_MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+other/parity-learning_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+other/parity-learning_MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+other/parity-learning_MIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+other/parity-learning_MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+other/parity-learning_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/2DBinPMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               16.639292ms           
+packing-cutting/2DBinPMIP-BB+DF-ICKFMG-3-100OPTIMAL               33.70975ms            
+packing-cutting/2DBinPMIP-BB-ICKFMG-3-100-B OPTIMAL               29.284792ms           
+packing-cutting/2DBinPMIP-DF-ICKFMG-3-100-B OPTIMAL               24.107958ms           
+packing-cutting/2DBinPMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               62.705458ms           
+packing-cutting/2DBinPMIP-BB+DF-ICKFMG-3-100OPTIMAL               66.550375ms           
+packing-cutting/2DBinPMIP-BB-ICKFMG-3-100-B OPTIMAL               244.897959ms          
+packing-cutting/2DBinPMIP-DF-ICKFMG-3-100-B OPTIMAL               139.573875ms          
+packing-cutting/cutstoMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.916583ms            
+packing-cutting/cutstoMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.028375ms            
+packing-cutting/cutstoMIP-BB-ICKFMG-3-100-B OPTIMAL               0.745ms               
+packing-cutting/cutstoMIP-DF-ICKFMG-3-100-B OPTIMAL               0.767625ms            
+packing-cutting/cutstoMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+packing-cutting/cutstoMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+packing-cutting/cutstoMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/cutstoMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+packing-cutting/marketMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               23.035334ms           
+packing-cutting/marketMIP-BB+DF-ICKFMG-3-100OPTIMAL               133.101ms             
+packing-cutting/marketMIP-BB-ICKFMG-3-100-B OPTIMAL               333.446292ms          
+packing-cutting/marketMIP-DF-ICKFMG-3-100-B OPTIMAL               87.783959ms           
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.218833ms            
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.922625ms            
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B OPTIMAL               2.82825ms             
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B OPTIMAL               2.928625ms            
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               9.514417ms            
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100OPTIMAL               14.971833ms           
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B OPTIMAL               25.481375ms           
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B OPTIMAL               9.137125ms            
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               39.207833ms           
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100OPTIMAL               74.585291ms           
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B OPTIMAL               91.716541ms           
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B OPTIMAL               75.149166ms           
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.490542ms            
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.778541ms            
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B OPTIMAL               5.015375ms            
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B OPTIMAL               4.410333ms            
+packing-cutting/multi-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.351833ms            
+packing-cutting/multi-MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.872792ms            
+packing-cutting/multi-MIP-BB-ICKFMG-3-100-B OPTIMAL               116.954ms             
+packing-cutting/multi-MIP-DF-ICKFMG-3-100-B OPTIMAL               5.258ms               
+packing-cutting/rectanMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.4145ms              
+packing-cutting/rectanMIP-BB+DF-ICKFMG-3-100OPTIMAL               0.406042ms            
+packing-cutting/rectanMIP-BB-ICKFMG-3-100-B OPTIMAL               0.269125ms            
+packing-cutting/rectanMIP-DF-ICKFMG-3-100-B OPTIMAL               0.469292ms            
+packing-cutting/rectanMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.643708ms            
+packing-cutting/rectanMIP-BB+DF-ICKFMG-3-100OPTIMAL               0.648708ms            
+packing-cutting/rectanMIP-BB-ICKFMG-3-100-B OPTIMAL               0.477291ms            
+packing-cutting/rectanMIP-DF-ICKFMG-3-100-B OPTIMAL               0.43675ms             
+packing-cutting/templaMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2688.692209ms         
+packing-cutting/templaMIP-BB+DF-ICKFMG-3-100OPTIMAL               5677.793875ms         
+packing-cutting/templaMIP-BB-ICKFMG-3-100-B OPTIMAL               5924.633166ms         
+packing-cutting/templaMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+packing-cutting/templaMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+packing-cutting/templaMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+packing-cutting/templaMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+packing-cutting/templaMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/QCP__qcp-10-67-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               256.56875ms           
+puzzle/QCP__qcp-10-67-MIP-BB+DF-ICKFMG-3-100OPTIMAL               85.8275ms             
+puzzle/QCP__qcp-10-67-MIP-BB-ICKFMG-3-100-B OPTIMAL               79.684875ms           
+puzzle/QCP__qcp-10-67-MIP-DF-ICKFMG-3-100-B OPTIMAL               72.948208ms           
+puzzle/alpha__alpha   MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               223.802167ms          
+puzzle/alpha__alpha   MIP-BB+DF-ICKFMG-3-100OPTIMAL               303.608542ms          
+puzzle/alpha__alpha   MIP-BB-ICKFMG-3-100-B OPTIMAL               522.248584ms          
+puzzle/alpha__alpha   MIP-DF-ICKFMG-3-100-B OPTIMAL               367.081125ms          
+puzzle/amaze__amaze   MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               136.154083ms          
+puzzle/amaze__amaze   MIP-BB+DF-ICKFMG-3-100OPTIMAL               152.572834ms          
+puzzle/amaze__amaze   MIP-BB-ICKFMG-3-100-B OPTIMAL               139.285917ms          
+puzzle/amaze__amaze   MIP-DF-ICKFMG-3-100-B OPTIMAL               277.1175ms            
+puzzle/areas__3_3_3   MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               4.140958ms            
+puzzle/areas__3_3_3   MIP-BB+DF-ICKFMG-3-100OPTIMAL               3.924916ms            
+puzzle/areas__3_3_3   MIP-BB-ICKFMG-3-100-B OPTIMAL               2.628167ms            
+puzzle/areas__3_3_3   MIP-DF-ICKFMG-3-100-B OPTIMAL               2.869333ms            
+puzzle/areas__5_5_9   MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               38.073083ms           
+puzzle/areas__5_5_9   MIP-BB+DF-ICKFMG-3-100OPTIMAL               93.749583ms           
+puzzle/areas__5_5_9   MIP-BB-ICKFMG-3-100-B OPTIMAL               78.371791ms           
+puzzle/areas__5_5_9   MIP-DF-ICKFMG-3-100-B OPTIMAL               24.357125ms           
+puzzle/fillomino__01  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               64.188584ms           
+puzzle/fillomino__01  MIP-BB+DF-ICKFMG-3-100OPTIMAL               37.983792ms           
+puzzle/fillomino__01  MIP-BB-ICKFMG-3-100-B OPTIMAL               202.940916ms          
+puzzle/fillomino__01  MIP-DF-ICKFMG-3-100-B OPTIMAL               143.256917ms          
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.982958ms            
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.331667ms            
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B OPTIMAL               1.402208ms            
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B OPTIMAL               1.535208ms            
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.05425ms             
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.83125ms             
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B OPTIMAL               2.224416ms            
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B OPTIMAL               1.75075ms             
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               8.308416ms            
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100OPTIMAL               12.148084ms           
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B OPTIMAL               11.905917ms           
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B OPTIMAL               15.017791ms           
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.549583ms            
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.709084ms            
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B OPTIMAL               0.759ms               
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B OPTIMAL               0.802709ms            
+puzzle/kakuro__kakuro_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               31.708375ms           
+puzzle/kakuro__kakuro_MIP-BB+DF-ICKFMG-3-100OPTIMAL               29.302042ms           
+puzzle/kakuro__kakuro_MIP-BB-ICKFMG-3-100-B OPTIMAL               47.010875ms           
+puzzle/kakuro__kakuro_MIP-DF-ICKFMG-3-100-B OPTIMAL               44.622458ms           
+puzzle/knights__08_04 MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               5.406417ms            
+puzzle/knights__08_04 MIP-BB+DF-ICKFMG-3-100OPTIMAL               4.978167ms            
+puzzle/knights__08_04 MIP-BB-ICKFMG-3-100-B OPTIMAL               4.9875ms              
+puzzle/knights__08_04 MIP-DF-ICKFMG-3-100-B OPTIMAL               4.132667ms            
+puzzle/knights__08_10 MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               70.733166ms           
+puzzle/knights__08_10 MIP-BB+DF-ICKFMG-3-100OPTIMAL               94.239833ms           
+puzzle/knights__08_10 MIP-BB-ICKFMG-3-100-B OPTIMAL               1175.080041ms         
+puzzle/knights__08_10 MIP-DF-ICKFMG-3-100-B OPTIMAL               186.229666ms          
+puzzle/knights__08_12 MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               412.264208ms          
+puzzle/knights__08_12 MIP-BB+DF-ICKFMG-3-100OPTIMAL               505.332625ms          
+puzzle/knights__08_12 MIP-BB-ICKFMG-3-100-B OPTIMAL               493.636291ms          
+puzzle/knights__08_12 MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+puzzle/latin-squares__MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.592791ms            
+puzzle/latin-squares__MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.45075ms             
+puzzle/latin-squares__MIP-BB-ICKFMG-3-100-B OPTIMAL               1.483459ms            
+puzzle/latin-squares__MIP-DF-ICKFMG-3-100-B OPTIMAL               0.473167ms            
+puzzle/latin-squares__MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               36.036875ms           
+puzzle/latin-squares__MIP-BB+DF-ICKFMG-3-100OPTIMAL               31.38325ms            
+puzzle/latin-squares__MIP-BB-ICKFMG-3-100-B OPTIMAL               72.837166ms           
+puzzle/latin-squares__MIP-DF-ICKFMG-3-100-B OPTIMAL               42.227042ms           
+puzzle/magicseq__005  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.753041ms            
+puzzle/magicseq__005  MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.759458ms            
+puzzle/magicseq__005  MIP-BB-ICKFMG-3-100-B OPTIMAL               0.681042ms            
+puzzle/magicseq__005  MIP-DF-ICKFMG-3-100-B OPTIMAL               0.826875ms            
+puzzle/magicseq__010  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.641625ms            
+puzzle/magicseq__010  MIP-BB+DF-ICKFMG-3-100OPTIMAL               2.395666ms            
+puzzle/magicseq__010  MIP-BB-ICKFMG-3-100-B OPTIMAL               2.461708ms            
+puzzle/magicseq__010  MIP-DF-ICKFMG-3-100-B OPTIMAL               3.47675ms             
+puzzle/magicseq__020  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               7.004459ms            
+puzzle/magicseq__020  MIP-BB+DF-ICKFMG-3-100OPTIMAL               8.403833ms            
+puzzle/magicseq__020  MIP-BB-ICKFMG-3-100-B OPTIMAL               10.181083ms           
+puzzle/magicseq__020  MIP-DF-ICKFMG-3-100-B OPTIMAL               6.841708ms            
+puzzle/magicseq__030  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               26.73675ms            
+puzzle/magicseq__030  MIP-BB+DF-ICKFMG-3-100OPTIMAL               177.168166ms          
+puzzle/magicseq__030  MIP-BB-ICKFMG-3-100-B OPTIMAL               23.086583ms           
+puzzle/magicseq__030  MIP-DF-ICKFMG-3-100-B OPTIMAL               34.131583ms           
+puzzle/nmseq__020     MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               9.522292ms            
+puzzle/nmseq__020     MIP-BB+DF-ICKFMG-3-100OPTIMAL               56.447917ms           
+puzzle/nmseq__020     MIP-BB-ICKFMG-3-100-B OPTIMAL               8.421291ms            
+puzzle/nmseq__020     MIP-DF-ICKFMG-3-100-B OPTIMAL               19.211459ms           
+puzzle/nonogram__non_mMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.792208ms            
+puzzle/nonogram__non_mMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.488625ms            
+puzzle/nonogram__non_mMIP-BB-ICKFMG-3-100-B OPTIMAL               2.684542ms            
+puzzle/nonogram__non_mMIP-DF-ICKFMG-3-100-B OPTIMAL               1.929458ms            
+puzzle/quasigroup7__05MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               80.397833ms           
+puzzle/quasigroup7__05MIP-BB+DF-ICKFMG-3-100OPTIMAL               83.125459ms           
+puzzle/quasigroup7__05MIP-BB-ICKFMG-3-100-B OPTIMAL               74.519125ms           
+puzzle/quasigroup7__05MIP-DF-ICKFMG-3-100-B OPTIMAL               82.069834ms           
+puzzle/queens__004    MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.387167ms            
+puzzle/queens__004    MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.092875ms            
+puzzle/queens__004    MIP-BB-ICKFMG-3-100-B OPTIMAL               1.359042ms            
+puzzle/queens__004    MIP-DF-ICKFMG-3-100-B OPTIMAL               1.042958ms            
+puzzle/queens__008    MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               90.84675ms            
+puzzle/queens__008    MIP-BB+DF-ICKFMG-3-100OPTIMAL               40.133ms              
+puzzle/queens__008    MIP-BB-ICKFMG-3-100-B OPTIMAL               119.00325ms           
+puzzle/queens__008    MIP-DF-ICKFMG-3-100-B OPTIMAL               47.192208ms           
+puzzle/tents__tents_1 MIP-BB+DF+LD-ICKFMG-3-DISTINCT              0.044917ms            
+puzzle/tents__tents_1 MIP-BB+DF-ICKFMG-3-100DISTINCT              0.025459ms            
+puzzle/tents__tents_1 MIP-BB-ICKFMG-3-100-B DISTINCT              0.027875ms            
+puzzle/tents__tents_1 MIP-DF-ICKFMG-3-100-B DISTINCT              0.017375ms            
+puzzle/tents__tents_2 MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.835541ms            
+puzzle/tents__tents_2 MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.802666ms            
+puzzle/tents__tents_2 MIP-BB-ICKFMG-3-100-B OPTIMAL               0.618583ms            
+puzzle/tents__tents_2 MIP-DF-ICKFMG-3-100-B OPTIMAL               0.625792ms            
+puzzle/tents__tents_3 MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               6.988ms               
+puzzle/tents__tents_3 MIP-BB+DF-ICKFMG-3-100OPTIMAL               6.8525ms              
+puzzle/tents__tents_3 MIP-BB-ICKFMG-3-100-B OPTIMAL               6.302917ms            
+puzzle/tents__tents_3 MIP-DF-ICKFMG-3-100-B OPTIMAL               6.423958ms            
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               6917.182209ms         
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               4628.260167ms         
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               5630.444875ms         
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               2940.308792ms         
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B OPTIMAL               1591.144042ms         
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               6849.486584ms         
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.295458ms            
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.371292ms            
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B OPTIMAL               1.531667ms            
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               1.763208ms            
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1537.926583ms         
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               1685.877708ms         
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               841.343167ms          
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1541.800583ms         
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               587.164125ms          
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               5481.542709ms         
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               65.378583ms           
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               53.283791ms           
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B OPTIMAL               145.747125ms          
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               117.330709ms          
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               23.12175ms            
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               17.801916ms           
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B OPTIMAL               22.603166ms           
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               21.200708ms           
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.324791ms            
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.480375ms            
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B OPTIMAL               1.620291ms            
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               1.704542ms            
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               15.132833ms           
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               42.490042ms           
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B OPTIMAL               137.551ms             
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               16.5885ms             
+rostering-timetabling/MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2851.821625ms         
+rostering-timetabling/MIP-BB+DF-ICKFMG-3-100OPTIMAL               1855.662291ms         
+rostering-timetabling/MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+rostering-timetabling/MIP-DF-ICKFMG-3-100-B OPTIMAL               7244.014041ms         
+routing/prize-collectiMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+routing/prize-collectiMIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+routing/prize-collectiMIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+routing/prize-collectiMIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.764417ms            
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.111292ms            
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B OPTIMAL               1.916875ms            
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B OPTIMAL               0.8705ms              
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.708459ms            
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100OPTIMAL               1.268042ms            
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B OPTIMAL               1.04975ms             
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B OPTIMAL               1.382791ms            
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               5.483167ms            
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100OPTIMAL               2.04275ms             
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B OPTIMAL               2.124541ms            
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B OPTIMAL               2.10125ms             
+routing/shortest_path_MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.866417ms            
+routing/shortest_path_MIP-BB+DF-ICKFMG-3-100OPTIMAL               2.657292ms            
+routing/shortest_path_MIP-BB-ICKFMG-3-100-B OPTIMAL               2.795291ms            
+routing/shortest_path_MIP-DF-ICKFMG-3-100-B OPTIMAL               2.404125ms            
+routing/tpp__tpp_3_3_2MIP-BB+DF+LD-ICKFMG-3-FAILED                FAILED                
+routing/tpp__tpp_3_3_2MIP-BB+DF-ICKFMG-3-100FAILED                FAILED                
+routing/tpp__tpp_3_3_2MIP-BB-ICKFMG-3-100-B FAILED                FAILED                
+routing/tpp__tpp_3_3_2MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+routing/trucking__01  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.013584ms            
+routing/trucking__01  MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.993958ms            
+routing/trucking__01  MIP-BB-ICKFMG-3-100-B OPTIMAL               0.922667ms            
+routing/trucking__01  MIP-DF-ICKFMG-3-100-B OPTIMAL               1.030167ms            
+routing/trucking__05  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.1065ms              
+routing/trucking__05  MIP-BB+DF-ICKFMG-3-100OPTIMAL               0.713042ms            
+routing/trucking__05  MIP-BB-ICKFMG-3-100-B OPTIMAL               0.741875ms            
+routing/trucking__05  MIP-DF-ICKFMG-3-100-B OPTIMAL               0.716833ms            
+routing/trucking__12  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               2.840083ms            
+routing/trucking__12  MIP-BB+DF-ICKFMG-3-100OPTIMAL               4.190792ms            
+routing/trucking__12  MIP-BB-ICKFMG-3-100-B OPTIMAL               2.578875ms            
+routing/trucking__12  MIP-DF-ICKFMG-3-100-B OPTIMAL               2.982125ms            
+routing/trucking__14  MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               5.248667ms            
+routing/trucking__14  MIP-BB+DF-ICKFMG-3-100OPTIMAL               5.070708ms            
+routing/trucking__14  MIP-BB-ICKFMG-3-100-B OPTIMAL               5.713625ms            
+routing/trucking__14  MIP-DF-ICKFMG-3-100-B OPTIMAL               4.826541ms            
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.818833ms            
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.096167ms            
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B OPTIMAL               0.97125ms             
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B OPTIMAL               0.832125ms            
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.335792ms            
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100OPTIMAL               0.86225ms             
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B OPTIMAL               0.936041ms            
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B OPTIMAL               0.876708ms            
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               1.989584ms            
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.087666ms            
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B OPTIMAL               1.1805ms              
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B OPTIMAL               1.142833ms            
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               7.081375ms            
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100OPTIMAL               1.248833ms            
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B OPTIMAL               1.289417ms            
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B OPTIMAL               2.141833ms            
+routing/trucking_hl__tMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               96.308291ms           
+routing/trucking_hl__tMIP-BB+DF-ICKFMG-3-100OPTIMAL               0.589458ms            
+routing/trucking_hl__tMIP-BB-ICKFMG-3-100-B OPTIMAL               0.651916ms            
+routing/trucking_hl__tMIP-DF-ICKFMG-3-100-B OPTIMAL               0.662167ms            
+routing/vrp__P-n16-k8.MIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+routing/vrp__P-n16-k8.MIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+routing/vrp__P-n16-k8.MIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+routing/vrp__P-n16-k8.MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/filters__fiMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+scheduling/filters__fiMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+scheduling/filters__fiMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/filters__fiMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/jobshop2__lMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+scheduling/jobshop2__lMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+scheduling/jobshop2__lMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/jobshop2__lMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/jobshop2__lMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+scheduling/jobshop2__lMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+scheduling/jobshop2__lMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/jobshop2__lMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+scheduling/jobshop2__mMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               385.1155ms            
+scheduling/jobshop2__mMIP-BB+DF-ICKFMG-3-100OPTIMAL               110.526334ms          
+scheduling/jobshop2__mMIP-BB-ICKFMG-3-100-B OPTIMAL               254.669833ms          
+scheduling/jobshop2__mMIP-DF-ICKFMG-3-100-B OPTIMAL               254.647458ms          
+scheduling/jobshop__joMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.797084ms            
+scheduling/jobshop__joMIP-BB+DF-ICKFMG-3-100OPTIMAL               0.995334ms            
+scheduling/jobshop__joMIP-BB-ICKFMG-3-100-B OPTIMAL               1.789875ms            
+scheduling/jobshop__joMIP-DF-ICKFMG-3-100-B OPTIMAL               0.665541ms            
+scheduling/rcpsp__dataMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               58.281958ms           
+scheduling/rcpsp__dataMIP-BB+DF-ICKFMG-3-100OPTIMAL               67.480333ms           
+scheduling/rcpsp__dataMIP-BB-ICKFMG-3-100-B OPTIMAL               91.69475ms            
+scheduling/rcpsp__dataMIP-DF-ICKFMG-3-100-B OPTIMAL               71.831292ms           
+scheduling/stochastic-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               227.935583ms          
+scheduling/stochastic-MIP-BB+DF-ICKFMG-3-100OPTIMAL               60.14025ms            
+scheduling/stochastic-MIP-BB-ICKFMG-3-100-B OPTIMAL               386.334666ms          
+scheduling/stochastic-MIP-DF-ICKFMG-3-100-B OPTIMAL               196.935041ms          
+scheduling/stochastic-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               386.77825ms           
+scheduling/stochastic-MIP-BB+DF-ICKFMG-3-100OPTIMAL               389.705708ms          
+scheduling/stochastic-MIP-BB-ICKFMG-3-100-B OPTIMAL               1443.222209ms         
+scheduling/stochastic-MIP-DF-ICKFMG-3-100-B OPTIMAL               5626.966084ms         
+scheduling/stochastic-MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               641.572042ms          
+scheduling/stochastic-MIP-BB+DF-ICKFMG-3-100OPTIMAL               1840.038916ms         
+scheduling/stochastic-MIP-BB-ICKFMG-3-100-B OPTIMAL               1531.273375ms         
+scheduling/stochastic-MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+sequencing/cars__cars1MIP-BB+DF+LD-ICKFMG-3-OPTIMAL               16.722ms              
+sequencing/cars__cars1MIP-BB+DF-ICKFMG-3-100OPTIMAL               83.83575ms            
+sequencing/cars__cars1MIP-BB-ICKFMG-3-100-B OPTIMAL               14.943375ms           
+sequencing/cars__cars1MIP-DF-ICKFMG-3-100-B OPTIMAL               16.077583ms           
+sequencing/carseq__tesMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               0.873084ms            
+sequencing/carseq__tesMIP-BB+DF-ICKFMG-3-100OPTIMAL               0.659375ms            
+sequencing/carseq__tesMIP-BB-ICKFMG-3-100-B OPTIMAL               1.731125ms            
+sequencing/carseq__tesMIP-DF-ICKFMG-3-100-B OPTIMAL               1.771625ms            
+sequencing/open_stacksMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               454.5485ms            
+sequencing/open_stacksMIP-BB+DF-ICKFMG-3-100OPTIMAL               492.132333ms          
+sequencing/open_stacksMIP-BB-ICKFMG-3-100-B OPTIMAL               3001.541625ms         
+sequencing/open_stacksMIP-DF-ICKFMG-3-100-B OPTIMAL               1009.934625ms         
+sequencing/talent_scheMIP-BB+DF+LD-ICKFMG-3-FAILED                WRONG                 
+sequencing/talent_scheMIP-BB+DF-ICKFMG-3-100FAILED                WRONG                 
+sequencing/talent_scheMIP-BB-ICKFMG-3-100-B FAILED                WRONG                 
+sequencing/talent_scheMIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+sequencing/talent_scheMIP-BB+DF+LD-ICKFMG-3-OPTIMAL               337.985458ms          
+sequencing/talent_scheMIP-BB+DF-ICKFMG-3-100OPTIMAL               349.321875ms          
+sequencing/talent_scheMIP-BB-ICKFMG-3-100-B OPTIMAL               584.92ms              
+sequencing/talent_scheMIP-DF-ICKFMG-3-100-B OPTIMAL               621.707833ms          
+
+Models Solved
+=====================================================================
+MIP-BB+DF+LD-ICKFMG-3-106 / 135             79%                   
+MIP-BB+DF-ICKFMG-3-100105 / 135             78%                   
+MIP-BB-ICKFMG-3-100-B 100 / 135             74%                   
+MIP-DF-ICKFMG-3-100-B 99 / 135              73%                   

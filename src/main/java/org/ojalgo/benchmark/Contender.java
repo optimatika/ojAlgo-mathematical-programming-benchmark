@@ -35,6 +35,9 @@ import org.ojalgo.optimisation.ExpressionsBasedModel;
 import org.ojalgo.optimisation.convex.ConvexSolver;
 import org.ojalgo.optimisation.convex.ConvexSolver.Algorithm;
 import org.ojalgo.optimisation.integer.IntegerSolver;
+import org.ojalgo.optimisation.integer.IntegerStrategy;
+import org.ojalgo.optimisation.integer.IntegerStrategy.BoundPropagation;
+import org.ojalgo.optimisation.integer.IntegerStrategy.ConfigurableStrategy;
 import org.ojalgo.optimisation.linear.LinearSolver;
 import org.ojalgo.optimisation.solver.acm.SolverACM;
 import org.ojalgo.optimisation.solver.choco.SolverChoco;
@@ -56,7 +59,8 @@ import org.ojalgo.optimisation.solver.xpress.SolverXpress;
 /**
  * The solvers, and solver configurations, that can be benchmarked - each with a name, and the integration
  * that name stands for. Only the name is passed to the worker JVM, so every configuration has to be
- * registered here, including the ojAlgo variants used by experiments.
+ * registered here, including the ojAlgo variants used by experiments – except ojAlgo MIP configurations,
+ * {@link StrategyVariant}s, which are recognised by their names.
  */
 public final class Contender {
 
@@ -77,6 +81,14 @@ public final class Contender {
     public static final String OJALGO_LP_PRIM_DENSE = "ojAlgo-LP-prim-D";
     public static final String OJALGO_LP_PRIM_SPARSE = "ojAlgo-LP-prim-S";
     public static final String OJALGO_MIP = "ojAlgo-MIP";
+    /**
+     * {@link #OJALGO_MIP} with bound propagation on both branches when branching
+     */
+    public static final String OJALGO_MIP_BP_BOTH = "ojAlgo-MIP-BP-BOTH";
+    /**
+     * {@link #OJALGO_MIP} without bound propagation
+     */
+    public static final String OJALGO_MIP_BP_NONE = "ojAlgo-MIP-BP-NONE";
     public static final String OJALGO_MIP_DUAL_DENSE = "ojAlgo-MIP-dual-D";
     public static final String OJALGO_MIP_DUAL_SPARSE = "ojAlgo-MIP-dual-S";
     public static final String OJALGO_MIP_PRIM_DENSE = "ojAlgo-MIP-prim-D";
@@ -117,6 +129,24 @@ public final class Contender {
      * the HiGHS integration would then bind to instead of the system one.
      */
     static final Map<String, Supplier<ExpressionsBasedModel.Integration<?>>> INTEGRATIONS = new HashMap<>();
+
+    /**
+     * The integration a contender name stands for: one registered here, or a {@link StrategyVariant}, whose
+     * name says what it is. Null if the name is neither.
+     *
+     * @param maxWaitTime ms, how long the caller waits for a result. A {@link StrategyVariant} stops itself,
+     *        and returns the best solution it has, before that.
+     */
+    static ExpressionsBasedModel.Integration<?> integration(final String name, final long maxWaitTime) {
+        Supplier<ExpressionsBasedModel.Integration<?>> supplier = INTEGRATIONS.get(name);
+        if (supplier != null) {
+            return supplier.get();
+        }
+        if (name.startsWith(StrategyVariant.PREFIX)) {
+            return StrategyVariant.parse(name).toIntegration(maxWaitTime * 8L / 10L);
+        }
+        return null;
+    }
 
     static {
 
@@ -159,6 +189,11 @@ public final class Contender {
             opt.linear().primal();
             opt.sparse = Boolean.TRUE;
         }));
+
+        INTEGRATIONS.put(Contender.OJALGO_MIP_BP_BOTH, () -> IntegerSolver.INTEGRATION
+                .withOptionsModifier(opt -> opt.integer(Contender.withBoundPropagation(opt.integer(), BoundPropagation.BOTH))));
+        INTEGRATIONS.put(Contender.OJALGO_MIP_BP_NONE, () -> IntegerSolver.INTEGRATION
+                .withOptionsModifier(opt -> opt.integer(Contender.withBoundPropagation(opt.integer(), BoundPropagation.NONE))));
 
         INTEGRATIONS.put(Contender.OJALGO_MIP_DUAL_DENSE, () -> IntegerSolver.INTEGRATION.withOptionsModifier(opt -> {
             opt.linear().dual();
@@ -261,6 +296,17 @@ public final class Contender {
             opt.sparse = Boolean.TRUE;
         }));
 
+    }
+
+    /**
+     * The same strategy, but with this bound propagation
+     */
+    private static IntegerStrategy withBoundPropagation(final IntegerStrategy strategy, final BoundPropagation propagation) {
+        if (strategy instanceof ConfigurableStrategy configurable) {
+            return configurable.withBoundPropagation(propagation);
+        } else {
+            return IntegerStrategy.DEFAULT.withBoundPropagation(propagation);
+        }
     }
 
 }

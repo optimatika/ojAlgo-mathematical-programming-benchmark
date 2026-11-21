@@ -1,0 +1,132 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3
+Models: 29 of 29 within size limits (0 not shipped), solvers: 2
+
+
+Iteration 1 with 58 model/solver pairs remaining 2026-11-21T22:40:01.968605Z
+-----------------------------------------------------------------------------
+egout                 ojAlgo-MIP-BP-BOTH    Solved                1072.347584ms         1072.347584ms         568.1007000000001     
+stein27               ojAlgo-MIP-BP-NONE    Solved                1335.454958ms         1335.454958ms         18.0                  
+23588                 ojAlgo-MIP-BP-NONE    Solved                1442.207375ms         1442.207375ms         8090.000000000005     
+bell3a                ojAlgo-MIP-BP-NONE    Solved                3554.81525ms          3554.81525ms          878430.316            
+enlight8              ojAlgo-MIP-BP-NONE    Solved                4085.309041ms         4085.309041ms         27.0                  
+stein45               ojAlgo-MIP-BP-BOTH    Solved                6193.396292ms         6193.396292ms         30.0                  
+bell5                 ojAlgo-MIP-BP-NONE    Solved                9973.445708ms         9973.445708ms         8966406.49152         
+rgn                   ojAlgo-MIP-BP-NONE    Solved                429.222542ms          429.222542ms          82.19999923989566     
+markshare_4_0         ojAlgo-MIP-BP-NONE    Solved                14194.22525ms         14194.22525ms         0.9999999999999072    
+misc05                ojAlgo-MIP-BP-BOTH    Solved                1137.457542ms         1137.457542ms         2984.499999999999     
+mas76                 ojAlgo-MIP-BP-BOTH    Solved                22939.525333ms        22939.525333ms        40005.05414200001     
+pk1                   ojAlgo-MIP-BP-BOTH    Solved                11802.923167ms        11802.923167ms        11.000000000000094    
+bienst1               ojAlgo-MIP-BP-NONE    Solved                63604.269917ms        63604.269917ms        46.75                 
+bell3b                ojAlgo-MIP-BP-NONE    Solved                1471.461208ms         1471.461208ms         1.178661789E7         
+neos-3611689-kaihu    ojAlgo-MIP-BP-NONE    Solved                118322.315584ms       118322.315584ms       118.99999999986822    
+dcmulti               ojAlgo-MIP-BP-BOTH    Solved                2313.453834ms         2313.453834ms         188182.0              
+neos-3611447-jijia    ojAlgo-MIP-BP-BOTH    Solved                160245.148083ms       160245.148083ms       106.99999999999999    
+enigma                ojAlgo-MIP-BP-NONE    Solved                285.254916ms          285.254916ms          0.0                   
+misc07                ojAlgo-MIP-BP-NONE    Solved                14164.320542ms        14164.320542ms        2809.9999999999754    
+mik-250-20-75-4       ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+enlight_hard          ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+mod008                ojAlgo-MIP-BP-BOTH    Solved                735.392291ms          735.392291ms          307.0                 
+bppc8-02              ojAlgo-MIP-BP-NONE    Solved                3977.288292ms         3977.288292ms         507.0                 
+blend2                ojAlgo-MIP-BP-BOTH    Solved                4825.901166ms         4825.901166ms         7.598985              
+pp08aCUTS             ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+blend2                ojAlgo-MIP-BP-NONE    Solved                5308.470625ms         5308.470625ms         7.598985              
+rgn                   ojAlgo-MIP-BP-BOTH    Solved                646.09575ms           646.09575ms           82.19999923998203     
+stein45               ojAlgo-MIP-BP-NONE    Solved                12920.640958ms        12920.640958ms        30.0                  
+markshare_4_0         ojAlgo-MIP-BP-BOTH    Solved                12346.06925ms         12346.06925ms         0.9999999999999942    
+p0201                 ojAlgo-MIP-BP-BOTH    Solved                530.927ms             530.927ms             7615.0                
+pigeon-08             ojAlgo-MIP-BP-NONE    Solved                112540.125042ms       112540.125042ms       -7000.0               
+enlight8              ojAlgo-MIP-BP-BOTH    Solved                1587.110042ms         1587.110042ms         27.0                  
+stein27               ojAlgo-MIP-BP-BOTH    Solved                343.53025ms           343.53025ms           18.0                  
+bell3a                ojAlgo-MIP-BP-BOTH    Solved                2377.951375ms         2377.951375ms         878430.316            
+mik-250-20-75-1       ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+neos-3611447-jijia    ojAlgo-MIP-BP-NONE    Solved                166968.258125ms       166968.258125ms       106.99999999999996    
+mik-250-20-75-1       ojAlgo-MIP-BP-NONE    FAILED                TIMEOUT               
+bienst1               ojAlgo-MIP-BP-BOTH    Solved                34319.590125ms        34319.590125ms        46.75                 
+enigma                ojAlgo-MIP-BP-BOTH    Solved                221.7905ms            221.7905ms            0.0                   
+23588                 ojAlgo-MIP-BP-BOTH    Solved                728.435125ms          728.435125ms          8089.999999999998     
+mik-250-20-75-5       ojAlgo-MIP-BP-NONE    FAILED                TIMEOUT               
+misc07                ojAlgo-MIP-BP-BOTH    Solved                8581.964583ms         8581.964583ms         2809.999999999909     
+dcmulti               ojAlgo-MIP-BP-NONE    Solved                880.905041ms          880.905041ms          188186.49999995925    
+p0201                 ojAlgo-MIP-BP-NONE    Solved                472.649958ms          472.649958ms          7615.0                
+neos-3611689-kaihu    ojAlgo-MIP-BP-BOTH    Solved                109628.964875ms       109628.964875ms       118.99999999989618    
+misc05                ojAlgo-MIP-BP-NONE    Solved                844.456958ms          844.456958ms          2984.499999999998     
+egout                 ojAlgo-MIP-BP-NONE    Solved                533.2815ms            533.2815ms            568.1007              
+bell3b                ojAlgo-MIP-BP-BOTH    Solved                4371.876916ms         4371.876916ms         1.1786515398E7        
+mas76                 ojAlgo-MIP-BP-NONE    Solved                16821.165083ms        16821.165083ms        40005.05414199999     
+mod008                ojAlgo-MIP-BP-NONE    Solved                222.936625ms          222.936625ms          307.0                 
+pk1                   ojAlgo-MIP-BP-NONE    Solved                13609.008625ms        13609.008625ms        10.999999999999991    
+bppc8-02              ojAlgo-MIP-BP-BOTH    Solved                1024.828167ms         1024.828167ms         507.0                 
+pp08aCUTS             ojAlgo-MIP-BP-NONE    Solved                134995.561708ms       134995.561708ms       7349.999999989233     
+enlight_hard          ojAlgo-MIP-BP-NONE    Solved                151290.142291ms       151290.142291ms       37.0                  
+mik-250-20-75-4       ojAlgo-MIP-BP-NONE    Solved                87520.519583ms        87520.519583ms        -52301.0              
+pigeon-08             ojAlgo-MIP-BP-BOTH    Solved                96029.903125ms        96029.903125ms        -7000.0               
+bell5                 ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+
+Final Results
+=====================================================================
+23588                 ojAlgo-MIP-BP-BOTH    OPTIMAL               728.435125ms          
+23588                 ojAlgo-MIP-BP-NONE    OPTIMAL               1442.207375ms         
+bell3a                ojAlgo-MIP-BP-BOTH    OPTIMAL               2377.951375ms         
+bell3a                ojAlgo-MIP-BP-NONE    OPTIMAL               3554.81525ms          
+bell3b                ojAlgo-MIP-BP-BOTH    OPTIMAL               4371.876916ms         
+bell3b                ojAlgo-MIP-BP-NONE    OPTIMAL               1471.461208ms         
+bell5                 ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+bell5                 ojAlgo-MIP-BP-NONE    OPTIMAL               9973.445708ms         
+bienst1               ojAlgo-MIP-BP-BOTH    OPTIMAL               34319.590125ms        
+bienst1               ojAlgo-MIP-BP-NONE    OPTIMAL               63604.269917ms        
+blend2                ojAlgo-MIP-BP-BOTH    OPTIMAL               4825.901166ms         
+blend2                ojAlgo-MIP-BP-NONE    OPTIMAL               5308.470625ms         
+bppc8-02              ojAlgo-MIP-BP-BOTH    OPTIMAL               1024.828167ms         
+bppc8-02              ojAlgo-MIP-BP-NONE    OPTIMAL               3977.288292ms         
+dcmulti               ojAlgo-MIP-BP-BOTH    OPTIMAL               2313.453834ms         
+dcmulti               ojAlgo-MIP-BP-NONE    OPTIMAL               880.905041ms          
+egout                 ojAlgo-MIP-BP-BOTH    OPTIMAL               1072.347584ms         
+egout                 ojAlgo-MIP-BP-NONE    OPTIMAL               533.2815ms            
+enigma                ojAlgo-MIP-BP-BOTH    OPTIMAL               221.7905ms            
+enigma                ojAlgo-MIP-BP-NONE    OPTIMAL               285.254916ms          
+enlight8              ojAlgo-MIP-BP-BOTH    OPTIMAL               1587.110042ms         
+enlight8              ojAlgo-MIP-BP-NONE    OPTIMAL               4085.309041ms         
+enlight_hard          ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+enlight_hard          ojAlgo-MIP-BP-NONE    OPTIMAL               151290.142291ms       
+markshare_4_0         ojAlgo-MIP-BP-BOTH    OPTIMAL               12346.06925ms         
+markshare_4_0         ojAlgo-MIP-BP-NONE    OPTIMAL               14194.22525ms         
+mas76                 ojAlgo-MIP-BP-BOTH    OPTIMAL               22939.525333ms        
+mas76                 ojAlgo-MIP-BP-NONE    OPTIMAL               16821.165083ms        
+mik-250-20-75-1       ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+mik-250-20-75-1       ojAlgo-MIP-BP-NONE    FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+mik-250-20-75-4       ojAlgo-MIP-BP-NONE    OPTIMAL               87520.519583ms        
+mik-250-20-75-5       ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+mik-250-20-75-5       ojAlgo-MIP-BP-NONE    FAILED                TIMEOUT               
+misc05                ojAlgo-MIP-BP-BOTH    OPTIMAL               1137.457542ms         
+misc05                ojAlgo-MIP-BP-NONE    OPTIMAL               844.456958ms          
+misc07                ojAlgo-MIP-BP-BOTH    OPTIMAL               8581.964583ms         
+misc07                ojAlgo-MIP-BP-NONE    OPTIMAL               14164.320542ms        
+mod008                ojAlgo-MIP-BP-BOTH    OPTIMAL               735.392291ms          
+mod008                ojAlgo-MIP-BP-NONE    OPTIMAL               222.936625ms          
+neos-3611447-jijia    ojAlgo-MIP-BP-BOTH    OPTIMAL               160245.148083ms       
+neos-3611447-jijia    ojAlgo-MIP-BP-NONE    OPTIMAL               166968.258125ms       
+neos-3611689-kaihu    ojAlgo-MIP-BP-BOTH    OPTIMAL               109628.964875ms       
+neos-3611689-kaihu    ojAlgo-MIP-BP-NONE    OPTIMAL               118322.315584ms       
+p0201                 ojAlgo-MIP-BP-BOTH    OPTIMAL               530.927ms             
+p0201                 ojAlgo-MIP-BP-NONE    OPTIMAL               472.649958ms          
+pigeon-08             ojAlgo-MIP-BP-BOTH    OPTIMAL               96029.903125ms        
+pigeon-08             ojAlgo-MIP-BP-NONE    OPTIMAL               112540.125042ms       
+pk1                   ojAlgo-MIP-BP-BOTH    OPTIMAL               11802.923167ms        
+pk1                   ojAlgo-MIP-BP-NONE    OPTIMAL               13609.008625ms        
+pp08aCUTS             ojAlgo-MIP-BP-BOTH    FAILED                TIMEOUT               
+pp08aCUTS             ojAlgo-MIP-BP-NONE    OPTIMAL               134995.561708ms       
+rgn                   ojAlgo-MIP-BP-BOTH    OPTIMAL               646.09575ms           
+rgn                   ojAlgo-MIP-BP-NONE    OPTIMAL               429.222542ms          
+stein27               ojAlgo-MIP-BP-BOTH    OPTIMAL               343.53025ms           
+stein27               ojAlgo-MIP-BP-NONE    OPTIMAL               1335.454958ms         
+stein45               ojAlgo-MIP-BP-BOTH    OPTIMAL               6193.396292ms         
+stein45               ojAlgo-MIP-BP-NONE    OPTIMAL               12920.640958ms        
+
+Models Solved
+=====================================================================
+ojAlgo-MIP-BP-BOTH    23 / 29               79%                   
+ojAlgo-MIP-BP-NONE    27 / 29               93%                   

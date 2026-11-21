@@ -36,6 +36,8 @@ public final class MIPLIB4oj extends AbstractMIPLIB {
 
         configuration.models.retainAll(EASY_SET);
 
+        configuration.maxIterations = 1;
+
         // configuration.parallelism = Parallelism.TWO;
         // configuration.parallelism = Parallelism.THREE;
 

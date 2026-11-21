@@ -1,0 +1,44 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3
+Models: 7 of 13 within size limits (0 not shipped), solvers: 2
+
+
+Iteration 1 with 14 model/solver pairs remaining 2026-11-21T16:31:15.445477Z
+-----------------------------------------------------------------------------
+graph/maximum-dag__15_MIP-DF-ICKFMG-3-100-B Solved                3478.670167ms         3478.670167ms         46.0                  
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+FAILED                
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__15_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+graph/grid-colouring__MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+graph/sugiyama__g3_7_7MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/grid-colouring__MIP-DF-ICKFMG-3-100-B FEASIBLE              WRONG                 
+graph/sugiyama__g3_7_7MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+graph/maximum-dag__31_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__31_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+
+Final Results
+=====================================================================
+graph/grid-colouring__MIP-DF-ICKFMG-3-100   FAILED                WRONG                 
+graph/grid-colouring__MIP-DF-ICKFMG-3-100-B FAILED                WRONG                 
+graph/maximum-dag__15_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+graph/maximum-dag__15_MIP-DF-ICKFMG-3-100-B OPTIMAL               3478.670167ms         
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100   FAILED                WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100   FAILED                WRONG                 
+graph/maximum-dag__25_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/maximum-dag__31_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+graph/maximum-dag__31_MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+graph/sugiyama__g3_7_7MIP-DF-ICKFMG-3-100   FAILED                WRONG                 
+graph/sugiyama__g3_7_7MIP-DF-ICKFMG-3-100-B FAILED                FAILED                
+
+Models Solved
+=====================================================================
+MIP-DF-ICKFMG-3-100   0 / 7                 0%                    
+MIP-DF-ICKFMG-3-100-B 1 / 7                 14%                   

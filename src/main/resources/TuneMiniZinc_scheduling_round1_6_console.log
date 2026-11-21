@@ -1,0 +1,1825 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3
+Models: 86 of 86 within size limits (0 not shipped), solvers: 15
+
+
+Iteration 1 with 1290 model/solver pairs remaining 2026-11-21T07:10:16.669473Z
+-----------------------------------------------------------------------------
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFM.-3-100   Solved                1341.578208ms         1341.578208ms         513.0                 
+stochastic-fjsp__fjsp-MIP-SD-ICKFMG-3-100   Solved                6258.343041ms         6258.343041ms         328.0                 
+stochastic-fjsp__fjsp-MIP-BB-ICK.MG-3-100   Solved                4776.534333ms         4776.534333ms         328.0                 
+filters__dct_4_4      MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-ICKF.G-3-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+spot5__1502           MIP-BB-......-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKF.G-3-100   Solved                2471.051875ms         2471.051875ms         242.0                 
+rcpsp-wet__j60_36_8-weMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-50    Solved                1856.23975ms          1856.23975ms          242.0                 
+cargo__challenge01_0s_MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-ICKFMG-3-50    FEASIBLE              WRONG                 
+flexible-jobshop__easyMIP-BB-......-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge01_0s_MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+train__instance.1     MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp__data_pack_pack0MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-BB-.CKFMG-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__hard_6  MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp__data_psplib_j30MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+smelt__smelt_2        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+train__instance.1     MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-ICK.MG-3-100   FEASIBLE              WRONG                 
+rcpsp-wet__j60_36_8-weMIP-BB-......-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+road-cons__road_11    MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la04        MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+spot5__54             MIP-BB-ICKFMG-3-200   FEASIBLE              WRONG                 
+cargo__challenge04_1s_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+openshop__j7per10-1   MIP-BB-ICKFMG-3-200   FEASIBLE              WRONG                 
+rcpsp-max__psp_j20_35 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-DF-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-DF-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-ICK.MG-3-100   FEASIBLE              WRONG                 
+jobshop__jobshop_la36 MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-......-3-100   Solved                11640.959083ms        11640.959083ms        55.0                  
+evilshop__js-brs2-5   MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-......-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+jobshop2__mt10        MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-ICKFMG-3-200   Solved                11137.092125ms        11137.092125ms        55.0                  
+filters__fir_1_1      MIP-BB-ICKFMG-2-100   FEASIBLE              WRONG                 
+road-cons__road_11    MIP-BB-......-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la06 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+train__instance.13    MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+train__instance.13    MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-2-100   Solved                542.168417ms          542.168417ms          513.0                 
+train__instance.12    MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-ICKF.G-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__hard_6  MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+train__instance.12    MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-ICKFM.-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-DF-ICKFMG-3-100   Solved                19615.52525ms         19615.52525ms         348.0                 
+gfd-schedule__n10f2d10MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-LD-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+smelt__smelt_4        MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+jobshop2__la04        MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__mt10        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+ship-schedule__4ShipsMMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+spot5__29             MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+train__instance.5     MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+spot5__29             MIP-BB-ICKF.G-3-100   FEASIBLE              WRONG                 
+gfd-schedule__n10f2d10MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+smelt__smelt_3        MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-......-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-BB-ICKFMG-4-100   FEASIBLE              WRONG                 
+ship-schedule__3ShipsMMIP-BB-......-3-100   Solved                364.624208ms          364.624208ms          172500.0              
+cargo__challenge02_0s_MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-I.KFMG-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__medium_1MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__medium_1MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__la03        MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+openshop__j7per10-1   MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_2        MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+train__instance.1     MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+jobshop__jobshop_la36 MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+flexible-jobshop__med1MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+spot5__1502           MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+spot5__54             MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+evilshop__js-setg2-5  MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_4        MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop__jobshop_orb06MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+train__instance.1     MIP-BB-......-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+spot5__54             MIP-BB-......-3-100   FAILED                FAILED                
+openshop__j7per10-1   MIP-BB-......-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-I.KFMG-3-100   Solved                1998.755458ms         1998.755458ms         242.0                 
+rcpsp-max__psp_j20_34 MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__medium_2MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICK.MG-3-100   Solved                1929.760458ms         1929.760458ms         242.0                 
+ship-schedule__4ShipsMMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+road-cons__road_9     MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-BB-ICK.MG-3-100   FEASIBLE              WRONG                 
+openshop__gp10-4      MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+flexible-jobshop__easyMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-I.KFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__la05        MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j20_35 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+train__instance.5     MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+ship-schedule__6Ships MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cargo__challenge01_0s_MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp__data_pack_pack0MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+train__instance.13    MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+spot5__503            MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-.CKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j30_123MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+train__instance.1     MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+cargo__challenge05_1s_MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-DF-ICKFMG-3-100   Solved                678.037ms             678.037ms             513.0                 
+jobshop2__mt10        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-ICKFMG-2-100   FEASIBLE              WRONG                 
+jobshop2__la03        MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__mt06        MIP-BB-I.KFMG-3-100   Solved                11851.828834ms        11851.828834ms        55.0                  
+gfd-schedule__n30f3d30MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICKF.G-3-100   Solved                13098.286125ms        13098.286125ms        172500.0              
+ship-schedule__7ShipsUMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+train__instance.1     MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-.CKFMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-4-100   Solved                9667.297375ms         9667.297375ms         328.0                 
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.13    MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-IC.FMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-I.KFMG-3-100   Solved                3491.858417ms         3491.858417ms         328.0                 
+gfd-schedule__n25f5d20MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+openshop__j7per10-1   MIP-BB-ICKF.G-3-100   FEASIBLE              WRONG                 
+ship-schedule__4ShipsMMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+jobshop2__la04        MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop__jobshop_la22 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-I.KFMG-3-100   FEASIBLE              WRONG                 
+spot5__503            MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+mrcpsp__mm_j10_j10_54_MIP-BB-......-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-ICKFM.-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   Solved                4487.888667ms         4487.888667ms         348.0                 
+flexible-jobshop__med1MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-.CKFMG-3-100   Solved                4875.883084ms         4875.883084ms         348.0                 
+openshop__j8per0-2    MIP-BB-ICKFMG-3-50    FEASIBLE              WRONG                 
+cargo__challenge01_0s_MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-ICKFMG-3-200   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+spot5__503            MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+filters__fir16_1_2    MIP-BB-ICKFMG-3-50    FEASIBLE              WRONG                 
+gfd-schedule__n30f3d30MIP-BB-......-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-IC.FMG-3-100   Solved                11949.194708ms        11949.194708ms        55.0                  
+smelt__smelt_4        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+filters__fir16_1_2    MIP-BB-ICKFMG-4-100   FEASIBLE              WRONG                 
+ship-schedule__6Ships MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+train__instance.9     MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-.CKFMG-3-100   Solved                4610.674334ms         4610.674334ms         328.0                 
+train__instance.13    MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-ICKFMG-3-50    FEASIBLE              WRONG                 
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+openshop__j8per0-2    MIP-BB-ICKF.G-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j30_33 MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+filters__fir_1_1      MIP-DF-ICKFMG-3-100   Solved                12084.928708ms        12084.928708ms        18.0                  
+gfd-schedule__n30f3d30MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-ICKFMG-4-100   FEASIBLE              WRONG                 
+filters__fir16_1_2    MIP-BB-......-3-100   FEASIBLE              WRONG                 
+train__instance.5     MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-4-100   Solved                7669.967291ms         7669.967291ms         348.0                 
+flexible-jobshop__easyMIP-LD-ICKFMG-3-100   FAILED                FAILED                
+train__instance.12    MIP-BB-......-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+train__instance.9     MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+spot5__503            MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+jobshop2__mt10        MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+smelt__smelt_3        MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICK.MG-3-100   Solved                7546.7105ms           7546.7105ms           172500.0              
+ship-schedule__3Ships MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+ship-schedule__4ShipsMMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+jobshop2__la04        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+gfd-schedule__n10f2d10MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+openshop__j8per0-2    MIP-BB-ICKFMG-2-100   FEASIBLE              WRONG                 
+rcpsp-wet__j60_36_8-weMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-ICKFMG-3-200   FEASIBLE              WRONG                 
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-BB-......-3-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-......-3-100   FEASIBLE              WRONG                 
+evilshop__js-setg2-7  MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+train__instance.13    MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+train__instance.9     MIP-BB-......-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__la05        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+project-planning__ProjMIP-SD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-ICKFMG-3-200   FEASIBLE              WRONG                 
+rcpsp-max__psp_j30_123MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la04        MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-BB-......-3-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-DF-ICKFMG-3-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__503            MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-SD-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-......-3-100   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-IC.FMG-3-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-......-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-4-100   Solved                1432.203125ms         1432.203125ms         242.0                 
+train__instance.13    MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-LD-ICKFMG-3-100   Solved                3969.480875ms         3969.480875ms         242.0                 
+cargo__challenge02_0s_MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+spot5__1502           MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+filters__fir16_1_2    MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-......-3-100   Solved                11983.929042ms        11983.929042ms        328.0                 
+smelt__smelt_2        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+spot5__503            MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_4        MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+mrcpsp__mm_n0_n0_1_2  MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+train__instance.13    MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-......-3-100   FEASIBLE              WRONG                 
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-......-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+train__instance.9     MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+spot5__29             MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+ship-schedule__6Ships MIP-BB-......-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+jobshop__jobshop_orb06MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j30_33 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+spot5__29             MIP-BB-......-3-100   FEASIBLE              WRONG                 
+train__instance.12    MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-50    Solved                6964.088958ms         6964.088958ms         348.0                 
+jobshop2__mt10        MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+ship-schedule__7ShipsUMIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+jobshop__jobshop_la06 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+jobshop2__la04        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+spot5__54             MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-ICK.MG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+evilshop__js-brs2-5   MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-200   Solved                3927.410375ms         3927.410375ms         328.0                 
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_11    MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-.CKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j20_34 MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+spot5__1502           MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-.CKFMG-3-100   Solved                858.809791ms          858.809791ms          242.0                 
+rcpsp-wet__j30_4_8-wetMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+evilshop__js-setg2-10 MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+jobshop2__la04        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+filters__ar_1_2       MIP-BB-......-3-100   FEASIBLE              WRONG                 
+rcpsp__data_pack_pack0MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+jobshop__jobshop_la36 MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_33 MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-DF-ICKFMG-3-100   Solved                3446.667ms            3446.667ms            328.0                 
+Error working with ModelSolverPair [model=road-cons__road_8, solver=MIP-BB-.CKFMG-3-100]!
+java.util.concurrent.ExecutionException: java.lang.StackOverflowError
+	at org.ojalgo.concurrent.ExternalProcessExecutor$ProcessTask.get(ExternalProcessExecutor.java:159)
+	at org.ojalgo.benchmark.AbstractBenchmark.doOnePair(AbstractBenchmark.java:785)
+	at org.ojalgo.benchmark.AbstractBenchmark.lambda$1(AbstractBenchmark.java:640)
+	at org.ojalgo.concurrent.ProcessingService$CallableConsumer.call(ProcessingService.java:69)
+	at org.ojalgo.concurrent.ProcessingService$CallableConsumer.call(ProcessingService.java:1)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.StackOverflowError
+	at org.ojalgo.matrix.decomposition.SparseLU$UpperFactor.solveTransposed(SparseLU.java:1804)
+	at org.ojalgo.matrix.decomposition.SparseLU.btranUpper(SparseLU.java:2474)
+	at org.ojalgo.matrix.decomposition.SparseLU.btranUnit(SparseLU.java:2029)
+	at org.ojalgo.optimisation.linear.SparseDecomposition.btranUnit(SparseDecomposition.java:62)
+	at org.ojalgo.optimisation.linear.RevisedStore.priceRow(RevisedStore.java:352)
+	at org.ojalgo.optimisation.linear.RevisedStore.calculateDualDirection(RevisedStore.java:458)
+	at org.ojalgo.optimisation.linear.SimplexSolver.doDualIterations(SimplexSolver.java:1768)
+	at org.ojalgo.optimisation.linear.SimplexSolver.iterateToOptimal(SimplexSolver.java:2091)
+	at org.ojalgo.optimisation.linear.PhasedSimplexSolver.doSolve(PhasedSimplexSolver.java:64)
+	at org.ojalgo.optimisation.GenericSolver.solve(GenericSolver.java:601)
+	at org.ojalgo.optimisation.IntermediateSolver.solve(IntermediateSolver.java:143)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:878)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+	at org.ojalgo.optimisation.integer.IntegerSolver.compute(IntegerSolver.java:1049)
+road-cons__road_8     MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+project-planning__ProjMIP-LD-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-BB-I.KFMG-3-100   FEASIBLE              WRONG                 
+road-cons__road_8     MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-2-100   Solved                6532.278666ms         6532.278666ms         348.0                 
+evilshop__js-setg2-5  MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-ICKF.G-3-100   FEASIBLE              WRONG                 
+road-cons__road_11    MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+jobshop__jobshop_la06 MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+train__instance.12    MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+spot5__54             MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+openshop__j7per10-1   MIP-BB-ICKFM.-3-100   FEASIBLE              WRONG                 
+jobshop__jobshop_la06 MIP-BB-......-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKF.G-3-100   Solved                5578.154458ms         5578.154458ms         328.0                 
+evilshop__js-setg2-7  MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-......-3-100   Solved                1065.004292ms         1065.004292ms         513.0                 
+rcpsp-wet__j30_35_9-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+ship-schedule__7ShipsUMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+ship-schedule__6Ships MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+jobshop2__la04        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+project-planning__ProjMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cargo__challenge01_0s_MIP-BB-......-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFM.-3-100   Solved                6050.62425ms          6050.62425ms          328.0                 
+project-planning__ProjMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+openshop__j8per0-2    MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_4        MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+jobshop2__mt10        MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+gfd-schedule__n25f5d20MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+openshop__gp10-4      MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-......-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+spot5__1502           MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+spot5__1502           MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-IC.FMG-3-100   Solved                475.962917ms          475.962917ms          513.0                 
+train__instance.1     MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-......-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-3-100   Solved                1762.392833ms         1762.392833ms         242.0                 
+ship-schedule__3ShipsMMIP-BB-ICKFMG-3-200   Solved                11262.724083ms        11262.724083ms        172500.0              
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cargo__challenge05_1s_MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-ICKFMG-4-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__medium_3MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-ICKFM.-3-100   Solved                11768.649417ms        11768.649417ms        55.0                  
+filters__dct_1_1      MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__la05        MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cargo__challenge01_0s_MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+smelt__smelt_4        MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+train__instance.13    MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-I.KFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j30_33 MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_4        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+train__instance.5     MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-LD-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_4        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-......-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+jobshop2__la04        MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j20_34 MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+jobshop2__la04        MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp__data_psplib_j30MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+smelt__smelt_4        MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+ship-schedule__3Ships MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_1MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+smelt__smelt_3        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+smelt__smelt_4        MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__la03        MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+road-cons__road_9     MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-200   Solved                448.84025ms           448.84025ms           513.0                 
+rcpsp-max__psp_j30_123MIP-BB-......-3-100   FAILED                FAILED                
+spot5__1502           MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cargo__challenge01_0s_MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+jobshop2__la03        MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+flexible-jobshop__med1MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+jobshop__jobshop_la06 MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j20_35 MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+rcpsp-max__psp_j30_33 MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-IC.FMG-3-100   FEASIBLE              WRONG                 
+evilshop__js-brs2-7   MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-......-3-100   FAILED                FAILED                
+gfd-schedule__n10f2d10MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+rcpsp-max__psp_j30_123MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__dct_4_4      MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFMG-2-100   Solved                1921.352959ms         1921.352959ms         242.0                 
+cyclic-rcpsp__medium_1MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+rcpsp__data_pack_pack0MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__4ShipsMMIP-BB-ICK.MG-3-100   FEASIBLE              WRONG                 
+cyclic-rcpsp__hard_6  MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+spot5__1502           MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-wet__j30_1_3-wetMIP-LD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j30_33 MIP-BB-......-3-100   FAILED                FAILED                
+spot5__1502           MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+gfd-schedule__n25f5d20MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-ICKFMG-3-50    FEASIBLE              WRONG                 
+spot5__1502           MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_2MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+smelt__smelt_2        MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge06_1s_MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_4_8-wetMIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_3        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-I.KFMG-3-100   FEASIBLE              WRONG                 
+ship-schedule__7ShipsUMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+smelt__smelt_4        MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+jobshop2__la05        MIP-BB-ICKFMG-4-100   FEASIBLE              WRONG                 
+ship-schedule__7ShipsUMIP-SD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_35_9-weMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+train__instance.1     MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-ICKF.G-3-100   Solved                11966.978084ms        11966.978084ms        55.0                  
+cyclic-rcpsp__hard_6  MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+spot5__54             MIP-BB-IC.FMG-3-100   FEASIBLE              WRONG                 
+openshop__j7per10-1   MIP-BB-IC.FMG-3-100   FEASIBLE              WRONG                 
+stochastic-fjsp__fjsp-MIP-BB-ICK.MG-3-100   Solved                16479.9415ms          16479.9415ms          348.0                 
+jobshop__jobshop_la22 MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-wet__j30_1_3-wetMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-ICKFMG-3-200   FAILED                FAILED                
+cargo__challenge05_1s_MIP-BB-......-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+mrcpsp__mm_m1_m1_53_6 MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-LD-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-......-3-100   FEASIBLE              WRONG                 
+cargo__challenge01_0s_MIP-BB-ICKFM.-3-100   FAILED                FAILED                
+rcpsp-wet__j60_19_6-weMIP-BB-......-3-100   FAILED                FAILED                
+train__instance.9     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_4_8-wetMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICKFMG-2-100   Solved                27410.695083ms        27410.695083ms        172500.0              
+cyclic-rcpsp__medium_3MIP-BB-......-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFMG-3-50    FAILED                FAILED                
+evilshop__js-setg2-7  MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-......-3-100   FAILED                FAILED                
+spot5__54             MIP-BB-ICKFMG-4-100   FEASIBLE              WRONG                 
+project-planning__ProjMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-......-3-100   FAILED                FAILED                
+rcpsp-wet__j60_36_8-weMIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-......-3-100   FAILED                FAILED                
+jobshop2__mt10        MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-I.KFMG-3-100   Solved                468.717625ms          468.717625ms          513.0                 
+rcpsp-max__psp_j30_33 MIP-BB-ICKFMG-3-50    FAILED                FAILED                
+road-cons__road_9     MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKFM.-3-100   Solved                2700.416125ms         2700.416125ms         242.0                 
+filters__dct_1_1      MIP-BB-ICK.MG-3-100   FEASIBLE              WRONG                 
+evilshop__js-setg2-7  MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+openshop__j7per10-1   MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+jobshop2__mt06        MIP-BB-ICKFMG-3-100   Solved                11534.675125ms        11534.675125ms        55.0                  
+rcpsp-wet__j30_1_3-wetMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-......-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-.CKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp__data_ksd15_d_j3MIP-BB-ICKFMG-3-50    Solved                470.9205ms            470.9205ms            513.0                 
+rcpsp-wet__j30_4_8-wetMIP-BB-I.KFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-LD-ICKFMG-3-100   Solved                36579.3945ms          36579.3945ms          348.0                 
+cargo__challenge04_1s_MIP-BB-......-3-100   FAILED                FAILED                
+filters__dct_1_1      MIP-BB-.CKFMG-3-100   FEASIBLE              WRONG                 
+jobshop2__mt10        MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+road-cons__road_8     MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+flexible-jobshop__easyMIP-BB-ICKFMG-2-100   FAILED                FAILED                
+rcpsp-max__psp_j30_33 MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+road-cons__road_11    MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la06 MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+cargo__challenge04_1s_MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+jobshop2__mt06        MIP-DF-ICKFMG-3-100   Solved                14012.29625ms         14012.29625ms         55.0                  
+rcpsp-wet__j60_19_6-weMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+spot5__503            MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-IC.FMG-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-SD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-5   MIP-DF-ICKFMG-3-100   FEASIBLE              WRONG                 
+cargo__challenge04_1s_MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-BB-ICK.MG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+rcpsp__data_psplib_j30MIP-BB-.CKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-SD-ICKFMG-3-100   FAILED                FAILED                
+road-cons__road_9     MIP-BB-ICKF.G-3-100   FAILED                FAILED                
+ship-schedule__3Ships MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+train__instance.5     MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+rcpsp-wet__j30_1_3-wetMIP-SD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-setg2-10 MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_2  MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+cyclic-rcpsp__easy_3  MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_34 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+evilshop__js-setg2-5  MIP-LD-ICKFMG-3-100   FEASIBLE              WRONG                 
+evilshop__js-setg2-7  MIP-BB-......-3-100   FAILED                FAILED                
+mrcpsp__mm_j10_j10_54_MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICKFMG-3-100   Solved                1502.251459ms         1502.251459ms         172500.0              
+mrcpsp__mm_j10_j10_54_MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-wet__j30_35_9-weMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+cargo__challenge02_0s_MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+ship-schedule__3ShipsMMIP-BB-ICKFM.-3-100   Solved                5052.19ms             5052.19ms             172500.0              
+train__instance.9     MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+project-planning__ProjMIP-SD-ICKFMG-3-100   FAILED                FAILED                
+project-planning__ProjMIP-BB-ICKFM.-3-100   FAILED                FAILED                
+mrcpsp__mm_n0_n0_1_6  MIP-BB-ICKFMG-4-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+spot5__54             MIP-BB-ICKFMG-3-100   FEASIBLE              WRONG                 
+rcpsp-max__psp_j20_34 MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+rcpsp-max__psp_j20_35 MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-ICK.MG-3-100   FAILED                FAILED                
+cyclic-rcpsp__hard_6  MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+jobshop__jobshop_la22 MIP-SD-ICKFMG-3-100   FEASIBLE              WRONG                 
+ship-schedule__3ShipsMMIP-DF-ICKFMG-3-100   Solved                38587.311875ms        38587.311875ms        172500.0              
+ship-schedule__4ShipsMMIP-BB-ICKF.G-3-100   FAILED                FAILED                
+rcpsp-max__psp_j10_33 MIP-BB-ICKFMG-3-200   FAILED                FAILED                
+flexible-jobshop__med1MIP-BB-IC.FMG-3-100   FAILED                FAILED                
+train__instance.1     MIP-BB-ICKFMG-2-100   FAILED                FAILED                
+ship-schedule__4ShipsMMIP-BB-......-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+evilshop__js-brs2-7   MIP-DF-ICKFMG-3-100   FAILED                FAILED                
+filters__fir_1_1      MIP-BB-IC.FMG-3-100   FEASIBLE              WRONG                 
+mrcpsp__mm_n0_n0_1_2  MIP-BB-ICKFMG-3-100   FAILED                FAILED                
+openshop__j7per10-1   MIP-BB-ICKFMG-2-100   FEASIBLE              WRONG                 
+rcpsp-wet__j60_36_8-weMIP-BB-ICKFMG-4-100   FAILED                FAILED                
+cyclic-rcpsp__medium_3MIP-LD-ICKFMG-3-100   FAILED                FAILED                
+stochastic-fjsp__fjsp-MIP-BB-I.KFMG-3-100   FAILED                FAILED                
+gfd-schedule__n30f3d30MIP-BB-ICKFMG-4-100   FAILED                FAILED                
