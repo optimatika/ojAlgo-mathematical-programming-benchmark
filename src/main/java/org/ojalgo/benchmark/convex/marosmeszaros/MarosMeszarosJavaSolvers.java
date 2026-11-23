@@ -24,7 +24,6 @@ package org.ojalgo.benchmark.convex.marosmeszaros;
 import org.ojalgo.benchmark.AbstractBenchmark;
 import org.ojalgo.benchmark.Contender;
 import org.ojalgo.benchmark.convex.marosmeszaros.MarosMeszarosModels.ModelInfo;
-import org.ojalgo.concurrent.Parallelism;
 
 /**
  * The pure Java QP solvers against each other - which is the best Java alternative to ojAlgo. ojAlgo is
@@ -38,7 +37,7 @@ public final class MarosMeszarosJavaSolvers extends AbstractMarosMeszaros {
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
 
-        configuration.parallelism = Parallelism.TWO;
+        // configuration.parallelism = Parallelism.TWO;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
