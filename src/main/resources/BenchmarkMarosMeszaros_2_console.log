@@ -1,0 +1,1095 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 2, threads per worker: 9
+Models: 48 of 65 within size limits (17 not shipped), solvers: 4
+
+
+Iteration 1 with 192 model/solver pairs remaining 2026-11-23T22:57:38.461740Z
+-----------------------------------------------------------------------------
+CVXQP1_S              HiGHS                 Solved                2.596458ms            2.596458ms            11590.718119426767    
+DUAL1                 HiGHS                 Solved                5.349542ms            5.349542ms            0.035012965733630115  
+HS21                  Hipparchus            Solved                0.146792ms            0.146792ms            -99.96                
+CVXQP3_M              Hipparchus            Solved                7500.018167ms         7500.018167ms         1362828.7416029205    
+LASER                 ojAlgo-QP             Solved                8.847333ms            8.847333ms            2409601.3445665766    
+CVXQP3_M              HiGHS                 Solved                44.910167ms           44.910167ms           1362828.7416028779    
+CVXQP1_S              Hipparchus            Solved                5.23825ms             5.23825ms             11590.718119426765    
+DUAL1                 Hipparchus            Solved                3.3735ms              3.3735ms              0.035012965733477334  
+HS21                  HiGHS                 Solved                0.292541ms            0.292541ms            -99.96                
+LASER                 Clarabel              Solved                10.384ms              10.384ms              2409601.3455973454    
+CVXQP3_S              ojAlgo-QP             Solved                5.133167ms            5.133167ms            11943.432202309961    
+QPCSTAIR              Clarabel              Solved                11.5225ms             11.5225ms             6204387.47609529      
+CVXQP2_M              ojAlgo-QP             Solved                31.359542ms           31.359542ms           820155.4310868882     
+DUALC1                Hipparchus            Solved                0.3065ms              0.3065ms              6155.250829462685     
+S268                  Clarabel              Solved                0.173833ms            0.173833ms            1.0827727501609425E-6 
+CVXQP2_M              Clarabel              Solved                25.987792ms           25.987792ms           820155.4310161151     
+QPCSTAIR              ojAlgo-QP             Solved                225.631875ms          225.631875ms          6204387.476082571     
+DUALC1                HiGHS                 Solved                0.598292ms            0.598292ms            6155.250829462993     
+STCQP1                HiGHS                 Solved                19046.731375ms        19046.731375ms        155143.55470395708    
+GENHS28               Hipparchus            Solved                0.073375ms            0.073375ms            0.9271736937663909    
+STCQP2                Hipparchus            Solved                155401.61725ms        155401.61725ms        22327.313272416683    
+QPCBOEI2              ojAlgo-QP             Solved                34.983667ms           34.983667ms           8171962.244330434     
+DUAL2                 Hipparchus            Solved                3.171375ms            3.171375ms            0.03373367612271853   
+CVXQP1_L              Hipparchus            FAILED                TIMEOUT               
+HS35MOD               HiGHS                 Solved                0.63725ms             0.63725ms             0.2500000000000031    
+QPCBOEI2              Clarabel              Solved                4.127667ms            4.127667ms            8171962.244346138     
+GENHS28               HiGHS                 Solved                0.30325ms             0.30325ms             0.9271736937663911    
+S268                  ojAlgo-QP             Solved                0.441ms               0.441ms               5.28206339E-24        
+DUALC2                HiGHS                 Solved                0.502416ms            0.502416ms            3551.3076926710155    
+CVXQP2_L              ojAlgo-QP             Solved                10675.3995ms          10675.3995ms          8.18424582645111E7    
+DUALC2                Hipparchus            Solved                0.500291ms            0.500291ms            3551.307692670649     
+DUAL3                 Hipparchus            Solved                5.443875ms            5.443875ms            0.135755836866021     
+CVXQP2_L              Clarabel              Solved                8111.84675ms          8111.84675ms          8.184245826290423E7   
+DUALC5                Clarabel              Solved                0.185042ms            0.185042ms            427.23232755420014    
+HS51                  Hipparchus            Solved                0.079708ms            0.079708ms            4.0E-32               
+VALUES                Clarabel              Solved                4.926083ms            4.926083ms            -1.3966211433271134   
+DUALC5                ojAlgo-QP             Solved                0.54375ms             0.54375ms             427.23232677638896    
+CVXQP1_L              HiGHS                 FAILED                TIMEOUT               
+QPCBOEI1              ojAlgo-QP             Solved                515.907458ms          515.907458ms          1.1503914009768225E7  
+KSIP                  Clarabel              Solved                12.670208ms           12.670208ms           0.5757979412419664    
+CVXQP1_M              HiGHS                 Solved                53.316417ms           53.316417ms           1087511.5673214905    
+HS35                  Hipparchus            Solved                0.123959ms            0.123959ms            0.1111111111111111    
+HUESTIS               Clarabel              INFEASIBLE            WRONG                 
+MOSARQP2              Clarabel              Solved                7.5425ms              7.5425ms              -1597.4821175167979   
+AUG3DCQP              Clarabel              Solved                28.477125ms           28.477125ms           993.3621465254238     
+AUG3DCQP              ojAlgo-QP             Solved                66.65375ms            66.65375ms            993.3621465050522     
+QPCSTAIR              HiGHS                 FAILED                TIMEOUT               
+QPTEST                Hipparchus            Solved                0.230542ms            0.230542ms            4.371875000000001     
+QPCBOEI1              Clarabel              Solved                10.834125ms           10.834125ms           1.1503914009770427E7  
+CVXQP3_S              Hipparchus            Solved                7.716583ms            7.716583ms            11943.43220230996     
+HS21                  ojAlgo-QP             Solved                0.155334ms            0.155334ms            -99.96                
+DUAL4                 Clarabel              Solved                4.46875ms             4.46875ms             0.7460908637621981    
+CVXQP2_S              Clarabel              Solved                1.659958ms            1.659958ms            8120.94047725142      
+LASER                 Hipparchus            Solved                5851.957916ms         5851.957916ms         2409601.345596795     
+TAME                  Clarabel              Solved                0.203917ms            0.203917ms            0.0                   
+HS35MOD               Clarabel              Solved                0.23775ms             0.23775ms             0.25000000119037485   
+POWELL20              Hipparchus            FAILED                TIMEOUT               
+DUAL4                 ojAlgo-QP             Solved                5.160625ms            5.160625ms            0.7460908418021002    
+TAME                  ojAlgo-QP             Solved                0.16375ms             0.16375ms             0.0                   
+HS35MOD               ojAlgo-QP             Solved                0.159625ms            0.159625ms            0.25                  
+MOSARQP2              ojAlgo-QP             Solved                49.674ms              49.674ms              -1597.4821174957451   
+HS21                  Clarabel              Solved                0.215958ms            0.215958ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Solved                46.642292ms           46.642292ms           0.5757979412401067    
+CVXQP2_S              HiGHS                 Solved                1.875209ms            1.875209ms            8120.940477250692     
+HS52                  Hipparchus            Solved                0.147833ms            0.147833ms            5.326647564469914     
+QPCBLEND              Hipparchus            Solved                4.203125ms            4.203125ms            -0.00784254307420464  
+AUG3DC                HiGHS                 Solved                3804.879792ms         3804.879792ms         771.2624386889718     
+HS76                  Hipparchus            Solved                0.096833ms            0.096833ms            -4.6818181818181825   
+STCQP1                Hipparchus            Solved                123449.95679150001ms  123449.95679150001ms  155143.55470395705    
+HUES-MOD              Clarabel              INFEASIBLE            WRONG                 
+YAO                   ojAlgo-QP             Solved                6206.334083ms         6206.334083ms         197.7042559133991     
+CONT-050              Clarabel              Solved                49.818541ms           49.818541ms           -4.563850904324673    
+CVXQP2_S              ojAlgo-QP             Solved                4.462542ms            4.462542ms            8120.940477250703     
+YAO                   Clarabel              APPROXIMATE           WRONG                 
+QPCBOEI1              HiGHS                 Solved                20.429208ms           20.429208ms           1.1503914009768201E7  
+VALUES                HiGHS                 Solved                3.154ms               3.154ms               -1.3966211447139576   
+CONT-050              ojAlgo-QP             Solved                1380.337208ms         1380.337208ms         -4.563850903450709    
+CVXQP1_M              ojAlgo-QP             Solved                55.879458ms           55.879458ms           1087511.5673104404    
+HUES-MOD              ojAlgo-QP             Solved                66.68325ms            66.68325ms            3.482444393273373E7   
+DUALC8                Hipparchus            Solved                0.266708ms            0.266708ms            18309.358832734146    
+CONT-050              HiGHS                 Solved                687.152625ms          687.152625ms          -4.56385090432484     
+CVXQP1_M              Clarabel              Solved                39.901541ms           39.901541ms           1087511.567327674     
+CVXQP3_L              Hipparchus            FAILED                TIMEOUT               
+YAO                   HiGHS                 Solved                62.404583ms           62.404583ms           197.7042559403136     
+VALUES                ojAlgo-QP             Solved                19.880708ms           19.880708ms           -1.396621144714011    
+AUG3DCQP              HiGHS                 Solved                14343.53775ms         14343.53775ms         993.3621465251111     
+TAME                  Hipparchus            Solved                0.107458ms            0.107458ms            0.0                   
+HS53                  Hipparchus            Solved                0.179708ms            0.179708ms            4.093023255813954     
+HS268                 HiGHS                 Solved                0.317042ms            0.317042ms            2.855827147805955E-6  
+HUES-MOD              HiGHS                 FAILED                FAILED                
+CVXQP2_L              HiGHS                 Solved                20506.346667ms        20506.346667ms        8.184245826284121E7   
+HUES-MOD              Hipparchus            FAILED                TIMEOUT               
+TAME                  HiGHS                 Solved                0.5935ms              0.5935ms              3.6E-33               
+QPCBLEND              Clarabel              Solved                2.158833ms            2.158833ms            -0.007842542798753434 
+QPTEST                ojAlgo-QP             Solved                0.272333ms            0.272333ms            4.371875              
+QPCBOEI2              Hipparchus            Solved                12.031042ms           12.031042ms           8171962.244330427     
+CVXQP2_L              Hipparchus            FAILED                TIMEOUT               
+HS53                  HiGHS                 Solved                0.742375ms            0.742375ms            4.0930232558139545    
+QPCBLEND              ojAlgo-QP             Solved                8.291375ms            8.291375ms            -0.00784254307420463  
+HS35                  Clarabel              Solved                0.227833ms            0.227833ms            0.11111111118285956   
+DUAL2                 Clarabel              Solved                7.2365ms              7.2365ms              0.03373368031007698   
+MOSARQP2              HiGHS                 FAILED                FAILED                
+QPCBOEI2              HiGHS                 Solved                3.903042ms            3.903042ms            8171962.244330503     
+CVXQP1_L              ojAlgo-QP             Solved                28481.657625ms        28481.657625ms        1.0870479976878776E8  
+DUAL2                 ojAlgo-QP             Solved                6.517791ms            6.517791ms            0.033733676122718534  
+QPTEST                Clarabel              Solved                0.186917ms            0.186917ms            4.37187500194358      
+DUALC5                Hipparchus            Solved                0.225667ms            0.225667ms            427.23232677638896    
+HS268                 Hipparchus            Solved                0.107583ms            0.107583ms            4.63649E-27           
+DUALC5                HiGHS                 Solved                0.210875ms            0.210875ms            427.2323267763913     
+HS35                  ojAlgo-QP             Solved                0.086833ms            0.086833ms            0.111111111111111     
+CVXQP1_L              Clarabel              Solved                11011.492625ms        11011.492625ms        1.087047999155994E8   
+HS51                  Clarabel              Solved                0.124458ms            0.124458ms            1.22E-30              
+MOSARQP2              Hipparchus            Solved                963.818709ms          963.818709ms          -1597.4821175234272   
+HS51                  ojAlgo-QP             Solved                0.102667ms            0.102667ms            4.131062434482671E-17 
+KSIP                  Hipparchus            Solved                2.655041ms            2.655041ms            0.5757979412401069    
+S268                  HiGHS                 Solved                0.297292ms            0.297292ms            2.855827147805955E-6  
+KSIP                  HiGHS                 FAILED                TIMEOUT               
+DUALC2                ojAlgo-QP             Solved                0.854583ms            0.854583ms            3551.3076926708427    
+MOSARQP1              Clarabel              Solved                15.500667ms           15.500667ms           -952.8754430307338    
+CVXQP2_M              HiGHS                 Solved                32.862416ms           32.862416ms           820155.4310156989     
+DUAL4                 HiGHS                 Solved                3.450541ms            3.450541ms            0.7460908418021023    
+AUG3DC                ojAlgo-QP             Solved                35.784417ms           35.784417ms           771.26243868896       
+HS118                 HiGHS                 Solved                0.391084ms            0.391084ms            664.82045             
+CVXQP2_M              Hipparchus            Solved                4426.423125ms         4426.423125ms         820155.4310156987     
+DUALC2                Clarabel              Solved                0.211292ms            0.211292ms            3551.307695740189     
+S268                  Hipparchus            Solved                0.054125ms            0.054125ms            4.63649E-27           
+AUG3DC                Clarabel              Solved                5.48625ms             5.48625ms             771.2624386889587     
+CVXQP3_M              ojAlgo-QP             Solved                484.513417ms          484.513417ms          1362828.741502111     
+CVXQP1_S              Clarabel              Solved                0.904834ms            0.904834ms            11590.7181194325      
+HUESTIS               HiGHS                 FAILED                FAILED                
+CVXQP3_M              Clarabel              Solved                60.844209ms           60.844209ms           1362828.74160413      
+DUAL3                 Clarabel              Solved                6.370834ms            6.370834ms            0.13575589657084416   
+DUAL3                 ojAlgo-QP             Solved                6.202041ms            6.202041ms            0.13575583686602102   
+MOSARQP1              Hipparchus            Solved                28219.77225ms         28219.77225ms         -952.8754430312603    
+HS118                 Clarabel              Solved                0.269042ms            0.269042ms            664.8204500023853     
+HUESTIS               ojAlgo-QP             Solved                63.706458ms           63.706458ms           3.4824443932733734E11 
+MOSARQP1              HiGHS                 FAILED                TIMEOUT               
+MOSARQP1              ojAlgo-QP             Solved                255.75475ms           255.75475ms           -952.8754427805984    
+HS118                 Hipparchus            Solved                0.779958ms            0.779958ms            664.82045             
+HS118                 ojAlgo-QP             Solved                1.113167ms            1.113167ms            664.82045             
+HS35                  HiGHS                 Solved                0.53875ms             0.53875ms             0.11111111111111352   
+CONT-050              Hipparchus            Solved                64079.808709ms        64079.808709ms        -4.56385090432467     
+HUESTIS               Hipparchus            FAILED                TIMEOUT               
+QPTEST                HiGHS                 Solved                0.503917ms            0.503917ms            4.371875000000007     
+DUAL3                 HiGHS                 Solved                7.258167ms            7.258167ms            0.13575583686603337   
+CVXQP1_M              Hipparchus            Solved                4283.28675ms          4283.28675ms          1087511.567321509     
+DUALC1                ojAlgo-QP             Solved                0.740833ms            0.740833ms            6155.250829462689     
+QPCSTAIR              Hipparchus            Solved                250.707625ms          250.707625ms          6204387.476082529     
+DUALC1                Clarabel              Solved                0.344625ms            0.344625ms            6155.250871883497     
+CVXQP1_S              ojAlgo-QP             Solved                5.669834ms            5.669834ms            11590.718119426765    
+HS51                  HiGHS                 Solved                0.266042ms            0.266042ms            1.1627905395348892E-16
+STCQP1                Clarabel              Solved                53.722417ms           53.722417ms           155143.55470396913    
+AUG3DC                Hipparchus            Solved                108552.18675ms        108552.18675ms        771.2624386889594     
+HS53                  ojAlgo-QP             Solved                0.152958ms            0.152958ms            4.093023255813954     
+CVXQP3_L              Clarabel              Solved                11510.076334ms        11510.076334ms        1.1571110449425073E8  
+HS268                 Clarabel              Solved                0.214625ms            0.214625ms            1.0827727501609425E-6 
+LASER                 HiGHS                 FAILED                FAILED                
+STCQP1                ojAlgo-QP             Solved                24.868916ms           24.868916ms           155143.55470403298    
+DUAL4                 Hipparchus            Solved                2.017333ms            2.017333ms            0.7460908418021001    
+QPCBLEND              HiGHS                 Solved                1.663916ms            1.663916ms            -0.007842543073805558 
+HS268                 ojAlgo-QP             Solved                0.134375ms            0.134375ms            5.28206339E-24        
+CVXQP3_S              HiGHS                 Solved                1.22075ms             1.22075ms             11943.432202309958    
+HS53                  Clarabel              Solved                0.145208ms            0.145208ms            4.093023255813954     
+GENHS28               ojAlgo-QP             Solved                0.145875ms            0.145875ms            0.9271736939354152    
+GENHS28               Clarabel              Solved                0.172458ms            0.172458ms            0.9271736937663909    
+POWELL20              Clarabel              Solved                89.604458ms           89.604458ms           5.208958281259555E10  
+DUAL2                 HiGHS                 Solved                3.89625ms             3.89625ms             0.033733676122735874  
+POWELL20              ojAlgo-QP             APPROXIMATE           WRONG                 
+HS35MOD               Hipparchus            Solved                0.068292ms            0.068292ms            0.25                  
+CVXQP3_L              ojAlgo-QP             Solved                125532.9505625ms      125532.9505625ms      1.1571110348156741E8  
+DUALC8                Clarabel              Solved                0.196917ms            0.196917ms            18309.359650071543    
+CVXQP2_S              Hipparchus            Solved                3.910542ms            3.910542ms            8120.940477250691     
+QPCBOEI1              Hipparchus            Solved                141.692208ms          141.692208ms          1.1503914009768227E7  
+HS76                  HiGHS                 Solved                0.207042ms            0.207042ms            -4.68181818181818     
+CVXQP3_L              HiGHS                 FAILED                FAILED                
+HS52                  HiGHS                 Solved                0.213667ms            0.213667ms            5.326647564470031     
+STCQP2                Clarabel              Solved                54.160708ms           54.160708ms           22327.313272420342    
+DUAL1                 Clarabel              Solved                3.319875ms            3.319875ms            0.03501298755196903   
+HS76                  ojAlgo-QP             Solved                0.130458ms            0.130458ms            -4.681818181818182    
+POWELL20              HiGHS                 Solved                560.313375ms          560.313375ms          5.20895828125E10      
+DUALC8                HiGHS                 Solved                0.30025ms             0.30025ms             18309.358832737144    
+HS52                  ojAlgo-QP             Solved                0.101084ms            0.101084ms            5.326647576871817     
+CVXQP3_S              Clarabel              Solved                1.534541ms            1.534541ms            11943.432202316642    
+STCQP2                ojAlgo-QP             Solved                17.667625ms           17.667625ms           22327.313272417538    
+YAO                   Hipparchus            Solved                25578.983792ms        25578.983792ms        197.70425594031283    
+DUAL1                 ojAlgo-QP             Solved                5.920583ms            5.920583ms            0.03501296573347735   
+STCQP2                HiGHS                 Solved                10439.064083ms        10439.064083ms        22327.313272416708    
+DUALC8                ojAlgo-QP             Solved                0.170458ms            0.170458ms            18309.35883273631     
+HS52                  Clarabel              Solved                0.068875ms            0.068875ms            5.326647564469912     
+HS76                  Clarabel              Solved                0.089209ms            0.089209ms            -4.681818181738656    
+VALUES                Hipparchus            Solved                40.8395ms             40.8395ms             -1.3966211447140153   
+AUG3DCQP              Hipparchus            Solved                124367.139354ms       124367.139354ms       993.3621465251061     
+
+Iteration 2 with 173 model/solver pairs remaining 2026-11-23T23:44:16.069157Z
+-----------------------------------------------------------------------------
+CVXQP1_S              HiGHS                 Time not stable       1.986771ms            1.377084ms            11590.718119426767    
+DUAL1                 HiGHS                 Time not stable       4.361625ms            3.373708ms            0.035012965733630115  
+HS21                  Hipparchus            Time not stable       0.1060835ms           0.065375ms            -99.96                
+CVXQP3_M              Hipparchus            Time not stable       7066.0162295ms        6632.014292ms         1362828.7416029205    
+LASER                 ojAlgo-QP             Time not stable       6.866562ms            4.885791ms            2409601.3445665766    
+CVXQP3_M              HiGHS                 Time not stable       44.582333500000004ms  44.2545ms             1362828.7416028779    
+CVXQP1_S              Hipparchus            Time not stable       4.710229ms            4.182208ms            11590.718119426765    
+DUAL1                 Hipparchus            Time not stable       2.783146ms            2.192792ms            0.035012965733477334  
+HS21                  HiGHS                 Time not stable       0.2271875ms           0.161834ms            -99.96                
+LASER                 Clarabel              Time not stable       8.825917ms            7.267834ms            2409601.3455973454    
+CVXQP3_S              ojAlgo-QP             Time not stable       3.5696045ms           2.006042ms            11943.432202309961    
+QPCSTAIR              Clarabel              Time not stable       10.704146000000001ms  9.885792ms            6204387.47609529      
+CVXQP2_M              ojAlgo-QP             Time not stable       30.199416499999998ms  29.039291ms           820155.4310868882     
+DUALC1                Hipparchus            Time not stable       0.2225625ms           0.138625ms            6155.250829462685     
+S268                  Clarabel              Time not stable       0.1408125ms           0.107792ms            1.0827727501609425E-6 
+CVXQP2_M              Clarabel              Time not stable       24.7108755ms          23.433959ms           820155.4310161151     
+QPCSTAIR              ojAlgo-QP             Time not stable       189.13720849999999ms  152.642542ms          6204387.476082571     
+DUALC1                HiGHS                 Time not stable       0.431875ms            0.265458ms            6155.250829462993     
+STCQP1                HiGHS                 Time not stable       18955.9476665ms       18865.163958ms        155143.55470395708    
+GENHS28               Hipparchus            Time not stable       0.08666650000000001ms 0.099958ms            0.9271736937663909    
+QPCBOEI2              ojAlgo-QP             Time not stable       31.697063ms           28.410459ms           8171962.244330434     
+DUAL2                 Hipparchus            Time not stable       3.019792ms            2.868209ms            0.03373367612271853   
+HS35MOD               HiGHS                 Time not stable       0.4001875ms           0.163125ms            0.2500000000000031    
+QPCBOEI2              Clarabel              Time not stable       3.4624794999999997ms  2.797292ms            8171962.244346138     
+GENHS28               HiGHS                 Time not stable       0.2341045ms           0.164959ms            0.9271736937663911    
+S268                  ojAlgo-QP             Time not stable       0.278625ms            0.11625ms             5.28206339E-24        
+DUALC2                HiGHS                 Time not stable       0.3542705ms           0.206125ms            3551.3076926710155    
+CVXQP2_L              ojAlgo-QP             Time not stable       10634.3177915ms       10593.236083ms        8.18424582645111E7    
+DUALC2                Hipparchus            Time not stable       0.3056665ms           0.111042ms            3551.307692670649     
+DUAL3                 Hipparchus            Time not stable       5.7172085ms           5.990542ms            0.135755836866021     
+CVXQP2_L              Clarabel              Time not stable       8073.3555625ms        8034.864375ms         8.184245826290423E7   
+DUALC5                Clarabel              Time not stable       0.14541700000000002ms 0.105792ms            427.23232755420014    
+HS51                  Hipparchus            Time not stable       0.057333ms            0.034958ms            4.0E-32               
+VALUES                Clarabel              Time not stable       4.2384375ms           3.550792ms            -1.3966211433271134   
+DUALC5                ojAlgo-QP             Time not stable       0.3582085ms           0.172667ms            427.23232677638896    
+QPCBOEI1              ojAlgo-QP             Time not stable       507.192604ms          498.47775ms           1.1503914009768225E7  
+KSIP                  Clarabel              Time not stable       11.827104ms           10.984ms              0.5757979412419664    
+CVXQP1_M              HiGHS                 Time not stable       52.300312500000004ms  51.284208ms           1087511.5673214905    
+HS35                  Hipparchus            Time not stable       0.075771ms            0.027583ms            0.1111111111111111    
+MOSARQP2              Clarabel              Time not stable       7.2139375ms           6.885375ms            -1597.4821175167979   
+AUG3DCQP              Clarabel              Time not stable       27.000417ms           25.523709ms           993.3621465254238     
+AUG3DCQP              ojAlgo-QP             Time not stable       62.0246665ms          57.395583ms           993.3621465050522     
+QPTEST                Hipparchus            Time not stable       0.1275ms              0.024458ms            4.371875000000001     
+QPCBOEI1              Clarabel              Time not stable       9.0291045ms           7.224084ms            1.1503914009770427E7  
+CVXQP3_S              Hipparchus            Time not stable       8.6904585ms           9.664334ms            11943.43220230996     
+HS21                  ojAlgo-QP             Time not stable       0.0975215ms           0.039709ms            -99.96                
+DUAL4                 Clarabel              Time not stable       3.3761455ms           2.283541ms            0.7460908637621981    
+CVXQP2_S              Clarabel              Time not stable       1.1893335ms           0.718709ms            8120.94047725142      
+LASER                 Hipparchus            Time not stable       6657.3111455ms        7462.664375ms         2409601.345596795     
+TAME                  Clarabel              Time not stable       0.1295415ms           0.055166ms            0.0                   
+HS35MOD               Clarabel              Time not stable       0.15568749999999998ms 0.073625ms            0.25000000119037485   
+AUG3DC                HiGHS                 Time not stable       3766.9700835000003ms  3729.060375ms         771.2624386889718     
+DUAL4                 ojAlgo-QP             Time not stable       3.7718125ms           2.383ms               0.7460908418021002    
+TAME                  ojAlgo-QP             Time not stable       0.10233350000000001ms 0.040917ms            0.0                   
+HS35MOD               ojAlgo-QP             Time not stable       0.09749999999999999ms 0.035375ms            0.25                  
+MOSARQP2              ojAlgo-QP             Time not stable       45.030249999999995ms  40.3865ms             -1597.4821174957451   
+HS21                  Clarabel              Time not stable       0.144896ms            0.073834ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Time not stable       41.4027085ms          36.163125ms           0.5757979412401067    
+CVXQP2_S              HiGHS                 Time not stable       1.4514999999999998ms  1.027791ms            8120.940477250692     
+HS52                  Hipparchus            Time not stable       0.08345799999999999ms 0.019083ms            5.326647564469914     
+QPCBLEND              Hipparchus            Time not stable       3.4830205000000003ms  2.762916ms            -0.00784254307420464  
+STCQP2                Hipparchus            Time not stable       170280.62937500002ms  185159.6415ms         22327.313272416683    
+HS76                  Hipparchus            Time not stable       0.0743335ms           0.051834ms            -4.6818181818181825   
+YAO                   ojAlgo-QP             Time not stable       4945.382458ms         3684.430833ms         197.7042559133991     
+CONT-050              Clarabel              Time not stable       49.5012915ms          49.184042ms           -4.563850904324673    
+CVXQP2_S              ojAlgo-QP             Time not stable       4.313563ms            4.164584ms            8120.940477250703     
+QPCBOEI1              HiGHS                 Time not stable       20.448186999999997ms  20.467166ms           1.1503914009768201E7  
+VALUES                HiGHS                 Time not stable       3.035896ms            2.917792ms            -1.3966211447139576   
+CONT-050              ojAlgo-QP             Time not stable       1376.1173125ms        1371.897417ms         -4.563850903450709    
+CVXQP1_M              ojAlgo-QP             Time not stable       55.4079585ms          54.936459ms           1087511.5673104404    
+HUES-MOD              ojAlgo-QP             Time not stable       71.92058349999999ms   77.157917ms           3.482444393273373E7   
+DUALC8                Hipparchus            Time not stable       0.1875625ms           0.108417ms            18309.358832734146    
+CONT-050              HiGHS                 Time not stable       686.4788125ms         685.805ms             -4.56385090432484     
+CVXQP1_M              Clarabel              Time not stable       39.861604ms           39.821667ms           1087511.567327674     
+YAO                   HiGHS                 Time not stable       59.103770499999996ms  55.802958ms           197.7042559403136     
+VALUES                ojAlgo-QP             Time not stable       18.666458ms           17.452208ms           -1.396621144714011    
+AUG3DCQP              HiGHS                 Time not stable       14010.280353999999ms  13677.022958ms        993.3621465251111     
+TAME                  Hipparchus            Time not stable       0.0709375ms           0.034417ms            0.0                   
+HS53                  Hipparchus            Time not stable       0.1167705ms           0.053833ms            4.093023255813954     
+HS268                 HiGHS                 Time not stable       0.256396ms            0.19575ms             2.855827147805955E-6  
+CVXQP2_L              HiGHS                 Time not stable       20291.5794795ms       20076.812292ms        8.184245826284121E7   
+TAME                  HiGHS                 Time not stable       0.36133350000000003ms 0.129167ms            3.6E-33               
+QPCBLEND              Clarabel              Time not stable       1.587896ms            1.016959ms            -0.007842542798753434 
+QPTEST                ojAlgo-QP             Time not stable       0.150333ms            0.028333ms            4.371875              
+QPCBOEI2              Hipparchus            Time not stable       11.4823545ms          10.933667ms           8171962.244330427     
+HS53                  HiGHS                 Time not stable       0.45375ms             0.165125ms            4.0930232558139545    
+QPCBLEND              ojAlgo-QP             Time not stable       6.520479ms            4.749583ms            -0.00784254307420463  
+HS35                  Clarabel              Time not stable       0.1486455ms           0.069458ms            0.11111111118285956   
+DUAL2                 Clarabel              Time not stable       5.673083ms            4.109666ms            0.03373368031007698   
+QPCBOEI2              HiGHS                 Time not stable       3.5717084999999997ms  3.240375ms            8171962.244330503     
+CVXQP1_L              ojAlgo-QP             Time not stable       28708.928833500002ms  28936.200042ms        1.0870479976878776E8  
+DUAL2                 ojAlgo-QP             Time not stable       5.073854ms            3.629917ms            0.033733676122718534  
+QPTEST                Clarabel              Time not stable       0.1325835ms           0.07825ms             4.37187500194358      
+DUALC5                Hipparchus            Time not stable       0.137417ms            0.049167ms            427.23232677638896    
+HS268                 Hipparchus            Time not stable       0.067ms               0.026417ms            4.63649E-27           
+DUALC5                HiGHS                 Time not stable       0.180521ms            0.150167ms            427.2323267763913     
+HS35                  ojAlgo-QP             Time not stable       0.056791499999999995ms0.02675ms             0.111111111111111     
+CVXQP1_L              Clarabel              Time not stable       11094.701021ms        11177.909417ms        1.087047999155994E8   
+HS51                  Clarabel              Time not stable       0.086521ms            0.048584ms            1.22E-30              
+MOSARQP2              Hipparchus            Time not stable       1032.2548755ms        1100.691042ms         -1597.4821175234272   
+HS51                  ojAlgo-QP             Time not stable       0.07781249999999999ms 0.052958ms            4.131062434482671E-17 
+KSIP                  Hipparchus            Time not stable       1.8210415000000002ms  0.987042ms            0.5757979412401069    
+S268                  HiGHS                 Time not stable       0.2227085ms           0.148125ms            2.855827147805955E-6  
+CVXQP2_M              Hipparchus            Time not stable       4268.19325ms          4109.963375ms         820155.4310156987     
+DUALC2                ojAlgo-QP             Time not stable       0.477437ms            0.100291ms            3551.3076926708427    
+MOSARQP1              Clarabel              Time not stable       12.8415625ms          10.182458ms           -952.8754430307338    
+CVXQP2_M              HiGHS                 Time not stable       30.3436455ms          27.824875ms           820155.4310156989     
+DUAL4                 HiGHS                 Time not stable       2.612687ms            1.774833ms            0.7460908418021023    
+AUG3DC                ojAlgo-QP             Time not stable       30.7043125ms          25.624208ms           771.26243868896       
+HS118                 HiGHS                 Time not stable       0.28425049999999996ms 0.177417ms            664.82045             
+DUALC2                Clarabel              Time not stable       0.1535415ms           0.095791ms            3551.307695740189     
+S268                  Hipparchus            Time not stable       0.035958000000000004ms0.017791ms            4.63649E-27           
+AUG3DC                Clarabel              Time not stable       5.2345625ms           4.982875ms            771.2624386889587     
+CVXQP3_M              ojAlgo-QP             Time not stable       484.671792ms          484.830167ms          1362828.741502111     
+CVXQP1_S              Clarabel              Time not stable       0.846042ms            0.78725ms             11590.7181194325      
+CVXQP3_M              Clarabel              Time not stable       58.575312499999995ms  56.306416ms           1362828.74160413      
+DUAL3                 Clarabel              Time not stable       5.8193545ms           5.267875ms            0.13575589657084416   
+DUAL3                 ojAlgo-QP             Time not stable       5.802854ms            5.403667ms            0.13575583686602102   
+STCQP1                Hipparchus            Time not stable       131079.83870825003ms  138709.72062500002ms  155143.55470395705    
+HS118                 Clarabel              Time not stable       0.22362500000000002ms 0.178208ms            664.8204500023853     
+HUESTIS               ojAlgo-QP             Time not stable       66.42489549999999ms   69.143333ms           3.4824443932733734E11 
+MOSARQP1              ojAlgo-QP             Time not stable       252.15939600000002ms  248.564042ms          -952.8754427805984    
+HS118                 Hipparchus            Time not stable       0.5006665ms           0.221375ms            664.82045             
+HS118                 ojAlgo-QP             Time not stable       0.651417ms            0.189667ms            664.82045             
+HS35                  HiGHS                 Time not stable       0.329375ms            0.12ms                0.11111111111111352   
+MOSARQP1              Hipparchus            Time not stable       30937.4510415ms       33655.129833ms        -952.8754430312603    
+CONT-050              Hipparchus            Time not stable       64934.995479499994ms  65790.18225ms         -4.56385090432467     
+QPTEST                HiGHS                 Time not stable       0.31541699999999995ms 0.126917ms            4.371875000000007     
+DUAL3                 HiGHS                 Time not stable       5.811271ms            4.364375ms            0.13575583686603337   
+CVXQP1_M              Hipparchus            Time not stable       4818.207042ms         5353.127334ms         1087511.567321509     
+DUALC1                ojAlgo-QP             Time not stable       0.438ms               0.135167ms            6155.250829462689     
+QPCSTAIR              Hipparchus            Time not stable       267.2902085ms         283.872792ms          6204387.476082529     
+DUALC1                Clarabel              Time not stable       0.239396ms            0.134167ms            6155.250871883497     
+CVXQP1_S              ojAlgo-QP             Time not stable       3.8974585ms           2.125083ms            11590.718119426765    
+HS51                  HiGHS                 Time not stable       0.20670850000000002ms 0.147375ms            1.1627905395348892E-16
+STCQP1                Clarabel              Time not stable       53.26325ms            52.804083ms           155143.55470396913    
+AUG3DC                Hipparchus            Time not stable       107709.30625ms        106866.42575ms        771.2624386889594     
+HS53                  ojAlgo-QP             Time not stable       0.092562ms            0.032166ms            4.093023255813954     
+CVXQP3_L              Clarabel              Time not stable       11512.3393125ms       11514.602291ms        1.1571110449425073E8  
+HS268                 Clarabel              Time not stable       0.1501045ms           0.085584ms            1.0827727501609425E-6 
+STCQP1                ojAlgo-QP             Time not stable       21.665833ms           18.46275ms            155143.55470403298    
+DUAL4                 Hipparchus            Time not stable       1.7914789999999998ms  1.565625ms            0.7460908418021001    
+QPCBLEND              HiGHS                 Time not stable       1.3671035ms           1.070291ms            -0.007842543073805558 
+HS268                 ojAlgo-QP             Time not stable       0.0870625ms           0.03975ms             5.28206339E-24        
+CVXQP3_S              HiGHS                 Time not stable       1.0906875ms           0.960625ms            11943.432202309958    
+HS53                  Clarabel              Time not stable       0.0998955ms           0.054583ms            4.093023255813954     
+GENHS28               ojAlgo-QP             Time not stable       0.1750625ms           0.20425ms             0.9271736939354152    
+GENHS28               Clarabel              Time not stable       0.105708ms            0.038958ms            0.9271736937663909    
+POWELL20              Clarabel              Time not stable       87.8601875ms          86.115917ms           5.208958281259555E10  
+DUAL2                 HiGHS                 Time not stable       3.7275625000000003ms  3.558875ms            0.033733676122735874  
+HS35MOD               Hipparchus            Time not stable       0.043417000000000004ms0.018542ms            0.25                  
+DUALC8                Clarabel              Time not stable       0.1537915ms           0.110666ms            18309.359650071543    
+CVXQP2_S              Hipparchus            Time not stable       4.08275ms             4.254958ms            8120.940477250691     
+QPCBOEI1              Hipparchus            Time not stable       153.069854ms          164.4475ms            1.1503914009768227E7  
+HS76                  HiGHS                 Time not stable       0.17070849999999999ms 0.134375ms            -4.68181818181818     
+CVXQP3_L              ojAlgo-QP             Time not stable       124780.60860425001ms  124028.266646ms       1.1571110348156741E8  
+HS52                  HiGHS                 Time not stable       0.175729ms            0.137791ms            5.326647564470031     
+STCQP2                Clarabel              Time not stable       53.835499999999996ms  53.510292ms           22327.313272420342    
+DUAL1                 Clarabel              Time not stable       3.177979ms            3.036083ms            0.03501298755196903   
+HS76                  ojAlgo-QP             Time not stable       0.093ms               0.055542ms            -4.681818181818182    
+POWELL20              HiGHS                 Time not stable       563.614104ms          566.914833ms          5.20895828125E10      
+DUALC8                HiGHS                 Time not stable       0.29647900000000005ms 0.292708ms            18309.358832737144    
+HS52                  ojAlgo-QP             Time not stable       0.1149375ms           0.128791ms            5.326647576871817     
+CVXQP3_S              Clarabel              Time not stable       1.3140204999999998ms  1.0935ms              11943.432202316642    
+STCQP2                ojAlgo-QP             Time not stable       17.179271ms           16.690917ms           22327.313272417538    
+YAO                   Hipparchus            Time not stable       26049.213917ms        26519.444042ms        197.70425594031283    
+DUAL1                 ojAlgo-QP             Time not stable       5.3857085ms           4.850834ms            0.03501296573347735   
+STCQP2                HiGHS                 Time not stable       10455.577270999998ms  10472.090459ms        22327.313272416708    
+DUALC8                ojAlgo-QP             Time not stable       0.245937ms            0.321416ms            18309.35883273631     
+HS52                  Clarabel              Time not stable       0.11560400000000001ms 0.162333ms            5.326647564469912     
+HS76                  Clarabel              Time not stable       0.2502715ms           0.411334ms            -4.681818181738656    
+VALUES                Hipparchus            Time not stable       41.5481875ms          42.256875ms           -1.3966211447140153   
+AUG3DCQP              Hipparchus            Time not stable       127587.46127075ms     130807.7831875ms      993.3621465251061     
+
+Iteration 3 with 173 model/solver pairs remaining 2026-11-24T00:01:51.379219Z
+-----------------------------------------------------------------------------
+CVXQP1_S              HiGHS                 Time not stable       1.377084ms            1.17675ms             11590.718119426767    
+DUAL1                 HiGHS                 Time not stable       3.373708ms            2.244208ms            0.035012965733630115  
+HS21                  Hipparchus            Time not stable       0.065375ms            0.015292ms            -99.96                
+CVXQP3_M              Hipparchus            Time not stable       7500.018167ms         8188.076291ms         1362828.7416029205    
+LASER                 ojAlgo-QP             Time not stable       8.701583ms            8.701583ms            2409601.3445665766    
+CVXQP3_M              HiGHS                 Time stable           44.2545ms             43.180583ms           1362828.7416028779    
+CVXQP1_S              Hipparchus            Time not stable       4.982ms               4.982ms               11590.718119426765    
+DUAL1                 Hipparchus            Time not stable       2.366833ms            2.366833ms            0.035012965733477334  
+HS21                  HiGHS                 Time not stable       0.202708ms            0.202708ms            -99.96                
+LASER                 Clarabel              Time not stable       8.246417ms            8.246417ms            2409601.3455973454    
+CVXQP3_S              ojAlgo-QP             Time not stable       2.324417ms            2.324417ms            11943.432202309961    
+QPCSTAIR              Clarabel              Time stable           10.269792ms           10.269792ms           6204387.47609529      
+CVXQP2_M              ojAlgo-QP             Time stable           29.081584ms           29.081584ms           820155.4310868882     
+DUALC1                Hipparchus            Time not stable       0.138625ms            0.052125ms            6155.250829462685     
+S268                  Clarabel              Time not stable       0.110208ms            0.110208ms            1.0827727501609425E-6 
+CVXQP2_M              Clarabel              Time stable           23.433959ms           23.104416ms           820155.4310161151     
+QPCSTAIR              ojAlgo-QP             Time not stable       152.642542ms          148.558834ms          6204387.476082571     
+DUALC1                HiGHS                 Time not stable       0.265458ms            0.187333ms            6155.250829462993     
+STCQP1                HiGHS                 Time stable           19046.731375ms        19366.549792ms        155143.55470395708    
+GENHS28               Hipparchus            Time not stable       0.073375ms            0.025083ms            0.9271736937663909    
+QPCBOEI2              ojAlgo-QP             Time not stable       30.973791ms           30.973791ms           8171962.244330434     
+DUAL2                 Hipparchus            Time not stable       2.868209ms            2.301167ms            0.03373367612271853   
+HS35MOD               HiGHS                 Time not stable       0.163125ms            0.1085ms              0.2500000000000031    
+QPCBOEI2              Clarabel              Time not stable       2.797292ms            2.735958ms            8171962.244346138     
+GENHS28               HiGHS                 Time not stable       0.164959ms            0.144875ms            0.9271736937663911    
+S268                  ojAlgo-QP             Time not stable       0.11625ms             0.042917ms            5.28206339E-24        
+DUALC2                HiGHS                 Time not stable       0.206125ms            0.14525ms             3551.3076926710155    
+CVXQP2_L              ojAlgo-QP             Time stable           10612.345ms           10612.345ms           8.18424582645111E7    
+DUALC2                Hipparchus            Time not stable       0.111042ms            0.041667ms            3551.307692670649     
+DUAL3                 Hipparchus            Time not stable       5.443875ms            3.710417ms            0.135755836866021     
+CVXQP2_L              Clarabel              Time stable           8048.004292ms         8048.004292ms         8.184245826290423E7   
+DUALC5                Clarabel              Time not stable       0.105792ms            0.090083ms            427.23232755420014    
+HS51                  Hipparchus            Time not stable       0.034958ms            0.013291ms            4.0E-32               
+VALUES                Clarabel              Time not stable       3.550792ms            2.964625ms            -1.3966211433271134   
+DUALC5                ojAlgo-QP             Time not stable       0.172667ms            0.063208ms            427.23232677638896    
+QPCBOEI1              ojAlgo-QP             Time stable           498.47775ms           473.969083ms          1.1503914009768225E7  
+KSIP                  Clarabel              Time not stable       10.984ms              10.296458ms           0.5757979412419664    
+CVXQP1_M              HiGHS                 Time stable           51.284208ms           50.524208ms           1087511.5673214905    
+HS35                  Hipparchus            Time not stable       0.027583ms            0.012084ms            0.1111111111111111    
+MOSARQP2              Clarabel              Time stable           6.885375ms            6.573875ms            -1597.4821175167979   
+AUG3DCQP              Clarabel              Time stable           25.523709ms           24.871291ms           993.3621465254238     
+AUG3DCQP              ojAlgo-QP             Time not stable       57.395583ms           54.155459ms           993.3621465050522     
+QPTEST                Hipparchus            Time not stable       0.024458ms            0.015ms               4.371875000000001     
+QPCBOEI1              Clarabel              Time not stable       7.224084ms            6.970708ms            1.1503914009770427E7  
+CVXQP3_S              Hipparchus            Time not stable       7.716583ms            6.721458ms            11943.43220230996     
+HS21                  ojAlgo-QP             Time not stable       0.039709ms            0.014791ms            -99.96                
+DUAL4                 Clarabel              Time not stable       2.283541ms            2.035875ms            0.7460908637621981    
+CVXQP2_S              Clarabel              Time not stable       0.718709ms            0.684167ms            8120.94047725142      
+LASER                 Hipparchus            Time not stable       7462.664375ms         7539.753833ms         2409601.345596795     
+TAME                  Clarabel              Time not stable       0.055166ms            0.040458ms            0.0                   
+HS35MOD               Clarabel              Time not stable       0.073625ms            0.0535ms              0.25000000119037485   
+AUG3DC                HiGHS                 Time stable           3804.879792ms         3805.044334ms         771.2624386889718     
+DUAL4                 ojAlgo-QP             Time not stable       2.383ms               1.658333ms            0.7460908418021002    
+TAME                  ojAlgo-QP             Time not stable       0.040917ms            0.017833ms            0.0                   
+HS35MOD               ojAlgo-QP             Time not stable       0.035375ms            0.014625ms            0.25                  
+MOSARQP2              ojAlgo-QP             Time not stable       40.3865ms             39.563791ms           -1597.4821174957451   
+HS21                  Clarabel              Time not stable       0.073834ms            0.055792ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Time not stable       36.163125ms           34.622125ms           0.5757979412401067    
+CVXQP2_S              HiGHS                 Time not stable       1.027791ms            0.616042ms            8120.940477250692     
+HS52                  Hipparchus            Time not stable       0.019083ms            0.013667ms            5.326647564469914     
+QPCBLEND              Hipparchus            Time not stable       2.762916ms            2.61875ms             -0.00784254307420464  
+STCQP2                Hipparchus            Time stable           183065.098292ms       183065.098292ms       22327.313272416683    
+HS76                  Hipparchus            Time not stable       0.051834ms            0.015083ms            -4.6818181818181825   
+YAO                   ojAlgo-QP             Time not stable       3684.430833ms         3536.243708ms         197.7042559133991     
+CONT-050              Clarabel              Time stable           49.184042ms           46.521042ms           -4.563850904324673    
+CVXQP2_S              ojAlgo-QP             Time not stable       4.164584ms            2.124209ms            8120.940477250703     
+QPCBOEI1              HiGHS                 Time stable           20.429208ms           19.64475ms            1.1503914009768201E7  
+VALUES                HiGHS                 Time not stable       2.917792ms            2.362917ms            -1.3966211447139576   
+CONT-050              ojAlgo-QP             Time stable           1371.897417ms         1371.069333ms         -4.563850903450709    
+CVXQP1_M              ojAlgo-QP             Time stable           54.936459ms           54.70425ms            1087511.5673104404    
+HUES-MOD              ojAlgo-QP             Time stable           77.157917ms           78.046542ms           3.482444393273373E7   
+DUALC8                Hipparchus            Time not stable       0.108417ms            0.040792ms            18309.358832734146    
+CONT-050              HiGHS                 Time stable           685.805ms             683.606125ms          -4.56385090432484     
+CVXQP1_M              Clarabel              Time stable           39.821667ms           38.967209ms           1087511.567327674     
+YAO                   HiGHS                 Time stable           56.400875ms           56.400875ms           197.7042559403136     
+VALUES                ojAlgo-QP             Time not stable       17.452208ms           12.109041ms           -1.396621144714011    
+AUG3DCQP              HiGHS                 Time stable           13755.181125ms        13755.181125ms        993.3621465251111     
+TAME                  Hipparchus            Time not stable       0.034417ms            0.01525ms             0.0                   
+HS53                  Hipparchus            Time not stable       0.053833ms            0.022ms               4.093023255813954     
+HS268                 HiGHS                 Time not stable       0.19575ms             0.134625ms            2.855827147805955E-6  
+CVXQP2_L              HiGHS                 Time stable           20204.59525ms         20204.59525ms         8.184245826284121E7   
+TAME                  HiGHS                 Time not stable       0.129167ms            0.106875ms            3.6E-33               
+QPCBLEND              Clarabel              Time not stable       1.016959ms            0.849375ms            -0.007842542798753434 
+QPTEST                ojAlgo-QP             Time not stable       0.028333ms            0.019792ms            4.371875              
+QPCBOEI2              Hipparchus            Time stable           10.933667ms           9.950625ms            8171962.244330427     
+HS53                  HiGHS                 Time not stable       0.165125ms            0.129833ms            4.0930232558139545    
+QPCBLEND              ojAlgo-QP             Time not stable       4.749583ms            3.977083ms            -0.00784254307420463  
+HS35                  Clarabel              Time not stable       0.069458ms            0.04225ms             0.11111111118285956   
+DUAL2                 Clarabel              Time not stable       4.109666ms            3.7815ms              0.03373368031007698   
+QPCBOEI2              HiGHS                 Time not stable       3.240375ms            3.054041ms            8171962.244330503     
+STCQP1                Hipparchus            Time stable           138572.554334ms       138572.554334ms       155143.55470395705    
+DUAL2                 ojAlgo-QP             Time not stable       3.629917ms            3.368ms               0.033733676122718534  
+QPTEST                Clarabel              Time not stable       0.07825ms             0.050625ms            4.37187500194358      
+DUALC5                Hipparchus            Time not stable       0.049167ms            0.029ms               427.23232677638896    
+HS268                 Hipparchus            Time not stable       0.026417ms            0.015125ms            4.63649E-27           
+DUALC5                HiGHS                 Time not stable       0.150167ms            0.13925ms             427.2323267763913     
+HS35                  ojAlgo-QP             Time not stable       0.02675ms             0.015708ms            0.111111111111111     
+CVXQP1_L              Clarabel              Time stable           11177.909417ms        11460.619833ms        1.087047999155994E8   
+HS51                  Clarabel              Time not stable       0.048584ms            0.029708ms            1.22E-30              
+MOSARQP2              Hipparchus            Time stable           1100.691042ms         1147.405875ms         -1597.4821175234272   
+HS51                  ojAlgo-QP             Time not stable       0.052958ms            0.026958ms            4.131062434482671E-17 
+KSIP                  Hipparchus            Time not stable       0.987042ms            0.84225ms             0.5757979412401069    
+S268                  HiGHS                 Time not stable       0.148125ms            0.144375ms            2.855827147805955E-6  
+CVXQP2_M              Hipparchus            Time stable           4419.902791ms         4419.902791ms         820155.4310156987     
+DUALC2                ojAlgo-QP             Time not stable       0.100291ms            0.057459ms            3551.3076926708427    
+MOSARQP1              Clarabel              Time not stable       10.757542ms           10.757542ms           -952.8754430307338    
+CVXQP2_M              HiGHS                 Time stable           27.824875ms           27.656375ms           820155.4310156989     
+DUAL4                 HiGHS                 Time not stable       1.774833ms            1.688125ms            0.7460908418021023    
+AUG3DC                ojAlgo-QP             Time not stable       25.819792ms           25.819792ms           771.26243868896       
+HS118                 HiGHS                 Time not stable       0.177417ms            0.160458ms            664.82045             
+DUALC2                Clarabel              Time not stable       0.095791ms            0.081042ms            3551.307695740189     
+S268                  Hipparchus            Time not stable       0.017791ms            0.014333ms            4.63649E-27           
+AUG3DC                Clarabel              Time stable           5.138375ms            5.138375ms            771.2624386889587     
+CVXQP3_M              ojAlgo-QP             Time stable           484.830167ms          486.791792ms          1362828.741502111     
+CVXQP1_S              Clarabel              Time stable           0.79225ms             0.79225ms             11590.7181194325      
+CVXQP3_M              Clarabel              Time stable           56.613334ms           56.613334ms           1362828.74160413      
+DUAL3                 Clarabel              Time not stable       5.267875ms            4.540541ms            0.13575589657084416   
+DUAL3                 ojAlgo-QP             Time not stable       5.403667ms            4.65525ms             0.13575583686602102   
+CVXQP1_L              ojAlgo-QP             Time stable           28936.200042ms        29903.827ms           1.0870479976878776E8  
+HS118                 Clarabel              Time not stable       0.178208ms            0.137375ms            664.8204500023853     
+HUESTIS               ojAlgo-QP             Time not stable       69.143333ms           78.3605ms             3.4824443932733734E11 
+MOSARQP1              ojAlgo-QP             Time stable           248.564042ms          246.867916ms          -952.8754427805984    
+HS118                 Hipparchus            Time not stable       0.221375ms            0.075042ms            664.82045             
+HS118                 ojAlgo-QP             Time not stable       0.189667ms            0.149708ms            664.82045             
+HS35                  HiGHS                 Time not stable       0.12ms                0.119708ms            0.11111111111111352   
+MOSARQP1              Hipparchus            Time stable           33655.129833ms        34259.726125ms        -952.8754430312603    
+CONT-050              Hipparchus            Time stable           64079.808709ms        63980.162042ms        -4.56385090432467     
+QPTEST                HiGHS                 Time not stable       0.126917ms            0.11475ms             4.371875000000007     
+DUAL3                 HiGHS                 Time not stable       4.364375ms            4.265625ms            0.13575583686603337   
+CVXQP1_M              Hipparchus            Time not stable       5065.653875ms         5065.653875ms         1087511.567321509     
+DUALC1                ojAlgo-QP             Time not stable       0.135167ms            0.094917ms            6155.250829462689     
+QPCSTAIR              Hipparchus            Time stable           276.784458ms          276.784458ms          6204387.476082529     
+DUALC1                Clarabel              Time not stable       0.134167ms            0.124625ms            6155.250871883497     
+CVXQP1_S              ojAlgo-QP             Time not stable       2.125083ms            1.503084ms            11590.718119426765    
+HS51                  HiGHS                 Time not stable       0.147375ms            0.111541ms            1.1627905395348892E-16
+STCQP1                Clarabel              Time stable           52.804083ms           51.901083ms           155143.55470396913    
+AUG3DC                Hipparchus            Time stable           108214.690417ms       108214.690417ms       771.2624386889594     
+HS53                  ojAlgo-QP             Time not stable       0.041958ms            0.041958ms            4.093023255813954     
+CVXQP3_L              Clarabel              Time stable           11514.602291ms        11532.433958ms        1.1571110449425073E8  
+HS268                 Clarabel              Time not stable       0.085584ms            0.063334ms            1.0827727501609425E-6 
+STCQP1                ojAlgo-QP             Time not stable       18.46275ms            18.439708ms           155143.55470403298    
+DUAL4                 Hipparchus            Time not stable       1.903208ms            1.903208ms            0.7460908418021001    
+QPCBLEND              HiGHS                 Time not stable       1.132667ms            1.132667ms            -0.007842543073805558 
+HS268                 ojAlgo-QP             Time not stable       0.03975ms             0.0325ms              5.28206339E-24        
+CVXQP3_S              HiGHS                 Time not stable       1.038458ms            1.038458ms            11943.432202309958    
+HS53                  Clarabel              Time not stable       0.058542ms            0.058542ms            4.093023255813954     
+GENHS28               ojAlgo-QP             Time not stable       0.145875ms            0.073709ms            0.9271736939354152    
+GENHS28               Clarabel              Time not stable       0.038958ms            0.036834ms            0.9271736937663909    
+POWELL20              Clarabel              Time stable           86.407917ms           86.407917ms           5.208958281259555E10  
+DUAL2                 HiGHS                 Time not stable       3.558875ms            3.081834ms            0.033733676122735874  
+HS35MOD               Hipparchus            Time not stable       0.018542ms            0.011667ms            0.25                  
+DUALC8                Clarabel              Time not stable       0.110666ms            0.109833ms            18309.359650071543    
+CVXQP2_S              Hipparchus            Time stable           4.241375ms            4.241375ms            8120.940477250691     
+QPCBOEI1              Hipparchus            Time stable           162.7935ms            162.7935ms            1.1503914009768227E7  
+HS76                  HiGHS                 Time not stable       0.134375ms            0.121125ms            -4.68181818181818     
+CVXQP3_L              ojAlgo-QP             Time stable           124028.266646ms       123750.1864585ms      1.1571110348156741E8  
+HS52                  HiGHS                 Time not stable       0.137791ms            0.113917ms            5.326647564470031     
+STCQP2                Clarabel              Time stable           54.160708ms           56.417625ms           22327.313272420342    
+DUAL1                 Clarabel              Time stable           3.1025ms              3.1025ms              0.03501298755196903   
+HS76                  ojAlgo-QP             Time not stable       0.055542ms            0.037333ms            -4.681818181818182    
+POWELL20              HiGHS                 Time stable           563.553333ms          563.553333ms          5.20895828125E10      
+DUALC8                HiGHS                 Time not stable       0.292708ms            0.224666ms            18309.358832737144    
+HS52                  ojAlgo-QP             Time not stable       0.101084ms            0.026792ms            5.326647576871817     
+CVXQP3_S              Clarabel              Time not stable       1.0935ms              1.004125ms            11943.432202316642    
+STCQP2                ojAlgo-QP             Time stable           17.667625ms           18.305542ms           22327.313272417538    
+AUG3DCQP              Hipparchus            Time stable           130807.7831875ms      136044.777375ms       993.3621465251061     
+DUAL1                 ojAlgo-QP             Time not stable       4.850834ms            2.555375ms            0.03501296573347735   
+STCQP2                HiGHS                 Time stable           10472.090459ms        10493.807041ms        22327.313272416708    
+DUALC8                ojAlgo-QP             Time not stable       0.170458ms            0.057959ms            18309.35883273631     
+HS52                  Clarabel              Time not stable       0.068875ms            0.024083ms            5.326647564469912     
+HS76                  Clarabel              Time not stable       0.089209ms            0.037459ms            -4.681818181738656    
+VALUES                Hipparchus            Time stable           41.43525ms            41.43525ms            -1.3966211447140153   
+YAO                   Hipparchus            Time stable           25578.983792ms        25318.226917ms        197.70425594031283    
+
+Iteration 4 with 120 model/solver pairs remaining 2026-11-24T00:17:16.451730Z
+-----------------------------------------------------------------------------
+CVXQP1_S              HiGHS                 Time not stable       1.17675ms             1.105125ms            11590.718119426767    
+HS21                  Hipparchus            Time not stable       0.015292ms            0.012416ms            -99.96                
+DUAL1                 HiGHS                 Time not stable       2.430708ms            2.430708ms            0.035012965733630115  
+LASER                 ojAlgo-QP             Time not stable       4.885791ms            4.205625ms            2409601.3445665766    
+CVXQP1_S              Hipparchus            Time stable           4.913917ms            4.913917ms            11590.718119426765    
+DUAL1                 Hipparchus            Time stable           2.268958ms            2.268958ms            0.035012965733477334  
+HS21                  HiGHS                 Time not stable       0.161834ms            0.127333ms            -99.96                
+LASER                 Clarabel              Time not stable       7.267834ms            6.318208ms            2409601.3455973454    
+CVXQP3_S              ojAlgo-QP             Time not stable       2.006042ms            0.915625ms            11943.432202309961    
+DUALC1                Hipparchus            Time not stable       0.052125ms            0.0485ms              6155.250829462685     
+S268                  Clarabel              Time not stable       0.107792ms            0.05575ms             1.0827727501609425E-6 
+QPCSTAIR              ojAlgo-QP             Time stable           148.558834ms          145.564625ms          6204387.476082571     
+DUALC1                HiGHS                 Time not stable       0.187333ms            0.176042ms            6155.250829462993     
+GENHS28               Hipparchus            Time not stable       0.025083ms            0.017875ms            0.9271736937663909    
+QPCBOEI2              ojAlgo-QP             Time stable           28.410459ms           28.321333ms           8171962.244330434     
+DUAL2                 Hipparchus            Time not stable       2.301167ms            2.289458ms            0.03373367612271853   
+HS35MOD               HiGHS                 Time not stable       0.1085ms              0.097667ms            0.2500000000000031    
+QPCBOEI2              Clarabel              Time stable           2.735958ms            2.529333ms            8171962.244346138     
+GENHS28               HiGHS                 Time stable           0.146542ms            0.146542ms            0.9271736937663911    
+S268                  ojAlgo-QP             Time not stable       0.042917ms            0.022916ms            5.28206339E-24        
+DUALC2                HiGHS                 Time not stable       0.14525ms             0.13075ms             3551.3076926710155    
+DUALC2                Hipparchus            Time not stable       0.041667ms            0.038917ms            3551.307692670649     
+DUAL3                 Hipparchus            Time not stable       3.795833ms            3.795833ms            0.135755836866021     
+DUALC5                Clarabel              Time not stable       0.090083ms            0.065584ms            427.23232755420014    
+HS51                  Hipparchus            Time not stable       0.013291ms            0.008625ms            4.0E-32               
+VALUES                Clarabel              Time stable           2.968833ms            2.968833ms            -1.3966211433271134   
+DUALC5                ojAlgo-QP             Time not stable       0.063208ms            0.045542ms            427.23232677638896    
+KSIP                  Clarabel              Time stable           10.296458ms           9.647417ms            0.5757979412419664    
+HS35                  Hipparchus            Time not stable       0.012084ms            0.008292ms            0.1111111111111111    
+AUG3DCQP              ojAlgo-QP             Time stable           54.850708ms           54.850708ms           993.3621465050522     
+QPTEST                Hipparchus            Time not stable       0.015ms               0.00975ms             4.371875000000001     
+QPCBOEI1              Clarabel              Time stable           6.989708ms            6.989708ms            1.1503914009770427E7  
+CVXQP3_S              Hipparchus            Time not stable       6.770333ms            6.770333ms            11943.43220230996     
+HS21                  ojAlgo-QP             Time not stable       0.014791ms            0.010583ms            -99.96                
+DUAL4                 Clarabel              Time stable           2.055667ms            2.055667ms            0.7460908637621981    
+CVXQP2_S              Clarabel              Time stable           0.684167ms            0.657334ms            8120.94047725142      
+CVXQP3_M              Hipparchus            Time not stable       7759.212291ms         7759.212291ms         1362828.7416029205    
+TAME                  Clarabel              Time not stable       0.040458ms            0.03975ms             0.0                   
+HS35MOD               Clarabel              Time not stable       0.0535ms              0.053459ms            0.25000000119037485   
+DUAL4                 ojAlgo-QP             Time not stable       1.786667ms            1.786667ms            0.7460908418021002    
+TAME                  ojAlgo-QP             Time not stable       0.017833ms            0.016666ms            0.0                   
+HS35MOD               ojAlgo-QP             Time not stable       0.015875ms            0.015875ms            0.25                  
+MOSARQP2              ojAlgo-QP             Time stable           39.800791ms           39.800791ms           -1597.4821174957451   
+HS21                  Clarabel              Time not stable       0.055792ms            0.044834ms            -99.95999999999633    
+KSIP                  ojAlgo-QP             Time stable           36.163125ms           41.414875ms           0.5757979412401067    
+CVXQP2_S              HiGHS                 Time not stable       0.657875ms            0.657875ms            8120.940477250692     
+HS52                  Hipparchus            Time not stable       0.013667ms            0.01275ms             5.326647564469914     
+QPCBLEND              Hipparchus            Time stable           2.61875ms             2.528375ms            -0.00784254307420464  
+HS76                  Hipparchus            Time not stable       0.015083ms            0.014833ms            -4.6818181818181825   
+LASER                 Hipparchus            Time stable           7539.753833ms         7576.995041ms         2409601.345596795     
+CVXQP2_S              ojAlgo-QP             Time not stable       2.124209ms            1.356167ms            8120.940477250703     
+VALUES                HiGHS                 Time not stable       2.362917ms            2.217917ms            -1.3966211447139576   
+DUALC8                Hipparchus            Time not stable       0.040792ms            0.031542ms            18309.358832734146    
+VALUES                ojAlgo-QP             Time not stable       12.109041ms           11.121292ms           -1.396621144714011    
+TAME                  Hipparchus            Time not stable       0.01525ms             0.00875ms             0.0                   
+HS53                  Hipparchus            Time not stable       0.022ms               0.015125ms            4.093023255813954     
+HS268                 HiGHS                 Time not stable       0.134625ms            0.128834ms            2.855827147805955E-6  
+TAME                  HiGHS                 Time not stable       0.106875ms            0.094417ms            3.6E-33               
+QPCBLEND              Clarabel              Time not stable       0.849375ms            0.757584ms            -0.007842542798753434 
+QPTEST                ojAlgo-QP             Time not stable       0.019792ms            0.011709ms            4.371875              
+HS53                  HiGHS                 Time not stable       0.129833ms            0.103042ms            4.0930232558139545    
+QPCBLEND              ojAlgo-QP             Time not stable       3.977083ms            2.310416ms            -0.00784254307420463  
+HS35                  Clarabel              Time not stable       0.04225ms             0.033542ms            0.11111111118285956   
+DUAL2                 Clarabel              Time stable           3.7815ms              3.738583ms            0.03373368031007698   
+QPCBOEI2              HiGHS                 Time stable           3.240375ms            3.283125ms            8171962.244330503     
+DUAL2                 ojAlgo-QP             Time stable           3.377166ms            3.377166ms            0.033733676122718534  
+QPTEST                Clarabel              Time not stable       0.050625ms            0.043125ms            4.37187500194358      
+DUALC5                Hipparchus            Time not stable       0.029ms               0.023375ms            427.23232677638896    
+HS268                 Hipparchus            Time not stable       0.015125ms            0.0135ms              4.63649E-27           
+DUALC5                HiGHS                 Time not stable       0.150167ms            0.208541ms            427.2323267763913     
+HS35                  ojAlgo-QP             Time not stable       0.015708ms            0.010333ms            0.111111111111111     
+HS51                  Clarabel              Time not stable       0.032625ms            0.032625ms            1.22E-30              
+HS51                  ojAlgo-QP             Time not stable       0.026958ms            0.023834ms            4.131062434482671E-17 
+KSIP                  Hipparchus            Time not stable       0.987042ms            1.769625ms            0.5757979412401069    
+S268                  HiGHS                 Time not stable       0.148125ms            0.194083ms            2.855827147805955E-6  
+DUALC2                ojAlgo-QP             Time not stable       0.061916ms            0.061916ms            3551.3076926708427    
+MOSARQP1              Clarabel              Time stable           10.757542ms           12.249209ms           -952.8754430307338    
+DUAL4                 HiGHS                 Time stable           1.774833ms            2.037292ms            0.7460908418021023    
+AUG3DC                ojAlgo-QP             Time stable           25.819792ms           29.419083ms           771.26243868896       
+HS118                 HiGHS                 Time stable           0.177417ms            0.192042ms            664.82045             
+DUALC2                Clarabel              Time not stable       0.095791ms            0.115625ms            3551.307695740189     
+S268                  Hipparchus            Time not stable       0.014333ms            0.013416ms            4.63649E-27           
+DUAL3                 Clarabel              Time not stable       5.267875ms            5.805417ms            0.13575589657084416   
+DUAL3                 ojAlgo-QP             Time stable           5.054708ms            5.054708ms            0.13575583686602102   
+HS118                 Clarabel              Time not stable       0.137375ms            0.133333ms            664.8204500023853     
+HUESTIS               ojAlgo-QP             Time stable           69.143333ms           67.451708ms           3.4824443932733734E11 
+HS118                 Hipparchus            Time not stable       0.075042ms            0.07325ms             664.82045             
+HS118                 ojAlgo-QP             Time not stable       0.155417ms            0.155417ms            664.82045             
+HS35                  HiGHS                 Time stable           0.119708ms            0.105708ms            0.11111111111111352   
+QPTEST                HiGHS                 Time stable           0.11475ms             0.105541ms            4.371875000000007     
+DUAL3                 HiGHS                 Time stable           4.364375ms            4.640959ms            0.13575583686603337   
+YAO                   ojAlgo-QP             Time stable           3552.132708ms         3552.132708ms         197.7042559133991     
+DUALC1                ojAlgo-QP             Time not stable       0.094917ms            0.067583ms            6155.250829462689     
+DUALC1                Clarabel              Time stable           0.124625ms            0.120292ms            6155.250871883497     
+CVXQP1_S              ojAlgo-QP             Time not stable       1.503084ms            1.329875ms            11590.718119426765    
+HS51                  HiGHS                 Time not stable       0.111541ms            0.108917ms            1.1627905395348892E-16
+HS53                  ojAlgo-QP             Time not stable       0.032166ms            0.02425ms             4.093023255813954     
+HS268                 Clarabel              Time not stable       0.064334ms            0.064334ms            1.0827727501609425E-6 
+STCQP1                ojAlgo-QP             Time stable           18.46275ms            18.708375ms           155143.55470403298    
+DUAL4                 Hipparchus            Time not stable       1.565625ms            1.4925ms              0.7460908418021001    
+QPCBLEND              HiGHS                 Time stable           1.132667ms            1.256458ms            -0.007842543073805558 
+HS268                 ojAlgo-QP             Time not stable       0.0325ms              0.021041ms            5.28206339E-24        
+CVXQP3_S              HiGHS                 Time stable           0.960625ms            0.852ms               11943.432202309958    
+HS53                  Clarabel              Time stable           0.054583ms            0.050459ms            4.093023255813954     
+GENHS28               ojAlgo-QP             Time not stable       0.073709ms            0.050875ms            0.9271736939354152    
+GENHS28               Clarabel              Time stable           0.03775ms             0.03775ms             0.9271736937663909    
+DUAL2                 HiGHS                 Time stable           3.413ms               3.413ms               0.033733676122735874  
+HS35MOD               Hipparchus            Time not stable       0.013917ms            0.013917ms            0.25                  
+DUALC8                Clarabel              Time stable           0.110666ms            0.112041ms            18309.359650071543    
+HS76                  HiGHS                 Time stable           0.127542ms            0.127542ms            -4.68181818181818     
+HS52                  HiGHS                 Time not stable       0.113917ms            0.105459ms            5.326647564470031     
+HS76                  ojAlgo-QP             Time not stable       0.037333ms            0.021875ms            -4.681818181818182    
+DUALC8                HiGHS                 Time not stable       0.224666ms            0.213125ms            18309.358832737144    
+HS52                  ojAlgo-QP             Time not stable       0.026792ms            0.022959ms            5.326647576871817     
+CVXQP3_S              Clarabel              Time stable           1.008792ms            1.008792ms            11943.432202316642    
+DUAL1                 ojAlgo-QP             Time not stable       2.555375ms            2.479708ms            0.03501296573347735   
+DUALC8                ojAlgo-QP             Time not stable       0.057959ms            0.056792ms            18309.35883273631     
+HS52                  Clarabel              Time not stable       0.031042ms            0.031042ms            5.326647564469912     
+HS76                  Clarabel              Time not stable       0.044375ms            0.044375ms            -4.681818181738656    
+CVXQP1_M              Hipparchus            Time stable           5353.127334ms         6027.947666ms         1087511.567321509     
+
+Iteration 5 with 80 model/solver pairs remaining 2026-11-24T00:17:58.290907Z
+-----------------------------------------------------------------------------
+CVXQP1_S              HiGHS                 Time stable           1.17675ms             1.190667ms            11590.718119426767    
+HS21                  Hipparchus            Time not stable       0.012416ms            0.011833ms            -99.96                
+DUAL1                 HiGHS                 Time stable           2.430708ms            2.519ms               0.035012965733630115  
+LASER                 ojAlgo-QP             Time not stable       4.274292ms            4.274292ms            2409601.3445665766    
+HS21                  HiGHS                 Time not stable       0.127333ms            0.09925ms             -99.96                
+LASER                 Clarabel              Time not stable       6.318208ms            6.209375ms            2409601.3455973454    
+CVXQP3_S              ojAlgo-QP             Time not stable       0.915625ms            0.783333ms            11943.432202309961    
+DUALC1                Hipparchus            Time not stable       0.0485ms              0.036042ms            6155.250829462685     
+S268                  Clarabel              Time not stable       0.060917ms            0.060917ms            1.0827727501609425E-6 
+DUALC1                HiGHS                 Time stable           0.176042ms            0.159166ms            6155.250829462993     
+GENHS28               Hipparchus            Time not stable       0.017916ms            0.017916ms            0.9271736937663909    
+DUAL2                 Hipparchus            Time stable           2.289458ms            2.230667ms            0.03373367612271853   
+HS35MOD               HiGHS                 Time stable           0.097667ms            0.096541ms            0.2500000000000031    
+S268                  ojAlgo-QP             Time not stable       0.025541ms            0.025541ms            5.28206339E-24        
+DUALC2                HiGHS                 Time stable           0.131958ms            0.131958ms            3551.3076926710155    
+DUALC2                Hipparchus            Time not stable       0.038917ms            0.032292ms            3551.307692670649     
+DUAL3                 Hipparchus            Time stable           3.710417ms            3.632166ms            0.135755836866021     
+DUALC5                Clarabel              Time not stable       0.067ms               0.067ms               427.23232755420014    
+HS51                  Hipparchus            Time not stable       0.008625ms            0.00825ms             4.0E-32               
+DUALC5                ojAlgo-QP             Time not stable       0.046166ms            0.046166ms            427.23232677638896    
+HS35                  Hipparchus            Time not stable       0.008292ms            0.007ms               0.1111111111111111    
+QPTEST                Hipparchus            Time not stable       0.00975ms             0.008958ms            4.371875000000001     
+CVXQP3_S              Hipparchus            Time stable           6.721458ms            6.58775ms             11943.43220230996     
+HS21                  ojAlgo-QP             Time not stable       0.010583ms            0.009875ms            -99.96                
+TAME                  Clarabel              Time not stable       0.03975ms             0.0295ms              0.0                   
+HS35MOD               Clarabel              Time stable           0.053459ms            0.045625ms            0.25000000119037485   
+DUAL4                 ojAlgo-QP             Time stable           1.701291ms            1.701291ms            0.7460908418021002    
+TAME                  ojAlgo-QP             Time not stable       0.016666ms            0.011292ms            0.0                   
+HS35MOD               ojAlgo-QP             Time not stable       0.014625ms            0.009667ms            0.25                  
+HS21                  Clarabel              Time not stable       0.044834ms            0.036ms               -99.95999999999633    
+CVXQP2_S              HiGHS                 Time stable           0.616042ms            0.615291ms            8120.940477250692     
+HS52                  Hipparchus            Time not stable       0.01275ms             0.0095ms              5.326647564469914     
+HS76                  Hipparchus            Time not stable       0.014833ms            0.008708ms            -4.6818181818181825   
+CVXQP2_S              ojAlgo-QP             Time not stable       1.356167ms            1.224625ms            8120.940477250703     
+VALUES                HiGHS                 Time stable           2.217917ms            2.191ms               -1.3966211447139576   
+DUALC8                Hipparchus            Time not stable       0.033084ms            0.033084ms            18309.358832734146    
+VALUES                ojAlgo-QP             Time stable           11.121292ms           10.79225ms            -1.396621144714011    
+TAME                  Hipparchus            Time not stable       0.00875ms             0.008166ms            0.0                   
+HS53                  Hipparchus            Time not stable       0.015125ms            0.014208ms            4.093023255813954     
+HS268                 HiGHS                 Time stable           0.128834ms            0.127791ms            2.855827147805955E-6  
+TAME                  HiGHS                 Time stable           0.094417ms            0.089542ms            3.6E-33               
+QPCBLEND              Clarabel              Time stable           0.757584ms            0.74925ms             -0.007842542798753434 
+QPTEST                ojAlgo-QP             Time not stable       0.011709ms            0.010125ms            4.371875              
+HS53                  HiGHS                 Time not stable       0.103042ms            0.102208ms            4.0930232558139545    
+QPCBLEND              ojAlgo-QP             Time not stable       2.310416ms            2.190833ms            -0.00784254307420463  
+HS35                  Clarabel              Time not stable       0.033542ms            0.032791ms            0.11111111118285956   
+QPTEST                Clarabel              Time not stable       0.043125ms            0.037125ms            4.37187500194358      
+DUALC5                Hipparchus            Time not stable       0.026958ms            0.026958ms            427.23232677638896    
+HS268                 Hipparchus            Time not stable       0.0135ms              0.010583ms            4.63649E-27           
+DUALC5                HiGHS                 Time not stable       0.13925ms             0.12175ms             427.2323267763913     
+HS35                  ojAlgo-QP             Time not stable       0.010333ms            0.00875ms             0.111111111111111     
+HS51                  Clarabel              Time not stable       0.029708ms            0.022042ms            1.22E-30              
+HS51                  ojAlgo-QP             Time not stable       0.023834ms            0.019041ms            4.131062434482671E-17 
+KSIP                  Hipparchus            Time not stable       0.84225ms             0.812458ms            0.5757979412401069    
+S268                  HiGHS                 Time not stable       0.144375ms            0.122ms               2.855827147805955E-6  
+DUALC2                ojAlgo-QP             Time not stable       0.057459ms            0.038625ms            3551.3076926708427    
+DUALC2                Clarabel              Time not stable       0.081042ms            0.075541ms            3551.307695740189     
+S268                  Hipparchus            Time not stable       0.013416ms            0.010333ms            4.63649E-27           
+DUAL3                 Clarabel              Time not stable       4.739333ms            4.739333ms            0.13575589657084416   
+HS118                 Clarabel              Time stable           0.133333ms            0.124ms               664.8204500023853     
+HS118                 Hipparchus            Time stable           0.07325ms             0.071084ms            664.82045             
+HS118                 ojAlgo-QP             Time not stable       0.149708ms            0.110208ms            664.82045             
+DUALC1                ojAlgo-QP             Time not stable       0.067583ms            0.053709ms            6155.250829462689     
+CVXQP1_S              ojAlgo-QP             Time not stable       1.329875ms            0.939875ms            11590.718119426765    
+HS51                  HiGHS                 Time stable           0.108917ms            0.099875ms            1.1627905395348892E-16
+HS53                  ojAlgo-QP             Time not stable       0.02425ms             0.016916ms            4.093023255813954     
+HS268                 Clarabel              Time stable           0.063334ms            0.059083ms            1.0827727501609425E-6 
+DUAL4                 Hipparchus            Time not stable       1.4925ms              1.429083ms            0.7460908418021001    
+HS268                 ojAlgo-QP             Time not stable       0.021041ms            0.018042ms            5.28206339E-24        
+GENHS28               ojAlgo-QP             Time not stable       0.05275ms             0.05275ms             0.9271736939354152    
+HS35MOD               Hipparchus            Time not stable       0.011667ms            0.008833ms            0.25                  
+HS52                  HiGHS                 Time stable           0.105875ms            0.105875ms            5.326647564470031     
+HS76                  ojAlgo-QP             Time not stable       0.021875ms            0.015584ms            -4.681818181818182    
+DUALC8                HiGHS                 Time stable           0.213125ms            0.190042ms            18309.358832737144    
+HS52                  ojAlgo-QP             Time not stable       0.022959ms            0.017417ms            5.326647576871817     
+DUAL1                 ojAlgo-QP             Time stable           2.479708ms            2.401708ms            0.03501296573347735   
+DUALC8                ojAlgo-QP             Time not stable       0.056792ms            0.0465ms              18309.35883273631     
+HS52                  Clarabel              Time not stable       0.024083ms            0.024083ms            5.326647564469912     
+HS76                  Clarabel              Time stable           0.037459ms            0.036625ms            -4.681818181738656    
+CVXQP3_M              Hipparchus            Time stable           7759.212291ms         7475.02925ms          1362828.7416029205    
+
+Iteration 6 with 55 model/solver pairs remaining 2026-11-24T00:18:20.797646Z
+-----------------------------------------------------------------------------
+HS21                  Hipparchus            Time not stable       0.011833ms            0.007042ms            -99.96                
+HS21                  HiGHS                 Time not stable       0.09925ms             0.097708ms            -99.96                
+LASER                 ojAlgo-QP             Time stable           4.274292ms            4.531417ms            2409601.3445665766    
+CVXQP3_S              ojAlgo-QP             Time not stable       0.915625ms            1.1305ms              11943.432202309961    
+LASER                 Clarabel              Time stable           6.318208ms            6.778291ms            2409601.3455973454    
+DUALC1                Hipparchus            Time not stable       0.0485ms              0.055084ms            6155.250829462685     
+S268                  Clarabel              Time stable           0.05825ms             0.05825ms             1.0827727501609425E-6 
+GENHS28               Hipparchus            Time not stable       0.017916ms            0.02975ms             0.9271736937663909    
+S268                  ojAlgo-QP             Time not stable       0.022916ms            0.019583ms            5.28206339E-24        
+DUALC2                Hipparchus            Time stable           0.033667ms            0.033667ms            3551.307692670649     
+DUALC5                Clarabel              Time stable           0.067ms               0.071625ms            427.23232755420014    
+HS51                  Hipparchus            Time not stable       0.008625ms            0.0115ms              4.0E-32               
+HS35                  Hipparchus            Time not stable       0.008292ms            0.010333ms            0.1111111111111111    
+QPTEST                Hipparchus            Time not stable       0.00975ms             0.011542ms            4.371875000000001     
+DUALC5                ojAlgo-QP             Time stable           0.045667ms            0.045667ms            427.23232677638896    
+HS21                  ojAlgo-QP             Time not stable       0.010583ms            0.015458ms            -99.96                
+TAME                  ojAlgo-QP             Time not stable       0.013167ms            0.013167ms            0.0                   
+TAME                  Clarabel              Time not stable       0.031917ms            0.031917ms            0.0                   
+HS35MOD               ojAlgo-QP             Time not stable       0.011042ms            0.011042ms            0.25                  
+HS52                  Hipparchus            Time not stable       0.012292ms            0.012292ms            5.326647564469914     
+HS21                  Clarabel              Time not stable       0.037584ms            0.037584ms            -99.95999999999633    
+HS76                  Hipparchus            Time not stable       0.008708ms            0.008458ms            -4.6818181818181825   
+DUALC8                Hipparchus            Time stable           0.031542ms            0.030667ms            18309.358832734146    
+TAME                  Hipparchus            Time stable           0.00875ms             0.009458ms            0.0                   
+HS53                  Hipparchus            Time not stable       0.015125ms            0.020875ms            4.093023255813954     
+QPTEST                ojAlgo-QP             Time stable           0.011542ms            0.011542ms            4.371875              
+HS53                  HiGHS                 Time stable           0.103042ms            0.111542ms            4.0930232558139545    
+CVXQP2_S              ojAlgo-QP             Time stable           1.356167ms            1.438583ms            8120.940477250703     
+HS35                  Clarabel              Time stable           0.033542ms            0.033625ms            0.11111111118285956   
+QPTEST                Clarabel              Time stable           0.043125ms            0.044958ms            4.37187500194358      
+DUALC5                Hipparchus            Time stable           0.026958ms            0.028ms               427.23232677638896    
+HS268                 Hipparchus            Time not stable       0.013334ms            0.013334ms            4.63649E-27           
+DUALC5                HiGHS                 Time not stable       0.125709ms            0.125709ms            427.2323267763913     
+HS35                  ojAlgo-QP             Time stable           0.010333ms            0.010625ms            0.111111111111111     
+HS51                  Clarabel              Time not stable       0.025917ms            0.025917ms            1.22E-30              
+HS51                  ojAlgo-QP             Time not stable       0.020917ms            0.020917ms            4.131062434482671E-17 
+QPCBLEND              ojAlgo-QP             Time stable           2.310416ms            2.371208ms            -0.00784254307420463  
+S268                  HiGHS                 Time not stable       0.13575ms             0.13575ms             2.855827147805955E-6  
+DUALC2                ojAlgo-QP             Time not stable       0.038625ms            0.036875ms            3551.3076926708427    
+DUALC2                Clarabel              Time not stable       0.075541ms            0.075ms               3551.307695740189     
+S268                  Hipparchus            Time not stable       0.010333ms            0.010209ms            4.63649E-27           
+KSIP                  Hipparchus            Time not stable       0.848417ms            0.848417ms            0.5757979412401069    
+HS118                 ojAlgo-QP             Time not stable       0.11225ms             0.11225ms             664.82045             
+DUALC1                ojAlgo-QP             Time not stable       0.061375ms            0.061375ms            6155.250829462689     
+CVXQP1_S              ojAlgo-QP             Time not stable       1.329875ms            1.33225ms             11590.718119426765    
+HS53                  ojAlgo-QP             Time not stable       0.016916ms            0.015625ms            4.093023255813954     
+DUAL4                 Hipparchus            Time stable           1.476208ms            1.476208ms            0.7460908418021001    
+HS268                 ojAlgo-QP             Time stable           0.021041ms            0.021083ms            5.28206339E-24        
+GENHS28               ojAlgo-QP             Time stable           0.050875ms            0.04875ms             0.9271736939354152    
+HS35MOD               Hipparchus            Time not stable       0.010708ms            0.010708ms            0.25                  
+HS76                  ojAlgo-QP             Time not stable       0.020125ms            0.020125ms            -4.681818181818182    
+HS52                  ojAlgo-QP             Time not stable       0.020083ms            0.020083ms            5.326647576871817     
+DUAL3                 Clarabel              Time not stable       4.856625ms            4.856625ms            0.13575589657084416   
+DUALC8                ojAlgo-QP             Time not stable       0.049292ms            0.049292ms            18309.35883273631     
+HS52                  Clarabel              Time not stable       0.024083ms            0.02275ms             5.326647564469912     
+
+Iteration 7 with 36 model/solver pairs remaining 2026-11-24T00:18:20.875166Z
+-----------------------------------------------------------------------------
+HS21                  Hipparchus            Time not stable       0.007291ms            0.007291ms            -99.96                
+HS21                  HiGHS                 Time stable           0.09925ms             0.108583ms            -99.96                
+DUALC1                Hipparchus            Time not stable       0.042791ms            0.042791ms            6155.250829462685     
+GENHS28               Hipparchus            Time not stable       0.018125ms            0.018125ms            0.9271736937663909    
+S268                  ojAlgo-QP             Time not stable       0.021125ms            0.021125ms            5.28206339E-24        
+HS51                  Hipparchus            Time not stable       0.008375ms            0.008375ms            4.0E-32               
+HS35                  Hipparchus            Time not stable       0.008166ms            0.008166ms            0.1111111111111111    
+CVXQP3_S              ojAlgo-QP             Time not stable       1.042084ms            1.042084ms            11943.432202309961    
+QPTEST                Hipparchus            Time not stable       0.009292ms            0.009292ms            4.371875000000001     
+HS21                  ojAlgo-QP             Time not stable       0.009875ms            0.008334ms            -99.96                
+TAME                  ojAlgo-QP             Time stable           0.011417ms            0.011417ms            0.0                   
+TAME                  Clarabel              Time stable           0.0295ms              0.028958ms            0.0                   
+HS35MOD               ojAlgo-QP             Time stable           0.010542ms            0.010542ms            0.25                  
+HS52                  Hipparchus            Time not stable       0.0095ms              0.009292ms            5.326647564469914     
+HS21                  Clarabel              Time stable           0.036709ms            0.036709ms            -99.95999999999633    
+HS76                  Hipparchus            Time stable           0.008708ms            0.009417ms            -4.6818181818181825   
+HS53                  Hipparchus            Time not stable       0.014208ms            0.01325ms             4.093023255813954     
+HS268                 Hipparchus            Time not stable       0.011208ms            0.011208ms            4.63649E-27           
+HS51                  Clarabel              Time stable           0.022125ms            0.022125ms            1.22E-30              
+HS51                  ojAlgo-QP             Time stable           0.019041ms            0.017125ms            4.131062434482671E-17 
+DUALC5                HiGHS                 Time stable           0.125709ms            0.132041ms            427.2323267763913     
+S268                  HiGHS                 Time stable           0.132958ms            0.132958ms            2.855827147805955E-6  
+DUALC2                ojAlgo-QP             Time not stable       0.038625ms            0.051583ms            3551.3076926708427    
+DUALC2                Clarabel              Time stable           0.075541ms            0.079042ms            3551.307695740189     
+S268                  Hipparchus            Time stable           0.010333ms            0.011583ms            4.63649E-27           
+KSIP                  Hipparchus            Time stable           0.812458ms            0.803167ms            0.5757979412401069    
+HS118                 ojAlgo-QP             Time stable           0.110208ms            0.1055ms              664.82045             
+DUALC1                ojAlgo-QP             Time stable           0.053709ms            0.051375ms            6155.250829462689     
+CVXQP1_S              ojAlgo-QP             Time not stable       1.068584ms            1.068584ms            11590.718119426765    
+HS53                  ojAlgo-QP             Time stable           0.015625ms            0.014334ms            4.093023255813954     
+HS35MOD               Hipparchus            Time not stable       0.008833ms            0.008583ms            0.25                  
+HS76                  ojAlgo-QP             Time not stable       0.015584ms            0.014417ms            -4.681818181818182    
+HS52                  ojAlgo-QP             Time stable           0.017666ms            0.017666ms            5.326647576871817     
+DUALC8                ojAlgo-QP             Time stable           0.0465ms              0.04475ms             18309.35883273631     
+HS52                  Clarabel              Time stable           0.02275ms             0.022ms               5.326647564469912     
+DUAL3                 Clarabel              Time stable           4.856625ms            5.114292ms            0.13575589657084416   
+
+Iteration 8 with 16 model/solver pairs remaining 2026-11-24T00:18:20.905880Z
+-----------------------------------------------------------------------------
+HS21                  Hipparchus            Time stable           0.007042ms            0.007ms               -99.96                
+DUALC1                Hipparchus            Time not stable       0.042791ms            0.035416ms            6155.250829462685     
+GENHS28               Hipparchus            Time not stable       0.018125ms            0.017083ms            0.9271736937663909    
+S268                  ojAlgo-QP             Time stable           0.021125ms            0.021792ms            5.28206339E-24        
+HS51                  Hipparchus            Time not stable       0.0085ms              0.0085ms              4.0E-32               
+HS35                  Hipparchus            Time not stable       0.008166ms            0.007334ms            0.1111111111111111    
+QPTEST                Hipparchus            Time not stable       0.009292ms            0.008583ms            4.371875000000001     
+HS21                  ojAlgo-QP             Time not stable       0.009542ms            0.009542ms            -99.96                
+CVXQP3_S              ojAlgo-QP             Time stable           1.042084ms            0.970167ms            11943.432202309961    
+HS52                  Hipparchus            Time not stable       0.009292ms            0.008334ms            5.326647564469914     
+HS268                 Hipparchus            Time stable           0.011375ms            0.011375ms            4.63649E-27           
+HS53                  Hipparchus            Time not stable       0.014417ms            0.014417ms            4.093023255813954     
+DUALC2                ojAlgo-QP             Time not stable       0.04825ms             0.04825ms             3551.3076926708427    
+HS35MOD               Hipparchus            Time not stable       0.009708ms            0.009708ms            0.25                  
+HS76                  ojAlgo-QP             Time not stable       0.018458ms            0.018458ms            -4.681818181818182    
+CVXQP1_S              ojAlgo-QP             Time not stable       1.068584ms            0.973291ms            11590.718119426765    
+
+Iteration 9 with 12 model/solver pairs remaining 2026-11-24T00:18:20.916391Z
+-----------------------------------------------------------------------------
+GENHS28               Hipparchus            Time stable           0.017542ms            0.017542ms            0.9271736937663909    
+HS51                  Hipparchus            Time stable           0.0085ms              0.008833ms            4.0E-32               
+HS35                  Hipparchus            Time stable           0.007375ms            0.007375ms            0.1111111111111111    
+DUALC1                Hipparchus            Time stable           0.036916ms            0.036916ms            6155.250829462685     
+QPTEST                Hipparchus            Time stable           0.008583ms            0.008458ms            4.371875000000001     
+HS21                  ojAlgo-QP             Time stable           0.008583ms            0.008583ms            -99.96                
+HS52                  Hipparchus            Time stable           0.008667ms            0.008667ms            5.326647564469914     
+HS53                  Hipparchus            Time stable           0.01325ms             0.013167ms            4.093023255813954     
+DUALC2                ojAlgo-QP             Time stable           0.04825ms             0.042458ms            3551.3076926708427    
+HS35MOD               Hipparchus            Time stable           0.009708ms            0.009875ms            0.25                  
+HS76                  ojAlgo-QP             Time not stable       0.017292ms            0.017292ms            -4.681818181818182    
+CVXQP1_S              ojAlgo-QP             Time stable           0.973291ms            0.968958ms            11590.718119426765    
+
+Iteration 10 with 1 model/solver pairs remaining 2026-11-24T00:18:20.921492Z
+-----------------------------------------------------------------------------
+HS76                  ojAlgo-QP             Time stable           0.017292ms            0.013833ms            -4.681818181818182    
+
+Final Results
+=====================================================================
+AUG3DC                Clarabel              OPTIMAL               5.138375ms            
+AUG3DC                HiGHS                 OPTIMAL               3804.879792ms         
+AUG3DC                Hipparchus            OPTIMAL               108214.690417ms       
+AUG3DC                ojAlgo-QP             OPTIMAL               25.819792ms           
+AUG3DCQP              Clarabel              OPTIMAL               25.523709ms           
+AUG3DCQP              HiGHS                 OPTIMAL               13755.181125ms        
+AUG3DCQP              Hipparchus            OPTIMAL               130807.7831875ms      
+AUG3DCQP              ojAlgo-QP             OPTIMAL               54.850708ms           
+CONT-050              Clarabel              OPTIMAL               49.184042ms           
+CONT-050              HiGHS                 OPTIMAL               685.805ms             
+CONT-050              Hipparchus            OPTIMAL               64079.808709ms        
+CONT-050              ojAlgo-QP             OPTIMAL               1371.897417ms         
+CVXQP1_L              Clarabel              OPTIMAL               11177.909417ms        
+CVXQP1_L              HiGHS                 FAILED                TIMEOUT               
+CVXQP1_L              Hipparchus            FAILED                TIMEOUT               
+CVXQP1_L              ojAlgo-QP             OPTIMAL               28936.200042ms        
+CVXQP1_M              Clarabel              OPTIMAL               39.821667ms           
+CVXQP1_M              HiGHS                 OPTIMAL               51.284208ms           
+CVXQP1_M              Hipparchus            OPTIMAL               5353.127334ms         
+CVXQP1_M              ojAlgo-QP             OPTIMAL               54.936459ms           
+CVXQP1_S              Clarabel              OPTIMAL               0.79225ms             
+CVXQP1_S              HiGHS                 OPTIMAL               1.17675ms             
+CVXQP1_S              Hipparchus            OPTIMAL               4.913917ms            
+CVXQP1_S              ojAlgo-QP             OPTIMAL               0.973291ms            
+CVXQP2_L              Clarabel              OPTIMAL               8048.004292ms         
+CVXQP2_L              HiGHS                 OPTIMAL               20204.59525ms         
+CVXQP2_L              Hipparchus            FAILED                TIMEOUT               
+CVXQP2_L              ojAlgo-QP             OPTIMAL               10612.345ms           
+CVXQP2_M              Clarabel              OPTIMAL               23.433959ms           
+CVXQP2_M              HiGHS                 OPTIMAL               27.824875ms           
+CVXQP2_M              Hipparchus            OPTIMAL               4419.902791ms         
+CVXQP2_M              ojAlgo-QP             OPTIMAL               29.081584ms           
+CVXQP2_S              Clarabel              OPTIMAL               0.684167ms            
+CVXQP2_S              HiGHS                 OPTIMAL               0.616042ms            
+CVXQP2_S              Hipparchus            OPTIMAL               4.241375ms            
+CVXQP2_S              ojAlgo-QP             OPTIMAL               1.356167ms            
+CVXQP3_L              Clarabel              OPTIMAL               11514.602291ms        
+CVXQP3_L              HiGHS                 FAILED                FAILED                
+CVXQP3_L              Hipparchus            FAILED                TIMEOUT               
+CVXQP3_L              ojAlgo-QP             OPTIMAL               124028.266646ms       
+CVXQP3_M              Clarabel              OPTIMAL               56.613334ms           
+CVXQP3_M              HiGHS                 OPTIMAL               44.2545ms             
+CVXQP3_M              Hipparchus            OPTIMAL               7759.212291ms         
+CVXQP3_M              ojAlgo-QP             OPTIMAL               484.830167ms          
+CVXQP3_S              Clarabel              OPTIMAL               1.008792ms            
+CVXQP3_S              HiGHS                 OPTIMAL               0.960625ms            
+CVXQP3_S              Hipparchus            OPTIMAL               6.721458ms            
+CVXQP3_S              ojAlgo-QP             OPTIMAL               1.042084ms            
+DUAL1                 Clarabel              OPTIMAL               3.1025ms              
+DUAL1                 HiGHS                 OPTIMAL               2.430708ms            
+DUAL1                 Hipparchus            OPTIMAL               2.268958ms            
+DUAL1                 ojAlgo-QP             OPTIMAL               2.479708ms            
+DUAL2                 Clarabel              OPTIMAL               3.7815ms              
+DUAL2                 HiGHS                 OPTIMAL               3.413ms               
+DUAL2                 Hipparchus            OPTIMAL               2.289458ms            
+DUAL2                 ojAlgo-QP             OPTIMAL               3.377166ms            
+DUAL3                 Clarabel              OPTIMAL               4.856625ms            
+DUAL3                 HiGHS                 OPTIMAL               4.364375ms            
+DUAL3                 Hipparchus            OPTIMAL               3.710417ms            
+DUAL3                 ojAlgo-QP             OPTIMAL               5.054708ms            
+DUAL4                 Clarabel              OPTIMAL               2.055667ms            
+DUAL4                 HiGHS                 OPTIMAL               1.774833ms            
+DUAL4                 Hipparchus            OPTIMAL               1.476208ms            
+DUAL4                 ojAlgo-QP             OPTIMAL               1.701291ms            
+DUALC1                Clarabel              OPTIMAL               0.124625ms            
+DUALC1                HiGHS                 OPTIMAL               0.176042ms            
+DUALC1                Hipparchus            OPTIMAL               0.036916ms            
+DUALC1                ojAlgo-QP             OPTIMAL               0.053709ms            
+DUALC2                Clarabel              OPTIMAL               0.075541ms            
+DUALC2                HiGHS                 OPTIMAL               0.131958ms            
+DUALC2                Hipparchus            OPTIMAL               0.033667ms            
+DUALC2                ojAlgo-QP             OPTIMAL               0.04825ms             
+DUALC5                Clarabel              OPTIMAL               0.067ms               
+DUALC5                HiGHS                 OPTIMAL               0.125709ms            
+DUALC5                Hipparchus            OPTIMAL               0.026958ms            
+DUALC5                ojAlgo-QP             OPTIMAL               0.045667ms            
+DUALC8                Clarabel              OPTIMAL               0.110666ms            
+DUALC8                HiGHS                 OPTIMAL               0.213125ms            
+DUALC8                Hipparchus            OPTIMAL               0.031542ms            
+DUALC8                ojAlgo-QP             OPTIMAL               0.0465ms              
+GENHS28               Clarabel              OPTIMAL               0.03775ms             
+GENHS28               HiGHS                 OPTIMAL               0.146542ms            
+GENHS28               Hipparchus            OPTIMAL               0.017542ms            
+GENHS28               ojAlgo-QP             OPTIMAL               0.050875ms            
+HS118                 Clarabel              OPTIMAL               0.133333ms            
+HS118                 HiGHS                 OPTIMAL               0.177417ms            
+HS118                 Hipparchus            OPTIMAL               0.07325ms             
+HS118                 ojAlgo-QP             OPTIMAL               0.110208ms            
+HS21                  Clarabel              OPTIMAL               0.036709ms            
+HS21                  HiGHS                 OPTIMAL               0.09925ms             
+HS21                  Hipparchus            OPTIMAL               0.007042ms            
+HS21                  ojAlgo-QP             OPTIMAL               0.008583ms            
+HS268                 Clarabel              OPTIMAL               0.063334ms            
+HS268                 HiGHS                 OPTIMAL               0.128834ms            
+HS268                 Hipparchus            OPTIMAL               0.011375ms            
+HS268                 ojAlgo-QP             OPTIMAL               0.021041ms            
+HS35                  Clarabel              OPTIMAL               0.033542ms            
+HS35                  HiGHS                 OPTIMAL               0.119708ms            
+HS35                  Hipparchus            OPTIMAL               0.007375ms            
+HS35                  ojAlgo-QP             OPTIMAL               0.010333ms            
+HS35MOD               Clarabel              OPTIMAL               0.053459ms            
+HS35MOD               HiGHS                 OPTIMAL               0.097667ms            
+HS35MOD               Hipparchus            OPTIMAL               0.009708ms            
+HS35MOD               ojAlgo-QP             OPTIMAL               0.010542ms            
+HS51                  Clarabel              OPTIMAL               0.022125ms            
+HS51                  HiGHS                 OPTIMAL               0.108917ms            
+HS51                  Hipparchus            OPTIMAL               0.0085ms              
+HS51                  ojAlgo-QP             OPTIMAL               0.019041ms            
+HS52                  Clarabel              OPTIMAL               0.02275ms             
+HS52                  HiGHS                 OPTIMAL               0.105875ms            
+HS52                  Hipparchus            OPTIMAL               0.008667ms            
+HS52                  ojAlgo-QP             OPTIMAL               0.017666ms            
+HS53                  Clarabel              OPTIMAL               0.054583ms            
+HS53                  HiGHS                 OPTIMAL               0.103042ms            
+HS53                  Hipparchus            OPTIMAL               0.01325ms             
+HS53                  ojAlgo-QP             OPTIMAL               0.015625ms            
+HS76                  Clarabel              OPTIMAL               0.037459ms            
+HS76                  HiGHS                 OPTIMAL               0.127542ms            
+HS76                  Hipparchus            OPTIMAL               0.008708ms            
+HS76                  ojAlgo-QP             OPTIMAL               0.017292ms            
+HUES-MOD              Clarabel              FAILED                WRONG                 
+HUES-MOD              HiGHS                 FAILED                FAILED                
+HUES-MOD              Hipparchus            FAILED                TIMEOUT               
+HUES-MOD              ojAlgo-QP             OPTIMAL               77.157917ms           
+HUESTIS               Clarabel              FAILED                WRONG                 
+HUESTIS               HiGHS                 FAILED                FAILED                
+HUESTIS               Hipparchus            FAILED                TIMEOUT               
+HUESTIS               ojAlgo-QP             OPTIMAL               69.143333ms           
+KSIP                  Clarabel              OPTIMAL               10.296458ms           
+KSIP                  HiGHS                 FAILED                TIMEOUT               
+KSIP                  Hipparchus            OPTIMAL               0.812458ms            
+KSIP                  ojAlgo-QP             OPTIMAL               36.163125ms           
+LASER                 Clarabel              OPTIMAL               6.318208ms            
+LASER                 HiGHS                 FAILED                FAILED                
+LASER                 Hipparchus            OPTIMAL               7539.753833ms         
+LASER                 ojAlgo-QP             OPTIMAL               4.274292ms            
+MOSARQP1              Clarabel              OPTIMAL               10.757542ms           
+MOSARQP1              HiGHS                 FAILED                TIMEOUT               
+MOSARQP1              Hipparchus            OPTIMAL               33655.129833ms        
+MOSARQP1              ojAlgo-QP             OPTIMAL               248.564042ms          
+MOSARQP2              Clarabel              OPTIMAL               6.885375ms            
+MOSARQP2              HiGHS                 FAILED                FAILED                
+MOSARQP2              Hipparchus            OPTIMAL               1100.691042ms         
+MOSARQP2              ojAlgo-QP             OPTIMAL               39.800791ms           
+POWELL20              Clarabel              OPTIMAL               86.407917ms           
+POWELL20              HiGHS                 OPTIMAL               563.553333ms          
+POWELL20              Hipparchus            FAILED                TIMEOUT               
+POWELL20              ojAlgo-QP             FAILED                WRONG                 
+QPCBLEND              Clarabel              OPTIMAL               0.757584ms            
+QPCBLEND              HiGHS                 OPTIMAL               1.132667ms            
+QPCBLEND              Hipparchus            OPTIMAL               2.61875ms             
+QPCBLEND              ojAlgo-QP             OPTIMAL               2.310416ms            
+QPCBOEI1              Clarabel              OPTIMAL               6.989708ms            
+QPCBOEI1              HiGHS                 OPTIMAL               20.429208ms           
+QPCBOEI1              Hipparchus            OPTIMAL               162.7935ms            
+QPCBOEI1              ojAlgo-QP             OPTIMAL               498.47775ms           
+QPCBOEI2              Clarabel              OPTIMAL               2.735958ms            
+QPCBOEI2              HiGHS                 OPTIMAL               3.240375ms            
+QPCBOEI2              Hipparchus            OPTIMAL               10.933667ms           
+QPCBOEI2              ojAlgo-QP             OPTIMAL               28.410459ms           
+QPCSTAIR              Clarabel              OPTIMAL               10.269792ms           
+QPCSTAIR              HiGHS                 FAILED                TIMEOUT               
+QPCSTAIR              Hipparchus            OPTIMAL               276.784458ms          
+QPCSTAIR              ojAlgo-QP             OPTIMAL               148.558834ms          
+QPTEST                Clarabel              OPTIMAL               0.043125ms            
+QPTEST                HiGHS                 OPTIMAL               0.11475ms             
+QPTEST                Hipparchus            OPTIMAL               0.008583ms            
+QPTEST                ojAlgo-QP             OPTIMAL               0.011542ms            
+S268                  Clarabel              OPTIMAL               0.05825ms             
+S268                  HiGHS                 OPTIMAL               0.132958ms            
+S268                  Hipparchus            OPTIMAL               0.010333ms            
+S268                  ojAlgo-QP             OPTIMAL               0.021125ms            
+STCQP1                Clarabel              OPTIMAL               52.804083ms           
+STCQP1                HiGHS                 OPTIMAL               19046.731375ms        
+STCQP1                Hipparchus            OPTIMAL               138572.554334ms       
+STCQP1                ojAlgo-QP             OPTIMAL               18.46275ms            
+STCQP2                Clarabel              OPTIMAL               54.160708ms           
+STCQP2                HiGHS                 OPTIMAL               10472.090459ms        
+STCQP2                Hipparchus            OPTIMAL               183065.098292ms       
+STCQP2                ojAlgo-QP             OPTIMAL               17.667625ms           
+TAME                  Clarabel              OPTIMAL               0.0295ms              
+TAME                  HiGHS                 OPTIMAL               0.094417ms            
+TAME                  Hipparchus            OPTIMAL               0.00875ms             
+TAME                  ojAlgo-QP             OPTIMAL               0.011417ms            
+VALUES                Clarabel              OPTIMAL               2.968833ms            
+VALUES                HiGHS                 OPTIMAL               2.217917ms            
+VALUES                Hipparchus            OPTIMAL               41.43525ms            
+VALUES                ojAlgo-QP             OPTIMAL               11.121292ms           
+YAO                   Clarabel              FAILED                WRONG                 
+YAO                   HiGHS                 OPTIMAL               56.400875ms           
+YAO                   Hipparchus            OPTIMAL               25578.983792ms        
+YAO                   ojAlgo-QP             OPTIMAL               3552.132708ms         
+
+Models Solved
+=====================================================================
+Clarabel              45 / 48               94%                   
+HiGHS                 39 / 48               81%                   
+Hipparchus            42 / 48               88%                   
+ojAlgo-QP             47 / 48               98%                   

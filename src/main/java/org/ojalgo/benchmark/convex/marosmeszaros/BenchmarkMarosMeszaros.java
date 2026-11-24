@@ -41,11 +41,11 @@ public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
     public static void main(final String[] args) {
 
-        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.OSQP);
+        Configuration configuration = AbstractMarosMeszaros.newConfiguration(Contender.OJALGO_QP, Contender.HIPPARCHUS, Contender.CLARABEL, Contender.HIGHS);
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
 
-        configuration.parallelism = Parallelism.ONE;
+        configuration.parallelism = Parallelism.TWO;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
