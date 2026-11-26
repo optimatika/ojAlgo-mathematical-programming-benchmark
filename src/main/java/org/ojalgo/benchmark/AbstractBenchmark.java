@@ -28,6 +28,7 @@ import java.io.PrintStream;
 import java.io.Reader;
 import java.io.Writer;
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.nio.CharBuffer;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -359,15 +360,10 @@ public abstract class AbstractBenchmark {
         }
 
         /**
-         * True once no further measurements are wanted - either because the count is spent, or because the
-         * last three times agree: the slowest and the fastest within 10% of the middle one. The count is
-         * checked first, so a max of 1 means "one measurement is all we're after".
+         * True when the last three times agree: the slowest and the fastest within 10% of the middle one.
+         * False until there are three.
          */
-        public boolean isStable() {
-
-            if (myCount >= myMaxCount) {
-                return true;
-            }
+        public boolean isAgreeing() {
 
             if (myNbTimes < WINDOW) {
                 return false;
@@ -375,6 +371,15 @@ public abstract class AbstractBenchmark {
 
             // 0.2 means ±10% of the returned value
             return myRange <= myTimeAccuracy * Math.max(myAverage, myMedian);
+        }
+
+        /**
+         * True once no further measurements are wanted - either because the count is spent, or because the
+         * last three times agree (see {@link #isAgreeing()}). The count is checked first, so a max of 1 means
+         * "one measurement is all we're after".
+         */
+        public boolean isStable() {
+            return myCount >= myMaxCount || this.isAgreeing();
         }
 
         /**
@@ -405,7 +410,7 @@ public abstract class AbstractBenchmark {
 
         /**
          * The difference between the slowest and the fastest of the last three times, ms - what
-         * {@link #isStable()} compares to the median and the average. Until there are three, it's the range of
+         * {@link #isAgreeing()} compares to the median and the average. Until there are three, it's the range of
          * those there are. NaN if there are none.
          */
         public double rangeTime() {
@@ -518,10 +523,11 @@ public abstract class AbstractBenchmark {
      */
     static final String OUTPUT_DIR = "./src/main/resources/";
     /**
-     * Each column is padded, and then cut, to this width. The longest time is 23 characters - such as
-     * 0.0012345678901234567ms - so there is always at least one space between columns.
+     * The width of the console log's columns. Anything longer than WIDTH - 1 is cut. With the times and values
+     * rounded (see {@link #toLogTime(double)} and {@link #toLogValue(double)}) only a few unusually long model
+     * names are.
      */
-    static final int WIDTH = 24;
+    static final int WIDTH = 20;
 
     /**
      * Runs every one of {@link Configuration#models} that is within the size limits, with every one of
@@ -693,7 +699,7 @@ public abstract class AbstractBenchmark {
 
                 if (solved) {
                     counts[0]++;
-                    log.columns(WIDTH, model, solver, state, duration);
+                    log.columns(WIDTH, model, solver, state, AbstractBenchmark.toLogTime(duration.convertTo(CalendarDateUnit.MILLIS).measure));
                     csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
                 } else {
                     log.columns(WIDTH, model, solver, Optimisation.State.FAILED, reason);
@@ -791,35 +797,41 @@ public abstract class AbstractBenchmark {
 
                 } else if (expectedValue != null && ACCURACY.isDifferent(expectedValue.doubleValue(), latest.getValue())) {
 
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, latest.getValue(), "!= " + expectedValue);
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, AbstractBenchmark.toLogValue(latest.getValue()),
+                            "!= " + AbstractBenchmark.toLogValue(expectedValue.doubleValue()));
                     totReasons.put(modelSolverPair, FailReason.WRONG);
                     iterDone.add(modelSolverPair);
 
                 } else if (!subResults.valid) {
 
                     // The value agrees - otherwise it would be WRONG
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, latest.getValue(), "solution infeasible");
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, AbstractBenchmark.toLogValue(latest.getValue()),
+                            "solution infeasible");
                     totReasons.put(modelSolverPair, FailReason.INVALID);
                     iterDone.add(modelSolverPair);
 
                 } else {
 
-                    // Report every pass, whether or not the pair is done with, so progress can be followed. The
-                    // middle of the last three is what's reported in the end, and their range next to it - the
-                    // two that decide whether the times are stable.
+                    // Report every pass, whether or not the pair is done with, so progress can be followed: this
+                    // pass's own time, then the median and the range of the last three passes - the two that
+                    // decide whether the times are stable. The median is what's reported in the end.
                     boolean stable = mainResults.isStable();
 
+                    // Solved - another pass is needed. Stable - the times agree, done. Capped - out of passes, the
+                    // times never agreed, but the median is reported anyway. With only one pass to make (a
+                    // capability test) that one is not capped, just solved.
                     String what;
-                    if (mainResults.count() == 1) {
-                        what = "Solved";
-                    } else if (stable) {
-                        what = "Time stable";
+                    if (mainResults.isAgreeing()) {
+                        what = "Stable";
+                    } else if (stable && mainResults.count() > 1) {
+                        what = "Capped";
                     } else {
-                        what = "Time not stable";
+                        what = "Solved";
                     }
 
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, what, mainResults.median().duration,
-                            new CalendarDateDuration(mainResults.rangeTime(), CalendarDateUnit.MILLIS), mainResults.median().result.getValue());
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, what, AbstractBenchmark.toLogTime(subResults.time),
+                            AbstractBenchmark.toLogTime(mainResults.medianTime()), AbstractBenchmark.toLogTime(mainResults.rangeTime()),
+                            AbstractBenchmark.toLogValue(mainResults.result().getValue()));
 
                     if (stable) {
                         iterDone.add(modelSolverPair);
@@ -900,7 +912,7 @@ public abstract class AbstractBenchmark {
 
             if (result != null && result.getState().isOptimal() && returnValue.valid) {
                 referenceValues.put(model, BigDecimal.valueOf(result.getValue()));
-                log.columns(WIDTH, model, solver, "Reference", result.getValue());
+                log.columns(WIDTH, model, solver, "Reference", AbstractBenchmark.toLogValue(result.getValue()));
             } else {
                 log.columns(WIDTH, model, solver, "No reference", result != null ? result.getState() : FailReason.FAILED);
             }
@@ -944,8 +956,8 @@ public abstract class AbstractBenchmark {
      * <p>
      * Left to the default, each worker may grow its heap to a quarter of the RAM, however many workers there
      * are - so 4 or more may together claim all of it, or more. Instead three quarters of the RAM is shared
-     * equally between the workers, whatever their number. The rest is for the OS, the main JVM and the native
-     * solvers' own memory.
+     * equally between the workers, whatever their number, but no worker gets more than that quarter. The rest
+     * is for the OS, the main JVM and the native solvers' own memory.
      */
     static ProcessOptions newWorkerOptions(final BasicLogger log, final int workers) {
 
@@ -986,7 +998,7 @@ public abstract class AbstractBenchmark {
         libraryPath.remove("");
 
         long memory = Hardware.getMemory();
-        long heap = 3L * memory / 4L / Math.max(1, workers);
+        long heap = Math.min(memory / 4L, 3L * memory / 4L / Math.max(1, workers));
 
         ProcessOptions.Builder builder = new ProcessOptions.Builder().enableNativeAccessAllUnnamed(true).xmx((heap >> 20) + "m");
 
@@ -1039,6 +1051,28 @@ public abstract class AbstractBenchmark {
         }
 
         return result;
+    }
+
+    /**
+     * A time, ms, as it's shown in the console log - rounded to 6 significant digits. The CSV gets the time as
+     * it is.
+     */
+    static CalendarDateDuration toLogTime(final double time) {
+        return new CalendarDateDuration(AbstractBenchmark.round(time, 6), CalendarDateUnit.MILLIS);
+    }
+
+    /**
+     * An objective value as it's shown in the console log - rounded to 8 significant digits.
+     */
+    static double toLogValue(final double value) {
+        return AbstractBenchmark.round(value, 8);
+    }
+
+    private static double round(final double value, final int digits) {
+        if (!Double.isFinite(value) || value == 0.0) {
+            return value;
+        }
+        return new BigDecimal(value).round(new MathContext(digits)).doubleValue();
     }
 
 }
