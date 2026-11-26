@@ -46,6 +46,7 @@ import org.ojalgo.concurrent.Parallelism;
 import org.ojalgo.concurrent.ParallelismSupplier;
 import org.ojalgo.concurrent.ProcessOptions;
 import org.ojalgo.concurrent.ProcessingService;
+import org.ojalgo.machine.Hardware;
 import org.ojalgo.netio.ASCII;
 import org.ojalgo.netio.BasicLogger;
 import org.ojalgo.netio.TextLineReader;
@@ -403,6 +404,15 @@ public abstract class AbstractBenchmark {
         }
 
         /**
+         * The difference between the slowest and the fastest of the last three times, ms - what
+         * {@link #isStable()} compares to the median and the average. Until there are three, it's the range of
+         * those there are. NaN if there are none.
+         */
+        public double rangeTime() {
+            return myRange;
+        }
+
+        /**
          * The first result, its state downgraded if a later one disagreed.
          */
         public Result result() {
@@ -507,7 +517,11 @@ public abstract class AbstractBenchmark {
      * Where the results and console logs are written.
      */
     static final String OUTPUT_DIR = "./src/main/resources/";
-    static final int WIDTH = 22;
+    /**
+     * Each column is padded, and then cut, to this width. The longest time is 23 characters - such as
+     * 0.0012345678901234567ms - so there is always at least one space between columns.
+     */
+    static final int WIDTH = 24;
 
     /**
      * Runs every one of {@link Configuration#models} that is within the size limits, with every one of
@@ -589,13 +603,13 @@ public abstract class AbstractBenchmark {
         int iterations = 0;
         Set<ModelSolverPair> iterDone = ConcurrentHashMap.newKeySet();
 
+        ProcessOptions workerOptions = AbstractBenchmark.newWorkerOptions(log, workers);
+
         log.println();
         log.println("Environment: {}", OjAlgoUtils.ENVIRONMENT);
-        log.println("Workers: {}, threads per worker: {}", workers, threadsPerWorker);
+        log.println("Workers: {}, threads per worker: {}, max heap per worker: {}", workers, threadsPerWorker, workerOptions.xmx);
         log.println("Models: {} of {} within size limits ({} not shipped), solvers: {}", modDim.size(), configuration.models.size(), nbMissing,
                 configuration.solvers.length);
-
-        ProcessOptions workerOptions = AbstractBenchmark.newWorkerOptions(log);
 
         log.println();
 
@@ -783,16 +797,16 @@ public abstract class AbstractBenchmark {
 
                 } else if (!subResults.valid) {
 
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, latest.getValue(),
-                            "value agrees, solution infeasible");
+                    // The value agrees - otherwise it would be WRONG
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, latest.getValue(), "solution infeasible");
                     totReasons.put(modelSolverPair, FailReason.INVALID);
                     iterDone.add(modelSolverPair);
 
                 } else {
 
                     // Report every pass, whether or not the pair is done with, so progress can be followed. The
-                    // middle of the last three is what's reported in the end, and this pass's own time next to
-                    // it - the middle one hides an outlier, which can still be what keeps the times unstable.
+                    // middle of the last three is what's reported in the end, and their range next to it - the
+                    // two that decide whether the times are stable.
                     boolean stable = mainResults.isStable();
 
                     String what;
@@ -805,7 +819,7 @@ public abstract class AbstractBenchmark {
                     }
 
                     log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, what, mainResults.median().duration,
-                            new CalendarDateDuration(subResults.time, CalendarDateUnit.MILLIS), mainResults.median().result.getValue());
+                            new CalendarDateDuration(mainResults.rangeTime(), CalendarDateUnit.MILLIS), mainResults.median().result.getValue());
 
                     if (stable) {
                         iterDone.add(modelSolverPair);
@@ -924,10 +938,16 @@ public abstract class AbstractBenchmark {
 
     /**
      * The options for the worker JVMs: the library paths and environment variables from
-     * {@link #NATIVE_SOLVERS}, and native access enabled. The main JVM's own java.library.path is kept, after
-     * the configured directories. The main JVM itself needs none of this - only the workers load solvers.
+     * {@link #NATIVE_SOLVERS}, native access enabled, and a max heap. The main JVM's own java.library.path is
+     * kept, after the configured directories. The main JVM itself needs none of this - only the workers load
+     * solvers.
+     * <p>
+     * Left to the default, each worker may grow its heap to a quarter of the RAM, however many workers there
+     * are - so 4 or more may together claim all of it, or more. Instead three quarters of the RAM is shared
+     * equally between the workers, whatever their number. The rest is for the OS, the main JVM and the native
+     * solvers' own memory.
      */
-    static ProcessOptions newWorkerOptions(final BasicLogger log) {
+    static ProcessOptions newWorkerOptions(final BasicLogger log, final int workers) {
 
         Properties settings = new Properties();
 
@@ -965,7 +985,10 @@ public abstract class AbstractBenchmark {
         }
         libraryPath.remove("");
 
-        ProcessOptions.Builder builder = new ProcessOptions.Builder().enableNativeAccessAllUnnamed(true);
+        long memory = Hardware.getMemory();
+        long heap = 3L * memory / 4L / Math.max(1, workers);
+
+        ProcessOptions.Builder builder = new ProcessOptions.Builder().enableNativeAccessAllUnnamed(true).xmx((heap >> 20) + "m");
 
         if (!libraryPath.isEmpty()) {
             builder.systemProperty("java.library.path", String.join(File.pathSeparator, libraryPath));
