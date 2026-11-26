@@ -45,7 +45,7 @@ public final class BenchmarkMarosMeszaros extends AbstractMarosMeszaros {
 
         AbstractMarosMeszaros.filter(configuration, ModelInfo::isPureQP);
 
-        configuration.parallelism = Parallelism.TWO;
+        configuration.parallelism = Parallelism.ONE;
 
         AbstractBenchmark.doBenchmark(configuration);
     }
