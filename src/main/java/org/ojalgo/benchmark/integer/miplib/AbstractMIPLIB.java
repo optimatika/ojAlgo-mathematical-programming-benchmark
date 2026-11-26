@@ -41,8 +41,12 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
      * <p>
      * The set is decided on with {@link MIPLIBNativeSolvers}, and used by {@link BenchmarkMIPLIB}.
      * <p>
-     * Some models that are borderline if the should be included here or not is listed in the
-     * {@value #UNSTABLE} set.
+     * Some models that are borderline whether they should be included here or not are listed in the
+     * {@link #UNSTABLE} set.
+     * <p>
+     * ojAlgo's test class {@code MIPLIBTheEasySet} has one test per model in this set or in
+     * {@link #UNSTABLE} – currently 105 tests – and its tags decide which of them are run. Keep it in sync
+     * when either set changes.
      */
     static final Set<String> EASY_SET = Set.of("22433", "23588", "aflow30a", "air01", "beavma", "bell3a", "bell3b", "bell4", "bell5", "bienst1", "bienst2",
             "blend2", "bm23", "bppc8-02", "cracpb1", "dcmulti", "dfn-gwin-UUM", "egout", "enigma", "enlight13", "enlight8", "enlight_hard", "exp-1-500-5-5",
@@ -56,7 +60,7 @@ abstract class AbstractMIPLIB extends AbstractBenchmark {
             "timtab1", "timtab1CUTS", "vpm1", "vpm2");
 
     /**
-     * The set of members in {@value #EASY_SET} varies over time. This set contains models that have not
+     * The set of members in {@link #EASY_SET} varies over time. This set contains models that have not
      * always been included or models that may fail under certain circumstances.
      * <p>
      * Currently included, but has not always been:
