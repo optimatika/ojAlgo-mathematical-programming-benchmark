@@ -154,6 +154,19 @@ public abstract class AbstractBenchmark {
 
     }
 
+    /**
+     * How a model/solver pair ended
+     *
+     * @param state The state the solver returned – FAILED when it returned nothing (timeout or error)
+     * @param value The objective function value of the solution returned – NaN when there is no (feasible
+     *        and valid) solution
+     * @param time ms – NaN when there is no result
+     * @param solved Whether the pair counts as solved: optimal, the expected value and a valid solution
+     */
+    public record Outcome(Optimisation.State state, double value, double time, boolean solved) {
+
+    }
+
     public static final class ModelSolverPair implements Comparable<ModelSolverPair> {
 
         public final String model;
@@ -538,8 +551,10 @@ public abstract class AbstractBenchmark {
      * Writes two files to {@link #OUTPUT_DIR}, both named after the class whose main method called this -
      * plus {@link Configuration#label} and the number of workers: the results, {@code *_output.csv}, and
      * everything logged, {@code *_console.log}.
+     *
+     * @return How every model/solver pair ended
      */
-    public static void doBenchmark(final Configuration configuration) {
+    public static Map<ModelSolverPair, Outcome> doBenchmark(final Configuration configuration) {
 
         Class<?> benchmark = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE).getCallerClass();
 
@@ -548,13 +563,13 @@ public abstract class AbstractBenchmark {
         String name = benchmark.getSimpleName() + (configuration.label != null ? "_" + configuration.label : "") + "_" + workers;
 
         try (BasicLogger.BasicWriter log = new BasicLogger.BasicWriter(new Tee(System.out, OUTPUT_DIR + name + "_console.log"))) {
-            AbstractBenchmark.doBenchmark(configuration, log, OUTPUT_DIR + name + "_output.csv");
+            return AbstractBenchmark.doBenchmark(configuration, log, OUTPUT_DIR + name + "_output.csv");
         } catch (IOException cause) {
             throw new RuntimeException(cause);
         }
     }
 
-    private static void doBenchmark(final Configuration configuration, final BasicLogger log, final String outputPath) {
+    private static Map<ModelSolverPair, Outcome> doBenchmark(final Configuration configuration, final BasicLogger log, final String outputPath) {
 
         ProcessingService masterProcessor = ProcessingService.newInstance("benchmark");
         ExternalProcessExecutor slaveExecutor = ExternalProcessExecutor.newInstance();
@@ -571,7 +586,7 @@ public abstract class AbstractBenchmark {
 
             String filePath = configuration.path(model);
             String clPath = filePath.startsWith("/") ? filePath.substring(1) : filePath;
-            ExpressionsBasedModel.FileFormat format = clPath.endsWith(".lp") ? ExpressionsBasedModel.FileFormat.LP : ExpressionsBasedModel.FileFormat.MPS;
+            ExpressionsBasedModel.FileFormat format = AbstractBenchmark.format(clPath);
 
             try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(clPath)) {
 
@@ -657,6 +672,7 @@ public abstract class AbstractBenchmark {
         } while (allWork.size() > 0);
 
         Map<ModelSolverPair, ResultsSet> sortedResults = new TreeMap<>(totResults);
+        Map<ModelSolverPair, Outcome> retVal = new TreeMap<>();
 
         try (TextLineWriter writer = TextLineWriter.of(outputPath)) {
 
@@ -677,6 +693,7 @@ public abstract class AbstractBenchmark {
                 TimedResult<Result> result = entry.getValue().median();
 
                 String model = work.model;
+                String name = AbstractBenchmark.toLogName(model);
                 String solver = work.solver;
 
                 State state = result.result.getState();
@@ -706,12 +723,16 @@ public abstract class AbstractBenchmark {
                 int[] counts = tally.computeIfAbsent(solver, k -> new int[2]);
                 counts[1]++;
 
+                boolean usable = state.isFeasible() && totReasons.get(work) != FailReason.INVALID;
+                double time = state == Optimisation.State.FAILED ? Double.NaN : duration.convertTo(CalendarDateUnit.MILLIS).measure;
+                retVal.put(work, new Outcome(state, usable ? value : Double.NaN, time, solved));
+
                 if (solved) {
                     counts[0]++;
-                    log.columns(WIDTH, model, solver, state, AbstractBenchmark.toLogTime(duration.convertTo(CalendarDateUnit.MILLIS).measure));
+                    log.columns(WIDTH, name, solver, state, AbstractBenchmark.toLogTime(duration.convertTo(CalendarDateUnit.MILLIS).measure));
                     csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
                 } else {
-                    log.columns(WIDTH, model, solver, reason);
+                    log.columns(WIDTH, name, solver, reason);
                     csv.line(model, solver, "", nbVars, nbExpr, density);
                 }
             }
@@ -729,6 +750,7 @@ public abstract class AbstractBenchmark {
             throw new RuntimeException(cause);
         }
 
+        return retVal;
     }
 
     private static double round(final double value, final int digits) {
@@ -768,6 +790,7 @@ public abstract class AbstractBenchmark {
             final Set<ModelSolverPair> iterDone, final int threadsPerWorker, final ModelSolverPair modelSolverPair) {
 
         String path = configuration.path(modelSolverPair.model);
+        String name = AbstractBenchmark.toLogName(modelSolverPair.model);
 
         BigDecimal expectedValue = configuration.values.get(modelSolverPair.model);
 
@@ -800,23 +823,31 @@ public abstract class AbstractBenchmark {
                 if (!subResults.consistent || !mainResults.isConsistent()) {
 
                     // Repeated solves, within this pass or across passes, didn't agree
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.UNSTABLE, AbstractBenchmark.toLogTime(subResults.time),
+                    log.columns(WIDTH, name, modelSolverPair.solver, FailReason.UNSTABLE, AbstractBenchmark.toLogTime(subResults.time),
                             "solves disagree", "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, FailReason.UNSTABLE);
                     iterDone.add(modelSolverPair);
 
                 } else if (!latest.getState().isOptimal()) {
 
-                    // Consistently not optimal - infeasible, unbounded, only feasible...
-                    FailReason reason = latest.getState() == Optimisation.State.FAILED ? FailReason.FAILED : FailReason.WRONG;
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, reason, AbstractBenchmark.toLogTime(subResults.time),
+                    // Consistently not optimal - infeasible, unbounded, only feasible... A solution that does not
+                    // satisfy the constraints is INVALID also when it is not claimed optimal
+                    FailReason reason;
+                    if (latest.getState() == Optimisation.State.FAILED) {
+                        reason = FailReason.FAILED;
+                    } else if (latest.getState().isFeasible() && !subResults.valid) {
+                        reason = FailReason.INVALID;
+                    } else {
+                        reason = FailReason.WRONG;
+                    }
+                    log.columns(WIDTH, name, modelSolverPair.solver, reason, AbstractBenchmark.toLogTime(subResults.time),
                             latest.getState(), "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, reason);
                     iterDone.add(modelSolverPair);
 
                 } else if (expectedValue != null && ACCURACY.isDifferent(expectedValue.doubleValue(), latest.getValue())) {
 
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, AbstractBenchmark.toLogTime(subResults.time),
+                    log.columns(WIDTH, name, modelSolverPair.solver, FailReason.WRONG, AbstractBenchmark.toLogTime(subResults.time),
                             "!= " + AbstractBenchmark.toLogValue(expectedValue.doubleValue()), "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, FailReason.WRONG);
                     iterDone.add(modelSolverPair);
@@ -824,7 +855,7 @@ public abstract class AbstractBenchmark {
                 } else if (!subResults.valid) {
 
                     // The value agrees - otherwise it would be WRONG
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, AbstractBenchmark.toLogTime(subResults.time),
+                    log.columns(WIDTH, name, modelSolverPair.solver, FailReason.INVALID, AbstractBenchmark.toLogTime(subResults.time),
                             "solution infeasible", "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, FailReason.INVALID);
                     iterDone.add(modelSolverPair);
@@ -848,7 +879,7 @@ public abstract class AbstractBenchmark {
                         what = "Solved";
                     }
 
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, what, AbstractBenchmark.toLogTime(subResults.time),
+                    log.columns(WIDTH, name, modelSolverPair.solver, what, AbstractBenchmark.toLogTime(subResults.time),
                             AbstractBenchmark.toLogTime(mainResults.medianTime()), AbstractBenchmark.toLogTime(mainResults.rangeTime()),
                             AbstractBenchmark.toLogValue(mainResults.result().getValue()));
 
@@ -863,7 +894,7 @@ public abstract class AbstractBenchmark {
 
                 mainResults.add(FAILED);
 
-                log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.TIMEOUT);
+                log.columns(WIDTH, name, modelSolverPair.solver, FailReason.TIMEOUT);
                 totReasons.put(modelSolverPair, FailReason.TIMEOUT);
                 iterDone.add(modelSolverPair);
             }
@@ -886,7 +917,7 @@ public abstract class AbstractBenchmark {
             // already finished in time, so its times vary too much to be measured.
             FailReason reason = firstPass ? FailReason.TIMEOUT : FailReason.UNSTABLE;
 
-            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, reason);
+            log.columns(WIDTH, name, modelSolverPair.solver, reason);
             totReasons.put(modelSolverPair, reason);
             iterDone.add(modelSolverPair);
 
@@ -905,7 +936,7 @@ public abstract class AbstractBenchmark {
             ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
             mainResults.add(FAILED);
 
-            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.FAILED);
+            log.columns(WIDTH, name, modelSolverPair.solver, FailReason.FAILED);
             totReasons.put(modelSolverPair, FailReason.FAILED);
             iterDone.add(modelSolverPair);
         }
@@ -919,6 +950,8 @@ public abstract class AbstractBenchmark {
             final ProcessOptions workerOptions, final int threadsPerWorker, final String model, final String solver,
             final Map<String, BigDecimal> referenceValues) {
 
+        String name = AbstractBenchmark.toLogName(model);
+
         Future<ForkedTask.ReturnValue> future = null;
         try {
 
@@ -931,13 +964,13 @@ public abstract class AbstractBenchmark {
 
             if (result != null && result.getState().isOptimal() && returnValue.valid) {
                 referenceValues.put(model, BigDecimal.valueOf(result.getValue()));
-                log.columns(WIDTH, model, solver, "Reference", AbstractBenchmark.toLogValue(result.getValue()));
+                log.columns(WIDTH, name, solver, "Reference", AbstractBenchmark.toLogValue(result.getValue()));
             } else if (result != null) {
                 // Not optimal, or optimal but the solution doesn't satisfy the constraints
                 Object status = result.getState().isOptimal() ? FailReason.INVALID : result.getState();
-                log.columns(WIDTH, model, solver, status, AbstractBenchmark.toLogValue(result.getValue()));
+                log.columns(WIDTH, name, solver, status, AbstractBenchmark.toLogValue(result.getValue()));
             } else {
-                log.columns(WIDTH, model, solver, FailReason.FAILED);
+                log.columns(WIDTH, name, solver, FailReason.FAILED);
             }
 
         } catch (TimeoutException timeout) {
@@ -950,7 +983,7 @@ public abstract class AbstractBenchmark {
                 }
             }
 
-            log.columns(WIDTH, model, solver, FailReason.TIMEOUT);
+            log.columns(WIDTH, name, solver, FailReason.TIMEOUT);
 
         } catch (Exception cause) {
 
@@ -963,8 +996,21 @@ public abstract class AbstractBenchmark {
             }
 
             log.println(cause, "Error working with {}!", model);
-            log.columns(WIDTH, model, solver, FailReason.FAILED);
+            log.columns(WIDTH, name, solver, FailReason.FAILED);
         }
+    }
+
+    /**
+     * The file format, from the file name ending: LP, FlatZinc, or else MPS (also SIF)
+     */
+    static ExpressionsBasedModel.FileFormat format(final String path) {
+        if (path.endsWith(".lp")) {
+            return ExpressionsBasedModel.FileFormat.LP;
+        }
+        if (path.endsWith(".fzn")) {
+            return ExpressionsBasedModel.FileFormat.FZN;
+        }
+        return ExpressionsBasedModel.FileFormat.MPS;
     }
 
     static TimedResult<Result> meassure(final ExpressionsBasedModel model, final ExpressionsBasedModel.Integration<?> integration) {
@@ -1074,6 +1120,14 @@ public abstract class AbstractBenchmark {
         }
 
         return result;
+    }
+
+    /**
+     * A model's name as it's shown in the console log - without the folder it is in, such as a MiniZinc
+     * category, that would fill the column. The CSV gets the name as it is.
+     */
+    static String toLogName(final String model) {
+        return model.substring(model.lastIndexOf('/') + 1);
     }
 
     /**

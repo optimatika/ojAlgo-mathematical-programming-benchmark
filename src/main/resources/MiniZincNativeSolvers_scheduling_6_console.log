@@ -1,0 +1,1275 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3, max heap per worker: 6144m
+Models: 87 of 87 within size limits (0 not shipped), solvers: 4
+
+
+Reference values for 42 models without an expected value 2026-11-27T16:06:27.062858Z
+Model               Solver              Status              Value               
+--------------------------------------------------------------------------------
+jobshop__jobshop_la SCIP                TIMEOUT             
+project-planning__P SCIP                TIMEOUT             
+project-planning__P SCIP                TIMEOUT             
+train__instance.5   SCIP                TIMEOUT             
+jobshop__jobshop_la SCIP                TIMEOUT             
+train__instance.9   SCIP                TIMEOUT             
+project-planning__P SCIP                Reference           17.0                
+jobshop2__la03      CPLEX               Reference           597.0               
+evilshop__js-brs2-7 SCIP                Reference           86912.0             
+project-planning__P SCIP                Reference           25.0                
+spot5__54           SCIP                Reference           37.0                
+smelt__smelt_3      SCIP                TIMEOUT             
+project-planning__P SCIP                TIMEOUT             
+road-cons__road_11  SCIP                TIMEOUT             
+filters__dct_1_1    SCIP                TIMEOUT             
+flexible-jobshop__m SCIP                TIMEOUT             
+filters__dct_4_4    SCIP                TIMEOUT             
+cyclic-rcpsp__easy_ SCIP                Reference           1920.0              
+openshop__gp10-4    SCIP                Reference           1077.0              
+filters__ar_1_2     CPLEX               TIMEOUT             
+rcpsp-max__psp_j30_ SCIP                TIMEOUT             
+cyclic-rcpsp__mediu SCIP                Reference           585.0               
+stochastic-fjsp__fj SCIP                TIMEOUT             
+jobshop__jobshop_or SCIP                TIMEOUT             
+cyclic-rcpsp__hard_ SCIP                Reference           1425.0              
+jobshop2__mt10      SCIP                TIMEOUT             
+jobshop__jobshop_la SCIP                TIMEOUT             
+cyclic-rcpsp__mediu SCIP                TIMEOUT             
+road-cons__road_9   SCIP                TIMEOUT             
+openshop__j7per10-1 SCIP                Reference           1000.0              
+road-cons__road_8   SCIP                TIMEOUT             
+evilshop__js-setg2- SCIP                TIMEOUT             
+rcpsp-max__psp_j20_ SCIP                TIMEOUT             
+rcpsp-max__psp_j20_ SCIP                TIMEOUT             
+cargo__challenge06_ SCIP                TIMEOUT             
+openshop__j8per0-2  SCIP                TIMEOUT             
+rcpsp-max__psp_j30_ SCIP                TIMEOUT             
+train__instance.12  SCIP                TIMEOUT             
+cargo__challenge04_ SCIP                Reference           714.0               
+gfd-schedule__n30f3 SCIP                TIMEOUT             
+spot5__503          SCIP                TIMEOUT             
+train__instance.13  SCIP                TIMEOUT             
+
+Iteration 1 with 348 model/solver pairs remaining 2026-11-27T16:37:48.446019Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+cargo__challenge02_ CPLEX               FAILED              135.925ms           FAILED                                  -20448.0            
+train__instance.13  CPLEX               FAILED              22.3431ms           FAILED                                  1425000.0           
+rcpsp-wet__j30_1_3- HiGHS               Solved              528.098ms           528.098ms           0.0ms               93.0                
+stochastic-fjsp__fj SCIP                Solved              13.7486ms           13.7486ms           0.0ms               242.0               
+openshop__j7per10-1 CP-SAT              Solved              223.855ms           223.855ms           0.0ms               1000.0              
+evilshop__js-brs2-5 SCIP                Solved              1214.5ms            1214.5ms            0.0ms               77406.0             
+filters__fir_1_1    HiGHS               Solved              1157.09ms           1157.09ms           0.0ms               18.0                
+road-cons__road_11  CPLEX               FAILED              77.4263ms           FAILED                                  2.7500002E7         
+mrcpsp__mm_n0_n0_1_ CP-SAT              Solved              1425.54ms           1425.54ms           0.0ms               23.0                
+project-planning__P CP-SAT              Solved              296.298ms           296.298ms           0.0ms               17.0                
+cargo__challenge01_ HiGHS               Solved              11127.5ms           11127.5ms           0.0ms               0.0                 
+flexible-jobshop__m CPLEX               FAILED              12.453ms            FAILED                                  2882.0              
+rcpsp-wet__j30_1_3- CPLEX               FAILED              13.659ms            FAILED                                  1882.0              
+smelt__smelt_4      HiGHS               Solved              1410.03ms           1410.03ms           0.0ms               1043.0              
+rcpsp-wet__j60_36_8 SCIP                Solved              3233.6ms            3233.6ms            0.0ms               336.0               
+cargo__challenge05_ HiGHS               Solved              23253.2ms           23253.2ms           0.0ms               2883.0              
+cargo__challenge02_ HiGHS               Solved              27012.5ms           27012.5ms           0.0ms               25.0                
+cargo__challenge01_ CPLEX               FAILED              80.0737ms           FAILED                                  -8348.5             
+project-planning__P CP-SAT              Solved              11902.4ms           11902.4ms           0.0ms               41.0                
+spot5__54           SCIP                Solved              25027.2ms           25027.2ms           0.0ms               37.0                
+filters__fir16_1_2  CPLEX               FAILED              43.2689ms           FAILED                                  55.0                
+rcpsp__data_pack_pa CP-SAT              Solved              113832.0ms          113832.0ms          0.0ms               41.0                
+rcpsp-wet__j30_35_9 CPLEX               FAILED              19.7453ms           FAILED                                  2322.5              
+rcpsp-wet__j60_19_6 CP-SAT              Solved              800.315ms           800.315ms           0.0ms               227.0               
+ship-schedule__6Shi SCIP                Solved              12214.0ms           12214.0ms           0.0ms               607220.0            
+flexible-jobshop__m HiGHS               TIMEOUT             
+train__instance.9   SCIP                TIMEOUT             
+train__instance.12  CPLEX               FAILED              85.7068ms           FAILED                                  1425000.0           
+train__instance.12  HiGHS               TIMEOUT             
+spot5__503          CPLEX               FAILED              103.09ms            FAILED                                  10104.5             
+evilshop__js-setg2- CP-SAT              Solved              52.3526ms           52.3526ms           0.0ms               46075.0             
+jobshop__jobshop_la CPLEX               FAILED              8.21304ms           FAILED                                  2202.5              
+stochastic-fjsp__fj SCIP                Solved              75.7127ms           75.7127ms           0.0ms               348.0               
+evilshop__js-setg2- SCIP                Solved              1788.39ms           1788.39ms           0.0ms               46075.0             
+road-cons__road_11  HiGHS               TIMEOUT             
+stochastic-fjsp__fj CP-SAT              Solved              2386.87ms           2386.87ms           0.0ms               207.0               
+openshop__j8per0-2  CP-SAT              Solved              3580.25ms           3580.25ms           0.0ms               1052.0              
+flexible-jobshop__e SCIP                Solved              3739.76ms           3739.76ms           0.0ms               253.0               
+rcpsp-wet__j60_36_8 CP-SAT              Solved              1209.1ms            1209.1ms            0.0ms               336.0               
+cyclic-rcpsp__mediu HiGHS               Solved              14650.3ms           14650.3ms           0.0ms               585.0               
+gfd-schedule__n10f2 CP-SAT              Solved              34.1893ms           34.1893ms           0.0ms               3.0                 
+cyclic-rcpsp__hard_ CP-SAT              Solved              387.883ms           387.883ms           0.0ms               1425.0              
+project-planning__P SCIP                TIMEOUT             
+spot5__29           CP-SAT              Solved              234.861ms           234.861ms           0.0ms               8059.0              
+rcpsp__data_ksd15_d CP-SAT              Solved              33.7696ms           33.7696ms           0.0ms               533.0               
+rcpsp__data_pack_pa SCIP                Solved              1129.7ms            1129.7ms            0.0ms               41.0                
+mrcpsp__mm_j10_j10_ HiGHS               Solved              5509.77ms           5509.77ms           0.0ms               21.0                
+jobshop2__la05      CP-SAT              Solved              232.979ms           232.979ms           0.0ms               593.0               
+ship-schedule__7Shi SCIP                Solved              2899.77ms           2899.77ms           0.0ms               699750.0            
+cargo__challenge06_ CPLEX               FAILED              87.998ms            FAILED                                  -21271.0            
+jobshop__jobshop_la CP-SAT              Solved              9327.58ms           9327.58ms           0.0ms               927.0               
+stochastic-fjsp__fj SCIP                TIMEOUT             
+jobshop__jobshop_la SCIP                TIMEOUT             
+flexible-jobshop__e CP-SAT              Solved              1218.04ms           1218.04ms           0.0ms               253.0               
+mrcpsp__mm_m1_m1_53 CP-SAT              Solved              681.866ms           681.866ms           0.0ms               65.0                
+smelt__smelt_2      HiGHS               Solved              755.389ms           755.389ms           0.0ms               69.0                
+filters__ar_1_2     SCIP                Solved              17619.4ms           17619.4ms           0.0ms               18.0                
+road-cons__road_8   CPLEX               FAILED              55.7066ms           FAILED                                  1.4000019E7         
+cyclic-rcpsp__mediu CPLEX               FAILED              9.47517ms           FAILED                                  990.0               
+cargo__challenge04_ CP-SAT              Solved              448.202ms           448.202ms           0.0ms               714.0               
+openshop__gp10-4    CP-SAT              Solved              492.935ms           492.935ms           0.0ms               1077.0              
+rcpsp__data_ksd15_d CPLEX               Solved              6.05096ms           6.05096ms           0.0ms               513.0               
+train__instance.9   CP-SAT              TIMEOUT             
+jobshop__jobshop_la CP-SAT              Solved              10479.5ms           10479.5ms           0.0ms               1268.0              
+rcpsp-max__psp_j20_ HiGHS               Solved              76579.8ms           76579.8ms           0.0ms               103.0               
+project-planning__P CPLEX               FAILED              23.9778ms           FAILED                                  97.5                
+evilshop__js-setg2- CPLEX               FAILED              14.8702ms           FAILED                                  125081.5            
+rcpsp-max__psp_j30_ CP-SAT              Solved              84513.9ms           84513.9ms           0.0ms               150.0               
+stochastic-fjsp__fj CPLEX               Solved              21.3615ms           21.3615ms           0.0ms               328.0               
+openshop__j8per0-2  SCIP                TIMEOUT             
+spot5__1502         CP-SAT              Solved              246.438ms           246.438ms           0.0ms               28042.0             
+cyclic-rcpsp__mediu HiGHS               Solved              6666.74ms           6666.74ms           0.0ms               516.0               
+evilshop__js-setg2- SCIP                Solved              259.727ms           259.727ms           0.0ms               40837.0             
+project-planning__P SCIP                Solved              19910.7ms           19910.7ms           0.0ms               17.0                
+jobshop__jobshop_vw CP-SAT              Solved              2.88788ms           2.88788ms           0.0ms               256.0               
+rcpsp__data_psplib_ HiGHS               Solved              5221.19ms           5221.19ms           0.0ms               85.0                
+filters__fir16_1_2  HiGHS               Solved              2013.63ms           2013.63ms           0.0ms               19.0                
+train__instance.1   HiGHS               Solved              651.772ms           651.772ms           0.0ms               6630.0              
+jobshop2__mt06      SCIP                Solved              88.2319ms           88.2319ms           0.0ms               55.0                
+filters__dct_4_4    CP-SAT              TIMEOUT             
+project-planning__P HiGHS               Solved              137158.0ms          137158.0ms          0.0ms               25.0                
+jobshop__jobshop_la SCIP                TIMEOUT             
+mrcpsp__mm_n0_n0_1_ CP-SAT              Solved              1649.96ms           1649.96ms           0.0ms               15.0                
+rcpsp-max__psp_j10_ CPLEX               FAILED              57.0778ms           FAILED                                  58.0                
+rcpsp-max__psp_j20_ HiGHS               TIMEOUT             
+filters__dct_1_1    SCIP                TIMEOUT             
+ship-schedule__4Shi HiGHS               Solved              2358.26ms           2358.26ms           0.0ms               191750.0            
+rcpsp-wet__j30_4_8- HiGHS               Solved              366.367ms           366.367ms           0.0ms               83.0                
+smelt__smelt_3      HiGHS               TIMEOUT             
+evilshop__js-brs2-7 CPLEX               FAILED              92.5715ms           FAILED                                  197346.5            
+rcpsp__data_ksd15_d SCIP                Solved              136.084ms           136.084ms           0.0ms               533.0               
+jobshop2__mt06      CPLEX               Solved              19.235ms            19.235ms            0.0ms               55.0                
+train__instance.13  HiGHS               TIMEOUT             
+project-planning__P CPLEX               FAILED              93.0155ms           FAILED                                  84.5                
+smelt__smelt_2      CP-SAT              Solved              21.1337ms           21.1337ms           0.0ms               69.0                
+ship-schedule__3Shi HiGHS               Solved              830.429ms           830.429ms           0.0ms               265650.0            
+cyclic-rcpsp__easy_ CPLEX               FAILED              21.1793ms           FAILED                                  3160.0              
+jobshop2__la03      CP-SAT              Solved              103.725ms           103.725ms           0.0ms               597.0               
+ship-schedule__6Shi CPLEX               FAILED              41.6388ms           FAILED                                  307050.0            
+rcpsp-max__psp_j20_ CP-SAT              Solved              10078.0ms           10078.0ms           0.0ms               95.0                
+stochastic-fjsp__fj CPLEX               Solved              19.2642ms           19.2642ms           0.0ms               348.0               
+spot5__503          HiGHS               Solved              74921.8ms           74921.8ms           0.0ms               11113.0             
+jobshop2__mt10      CP-SAT              Solved              1674.38ms           1674.38ms           0.0ms               930.0               
+jobshop__jobshop_or CPLEX               FAILED              45.4061ms           FAILED                                  3164.5              
+ship-schedule__3Shi CPLEX               FAILED              18.8893ms           FAILED                                  89250.0             
+rcpsp-wet__j60_19_6 SCIP                Solved              834.518ms           834.518ms           0.0ms               227.0               
+jobshop__jobshop_la HiGHS               TIMEOUT             
+rcpsp__data_psplib_ CP-SAT              Solved              187.935ms           187.935ms           0.0ms               85.0                
+cyclic-rcpsp__mediu HiGHS               TIMEOUT             
+smelt__smelt_3      SCIP                TIMEOUT             
+train__instance.5   SCIP                TIMEOUT             
+ship-schedule__3Shi CP-SAT              Solved              454.711ms           454.711ms           0.0ms               265650.0            
+stochastic-fjsp__fj HiGHS               Solved              77.6378ms           77.6378ms           0.0ms               242.0               
+jobshop2__mt10      HiGHS               TIMEOUT             
+spot5__54           CPLEX               FAILED              77.1731ms           FAILED                                  53.5                
+mrcpsp__mm_n0_n0_1_ HiGHS               Solved              5966.95ms           5966.95ms           0.0ms               15.0                
+smelt__smelt_3      CP-SAT              Solved              1867.3ms            1867.3ms            0.0ms               1117.0              
+jobshop2__la04      CP-SAT              Solved              62.4141ms           62.4141ms           0.0ms               590.0               
+smelt__smelt_4      SCIP                Solved              633.547ms           633.547ms           0.0ms               1043.0              
+rcpsp-wet__j30_4_8- CPLEX               FAILED              21.061ms            FAILED                                  2095.0              
+rcpsp__data_psplib_ SCIP                Solved              1711.81ms           1711.81ms           0.0ms               67.0                
+filters__dct_1_1    CPLEX               FAILED              8.03254ms           FAILED                                  54.0                
+gfd-schedule__n25f5 HiGHS               Solved              4507.71ms           4507.71ms           0.0ms               5.0                 
+rcpsp__data_ksd15_d SCIP                Solved              12.7909ms           12.7909ms           0.0ms               513.0               
+mrcpsp__mm_m1_m1_53 SCIP                Solved              11191.8ms           11191.8ms           0.0ms               65.0                
+mrcpsp__mm_j10_j10_ CPLEX               FAILED              84.094ms            FAILED                                  46.0                
+rcpsp__data_psplib_ CP-SAT              Solved              211.756ms           211.756ms           0.0ms               67.0                
+road-cons__road_9   CP-SAT              Solved              10089.7ms           10089.7ms           0.0ms               3206.0              
+evilshop__js-brs2-5 CPLEX               FAILED              46.0007ms           FAILED                                  141717.0            
+project-planning__P SCIP                TIMEOUT             
+train__instance.1   CPLEX               FAILED              79.4925ms           FAILED                                  855000.0            
+cyclic-rcpsp__mediu CP-SAT              Solved              66511.5ms           66511.5ms           0.0ms               3132.0              
+jobshop2__la04      HiGHS               Solved              6146.35ms           6146.35ms           0.0ms               590.0               
+rcpsp-wet__j60_36_8 CPLEX               FAILED              51.9107ms           FAILED                                  4805.0              
+evilshop__js-brs2-7 SCIP                Solved              27253.5ms           27253.5ms           0.0ms               86912.0             
+cargo__challenge01_ CP-SAT              Solved              393.014ms           393.014ms           0.0ms               0.0                 
+gfd-schedule__n30f3 CPLEX               FAILED              31.7724ms           FAILED                                  7767.0              
+jobshop2__la03      HiGHS               Solved              27322.1ms           27322.1ms           0.0ms               597.0               
+smelt__smelt_4      CP-SAT              Solved              43.885ms            43.885ms            0.0ms               1043.0              
+project-planning__P CP-SAT              Solved              3155.47ms           3155.47ms           0.0ms               29.0                
+rcpsp-max__psp_j20_ CP-SAT              Solved              338.035ms           338.035ms           0.0ms               103.0               
+gfd-schedule__n25f5 CP-SAT              Solved              285.873ms           285.873ms           0.0ms               5.0                 
+rcpsp-max__psp_j20_ SCIP                TIMEOUT             
+rcpsp-max__psp_j30_ HiGHS               TIMEOUT             
+stochastic-fjsp__fj CPLEX               FAILED              62.6938ms           FAILED                                  301.5               
+jobshop__jobshop_la HiGHS               TIMEOUT             
+rcpsp-max__psp_j20_ SCIP                TIMEOUT             
+jobshop2__la05      HiGHS               Solved              485.97ms            485.97ms            0.0ms               593.0               
+stochastic-fjsp__fj CP-SAT              Solved              12.3688ms           12.3688ms           0.0ms               242.0               
+jobshop__jobshop_vw SCIP                Solved              5.44663ms           5.44663ms           0.0ms               256.0               
+evilshop__js-setg2- CP-SAT              Solved              23.9842ms           23.9842ms           0.0ms               40837.0             
+cyclic-rcpsp__mediu SCIP                Solved              9657.01ms           9657.01ms           0.0ms               585.0               
+ship-schedule__4Shi CP-SAT              Solved              338.586ms           338.586ms           0.0ms               191750.0            
+evilshop__js-setg2- HiGHS               Solved              2361.76ms           2361.76ms           0.0ms               46075.0             
+smelt__smelt_2      SCIP                Solved              1845.24ms           1845.24ms           0.0ms               69.0                
+project-planning__P HiGHS               TIMEOUT             
+ship-schedule__7Shi CP-SAT              Solved              1021.16ms           1021.16ms           0.0ms               699750.0            
+road-cons__road_9   SCIP                TIMEOUT             
+rcpsp-max__psp_j30_ CP-SAT              Solved              2213.92ms           2213.92ms           0.0ms               114.0               
+filters__fir_1_1    CPLEX               Solved              69.1849ms           69.1849ms           0.0ms               18.0                
+openshop__j8per0-2  HiGHS               TIMEOUT             
+flexible-jobshop__m CP-SAT              Solved              900.373ms           900.373ms           0.0ms               908.0               
+train__instance.1   SCIP                Solved              268.911ms           268.911ms           0.0ms               6630.0              
+cyclic-rcpsp__hard_ HiGHS               Solved              110004.0ms          110004.0ms          0.0ms               1425.0              
+filters__ar_1_2     HiGHS               Solved              32667.7ms           32667.7ms           0.0ms               18.0                
+mrcpsp__mm_j10_j10_ SCIP                Solved              6095.92ms           6095.92ms           0.0ms               21.0                
+cyclic-rcpsp__mediu SCIP                Solved              7193.02ms           7193.02ms           0.0ms               516.0               
+openshop__j7per10-1 SCIP                Solved              220489.0ms          220489.0ms          0.0ms               1000.0              
+cargo__challenge02_ CP-SAT              Solved              347.301ms           347.301ms           0.0ms               25.0                
+cargo__challenge05_ CP-SAT              Solved              596.015ms           596.015ms           0.0ms               2883.0              
+rcpsp-wet__j60_19_6 HiGHS               Solved              3283.95ms           3283.95ms           0.0ms               227.0               
+filters__ar_1_2     CPLEX               TIMEOUT             
+filters__fir_1_1    CP-SAT              Solved              17.2009ms           17.2009ms           0.0ms               18.0                
+spot5__1502         HiGHS               Solved              1645.57ms           1645.57ms           0.0ms               28043.0             
+openshop__j7per10-1 CPLEX               FAILED              42.0216ms           FAILED                                  3804.0              
+rcpsp-wet__j60_19_6 CPLEX               FAILED              38.4923ms           FAILED                                  4779.0              
+flexible-jobshop__m SCIP                TIMEOUT             
+project-planning__P HiGHS               Solved              33296.7ms           33296.7ms           0.0ms               17.0                
+openshop__j8per0-2  CPLEX               FAILED              47.3217ms           FAILED                                  4500.0              
+mrcpsp__mm_n0_n0_1_ HiGHS               Solved              4854.01ms           4854.01ms           0.0ms               23.0                
+mrcpsp__mm_m1_m1_53 HiGHS               Solved              5995.06ms           5995.06ms           0.0ms               65.0                
+evilshop__js-setg2- CPLEX               FAILED              48.0132ms           FAILED                                  85214.5             
+road-cons__road_11  CP-SAT              Solved              136459.0ms          136459.0ms          0.0ms               5020.0              
+stochastic-fjsp__fj SCIP                Solved              532.498ms           532.498ms           0.0ms               108.0               
+openshop__gp10-4    HiGHS               Solved              46365.4ms           46365.4ms           0.0ms               1077.0              
+rcpsp-wet__j30_35_9 CP-SAT              Solved              177.945ms           177.945ms           0.0ms               104.0               
+stochastic-fjsp__fj SCIP                Solved              69.6463ms           69.6463ms           0.0ms               328.0               
+road-cons__road_8   SCIP                TIMEOUT             
+cargo__challenge06_ CP-SAT              Solved              3701.97ms           3701.97ms           0.0ms               3394.0              
+openshop__j7per10-1 HiGHS               Solved              24548.2ms           24548.2ms           0.0ms               1000.0              
+evilshop__js-setg2- SCIP                TIMEOUT             
+rcpsp__data_psplib_ SCIP                Solved              9572.75ms           9572.75ms           0.0ms               85.0                
+rcpsp-max__psp_j30_ HiGHS               TIMEOUT             
+openshop__gp10-4    CPLEX               FAILED              86.5505ms           FAILED                                  5500.0              
+rcpsp-max__psp_j30_ SCIP                TIMEOUT             
+rcpsp-wet__j30_1_3- CP-SAT              Solved              292.278ms           292.278ms           0.0ms               93.0                
+project-planning__P CPLEX               FAILED              22.2177ms           FAILED                                  78.0                
+evilshop__js-setg2- HiGHS               Solved              431.083ms           431.083ms           0.0ms               40837.0             
+filters__dct_4_4    CPLEX               FAILED              57.9144ms           FAILED                                  54.0                
+filters__fir16_1_2  CP-SAT              Solved              34.6182ms           34.6182ms           0.0ms               19.0                
+rcpsp__data_pack_pa CPLEX               FAILED              10.602ms            FAILED                                  40.5                
+ship-schedule__3Shi SCIP                Solved              499.033ms           499.033ms           0.0ms               265650.0            
+gfd-schedule__n10f2 CPLEX               Solved              40.2473ms           40.2473ms           0.0ms               3.0                 
+rcpsp-max__psp_j10_ SCIP                Solved              10437.4ms           10437.4ms           0.0ms               70.0                
+ship-schedule__7Shi HiGHS               Solved              2182.02ms           2182.02ms           0.0ms               699750.0            
+cargo__challenge04_ HiGHS               Solved              14593.0ms           14593.0ms           0.0ms               714.0               
+cargo__challenge06_ SCIP                TIMEOUT             
+jobshop__jobshop_la CPLEX               FAILED              99.8813ms           FAILED                                  3970.5              
+spot5__503          CP-SAT              Solved              774.577ms           774.577ms           0.0ms               11113.0             
+project-planning__P SCIP                TIMEOUT             
+cyclic-rcpsp__hard_ CPLEX               FAILED              92.3704ms           FAILED                                  2485.0              
+mrcpsp__mm_n0_n0_1_ SCIP                Solved              7304.56ms           7304.56ms           0.0ms               15.0                
+jobshop2__la04      CPLEX               Solved              629.788ms           629.788ms           0.0ms               590.0               
+train__instance.13  CP-SAT              Solved              178362.0ms          178362.0ms          0.0ms               74870.0             
+spot5__29           CPLEX               FAILED              8.9085ms            FAILED                                  10045.5             
+cyclic-rcpsp__easy_ SCIP                Solved              179136.0ms          179136.0ms          0.0ms               1920.0              
+jobshop__jobshop_vw HiGHS               Solved              4.43088ms           4.43088ms           0.0ms               256.0               
+jobshop__jobshop_la CP-SAT              TIMEOUT             
+cyclic-rcpsp__mediu SCIP                TIMEOUT             
+cyclic-rcpsp__mediu CP-SAT              Solved              78.5513ms           78.5513ms           0.0ms               516.0               
+road-cons__road_8   CP-SAT              Solved              2054.99ms           2054.99ms           0.0ms               3066.0              
+train__instance.5   CPLEX               FAILED              68.7264ms           FAILED                                  1425000.0           
+rcpsp__data_ksd15_d CPLEX               FAILED              6.52029ms           FAILED                                  884.0               
+filters__fir_1_1    SCIP                Solved              190.848ms           190.848ms           0.0ms               18.0                
+spot5__29           HiGHS               Solved              4538.54ms           4538.54ms           0.0ms               8059.0              
+rcpsp__data_psplib_ HiGHS               Solved              2919.01ms           2919.01ms           0.0ms               67.0                
+jobshop2__la05      CPLEX               Solved              13364.3ms           13364.3ms           0.0ms               593.0               
+jobshop__jobshop_vw CPLEX               Solved              1.40675ms           1.40675ms           0.0ms               256.0               
+stochastic-fjsp__fj HiGHS               TIMEOUT             
+filters__dct_4_4    HiGHS               TIMEOUT             
+flexible-jobshop__e CPLEX               FAILED              115.889ms           FAILED                                  330.5               
+mrcpsp__mm_m1_m1_53 CPLEX               FAILED              18.3211ms           FAILED                                  71.0                
+gfd-schedule__n25f5 SCIP                Solved              5885.27ms           5885.27ms           0.0ms               5.0                 
+project-planning__P CP-SAT              Solved              2320.85ms           2320.85ms           0.0ms               31.0                
+rcpsp-wet__j30_35_9 SCIP                Solved              324.383ms           324.383ms           0.0ms               104.0               
+rcpsp-max__psp_j30_ CPLEX               FAILED              20.0793ms           FAILED                                  202.0               
+gfd-schedule__n10f2 HiGHS               Solved              48.5521ms           48.5521ms           0.0ms               3.0                 
+ship-schedule__4Shi SCIP                Solved              624.081ms           624.081ms           0.0ms               191750.0            
+cargo__challenge04_ CPLEX               FAILED              22.658ms            FAILED                                  -15443.5            
+project-planning__P CPLEX               FAILED              29.5666ms           FAILED                                  110.5               
+cyclic-rcpsp__mediu CP-SAT              Solved              88.8178ms           88.8178ms           0.0ms               585.0               
+cargo__challenge05_ SCIP                Solved              78622.0ms           78622.0ms           0.0ms               2883.0              
+jobshop__jobshop_or SCIP                TIMEOUT             
+jobshop__jobshop_la CPLEX               FAILED              96.6631ms           FAILED                                  6343.5              
+spot5__1502         CPLEX               FAILED              18.972ms            FAILED                                  44600.0             
+road-cons__road_11  SCIP                TIMEOUT             
+jobshop2__la03      SCIP                Solved              36102.4ms           36102.4ms           0.0ms               597.0               
+train__instance.12  CP-SAT              Solved              249598.0ms          249598.0ms          0.0ms               73020.0             
+ship-schedule__3Shi HiGHS               Solved              839.756ms           839.756ms           0.0ms               172500.0            
+project-planning__P HiGHS               TIMEOUT             
+evilshop__js-setg2- CP-SAT              Solved              283.864ms           283.864ms           0.0ms               60140.0             
+mrcpsp__mm_n0_n0_1_ CPLEX               FAILED              90.731ms            FAILED                                  38.5                
+rcpsp-wet__j60_36_8 HiGHS               Solved              4080.1ms            4080.1ms            0.0ms               336.0               
+ship-schedule__6Shi HiGHS               Solved              5205.7ms            5205.7ms            0.0ms               607220.0            
+gfd-schedule__n10f2 SCIP                Solved              318.38ms            318.38ms            0.0ms               3.0                 
+project-planning__P CP-SAT              Solved              1035.21ms           1035.21ms           0.0ms               25.0                
+cyclic-rcpsp__easy_ CP-SAT              Solved              358.4ms             358.4ms             0.0ms               1920.0              
+jobshop2__mt06      HiGHS               Solved              161.907ms           161.907ms           0.0ms               55.0                
+rcpsp-max__psp_j10_ CP-SAT              Solved              234.955ms           234.955ms           0.0ms               70.0                
+stochastic-fjsp__fj HiGHS               Solved              87.7351ms           87.7351ms           0.0ms               348.0               
+jobshop__jobshop_la SCIP                TIMEOUT             
+train__instance.9   HiGHS               TIMEOUT             
+jobshop2__mt10      CPLEX               FAILED              71.039ms            FAILED                                  1197.5              
+cargo__challenge01_ SCIP                TIMEOUT             
+cyclic-rcpsp__mediu CPLEX               FAILED              98.9919ms           FAILED                                  4656.0              
+jobshop__jobshop_or CP-SAT              Solved              3974.1ms            3974.1ms            0.0ms               1010.0              
+filters__fir16_1_2  SCIP                Solved              3113.22ms           3113.22ms           0.0ms               19.0                
+stochastic-fjsp__fj CP-SAT              Solved              16.4061ms           16.4061ms           0.0ms               348.0               
+flexible-jobshop__e HiGHS               Solved              5160.85ms           5160.85ms           0.0ms               253.0               
+jobshop2__la04      SCIP                Solved              10196.0ms           10196.0ms           0.0ms               590.0               
+rcpsp__data_ksd15_d CP-SAT              Solved              8.06817ms           8.06817ms           0.0ms               513.0               
+rcpsp-max__psp_j10_ HiGHS               Solved              7608.41ms           7608.41ms           0.0ms               70.0                
+cyclic-rcpsp__easy_ HiGHS               Solved              10404.9ms           10404.9ms           0.0ms               1920.0              
+jobshop2__mt06      CP-SAT              Solved              12.225ms            12.225ms            0.0ms               55.0                
+rcpsp-max__psp_j20_ CPLEX               FAILED              9.75067ms           FAILED                                  101.0               
+stochastic-fjsp__fj HiGHS               Solved              68.1505ms           68.1505ms           0.0ms               328.0               
+ship-schedule__4Shi CPLEX               FAILED              22.8105ms           FAILED                                  102350.0            
+stochastic-fjsp__fj CP-SAT              Solved              14.5547ms           14.5547ms           0.0ms               328.0               
+jobshop2__mt10      SCIP                TIMEOUT             
+cyclic-rcpsp__hard_ SCIP                Solved              139064.0ms          139064.0ms          0.0ms               1425.0              
+ship-schedule__3Shi CPLEX               FAILED              65.5318ms           FAILED                                  133500.0            
+evilshop__js-brs2-7 CP-SAT              Solved              274.971ms           274.971ms           0.0ms               86912.0             
+rcpsp-wet__j30_1_3- SCIP                Solved              553.63ms            553.63ms            0.0ms               93.0                
+spot5__1502         SCIP                Solved              1017.58ms           1017.58ms           0.0ms               28042.0             
+rcpsp__data_psplib_ CPLEX               FAILED              67.3153ms           FAILED                                  106.0               
+jobshop2__la03      CPLEX               Solved              1081.06ms           1081.06ms           0.0ms               597.0               
+stochastic-fjsp__fj HiGHS               Solved              512.047ms           512.047ms           0.0ms               108.0               
+ship-schedule__3Shi CP-SAT              Solved              208.131ms           208.131ms           0.0ms               172500.0            
+smelt__smelt_2      CPLEX               Solved              83.463ms            83.463ms            0.0ms               69.0                
+gfd-schedule__n30f3 SCIP                TIMEOUT             
+gfd-schedule__n30f3 HiGHS               Solved              14259.8ms           14259.8ms           0.0ms               8.0                 
+rcpsp-wet__j30_4_8- CP-SAT              Solved              185.825ms           185.825ms           0.0ms               83.0                
+road-cons__road_9   HiGHS               TIMEOUT             
+evilshop__js-brs2-7 HiGHS               Solved              55610.2ms           55610.2ms           0.0ms               86912.0             
+ship-schedule__6Shi CP-SAT              Solved              1284.69ms           1284.69ms           0.0ms               607220.0            
+spot5__503          SCIP                TIMEOUT             
+cyclic-rcpsp__mediu CPLEX               FAILED              63.427ms            FAILED                                  903.0               
+road-cons__road_8   HiGHS               TIMEOUT             
+road-cons__road_9   CPLEX               FAILED              84.4608ms           FAILED                                  1.800013E7          
+spot5__54           CP-SAT              Solved              153.546ms           153.546ms           0.0ms               37.0                
+jobshop__jobshop_or HiGHS               TIMEOUT             
+cargo__challenge02_ SCIP                TIMEOUT             
+evilshop__js-brs2-5 CP-SAT              Solved              61.1808ms           61.1808ms           0.0ms               77406.0             
+train__instance.1   CP-SAT              Solved              86.0944ms           86.0944ms           0.0ms               6630.0              
+train__instance.9   CPLEX               FAILED              71.3992ms           FAILED                                  1425000.0           
+jobshop2__la05      SCIP                TIMEOUT             
+rcpsp-max__psp_j30_ SCIP                TIMEOUT             
+rcpsp__data_psplib_ CPLEX               FAILED              95.483ms            FAILED                                  109.5               
+mrcpsp__mm_n0_n0_1_ SCIP                Solved              6401.96ms           6401.96ms           0.0ms               23.0                
+smelt__smelt_3      CPLEX               FAILED              17.4776ms           FAILED                                  26500.0             
+evilshop__js-setg2- HiGHS               TIMEOUT             
+gfd-schedule__n30f3 CP-SAT              Solved              393.229ms           393.229ms           0.0ms               8.0                 
+project-planning__P SCIP                Solved              71287.4ms           71287.4ms           0.0ms               25.0                
+train__instance.5   CP-SAT              TIMEOUT             
+rcpsp__data_ksd15_d HiGHS               Solved              15.9023ms           15.9023ms           0.0ms               513.0               
+jobshop__jobshop_la HiGHS               TIMEOUT             
+evilshop__js-brs2-5 HiGHS               Solved              982.657ms           982.657ms           0.0ms               77406.0             
+mrcpsp__mm_j10_j10_ CP-SAT              Solved              2520.83ms           2520.83ms           0.0ms               21.0                
+stochastic-fjsp__fj CPLEX               FAILED              53.7507ms           FAILED                                  502.5               
+rcpsp-wet__j30_4_8- SCIP                Solved              325.185ms           325.185ms           0.0ms               83.0                
+ship-schedule__3Shi SCIP                Solved              569.611ms           569.611ms           0.0ms               172500.0            
+cargo__challenge06_ HiGHS               TIMEOUT             
+evilshop__js-setg2- CPLEX               FAILED              66.9146ms           FAILED                                  65038.5             
+ship-schedule__7Shi CPLEX               FAILED              55.633ms            FAILED                                  357000.0            
+rcpsp-wet__j30_35_9 HiGHS               Solved              618.829ms           618.829ms           0.0ms               104.0               
+rcpsp__data_ksd15_d HiGHS               Solved              3867.28ms           3867.28ms           0.0ms               533.0               
+project-planning__P CPLEX               FAILED              30.4959ms           FAILED                                  104.0               
+gfd-schedule__n25f5 CPLEX               FAILED              25.43ms             FAILED                                  3864.0              
+rcpsp__data_pack_pa HiGHS               Solved              5289.77ms           5289.77ms           0.0ms               41.0                
+filters__dct_1_1    HiGHS               TIMEOUT             
+rcpsp-max__psp_j30_ CPLEX               FAILED              90.6229ms           FAILED                                  154.5               
+smelt__smelt_4      CPLEX               FAILED              9.93829ms           FAILED                                  10500.0             
+filters__dct_1_1    CP-SAT              TIMEOUT             
+filters__ar_1_2     CP-SAT              Solved              1401.05ms           1401.05ms           0.0ms               18.0                
+stochastic-fjsp__fj CP-SAT              Solved              33.0175ms           33.0175ms           0.0ms               108.0               
+mrcpsp__mm_n0_n0_1_ CPLEX               FAILED              89.3056ms           FAILED                                  33.0                
+rcpsp-max__psp_j20_ CPLEX               FAILED              11.0009ms           FAILED                                  135.0               
+stochastic-fjsp__fj CPLEX               Solved              11.9877ms           11.9877ms           0.0ms               242.0               
+cargo__challenge05_ CPLEX               FAILED              30.873ms            FAILED                                  -41306.0            
+train__instance.13  SCIP                TIMEOUT             
+spot5__29           SCIP                Solved              5898.1ms            5898.1ms            0.0ms               8059.0              
+spot5__54           HiGHS               Solved              6861.24ms           6861.24ms           0.0ms               37.0                
+project-planning__P HiGHS               TIMEOUT             
+cargo__challenge04_ SCIP                TIMEOUT             
+filters__dct_4_4    SCIP                TIMEOUT             
+openshop__gp10-4    SCIP                Solved              181558.0ms          181558.0ms          0.0ms               1077.0              
+train__instance.12  SCIP                TIMEOUT             
+train__instance.5   HiGHS               TIMEOUT             
+
+Iteration 2 with 207 model/solver pairs remaining 2026-11-27T17:52:50.980577Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+rcpsp-wet__j30_1_3- HiGHS               Solved              584.005ms           556.051ms           55.9072ms           93.0                
+stochastic-fjsp__fj SCIP                Solved              15.1378ms           14.4432ms           1.38917ms           242.0               
+openshop__j7per10-1 CP-SAT              Solved              216.902ms           220.378ms           6.95217ms           1000.0              
+filters__fir_1_1    HiGHS               Solved              1204.16ms           1180.63ms           47.0726ms           18.0                
+evilshop__js-brs2-5 SCIP                Solved              1261.54ms           1238.02ms           47.0402ms           77406.0             
+mrcpsp__mm_n0_n0_1_ CP-SAT              Solved              1462.93ms           1444.24ms           37.3959ms           23.0                
+project-planning__P CP-SAT              Solved              312.817ms           304.557ms           16.5183ms           17.0                
+smelt__smelt_4      HiGHS               Solved              1376.46ms           1393.24ms           33.5652ms           1043.0              
+cargo__challenge01_ HiGHS               Solved              11593.6ms           11360.6ms           466.066ms           0.0                 
+project-planning__P CP-SAT              Solved              11730.8ms           11816.6ms           171.602ms           41.0                
+rcpsp-wet__j60_19_6 CP-SAT              Solved              832.435ms           816.375ms           32.1203ms           227.0               
+rcpsp-wet__j60_36_8 SCIP                Solved              3321.86ms           3277.73ms           88.2622ms           336.0               
+cargo__challenge05_ HiGHS               Solved              23652.9ms           23453.1ms           399.695ms           2883.0              
+evilshop__js-setg2- CP-SAT              Solved              53.153ms            52.7528ms           0.800333ms          46075.0             
+stochastic-fjsp__fj SCIP                Solved              79.3418ms           77.5272ms           3.62904ms           348.0               
+evilshop__js-setg2- SCIP                Solved              1920.97ms           1854.68ms           132.583ms           46075.0             
+cargo__challenge02_ HiGHS               Solved              27461.3ms           27236.9ms           448.798ms           25.0                
+stochastic-fjsp__fj CP-SAT              Solved              2304.09ms           2345.48ms           82.7816ms           207.0               
+ship-schedule__6Shi SCIP                Solved              13736.6ms           12975.3ms           1522.6ms            607220.0            
+rcpsp-wet__j60_36_8 CP-SAT              Solved              1161.95ms           1185.53ms           47.1453ms           336.0               
+openshop__j8per0-2  CP-SAT              Solved              3791.61ms           3685.93ms           211.362ms           1052.0              
+gfd-schedule__n10f2 CP-SAT              Solved              35.6056ms           34.8974ms           1.41638ms           3.0                 
+cyclic-rcpsp__hard_ CP-SAT              Solved              393.421ms           390.652ms           5.53775ms           1425.0              
+spot5__29           CP-SAT              Solved              228.817ms           231.839ms           6.04442ms           8059.0              
+rcpsp__data_ksd15_d CP-SAT              Solved              29.876ms            31.8228ms           3.89363ms           533.0               
+flexible-jobshop__e SCIP                Solved              3988.07ms           3863.92ms           248.313ms           253.0               
+rcpsp__data_pack_pa SCIP                Solved              1167.34ms           1148.52ms           37.6451ms           41.0                
+jobshop2__la05      CP-SAT              Solved              222.882ms           227.931ms           10.0973ms           593.0               
+ship-schedule__7Shi SCIP                Solved              2946.24ms           2923.0ms            46.4725ms           699750.0            
+mrcpsp__mm_j10_j10_ HiGHS               Solved              5350.77ms           5430.27ms           158.999ms           21.0                
+spot5__54           SCIP                Solved              25907.8ms           25467.5ms           880.595ms           37.0                
+flexible-jobshop__e CP-SAT              Solved              1261.11ms           1239.57ms           43.0697ms           253.0               
+mrcpsp__mm_m1_m1_53 CP-SAT              Solved              702.432ms           692.149ms           20.5658ms           65.0                
+smelt__smelt_2      HiGHS               Solved              749.526ms           752.458ms           5.86321ms           69.0                
+cyclic-rcpsp__mediu HiGHS               Solved              15264.1ms           14957.2ms           613.854ms           585.0               
+cargo__challenge04_ CP-SAT              Solved              425.142ms           436.672ms           23.0594ms           714.0               
+openshop__gp10-4    CP-SAT              Solved              534.629ms           513.782ms           41.6939ms           1077.0              
+rcpsp__data_ksd15_d CPLEX               Solved              6.85562ms           6.45329ms           0.804666ms          513.0               
+jobshop__jobshop_la CP-SAT              Solved              10703.9ms           10591.7ms           224.363ms           1268.0              
+filters__ar_1_2     SCIP                Solved              17219.1ms           17419.2ms           400.321ms           18.0                
+stochastic-fjsp__fj CPLEX               Solved              23.1313ms           22.2464ms           1.76983ms           328.0               
+spot5__1502         CP-SAT              Solved              258.257ms           252.348ms           11.8189ms           28042.0             
+cyclic-rcpsp__mediu HiGHS               Solved              7269.66ms           6968.2ms            602.917ms           516.0               
+evilshop__js-setg2- SCIP                Solved              285.7ms             272.713ms           25.9728ms           40837.0             
+rcpsp__data_psplib_ HiGHS               Solved              5713.17ms           5467.18ms           491.985ms           85.0                
+jobshop__jobshop_vw CP-SAT              Solved              2.87317ms           2.88052ms           0.014708ms          256.0               
+filters__fir16_1_2  HiGHS               Solved              2270.24ms           2141.94ms           256.605ms           19.0                
+project-planning__P SCIP                Solved              21860.5ms           20885.6ms           1949.85ms           17.0                
+train__instance.1   HiGHS               Solved              712.701ms           682.236ms           60.9287ms           6630.0              
+jobshop2__mt06      SCIP                Solved              111.779ms           100.005ms           23.5469ms           55.0                
+rcpsp__data_pack_pa CP-SAT              Solved              244918.0ms          179375.0ms          131086.0ms          41.0                
+mrcpsp__mm_n0_n0_1_ CP-SAT              Solved              1724.88ms           1687.42ms           74.9212ms           15.0                
+jobshop__jobshop_la CP-SAT              Solved              11268.5ms           10298.1ms           1940.97ms           927.0               
+ship-schedule__4Shi HiGHS               Solved              2400.76ms           2379.51ms           42.495ms            191750.0            
+rcpsp-wet__j30_4_8- HiGHS               Solved              373.073ms           369.72ms            6.70642ms           83.0                
+rcpsp__data_ksd15_d SCIP                Solved              138.37ms            137.227ms           2.28604ms           533.0               
+jobshop2__mt06      CPLEX               Solved              18.3846ms           18.8098ms           0.850333ms          55.0                
+ship-schedule__3Shi HiGHS               Solved              826.154ms           828.292ms           4.27571ms           265650.0            
+smelt__smelt_2      CP-SAT              Solved              20.1001ms           20.6169ms           1.03363ms           69.0                
+jobshop2__la03      CP-SAT              Solved              122.69ms            113.208ms           18.9647ms           597.0               
+stochastic-fjsp__fj CPLEX               Solved              20.6897ms           19.9769ms           1.42546ms           348.0               
+jobshop2__mt10      CP-SAT              Solved              1789.4ms            1731.89ms           115.023ms           930.0               
+rcpsp-max__psp_j20_ HiGHS               Solved              78340.3ms           77460.1ms           1760.53ms           103.0               
+rcpsp__data_psplib_ CP-SAT              Solved              194.229ms           191.082ms           6.29362ms           85.0                
+rcpsp-wet__j60_19_6 SCIP                Solved              1023.57ms           929.042ms           189.047ms           227.0               
+ship-schedule__3Shi CP-SAT              Solved              491.359ms           473.035ms           36.6476ms           265650.0            
+mrcpsp__mm_n0_n0_1_ HiGHS               Solved              6442.4ms            6204.67ms           475.451ms           15.0                
+stochastic-fjsp__fj HiGHS               Solved              91.2565ms           84.4471ms           13.6187ms           242.0               
+project-planning__P HiGHS               Solved              152093.0ms          144626.0ms          14934.9ms           25.0                
+smelt__smelt_3      CP-SAT              Solved              2281.92ms           2074.61ms           414.62ms            1117.0              
+rcpsp-max__psp_j30_ CP-SAT              Solved              83668.5ms           84091.2ms           845.369ms           150.0               
+jobshop2__la04      CP-SAT              Solved              53.2099ms           57.812ms            9.20425ms           590.0               
+smelt__smelt_4      SCIP                Solved              730.402ms           681.974ms           96.8549ms           1043.0              
+rcpsp-max__psp_j20_ CP-SAT              Solved              8904.37ms           9491.17ms           1173.59ms           95.0                
+rcpsp__data_psplib_ SCIP                Solved              1885.01ms           1798.41ms           173.201ms           67.0                
+rcpsp__data_ksd15_d SCIP                Solved              11.6654ms           12.2281ms           1.12546ms           513.0               
+road-cons__road_9   CP-SAT              Solved              12513.5ms           11301.6ms           2423.74ms           3206.0              
+rcpsp__data_psplib_ CP-SAT              Solved              211.176ms           211.466ms           0.579916ms          67.0                
+gfd-schedule__n25f5 HiGHS               Solved              4411.21ms           4459.46ms           96.5037ms           5.0                 
+mrcpsp__mm_m1_m1_53 SCIP                Solved              11660.2ms           11426.0ms           468.408ms           65.0                
+cargo__challenge01_ CP-SAT              Solved              389.523ms           391.269ms           3.49133ms           0.0                 
+smelt__smelt_4      CP-SAT              Solved              41.7765ms           42.8307ms           2.10858ms           1043.0              
+jobshop2__la04      HiGHS               Solved              6283.68ms           6215.02ms           137.332ms           590.0               
+rcpsp-max__psp_j20_ CP-SAT              Solved              407.092ms           372.563ms           69.0571ms           103.0               
+project-planning__P CP-SAT              Solved              3063.06ms           3109.26ms           92.411ms            29.0                
+gfd-schedule__n25f5 CP-SAT              Solved              288.934ms           287.404ms           3.06171ms           5.0                 
+evilshop__js-setg2- HiGHS               Solved              2457.76ms           2409.76ms           96.0086ms           46075.0             
+jobshop2__la05      HiGHS               Solved              463.106ms           474.538ms           22.8641ms           593.0               
+stochastic-fjsp__fj CP-SAT              Solved              11.2693ms           11.819ms            1.09946ms           242.0               
+jobshop__jobshop_vw SCIP                Solved              4.25758ms           4.8521ms            1.18904ms           256.0               
+evilshop__js-setg2- CP-SAT              Solved              21.6851ms           22.8347ms           2.29908ms           40837.0             
+cyclic-rcpsp__mediu SCIP                Solved              10478.9ms           10067.9ms           821.86ms            585.0               
+ship-schedule__4Shi CP-SAT              Solved              353.254ms           345.92ms            14.668ms            191750.0            
+smelt__smelt_2      SCIP                Solved              1818.15ms           1831.7ms            27.0847ms           69.0                
+ship-schedule__7Shi CP-SAT              Solved              1048.7ms            1034.93ms           27.537ms            699750.0            
+spot5__503          HiGHS               Solved              82103.7ms           78512.8ms           7181.91ms           11113.0             
+rcpsp-max__psp_j30_ CP-SAT              Solved              1928.21ms           2071.06ms           285.709ms           114.0               
+filters__fir_1_1    CPLEX               Solved              70.4339ms           69.8094ms           1.24904ms           18.0                
+evilshop__js-brs2-7 SCIP                Solved              28577.9ms           27915.7ms           1324.35ms           86912.0             
+jobshop2__la03      HiGHS               Solved              28502.6ms           27912.3ms           1180.46ms           597.0               
+flexible-jobshop__m CP-SAT              Solved              993.065ms           946.719ms           92.6913ms           908.0               
+train__instance.1   SCIP                Solved              299.322ms           284.116ms           30.4107ms           6630.0              
+mrcpsp__mm_j10_j10_ SCIP                Solved              6732.08ms           6414.0ms            636.156ms           21.0                
+cyclic-rcpsp__mediu SCIP                Solved              7343.94ms           7268.48ms           150.921ms           516.0               
+filters__ar_1_2     HiGHS               Solved              34077.1ms           33372.4ms           1409.34ms           18.0                
+cargo__challenge02_ CP-SAT              Solved              346.855ms           347.078ms           0.446292ms          25.0                
+cargo__challenge05_ CP-SAT              Solved              528.667ms           562.341ms           67.3485ms           2883.0              
+rcpsp-wet__j60_19_6 HiGHS               Solved              3232.41ms           3258.18ms           51.5446ms           227.0               
+project-planning__P HiGHS               Solved              34964.4ms           34130.6ms           1667.66ms           17.0                
+filters__fir_1_1    CP-SAT              Solved              14.8912ms           16.0461ms           2.30971ms           18.0                
+spot5__1502         HiGHS               Solved              1631.82ms           1638.7ms            13.751ms            28043.0             
+mrcpsp__mm_n0_n0_1_ HiGHS               Solved              5396.19ms           5125.1ms            542.181ms           23.0                
+cyclic-rcpsp__mediu CP-SAT              Solved              63591.4ms           65051.5ms           2920.07ms           3132.0              
+stochastic-fjsp__fj SCIP                Solved              568.822ms           550.66ms            36.3243ms           108.0               
+rcpsp-wet__j30_35_9 CP-SAT              Solved              178.817ms           178.381ms           0.872417ms          104.0               
+stochastic-fjsp__fj SCIP                Solved              72.1208ms           70.8835ms           2.47442ms           328.0               
+mrcpsp__mm_m1_m1_53 HiGHS               Solved              6292.18ms           6143.62ms           297.118ms           65.0                
+road-cons__road_11  CP-SAT              Solved              31979.7ms           84219.3ms           104479.0ms          5020.0              
+cyclic-rcpsp__hard_ HiGHS               Solved              112584.0ms          111294.0ms          2580.3ms            1425.0              
+rcpsp-wet__j30_1_3- CP-SAT              Solved              255.441ms           273.859ms           36.8367ms           93.0                
+evilshop__js-setg2- HiGHS               Solved              425.887ms           428.485ms           5.19567ms           40837.0             
+cargo__challenge06_ CP-SAT              Solved              3621.69ms           3661.83ms           80.2748ms           3394.0              
+filters__fir16_1_2  CP-SAT              Solved              31.2195ms           32.9188ms           3.39867ms           19.0                
+ship-schedule__3Shi SCIP                Solved              497.736ms           498.385ms           1.29721ms           265650.0            
+gfd-schedule__n10f2 CPLEX               Solved              36.6594ms           38.4534ms           3.58796ms           3.0                 
+rcpsp__data_psplib_ SCIP                Solved              9912.5ms            9742.63ms           339.748ms           85.0                
+ship-schedule__7Shi HiGHS               Solved              2132.35ms           2157.19ms           49.6782ms           699750.0            
+openshop__j7per10-1 SCIP                Solved              228406.0ms          224448.0ms          7916.95ms           1000.0              
+cargo__challenge04_ HiGHS               Solved              15102.6ms           14847.8ms           509.528ms           714.0               
+spot5__503          CP-SAT              Solved              737.429ms           756.003ms           37.1481ms           11113.0             
+rcpsp-max__psp_j10_ SCIP                Solved              10941.6ms           10689.5ms           504.196ms           70.0                
+openshop__j7per10-1 HiGHS               Solved              26375.9ms           25462.0ms           1827.66ms           1000.0              
+jobshop__jobshop_vw HiGHS               Solved              4.15979ms           4.29533ms           0.271083ms          256.0               
+jobshop2__la04      CPLEX               Solved              619.157ms           624.473ms           10.6313ms           590.0               
+cyclic-rcpsp__mediu CP-SAT              Solved              71.21ms             74.8806ms           7.34129ms           516.0               
+road-cons__road_8   CP-SAT              Solved              2212.2ms            2133.59ms           157.214ms           3066.0              
+filters__fir_1_1    SCIP                Solved              200.811ms           195.829ms           9.96308ms           18.0                
+mrcpsp__mm_n0_n0_1_ SCIP                Solved              6833.64ms           7069.1ms            470.917ms           15.0                
+spot5__29           HiGHS               Solved              4776.54ms           4657.54ms           238.004ms           8059.0              
+rcpsp__data_psplib_ HiGHS               Solved              3151.72ms           3035.36ms           232.716ms           67.0                
+jobshop__jobshop_vw CPLEX               Solved              1.96542ms           1.68608ms           0.558667ms          256.0               
+openshop__gp10-4    HiGHS               Solved              48038.1ms           47201.8ms           1672.73ms           1077.0              
+jobshop2__la05      CPLEX               Solved              14718.9ms           14041.6ms           1354.57ms           593.0               
+gfd-schedule__n25f5 SCIP                Solved              6850.45ms           6367.86ms           965.183ms           5.0                 
+project-planning__P CP-SAT              Solved              2479.76ms           2400.3ms            158.909ms           31.0                
+rcpsp-wet__j30_35_9 SCIP                Solved              389.343ms           356.863ms           64.9602ms           104.0               
+gfd-schedule__n10f2 HiGHS               Solved              53.4128ms           50.9824ms           4.86063ms           3.0                 
+cyclic-rcpsp__mediu CP-SAT              Solved              96.5763ms           92.697ms            7.7585ms            585.0               
+ship-schedule__4Shi SCIP                Solved              711.198ms           667.64ms            87.117ms            191750.0            
+ship-schedule__3Shi HiGHS               Solved              908.367ms           874.061ms           68.6119ms           172500.0            
+evilshop__js-setg2- CP-SAT              Solved              315.7ms             299.782ms           31.8368ms           60140.0             
+rcpsp-wet__j60_36_8 HiGHS               Solved              4871.12ms           4475.61ms           791.026ms           336.0               
+ship-schedule__6Shi HiGHS               Solved              5725.47ms           5465.59ms           519.77ms            607220.0            
+gfd-schedule__n10f2 SCIP                Solved              365.456ms           341.918ms           47.0756ms           3.0                 
+project-planning__P CP-SAT              Solved              1209.48ms           1122.34ms           174.275ms           25.0                
+cyclic-rcpsp__easy_ CP-SAT              Solved              403.32ms            380.86ms            44.9205ms           1920.0              
+jobshop2__mt06      HiGHS               Solved              177.03ms            169.468ms           15.1233ms           55.0                
+rcpsp-max__psp_j10_ CP-SAT              Solved              263.37ms            249.163ms           28.4148ms           70.0                
+stochastic-fjsp__fj HiGHS               Solved              95.3861ms           91.5606ms           7.65096ms           348.0               
+cyclic-rcpsp__easy_ SCIP                Solved              179948.0ms          179542.0ms          811.211ms           1920.0              
+jobshop__jobshop_or CP-SAT              Solved              5179.63ms           4576.86ms           1205.53ms           1010.0              
+filters__fir16_1_2  SCIP                Solved              3419.21ms           3266.22ms           305.99ms            19.0                
+jobshop2__la03      SCIP                Solved              38242.7ms           37172.6ms           2140.32ms           597.0               
+stochastic-fjsp__fj CP-SAT              Solved              15.452ms            15.929ms            0.954125ms          348.0               
+train__instance.13  CP-SAT              Solved              122330.0ms          150346.0ms          56032.5ms           74870.0             
+rcpsp__data_ksd15_d CP-SAT              Solved              7.35275ms           7.71046ms           0.715417ms          513.0               
+flexible-jobshop__e HiGHS               Solved              6074.57ms           5617.71ms           913.723ms           253.0               
+jobshop2__la04      SCIP                Solved              12007.4ms           11101.7ms           1811.4ms            590.0               
+jobshop2__mt06      CP-SAT              Solved              12.1028ms           12.1639ms           0.12225ms           55.0                
+stochastic-fjsp__fj HiGHS               Solved              66.8326ms           67.4916ms           1.31792ms           328.0               
+stochastic-fjsp__fj CP-SAT              Solved              12.8305ms           13.6926ms           1.72421ms           328.0               
+rcpsp-max__psp_j10_ HiGHS               Solved              8095.94ms           7852.17ms           487.527ms           70.0                
+evilshop__js-brs2-7 CP-SAT              Solved              209.837ms           242.404ms           65.1343ms           86912.0             
+cargo__challenge05_ SCIP                Solved              83273.7ms           80947.9ms           4651.66ms           2883.0              
+rcpsp-wet__j30_1_3- SCIP                Solved              557.593ms           555.611ms           3.96312ms           93.0                
+spot5__1502         SCIP                Solved              1083.37ms           1050.48ms           65.7908ms           28042.0             
+jobshop2__la03      CPLEX               Solved              1168.1ms            1124.58ms           87.0456ms           597.0               
+stochastic-fjsp__fj HiGHS               Solved              551.098ms           531.572ms           39.0515ms           108.0               
+ship-schedule__3Shi CP-SAT              Solved              215.689ms           211.91ms            7.55875ms           172500.0            
+smelt__smelt_2      CPLEX               Solved              89.3114ms           86.3872ms           5.84842ms           69.0                
+rcpsp-wet__j30_4_8- CP-SAT              Solved              186.538ms           186.181ms           0.712625ms          83.0                
+cyclic-rcpsp__easy_ HiGHS               Solved              11098.3ms           10751.6ms           693.378ms           1920.0              
+spot5__54           CP-SAT              Solved              166.391ms           159.968ms           12.8458ms           37.0                
+ship-schedule__6Shi CP-SAT              Solved              1448.42ms           1366.55ms           163.724ms           607220.0            
+evilshop__js-brs2-5 CP-SAT              Solved              58.9282ms           60.0545ms           2.25254ms           77406.0             
+train__instance.1   CP-SAT              Solved              78.8538ms           82.4741ms           7.24058ms           6630.0              
+cyclic-rcpsp__hard_ SCIP                Solved              153459.0ms          146261.0ms          14394.9ms           1425.0              
+mrcpsp__mm_n0_n0_1_ SCIP                Solved              6285.86ms           6343.91ms           116.099ms           23.0                
+rcpsp__data_ksd15_d HiGHS               Solved              14.1634ms           15.0329ms           1.73888ms           513.0               
+gfd-schedule__n30f3 CP-SAT              Solved              386.631ms           389.93ms            6.59708ms           8.0                 
+evilshop__js-brs2-5 HiGHS               Solved              983.568ms           983.113ms           0.910626ms          77406.0             
+rcpsp-wet__j30_4_8- SCIP                Solved              314.106ms           319.645ms           11.0788ms           83.0                
+ship-schedule__3Shi SCIP                Solved              608.922ms           589.267ms           39.3113ms           172500.0            
+rcpsp-wet__j30_35_9 HiGHS               Solved              588.909ms           603.869ms           29.9199ms           104.0               
+mrcpsp__mm_j10_j10_ CP-SAT              Solved              2396.56ms           2458.7ms            124.266ms           21.0                
+gfd-schedule__n30f3 HiGHS               Solved              15051.5ms           14655.7ms           791.732ms           8.0                 
+rcpsp__data_ksd15_d HiGHS               Solved              3772.79ms           3820.04ms           94.4819ms           533.0               
+stochastic-fjsp__fj CP-SAT              Solved              32.8334ms           32.9255ms           0.184124ms          108.0               
+stochastic-fjsp__fj CPLEX               Solved              12.4415ms           12.2146ms           0.453793ms          242.0               
+filters__ar_1_2     CP-SAT              Solved              1080.29ms           1240.67ms           320.756ms           18.0                
+rcpsp__data_pack_pa HiGHS               Solved              5348.86ms           5319.31ms           59.0847ms           41.0                
+train__instance.12  CP-SAT              Solved              276435.0ms          263016.0ms          26836.3ms           73020.0             
+spot5__29           SCIP                Solved              6166.57ms           6032.34ms           268.478ms           8059.0              
+spot5__54           HiGHS               Solved              6855.6ms            6858.42ms           5.63287ms           37.0                
+project-planning__P SCIP                Solved              57473.2ms           64380.3ms           13814.2ms           25.0                
+evilshop__js-brs2-7 HiGHS               Solved              48967.7ms           52288.9ms           6642.52ms           86912.0             
+openshop__gp10-4    SCIP                Solved              163249.0ms          172404.0ms          18308.9ms           1077.0              
+
+Iteration 3 with 207 model/solver pairs remaining 2026-11-27T18:12:28.372794Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+openshop__j7per10-1 CP-SAT              Solved              102.804ms           216.902ms           121.051ms           1000.0              
+stochastic-fjsp__fj SCIP                Stable              12.6256ms           13.7486ms           2.51217ms           242.0               
+rcpsp-wet__j30_1_3- HiGHS               Stable              537.457ms           537.457ms           55.9072ms           93.0                
+evilshop__js-brs2-5 SCIP                Stable              1218.63ms           1218.63ms           47.0402ms           77406.0             
+filters__fir_1_1    HiGHS               Stable              1190.58ms           1190.58ms           47.0726ms           18.0                
+mrcpsp__mm_n0_n0_1_ CP-SAT              Stable              1431.53ms           1431.53ms           37.3959ms           23.0                
+project-planning__P CP-SAT              Stable              309.558ms           309.558ms           16.5183ms           17.0                
+smelt__smelt_4      HiGHS               Stable              1336.2ms            1376.46ms           73.8257ms           1043.0              
+cargo__challenge01_ HiGHS               Stable              11477.3ms           11477.3ms           466.066ms           0.0                 
+project-planning__P CP-SAT              Stable              11192.3ms           11730.8ms           710.035ms           41.0                
+rcpsp-wet__j60_19_6 CP-SAT              Stable              869.193ms           832.435ms           68.8783ms           227.0               
+rcpsp-wet__j60_36_8 SCIP                Stable              3215.95ms           3233.6ms            105.903ms           336.0               
+cargo__challenge05_ HiGHS               Stable              23502.4ms           23502.4ms           399.695ms           2883.0              
+evilshop__js-setg2- CP-SAT              Stable              47.8794ms           52.3526ms           5.27358ms           46075.0             
+stochastic-fjsp__fj SCIP                Stable              73.9153ms           75.7127ms           5.42642ms           348.0               
+evilshop__js-setg2- SCIP                Stable              1893.1ms            1893.1ms            132.583ms           46075.0             
+cargo__challenge02_ HiGHS               Stable              27215.8ms           27215.8ms           448.798ms           25.0                
+ship-schedule__6Shi SCIP                Stable              13449.4ms           13449.4ms           1522.6ms            607220.0            
+stochastic-fjsp__fj CP-SAT              Stable              2262.23ms           2304.09ms           124.635ms           207.0               
+rcpsp-wet__j60_36_8 CP-SAT              Stable              1186.38ms           1186.38ms           47.1453ms           336.0               
+openshop__j8per0-2  CP-SAT              Stable              3713.8ms            3713.8ms            211.362ms           1052.0              
+gfd-schedule__n10f2 CP-SAT              Stable              32.1634ms           34.1893ms           3.44221ms           3.0                 
+flexible-jobshop__e SCIP                Stable              3952.99ms           3952.99ms           248.313ms           253.0               
+spot5__29           CP-SAT              Stable              226.077ms           228.817ms           8.78421ms           8059.0              
+rcpsp__data_ksd15_d CP-SAT              Stable              28.9519ms           29.876ms            4.81767ms           533.0               
+cyclic-rcpsp__hard_ CP-SAT              Stable              375.762ms           387.883ms           17.6589ms           1425.0              
+rcpsp__data_pack_pa SCIP                Stable              1123.2ms            1129.7ms            44.1385ms           41.0                
+jobshop2__la05      CP-SAT              Stable              247.32ms            232.979ms           24.438ms            593.0               
+ship-schedule__7Shi SCIP                Stable              2862.23ms           2899.77ms           84.0095ms           699750.0            
+spot5__54           SCIP                Stable              25667.4ms           25667.4ms           880.595ms           37.0                
+mrcpsp__mm_j10_j10_ HiGHS               Stable              5242.95ms           5350.77ms           266.828ms           21.0                
+flexible-jobshop__e CP-SAT              Stable              1242.19ms           1242.19ms           43.0697ms           253.0               
+mrcpsp__mm_m1_m1_53 CP-SAT              Stable              708.38ms            702.432ms           26.5143ms           65.0                
+smelt__smelt_2      HiGHS               Stable              755.929ms           755.389ms           6.40308ms           69.0                
+cyclic-rcpsp__mediu HiGHS               Stable              15019.7ms           15019.7ms           613.854ms           585.0               
+cargo__challenge04_ CP-SAT              Stable              392.595ms           425.142ms           55.6071ms           714.0               
+openshop__gp10-4    CP-SAT              Stable              494.378ms           494.378ms           41.6939ms           1077.0              
+rcpsp__data_ksd15_d CPLEX               Stable              5.62475ms           6.05096ms           1.23088ms           513.0               
+jobshop__jobshop_la CP-SAT              Stable              9287.91ms           9327.58ms           1980.64ms           927.0               
+jobshop__jobshop_la CP-SAT              Stable              11176.2ms           10703.9ms           696.707ms           1268.0              
+stochastic-fjsp__fj CPLEX               Stable              21.6676ms           21.6676ms           1.76983ms           328.0               
+filters__ar_1_2     SCIP                Stable              17124.0ms           17219.1ms           495.454ms           18.0                
+spot5__1502         CP-SAT              Stable              247.538ms           247.538ms           11.8189ms           28042.0             
+evilshop__js-setg2- SCIP                Stable              268.902ms           268.902ms           25.9728ms           40837.0             
+rcpsp__data_psplib_ HiGHS               Stable              5521.14ms           5521.14ms           491.985ms           85.0                
+jobshop__jobshop_vw CP-SAT              Stable              3.1225ms            2.88788ms           0.249333ms          256.0               
+cyclic-rcpsp__mediu HiGHS               Stable              6964.12ms           6964.12ms           602.917ms           516.0               
+filters__fir16_1_2  HiGHS               Stable              2105.93ms           2105.93ms           256.605ms           19.0                
+train__instance.1   HiGHS               Stable              635.526ms           651.772ms           77.1746ms           6630.0              
+jobshop2__mt06      SCIP                Solved              92.9969ms           92.9969ms           23.5469ms           55.0                
+project-planning__P SCIP                Stable              21240.1ms           21240.1ms           1949.85ms           17.0                
+mrcpsp__mm_n0_n0_1_ CP-SAT              Stable              1804.46ms           1724.88ms           154.504ms           15.0                
+rcpsp__data_pack_pa CP-SAT              UNSTABLE            
+ship-schedule__4Shi HiGHS               Stable              2451.73ms           2400.76ms           93.4667ms           191750.0            
+rcpsp-wet__j30_4_8- HiGHS               Stable              365.277ms           366.367ms           7.79667ms           83.0                
+rcpsp__data_ksd15_d SCIP                Stable              144.25ms            138.37ms            8.16567ms           533.0               
+jobshop2__mt06      CPLEX               Stable              19.0235ms           19.0235ms           0.850333ms          55.0                
+ship-schedule__3Shi HiGHS               Stable              883.261ms           830.429ms           57.1068ms           265650.0            
+smelt__smelt_2      CP-SAT              Stable              21.0729ms           21.0729ms           1.03363ms           69.0                
+jobshop2__la03      CP-SAT              Solved              79.2237ms           103.725ms           43.4664ms           597.0               
+stochastic-fjsp__fj CPLEX               Stable              20.3225ms           20.3225ms           1.42546ms           348.0               
+rcpsp-max__psp_j20_ CP-SAT              Solved              11567.5ms           10078.0ms           2663.12ms           95.0                
+jobshop2__mt10      CP-SAT              Stable              1963.6ms            1789.4ms            289.221ms           930.0               
+rcpsp__data_psplib_ CP-SAT              Stable              204.048ms           194.229ms           16.1132ms           85.0                
+rcpsp-wet__j60_19_6 SCIP                Solved              926.844ms           926.844ms           189.047ms           227.0               
+ship-schedule__3Shi CP-SAT              Stable              493.773ms           491.359ms           39.0622ms           265650.0            
+rcpsp-max__psp_j20_ HiGHS               Stable              76633.5ms           76633.5ms           1760.53ms           103.0               
+stochastic-fjsp__fj HiGHS               Stable              83.0196ms           83.0196ms           13.6187ms           242.0               
+project-planning__P HiGHS               Stable              152141.0ms          152093.0ms          14982.9ms           25.0                
+mrcpsp__mm_n0_n0_1_ HiGHS               Stable              6544.02ms           6442.4ms            577.07ms            15.0                
+smelt__smelt_3      CP-SAT              Solved              1689.19ms           1867.3ms            592.735ms           1117.0              
+jobshop2__la04      CP-SAT              Stable              61.0228ms           61.0228ms           9.20425ms           590.0               
+smelt__smelt_4      SCIP                Stable              696.618ms           696.618ms           96.8549ms           1043.0              
+rcpsp__data_psplib_ SCIP                Stable              1918.34ms           1885.01ms           206.526ms           67.0                
+gfd-schedule__n25f5 HiGHS               Stable              4791.1ms            4507.71ms           379.895ms           5.0                 
+rcpsp__data_ksd15_d SCIP                Stable              12.5597ms           12.5597ms           1.12546ms           513.0               
+rcpsp__data_psplib_ CP-SAT              Stable              214.945ms           211.756ms           3.76908ms           67.0                
+mrcpsp__mm_m1_m1_53 SCIP                Stable              11901.5ms           11660.2ms           709.721ms           65.0                
+rcpsp-max__psp_j30_ CP-SAT              Stable              68728.4ms           83668.5ms           15785.5ms           150.0               
+jobshop2__la04      HiGHS               Stable              6819.59ms           6283.68ms           673.239ms           590.0               
+cargo__challenge01_ CP-SAT              Stable              418.396ms           393.014ms           28.8725ms           0.0                 
+smelt__smelt_4      CP-SAT              Stable              44.3757ms           43.885ms            2.59925ms           1043.0              
+project-planning__P CP-SAT              Stable              3379.56ms           3155.47ms           316.5ms             29.0                
+rcpsp-max__psp_j20_ CP-SAT              Solved              459.258ms           407.092ms           121.224ms           103.0               
+gfd-schedule__n25f5 CP-SAT              Stable              310.672ms           288.934ms           24.7989ms           5.0                 
+spot5__503          HiGHS               Stable              81621.1ms           81621.1ms           7181.91ms           11113.0             
+evilshop__js-setg2- HiGHS               Stable              2540.54ms           2457.76ms           178.788ms           46075.0             
+cyclic-rcpsp__mediu SCIP                Stable              10869.4ms           10478.9ms           1212.41ms           585.0               
+stochastic-fjsp__fj CP-SAT              Stable              11.3072ms           11.3072ms           1.09946ms           242.0               
+jobshop__jobshop_vw SCIP                Solved              4.70108ms           4.70108ms           1.18904ms           256.0               
+evilshop__js-setg2- CP-SAT              Stable              20.561ms            21.6851ms           3.42317ms           40837.0             
+jobshop2__la05      HiGHS               Stable              474.361ms           474.361ms           22.8641ms           593.0               
+ship-schedule__4Shi CP-SAT              Stable              354.371ms           353.254ms           15.7854ms           191750.0            
+smelt__smelt_2      SCIP                Stable              1912.94ms           1845.24ms           94.7869ms           69.0                
+ship-schedule__7Shi CP-SAT              Stable              1104.62ms           1048.7ms            83.4559ms           699750.0            
+evilshop__js-brs2-7 SCIP                Stable              30903.4ms           28577.9ms           3649.87ms           86912.0             
+road-cons__road_9   CP-SAT              Solved              10365.3ms           10365.3ms           2423.74ms           3206.0              
+filters__fir_1_1    CPLEX               Stable              72.4701ms           70.4339ms           3.28521ms           18.0                
+jobshop2__la03      HiGHS               Stable              29529.4ms           28502.6ms           2207.3ms            597.0               
+flexible-jobshop__m CP-SAT              Stable              1039.78ms           993.065ms           139.408ms           908.0               
+train__instance.1   SCIP                Stable              280.746ms           280.746ms           30.4107ms           6630.0              
+rcpsp-max__psp_j30_ CP-SAT              Solved              2791.94ms           2213.92ms           863.731ms           114.0               
+mrcpsp__mm_j10_j10_ SCIP                Stable              6344.32ms           6344.32ms           636.156ms           21.0                
+cyclic-rcpsp__mediu SCIP                Stable              7382.97ms           7343.94ms           189.947ms           516.0               
+filters__ar_1_2     HiGHS               Stable              34526.0ms           34077.1ms           1858.3ms            18.0                
+cargo__challenge02_ CP-SAT              Stable              367.589ms           347.301ms           20.7342ms           25.0                
+cargo__challenge05_ CP-SAT              Stable              585.407ms           585.407ms           67.3485ms           2883.0              
+cyclic-rcpsp__mediu CP-SAT              Solved              47689.1ms           63591.4ms           18822.4ms           3132.0              
+rcpsp-wet__j60_19_6 HiGHS               Stable              3279.78ms           3279.78ms           51.5446ms           227.0               
+filters__fir_1_1    CP-SAT              Stable              14.3877ms           14.8912ms           2.81325ms           18.0                
+project-planning__P HiGHS               Stable              34701.6ms           34701.6ms           1667.66ms           17.0                
+spot5__1502         HiGHS               Stable              1536.42ms           1631.82ms           109.148ms           28043.0             
+mrcpsp__mm_n0_n0_1_ HiGHS               Stable              5245.3ms            5245.3ms            542.181ms           23.0                
+stochastic-fjsp__fj SCIP                Stable              570.691ms           568.822ms           38.1937ms           108.0               
+rcpsp-wet__j30_35_9 CP-SAT              Stable              178.657ms           178.657ms           0.872417ms          104.0               
+stochastic-fjsp__fj SCIP                Stable              71.4758ms           71.4758ms           2.47442ms           328.0               
+mrcpsp__mm_m1_m1_53 HiGHS               Stable              6094.42ms           6094.42ms           297.118ms           65.0                
+cargo__challenge06_ CP-SAT              Stable              3598.38ms           3621.69ms           103.589ms           3394.0              
+rcpsp__data_psplib_ SCIP                Stable              10142.3ms           9912.5ms            569.587ms           85.0                
+rcpsp-wet__j30_1_3- CP-SAT              Stable              251.021ms           255.441ms           41.2565ms           93.0                
+evilshop__js-setg2- HiGHS               Stable              414.938ms           425.887ms           16.1442ms           40837.0             
+cyclic-rcpsp__hard_ HiGHS               Stable              112644.0ms          112584.0ms          2639.85ms           1425.0              
+filters__fir16_1_2  CP-SAT              Stable              32.1062ms           32.1062ms           3.39867ms           19.0                
+ship-schedule__3Shi SCIP                Stable              519.301ms           499.033ms           21.5647ms           265650.0            
+gfd-schedule__n10f2 CPLEX               Stable              37.7465ms           37.7465ms           3.58796ms           3.0                 
+openshop__j7per10-1 HiGHS               Stable              26057.5ms           26057.5ms           1827.66ms           1000.0              
+openshop__j7per10-1 SCIP                Stable              227943.0ms          227943.0ms          7916.95ms           1000.0              
+ship-schedule__7Shi HiGHS               Stable              2337.33ms           2182.02ms           204.981ms           699750.0            
+cargo__challenge04_ HiGHS               Stable              15047.4ms           15047.4ms           509.528ms           714.0               
+rcpsp-max__psp_j10_ SCIP                Stable              11517.5ms           10941.6ms           1080.04ms           70.0                
+spot5__503          CP-SAT              Stable              777.009ms           774.577ms           39.5798ms           11113.0             
+jobshop2__la04      CPLEX               Stable              647.788ms           629.788ms           28.6314ms           590.0               
+jobshop__jobshop_vw HiGHS               Stable              4.43579ms           4.43088ms           0.276ms             256.0               
+openshop__gp10-4    HiGHS               Stable              47045.7ms           47045.7ms           1672.73ms           1077.0              
+cyclic-rcpsp__mediu CP-SAT              Stable              78.2684ms           78.2684ms           7.34129ms           516.0               
+mrcpsp__mm_n0_n0_1_ SCIP                Stable              7215.35ms           7215.35ms           470.917ms           15.0                
+filters__fir_1_1    SCIP                Stable              216.591ms           200.811ms           25.7433ms           18.0                
+road-cons__road_8   CP-SAT              Stable              2266.07ms           2212.2ms            211.081ms           3066.0              
+road-cons__road_11  CP-SAT              Solved              101654.0ms          101654.0ms          104479.0ms          5020.0              
+spot5__29           HiGHS               Stable              4848.83ms           4776.54ms           310.287ms           8059.0              
+jobshop__jobshop_vw CPLEX               Solved              1.74225ms           1.74225ms           0.558667ms          256.0               
+rcpsp__data_psplib_ HiGHS               Stable              3466.33ms           3151.72ms           547.328ms           67.0                
+gfd-schedule__n25f5 SCIP                Stable              7037.73ms           6850.45ms           1152.46ms           5.0                 
+project-planning__P CP-SAT              Stable              2621.96ms           2479.76ms           301.109ms           31.0                
+rcpsp-wet__j30_35_9 SCIP                Stable              397.272ms           389.343ms           72.8892ms           104.0               
+gfd-schedule__n10f2 HiGHS               Stable              54.8397ms           53.4128ms           6.28758ms           3.0                 
+ship-schedule__4Shi SCIP                Solved              791.291ms           711.198ms           167.21ms            191750.0            
+cyclic-rcpsp__mediu CP-SAT              Stable              86.3302ms           88.8178ms           10.2461ms           585.0               
+jobshop2__la05      CPLEX               Stable              15169.3ms           14718.9ms           1805.03ms           593.0               
+ship-schedule__3Shi HiGHS               Stable              932.884ms           908.367ms           93.1283ms           172500.0            
+evilshop__js-setg2- CP-SAT              Solved              395.141ms           315.7ms             111.277ms           60140.0             
+rcpsp-wet__j60_36_8 HiGHS               Solved              5058.03ms           4871.12ms           977.933ms           336.0               
+ship-schedule__6Shi HiGHS               Stable              5649.55ms           5649.55ms           519.77ms            607220.0            
+gfd-schedule__n10f2 SCIP                Stable              362.236ms           362.236ms           47.0756ms           3.0                 
+project-planning__P CP-SAT              Stable              1207.16ms           1207.16ms           174.275ms           25.0                
+cyclic-rcpsp__easy_ CP-SAT              Stable              406.508ms           403.32ms            48.1082ms           1920.0              
+jobshop2__mt06      HiGHS               Stable              181.133ms           177.03ms            19.226ms            55.0                
+rcpsp-max__psp_j10_ CP-SAT              Stable              272.113ms           263.37ms            37.1574ms           70.0                
+stochastic-fjsp__fj HiGHS               Stable              97.8985ms           95.3861ms           10.1634ms           348.0               
+cyclic-rcpsp__easy_ SCIP                Stable              183176.0ms          179948.0ms          4039.75ms           1920.0              
+jobshop__jobshop_or CP-SAT              Solved              5059.03ms           5059.03ms           1205.53ms           1010.0              
+filters__fir16_1_2  SCIP                Stable              3437.01ms           3419.21ms           323.79ms            19.0                
+jobshop2__la03      SCIP                Stable              38043.7ms           38043.7ms           2140.32ms           597.0               
+stochastic-fjsp__fj CP-SAT              Stable              15.7102ms           15.7102ms           0.954125ms          348.0               
+train__instance.13  CP-SAT              Solved              121838.0ms          122330.0ms          56524.3ms           74870.0             
+rcpsp__data_ksd15_d CP-SAT              Stable              7.09438ms           7.35275ms           0.973792ms          513.0               
+flexible-jobshop__e HiGHS               Stable              5985.43ms           5985.43ms           913.723ms           253.0               
+jobshop2__la04      SCIP                Stable              11785.5ms           11785.5ms           1811.4ms            590.0               
+jobshop2__mt06      CP-SAT              Stable              11.5305ms           12.1028ms           0.694583ms          55.0                
+stochastic-fjsp__fj HiGHS               Stable              67.8789ms           67.8789ms           1.31792ms           328.0               
+stochastic-fjsp__fj CP-SAT              Stable              12.1585ms           12.8305ms           2.39625ms           328.0               
+rcpsp-max__psp_j10_ HiGHS               Stable              7995.91ms           7995.91ms           487.527ms           70.0                
+evilshop__js-brs2-7 CP-SAT              Solved              258.403ms           258.403ms           65.1343ms           86912.0             
+rcpsp-wet__j30_1_3- SCIP                Stable              546.956ms           553.63ms            10.6366ms           93.0                
+spot5__1502         SCIP                Stable              1024.56ms           1024.56ms           65.7908ms           28042.0             
+cargo__challenge05_ SCIP                Stable              83464.0ms           83273.7ms           4841.92ms           2883.0              
+jobshop2__la03      CPLEX               Stable              1114.4ms            1114.4ms            87.0456ms           597.0               
+stochastic-fjsp__fj HiGHS               Stable              534.958ms           534.958ms           39.0515ms           108.0               
+ship-schedule__3Shi CP-SAT              Stable              217.986ms           215.689ms           9.85513ms           172500.0            
+smelt__smelt_2      CPLEX               Stable              90.551ms            89.3114ms           7.08808ms           69.0                
+rcpsp-wet__j30_4_8- CP-SAT              Stable              184.322ms           185.825ms           2.21562ms           83.0                
+cyclic-rcpsp__easy_ HiGHS               Stable              10895.4ms           10895.4ms           693.378ms           1920.0              
+spot5__54           CP-SAT              Stable              162.314ms           162.314ms           12.8458ms           37.0                
+ship-schedule__6Shi CP-SAT              Stable              1411.54ms           1411.54ms           163.724ms           607220.0            
+evilshop__js-brs2-5 CP-SAT              Stable              62.2797ms           61.1808ms           3.35142ms           77406.0             
+train__instance.1   CP-SAT              Stable              83.3927ms           83.3927ms           7.24058ms           6630.0              
+cyclic-rcpsp__hard_ SCIP                Stable              152779.0ms          152779.0ms          14394.9ms           1425.0              
+gfd-schedule__n30f3 CP-SAT              Stable              390.161ms           390.161ms           6.59708ms           8.0                 
+rcpsp__data_ksd15_d HiGHS               Stable              14.7048ms           14.7048ms           1.73888ms           513.0               
+mrcpsp__mm_n0_n0_1_ SCIP                Stable              6331.17ms           6331.17ms           116.099ms           23.0                
+evilshop__js-brs2-5 HiGHS               Stable              991.658ms           983.568ms           9.00025ms           77406.0             
+rcpsp-wet__j30_4_8- SCIP                Stable              330.385ms           325.185ms           16.2787ms           83.0                
+ship-schedule__3Shi SCIP                Stable              583.07ms            583.07ms            39.3113ms           172500.0            
+rcpsp-wet__j30_35_9 HiGHS               Stable              557.45ms            588.909ms           61.3798ms           104.0               
+mrcpsp__mm_j10_j10_ CP-SAT              Stable              2351.88ms           2396.56ms           168.95ms            21.0                
+rcpsp__data_ksd15_d HiGHS               Stable              3768.97ms           3772.79ms           98.3021ms           533.0               
+gfd-schedule__n30f3 HiGHS               Stable              14868.4ms           14868.4ms           791.732ms           8.0                 
+stochastic-fjsp__fj CP-SAT              Stable              30.7491ms           32.8334ms           2.26846ms           108.0               
+stochastic-fjsp__fj CPLEX               Stable              11.898ms            11.9877ms           0.543501ms          242.0               
+filters__ar_1_2     CP-SAT              Solved              1207.73ms           1207.73ms           320.756ms           18.0                
+rcpsp__data_pack_pa HiGHS               Stable              5332.56ms           5332.56ms           59.0847ms           41.0                
+train__instance.12  CP-SAT              Stable              270870.0ms          270870.0ms          26836.3ms           73020.0             
+spot5__29           SCIP                Stable              5831.54ms           5898.1ms            335.032ms           8059.0              
+spot5__54           HiGHS               Stable              6700.66ms           6855.6ms            160.58ms            37.0                
+evilshop__js-brs2-7 HiGHS               Stable              52408.1ms           52408.1ms           6642.52ms           86912.0             
+project-planning__P SCIP                Solved              57578.4ms           57578.4ms           13814.2ms           25.0                
+openshop__gp10-4    SCIP                Stable              161576.0ms          163249.0ms          19982.1ms           1077.0              
+
+Iteration 4 with 21 model/solver pairs remaining 2026-11-27T18:32:03.327367Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+jobshop2__mt06      SCIP                Stable              92.0079ms           92.9969ms           19.7709ms           55.0                
+jobshop2__la03      CP-SAT              Solved              96.007ms            96.007ms            43.4664ms           597.0               
+openshop__j7per10-1 CP-SAT              Solved              154.866ms           154.866ms           114.099ms           1000.0              
+rcpsp-max__psp_j20_ CP-SAT              Stable              391.556ms           407.092ms           67.7029ms           103.0               
+jobshop__jobshop_vw SCIP                Stable              3.92992ms           4.25758ms           0.771167ms          256.0               
+rcpsp-wet__j60_19_6 SCIP                Stable              877.831ms           926.844ms           145.734ms           227.0               
+smelt__smelt_3      CP-SAT              Solved              1852.54ms           1852.54ms           592.735ms           1117.0              
+road-cons__road_9   CP-SAT              Stable              11932.5ms           11932.5ms           2148.16ms           3206.0              
+jobshop__jobshop_vw CPLEX               Stable              1.66496ms           1.74225ms           0.300459ms          256.0               
+rcpsp-max__psp_j20_ CP-SAT              Solved              12403.0ms           11567.5ms           3498.67ms           95.0                
+ship-schedule__4Shi SCIP                Stable              798.329ms           791.291ms           87.1307ms           191750.0            
+evilshop__js-setg2- CP-SAT              Solved              315.089ms           315.7ms             80.052ms            60140.0             
+jobshop__jobshop_or CP-SAT              Stable              5159.11ms           5159.11ms           120.6ms             1010.0              
+rcpsp-wet__j60_36_8 HiGHS               Stable              5147.11ms           5058.03ms           275.984ms           336.0               
+evilshop__js-brs2-7 CP-SAT              Solved              289.168ms           258.403ms           79.3314ms           86912.0             
+filters__ar_1_2     CP-SAT              Solved              1428.11ms           1207.73ms           347.82ms            18.0                
+train__instance.13  CP-SAT              Solved              173425.0ms          122330.0ms          51587.6ms           74870.0             
+rcpsp-max__psp_j30_ CP-SAT              Solved              2088.37ms           2088.37ms           863.731ms           114.0               
+cyclic-rcpsp__mediu CP-SAT              Solved              68345.6ms           63591.4ms           20656.5ms           3132.0              
+road-cons__road_11  CP-SAT              Solved              65832.6ms           65832.6ms           69673.8ms           5020.0              
+project-planning__P SCIP                Stable              57948.7ms           57578.4ms           475.476ms           25.0                
+
+Iteration 5 with 11 model/solver pairs remaining 2026-11-27T18:37:17.181149Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+jobshop2__la03      CP-SAT              Solved              115.965ms           96.007ms            36.7409ms           597.0               
+openshop__j7per10-1 CP-SAT              Solved              197.419ms           154.866ms           94.6159ms           1000.0              
+smelt__smelt_3      CP-SAT              Stable              1782.66ms           1782.66ms           163.352ms           1117.0              
+evilshop__js-setg2- CP-SAT              Solved              302.97ms            315.089ms           92.1708ms           60140.0             
+evilshop__js-brs2-7 CP-SAT              Stable              241.037ms           258.403ms           48.1313ms           86912.0             
+filters__ar_1_2     CP-SAT              Stable              1401.41ms           1401.41ms           220.379ms           18.0                
+rcpsp-max__psp_j30_ CP-SAT              Solved              2487.68ms           2487.68ms           703.565ms           114.0               
+train__instance.13  CP-SAT              Solved              139770.0ms          139770.0ms          51587.6ms           74870.0             
+road-cons__road_11  CP-SAT              Solved              168865.0ms          101654.0ms          103033.0ms          5020.0              
+cyclic-rcpsp__mediu CP-SAT              Solved              70302.5ms           68345.6ms           22613.4ms           3132.0              
+rcpsp-max__psp_j20_ CP-SAT              Solved              8269.26ms           11567.5ms           4133.78ms           95.0                
+
+Iteration 6 with 8 model/solver pairs remaining 2026-11-27T18:41:43.239874Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+openshop__j7per10-1 CP-SAT              Solved              207.436ms           197.419ms           52.5704ms           1000.0              
+jobshop2__la03      CP-SAT              Solved              121.481ms           115.965ms           25.4742ms           597.0               
+evilshop__js-setg2- CP-SAT              Stable              348.194ms           315.089ms           45.2237ms           60140.0             
+rcpsp-max__psp_j30_ CP-SAT              Solved              2869.9ms            2487.68ms           781.525ms           114.0               
+rcpsp-max__psp_j20_ CP-SAT              Solved              8960.3ms            8960.3ms            4133.78ms           95.0                
+train__instance.13  CP-SAT              Solved              123521.0ms          139770.0ms          49904.0ms           74870.0             
+road-cons__road_11  CP-SAT              Solved              72507.7ms           72507.7ms           103033.0ms          5020.0              
+cyclic-rcpsp__mediu CP-SAT              Solved              51466.1ms           68345.6ms           18836.4ms           3132.0              
+
+Iteration 7 with 7 model/solver pairs remaining 2026-11-27T18:46:05.507955Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+jobshop2__la03      CP-SAT              Solved              74.6153ms           115.965ms           46.866ms            597.0               
+openshop__j7per10-1 CP-SAT              Solved              255.525ms           207.436ms           58.1058ms           1000.0              
+rcpsp-max__psp_j30_ CP-SAT              Stable              2575.66ms           2575.66ms           382.216ms           114.0               
+rcpsp-max__psp_j20_ CP-SAT              Solved              5622.63ms           8269.26ms           3337.67ms           95.0                
+train__instance.13  CP-SAT              Solved              163506.0ms          139770.0ms          39984.2ms           74870.0             
+road-cons__road_11  CP-SAT              Solved              199814.0ms          168865.0ms          127306.0ms          5020.0              
+cyclic-rcpsp__mediu CP-SAT              Solved              54241.6ms           54241.6ms           18836.4ms           3132.0              
+
+Iteration 8 with 6 model/solver pairs remaining 2026-11-27T18:50:11.826024Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+jobshop2__la03      CP-SAT              Solved              102.065ms           102.065ms           46.866ms            597.0               
+openshop__j7per10-1 CP-SAT              Solved              159.225ms           207.436ms           96.3007ms           1000.0              
+rcpsp-max__psp_j20_ CP-SAT              Solved              8233.56ms           8233.56ms           3337.67ms           95.0                
+train__instance.13  CP-SAT              Solved              139671.0ms          139671.0ms          39984.2ms           74870.0             
+cyclic-rcpsp__mediu CP-SAT              Stable              55371.1ms           54241.6ms           3905.02ms           3132.0              
+road-cons__road_11  CP-SAT              Solved              191881.0ms          191881.0ms          127306.0ms          5020.0              
+
+Iteration 9 with 5 model/solver pairs remaining 2026-11-27T18:53:24.053351Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+jobshop2__la03      CP-SAT              Solved              105.016ms           102.065ms           30.4005ms           597.0               
+openshop__j7per10-1 CP-SAT              Solved              173.69ms            173.69ms            96.3007ms           1000.0              
+rcpsp-max__psp_j20_ CP-SAT              Solved              10315.9ms           8233.56ms           4693.25ms           95.0                
+train__instance.13  CP-SAT              Solved              97984.4ms           139671.0ms          65521.2ms           74870.0             
+road-cons__road_11  CP-SAT              UNSTABLE            
+
+Iteration 10 with 4 model/solver pairs remaining 2026-11-27T18:58:24.060076Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+jobshop2__la03      CP-SAT              Stable              93.5231ms           102.065ms           11.4928ms           597.0               
+openshop__j7per10-1 CP-SAT              Capped              313.04ms            173.69ms            153.816ms           1000.0              
+rcpsp-max__psp_j20_ CP-SAT              Capped              6678.75ms           8233.56ms           3637.12ms           95.0                
+train__instance.13  CP-SAT              Capped              90801.9ms           97984.4ms           48869.5ms           74870.0             
+
+Final Results
+Model               Solver              Status              Time                
+================================================================================
+cargo__challenge01_ CP-SAT              OPTIMAL             393.014ms           
+cargo__challenge01_ CPLEX               FAILED              
+cargo__challenge01_ HiGHS               OPTIMAL             11477.3ms           
+cargo__challenge01_ SCIP                TIMEOUT             
+cargo__challenge02_ CP-SAT              OPTIMAL             347.301ms           
+cargo__challenge02_ CPLEX               FAILED              
+cargo__challenge02_ HiGHS               OPTIMAL             27215.8ms           
+cargo__challenge02_ SCIP                TIMEOUT             
+cargo__challenge04_ CP-SAT              OPTIMAL             425.142ms           
+cargo__challenge04_ CPLEX               FAILED              
+cargo__challenge04_ HiGHS               OPTIMAL             15047.4ms           
+cargo__challenge04_ SCIP                TIMEOUT             
+cargo__challenge05_ CP-SAT              OPTIMAL             585.407ms           
+cargo__challenge05_ CPLEX               FAILED              
+cargo__challenge05_ HiGHS               OPTIMAL             23502.4ms           
+cargo__challenge05_ SCIP                OPTIMAL             83273.7ms           
+cargo__challenge06_ CP-SAT              OPTIMAL             3621.69ms           
+cargo__challenge06_ CPLEX               FAILED              
+cargo__challenge06_ HiGHS               TIMEOUT             
+cargo__challenge06_ SCIP                TIMEOUT             
+cyclic-rcpsp__easy_ CP-SAT              OPTIMAL             403.32ms            
+cyclic-rcpsp__easy_ CPLEX               FAILED              
+cyclic-rcpsp__easy_ HiGHS               OPTIMAL             10895.4ms           
+cyclic-rcpsp__easy_ SCIP                OPTIMAL             179948.0ms          
+cyclic-rcpsp__hard_ CP-SAT              OPTIMAL             387.883ms           
+cyclic-rcpsp__hard_ CPLEX               FAILED              
+cyclic-rcpsp__hard_ HiGHS               OPTIMAL             112584.0ms          
+cyclic-rcpsp__hard_ SCIP                OPTIMAL             152779.0ms          
+cyclic-rcpsp__mediu CP-SAT              OPTIMAL             88.8178ms           
+cyclic-rcpsp__mediu CPLEX               FAILED              
+cyclic-rcpsp__mediu HiGHS               OPTIMAL             15019.7ms           
+cyclic-rcpsp__mediu SCIP                OPTIMAL             10478.9ms           
+cyclic-rcpsp__mediu CP-SAT              OPTIMAL             78.2684ms           
+cyclic-rcpsp__mediu CPLEX               FAILED              
+cyclic-rcpsp__mediu HiGHS               OPTIMAL             6964.12ms           
+cyclic-rcpsp__mediu SCIP                OPTIMAL             7343.94ms           
+cyclic-rcpsp__mediu CP-SAT              OPTIMAL             54241.6ms           
+cyclic-rcpsp__mediu CPLEX               FAILED              
+cyclic-rcpsp__mediu HiGHS               TIMEOUT             
+cyclic-rcpsp__mediu SCIP                TIMEOUT             
+evilshop__js-brs2-5 CP-SAT              OPTIMAL             61.1808ms           
+evilshop__js-brs2-5 CPLEX               FAILED              
+evilshop__js-brs2-5 HiGHS               OPTIMAL             983.568ms           
+evilshop__js-brs2-5 SCIP                OPTIMAL             1218.63ms           
+evilshop__js-brs2-7 CP-SAT              OPTIMAL             258.403ms           
+evilshop__js-brs2-7 CPLEX               FAILED              
+evilshop__js-brs2-7 HiGHS               OPTIMAL             52408.1ms           
+evilshop__js-brs2-7 SCIP                OPTIMAL             28577.9ms           
+evilshop__js-setg2- CP-SAT              OPTIMAL             315.089ms           
+evilshop__js-setg2- CPLEX               FAILED              
+evilshop__js-setg2- HiGHS               TIMEOUT             
+evilshop__js-setg2- SCIP                TIMEOUT             
+evilshop__js-setg2- CP-SAT              OPTIMAL             21.6851ms           
+evilshop__js-setg2- CPLEX               FAILED              
+evilshop__js-setg2- HiGHS               OPTIMAL             425.887ms           
+evilshop__js-setg2- SCIP                OPTIMAL             268.902ms           
+evilshop__js-setg2- CP-SAT              OPTIMAL             52.3526ms           
+evilshop__js-setg2- CPLEX               FAILED              
+evilshop__js-setg2- HiGHS               OPTIMAL             2457.76ms           
+evilshop__js-setg2- SCIP                OPTIMAL             1893.1ms            
+filters__ar_1_2     CP-SAT              OPTIMAL             1401.41ms           
+filters__ar_1_2     CPLEX               TIMEOUT             
+filters__ar_1_2     HiGHS               OPTIMAL             34077.1ms           
+filters__ar_1_2     SCIP                OPTIMAL             17219.1ms           
+filters__dct_1_1    CP-SAT              TIMEOUT             
+filters__dct_1_1    CPLEX               FAILED              
+filters__dct_1_1    HiGHS               TIMEOUT             
+filters__dct_1_1    SCIP                TIMEOUT             
+filters__dct_4_4    CP-SAT              TIMEOUT             
+filters__dct_4_4    CPLEX               FAILED              
+filters__dct_4_4    HiGHS               TIMEOUT             
+filters__dct_4_4    SCIP                TIMEOUT             
+filters__fir16_1_2  CP-SAT              OPTIMAL             32.1062ms           
+filters__fir16_1_2  CPLEX               FAILED              
+filters__fir16_1_2  HiGHS               OPTIMAL             2105.93ms           
+filters__fir16_1_2  SCIP                OPTIMAL             3419.21ms           
+filters__fir_1_1    CP-SAT              OPTIMAL             14.8912ms           
+filters__fir_1_1    CPLEX               OPTIMAL             70.4339ms           
+filters__fir_1_1    HiGHS               OPTIMAL             1190.58ms           
+filters__fir_1_1    SCIP                OPTIMAL             200.811ms           
+flexible-jobshop__e CP-SAT              OPTIMAL             1242.19ms           
+flexible-jobshop__e CPLEX               FAILED              
+flexible-jobshop__e HiGHS               OPTIMAL             5985.43ms           
+flexible-jobshop__e SCIP                OPTIMAL             3952.99ms           
+flexible-jobshop__m CP-SAT              OPTIMAL             993.065ms           
+flexible-jobshop__m CPLEX               FAILED              
+flexible-jobshop__m HiGHS               TIMEOUT             
+flexible-jobshop__m SCIP                TIMEOUT             
+gfd-schedule__n10f2 CP-SAT              OPTIMAL             34.1893ms           
+gfd-schedule__n10f2 CPLEX               OPTIMAL             37.7465ms           
+gfd-schedule__n10f2 HiGHS               OPTIMAL             53.4128ms           
+gfd-schedule__n10f2 SCIP                OPTIMAL             362.236ms           
+gfd-schedule__n25f5 CP-SAT              OPTIMAL             288.934ms           
+gfd-schedule__n25f5 CPLEX               FAILED              
+gfd-schedule__n25f5 HiGHS               OPTIMAL             4507.71ms           
+gfd-schedule__n25f5 SCIP                OPTIMAL             6850.45ms           
+gfd-schedule__n30f3 CP-SAT              OPTIMAL             390.161ms           
+gfd-schedule__n30f3 CPLEX               FAILED              
+gfd-schedule__n30f3 HiGHS               OPTIMAL             14868.4ms           
+gfd-schedule__n30f3 SCIP                TIMEOUT             
+jobshop2__la03      CP-SAT              OPTIMAL             102.065ms           
+jobshop2__la03      CPLEX               OPTIMAL             1114.4ms            
+jobshop2__la03      HiGHS               OPTIMAL             28502.6ms           
+jobshop2__la03      SCIP                OPTIMAL             38043.7ms           
+jobshop2__la04      CP-SAT              OPTIMAL             61.0228ms           
+jobshop2__la04      CPLEX               OPTIMAL             629.788ms           
+jobshop2__la04      HiGHS               OPTIMAL             6283.68ms           
+jobshop2__la04      SCIP                OPTIMAL             11785.5ms           
+jobshop2__la05      CP-SAT              OPTIMAL             232.979ms           
+jobshop2__la05      CPLEX               OPTIMAL             14718.9ms           
+jobshop2__la05      HiGHS               OPTIMAL             474.361ms           
+jobshop2__la05      SCIP                TIMEOUT             
+jobshop2__mt06      CP-SAT              OPTIMAL             12.1028ms           
+jobshop2__mt06      CPLEX               OPTIMAL             19.0235ms           
+jobshop2__mt06      HiGHS               OPTIMAL             177.03ms            
+jobshop2__mt06      SCIP                OPTIMAL             92.9969ms           
+jobshop2__mt10      CP-SAT              OPTIMAL             1789.4ms            
+jobshop2__mt10      CPLEX               FAILED              
+jobshop2__mt10      HiGHS               TIMEOUT             
+jobshop2__mt10      SCIP                TIMEOUT             
+jobshop__jobshop_la CP-SAT              TIMEOUT             
+jobshop__jobshop_la CPLEX               FAILED              
+jobshop__jobshop_la HiGHS               TIMEOUT             
+jobshop__jobshop_la SCIP                TIMEOUT             
+jobshop__jobshop_la CP-SAT              OPTIMAL             9327.58ms           
+jobshop__jobshop_la CPLEX               FAILED              
+jobshop__jobshop_la HiGHS               TIMEOUT             
+jobshop__jobshop_la SCIP                TIMEOUT             
+jobshop__jobshop_la CP-SAT              OPTIMAL             10703.9ms           
+jobshop__jobshop_la CPLEX               FAILED              
+jobshop__jobshop_la HiGHS               TIMEOUT             
+jobshop__jobshop_la SCIP                TIMEOUT             
+jobshop__jobshop_or CP-SAT              OPTIMAL             5159.11ms           
+jobshop__jobshop_or CPLEX               FAILED              
+jobshop__jobshop_or HiGHS               TIMEOUT             
+jobshop__jobshop_or SCIP                TIMEOUT             
+jobshop__jobshop_vw CP-SAT              OPTIMAL             2.88788ms           
+jobshop__jobshop_vw CPLEX               OPTIMAL             1.74225ms           
+jobshop__jobshop_vw HiGHS               OPTIMAL             4.43088ms           
+jobshop__jobshop_vw SCIP                OPTIMAL             4.25758ms           
+mrcpsp__mm_j10_j10_ CP-SAT              OPTIMAL             2396.56ms           
+mrcpsp__mm_j10_j10_ CPLEX               FAILED              
+mrcpsp__mm_j10_j10_ HiGHS               OPTIMAL             5350.77ms           
+mrcpsp__mm_j10_j10_ SCIP                OPTIMAL             6344.32ms           
+mrcpsp__mm_m1_m1_53 CP-SAT              OPTIMAL             702.432ms           
+mrcpsp__mm_m1_m1_53 CPLEX               FAILED              
+mrcpsp__mm_m1_m1_53 HiGHS               OPTIMAL             6094.42ms           
+mrcpsp__mm_m1_m1_53 SCIP                OPTIMAL             11660.2ms           
+mrcpsp__mm_n0_n0_1_ CP-SAT              OPTIMAL             1724.88ms           
+mrcpsp__mm_n0_n0_1_ CPLEX               FAILED              
+mrcpsp__mm_n0_n0_1_ HiGHS               OPTIMAL             6442.4ms            
+mrcpsp__mm_n0_n0_1_ SCIP                OPTIMAL             7215.35ms           
+mrcpsp__mm_n0_n0_1_ CP-SAT              OPTIMAL             1431.53ms           
+mrcpsp__mm_n0_n0_1_ CPLEX               FAILED              
+mrcpsp__mm_n0_n0_1_ HiGHS               OPTIMAL             5245.3ms            
+mrcpsp__mm_n0_n0_1_ SCIP                OPTIMAL             6331.17ms           
+openshop__gp10-4    CP-SAT              OPTIMAL             494.378ms           
+openshop__gp10-4    CPLEX               FAILED              
+openshop__gp10-4    HiGHS               OPTIMAL             47045.7ms           
+openshop__gp10-4    SCIP                OPTIMAL             163249.0ms          
+openshop__j7per10-1 CP-SAT              OPTIMAL             173.69ms            
+openshop__j7per10-1 CPLEX               FAILED              
+openshop__j7per10-1 HiGHS               OPTIMAL             26057.5ms           
+openshop__j7per10-1 SCIP                OPTIMAL             227943.0ms          
+openshop__j8per0-2  CP-SAT              OPTIMAL             3713.8ms            
+openshop__j8per0-2  CPLEX               FAILED              
+openshop__j8per0-2  HiGHS               TIMEOUT             
+openshop__j8per0-2  SCIP                TIMEOUT             
+project-planning__P CP-SAT              OPTIMAL             309.558ms           
+project-planning__P CPLEX               FAILED              
+project-planning__P HiGHS               OPTIMAL             34701.6ms           
+project-planning__P SCIP                OPTIMAL             21240.1ms           
+project-planning__P CP-SAT              OPTIMAL             1207.16ms           
+project-planning__P CPLEX               FAILED              
+project-planning__P HiGHS               OPTIMAL             152093.0ms          
+project-planning__P SCIP                OPTIMAL             57578.4ms           
+project-planning__P CP-SAT              OPTIMAL             2479.76ms           
+project-planning__P CPLEX               FAILED              
+project-planning__P HiGHS               TIMEOUT             
+project-planning__P SCIP                TIMEOUT             
+project-planning__P CP-SAT              OPTIMAL             3155.47ms           
+project-planning__P CPLEX               FAILED              
+project-planning__P HiGHS               TIMEOUT             
+project-planning__P SCIP                TIMEOUT             
+project-planning__P CP-SAT              OPTIMAL             11730.8ms           
+project-planning__P CPLEX               FAILED              
+project-planning__P HiGHS               TIMEOUT             
+project-planning__P SCIP                TIMEOUT             
+rcpsp-max__psp_j10_ CP-SAT              OPTIMAL             263.37ms            
+rcpsp-max__psp_j10_ CPLEX               FAILED              
+rcpsp-max__psp_j10_ HiGHS               OPTIMAL             7995.91ms           
+rcpsp-max__psp_j10_ SCIP                OPTIMAL             10941.6ms           
+rcpsp-max__psp_j20_ CP-SAT              OPTIMAL             8233.56ms           
+rcpsp-max__psp_j20_ CPLEX               FAILED              
+rcpsp-max__psp_j20_ HiGHS               TIMEOUT             
+rcpsp-max__psp_j20_ SCIP                TIMEOUT             
+rcpsp-max__psp_j20_ CP-SAT              OPTIMAL             407.092ms           
+rcpsp-max__psp_j20_ CPLEX               FAILED              
+rcpsp-max__psp_j20_ HiGHS               OPTIMAL             76633.5ms           
+rcpsp-max__psp_j20_ SCIP                TIMEOUT             
+rcpsp-max__psp_j30_ CP-SAT              OPTIMAL             83668.5ms           
+rcpsp-max__psp_j30_ CPLEX               FAILED              
+rcpsp-max__psp_j30_ HiGHS               TIMEOUT             
+rcpsp-max__psp_j30_ SCIP                TIMEOUT             
+rcpsp-max__psp_j30_ CP-SAT              OPTIMAL             2575.66ms           
+rcpsp-max__psp_j30_ CPLEX               FAILED              
+rcpsp-max__psp_j30_ HiGHS               TIMEOUT             
+rcpsp-max__psp_j30_ SCIP                TIMEOUT             
+rcpsp-wet__j30_1_3- CP-SAT              OPTIMAL             255.441ms           
+rcpsp-wet__j30_1_3- CPLEX               FAILED              
+rcpsp-wet__j30_1_3- HiGHS               OPTIMAL             537.457ms           
+rcpsp-wet__j30_1_3- SCIP                OPTIMAL             553.63ms            
+rcpsp-wet__j30_35_9 CP-SAT              OPTIMAL             178.657ms           
+rcpsp-wet__j30_35_9 CPLEX               FAILED              
+rcpsp-wet__j30_35_9 HiGHS               OPTIMAL             588.909ms           
+rcpsp-wet__j30_35_9 SCIP                OPTIMAL             389.343ms           
+rcpsp-wet__j30_4_8- CP-SAT              OPTIMAL             185.825ms           
+rcpsp-wet__j30_4_8- CPLEX               FAILED              
+rcpsp-wet__j30_4_8- HiGHS               OPTIMAL             366.367ms           
+rcpsp-wet__j30_4_8- SCIP                OPTIMAL             325.185ms           
+rcpsp-wet__j60_19_6 CP-SAT              OPTIMAL             832.435ms           
+rcpsp-wet__j60_19_6 CPLEX               FAILED              
+rcpsp-wet__j60_19_6 HiGHS               OPTIMAL             3279.78ms           
+rcpsp-wet__j60_19_6 SCIP                OPTIMAL             926.844ms           
+rcpsp-wet__j60_36_8 CP-SAT              OPTIMAL             1186.38ms           
+rcpsp-wet__j60_36_8 CPLEX               FAILED              
+rcpsp-wet__j60_36_8 HiGHS               OPTIMAL             5058.03ms           
+rcpsp-wet__j60_36_8 SCIP                OPTIMAL             3233.6ms            
+rcpsp__data_ksd15_d CP-SAT              OPTIMAL             29.876ms            
+rcpsp__data_ksd15_d CPLEX               FAILED              
+rcpsp__data_ksd15_d HiGHS               OPTIMAL             3772.79ms           
+rcpsp__data_ksd15_d SCIP                OPTIMAL             138.37ms            
+rcpsp__data_ksd15_d CP-SAT              OPTIMAL             7.35275ms           
+rcpsp__data_ksd15_d CPLEX               OPTIMAL             6.05096ms           
+rcpsp__data_ksd15_d HiGHS               OPTIMAL             14.7048ms           
+rcpsp__data_ksd15_d SCIP                OPTIMAL             12.5597ms           
+rcpsp__data_pack_pa CP-SAT              UNSTABLE            
+rcpsp__data_pack_pa CPLEX               FAILED              
+rcpsp__data_pack_pa HiGHS               OPTIMAL             5332.56ms           
+rcpsp__data_pack_pa SCIP                OPTIMAL             1129.7ms            
+rcpsp__data_psplib_ CP-SAT              OPTIMAL             211.756ms           
+rcpsp__data_psplib_ CPLEX               FAILED              
+rcpsp__data_psplib_ HiGHS               OPTIMAL             3151.72ms           
+rcpsp__data_psplib_ SCIP                OPTIMAL             1885.01ms           
+rcpsp__data_psplib_ CP-SAT              OPTIMAL             194.229ms           
+rcpsp__data_psplib_ CPLEX               FAILED              
+rcpsp__data_psplib_ HiGHS               OPTIMAL             5521.14ms           
+rcpsp__data_psplib_ SCIP                OPTIMAL             9912.5ms            
+road-cons__road_11  CP-SAT              UNSTABLE            
+road-cons__road_11  CPLEX               FAILED              
+road-cons__road_11  HiGHS               TIMEOUT             
+road-cons__road_11  SCIP                TIMEOUT             
+road-cons__road_8   CP-SAT              OPTIMAL             2212.2ms            
+road-cons__road_8   CPLEX               FAILED              
+road-cons__road_8   HiGHS               TIMEOUT             
+road-cons__road_8   SCIP                TIMEOUT             
+road-cons__road_9   CP-SAT              OPTIMAL             11932.5ms           
+road-cons__road_9   CPLEX               FAILED              
+road-cons__road_9   HiGHS               TIMEOUT             
+road-cons__road_9   SCIP                TIMEOUT             
+ship-schedule__3Shi CP-SAT              OPTIMAL             491.359ms           
+ship-schedule__3Shi CPLEX               FAILED              
+ship-schedule__3Shi HiGHS               OPTIMAL             830.429ms           
+ship-schedule__3Shi SCIP                OPTIMAL             499.033ms           
+ship-schedule__3Shi CP-SAT              OPTIMAL             215.689ms           
+ship-schedule__3Shi CPLEX               FAILED              
+ship-schedule__3Shi HiGHS               OPTIMAL             908.367ms           
+ship-schedule__3Shi SCIP                OPTIMAL             583.07ms            
+ship-schedule__4Shi CP-SAT              OPTIMAL             353.254ms           
+ship-schedule__4Shi CPLEX               FAILED              
+ship-schedule__4Shi HiGHS               OPTIMAL             2400.76ms           
+ship-schedule__4Shi SCIP                OPTIMAL             791.291ms           
+ship-schedule__6Shi CP-SAT              OPTIMAL             1411.54ms           
+ship-schedule__6Shi CPLEX               FAILED              
+ship-schedule__6Shi HiGHS               OPTIMAL             5649.55ms           
+ship-schedule__6Shi SCIP                OPTIMAL             13449.4ms           
+ship-schedule__7Shi CP-SAT              OPTIMAL             1048.7ms            
+ship-schedule__7Shi CPLEX               FAILED              
+ship-schedule__7Shi HiGHS               OPTIMAL             2182.02ms           
+ship-schedule__7Shi SCIP                OPTIMAL             2899.77ms           
+smelt__smelt_2      CP-SAT              OPTIMAL             21.0729ms           
+smelt__smelt_2      CPLEX               OPTIMAL             89.3114ms           
+smelt__smelt_2      HiGHS               OPTIMAL             755.389ms           
+smelt__smelt_2      SCIP                OPTIMAL             1845.24ms           
+smelt__smelt_3      CP-SAT              OPTIMAL             1782.66ms           
+smelt__smelt_3      CPLEX               FAILED              
+smelt__smelt_3      HiGHS               TIMEOUT             
+smelt__smelt_3      SCIP                TIMEOUT             
+smelt__smelt_4      CP-SAT              OPTIMAL             43.885ms            
+smelt__smelt_4      CPLEX               FAILED              
+smelt__smelt_4      HiGHS               OPTIMAL             1376.46ms           
+smelt__smelt_4      SCIP                OPTIMAL             696.618ms           
+spot5__1502         CP-SAT              OPTIMAL             247.538ms           
+spot5__1502         CPLEX               FAILED              
+spot5__1502         HiGHS               OPTIMAL             1631.82ms           
+spot5__1502         SCIP                OPTIMAL             1024.56ms           
+spot5__29           CP-SAT              OPTIMAL             228.817ms           
+spot5__29           CPLEX               FAILED              
+spot5__29           HiGHS               OPTIMAL             4776.54ms           
+spot5__29           SCIP                OPTIMAL             5898.1ms            
+spot5__503          CP-SAT              OPTIMAL             774.577ms           
+spot5__503          CPLEX               FAILED              
+spot5__503          HiGHS               OPTIMAL             81621.1ms           
+spot5__503          SCIP                TIMEOUT             
+spot5__54           CP-SAT              OPTIMAL             162.314ms           
+spot5__54           CPLEX               FAILED              
+spot5__54           HiGHS               OPTIMAL             6855.6ms            
+spot5__54           SCIP                OPTIMAL             25667.4ms           
+stochastic-fjsp__fj CP-SAT              OPTIMAL             32.8334ms           
+stochastic-fjsp__fj CPLEX               FAILED              
+stochastic-fjsp__fj HiGHS               OPTIMAL             534.958ms           
+stochastic-fjsp__fj SCIP                OPTIMAL             568.822ms           
+stochastic-fjsp__fj CP-SAT              OPTIMAL             2304.09ms           
+stochastic-fjsp__fj CPLEX               FAILED              
+stochastic-fjsp__fj HiGHS               TIMEOUT             
+stochastic-fjsp__fj SCIP                TIMEOUT             
+stochastic-fjsp__fj CP-SAT              OPTIMAL             11.3072ms           
+stochastic-fjsp__fj CPLEX               OPTIMAL             11.9877ms           
+stochastic-fjsp__fj HiGHS               OPTIMAL             83.0196ms           
+stochastic-fjsp__fj SCIP                OPTIMAL             13.7486ms           
+stochastic-fjsp__fj CP-SAT              OPTIMAL             12.8305ms           
+stochastic-fjsp__fj CPLEX               OPTIMAL             21.6676ms           
+stochastic-fjsp__fj HiGHS               OPTIMAL             67.8789ms           
+stochastic-fjsp__fj SCIP                OPTIMAL             71.4758ms           
+stochastic-fjsp__fj CP-SAT              OPTIMAL             15.7102ms           
+stochastic-fjsp__fj CPLEX               OPTIMAL             20.3225ms           
+stochastic-fjsp__fj HiGHS               OPTIMAL             95.3861ms           
+stochastic-fjsp__fj SCIP                OPTIMAL             75.7127ms           
+train__instance.1   CP-SAT              OPTIMAL             83.3927ms           
+train__instance.1   CPLEX               FAILED              
+train__instance.1   HiGHS               OPTIMAL             651.772ms           
+train__instance.1   SCIP                OPTIMAL             280.746ms           
+train__instance.12  CP-SAT              OPTIMAL             270870.0ms          
+train__instance.12  CPLEX               FAILED              
+train__instance.12  HiGHS               TIMEOUT             
+train__instance.12  SCIP                TIMEOUT             
+train__instance.13  CP-SAT              OPTIMAL             97984.4ms           
+train__instance.13  CPLEX               FAILED              
+train__instance.13  HiGHS               TIMEOUT             
+train__instance.13  SCIP                TIMEOUT             
+train__instance.5   CP-SAT              TIMEOUT             
+train__instance.5   CPLEX               FAILED              
+train__instance.5   HiGHS               TIMEOUT             
+train__instance.5   SCIP                TIMEOUT             
+train__instance.9   CP-SAT              TIMEOUT             
+train__instance.9   CPLEX               FAILED              
+train__instance.9   HiGHS               TIMEOUT             
+train__instance.9   SCIP                TIMEOUT             
+
+Models Solved
+Solver              Solved / Total      Share               
+============================================================
+CP-SAT              80 / 87             92%                 
+CPLEX               12 / 87             14%                 
+HiGHS               60 / 87             69%                 
+SCIP                53 / 87             61%                 

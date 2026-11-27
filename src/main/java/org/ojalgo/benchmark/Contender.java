@@ -56,7 +56,8 @@ import org.ojalgo.optimisation.solver.xpress.SolverXpress;
 /**
  * The solvers, and solver configurations, that can be benchmarked - each with a name, and the integration
  * that name stands for. Only the name is passed to the worker JVM, so every configuration has to be
- * registered here, including the ojAlgo variants used by experiments.
+ * registered here, including the ojAlgo variants used by experiments – except ojAlgo MIP configurations,
+ * {@link StrategyVariant}s, which are recognised by their names.
  */
 public final class Contender {
 
@@ -117,6 +118,24 @@ public final class Contender {
      * the HiGHS integration would then bind to instead of the system one.
      */
     static final Map<String, Supplier<ExpressionsBasedModel.Integration<?>>> INTEGRATIONS = new HashMap<>();
+
+    /**
+     * The integration a contender name stands for: one registered here, or a {@link StrategyVariant}, whose
+     * name says what it is. Null if the name is neither.
+     *
+     * @param maxWaitTime ms, how long the caller waits for a result. A {@link StrategyVariant} stops itself,
+     *        and returns the best solution it has, before that.
+     */
+    static ExpressionsBasedModel.Integration<?> integration(final String name, final long maxWaitTime) {
+        Supplier<ExpressionsBasedModel.Integration<?>> supplier = INTEGRATIONS.get(name);
+        if (supplier != null) {
+            return supplier.get();
+        }
+        if (name.startsWith(StrategyVariant.PREFIX)) {
+            return StrategyVariant.parse(name).toIntegration(maxWaitTime * 8L / 10L);
+        }
+        return null;
+    }
 
     static {
 

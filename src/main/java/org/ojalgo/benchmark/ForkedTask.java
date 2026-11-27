@@ -5,12 +5,10 @@ import java.io.InputStream;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.function.Supplier;
 
 import org.ojalgo.benchmark.AbstractBenchmark.ResultsSet;
 import org.ojalgo.concurrent.MethodDescriptor;
 import org.ojalgo.optimisation.ExpressionsBasedModel;
-import org.ojalgo.optimisation.ExpressionsBasedModel.FileFormat;
 import org.ojalgo.optimisation.ExpressionsBasedModel.Integration;
 import org.ojalgo.optimisation.Optimisation.Result;
 import org.ojalgo.optimisation.Variable;
@@ -99,8 +97,7 @@ public abstract class ForkedTask {
             System.load(libraryPath);
         }
 
-        Supplier<Integration<?>> supplier = Contender.INTEGRATIONS.get(contenderSolverName);
-        Integration<?> integration = supplier != null ? supplier.get() : null;
+        Integration<?> integration = Contender.integration(contenderSolverName, maxWaitTime);
 
         ResultsSet resultsSet = new ResultsSet();
 
@@ -113,8 +110,7 @@ public abstract class ForkedTask {
         String classLoaderPath = modelFilePath.startsWith("/") ? modelFilePath.substring(1) : modelFilePath;
         try (InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream(classLoaderPath)) {
 
-            FileFormat format = classLoaderPath.endsWith(".lp") ? FileFormat.LP : FileFormat.MPS;
-            ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, format);
+            ExpressionsBasedModel parsedMPS = ExpressionsBasedModel.parse(input, AbstractBenchmark.format(classLoaderPath));
 
             nbVariables = parsedMPS.countVariables();
             nbExpressions = parsedMPS.countExpressions();

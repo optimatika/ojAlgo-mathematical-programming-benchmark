@@ -14,8 +14,11 @@ All model files, and the metadata that comes with them, are provided by the `opt
 | [Maros-Meszaros](https://www.doc.ic.ac.uk/~im/) | Convex QP | `org.ojalgo.benchmark.convex.marosmeszaros` | `00README.CSV` |
 | [QPLIB](https://qplib.zib.de/) | QP/QCQP, continuous and integer | `org.ojalgo.benchmark.qplib` | `instancedata.csv` |
 | [MIPLIB](https://miplib.zib.de/) | MIP | `org.ojalgo.benchmark.integer.miplib` | `miplib.solu` |
+| [MiniZinc](https://github.com/MiniZinc/minizinc-benchmarks) | MIP (constraint programming problems, linearised by MiniZinc), by category | `org.ojalgo.benchmark.integer.minizinc` | `MINIZINC.solu` |
 
 Maros-Meszaros and QPLIB also have metadata files describing each model (problem type, convexity, size...) that models can be filtered on.
+
+The MiniZinc models are FlatZinc files, compiled with MiniZinc's linear library, one folder per category - scheduling, routing, puzzle... Each can be filtered on its category, problem and reference result - `AbstractMiniZinc.filter(configuration, info -> ...)` - and `AbstractMiniZinc.retainCategories(configuration, args)` keeps only the categories given as arguments, and labels the run with them, so that categories can be run one at a time. The expected values are the optimal ones in `MINIZINC.solu`, and 0 for the satisfaction problems it has a solution to - those have no objective. There is no standard MiniZinc benchmark yet: `MiniZincNativeSolvers` runs the native solvers, and its results are what an easy set, one for all categories, is to be decided from.
 
 ## Benchmark classes
 
@@ -33,6 +36,16 @@ Each set has a `BenchmarkXYZ` class with its standard configuration. Only Netlib
 Each line-up is ojAlgo, the best Java (open source) alternative, the best open source native alternative, and one more.
 
 Published results are always produced with a single worker - `configuration.parallelism = Parallelism.ONE`. More workers are only used to get results faster. Published results are kept under `results/<year>/<month>/`.
+
+## Tuning ojAlgo's MIP solver
+
+`TuneMiniZinc` searches for the ojAlgo MIP configuration - node order, cut types, cut rounds and cuts per round - that does best on one category of the MiniZinc models (the category is the first argument). It starts from the default configuration, tries every configuration that differs from the best so far in one setting - measuring the best so far and the default again alongside - and moves on while that improves the score by at least 5%. The models the default configuration solves in less than half a second are left out.
+
+A configuration stops itself before the time limit, with the best solution it has. A model that is solved costs its solve time, one with a solution that is not proven optimal costs between 1 and 2 times the time limit - depending on its gap to the reference value in `MINIZINC.solu` - and one without a solution costs 2 times the time limit. The score is the shifted geometric mean of the costs, over the models where at least one of the configurations compared has a solution.
+
+For quicker, coarser experiments, `CompareMiniZinc` runs a few named configurations (the arguments) once, with a 10 s time limit, on the quick set: the models with at most 1k variables and constraints that the reference solver solved, in all categories (or one, with `-c <category>`). It prints each configuration's score and solved count per category, and on how many models each did best.
+
+A configuration is its own contender name, such as `MIP-BB-ICKFMG-3-100`, or `MIP-BB+DF-ICKFMG-3-100` with one worker thread per node order sharing the same tree, and doesn't have to be registered in `Contender` - see `StrategyVariant`.
 
 ## Solvers compared
 
@@ -109,9 +122,11 @@ The three published sets each have the same three experiments:
 |-------|----------|--------|----------------|--------|
 | `XYZ4oj` | ojAlgo configurations | ojAlgo-LP primal/dual, dense/sparse | ojAlgo-QP ADMM and active set variants | ojAlgo-MIP primal/dual, dense/sparse |
 | `XYZJavaSolvers` | Pure Java solvers - the best Java alternative, with ojAlgo as baseline | ACM, Hipparchus, JOptimizer, SSC-LP | Hipparchus, JOptimizer | SSC-LP, Choco |
-| `XYZNativeSolvers` | All other solvers - the best over all, without ojAlgo | HiGHS, SCIP, CPLEX, Gurobi, COPT, Xpress, Mosek, Clarabel | Clarabel, OSQP, HiGHS, SCIP, CPLEX, Gurobi, COPT, Xpress, Mosek | Gurobi, CPLEX, Xpress, COPT, SCIP, HiGHS, Mosek, CP-SAT |
+| `XYZNativeSolvers` | All other solvers - the best over all, without ojAlgo | HiGHS, SCIP, Gurobi, COPT, Xpress, Mosek, Clarabel | Clarabel, OSQP, HiGHS, SCIP, Gurobi, COPT, Xpress, Mosek | Gurobi, CPLEX, Xpress, COPT, SCIP, HiGHS, Mosek, CP-SAT |
 
 For Netlib and Maros-Meszaros they use the same models as the published benchmark. For MIPLIB only `BenchmarkMIPLIB` uses the "easy set" - the other MIPLIB classes use the full set with their own size limits. `MIPLIBNativeSolvers` is what defines the easy set: the models up to 1k that all of COPT, CPLEX, HiGHS, SCIP and Xpress solve.
+
+CPLEX is only included where the models are at most 1k variables and 1k constraints - the limits of its Community Edition. Beyond that it fails on every model, so it is left out of `NetlibNativeSolvers`, `MarosMeszarosNativeSolvers` and `MiniZincNativeSolvers`.
 
 The models to run are normally selected by filtering the full set:
 
