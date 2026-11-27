@@ -353,13 +353,6 @@ public abstract class AbstractBenchmark {
         }
 
         /**
-         * False once any result has disagreed with the first one.
-         */
-        public boolean isConsistent() {
-            return myConsistent;
-        }
-
-        /**
          * True when the last three times agree: the slowest and the fastest within 10% of the middle one.
          * False until there are three.
          */
@@ -371,6 +364,13 @@ public abstract class AbstractBenchmark {
 
             // 0.2 means ±10% of the returned value
             return myRange <= myTimeAccuracy * Math.max(myAverage, myMedian);
+        }
+
+        /**
+         * False once any result has disagreed with the first one.
+         */
+        public boolean isConsistent() {
+            return myConsistent;
         }
 
         /**
@@ -410,8 +410,8 @@ public abstract class AbstractBenchmark {
 
         /**
          * The difference between the slowest and the fastest of the last three times, ms - what
-         * {@link #isAgreeing()} compares to the median and the average. Until there are three, it's the range of
-         * those there are. NaN if there are none.
+         * {@link #isAgreeing()} compares to the median and the average. Until there are three, it's the range
+         * of those there are. NaN if there are none.
          */
         public double rangeTime() {
             return myRange;
@@ -523,9 +523,9 @@ public abstract class AbstractBenchmark {
      */
     static final String OUTPUT_DIR = "./src/main/resources/";
     /**
-     * The width of the console log's columns. Anything longer than WIDTH - 1 is cut. With the times and values
-     * rounded (see {@link #toLogTime(double)} and {@link #toLogValue(double)}) only a few unusually long model
-     * names are.
+     * The width of the console log's columns. Anything longer than WIDTH - 1 is cut. With the times and
+     * values rounded (see {@link #toLogTime(double)} and {@link #toLogValue(double)}) only a few unusually
+     * long model names are.
      */
     static final int WIDTH = 20;
 
@@ -623,7 +623,9 @@ public abstract class AbstractBenchmark {
 
             log.println();
             log.println("Reference values for {} models without an expected value {}", references.size(), Instant.now());
-            log.println("-----------------------------------------------------------------------------");
+            // Status is Reference, or why there is none: the solver's state, INVALID, TIMEOUT or FAILED
+            log.columns(WIDTH, "Model", "Solver", "Status", "Value");
+            log.println("--------------------------------------------------------------------------------");
 
             Map<String, BigDecimal> referenceValues = new ConcurrentHashMap<>();
 
@@ -640,7 +642,12 @@ public abstract class AbstractBenchmark {
 
             log.println();
             log.println("Iteration {} with {} model/solver pairs remaining {}", iterations, allWork.size(), Instant.now());
-            log.println("-----------------------------------------------------------------------------");
+            // Time is this pass's own, Median and Range are over the last three passes. Failed rows have the
+            // reason as their Status, the time and the value when there is a result, and what went wrong where
+            // the median and range would be - they are meaningless once a pair has failed.
+            log.columns(WIDTH, "Model", "Solver", "Status", "Time", "Median", "Range", "Value");
+            log.println(
+                    "--------------------------------------------------------------------------------------------------------------------------------------------");
 
             masterProcessor.process(allWork, configuration.parallelism, modelSolverPair -> AbstractBenchmark.doOnePair(configuration, log, slaveExecutor,
                     workerOptions, totResults, totReasons, modDim, iterDone, threadsPerWorker, modelSolverPair));
@@ -661,7 +668,9 @@ public abstract class AbstractBenchmark {
 
             log.println();
             log.println("Final Results");
-            log.println("=====================================================================");
+            // Failed rows have the reason as their Status, and no time
+            log.columns(WIDTH, "Model", "Solver", "Status", "Time");
+            log.println("================================================================================");
             for (Entry<ModelSolverPair, ResultsSet> entry : sortedResults.entrySet()) {
 
                 ModelSolverPair work = entry.getKey();
@@ -702,14 +711,15 @@ public abstract class AbstractBenchmark {
                     log.columns(WIDTH, model, solver, state, AbstractBenchmark.toLogTime(duration.convertTo(CalendarDateUnit.MILLIS).measure));
                     csv.line(model, solver, duration.toDurationInNanos(), nbVars, nbExpr, density);
                 } else {
-                    log.columns(WIDTH, model, solver, Optimisation.State.FAILED, reason);
+                    log.columns(WIDTH, model, solver, reason);
                     csv.line(model, solver, "", nbVars, nbExpr, density);
                 }
             }
 
             log.println();
             log.println("Models Solved");
-            log.println("=====================================================================");
+            log.columns(WIDTH, "Solver", "Solved / Total", "Share");
+            log.println("============================================================");
             for (Entry<String, int[]> entry : tally.entrySet()) {
                 int[] counts = entry.getValue();
                 log.columns(WIDTH, entry.getKey(), counts[0] + " / " + counts[1], Math.round(100.0 * counts[0] / counts[1]) + "%");
@@ -719,6 +729,13 @@ public abstract class AbstractBenchmark {
             throw new RuntimeException(cause);
         }
 
+    }
+
+    private static double round(final double value, final int digits) {
+        if (!Double.isFinite(value) || value == 0.0) {
+            return value;
+        }
+        return new BigDecimal(value).round(new MathContext(digits)).doubleValue();
     }
 
     /**
@@ -783,7 +800,8 @@ public abstract class AbstractBenchmark {
                 if (!subResults.consistent || !mainResults.isConsistent()) {
 
                     // Repeated solves, within this pass or across passes, didn't agree
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, latest.getState(), FailReason.UNSTABLE);
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.UNSTABLE, AbstractBenchmark.toLogTime(subResults.time),
+                            "solves disagree", "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, FailReason.UNSTABLE);
                     iterDone.add(modelSolverPair);
 
@@ -791,22 +809,23 @@ public abstract class AbstractBenchmark {
 
                     // Consistently not optimal - infeasible, unbounded, only feasible...
                     FailReason reason = latest.getState() == Optimisation.State.FAILED ? FailReason.FAILED : FailReason.WRONG;
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, latest.getState(), reason);
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, reason, AbstractBenchmark.toLogTime(subResults.time),
+                            latest.getState(), "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, reason);
                     iterDone.add(modelSolverPair);
 
                 } else if (expectedValue != null && ACCURACY.isDifferent(expectedValue.doubleValue(), latest.getValue())) {
 
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, AbstractBenchmark.toLogValue(latest.getValue()),
-                            "!= " + AbstractBenchmark.toLogValue(expectedValue.doubleValue()));
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.WRONG, AbstractBenchmark.toLogTime(subResults.time),
+                            "!= " + AbstractBenchmark.toLogValue(expectedValue.doubleValue()), "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, FailReason.WRONG);
                     iterDone.add(modelSolverPair);
 
                 } else if (!subResults.valid) {
 
                     // The value agrees - otherwise it would be WRONG
-                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, AbstractBenchmark.toLogValue(latest.getValue()),
-                            "solution infeasible");
+                    log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.INVALID, AbstractBenchmark.toLogTime(subResults.time),
+                            "solution infeasible", "", AbstractBenchmark.toLogValue(latest.getValue()));
                     totReasons.put(modelSolverPair, FailReason.INVALID);
                     iterDone.add(modelSolverPair);
 
@@ -844,7 +863,7 @@ public abstract class AbstractBenchmark {
 
                 mainResults.add(FAILED);
 
-                log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.TIMEOUT);
+                log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.TIMEOUT);
                 totReasons.put(modelSolverPair, FailReason.TIMEOUT);
                 iterDone.add(modelSolverPair);
             }
@@ -867,7 +886,7 @@ public abstract class AbstractBenchmark {
             // already finished in time, so its times vary too much to be measured.
             FailReason reason = firstPass ? FailReason.TIMEOUT : FailReason.UNSTABLE;
 
-            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), reason);
+            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, reason);
             totReasons.put(modelSolverPair, reason);
             iterDone.add(modelSolverPair);
 
@@ -886,7 +905,7 @@ public abstract class AbstractBenchmark {
             ResultsSet mainResults = totResults.computeIfAbsent(modelSolverPair, k -> new ResultsSet(configuration.maxIterations));
             mainResults.add(FAILED);
 
-            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FAILED.result.getState(), FailReason.FAILED);
+            log.columns(WIDTH, modelSolverPair.model, modelSolverPair.solver, FailReason.FAILED);
             totReasons.put(modelSolverPair, FailReason.FAILED);
             iterDone.add(modelSolverPair);
         }
@@ -913,8 +932,12 @@ public abstract class AbstractBenchmark {
             if (result != null && result.getState().isOptimal() && returnValue.valid) {
                 referenceValues.put(model, BigDecimal.valueOf(result.getValue()));
                 log.columns(WIDTH, model, solver, "Reference", AbstractBenchmark.toLogValue(result.getValue()));
+            } else if (result != null) {
+                // Not optimal, or optimal but the solution doesn't satisfy the constraints
+                Object status = result.getState().isOptimal() ? FailReason.INVALID : result.getState();
+                log.columns(WIDTH, model, solver, status, AbstractBenchmark.toLogValue(result.getValue()));
             } else {
-                log.columns(WIDTH, model, solver, "No reference", result != null ? result.getState() : FailReason.FAILED);
+                log.columns(WIDTH, model, solver, FailReason.FAILED);
             }
 
         } catch (TimeoutException timeout) {
@@ -927,7 +950,7 @@ public abstract class AbstractBenchmark {
                 }
             }
 
-            log.columns(WIDTH, model, solver, "No reference", FailReason.TIMEOUT);
+            log.columns(WIDTH, model, solver, FailReason.TIMEOUT);
 
         } catch (Exception cause) {
 
@@ -940,7 +963,7 @@ public abstract class AbstractBenchmark {
             }
 
             log.println(cause, "Error working with {}!", model);
-            log.columns(WIDTH, model, solver, "No reference", FailReason.FAILED);
+            log.columns(WIDTH, model, solver, FailReason.FAILED);
         }
     }
 
@@ -1054,8 +1077,8 @@ public abstract class AbstractBenchmark {
     }
 
     /**
-     * A time, ms, as it's shown in the console log - rounded to 6 significant digits. The CSV gets the time as
-     * it is.
+     * A time, ms, as it's shown in the console log - rounded to 6 significant digits. The CSV gets the time
+     * as it is.
      */
     static CalendarDateDuration toLogTime(final double time) {
         return new CalendarDateDuration(AbstractBenchmark.round(time, 6), CalendarDateUnit.MILLIS);
@@ -1066,13 +1089,6 @@ public abstract class AbstractBenchmark {
      */
     static double toLogValue(final double value) {
         return AbstractBenchmark.round(value, 8);
-    }
-
-    private static double round(final double value, final int digits) {
-        if (!Double.isFinite(value) || value == 0.0) {
-            return value;
-        }
-        return new BigDecimal(value).round(new MathContext(digits)).doubleValue();
     }
 
 }
