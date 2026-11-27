@@ -1,0 +1,1518 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 3, threads per worker: 6, max heap per worker: 12288m
+Models: 104 of 104 within size limits (0 not shipped), solvers: 3
+
+
+Iteration 1 with 312 model/solver pairs remaining 2026-11-27T08:42:18.997466Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+gr4x6               HiGHS               Solved              9.26021ms           9.26021ms           0.0ms               202.35              
+aflow30a            HiGHS               Solved              3187.92ms           3187.92ms           0.0ms               1158.0              
+pk1                 ojAlgo-MIP          Solved              5887.84ms           5887.84ms           0.0ms               11.0                
+gsvm2rl3            HiGHS               Solved              19716.1ms           19716.1ms           0.0ms               0.33652753          
+bell4               HiGHS               Solved              232.988ms           232.988ms           0.0ms               1.8542104E7         
+mod013              SCIP                Solved              735.2ms             735.2ms             0.0ms               280.95              
+f2gap40400          HiGHS               Solved              9.25208ms           9.25208ms           0.0ms               20772.0             
+markshare_4_0       HiGHS               Solved              24235.5ms           24235.5ms           0.0ms               1.0                 
+supportcase16       SCIP                Solved              93.8288ms           93.8288ms           0.0ms               288.0               
+vpm2                HiGHS               Solved              805.12ms            805.12ms            0.0ms               13.75               
+pipex               HiGHS               Solved              35.2596ms           35.2596ms           0.0ms               788.263             
+r50x360             SCIP                Solved              25593.6ms           25593.6ms           0.0ms               1653.0              
+gen-ip021           ojAlgo-MIP          Solved              43063.1ms           43063.1ms           0.0ms               2361.4542           
+r50x360             ojAlgo-MIP          TIMEOUT             
+ran16x16            ojAlgo-MIP          TIMEOUT             
+neos-3610051-istra  ojAlgo-MIP          Solved              174344.0ms          174344.0ms          0.0ms               49.0                
+timtab1             HiGHS               Solved              21227.8ms           21227.8ms           0.0ms               764774.0            
+mik-250-20-75-3     HiGHS               Solved              1414.12ms           1414.12ms           0.0ms               -52242.0            
+gt2                 HiGHS               Solved              27.4324ms           27.4324ms           0.0ms               21166.0             
+mod013              ojAlgo-MIP          Solved              18.5601ms           18.5601ms           0.0ms               280.95              
+neos-911880         SCIP                Solved              6028.07ms           6028.07ms           0.0ms               54.76               
+sample2             HiGHS               Solved              10.0295ms           10.0295ms           0.0ms               375.0               
+neos-911970         HiGHS               Solved              3484.31ms           3484.31ms           0.0ms               54.76               
+neos-5192052-neckar HiGHS               Solved              22.773ms            22.773ms            0.0ms               -1.167E7            
+bppc8-02            HiGHS               Solved              208.601ms           208.601ms           0.0ms               507.0               
+ran16x16            SCIP                Solved              43396.0ms           43396.0ms           0.0ms               3823.0              
+neos-3610051-istra  SCIP                Solved              648.267ms           648.267ms           0.0ms               49.0                
+supportcase16       ojAlgo-MIP          Solved              41.1963ms           41.1963ms           0.0ms               288.0               
+enlight8            HiGHS               Solved              974.943ms           974.943ms           0.0ms               27.0                
+mik-250-1-100-1     ojAlgo-MIP          Solved              143787.0ms          143787.0ms          0.0ms               -66729.0            
+22433               SCIP                Solved              1551.63ms           1551.63ms           0.0ms               21477.0             
+enlight13           HiGHS               Solved              62590.1ms           62590.1ms           0.0ms               71.0                
+22433               ojAlgo-MIP          Solved              117.751ms           117.751ms           0.0ms               21477.0             
+gen-ip021           SCIP                Solved              195787.0ms          195787.0ms          0.0ms               2361.4542           
+set1ch              HiGHS               Solved              193.447ms           193.447ms           0.0ms               54537.75            
+mik-250-20-75-2     HiGHS               Solved              1172.96ms           1172.96ms           0.0ms               -50768.0            
+enigma              HiGHS               Solved              81.9172ms           81.9172ms           0.0ms               0.0                 
+p0040               ojAlgo-MIP          Solved              1.7145ms            1.7145ms            0.0ms               62027.0             
+bell3a              SCIP                Solved              805.023ms           805.023ms           0.0ms               878430.32           
+neos-911880         ojAlgo-MIP          TIMEOUT             
+p0282               ojAlgo-MIP          Solved              96.7224ms           96.7224ms           0.0ms               258411.0            
+noswot              HiGHS               Solved              3679.52ms           3679.52ms           0.0ms               -41.0               
+pk1                 SCIP                Solved              67310.9ms           67310.9ms           0.0ms               11.0                
+graphdraw-gemcutter ojAlgo-MIP          Solved              103831.0ms          103831.0ms          0.0ms               7118.5              
+pigeon-08           ojAlgo-MIP          Solved              49830.5ms           49830.5ms           0.0ms               -7000.0             
+supportcase14       SCIP                Solved              67.8315ms           67.8315ms           0.0ms               288.0               
+timtab1CUTS         HiGHS               Solved              15210.9ms           15210.9ms           0.0ms               764772.0            
+sentoy              ojAlgo-MIP          Solved              29.4519ms           29.4519ms           0.0ms               -7772.0             
+neos-3611689-kaihu  SCIP                Solved              482.728ms           482.728ms           0.0ms               119.0               
+mik-250-20-75-1     HiGHS               Solved              1385.36ms           1385.36ms           0.0ms               -49716.0            
+sp150x300d          ojAlgo-MIP          TIMEOUT             
+stein27             SCIP                Solved              98.0362ms           98.0362ms           0.0ms               18.0                
+stein15             SCIP                Solved              21.7191ms           21.7191ms           0.0ms               9.0                 
+bell3b              SCIP                Solved              2254.05ms           2254.05ms           0.0ms               1.1786161E7         
+exp-1-500-5-5       HiGHS               Solved              2647.53ms           2647.53ms           0.0ms               65887.0             
+dfn-gwin-UUM        ojAlgo-MIP          TIMEOUT             
+air01               SCIP                Solved              48.6406ms           48.6406ms           0.0ms               6796.0              
+bell5               HiGHS               Solved              293.755ms           293.755ms           0.0ms               8966406.5           
+mik-250-1-100-1     SCIP                Solved              56894.4ms           56894.4ms           0.0ms               -66729.0            
+p0033               SCIP                Solved              8.17996ms           8.17996ms           0.0ms               3089.0              
+mod008              HiGHS               Solved              539.114ms           539.114ms           0.0ms               307.0               
+nexp-50-20-1-1      HiGHS               Solved              44.8285ms           44.8285ms           0.0ms               29.0                
+vpm1                HiGHS               Solved              8.2725ms            8.2725ms            0.0ms               20.0                
+dcmulti             HiGHS               Solved              787.363ms           787.363ms           0.0ms               188182.0            
+neos17              ojAlgo-MIP          TIMEOUT             
+enlight_hard        HiGHS               Solved              5845.09ms           5845.09ms           0.0ms               37.0                
+misc07              SCIP                Solved              1674.72ms           1674.72ms           0.0ms               2810.0              
+mas76               HiGHS               Solved              15979.3ms           15979.3ms           0.0ms               40005.054           
+fixnet6             SCIP                Solved              4252.49ms           4252.49ms           0.0ms               3983.0              
+rgn                 HiGHS               Solved              248.039ms           248.039ms           0.0ms               82.199999           
+exp-1-500-5-5       SCIP                Solved              1309.83ms           1309.83ms           0.0ms               65887.0             
+gen                 ojAlgo-MIP          Solved              46.5397ms           46.5397ms           0.0ms               112313.36           
+neos-911880         HiGHS               Solved              7552.74ms           7552.74ms           0.0ms               54.76               
+mik-250-1-100-1     HiGHS               Solved              1180.25ms           1180.25ms           0.0ms               -66729.0            
+neos-3611447-jijia  SCIP                Solved              969.022ms           969.022ms           0.0ms               107.0               
+nexp-50-20-1-1      SCIP                Solved              227.586ms           227.586ms           0.0ms               29.0                
+set1al              ojAlgo-MIP          Solved              72.4185ms           72.4185ms           0.0ms               15869.75            
+air01               HiGHS               Solved              55.0511ms           55.0511ms           0.0ms               6796.0              
+dcmulti             ojAlgo-MIP          Solved              305.967ms           305.967ms           0.0ms               188183.5            
+mik-250-20-75-1     ojAlgo-MIP          Solved              8225.09ms           8225.09ms           0.0ms               -49716.0            
+p0548               ojAlgo-MIP          Solved              5090.67ms           5090.67ms           0.0ms               8691.0              
+gen-ip036           HiGHS               Solved              236851.0ms          236851.0ms          0.0ms               -4606.6796          
+neos-2624317-amur   ojAlgo-MIP          TIMEOUT             
+neos-3610051-istra  HiGHS               Solved              920.423ms           920.423ms           0.0ms               49.0                
+gen-ip036           SCIP                Solved              200059.0ms          200059.0ms          0.0ms               -4606.6796          
+neos-1425699        SCIP                Solved              5.34446ms           5.34446ms           0.0ms               3.179699E9          
+fixnet3             ojAlgo-MIP          TIMEOUT             
+vpm2                ojAlgo-MIP          Solved              38674.9ms           38674.9ms           0.0ms               13.75               
+p0548               SCIP                Solved              49.8087ms           49.8087ms           0.0ms               8691.0              
+23588               HiGHS               Solved              2966.55ms           2966.55ms           0.0ms               8090.0              
+sample2             ojAlgo-MIP          Solved              4.81533ms           4.81533ms           0.0ms               375.0               
+bienst2             HiGHS               Solved              88935.8ms           88935.8ms           0.0ms               54.6                
+ran12x21            ojAlgo-MIP          Solved              202888.0ms          202888.0ms          0.0ms               3664.0              
+gt2                 SCIP                Solved              13.2178ms           13.2178ms           0.0ms               21166.0             
+pp08aCUTS           HiGHS               Solved              732.647ms           732.647ms           0.0ms               7350.0              
+r50x360             HiGHS               Solved              14879.7ms           14879.7ms           0.0ms               1653.0              
+opt1217             HiGHS               Solved              219.59ms            219.59ms            0.0ms               -16.0               
+modglob             ojAlgo-MIP          TIMEOUT             
+pipex               SCIP                Solved              39.1716ms           39.1716ms           0.0ms               788.263             
+neos-2624317-amur   HiGHS               Solved              50973.0ms           50973.0ms           0.0ms               3.5223968           
+bienst1             HiGHS               Solved              8710.68ms           8710.68ms           0.0ms               46.75               
+lseu                HiGHS               Solved              105.779ms           105.779ms           0.0ms               1120.0              
+aflow30a            ojAlgo-MIP          Solved              35484.9ms           35484.9ms           0.0ms               1158.0              
+gr4x6               SCIP                Solved              4.50563ms           4.50563ms           0.0ms               202.35              
+misc05              SCIP                Solved              945.586ms           945.586ms           0.0ms               2984.5              
+ran16x16            HiGHS               Solved              26871.7ms           26871.7ms           0.0ms               3823.0              
+neos-3610173-itata  SCIP                Solved              645.492ms           645.492ms           0.0ms               148.0               
+fixnet4             ojAlgo-MIP          TIMEOUT             
+set1cl              HiGHS               Solved              64.112ms            64.112ms            0.0ms               6484.25             
+stein9              HiGHS               Solved              6.21425ms           6.21425ms           0.0ms               5.0                 
+bell5               SCIP                Solved              103.971ms           103.971ms           0.0ms               8966406.5           
+neos-5192052-neckar ojAlgo-MIP          Solved              11.0268ms           11.0268ms           0.0ms               -1.167E7            
+dfn-gwin-UUM        SCIP                Solved              48856.2ms           48856.2ms           0.0ms               38752.0             
+egout               HiGHS               Solved              6.30092ms           6.30092ms           0.0ms               568.1007            
+bell3b              HiGHS               Solved              503.854ms           503.854ms           0.0ms               1.1786231E7         
+vpm1                ojAlgo-MIP          Solved              45534.9ms           45534.9ms           0.0ms               20.0                
+p0291               HiGHS               Solved              21.1775ms           21.1775ms           0.0ms               5223.749            
+neos-3610173-itata  ojAlgo-MIP          Solved              24843.7ms           24843.7ms           0.0ms               148.0               
+pigeon-08           SCIP                Solved              329.29ms            329.29ms            0.0ms               -7000.0             
+neos17              HiGHS               Solved              3751.53ms           3751.53ms           0.0ms               0.15000258          
+sp150x300d          SCIP                Solved              114.078ms           114.078ms           0.0ms               69.0                
+neos-1430701        HiGHS               Solved              3374.53ms           3374.53ms           0.0ms               -77.0               
+timtab1             SCIP                Solved              40473.8ms           40473.8ms           0.0ms               764772.0            
+rout                HiGHS               Solved              7483.34ms           7483.34ms           0.0ms               1077.56             
+misc02              SCIP                Solved              107.284ms           107.284ms           0.0ms               1690.0              
+rlp1                HiGHS               Solved              118.308ms           118.308ms           0.0ms               15.0                
+enlight_hard        SCIP                Solved              4.29725ms           4.29725ms           0.0ms               37.0                
+mik-250-20-75-3     ojAlgo-MIP          Solved              19719.0ms           19719.0ms           0.0ms               -52242.0            
+ran13x13            ojAlgo-MIP          Solved              30286.0ms           30286.0ms           0.0ms               3252.0              
+enlight8            SCIP                Solved              2.61467ms           2.61467ms           0.0ms               27.0                
+bell4               SCIP                Solved              324.166ms           324.166ms           0.0ms               1.8541484E7         
+noswot              SCIP                Solved              6308.76ms           6308.76ms           0.0ms               -41.0               
+blend2              HiGHS               Solved              675.211ms           675.211ms           0.0ms               7.598985            
+p0033               ojAlgo-MIP          Solved              3.95262ms           3.95262ms           0.0ms               3089.0              
+neos-3611689-kaihu  ojAlgo-MIP          Solved              17896.9ms           17896.9ms           0.0ms               119.0               
+mik-250-20-75-2     ojAlgo-MIP          Solved              20353.8ms           20353.8ms           0.0ms               -50768.0            
+stein15             HiGHS               Solved              29.0862ms           29.0862ms           0.0ms               9.0                 
+markshare_4_0       SCIP                Solved              58585.6ms           58585.6ms           0.0ms               1.0                 
+stein27             HiGHS               Solved              149.966ms           149.966ms           0.0ms               18.0                
+supportcase16       HiGHS               Solved              43.0845ms           43.0845ms           0.0ms               288.0               
+misc03              SCIP                Solved              571.069ms           571.069ms           0.0ms               3360.0              
+prod1               ojAlgo-MIP          Solved              10170.8ms           10170.8ms           0.0ms               -56.0               
+beavma              HiGHS               Solved              292.58ms            292.58ms            0.0ms               383285.0            
+pp08a               ojAlgo-MIP          Solved              72440.8ms           72440.8ms           0.0ms               7350.0              
+fixnet6             ojAlgo-MIP          TIMEOUT             
+p0201               HiGHS               Solved              680.644ms           680.644ms           0.0ms               7615.0              
+blend2              SCIP                Solved              534.517ms           534.517ms           0.0ms               7.598985            
+opt1217             SCIP                Solved              68.7892ms           68.7892ms           0.0ms               -16.0               
+graphdraw-gemcutter SCIP                Solved              91348.8ms           91348.8ms           0.0ms               7118.5              
+pp08aCUTS           SCIP                Solved              641.532ms           641.532ms           0.0ms               7350.0              
+cracpb1             SCIP                Solved              87.6603ms           87.6603ms           0.0ms               22199.0             
+prod1               SCIP                Solved              9310.97ms           9310.97ms           0.0ms               -56.0               
+gsvm2rl3            ojAlgo-MIP          TIMEOUT             
+modglob             HiGHS               Solved              221.371ms           221.371ms           0.0ms               2.0740508E7         
+neos-3611689-kaihu  HiGHS               Solved              699.929ms           699.929ms           0.0ms               119.0               
+set1cl              ojAlgo-MIP          Solved              40.589ms            40.589ms            0.0ms               6484.25             
+misc01              ojAlgo-MIP          Solved              43.5623ms           43.5623ms           0.0ms               563.5               
+cracpb1             ojAlgo-MIP          Solved              58.7478ms           58.7478ms           0.0ms               22199.0             
+mik-250-20-75-5     SCIP                Solved              2771.46ms           2771.46ms           0.0ms               -51532.0            
+stein45             ojAlgo-MIP          Solved              4290.88ms           4290.88ms           0.0ms               30.0                
+egout               SCIP                Solved              4.55279ms           4.55279ms           0.0ms               568.1007            
+gen                 HiGHS               Solved              19.7654ms           19.7654ms           0.0ms               112313.36           
+fixnet4             HiGHS               Solved              200.75ms            200.75ms            0.0ms               8936.0              
+rgn                 ojAlgo-MIP          Solved              130.647ms           130.647ms           0.0ms               82.199999           
+ic97_tension        SCIP                Solved              12804.0ms           12804.0ms           0.0ms               3942.0              
+bienst1             ojAlgo-MIP          Solved              1639.03ms           1639.03ms           0.0ms               46.75               
+pp08aCUTS           ojAlgo-MIP          Solved              55346.7ms           55346.7ms           0.0ms               7350.0              
+stein45             SCIP                Solved              9209.57ms           9209.57ms           0.0ms               30.0                
+misc05              HiGHS               Solved              316.325ms           316.325ms           0.0ms               2984.5              
+prod2               ojAlgo-MIP          Solved              47978.5ms           47978.5ms           0.0ms               -62.0               
+misc07              HiGHS               Solved              5078.16ms           5078.16ms           0.0ms               2810.0              
+egout               ojAlgo-MIP          Solved              49.0415ms           49.0415ms           0.0ms               568.1007            
+rgn                 SCIP                Solved              114.479ms           114.479ms           0.0ms               82.199999           
+p0282               HiGHS               Solved              107.08ms            107.08ms            0.0ms               258411.0            
+bell3a              HiGHS               Solved              143.309ms           143.309ms           0.0ms               878430.32           
+ic97_tension        ojAlgo-MIP          TIMEOUT             
+mik-250-20-75-4     SCIP                Solved              14827.7ms           14827.7ms           0.0ms               -52301.0            
+p0040               HiGHS               Solved              4.21567ms           4.21567ms           0.0ms               62027.0             
+sp150x300d          HiGHS               Solved              30.2936ms           30.2936ms           0.0ms               69.0                
+flugpl              SCIP                Solved              19.1258ms           19.1258ms           0.0ms               1201500.0           
+bm23                ojAlgo-MIP          Solved              32.3329ms           32.3329ms           0.0ms               34.0                
+bienst1             SCIP                Solved              44593.0ms           44593.0ms           0.0ms               46.75               
+mod008              SCIP                Solved              128.687ms           128.687ms           0.0ms               307.0               
+supportcase14       HiGHS               Solved              38.514ms            38.514ms            0.0ms               288.0               
+graphdraw-gemcutter HiGHS               Solved              84655.5ms           84655.5ms           0.0ms               7118.5              
+mik-250-20-75-4     ojAlgo-MIP          Solved              55579.1ms           55579.1ms           0.0ms               -52301.0            
+misc01              SCIP                Solved              180.349ms           180.349ms           0.0ms               563.5               
+blend2              ojAlgo-MIP          Solved              318.867ms           318.867ms           0.0ms               7.598985            
+mod008              ojAlgo-MIP          Solved              95.8938ms           95.8938ms           0.0ms               307.0               
+neos-1425699        HiGHS               Solved              70.283ms            70.283ms            0.0ms               3.179699E9          
+flugpl              ojAlgo-MIP          Solved              1.14362ms           1.14362ms           0.0ms               1201500.0           
+set1al              HiGHS               Solved              52.0398ms           52.0398ms           0.0ms               15869.75            
+mik-250-20-75-5     ojAlgo-MIP          Solved              17174.1ms           17174.1ms           0.0ms               -51532.0            
+timtab1CUTS         SCIP                Solved              50666.0ms           50666.0ms           0.0ms               764772.0            
+misc03              ojAlgo-MIP          Solved              43.9791ms           43.9791ms           0.0ms               3360.0              
+mas76               ojAlgo-MIP          Solved              8039.23ms           8039.23ms           0.0ms               40005.054           
+lseu                ojAlgo-MIP          Solved              48.1082ms           48.1082ms           0.0ms               1120.0              
+mik-250-20-75-3     SCIP                Solved              2490.83ms           2490.83ms           0.0ms               -52242.0            
+23588               ojAlgo-MIP          Solved              221.325ms           221.325ms           0.0ms               8090.0              
+bell5               ojAlgo-MIP          Solved              3642.2ms            3642.2ms            0.0ms               8966406.5           
+neos-3610040-iskar  ojAlgo-MIP          Solved              52190.5ms           52190.5ms           0.0ms               37.0                
+enlight8            ojAlgo-MIP          Solved              529.226ms           529.226ms           0.0ms               27.0                
+neos-3611447-jijia  HiGHS               Solved              876.606ms           876.606ms           0.0ms               107.0               
+bm23                SCIP                Solved              84.6557ms           84.6557ms           0.0ms               34.0                
+timtab1CUTS         ojAlgo-MIP          Solved              246748.0ms          246748.0ms          0.0ms               764772.0            
+ran12x21            HiGHS               Solved              10370.2ms           10370.2ms           0.0ms               3664.0              
+enlight_hard        ojAlgo-MIP          Solved              26660.6ms           26660.6ms           0.0ms               37.0                
+neos-911970         ojAlgo-MIP          TIMEOUT             
+beavma              SCIP                Solved              213.747ms           213.747ms           0.0ms               383285.0            
+misc03              HiGHS               Solved              318.518ms           318.518ms           0.0ms               3360.0              
+timtab1             ojAlgo-MIP          TIMEOUT             
+mik-250-20-75-2     SCIP                Solved              3399.35ms           3399.35ms           0.0ms               -50768.0            
+aflow30a            SCIP                Solved              8228.55ms           8228.55ms           0.0ms               1158.0              
+gsvm2rl3            SCIP                Solved              5613.82ms           5613.82ms           0.0ms               0.33652753          
+sentoy              HiGHS               Solved              87.07ms             87.07ms             0.0ms               -7772.0             
+set1ch              SCIP                Solved              130.796ms           130.796ms           0.0ms               54537.75            
+neos-3610040-iskar  HiGHS               Solved              597.105ms           597.105ms           0.0ms               37.0                
+ran13x13            SCIP                Solved              14918.1ms           14918.1ms           0.0ms               3252.0              
+neos-1430701        SCIP                Solved              2414.76ms           2414.76ms           0.0ms               -77.0               
+prod2               SCIP                Solved              47438.4ms           47438.4ms           0.0ms               -62.0               
+misc02              ojAlgo-MIP          Solved              13.6369ms           13.6369ms           0.0ms               1690.0              
+stein9              SCIP                Solved              8.91163ms           8.91163ms           0.0ms               5.0                 
+p0291               SCIP                Solved              10.9604ms           10.9604ms           0.0ms               5223.749            
+neos-5192052-neckar SCIP                Solved              13.8918ms           13.8918ms           0.0ms               -1.167E7            
+fixnet3             HiGHS               Solved              62.8956ms           62.8956ms           0.0ms               51973.0             
+neos-3611447-jijia  ojAlgo-MIP          Solved              28990.1ms           28990.1ms           0.0ms               107.0               
+pp08a               SCIP                Solved              888.963ms           888.963ms           0.0ms               7350.0              
+bienst2             ojAlgo-MIP          Solved              21496.9ms           21496.9ms           0.0ms               54.6                
+f2gap40400          ojAlgo-MIP          Solved              102.08ms            102.08ms            0.0ms               20772.0             
+vpm1                SCIP                Solved              9.07437ms           9.07437ms           0.0ms               20.0                
+mik-250-20-75-1     SCIP                Solved              2334.39ms           2334.39ms           0.0ms               -49716.0            
+bell4               ojAlgo-MIP          TIMEOUT             
+rlp1                SCIP                Solved              16610.8ms           16610.8ms           0.0ms               15.0                
+misc05              ojAlgo-MIP          Solved              99.3981ms           99.3981ms           0.0ms               2984.5              
+bppc8-02            ojAlgo-MIP          Solved              476.615ms           476.615ms           0.0ms               507.0               
+enigma              ojAlgo-MIP          Solved              54.1865ms           54.1865ms           0.0ms               0.0                 
+enlight13           SCIP                Solved              7.56029ms           7.56029ms           0.0ms               71.0                
+neos-1425699        ojAlgo-MIP          Solved              1.75075ms           1.75075ms           0.0ms               3.179699E9          
+gt2                 ojAlgo-MIP          Solved              86.6623ms           86.6623ms           0.0ms               21166.0             
+enigma              SCIP                Solved              159.42ms            159.42ms            0.0ms               0.0                 
+noswot              ojAlgo-MIP          Solved              251978.0ms          251978.0ms          0.0ms               -41.0               
+ran12x21            SCIP                Solved              30911.2ms           30911.2ms           0.0ms               3664.0              
+dcmulti             SCIP                Solved              1343.58ms           1343.58ms           0.0ms               188182.0            
+sample2             SCIP                Solved              4.15408ms           4.15408ms           0.0ms               375.0               
+misc01              HiGHS               Solved              250.527ms           250.527ms           0.0ms               563.5               
+nexp-50-20-1-1      ojAlgo-MIP          TIMEOUT             
+markshare_4_0       ojAlgo-MIP          Solved              6494.55ms           6494.55ms           0.0ms               1.0                 
+set1al              SCIP                Solved              52.1902ms           52.1902ms           0.0ms               15869.75            
+enlight13           ojAlgo-MIP          Solved              177980.0ms          177980.0ms          0.0ms               71.0                
+fixnet3             SCIP                Solved              19.8296ms           19.8296ms           0.0ms               51973.0             
+dfn-gwin-UUM        HiGHS               Solved              69319.3ms           69319.3ms           0.0ms               38752.0             
+modglob             SCIP                Solved              109.24ms            109.24ms            0.0ms               2.0740508E7         
+vpm2                SCIP                Solved              1078.11ms           1078.11ms           0.0ms               13.75               
+p0201               SCIP                Solved              363.163ms           363.163ms           0.0ms               7615.0              
+pigeon-08           HiGHS               Solved              5942.32ms           5942.32ms           0.0ms               -7000.0             
+pipex               ojAlgo-MIP          Solved              7.86196ms           7.86196ms           0.0ms               788.263             
+p0201               ojAlgo-MIP          Solved              113.6ms             113.6ms             0.0ms               7615.0              
+neos17              SCIP                Solved              4034.69ms           4034.69ms           0.0ms               0.15000258          
+cracpb1             HiGHS               Solved              37.9525ms           37.9525ms           0.0ms               22199.0             
+gen-ip036           ojAlgo-MIP          Solved              47916.2ms           47916.2ms           0.0ms               -4606.6796          
+mod013              HiGHS               Solved              157.051ms           157.051ms           0.0ms               280.95              
+gen-ip021           HiGHS               Solved              138116.0ms          138116.0ms          0.0ms               2361.4542           
+misc02              HiGHS               Solved              32.7793ms           32.7793ms           0.0ms               1690.0              
+ran13x13            HiGHS               Solved              6931.19ms           6931.19ms           0.0ms               3252.0              
+fixnet4             SCIP                Solved              875.751ms           875.751ms           0.0ms               8936.0              
+gr4x6               ojAlgo-MIP          Solved              6.06588ms           6.06588ms           0.0ms               202.35              
+rout                SCIP                Solved              9719.42ms           9719.42ms           0.0ms               1077.56             
+stein45             HiGHS               Solved              6714.69ms           6714.69ms           0.0ms               30.0                
+rout                ojAlgo-MIP          TIMEOUT             
+gen                 SCIP                Solved              17.9322ms           17.9322ms           0.0ms               112313.36           
+neos-911970         SCIP                Solved              9728.11ms           9728.11ms           0.0ms               54.76               
+p0033               HiGHS               Solved              15.7665ms           15.7665ms           0.0ms               3089.0              
+23588               SCIP                Solved              2938.43ms           2938.43ms           0.0ms               8090.0              
+misc07              ojAlgo-MIP          Solved              5143.17ms           5143.17ms           0.0ms               2810.0              
+sentoy              SCIP                Solved              205.757ms           205.757ms           0.0ms               -7772.0             
+rlp1                ojAlgo-MIP          TIMEOUT             
+p0040               SCIP                Solved              4.40562ms           4.40562ms           0.0ms               62027.0             
+p0282               SCIP                Solved              111.867ms           111.867ms           0.0ms               258411.0            
+exp-1-500-5-5       ojAlgo-MIP          TIMEOUT             
+fixnet6             HiGHS               Solved              1766.29ms           1766.29ms           0.0ms               3983.0              
+neos-3610040-iskar  SCIP                Solved              544.259ms           544.259ms           0.0ms               37.0                
+bell3a              ojAlgo-MIP          Solved              369.486ms           369.486ms           0.0ms               878430.32           
+mas76               SCIP                Solved              43466.3ms           43466.3ms           0.0ms               40005.054           
+stein27             ojAlgo-MIP          Solved              95.2572ms           95.2572ms           0.0ms               18.0                
+neos-3610173-itata  HiGHS               Solved              697.866ms           697.866ms           0.0ms               148.0               
+stein15             ojAlgo-MIP          Solved              1.86792ms           1.86792ms           0.0ms               9.0                 
+prod1               HiGHS               Solved              5684.9ms            5684.9ms            0.0ms               -56.0               
+pp08a               HiGHS               Solved              686.027ms           686.027ms           0.0ms               7350.0              
+mik-250-20-75-5     HiGHS               Solved              1787.19ms           1787.19ms           0.0ms               -51532.0            
+f2gap40400          SCIP                Solved              33.1532ms           33.1532ms           0.0ms               20772.0             
+p0291               ojAlgo-MIP          Solved              26.785ms            26.785ms            0.0ms               5223.749            
+pk1                 HiGHS               Solved              43473.0ms           43473.0ms           0.0ms               10.999999           
+set1cl              SCIP                Solved              14.6128ms           14.6128ms           0.0ms               6484.25             
+stein9              ojAlgo-MIP          Solved              0.669417ms          0.669417ms          0.0ms               5.0                 
+22433               HiGHS               Solved              1278.24ms           1278.24ms           0.0ms               21477.0             
+beavma              ojAlgo-MIP          TIMEOUT             
+lseu                SCIP                Solved              259.425ms           259.425ms           0.0ms               1120.0              
+bppc8-02            SCIP                Solved              175.572ms           175.572ms           0.0ms               507.0               
+ic97_tension        HiGHS               Solved              8250.91ms           8250.91ms           0.0ms               3942.0              
+flugpl              HiGHS               Solved              36.018ms            36.018ms            0.0ms               1201500.0           
+neos-2624317-amur   SCIP                Solved              16911.8ms           16911.8ms           0.0ms               3.5223968           
+neos-1430701        ojAlgo-MIP          TIMEOUT             
+supportcase14       ojAlgo-MIP          Solved              42.2263ms           42.2263ms           0.0ms               288.0               
+bell3b              ojAlgo-MIP          Solved              271.902ms           271.902ms           0.0ms               1.1786515E7         
+bienst2             SCIP                Solved              162314.0ms          162314.0ms          0.0ms               54.6                
+prod2               HiGHS               Solved              28054.9ms           28054.9ms           0.0ms               -62.0               
+bm23                HiGHS               Solved              181.281ms           181.281ms           0.0ms               34.0                
+mik-250-20-75-4     HiGHS               Solved              10449.3ms           10449.3ms           0.0ms               -52301.0            
+air01               ojAlgo-MIP          Solved              27.133ms            27.133ms            0.0ms               6796.0              
+p0548               HiGHS               Solved              66.3421ms           66.3421ms           0.0ms               8691.0              
+opt1217             ojAlgo-MIP          FAILED              NaNms               FAILED                                  0.0                 
+set1ch              ojAlgo-MIP          TIMEOUT             
+
+Iteration 2 with 288 model/solver pairs remaining 2026-11-27T10:23:12.780854Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+gr4x6               HiGHS               Solved              9.16629ms           9.21325ms           0.093916ms          202.35              
+aflow30a            HiGHS               Solved              3271.39ms           3229.65ms           83.4758ms           1158.0              
+pk1                 ojAlgo-MIP          Solved              5756.89ms           5822.37ms           130.947ms           11.0                
+gsvm2rl3            HiGHS               Solved              20712.6ms           20214.3ms           996.569ms           0.33652753          
+bell4               HiGHS               Solved              238.267ms           235.627ms           5.27825ms           1.8542104E7         
+mod013              SCIP                Solved              749.72ms            742.46ms            14.5205ms           280.95              
+f2gap40400          HiGHS               Solved              8.76683ms           9.00946ms           0.485251ms          20772.0             
+supportcase16       SCIP                Solved              86.7099ms           90.2694ms           7.11896ms           288.0               
+vpm2                HiGHS               Solved              783.551ms           794.336ms           21.5686ms           13.75               
+pipex               HiGHS               Solved              34.0082ms           34.6339ms           1.25138ms           788.263             
+markshare_4_0       HiGHS               Solved              24532.1ms           24383.8ms           296.553ms           1.0                 
+r50x360             SCIP                Solved              26363.3ms           25978.4ms           769.655ms           1653.0              
+timtab1             HiGHS               Solved              23457.2ms           22342.5ms           2229.43ms           764774.0            
+gen-ip021           ojAlgo-MIP          Solved              40690.2ms           41876.6ms           2372.97ms           2361.4542           
+neos-3610051-istra  ojAlgo-MIP          Solved              167927.0ms          171136.0ms          6417.34ms           49.0                
+mik-250-20-75-3     HiGHS               Solved              1473.89ms           1444.0ms            59.7777ms           -52242.0            
+gt2                 HiGHS               Solved              29.1809ms           28.3067ms           1.7485ms            21166.0             
+mod013              ojAlgo-MIP          Solved              16.9908ms           17.7754ms           1.56929ms           280.95              
+neos-911880         SCIP                Solved              6262.24ms           6145.15ms           234.173ms           54.76               
+sample2             HiGHS               Solved              10.2141ms           10.1218ms           0.184583ms          375.0               
+neos-911970         HiGHS               Solved              3568.05ms           3526.18ms           83.7408ms           54.76               
+neos-5192052-neckar HiGHS               Solved              22.3234ms           22.5482ms           0.449583ms          -1.167E7            
+bppc8-02            HiGHS               Solved              211.56ms            210.08ms            2.95942ms           507.0               
+ran16x16            SCIP                Solved              45983.4ms           44689.7ms           2587.33ms           3823.0              
+neos-3610051-istra  SCIP                Solved              683.63ms            665.949ms           35.3636ms           49.0                
+supportcase16       ojAlgo-MIP          Solved              50.0448ms           45.6205ms           8.84846ms           288.0               
+enlight8            HiGHS               Solved              1007.46ms           991.201ms           32.5175ms           27.0                
+22433               SCIP                Solved              1622.0ms            1586.81ms           70.3651ms           21477.0             
+mik-250-1-100-1     ojAlgo-MIP          Solved              108444.0ms          126116.0ms          35343.1ms           -66729.0            
+22433               ojAlgo-MIP          Solved              92.1455ms           104.948ms           25.6058ms           21477.0             
+enlight13           HiGHS               Solved              62374.7ms           62482.4ms           215.39ms            71.0                
+set1ch              HiGHS               Solved              172.13ms            182.788ms           21.3171ms           54537.75            
+mik-250-20-75-2     HiGHS               Solved              1049.13ms           1111.05ms           123.831ms           -50768.0            
+enigma              HiGHS               Solved              73.3323ms           77.6247ms           8.58492ms           0.0                 
+p0040               ojAlgo-MIP          Solved              1.31554ms           1.51502ms           0.398959ms          62027.0             
+bell3a              SCIP                Solved              700.05ms            752.537ms           104.973ms           878430.32           
+gen-ip021           SCIP                Solved              190214.0ms          193000.0ms          5573.87ms           2361.4542           
+p0282               ojAlgo-MIP          Solved              268.01ms            182.366ms           171.287ms           258411.0            
+noswot              HiGHS               Solved              3567.88ms           3623.7ms            111.634ms           -41.0               
+pk1                 SCIP                Solved              65464.3ms           66387.6ms           1846.6ms            11.0                
+timtab1CUTS         HiGHS               Solved              15568.5ms           15389.7ms           357.556ms           764772.0            
+supportcase14       SCIP                Solved              74.6642ms           71.2479ms           6.83271ms           288.0               
+sentoy              ojAlgo-MIP          Solved              23.6466ms           26.5492ms           5.80529ms           -7772.0             
+neos-3611689-kaihu  SCIP                Solved              496.003ms           489.366ms           13.2752ms           119.0               
+graphdraw-gemcutter ojAlgo-MIP          Solved              96351.8ms           100091.0ms          7478.81ms           7118.5              
+stein27             SCIP                Solved              81.5807ms           89.8084ms           16.4555ms           18.0                
+stein15             SCIP                Solved              16.5716ms           19.1454ms           5.1475ms            9.0                 
+mik-250-20-75-1     HiGHS               Solved              1410.4ms            1397.88ms           25.0461ms           -49716.0            
+bell3b              SCIP                Solved              1916.04ms           2085.05ms           338.007ms           1.1786161E7         
+exp-1-500-5-5       HiGHS               Solved              2363.29ms           2505.41ms           284.245ms           65887.0             
+air01               SCIP                Solved              42.789ms            45.7148ms           5.85162ms           6796.0              
+bell5               HiGHS               Solved              285.608ms           289.682ms           8.147ms             8966406.5           
+pigeon-08           ojAlgo-MIP          Solved              43983.5ms           46907.0ms           5847.03ms           -7000.0             
+p0033               SCIP                Solved              7.15858ms           7.66927ms           1.02137ms           3089.0              
+mod008              HiGHS               Solved              504.062ms           521.588ms           35.0522ms           307.0               
+nexp-50-20-1-1      HiGHS               Solved              40.07ms             42.4493ms           4.75854ms           29.0                
+vpm1                HiGHS               Solved              7.58304ms           7.92777ms           0.689458ms          20.0                
+dcmulti             HiGHS               Solved              646.547ms           716.955ms           140.816ms           188182.0            
+enlight_hard        HiGHS               Solved              5153.7ms            5499.4ms            691.393ms           37.0                
+mas76               HiGHS               Solved              13812.4ms           14895.8ms           2166.9ms            40005.054           
+misc07              SCIP                Solved              1513.28ms           1594.0ms            161.435ms           2810.0              
+fixnet6             SCIP                Solved              3550.92ms           3901.7ms            701.576ms           3983.0              
+rgn                 HiGHS               Solved              190.22ms            219.13ms            57.8191ms           82.199999           
+exp-1-500-5-5       SCIP                Solved              1092.68ms           1201.25ms           217.149ms           65887.0             
+gen                 ojAlgo-MIP          Solved              25.7607ms           36.1502ms           20.779ms            112313.36           
+neos-911880         HiGHS               Solved              6404.94ms           6978.84ms           1147.8ms            54.76               
+mik-250-1-100-1     HiGHS               Solved              1044.55ms           1112.4ms            135.701ms           -66729.0            
+neos-3611447-jijia  SCIP                Solved              778.933ms           873.977ms           190.089ms           107.0               
+nexp-50-20-1-1      SCIP                Solved              171.484ms           199.535ms           56.1018ms           29.0                
+set1al              ojAlgo-MIP          Solved              64.1457ms           68.2821ms           8.27279ms           15869.75            
+air01               HiGHS               Solved              44.0976ms           49.5743ms           10.9535ms           6796.0              
+dcmulti             ojAlgo-MIP          Solved              254.993ms           280.48ms            50.9735ms           188183.5            
+mik-250-1-100-1     SCIP                Solved              39686.0ms           48290.2ms           17208.5ms           -66729.0            
+mik-250-20-75-1     ojAlgo-MIP          Solved              15337.6ms           11781.3ms           7112.48ms           -49716.0            
+gen-ip036           HiGHS               Solved              138401.0ms          187626.0ms          98449.9ms           -4606.6796          
+neos-3610051-istra  HiGHS               Solved              913.548ms           916.986ms           6.87529ms           49.0                
+p0548               ojAlgo-MIP          Solved              11797.5ms           8444.07ms           6706.79ms           8691.0              
+neos-1425699        SCIP                Solved              3.80592ms           4.57519ms           1.53854ms           3.179699E9          
+gen-ip036           SCIP                Solved              192252.0ms          196156.0ms          7807.56ms           -4606.6796          
+p0548               SCIP                Solved              52.6259ms           51.2173ms           2.81725ms           8691.0              
+23588               HiGHS               Solved              3089.31ms           3027.93ms           122.761ms           8090.0              
+sample2             ojAlgo-MIP          Solved              3.67042ms           4.24287ms           1.14492ms           375.0               
+vpm2                ojAlgo-MIP          Solved              36497.1ms           37586.0ms           2177.8ms            13.75               
+r50x360             HiGHS               Solved              13282.9ms           14081.3ms           1596.72ms           1653.0              
+gt2                 SCIP                Solved              14.2024ms           13.7101ms           0.984625ms          21166.0             
+pp08aCUTS           HiGHS               Solved              719.001ms           725.824ms           13.6459ms           7350.0              
+bienst2             HiGHS               Solved              84215.2ms           86575.5ms           4720.58ms           54.6                
+opt1217             HiGHS               Solved              223.992ms           221.791ms           4.40167ms           -16.0               
+ran12x21            ojAlgo-MIP          Solved              209397.0ms          206143.0ms          6508.79ms           3664.0              
+pipex               SCIP                Solved              36.8615ms           38.0166ms           2.31008ms           788.263             
+bienst1             HiGHS               Solved              7915.01ms           8312.85ms           795.673ms           46.75               
+lseu                HiGHS               Solved              97.7279ms           101.753ms           8.051ms             1120.0              
+neos-2624317-amur   HiGHS               Solved              47883.7ms           49428.4ms           3089.27ms           3.5223968           
+gr4x6               SCIP                Solved              3.80488ms           4.15525ms           0.70075ms           202.35              
+ran16x16            HiGHS               Solved              24346.3ms           25609.0ms           2525.45ms           3823.0              
+misc05              SCIP                Solved              952.712ms           949.149ms           7.12621ms           2984.5              
+neos-3610173-itata  SCIP                Solved              652.72ms            649.106ms           7.22775ms           148.0               
+aflow30a            ojAlgo-MIP          Solved              28153.0ms           31819.0ms           7331.82ms           1158.0              
+set1cl              HiGHS               Solved              61.1818ms           62.6469ms           2.93025ms           6484.25             
+stein9              HiGHS               Solved              5.9955ms            6.10487ms           0.21875ms           5.0                 
+bell5               SCIP                Solved              95.0538ms           99.5122ms           8.91688ms           8966406.5           
+neos-5192052-neckar ojAlgo-MIP          Solved              2.5785ms            6.80265ms           8.44829ms           -1.167E7            
+neos-3610173-itata  ojAlgo-MIP          Solved              18216.5ms           21530.1ms           6627.16ms           148.0               
+egout               HiGHS               Solved              6.12263ms           6.21177ms           0.178292ms          568.1007            
+bell3b              HiGHS               Solved              443.407ms           473.631ms           60.447ms            1.1786231E7         
+dfn-gwin-UUM        SCIP                Solved              44200.1ms           46528.1ms           4656.11ms           38752.0             
+p0291               HiGHS               Solved              22.0281ms           21.6028ms           0.850583ms          5223.749            
+timtab1             SCIP                Solved              36273.4ms           38373.6ms           4200.32ms           764772.0            
+pigeon-08           SCIP                Solved              358.736ms           344.013ms           29.4455ms           -7000.0             
+neos17              HiGHS               Solved              4015.77ms           3883.65ms           264.24ms            0.15000258          
+sp150x300d          SCIP                Solved              126.208ms           120.143ms           12.13ms             69.0                
+neos-1430701        HiGHS               Solved              3681.5ms            3528.01ms           306.971ms           -77.0               
+vpm1                ojAlgo-MIP          Solved              37592.8ms           41563.9ms           7942.15ms           20.0                
+mik-250-20-75-3     ojAlgo-MIP          Solved              19526.2ms           19622.6ms           192.839ms           -52242.0            
+misc02              SCIP                Solved              91.0872ms           99.1857ms           16.1969ms           1690.0              
+rlp1                HiGHS               Solved              106.556ms           112.432ms           11.7525ms           15.0                
+enlight_hard        SCIP                Solved              3.43983ms           3.86854ms           0.857416ms          37.0                
+rout                HiGHS               Solved              7231.37ms           7357.36ms           251.964ms           1077.56             
+ran13x13            ojAlgo-MIP          Solved              29520.3ms           29903.2ms           765.709ms           3252.0              
+enlight8            SCIP                Solved              2.70038ms           2.65752ms           0.085709ms          27.0                
+bell4               SCIP                Solved              330.22ms            327.193ms           6.05408ms           1.8541484E7         
+markshare_4_0       SCIP                Solved              56242.9ms           57414.2ms           2342.74ms           1.0                 
+blend2              HiGHS               Solved              685.11ms            680.16ms            9.89875ms           7.598985            
+p0033               ojAlgo-MIP          Solved              2.95533ms           3.45398ms           0.997292ms          3089.0              
+neos-3611689-kaihu  ojAlgo-MIP          Solved              13202.1ms           15549.5ms           4694.81ms           119.0               
+noswot              SCIP                Solved              6962.38ms           6635.57ms           653.628ms           -41.0               
+stein15             HiGHS               Solved              29.8182ms           29.4522ms           0.732ms             9.0                 
+stein27             HiGHS               Solved              146.292ms           148.129ms           3.67433ms           18.0                
+supportcase16       HiGHS               Solved              44.859ms            43.9718ms           1.77446ms           288.0               
+misc03              SCIP                Solved              583.094ms           577.081ms           12.0245ms           3360.0              
+prod1               ojAlgo-MIP          Solved              11450.6ms           10810.7ms           1279.8ms            -56.0               
+beavma              HiGHS               Solved              276.858ms           284.719ms           15.7223ms           383285.0            
+mik-250-20-75-2     ojAlgo-MIP          Solved              16707.8ms           18530.8ms           3645.93ms           -50768.0            
+p0201               HiGHS               Solved              661.86ms            671.252ms           18.7841ms           7615.0              
+blend2              SCIP                Solved              528.101ms           531.309ms           6.41538ms           7.598985            
+opt1217             SCIP                Solved              66.1641ms           67.4766ms           2.62512ms           -16.0               
+prod1               SCIP                Solved              9159.92ms           9235.44ms           151.051ms           -56.0               
+pp08aCUTS           SCIP                Solved              624.894ms           633.213ms           16.639ms            7350.0              
+cracpb1             SCIP                Solved              84.336ms            85.9982ms           3.32429ms           22199.0             
+ic97_tension        SCIP                Solved              12590.5ms           12697.3ms           213.469ms           3942.0              
+mik-250-20-75-5     SCIP                Solved              2839.5ms            2805.48ms           68.0408ms           -51532.0            
+modglob             HiGHS               Solved              262.152ms           241.762ms           40.7811ms           2.0740508E7         
+neos-3611689-kaihu  HiGHS               Solved              811.014ms           755.472ms           111.085ms           119.0               
+set1cl              ojAlgo-MIP          Solved              24.449ms            32.519ms            16.14ms             6484.25             
+misc01              ojAlgo-MIP          Solved              14.8262ms           29.1943ms           28.7361ms           563.5               
+cracpb1             ojAlgo-MIP          Solved              52.8335ms           55.7906ms           5.91429ms           22199.0             
+pp08a               ojAlgo-MIP          Solved              77202.4ms           74821.6ms           4761.63ms           7350.0              
+stein45             ojAlgo-MIP          Solved              4240.8ms            4265.84ms           50.0828ms           30.0                
+egout               SCIP                Solved              4.44779ms           4.50029ms           0.105ms             568.1007            
+gen                 HiGHS               Solved              17.3086ms           18.537ms            2.45683ms           112313.36           
+fixnet4             HiGHS               Solved              200.663ms           200.707ms           0.086333ms          8936.0              
+rgn                 ojAlgo-MIP          Solved              83.4821ms           107.065ms           47.165ms            82.199999           
+bienst1             ojAlgo-MIP          Solved              1448.51ms           1543.77ms           190.527ms           46.75               
+graphdraw-gemcutter SCIP                Solved              86281.8ms           88815.3ms           5067.07ms           7118.5              
+stein45             SCIP                Solved              9162.49ms           9186.03ms           47.0758ms           30.0                
+misc05              HiGHS               Solved              309.574ms           312.949ms           6.75129ms           2984.5              
+pp08aCUTS           ojAlgo-MIP          Solved              46081.5ms           50714.1ms           9265.16ms           7350.0              
+misc07              HiGHS               Solved              5217.94ms           5148.05ms           139.779ms           2810.0              
+egout               ojAlgo-MIP          Solved              35.645ms            42.3432ms           13.3965ms           568.1007            
+rgn                 SCIP                Solved              119.139ms           116.809ms           4.65942ms           82.199999           
+p0282               HiGHS               Solved              109.803ms           108.442ms           2.72262ms           258411.0            
+bell3a              HiGHS               Solved              144.776ms           144.042ms           1.46667ms           878430.32           
+prod2               ojAlgo-MIP          Solved              32700.8ms           40339.6ms           15277.7ms           -62.0               
+bienst1             SCIP                Solved              48343.4ms           46468.2ms           3750.44ms           46.75               
+p0040               HiGHS               Solved              3.22958ms           3.72262ms           0.986082ms          62027.0             
+sp150x300d          HiGHS               Solved              28.4689ms           29.3812ms           1.82471ms           69.0                
+flugpl              SCIP                Solved              16.8547ms           17.9902ms           2.27104ms           1201500.0           
+bm23                ojAlgo-MIP          Solved              9.84325ms           21.0881ms           22.4896ms           34.0                
+mik-250-20-75-4     SCIP                Solved              14732.1ms           14779.9ms           95.6053ms           -52301.0            
+mod008              SCIP                Solved              126.469ms           127.578ms           2.21808ms           307.0               
+supportcase14       HiGHS               Solved              37.6652ms           38.0896ms           0.848792ms          288.0               
+mik-250-20-75-5     ojAlgo-MIP          Solved              9110.64ms           13142.4ms           8063.47ms           -51532.0            
+blend2              ojAlgo-MIP          Solved              339.188ms           329.027ms           20.3202ms           7.598985            
+misc01              SCIP                Solved              159.332ms           169.841ms           21.0167ms           563.5               
+graphdraw-gemcutter HiGHS               Solved              82990.8ms           83823.1ms           1664.68ms           7118.5              
+mod008              ojAlgo-MIP          Solved              87.8238ms           91.8588ms           8.07004ms           307.0               
+neos-1425699        HiGHS               Solved              72.8416ms           71.5623ms           2.55867ms           3.179699E9          
+flugpl              ojAlgo-MIP          Solved              1.16158ms           1.1526ms            0.017959ms          1201500.0           
+set1al              HiGHS               Solved              50.3975ms           51.2186ms           1.64233ms           15869.75            
+timtab1CUTS         SCIP                Solved              47823.8ms           49244.9ms           2842.18ms           764772.0            
+mik-250-20-75-4     ojAlgo-MIP          Solved              50173.3ms           52876.2ms           5405.85ms           -52301.0            
+misc03              ojAlgo-MIP          Solved              44.3299ms           44.1545ms           0.350792ms          3360.0              
+mas76               ojAlgo-MIP          Solved              9606.62ms           8822.92ms           1567.39ms           40005.054           
+lseu                ojAlgo-MIP          Solved              47.024ms            47.5661ms           1.08421ms           1120.0              
+mik-250-20-75-3     SCIP                Solved              2454.52ms           2472.67ms           36.305ms            -52242.0            
+23588               ojAlgo-MIP          Solved              219.141ms           220.233ms           2.18337ms           8090.0              
+neos-3610040-iskar  ojAlgo-MIP          Solved              54887.4ms           53538.9ms           2696.93ms           37.0                
+ran12x21            HiGHS               Solved              10179.6ms           10274.9ms           190.576ms           3664.0              
+enlight8            ojAlgo-MIP          Solved              990.735ms           759.98ms            461.509ms           27.0                
+neos-3611447-jijia  HiGHS               Solved              948.894ms           912.75ms            72.2876ms           107.0               
+bm23                SCIP                Solved              89.7571ms           87.2064ms           5.10137ms           34.0                
+bell5               ojAlgo-MIP          Solved              4121.87ms           3882.03ms           479.676ms           8966406.5           
+timtab1CUTS         ojAlgo-MIP          UNSTABLE            
+beavma              SCIP                Solved              223.481ms           218.614ms           9.73433ms           383285.0            
+misc03              HiGHS               Solved              325.845ms           322.182ms           7.32725ms           3360.0              
+aflow30a            SCIP                Solved              9664.68ms           8946.62ms           1436.13ms           1158.0              
+mik-250-20-75-2     SCIP                Solved              3942.19ms           3670.77ms           542.838ms           -50768.0            
+ran13x13            SCIP                Solved              17608.6ms           16263.3ms           2690.45ms           3252.0              
+gsvm2rl3            SCIP                Solved              6552.8ms            6083.31ms           938.982ms           0.33652753          
+sentoy              HiGHS               Solved              97.4385ms           92.2543ms           10.3685ms           -7772.0             
+set1ch              SCIP                Solved              148.998ms           139.897ms           18.2018ms           54537.75            
+neos-3610040-iskar  HiGHS               Solved              713.152ms           655.129ms           116.048ms           37.0                
+neos-1430701        SCIP                Solved              2461.06ms           2437.91ms           46.2959ms           -77.0               
+enlight_hard        ojAlgo-MIP          Solved              15061.9ms           20861.3ms           11598.7ms           37.0                
+misc02              ojAlgo-MIP          Solved              3.19317ms           8.41504ms           10.4438ms           1690.0              
+stein9              SCIP                Solved              6.97363ms           7.94263ms           1.938ms             5.0                 
+p0291               SCIP                Solved              8.66196ms           9.81117ms           2.29842ms           5223.749            
+neos-5192052-neckar SCIP                Solved              11.0034ms           12.4476ms           2.88842ms           -1.167E7            
+fixnet3             HiGHS               Solved              51.3849ms           57.1402ms           11.5107ms           51973.0             
+prod2               SCIP                Solved              48733.3ms           48085.9ms           1294.91ms           -62.0               
+pp08a               SCIP                Solved              949.895ms           919.429ms           60.9323ms           7350.0              
+bienst2             ojAlgo-MIP          Solved              24184.9ms           22840.9ms           2687.93ms           54.6                
+f2gap40400          ojAlgo-MIP          Solved              102.697ms           102.389ms           0.617208ms          20772.0             
+vpm1                SCIP                Solved              9.77029ms           9.42233ms           0.695917ms          20.0                
+mik-250-20-75-1     SCIP                Solved              2274.99ms           2304.69ms           59.3957ms           -49716.0            
+neos-3611447-jijia  ojAlgo-MIP          Solved              15690.8ms           22340.5ms           13299.3ms           107.0               
+misc05              ojAlgo-MIP          Solved              173.342ms           136.37ms            73.9442ms           2984.5              
+bppc8-02            ojAlgo-MIP          Solved              416.853ms           446.734ms           59.7618ms           507.0               
+enigma              ojAlgo-MIP          Solved              111.167ms           82.6769ms           56.9808ms           0.0                 
+enlight13           SCIP                Solved              6.67213ms           7.11621ms           0.888166ms          71.0                
+neos-1425699        ojAlgo-MIP          Solved              1.90725ms           1.829ms             0.1565ms            3.179699E9          
+gt2                 ojAlgo-MIP          Solved              75.2266ms           80.9445ms           11.4357ms           21166.0             
+enigma              SCIP                Solved              135.716ms           147.568ms           23.704ms            0.0                 
+rlp1                SCIP                Solved              15808.3ms           16209.5ms           802.462ms           15.0                
+ran12x21            SCIP                Solved              29081.1ms           29996.2ms           1830.13ms           3664.0              
+dcmulti             SCIP                Solved              1279.04ms           1311.31ms           64.5373ms           188182.0            
+sample2             SCIP                Solved              3.80375ms           3.97892ms           0.350333ms          375.0               
+misc01              HiGHS               Solved              238.37ms            244.449ms           12.1572ms           563.5               
+noswot              ojAlgo-MIP          UNSTABLE            
+markshare_4_0       ojAlgo-MIP          Solved              4989.33ms           5741.94ms           1505.22ms           1.0                 
+set1al              SCIP                Solved              51.8916ms           52.0409ms           0.298542ms          15869.75            
+dfn-gwin-UUM        HiGHS               Solved              67680.9ms           68500.1ms           1638.42ms           38752.0             
+fixnet3             SCIP                Solved              22.2627ms           21.0461ms           2.43304ms           51973.0             
+enlight13           ojAlgo-MIP          UNSTABLE            
+modglob             SCIP                Solved              103.176ms           106.208ms           6.06383ms           2.0740508E7         
+vpm2                SCIP                Solved              1077.48ms           1077.8ms            0.626708ms          13.75               
+p0201               SCIP                Solved              366.119ms           364.641ms           2.95529ms           7615.0              
+pigeon-08           HiGHS               Solved              5739.04ms           5840.68ms           203.287ms           -7000.0             
+pipex               ojAlgo-MIP          Solved              20.8805ms           14.3712ms           13.0186ms           788.263             
+p0201               ojAlgo-MIP          Solved              130.67ms            122.135ms           17.0701ms           7615.0              
+neos17              SCIP                Solved              3901.53ms           3968.11ms           133.16ms            0.15000258          
+cracpb1             HiGHS               Solved              37.6554ms           37.804ms            0.297126ms          22199.0             
+mod013              HiGHS               Solved              152.508ms           154.78ms            4.54333ms           280.95              
+misc02              HiGHS               Solved              26.8853ms           29.8323ms           5.89404ms           1690.0              
+ran13x13            HiGHS               Solved              6239.1ms            6585.14ms           692.085ms           3252.0              
+fixnet4             SCIP                Solved              756.889ms           816.32ms            118.861ms           8936.0              
+gr4x6               ojAlgo-MIP          Solved              2.27383ms           4.16985ms           3.79204ms           202.35              
+rout                SCIP                Solved              8368.68ms           9044.05ms           1350.75ms           1077.56             
+stein45             HiGHS               Solved              5947.44ms           6331.06ms           767.246ms           30.0                
+gen                 SCIP                Solved              15.7941ms           16.8632ms           2.13813ms           112313.36           
+gen-ip021           HiGHS               Solved              129875.0ms          133995.0ms          8240.5ms            2361.4542           
+p0033               HiGHS               Solved              13.8467ms           14.8066ms           1.91975ms           3089.0              
+23588               SCIP                Solved              2295.61ms           2617.02ms           642.82ms            8090.0              
+neos-911970         SCIP                Solved              7568.49ms           8648.3ms            2159.62ms           54.76               
+sentoy              SCIP                Solved              202.9ms             204.328ms           2.85733ms           -7772.0             
+misc07              ojAlgo-MIP          Solved              3199.17ms           4171.17ms           1943.99ms           2810.0              
+p0040               SCIP                Solved              2.51437ms           3.46ms              1.89125ms           62027.0             
+p0282               SCIP                Solved              98.5462ms           105.206ms           13.3205ms           258411.0            
+gen-ip036           ojAlgo-MIP          Solved              33795.2ms           40855.7ms           14121.0ms           -4606.6796          
+neos-3610040-iskar  SCIP                Solved              468.755ms           506.507ms           75.5044ms           37.0                
+bell3a              ojAlgo-MIP          Solved              358.706ms           364.096ms           10.7807ms           878430.32           
+stein27             ojAlgo-MIP          Solved              69.5275ms           82.3924ms           25.7297ms           18.0                
+fixnet6             HiGHS               Solved              1663.3ms            1714.8ms            102.989ms           3983.0              
+stein15             ojAlgo-MIP          Solved              2.30754ms           2.08773ms           0.439625ms          9.0                 
+neos-3610173-itata  HiGHS               Solved              549.777ms           623.821ms           148.089ms           148.0               
+pp08a               HiGHS               Solved              589.735ms           637.881ms           96.2924ms           7350.0              
+mik-250-20-75-5     HiGHS               Solved              1503.61ms           1645.4ms            283.583ms           -51532.0            
+f2gap40400          SCIP                Solved              25.8294ms           29.4913ms           7.32383ms           20772.0             
+p0291               ojAlgo-MIP          Solved              18.4815ms           22.6333ms           8.30358ms           5223.749            
+prod1               HiGHS               Solved              4462.44ms           5073.67ms           1222.47ms           -56.0               
+set1cl              SCIP                Solved              10.6103ms           12.6115ms           4.0025ms            6484.25             
+stein9              ojAlgo-MIP          Solved              0.441417ms          0.555417ms          0.228ms             5.0                 
+22433               HiGHS               Solved              1105.72ms           1191.98ms           172.52ms            21477.0             
+ic97_tension        HiGHS               Solved              7018.34ms           7634.63ms           1232.57ms           3942.0              
+lseu                SCIP                Solved              236.466ms           247.945ms           22.9588ms           1120.0              
+bppc8-02            SCIP                Solved              155.682ms           165.627ms           19.8899ms           507.0               
+neos-2624317-amur   SCIP                Solved              16065.5ms           16488.7ms           846.308ms           3.5223968           
+flugpl              HiGHS               Solved              33.8286ms           34.9233ms           2.18937ms           1201500.0           
+mas76               SCIP                Solved              35424.8ms           39445.5ms           8041.53ms           40005.054           
+supportcase14       ojAlgo-MIP          Solved              37.2835ms           39.7549ms           4.94279ms           288.0               
+bell3b              ojAlgo-MIP          Solved              406.586ms           339.244ms           134.684ms           1.1786515E7         
+pk1                 HiGHS               Solved              34760.9ms           39116.9ms           8712.13ms           10.999999           
+bm23                HiGHS               Solved              91.3342ms           136.308ms           89.9472ms           34.0                
+mik-250-20-75-4     HiGHS               Solved              7388.48ms           8918.91ms           3060.86ms           -52301.0            
+air01               ojAlgo-MIP          Solved              14.9917ms           21.0624ms           12.1413ms           6796.0              
+p0548               HiGHS               Solved              45.8323ms           56.0872ms           20.5098ms           8691.0              
+prod2               HiGHS               Solved              20446.2ms           24250.6ms           7608.71ms           -62.0               
+bienst2             SCIP                Solved              136295.0ms          149305.0ms          26019.7ms           54.6                
+
+Iteration 3 with 285 model/solver pairs remaining 2026-11-27T11:27:38.979626Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+gr4x6               HiGHS               Stable              8.44708ms           9.16629ms           0.813124ms          202.35              
+aflow30a            HiGHS               Stable              3097.24ms           3187.92ms           174.152ms           1158.0              
+pk1                 ojAlgo-MIP          Stable              5035.32ms           5756.89ms           852.521ms           11.0                
+gsvm2rl3            HiGHS               Stable              20511.9ms           20511.9ms           996.569ms           0.33652753          
+bell4               HiGHS               Stable              246.82ms            238.267ms           13.832ms            1.8542104E7         
+mod013              SCIP                Stable              781.937ms           749.72ms            46.7371ms           280.95              
+f2gap40400          HiGHS               Stable              8.36517ms           8.76683ms           0.886917ms          20772.0             
+supportcase16       SCIP                Stable              91.3649ms           91.3649ms           7.11896ms           288.0               
+vpm2                HiGHS               Stable              808.533ms           805.12ms            24.9815ms           13.75               
+pipex               HiGHS               Stable              35.5148ms           35.2596ms           1.50658ms           788.263             
+markshare_4_0       HiGHS               Stable              25159.4ms           24532.1ms           923.893ms           1.0                 
+r50x360             SCIP                Stable              27056.0ms           26363.3ms           1462.41ms           1653.0              
+timtab1             HiGHS               Stable              23422.4ms           23422.4ms           2229.43ms           764774.0            
+neos-3610051-istra  ojAlgo-MIP          Solved              136528.0ms          167927.0ms          37816.0ms           49.0                
+gen-ip021           ojAlgo-MIP          Stable              38785.0ms           40690.2ms           4278.17ms           2361.4542           
+mik-250-20-75-3     HiGHS               Stable              1463.44ms           1463.44ms           59.7777ms           -52242.0            
+gt2                 HiGHS               Stable              29.0966ms           29.0966ms           1.7485ms            21166.0             
+mod013              ojAlgo-MIP          Solved              21.632ms            18.5601ms           4.64121ms           280.95              
+neos-911880         SCIP                Stable              6279.58ms           6262.24ms           251.509ms           54.76               
+sample2             HiGHS               Stable              10.5521ms           10.2141ms           0.522625ms          375.0               
+ran16x16            SCIP                Stable              49041.9ms           45983.4ms           5645.85ms           3823.0              
+neos-5192052-neckar HiGHS               Stable              22.0138ms           22.3234ms           0.75925ms           -1.167E7            
+bppc8-02            HiGHS               Stable              208.642ms           208.642ms           2.95942ms           507.0               
+neos-911970         HiGHS               Stable              3547.94ms           3547.94ms           83.7408ms           54.76               
+neos-3610051-istra  SCIP                Stable              664.582ms           664.582ms           35.3636ms           49.0                
+supportcase16       ojAlgo-MIP          Solved              58.9632ms           50.0448ms           17.7669ms           288.0               
+enlight8            HiGHS               Stable              994.096ms           994.096ms           32.5175ms           27.0                
+22433               SCIP                Stable              1595.17ms           1595.17ms           70.3651ms           21477.0             
+mik-250-1-100-1     ojAlgo-MIP          Solved              111627.0ms          111627.0ms          35343.1ms           -66729.0            
+22433               ojAlgo-MIP          Solved              90.5604ms           92.1455ms           27.191ms            21477.0             
+enlight13           HiGHS               Stable              57780.6ms           62374.7ms           4809.54ms           71.0                
+set1ch              HiGHS               Stable              171.147ms           172.13ms            22.3ms              54537.75            
+mik-250-20-75-2     HiGHS               Stable              1043.62ms           1049.13ms           129.341ms           -50768.0            
+enigma              HiGHS               Stable              72.461ms            73.3323ms           9.45621ms           0.0                 
+p0040               ojAlgo-MIP          Solved              0.558458ms          1.31554ms           1.15604ms           62027.0             
+bell3a              SCIP                Stable              699.575ms           700.05ms            105.448ms           878430.32           
+gen-ip021           SCIP                Stable              187009.0ms          190214.0ms          8778.7ms            2361.4542           
+p0282               ojAlgo-MIP          Solved              172.133ms           172.133ms           171.287ms           258411.0            
+noswot              HiGHS               Stable              3513.4ms            3567.88ms           166.115ms           -41.0               
+pigeon-08           ojAlgo-MIP          Stable              43852.8ms           43983.5ms           5977.7ms            -7000.0             
+pk1                 SCIP                Stable              71963.0ms           67310.9ms           6498.74ms           11.0                
+supportcase14       SCIP                Stable              71.747ms            71.747ms            6.83271ms           288.0               
+sentoy              ojAlgo-MIP          Solved              22.4668ms           23.6466ms           6.98504ms           -7772.0             
+neos-3611689-kaihu  SCIP                Stable              453.494ms           482.728ms           42.5094ms           119.0               
+mik-250-20-75-1     HiGHS               Stable              1326.75ms           1385.36ms           83.654ms            -49716.0            
+stein27             SCIP                Stable              87.4446ms           87.4446ms           16.4555ms           18.0                
+stein15             SCIP                Solved              17.9214ms           17.9214ms           5.1475ms            9.0                 
+bell3b              SCIP                Stable              1887.85ms           1916.04ms           366.198ms           1.1786161E7         
+exp-1-500-5-5       HiGHS               Stable              2378.59ms           2378.59ms           284.245ms           65887.0             
+timtab1CUTS         HiGHS               Stable              14093.2ms           15210.9ms           1475.3ms            764772.0            
+air01               SCIP                Stable              41.9712ms           42.789ms            6.66938ms           6796.0              
+bell5               HiGHS               Stable              283.893ms           285.608ms           9.86262ms           8966406.5           
+mas76               HiGHS               Stable              14916.0ms           14916.0ms           2166.9ms            40005.054           
+p0033               SCIP                Stable              7.77792ms           7.77792ms           1.02137ms           3089.0              
+mod008              HiGHS               Stable              525.057ms           525.057ms           35.0522ms           307.0               
+nexp-50-20-1-1      HiGHS               Stable              42.7229ms           42.7229ms           4.75854ms           29.0                
+vpm1                HiGHS               Stable              7.37058ms           7.58304ms           0.901917ms          20.0                
+dcmulti             HiGHS               Stable              692.897ms           692.897ms           140.816ms           188182.0            
+enlight_hard        HiGHS               Stable              5535.72ms           5535.72ms           691.393ms           37.0                
+graphdraw-gemcutter ojAlgo-MIP          Stable              94280.3ms           96351.8ms           9550.25ms           7118.5              
+misc07              SCIP                Stable              1521.19ms           1521.19ms           161.435ms           2810.0              
+fixnet6             SCIP                Stable              3592.65ms           3592.65ms           701.576ms           3983.0              
+rgn                 HiGHS               Solved              196.586ms           196.586ms           57.8191ms           82.199999           
+exp-1-500-5-5       SCIP                Stable              1090.66ms           1092.68ms           219.167ms           65887.0             
+gen                 ojAlgo-MIP          Solved              23.6207ms           25.7607ms           22.919ms            112313.36           
+neos-911880         HiGHS               Stable              6303.65ms           6404.94ms           1249.09ms           54.76               
+mik-250-1-100-1     HiGHS               Stable              1054.42ms           1054.42ms           135.701ms           -66729.0            
+neos-3611447-jijia  SCIP                Solved              768.134ms           778.933ms           200.888ms           107.0               
+nexp-50-20-1-1      SCIP                Solved              179.362ms           179.362ms           56.1018ms           29.0                
+set1al              ojAlgo-MIP          Solved              57.304ms            64.1457ms           15.1145ms           15869.75            
+air01               HiGHS               Solved              43.1407ms           44.0976ms           11.9104ms           6796.0              
+dcmulti             ojAlgo-MIP          Stable              273.798ms           273.798ms           50.9735ms           188183.5            
+mik-250-1-100-1     SCIP                Solved              41595.2ms           41595.2ms           17208.5ms           -66729.0            
+mik-250-20-75-1     ojAlgo-MIP          Solved              6514.72ms           8225.09ms           8822.85ms           -49716.0            
+p0548               ojAlgo-MIP          Solved              5185.89ms           5185.89ms           6706.79ms           8691.0              
+neos-3610051-istra  HiGHS               Stable              852.126ms           913.548ms           68.2977ms           49.0                
+gen-ip036           HiGHS               Solved              127140.0ms          138401.0ms          109711.0ms          -4606.6796          
+neos-1425699        SCIP                Solved              3.97613ms           3.97613ms           1.53854ms           3.179699E9          
+gen-ip036           SCIP                Stable              190617.0ms          192252.0ms          9441.9ms            -4606.6796          
+p0548               SCIP                Stable              47.5145ms           49.8087ms           5.11142ms           8691.0              
+23588               HiGHS               Stable              3035.88ms           3035.88ms           122.761ms           8090.0              
+sample2             ojAlgo-MIP          Solved              5.48729ms           4.81533ms           1.81688ms           375.0               
+vpm2                ojAlgo-MIP          Stable              34675.1ms           36497.1ms           3999.85ms           13.75               
+r50x360             HiGHS               Stable              13193.8ms           13282.9ms           1685.89ms           1653.0              
+gt2                 SCIP                Stable              13.9537ms           13.9537ms           0.984625ms          21166.0             
+pp08aCUTS           HiGHS               Stable              725.521ms           725.521ms           13.6459ms           7350.0              
+ran12x21            ojAlgo-MIP          Stable              186183.0ms          202888.0ms          23213.6ms           3664.0              
+opt1217             HiGHS               Stable              189.299ms           219.59ms            34.6933ms           -16.0               
+bienst2             HiGHS               Stable              83262.7ms           84215.2ms           5673.06ms           54.6                
+pipex               SCIP                Stable              38.5164ms           38.5164ms           2.31008ms           788.263             
+bienst1             HiGHS               Stable              7970.08ms           7970.08ms           795.673ms           46.75               
+lseu                HiGHS               Stable              99.2188ms           99.2188ms           8.051ms             1120.0              
+aflow30a            ojAlgo-MIP          Solved              25995.5ms           28153.0ms           9489.38ms           1158.0              
+gr4x6               SCIP                Stable              3.99942ms           3.99942ms           0.70075ms           202.35              
+misc05              SCIP                Stable              910.908ms           945.586ms           41.8035ms           2984.5              
+ran16x16            HiGHS               Stable              24029.2ms           24346.3ms           2842.59ms           3823.0              
+neos-2624317-amur   HiGHS               Stable              47365.5ms           47883.7ms           3607.53ms           3.5223968           
+neos-3610173-itata  SCIP                Stable              646.698ms           646.698ms           7.22775ms           148.0               
+set1cl              HiGHS               Stable              57.1847ms           61.1818ms           6.92738ms           6484.25             
+stein9              HiGHS               Stable              5.12754ms           5.9955ms            1.08671ms           5.0                 
+bell5               SCIP                Stable              97.6531ms           97.6531ms           8.91688ms           8966406.5           
+neos-5192052-neckar ojAlgo-MIP          Solved              3.102ms             3.102ms             8.44829ms           -1.167E7            
+dfn-gwin-UUM        SCIP                Stable              48204.7ms           48204.7ms           4656.11ms           38752.0             
+egout               HiGHS               Stable              6.38413ms           6.30092ms           0.2615ms            568.1007            
+bell3b              HiGHS               Stable              478.498ms           478.498ms           60.447ms            1.1786231E7         
+vpm1                ojAlgo-MIP          Solved              59090.4ms           45534.9ms           21497.6ms           20.0                
+p0291               HiGHS               Stable              20.4966ms           21.1775ms           1.53146ms           5223.749            
+neos-3610173-itata  ojAlgo-MIP          Solved              23618.4ms           23618.4ms           6627.16ms           148.0               
+pigeon-08           SCIP                Stable              342.3ms             342.3ms             29.4455ms           -7000.0             
+neos17              HiGHS               Stable              3762.38ms           3762.38ms           264.24ms            0.15000258          
+sp150x300d          SCIP                Stable              114.837ms           114.837ms           12.13ms             69.0                
+timtab1             SCIP                Stable              39998.1ms           39998.1ms           4200.32ms           764772.0            
+neos-1430701        HiGHS               Stable              3277.23ms           3374.53ms           404.272ms           -77.0               
+mik-250-20-75-3     ojAlgo-MIP          Solved              10879.4ms           19526.2ms           8839.64ms           -52242.0            
+misc02              SCIP                Stable              102.761ms           102.761ms           16.1969ms           1690.0              
+rlp1                HiGHS               Stable              112.95ms            112.95ms            11.7525ms           15.0                
+enlight_hard        SCIP                Solved              3.58392ms           3.58392ms           0.857416ms          37.0                
+rout                HiGHS               Stable              7431.96ms           7431.96ms           251.964ms           1077.56             
+neos-3611689-kaihu  ojAlgo-MIP          Solved              18855.2ms           17896.9ms           5653.06ms           119.0               
+enlight8            SCIP                Stable              2.83321ms           2.70038ms           0.218543ms          27.0                
+bell4               SCIP                Stable              342.202ms           330.22ms            18.0362ms           1.8541484E7         
+noswot              SCIP                Stable              6558.97ms           6558.97ms           653.628ms           -41.0               
+blend2              HiGHS               Stable              688.483ms           685.11ms            13.2722ms           7.598985            
+p0033               ojAlgo-MIP          Solved              4.70567ms           3.95262ms           1.75033ms           3089.0              
+markshare_4_0       SCIP                Stable              57299.1ms           57299.1ms           2342.74ms           1.0                 
+ran13x13            ojAlgo-MIP          Solved              44600.5ms           30286.0ms           15080.1ms           3252.0              
+stein15             HiGHS               Stable              30.0121ms           29.8182ms           0.925958ms          9.0                 
+stein27             HiGHS               Stable              151.728ms           149.966ms           5.43613ms           18.0                
+supportcase16       HiGHS               Stable              44.2277ms           44.2277ms           1.77446ms           288.0               
+misc03              SCIP                Stable              568.927ms           571.069ms           14.1665ms           3360.0              
+mik-250-20-75-2     ojAlgo-MIP          Solved              20887.3ms           20353.8ms           4179.49ms           -50768.0            
+beavma              HiGHS               Stable              291.041ms           291.041ms           15.7223ms           383285.0            
+prod1               ojAlgo-MIP          Stable              11592.3ms           11450.6ms           1421.57ms           -56.0               
+p0201               HiGHS               Stable              660.205ms           661.86ms            20.4394ms           7615.0              
+blend2              SCIP                Stable              516.936ms           528.101ms           17.5811ms           7.598985            
+opt1217             SCIP                Stable              65.7671ms           66.1641ms           3.02208ms           -16.0               
+pp08a               ojAlgo-MIP          Stable              73106.3ms           73106.3ms           4761.63ms           7350.0              
+pp08aCUTS           SCIP                Stable              535.536ms           624.894ms           105.996ms           7350.0              
+cracpb1             SCIP                Stable              72.8552ms           84.336ms            14.8051ms           22199.0             
+prod1               SCIP                Stable              7674.91ms           9159.92ms           1636.06ms           -56.0               
+mik-250-20-75-5     SCIP                Stable              2437.44ms           2771.46ms           402.058ms           -51532.0            
+modglob             HiGHS               Stable              216.696ms           221.371ms           45.4559ms           2.0740508E7         
+neos-3611689-kaihu  HiGHS               Stable              692.232ms           699.929ms           118.782ms           119.0               
+set1cl              ojAlgo-MIP          Solved              18.8233ms           24.449ms            21.7657ms           6484.25             
+misc01              ojAlgo-MIP          Solved              12.4335ms           14.8262ms           31.1288ms           563.5               
+cracpb1             ojAlgo-MIP          Solved              41.1716ms           52.8335ms           17.5762ms           22199.0             
+ic97_tension        SCIP                Stable              10712.5ms           12590.5ms           2091.49ms           3942.0              
+stein45             ojAlgo-MIP          Stable              4041.74ms           4240.8ms            249.135ms           30.0                
+egout               SCIP                Stable              4.36613ms           4.44779ms           0.186667ms          568.1007            
+gen                 HiGHS               Stable              17.3511ms           17.3511ms           2.45683ms           112313.36           
+fixnet4             HiGHS               Stable              196.593ms           200.663ms           4.15708ms           8936.0              
+rgn                 ojAlgo-MIP          Solved              87.6273ms           87.6273ms           47.165ms            82.199999           
+bienst1             ojAlgo-MIP          Stable              1463.07ms           1463.07ms           190.527ms           46.75               
+pp08aCUTS           ojAlgo-MIP          Solved              44152.3ms           46081.5ms           11194.4ms           7350.0              
+stein45             SCIP                Stable              8164.95ms           9162.49ms           1044.62ms           30.0                
+misc05              HiGHS               Stable              282.769ms           309.574ms           33.556ms            2984.5              
+graphdraw-gemcutter SCIP                Stable              85355.5ms           86281.8ms           5993.34ms           7118.5              
+misc07              HiGHS               Stable              5145.85ms           5145.85ms           139.779ms           2810.0              
+egout               ojAlgo-MIP          Solved              37.275ms            37.275ms            13.3965ms           568.1007            
+rgn                 SCIP                Stable              122.652ms           119.139ms           8.17317ms           82.199999           
+p0282               HiGHS               Stable              111.807ms           109.803ms           4.72704ms           258411.0            
+bell3a              HiGHS               Stable              146.272ms           144.776ms           2.96275ms           878430.32           
+prod2               ojAlgo-MIP          Solved              56624.7ms           47978.5ms           23924.0ms           -62.0               
+mik-250-20-75-4     SCIP                Stable              14692.6ms           14732.1ms           135.098ms           -52301.0            
+p0040               HiGHS               Solved              2.89812ms           3.22958ms           1.31754ms           62027.0             
+sp150x300d          HiGHS               Stable              27.8154ms           28.4689ms           2.47817ms           69.0                
+flugpl              SCIP                Stable              17.1112ms           17.1112ms           2.27104ms           1201500.0           
+bm23                ojAlgo-MIP          Solved              11.9457ms           11.9457ms           22.4896ms           34.0                
+bienst1             SCIP                Stable              45701.6ms           45701.6ms           3750.44ms           46.75               
+mod008              SCIP                Stable              129.768ms           128.687ms           3.29888ms           307.0               
+supportcase14       HiGHS               Stable              38.3177ms           38.3177ms           0.848792ms          288.0               
+graphdraw-gemcutter HiGHS               Stable              86331.8ms           84655.5ms           3341.04ms           7118.5              
+blend2              ojAlgo-MIP          Solved              390.317ms           339.188ms           71.4502ms           7.598985            
+misc01              SCIP                Stable              190.382ms           180.349ms           31.0503ms           563.5               
+mik-250-20-75-5     ojAlgo-MIP          Solved              8433.9ms            9110.64ms           8740.2ms            -51532.0            
+mod008              ojAlgo-MIP          Solved              121.625ms           95.8938ms           33.8009ms           307.0               
+neos-1425699        HiGHS               Stable              69.0738ms           70.283ms            3.76779ms           3.179699E9          
+flugpl              ojAlgo-MIP          Stable              1.22921ms           1.16158ms           0.085584ms          1201500.0           
+set1al              HiGHS               Stable              50.1131ms           50.3975ms           1.92671ms           15869.75            
+mik-250-20-75-4     ojAlgo-MIP          Solved              42674.3ms           50173.3ms           12904.8ms           -52301.0            
+misc03              ojAlgo-MIP          Stable              43.7109ms           43.9791ms           0.619ms             3360.0              
+mas76               ojAlgo-MIP          Solved              7834.16ms           8039.23ms           1772.46ms           40005.054           
+lseu                ojAlgo-MIP          Stable              48.8641ms           48.1082ms           1.84008ms           1120.0              
+mik-250-20-75-3     SCIP                Stable              2251.71ms           2454.52ms           239.113ms           -52242.0            
+23588               ojAlgo-MIP          Solved              177.329ms           219.141ms           43.9955ms           8090.0              
+timtab1CUTS         SCIP                Stable              51030.1ms           50666.0ms           3206.31ms           764772.0            
+ran12x21            HiGHS               Stable              10690.0ms           10370.2ms           510.452ms           3664.0              
+neos-3610040-iskar  ojAlgo-MIP          Stable              49660.5ms           52190.5ms           5226.87ms           37.0                
+neos-3611447-jijia  HiGHS               Stable              999.564ms           948.894ms           122.957ms           107.0               
+bm23                SCIP                Stable              98.7352ms           89.7571ms           14.0795ms           34.0                
+enlight8            ojAlgo-MIP          Solved              428.85ms            529.226ms           561.884ms           27.0                
+ran13x13            SCIP                Solved              20624.7ms           17608.6ms           5706.58ms           3252.0              
+beavma              SCIP                Stable              238.468ms           223.481ms           24.7212ms           383285.0            
+misc03              HiGHS               Stable              355.607ms           325.845ms           37.089ms            3360.0              
+bell5               ojAlgo-MIP          Solved              1356.84ms           3642.2ms            2765.03ms           8966406.5           
+mik-250-20-75-2     SCIP                Stable              3979.16ms           3942.19ms           579.812ms           -50768.0            
+aflow30a            SCIP                Stable              9536.75ms           9536.75ms           1436.13ms           1158.0              
+gsvm2rl3            SCIP                Stable              6468.34ms           6468.34ms           938.982ms           0.33652753          
+sentoy              HiGHS               Stable              95.9477ms           95.9477ms           10.3685ms           -7772.0             
+set1ch              SCIP                Stable              150.247ms           148.998ms           19.4509ms           54537.75            
+neos-3610040-iskar  HiGHS               Stable              668.804ms           668.804ms           116.048ms           37.0                
+neos-1430701        SCIP                Stable              2438.46ms           2438.46ms           46.2959ms           -77.0               
+enlight_hard        ojAlgo-MIP          Solved              22693.3ms           22693.3ms           11598.7ms           37.0                
+misc02              ojAlgo-MIP          Solved              2.76112ms           3.19317ms           10.8758ms           1690.0              
+stein9              SCIP                Solved              6.99179ms           6.99179ms           1.938ms             5.0                 
+p0291               SCIP                Solved              8.89071ms           8.89071ms           2.29842ms           5223.749            
+neos-5192052-neckar SCIP                Solved              10.6787ms           11.0034ms           3.21313ms           -1.167E7            
+fixnet3             HiGHS               Solved              49.305ms            51.3849ms           13.5906ms           51973.0             
+pp08a               SCIP                Stable              801.991ms           888.963ms           147.904ms           7350.0              
+prod2               SCIP                Stable              48837.2ms           48733.3ms           1398.81ms           -62.0               
+f2gap40400          ojAlgo-MIP          Stable              94.8307ms           102.08ms            7.86642ms           20772.0             
+vpm1                SCIP                Stable              8.79187ms           9.07437ms           0.978417ms          20.0                
+mik-250-20-75-1     SCIP                Stable              2338.05ms           2334.39ms           63.0647ms           -49716.0            
+rlp1                SCIP                Stable              15951.1ms           15951.1ms           802.462ms           15.0                
+misc05              ojAlgo-MIP          Solved              65.6973ms           99.3981ms           107.645ms           2984.5              
+bppc8-02            ojAlgo-MIP          Stable              483.587ms           476.615ms           66.734ms            507.0               
+enigma              ojAlgo-MIP          Solved              25.8558ms           54.1865ms           85.3115ms           0.0                 
+enlight13           SCIP                Stable              6.78583ms           6.78583ms           0.888166ms          71.0                
+neos-1425699        ojAlgo-MIP          Stable              1.755ms             1.755ms             0.1565ms            3.179699E9          
+gt2                 ojAlgo-MIP          Solved              66.3921ms           75.2266ms           20.2702ms           21166.0             
+enigma              SCIP                Stable              153.51ms            153.51ms            23.704ms            0.0                 
+neos-3611447-jijia  ojAlgo-MIP          Solved              36225.3ms           28990.1ms           20534.5ms           107.0               
+dcmulti             SCIP                Stable              1112.19ms           1279.04ms           231.386ms           188182.0            
+sample2             SCIP                Stable              3.87383ms           3.87383ms           0.350333ms          375.0               
+misc01              HiGHS               Stable              209.141ms           238.37ms            41.3868ms           563.5               
+bienst2             ojAlgo-MIP          Solved              15876.7ms           21496.9ms           8308.12ms           54.6                
+markshare_4_0       ojAlgo-MIP          Solved              5294.15ms           5294.15ms           1505.22ms           1.0                 
+set1al              SCIP                Stable              44.3173ms           51.8916ms           7.87292ms           15869.75            
+ran12x21            SCIP                Stable              26220.7ms           29081.1ms           4690.54ms           3664.0              
+fixnet3             SCIP                Stable              20.7501ms           20.7501ms           2.43304ms           51973.0             
+dfn-gwin-UUM        HiGHS               Stable              65234.1ms           67680.9ms           4085.24ms           38752.0             
+modglob             SCIP                Stable              97.1975ms           103.176ms           12.0427ms           2.0740508E7         
+vpm2                SCIP                Stable              1056.08ms           1077.48ms           22.0317ms           13.75               
+p0201               SCIP                Stable              355.022ms           363.163ms           11.0966ms           7615.0              
+pigeon-08           HiGHS               Stable              5721.57ms           5739.04ms           220.749ms           -7000.0             
+pipex               ojAlgo-MIP          Solved              8.00867ms           8.00867ms           13.0186ms           788.263             
+p0201               ojAlgo-MIP          Stable              135.989ms           130.67ms            22.3896ms           7615.0              
+neos17              SCIP                Stable              3904.59ms           3904.59ms           133.16ms            0.15000258          
+cracpb1             HiGHS               Stable              36.0176ms           37.6554ms           1.93496ms           22199.0             
+mod013              HiGHS               Stable              142.546ms           152.508ms           14.505ms            280.95              
+misc02              HiGHS               Solved              25.7051ms           26.8853ms           7.07425ms           1690.0              
+gen-ip036           ojAlgo-MIP          Solved              45728.0ms           45728.0ms           14121.0ms           -4606.6796          
+ran13x13            HiGHS               Stable              6171.23ms           6239.1ms            759.952ms           3252.0              
+gr4x6               ojAlgo-MIP          Solved              0.991125ms          2.27383ms           5.07475ms           202.35              
+fixnet4             SCIP                Solved              710.731ms           756.889ms           165.02ms            8936.0              
+stein45             HiGHS               Solved              5127.21ms           5947.44ms           1587.47ms           30.0                
+gen                 SCIP                Solved              12.3176ms           15.7941ms           5.61463ms           112313.36           
+rout                SCIP                Solved              7835.2ms            8368.68ms           1884.22ms           1077.56             
+p0033               HiGHS               Solved              12.1426ms           13.8467ms           3.62387ms           3089.0              
+23588               SCIP                Solved              2123.47ms           2295.61ms           814.968ms           8090.0              
+neos-911970         SCIP                Solved              6607.69ms           7568.49ms           3120.43ms           54.76               
+sentoy              SCIP                Stable              199.341ms           202.9ms             6.41604ms           -7772.0             
+misc07              ojAlgo-MIP          Solved              3182.36ms           3199.17ms           1960.8ms            2810.0              
+p0040               SCIP                Solved              2.0355ms            2.51437ms           2.37012ms           62027.0             
+p0282               SCIP                Stable              102.828ms           102.828ms           13.3205ms           258411.0            
+fixnet6             HiGHS               Stable              1684.62ms           1684.62ms           102.989ms           3983.0              
+neos-3610040-iskar  SCIP                Stable              521.889ms           521.889ms           75.5044ms           37.0                
+bell3a              ojAlgo-MIP          Stable              362.257ms           362.257ms           10.7807ms           878430.32           
+stein27             ojAlgo-MIP          Solved              72.5435ms           72.5435ms           25.7297ms           18.0                
+neos-3610173-itata  HiGHS               Solved              583.998ms           583.998ms           148.089ms           148.0               
+stein15             ojAlgo-MIP          Solved              1.84292ms           1.86792ms           0.464625ms          9.0                 
+gen-ip021           HiGHS               Stable              122503.0ms          129875.0ms          15612.3ms           2361.4542           
+pp08a               HiGHS               Stable              581.967ms           589.735ms           104.06ms            7350.0              
+mik-250-20-75-5     HiGHS               Stable              1508.76ms           1508.76ms           283.583ms           -51532.0            
+f2gap40400          SCIP                Solved              24.6316ms           25.8294ms           8.52167ms           20772.0             
+p0291               ojAlgo-MIP          Solved              17.3696ms           18.4815ms           9.41542ms           5223.749            
+prod1               HiGHS               Solved              4538.0ms            4538.0ms            1222.47ms           -56.0               
+set1cl              SCIP                Solved              11.2857ms           11.2857ms           4.0025ms            6484.25             
+stein9              ojAlgo-MIP          Solved              0.575584ms          0.575584ms          0.228ms             5.0                 
+22433               HiGHS               Stable              1090.48ms           1105.72ms           187.76ms            21477.0             
+ic97_tension        HiGHS               Stable              6924.39ms           7018.34ms           1326.52ms           3942.0              
+lseu                SCIP                Stable              238.242ms           238.242ms           22.9588ms           1120.0              
+bppc8-02            SCIP                Stable              151.803ms           155.682ms           23.7692ms           507.0               
+neos-2624317-amur   SCIP                Stable              15927.3ms           16065.5ms           984.554ms           3.5223968           
+flugpl              HiGHS               Stable              33.1025ms           33.8286ms           2.91554ms           1201500.0           
+mas76               SCIP                Solved              34754.4ms           35424.8ms           8711.94ms           40005.054           
+supportcase14       ojAlgo-MIP          Solved              22.6278ms           37.2835ms           19.5985ms           288.0               
+bell3b              ojAlgo-MIP          Solved              336.704ms           336.704ms           134.684ms           1.1786515E7         
+pk1                 HiGHS               Solved              34175.5ms           34760.9ms           9297.55ms           10.999999           
+bm23                HiGHS               Solved              89.1186ms           91.3342ms           92.1628ms           34.0                
+mik-250-20-75-4     HiGHS               Solved              7208.99ms           7388.48ms           3240.35ms           -52301.0            
+air01               ojAlgo-MIP          Solved              7.06579ms           14.9917ms           20.0672ms           6796.0              
+p0548               HiGHS               Solved              44.8175ms           45.8323ms           21.5246ms           8691.0              
+prod2               HiGHS               Solved              20634.5ms           20634.5ms           7608.71ms           -62.0               
+bienst2             SCIP                Solved              128798.0ms          136295.0ms          33516.6ms           54.6                
+
+Iteration 4 with 92 model/solver pairs remaining 2026-11-27T12:28:39.401039Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Solved              40.192ms            21.632ms            23.2012ms           280.95              
+supportcase16       ojAlgo-MIP          Stable              58.1078ms           58.1078ms           8.91846ms           288.0               
+22433               ojAlgo-MIP          Solved              142.996ms           92.1455ms           52.4359ms           21477.0             
+p0040               ojAlgo-MIP          Solved              2.23558ms           1.31554ms           1.67713ms           62027.0             
+p0282               ojAlgo-MIP          Solved              383.037ms           268.01ms            210.904ms           258411.0            
+sentoy              ojAlgo-MIP          Solved              40.4779ms           23.6466ms           18.0111ms           -7772.0             
+stein15             SCIP                Stable              18.1246ms           17.9214ms           1.55296ms           9.0                 
+mik-250-1-100-1     SCIP                Stable              44935.3ms           41595.2ms           5249.33ms           -66729.0            
+neos-3610051-istra  ojAlgo-MIP          Solved              174219.0ms          167927.0ms          37691.0ms           49.0                
+rgn                 HiGHS               Stable              218.041ms           196.586ms           27.8209ms           82.199999           
+gen                 ojAlgo-MIP          Stable              21.6965ms           23.6207ms           4.06417ms           112313.36           
+neos-3611447-jijia  SCIP                Stable              896.91ms            778.933ms           128.776ms           107.0               
+nexp-50-20-1-1      SCIP                Stable              206.478ms           179.362ms           34.9938ms           29.0                
+set1al              ojAlgo-MIP          Stable              57.379ms            57.379ms            6.84167ms           15869.75            
+air01               HiGHS               Stable              46.8934ms           44.0976ms           3.75275ms           6796.0              
+mik-250-1-100-1     ojAlgo-MIP          Stable              109752.0ms          109752.0ms          3183.17ms           -66729.0            
+p0548               ojAlgo-MIP          Solved              8841.96ms           8841.96ms           6611.57ms           8691.0              
+neos-1425699        SCIP                Solved              5.05617ms           3.97613ms           1.25025ms           3.179699E9          
+sample2             ojAlgo-MIP          Solved              11.4732ms           5.48729ms           7.80275ms           375.0               
+gen-ip036           HiGHS               Stable              153898.0ms          138401.0ms          26758.0ms           -4606.6796          
+aflow30a            ojAlgo-MIP          Stable              31267.9ms           28153.0ms           5272.45ms           1158.0              
+mik-250-20-75-1     ojAlgo-MIP          Solved              14576.5ms           14576.5ms           8822.85ms           -49716.0            
+neos-5192052-neckar ojAlgo-MIP          Stable              2.64492ms           2.64492ms           0.5235ms            -1.167E7            
+neos-3610173-itata  ojAlgo-MIP          Solved              25312.5ms           23618.4ms           7096.02ms           148.0               
+mik-250-20-75-3     ojAlgo-MIP          Solved              18888.0ms           18888.0ms           8646.8ms            -52242.0            
+enlight_hard        SCIP                Stable              4.1635ms            3.58392ms           0.723666ms          37.0                
+ran13x13            ojAlgo-MIP          Solved              34768.2ms           34768.2ms           15080.1ms           3252.0              
+p0033               ojAlgo-MIP          Solved              5.79529ms           4.70567ms           2.83996ms           3089.0              
+vpm1                ojAlgo-MIP          Solved              44173.8ms           44173.8ms           21497.6ms           20.0                
+set1cl              ojAlgo-MIP          Solved              29.1703ms           24.449ms            10.347ms            6484.25             
+misc01              ojAlgo-MIP          Solved              40.0481ms           14.8262ms           27.6146ms           563.5               
+cracpb1             ojAlgo-MIP          Solved              61.0237ms           52.8335ms           19.8522ms           22199.0             
+neos-3611689-kaihu  ojAlgo-MIP          Solved              18318.4ms           18318.4ms           5653.06ms           119.0               
+rgn                 ojAlgo-MIP          Stable              100.644ms           87.6273ms           17.1615ms           82.199999           
+prod2               ojAlgo-MIP          Solved              39492.0ms           39492.0ms           23924.0ms           -62.0               
+egout               ojAlgo-MIP          Stable              40.4967ms           37.275ms            4.85175ms           568.1007            
+p0040               HiGHS               Solved              4.97042ms           3.22958ms           2.07229ms           62027.0             
+bm23                ojAlgo-MIP          Solved              18.9911ms           11.9457ms           9.14788ms           34.0                
+pp08aCUTS           ojAlgo-MIP          Solved              55054.8ms           46081.5ms           10902.5ms           7350.0              
+mik-250-20-75-2     ojAlgo-MIP          Solved              20313.6ms           20313.6ms           4179.49ms           -50768.0            
+blend2              ojAlgo-MIP          Stable              372.601ms           372.601ms           51.13ms             7.598985            
+mod008              ojAlgo-MIP          Solved              108.519ms           108.519ms           33.8009ms           307.0               
+mik-250-20-75-5     ojAlgo-MIP          Stable              9459.92ms           9110.64ms           1026.02ms           -51532.0            
+23588               ojAlgo-MIP          Solved              221.407ms           219.141ms           44.0774ms           8090.0              
+mas76               ojAlgo-MIP          Solved              11202.5ms           9606.62ms           3368.37ms           40005.054           
+enlight8            ojAlgo-MIP          Solved              596.677ms           596.677ms           561.884ms           27.0                
+mik-250-20-75-4     ojAlgo-MIP          Stable              43658.0ms           43658.0ms           7498.99ms           -52301.0            
+ran13x13            SCIP                Stable              20228.3ms           20228.3ms           3016.13ms           3252.0              
+neos-3611447-jijia  ojAlgo-MIP          Solved              23975.6ms           23975.6ms           20534.5ms           107.0               
+misc02              ojAlgo-MIP          Stable              3.07388ms           3.07388ms           0.432042ms          1690.0              
+stein9              SCIP                Solved              8.6655ms            6.99179ms           1.69187ms           5.0                 
+p0291               SCIP                Solved              11.8385ms           8.89071ms           3.17658ms           5223.749            
+neos-5192052-neckar SCIP                Solved              13.8406ms           11.0034ms           3.16192ms           -1.167E7            
+fixnet3             HiGHS               Solved              65.4601ms           51.3849ms           16.1551ms           51973.0             
+bell5               ojAlgo-MIP          Solved              2336.58ms           2336.58ms           2765.03ms           8966406.5           
+misc05              ojAlgo-MIP          Solved              74.898ms            74.898ms            107.645ms           2984.5              
+enigma              ojAlgo-MIP          Solved              58.7598ms           58.7598ms           85.3115ms           0.0                 
+gt2                 ojAlgo-MIP          Solved              108.042ms           75.2266ms           41.6499ms           21166.0             
+markshare_4_0       ojAlgo-MIP          Solved              6339.12ms           5294.15ms           1349.79ms           1.0                 
+enlight_hard        ojAlgo-MIP          Solved              16197.2ms           16197.2ms           7631.35ms           37.0                
+pipex               ojAlgo-MIP          Solved              10.2383ms           10.2383ms           12.8719ms           788.263             
+misc02              HiGHS               Solved              32.301ms            26.8853ms           6.59596ms           1690.0              
+fixnet4             SCIP                Stable              831.403ms           756.889ms           120.672ms           8936.0              
+gr4x6               ojAlgo-MIP          Solved              0.991583ms          0.991583ms          1.28271ms           202.35              
+bienst2             ojAlgo-MIP          Solved              20560.2ms           20560.2ms           8308.12ms           54.6                
+stein45             HiGHS               Stable              5406.37ms           5406.37ms           820.225ms           30.0                
+gen                 SCIP                Solved              14.0046ms           14.0046ms           3.4765ms            112313.36           
+rout                SCIP                Stable              8189.69ms           8189.69ms           533.473ms           1077.56             
+p0033               HiGHS               Stable              13.0685ms           13.0685ms           1.70412ms           3089.0              
+23588               SCIP                Stable              2233.26ms           2233.26ms           172.148ms           8090.0              
+misc07              ojAlgo-MIP          Stable              3287.97ms           3199.17ms           105.601ms           2810.0              
+neos-911970         SCIP                Stable              7332.22ms           7332.22ms           960.808ms           54.76               
+p0040               SCIP                Solved              1.59446ms           2.0355ms            0.919917ms          62027.0             
+stein27             ojAlgo-MIP          Stable              72.805ms            72.5435ms           3.2775ms            18.0                
+neos-3610173-itata  HiGHS               Stable              604.241ms           583.998ms           54.464ms            148.0               
+stein15             ojAlgo-MIP          Solved              1.72821ms           1.84292ms           0.579333ms          9.0                 
+prod1               HiGHS               Stable              4768.43ms           4538.0ms            305.99ms            -56.0               
+f2gap40400          SCIP                Stable              26.6558ms           25.8294ms           2.02421ms           20772.0             
+p0291               ojAlgo-MIP          Stable              20.5221ms           18.4815ms           3.1525ms            5223.749            
+gen-ip036           ojAlgo-MIP          Solved              34121.6ms           34121.6ms           11932.8ms           -4606.6796          
+set1cl              SCIP                Stable              11.9152ms           11.2857ms           1.30496ms           6484.25             
+stein9              ojAlgo-MIP          Solved              0.520375ms          0.520375ms          0.134167ms          5.0                 
+mas76               SCIP                Stable              36588.9ms           35424.8ms           1834.54ms           40005.054           
+supportcase14       ojAlgo-MIP          Solved              21.1621ms           22.6278ms           16.1214ms           288.0               
+bell3b              ojAlgo-MIP          Solved              473.873ms           406.586ms           137.168ms           1.1786515E7         
+pk1                 HiGHS               Stable              35034.1ms           34760.9ms           858.692ms           10.999999           
+bm23                HiGHS               Stable              92.9703ms           91.3342ms           3.85171ms           34.0                
+mik-250-20-75-4     HiGHS               Stable              7324.82ms           7324.82ms           179.494ms           -52301.0            
+air01               ojAlgo-MIP          Solved              8.45162ms           8.45162ms           7.92592ms           6796.0              
+p0548               HiGHS               Stable              43.9408ms           44.8175ms           1.8915ms            8691.0              
+prod2               HiGHS               Stable              20249.9ms           20446.2ms           384.579ms           -62.0               
+bienst2             SCIP                Stable              139406.0ms          136295.0ms          10608.6ms           54.6                
+
+Iteration 5 with 51 model/solver pairs remaining 2026-11-27T12:53:10.143213Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Solved              5.00396ms           21.632ms            35.188ms            280.95              
+p0040               ojAlgo-MIP          Solved              0.493916ms          0.558458ms          1.74167ms           62027.0             
+22433               ojAlgo-MIP          Solved              88.4791ms           90.5604ms           54.5171ms           21477.0             
+p0282               ojAlgo-MIP          Solved              82.0379ms           172.133ms           300.999ms           258411.0            
+sentoy              ojAlgo-MIP          Solved              15.4569ms           22.4668ms           25.021ms            -7772.0             
+p0548               ojAlgo-MIP          Solved              5906.66ms           5906.66ms           3656.07ms           8691.0              
+neos-1425699        SCIP                Solved              3.40883ms           3.97613ms           1.64733ms           3.179699E9          
+sample2             ojAlgo-MIP          Solved              3.30587ms           5.48729ms           8.16729ms           375.0               
+mik-250-20-75-1     ojAlgo-MIP          Solved              7075.88ms           7075.88ms           8061.79ms           -49716.0            
+neos-3610051-istra  ojAlgo-MIP          Solved              152935.0ms          152935.0ms          37691.0ms           49.0                
+neos-3610173-itata  ojAlgo-MIP          Stable              28672.9ms           25312.5ms           5054.49ms           148.0               
+vpm1                ojAlgo-MIP          Solved              70917.9ms           59090.4ms           26744.1ms           20.0                
+ran13x13            ojAlgo-MIP          Solved              43317.6ms           43317.6ms           9832.27ms           3252.0              
+p0033               ojAlgo-MIP          Solved              3.65017ms           4.70567ms           2.14512ms           3089.0              
+mik-250-20-75-3     ojAlgo-MIP          Solved              13877.1ms           13877.1ms           8008.63ms           -52242.0            
+set1cl              ojAlgo-MIP          Solved              27.0329ms           27.0329ms           10.347ms            6484.25             
+misc01              ojAlgo-MIP          Solved              16.3324ms           16.3324ms           27.6146ms           563.5               
+cracpb1             ojAlgo-MIP          Solved              58.6736ms           58.6736ms           19.8522ms           22199.0             
+mik-250-20-75-2     ojAlgo-MIP          Stable              20047.4ms           20313.6ms           839.955ms           -50768.0            
+neos-3611689-kaihu  ojAlgo-MIP          Stable              16854.5ms           18318.4ms           2000.67ms           119.0               
+p0040               HiGHS               Solved              4.68125ms           4.68125ms           2.07229ms           62027.0             
+bm23                ojAlgo-MIP          Solved              16.1243ms           16.1243ms           7.04546ms           34.0                
+mod008              ojAlgo-MIP          Stable              101.386ms           108.519ms           20.2384ms           307.0               
+mas76               ojAlgo-MIP          Solved              10986.8ms           10986.8ms           3368.37ms           40005.054           
+23588               ojAlgo-MIP          Solved              203.016ms           203.016ms           44.0774ms           8090.0              
+pp08aCUTS           ojAlgo-MIP          Solved              55698.1ms           55054.8ms           11545.8ms           7350.0              
+enlight8            ojAlgo-MIP          Solved              653.569ms           596.677ms           224.719ms           27.0                
+prod2               ojAlgo-MIP          Solved              49602.1ms           49602.1ms           17132.7ms           -62.0               
+bell5               ojAlgo-MIP          Solved              4035.79ms           2336.58ms           2678.95ms           8966406.5           
+stein9              SCIP                Solved              9.011ms             8.6655ms            2.01921ms           5.0                 
+p0291               SCIP                Solved              10.4945ms           10.4945ms           2.94783ms           5223.749            
+neos-5192052-neckar SCIP                Solved              13.3931ms           13.3931ms           3.16192ms           -1.167E7            
+fixnet3             HiGHS               Solved              63.965ms            63.965ms            16.1551ms           51973.0             
+neos-3611447-jijia  ojAlgo-MIP          Solved              27697.9ms           27697.9ms           12249.7ms           107.0               
+misc05              ojAlgo-MIP          Stable              68.0052ms           68.0052ms           9.20063ms           2984.5              
+enigma              ojAlgo-MIP          Solved              49.8434ms           49.8434ms           32.904ms            0.0                 
+gt2                 ojAlgo-MIP          Solved              68.2583ms           68.2583ms           41.6499ms           21166.0             
+markshare_4_0       ojAlgo-MIP          Stable              5487.88ms           5487.88ms           1044.97ms           1.0                 
+enlight_hard        ojAlgo-MIP          Solved              20160.1ms           20160.1ms           6496.06ms           37.0                
+pipex               ojAlgo-MIP          Solved              9.73867ms           9.73867ms           2.22958ms           788.263             
+misc02              HiGHS               Solved              33.6874ms           32.301ms            7.98233ms           1690.0              
+gr4x6               ojAlgo-MIP          Stable              1.03929ms           0.991583ms          0.048167ms          202.35              
+gen                 SCIP                Solved              16.1958ms           14.0046ms           3.87817ms           112313.36           
+p0040               SCIP                Solved              1.90746ms           1.90746ms           0.441042ms          62027.0             
+stein15             ojAlgo-MIP          Stable              2.04608ms           1.84292ms           0.317874ms          9.0                 
+stein9              ojAlgo-MIP          Stable              0.511ms             0.520375ms          0.064584ms          5.0                 
+supportcase14       ojAlgo-MIP          Solved              26.361ms            22.6278ms           5.19896ms           288.0               
+bell3b              ojAlgo-MIP          Solved              479.436ms           473.873ms           142.732ms           1.1786515E7         
+air01               ojAlgo-MIP          Solved              11.755ms            8.45162ms           4.68917ms           6796.0              
+bienst2             ojAlgo-MIP          Solved              17566.6ms           17566.6ms           4683.46ms           54.6                
+gen-ip036           ojAlgo-MIP          Solved              29376.3ms           34121.6ms           16351.7ms           -4606.6796          
+
+Iteration 6 with 42 model/solver pairs remaining 2026-11-27T13:11:35.073070Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Solved              34.085ms            34.085ms            35.188ms            280.95              
+p0040               ojAlgo-MIP          Solved              3.54442ms           2.23558ms           3.0505ms            62027.0             
+22433               ojAlgo-MIP          Solved              171.299ms           142.996ms           82.82ms             21477.0             
+p0282               ojAlgo-MIP          Solved              333.615ms           333.615ms           300.999ms           258411.0            
+sentoy              ojAlgo-MIP          Solved              48.3202ms           40.4779ms           32.8633ms           -7772.0             
+p0548               ojAlgo-MIP          Solved              6920.71ms           6920.71ms           2935.3ms            8691.0              
+neos-1425699        SCIP                Solved              3.99583ms           3.99583ms           1.64733ms           3.179699E9          
+sample2             ojAlgo-MIP          Solved              15.4813ms           11.4732ms           12.1755ms           375.0               
+mik-250-20-75-1     ojAlgo-MIP          Solved              7913.37ms           7913.37ms           7500.63ms           -49716.0            
+neos-3610051-istra  ojAlgo-MIP          Solved              197019.0ms          174219.0ms          44083.4ms           49.0                
+mik-250-20-75-3     ojAlgo-MIP          Solved              15190.0ms           15190.0ms           5010.92ms           -52242.0            
+p0033               ojAlgo-MIP          Solved              7.82437ms           5.79529ms           4.17421ms           3089.0              
+set1cl              ojAlgo-MIP          Solved              35.5935ms           29.1703ms           8.56058ms           6484.25             
+misc01              ojAlgo-MIP          Solved              46.8552ms           40.0481ms           30.5228ms           563.5               
+cracpb1             ojAlgo-MIP          Solved              82.7306ms           61.0237ms           24.057ms            22199.0             
+vpm1                ojAlgo-MIP          Solved              58749.4ms           58749.4ms           26744.1ms           20.0                
+prod2               ojAlgo-MIP          Solved              71580.0ms           49602.1ms           32088.0ms           -62.0               
+p0040               HiGHS               Stable              5.69858ms           4.97042ms           1.01733ms           62027.0             
+bm23                ojAlgo-MIP          Stable              16.0622ms           16.1243ms           2.92892ms           34.0                
+ran13x13            ojAlgo-MIP          Solved              46717.1ms           43317.6ms           11948.9ms           3252.0              
+23588               ojAlgo-MIP          Stable              212.724ms           212.724ms           18.391ms            8090.0              
+pp08aCUTS           ojAlgo-MIP          Stable              51202.8ms           55054.8ms           4495.29ms           7350.0              
+bell5               ojAlgo-MIP          Solved              676.532ms           2336.58ms           3359.26ms           8966406.5           
+enlight8            ojAlgo-MIP          Stable              553.513ms           596.677ms           100.057ms           27.0                
+mas76               ojAlgo-MIP          Stable              10649.1ms           10986.8ms           553.457ms           40005.054           
+stein9              SCIP                Stable              8.74646ms           8.74646ms           0.3455ms            5.0                 
+p0291               SCIP                Stable              11.3287ms           11.3287ms           1.344ms             5223.749            
+neos-5192052-neckar SCIP                Stable              13.4554ms           13.4554ms           0.447499ms          -1.167E7            
+fixnet3             HiGHS               Stable              64.7321ms           64.7321ms           1.49517ms           51973.0             
+bienst2             ojAlgo-MIP          Solved              23412.9ms           20560.2ms           5846.29ms           54.6                
+enigma              ojAlgo-MIP          Stable              52.953ms            52.953ms            8.91638ms           0.0                 
+gt2                 ojAlgo-MIP          Solved              55.9432ms           68.2583ms           52.0988ms           21166.0             
+neos-3611447-jijia  ojAlgo-MIP          Solved              30356.8ms           27697.9ms           6381.25ms           107.0               
+pipex               ojAlgo-MIP          Stable              10.2339ms           10.2339ms           0.499583ms          788.263             
+misc02              HiGHS               Stable              30.8738ms           32.301ms            2.81358ms           1690.0              
+gen                 SCIP                Solved              18.9128ms           16.1958ms           4.90821ms           112313.36           
+p0040               SCIP                Solved              2.35379ms           1.90746ms           0.759334ms          62027.0             
+supportcase14       ojAlgo-MIP          Solved              28.1234ms           26.361ms            6.96133ms           288.0               
+bell3b              ojAlgo-MIP          Stable              428.928ms           473.873ms           50.5084ms           1.1786515E7         
+air01               ojAlgo-MIP          Solved              11.5652ms           11.5652ms           3.30333ms           6796.0              
+enlight_hard        ojAlgo-MIP          Solved              23728.1ms           20160.1ms           7530.84ms           37.0                
+gen-ip036           ojAlgo-MIP          Stable              33967.5ms           33967.5ms           4745.32ms           -4606.6796          
+
+Iteration 7 with 27 model/solver pairs remaining 2026-11-27T13:26:16.063993Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Solved              44.1127ms           34.085ms            39.1087ms           280.95              
+p0040               ojAlgo-MIP          Solved              3.08829ms           3.08829ms           3.0505ms            62027.0             
+22433               ojAlgo-MIP          Solved              180.401ms           171.299ms           91.9223ms           21477.0             
+sentoy              ojAlgo-MIP          Solved              92.5904ms           48.3202ms           77.1335ms           -7772.0             
+p0282               ojAlgo-MIP          Solved              279.447ms           279.447ms           251.577ms           258411.0            
+mik-250-20-75-1     ojAlgo-MIP          Solved              6324.59ms           7075.88ms           1588.79ms           -49716.0            
+neos-1425699        SCIP                Solved              4.65683ms           3.99583ms           1.248ms             3.179699E9          
+sample2             ojAlgo-MIP          Solved              17.466ms            15.4813ms           14.1601ms           375.0               
+p0548               ojAlgo-MIP          Solved              5531.74ms           5906.66ms           1388.97ms           8691.0              
+mik-250-20-75-3     ojAlgo-MIP          Solved              19707.4ms           15190.0ms           5830.33ms           -52242.0            
+neos-3610051-istra  ojAlgo-MIP          Solved              186070.0ms          186070.0ms          44083.4ms           49.0                
+p0033               ojAlgo-MIP          Solved              4.23358ms           4.23358ms           4.17421ms           3089.0              
+set1cl              ojAlgo-MIP          Solved              27.2515ms           27.2515ms           8.56058ms           6484.25             
+misc01              ojAlgo-MIP          Solved              14.8882ms           16.3324ms           31.967ms            563.5               
+cracpb1             ojAlgo-MIP          Solved              56.5344ms           58.6736ms           26.1962ms           22199.0             
+vpm1                ojAlgo-MIP          Solved              45068.4ms           58749.4ms           25849.5ms           20.0                
+ran13x13            ojAlgo-MIP          Solved              36030.2ms           43317.6ms           10687.0ms           3252.0              
+prod2               ojAlgo-MIP          Solved              54558.1ms           54558.1ms           21978.0ms           -62.0               
+bell5               ojAlgo-MIP          Solved              2813.19ms           2813.19ms           3359.26ms           8966406.5           
+neos-3611447-jijia  ojAlgo-MIP          Stable              26679.2ms           27697.9ms           3677.65ms           107.0               
+gt2                 ojAlgo-MIP          Solved              60.3019ms           60.3019ms           12.3151ms           21166.0             
+gen                 SCIP                Stable              18.1612ms           18.1612ms           2.71704ms           112313.36           
+p0040               SCIP                Solved              2.42746ms           2.35379ms           0.52ms              62027.0             
+supportcase14       ojAlgo-MIP          Stable              27.4844ms           27.4844ms           1.76237ms           288.0               
+air01               ojAlgo-MIP          Stable              12.2325ms           11.755ms            0.667333ms          6796.0              
+enlight_hard        ojAlgo-MIP          Solved              13407.9ms           20160.1ms           10320.2ms           37.0                
+bienst2             ojAlgo-MIP          Solved              16621.7ms           17566.6ms           6791.18ms           54.6                
+
+Iteration 8 with 23 model/solver pairs remaining 2026-11-27T13:37:53.159669Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Solved              30.8753ms           34.085ms            13.2375ms           280.95              
+p0040               ojAlgo-MIP          Stable              3.27404ms           3.27404ms           0.456125ms          62027.0             
+22433               ojAlgo-MIP          Stable              172.615ms           172.615ms           9.10225ms           21477.0             
+p0282               ojAlgo-MIP          Solved              208.644ms           279.447ms           124.971ms           258411.0            
+sentoy              ojAlgo-MIP          Solved              72.3433ms           72.3433ms           44.2702ms           -7772.0             
+mik-250-20-75-1     ojAlgo-MIP          Solved              11920.8ms           7913.37ms           5596.18ms           -49716.0            
+neos-1425699        SCIP                Stable              4.58571ms           4.58571ms           0.661001ms          3.179699E9          
+sample2             ojAlgo-MIP          Stable              14.9615ms           15.4813ms           2.50446ms           375.0               
+neos-3610051-istra  ojAlgo-MIP          Stable              221954.0ms          197019.0ms          35883.6ms           49.0                
+p0548               ojAlgo-MIP          Solved              6967.37ms           6920.71ms           1435.63ms           8691.0              
+mik-250-20-75-3     ojAlgo-MIP          Solved              18450.2ms           18450.2ms           4517.47ms           -52242.0            
+p0033               ojAlgo-MIP          Solved              5.25496ms           5.25496ms           3.59079ms           3089.0              
+set1cl              ojAlgo-MIP          Solved              32.4174ms           32.4174ms           8.342ms             6484.25             
+misc01              ojAlgo-MIP          Solved              37.6248ms           37.6248ms           31.967ms            563.5               
+cracpb1             ojAlgo-MIP          Solved              88.3797ms           82.7306ms           31.8453ms           22199.0             
+ran13x13            ojAlgo-MIP          Solved              40186.1ms           40186.1ms           10687.0ms           3252.0              
+vpm1                ojAlgo-MIP          Solved              56827.8ms           56827.8ms           13681.0ms           20.0                
+prod2               ojAlgo-MIP          Solved              53942.3ms           54558.1ms           17637.7ms           -62.0               
+bell5               ojAlgo-MIP          Solved              2117.11ms           2117.11ms           2136.66ms           8966406.5           
+gt2                 ojAlgo-MIP          Solved              85.6518ms           60.3019ms           29.7087ms           21166.0             
+p0040               SCIP                Stable              2.13463ms           2.35379ms           0.292833ms          62027.0             
+enlight_hard        ojAlgo-MIP          Solved              15866.3ms           15866.3ms           10320.2ms           37.0                
+bienst2             ojAlgo-MIP          Solved              18439.6ms           18439.6ms           6791.18ms           54.6                
+
+Iteration 9 with 17 model/solver pairs remaining 2026-11-27T13:51:12.115145Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Solved              5.94287ms           30.8753ms           38.1698ms           280.95              
+sentoy              ojAlgo-MIP          Solved              69.1861ms           72.3433ms           23.4043ms           -7772.0             
+p0282               ojAlgo-MIP          Solved              331.218ms           279.447ms           122.574ms           258411.0            
+mik-250-20-75-1     ojAlgo-MIP          Solved              6046.93ms           6324.59ms           5873.84ms           -49716.0            
+p0548               ojAlgo-MIP          Solved              6581.03ms           6581.03ms           1435.63ms           8691.0              
+ran13x13            ojAlgo-MIP          Stable              38984.2ms           38984.2ms           4155.9ms            3252.0              
+p0033               ojAlgo-MIP          Solved              5.61829ms           5.25496ms           1.38471ms           3089.0              
+set1cl              ojAlgo-MIP          Stable              30.5035ms           30.5035ms           5.16592ms           6484.25             
+misc01              ojAlgo-MIP          Solved              45.4558ms           37.6248ms           30.5676ms           563.5               
+cracpb1             ojAlgo-MIP          Solved              65.3046ms           65.3046ms           31.8453ms           22199.0             
+mik-250-20-75-3     ojAlgo-MIP          Stable              21088.5ms           19707.4ms           2638.26ms           -52242.0            
+vpm1                ojAlgo-MIP          Solved              66738.6ms           56827.8ms           21670.2ms           20.0                
+bell5               ojAlgo-MIP          Solved              3370.97ms           2813.19ms           1253.86ms           8966406.5           
+prod2               ojAlgo-MIP          Stable              48143.6ms           53942.3ms           6414.55ms           -62.0               
+gt2                 ojAlgo-MIP          Solved              64.7451ms           64.7451ms           25.35ms             21166.0             
+enlight_hard        ojAlgo-MIP          Solved              17074.4ms           15866.3ms           3666.54ms           37.0                
+bienst2             ojAlgo-MIP          Solved              20724.5ms           18439.6ms           4102.74ms           54.6                
+
+Iteration 10 with 13 model/solver pairs remaining 2026-11-27T14:00:22.656406Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+mod013              ojAlgo-MIP          Capped              13.8101ms           13.8101ms           24.9324ms           280.95              
+p0282               ojAlgo-MIP          Capped              92.991ms            208.644ms           238.227ms           258411.0            
+sentoy              ojAlgo-MIP          Capped              100.254ms           72.3433ms           31.0674ms           -7772.0             
+p0548               ojAlgo-MIP          Stable              7021.14ms           6967.37ms           440.113ms           8691.0              
+p0033               ojAlgo-MIP          Capped              3.38883ms           5.25496ms           2.22946ms           3089.0              
+misc01              ojAlgo-MIP          Capped              17.2401ms           37.6248ms           28.2156ms           563.5               
+cracpb1             ojAlgo-MIP          Capped              58.6428ms           65.3046ms           29.7369ms           22199.0             
+mik-250-20-75-1     ojAlgo-MIP          Capped              14904.3ms           11920.8ms           8857.34ms           -49716.0            
+enlight_hard        ojAlgo-MIP          Capped              22435.8ms           17074.4ms           6569.55ms           37.0                
+vpm1                ojAlgo-MIP          Capped              36636.4ms           56827.8ms           30102.2ms           20.0                
+gt2                 ojAlgo-MIP          Capped              87.1125ms           85.6518ms           22.3674ms           21166.0             
+bienst2             ojAlgo-MIP          Stable              18562.7ms           18562.7ms           2284.82ms           54.6                
+bell5               ojAlgo-MIP          Capped              352.178ms           2117.11ms           3018.79ms           8966406.5           
+
+Final Results
+Model               Solver              Status              Time                
+================================================================================
+22433               HiGHS               OPTIMAL             1105.72ms           
+22433               SCIP                OPTIMAL             1595.17ms           
+22433               ojAlgo-MIP          OPTIMAL             172.615ms           
+23588               HiGHS               OPTIMAL             3035.88ms           
+23588               SCIP                OPTIMAL             2233.26ms           
+23588               ojAlgo-MIP          OPTIMAL             212.724ms           
+aflow30a            HiGHS               OPTIMAL             3187.92ms           
+aflow30a            SCIP                OPTIMAL             9536.75ms           
+aflow30a            ojAlgo-MIP          OPTIMAL             28153.0ms           
+air01               HiGHS               OPTIMAL             44.0976ms           
+air01               SCIP                OPTIMAL             42.789ms            
+air01               ojAlgo-MIP          OPTIMAL             11.755ms            
+beavma              HiGHS               OPTIMAL             291.041ms           
+beavma              SCIP                OPTIMAL             223.481ms           
+beavma              ojAlgo-MIP          TIMEOUT             
+bell3a              HiGHS               OPTIMAL             144.776ms           
+bell3a              SCIP                OPTIMAL             700.05ms            
+bell3a              ojAlgo-MIP          OPTIMAL             362.257ms           
+bell3b              HiGHS               OPTIMAL             478.498ms           
+bell3b              SCIP                OPTIMAL             1916.04ms           
+bell3b              ojAlgo-MIP          OPTIMAL             473.873ms           
+bell4               HiGHS               OPTIMAL             238.267ms           
+bell4               SCIP                OPTIMAL             330.22ms            
+bell4               ojAlgo-MIP          TIMEOUT             
+bell5               HiGHS               OPTIMAL             285.608ms           
+bell5               SCIP                OPTIMAL             97.6531ms           
+bell5               ojAlgo-MIP          OPTIMAL             2117.11ms           
+bienst1             HiGHS               OPTIMAL             7970.08ms           
+bienst1             SCIP                OPTIMAL             45701.6ms           
+bienst1             ojAlgo-MIP          OPTIMAL             1463.07ms           
+bienst2             HiGHS               OPTIMAL             84215.2ms           
+bienst2             SCIP                OPTIMAL             136295.0ms          
+bienst2             ojAlgo-MIP          OPTIMAL             18562.7ms           
+blend2              HiGHS               OPTIMAL             685.11ms            
+blend2              SCIP                OPTIMAL             528.101ms           
+blend2              ojAlgo-MIP          OPTIMAL             372.601ms           
+bm23                HiGHS               OPTIMAL             91.3342ms           
+bm23                SCIP                OPTIMAL             89.7571ms           
+bm23                ojAlgo-MIP          OPTIMAL             16.1243ms           
+bppc8-02            HiGHS               OPTIMAL             208.642ms           
+bppc8-02            SCIP                OPTIMAL             155.682ms           
+bppc8-02            ojAlgo-MIP          OPTIMAL             476.615ms           
+cracpb1             HiGHS               OPTIMAL             37.6554ms           
+cracpb1             SCIP                OPTIMAL             84.336ms            
+cracpb1             ojAlgo-MIP          OPTIMAL             65.3046ms           
+dcmulti             HiGHS               OPTIMAL             692.897ms           
+dcmulti             SCIP                OPTIMAL             1279.04ms           
+dcmulti             ojAlgo-MIP          OPTIMAL             273.798ms           
+dfn-gwin-UUM        HiGHS               OPTIMAL             67680.9ms           
+dfn-gwin-UUM        SCIP                OPTIMAL             48204.7ms           
+dfn-gwin-UUM        ojAlgo-MIP          TIMEOUT             
+egout               HiGHS               OPTIMAL             6.30092ms           
+egout               SCIP                OPTIMAL             4.44779ms           
+egout               ojAlgo-MIP          OPTIMAL             37.275ms            
+enigma              HiGHS               OPTIMAL             73.3323ms           
+enigma              SCIP                OPTIMAL             153.51ms            
+enigma              ojAlgo-MIP          OPTIMAL             52.953ms            
+enlight13           HiGHS               OPTIMAL             62374.7ms           
+enlight13           SCIP                OPTIMAL             6.78583ms           
+enlight13           ojAlgo-MIP          UNSTABLE            
+enlight8            HiGHS               OPTIMAL             994.096ms           
+enlight8            SCIP                OPTIMAL             2.70038ms           
+enlight8            ojAlgo-MIP          OPTIMAL             596.677ms           
+enlight_hard        HiGHS               OPTIMAL             5535.72ms           
+enlight_hard        SCIP                OPTIMAL             3.58392ms           
+enlight_hard        ojAlgo-MIP          OPTIMAL             17074.4ms           
+exp-1-500-5-5       HiGHS               OPTIMAL             2378.59ms           
+exp-1-500-5-5       SCIP                OPTIMAL             1092.68ms           
+exp-1-500-5-5       ojAlgo-MIP          TIMEOUT             
+f2gap40400          HiGHS               OPTIMAL             8.76683ms           
+f2gap40400          SCIP                OPTIMAL             25.8294ms           
+f2gap40400          ojAlgo-MIP          OPTIMAL             102.08ms            
+fixnet3             HiGHS               OPTIMAL             64.7321ms           
+fixnet3             SCIP                OPTIMAL             20.7501ms           
+fixnet3             ojAlgo-MIP          TIMEOUT             
+fixnet4             HiGHS               OPTIMAL             200.663ms           
+fixnet4             SCIP                OPTIMAL             756.889ms           
+fixnet4             ojAlgo-MIP          TIMEOUT             
+fixnet6             HiGHS               OPTIMAL             1684.62ms           
+fixnet6             SCIP                OPTIMAL             3592.65ms           
+fixnet6             ojAlgo-MIP          TIMEOUT             
+flugpl              HiGHS               OPTIMAL             33.8286ms           
+flugpl              SCIP                OPTIMAL             17.1112ms           
+flugpl              ojAlgo-MIP          OPTIMAL             1.16158ms           
+gen                 HiGHS               OPTIMAL             17.3511ms           
+gen                 SCIP                OPTIMAL             18.1612ms           
+gen                 ojAlgo-MIP          OPTIMAL             23.6207ms           
+gen-ip021           HiGHS               OPTIMAL             129875.0ms          
+gen-ip021           SCIP                OPTIMAL             190214.0ms          
+gen-ip021           ojAlgo-MIP          OPTIMAL             40690.2ms           
+gen-ip036           HiGHS               OPTIMAL             138401.0ms          
+gen-ip036           SCIP                OPTIMAL             192252.0ms          
+gen-ip036           ojAlgo-MIP          OPTIMAL             33967.5ms           
+gr4x6               HiGHS               OPTIMAL             9.16629ms           
+gr4x6               SCIP                OPTIMAL             3.99942ms           
+gr4x6               ojAlgo-MIP          OPTIMAL             0.991583ms          
+graphdraw-gemcutter HiGHS               OPTIMAL             84655.5ms           
+graphdraw-gemcutter SCIP                OPTIMAL             86281.8ms           
+graphdraw-gemcutter ojAlgo-MIP          OPTIMAL             96351.8ms           
+gsvm2rl3            HiGHS               OPTIMAL             20511.9ms           
+gsvm2rl3            SCIP                OPTIMAL             6468.34ms           
+gsvm2rl3            ojAlgo-MIP          TIMEOUT             
+gt2                 HiGHS               OPTIMAL             29.0966ms           
+gt2                 SCIP                OPTIMAL             13.9537ms           
+gt2                 ojAlgo-MIP          OPTIMAL             85.6518ms           
+ic97_tension        HiGHS               OPTIMAL             7018.34ms           
+ic97_tension        SCIP                OPTIMAL             12590.5ms           
+ic97_tension        ojAlgo-MIP          TIMEOUT             
+lseu                HiGHS               OPTIMAL             99.2188ms           
+lseu                SCIP                OPTIMAL             238.242ms           
+lseu                ojAlgo-MIP          OPTIMAL             48.1082ms           
+markshare_4_0       HiGHS               OPTIMAL             24532.1ms           
+markshare_4_0       SCIP                OPTIMAL             57299.1ms           
+markshare_4_0       ojAlgo-MIP          OPTIMAL             5487.88ms           
+mas76               HiGHS               OPTIMAL             14916.0ms           
+mas76               SCIP                OPTIMAL             35424.8ms           
+mas76               ojAlgo-MIP          OPTIMAL             10986.8ms           
+mik-250-1-100-1     HiGHS               OPTIMAL             1054.42ms           
+mik-250-1-100-1     SCIP                OPTIMAL             41595.2ms           
+mik-250-1-100-1     ojAlgo-MIP          OPTIMAL             109752.0ms          
+mik-250-20-75-1     HiGHS               OPTIMAL             1385.36ms           
+mik-250-20-75-1     SCIP                OPTIMAL             2334.39ms           
+mik-250-20-75-1     ojAlgo-MIP          OPTIMAL             11920.8ms           
+mik-250-20-75-2     HiGHS               OPTIMAL             1049.13ms           
+mik-250-20-75-2     SCIP                OPTIMAL             3942.19ms           
+mik-250-20-75-2     ojAlgo-MIP          OPTIMAL             20313.6ms           
+mik-250-20-75-3     HiGHS               OPTIMAL             1463.44ms           
+mik-250-20-75-3     SCIP                OPTIMAL             2454.52ms           
+mik-250-20-75-3     ojAlgo-MIP          OPTIMAL             19707.4ms           
+mik-250-20-75-4     HiGHS               OPTIMAL             7324.82ms           
+mik-250-20-75-4     SCIP                OPTIMAL             14732.1ms           
+mik-250-20-75-4     ojAlgo-MIP          OPTIMAL             43658.0ms           
+mik-250-20-75-5     HiGHS               OPTIMAL             1508.76ms           
+mik-250-20-75-5     SCIP                OPTIMAL             2771.46ms           
+mik-250-20-75-5     ojAlgo-MIP          OPTIMAL             9110.64ms           
+misc01              HiGHS               OPTIMAL             238.37ms            
+misc01              SCIP                OPTIMAL             180.349ms           
+misc01              ojAlgo-MIP          OPTIMAL             37.6248ms           
+misc02              HiGHS               OPTIMAL             32.301ms            
+misc02              SCIP                OPTIMAL             102.761ms           
+misc02              ojAlgo-MIP          OPTIMAL             3.07388ms           
+misc03              HiGHS               OPTIMAL             325.845ms           
+misc03              SCIP                OPTIMAL             571.069ms           
+misc03              ojAlgo-MIP          OPTIMAL             43.9791ms           
+misc05              HiGHS               OPTIMAL             309.574ms           
+misc05              SCIP                OPTIMAL             945.586ms           
+misc05              ojAlgo-MIP          OPTIMAL             68.0052ms           
+misc07              HiGHS               OPTIMAL             5145.85ms           
+misc07              SCIP                OPTIMAL             1521.19ms           
+misc07              ojAlgo-MIP          OPTIMAL             3199.17ms           
+mod008              HiGHS               OPTIMAL             525.057ms           
+mod008              SCIP                OPTIMAL             128.687ms           
+mod008              ojAlgo-MIP          OPTIMAL             108.519ms           
+mod013              HiGHS               OPTIMAL             152.508ms           
+mod013              SCIP                OPTIMAL             749.72ms            
+mod013              ojAlgo-MIP          OPTIMAL             13.8101ms           
+modglob             HiGHS               OPTIMAL             221.371ms           
+modglob             SCIP                OPTIMAL             103.176ms           
+modglob             ojAlgo-MIP          TIMEOUT             
+neos-1425699        HiGHS               OPTIMAL             70.283ms            
+neos-1425699        SCIP                OPTIMAL             4.58571ms           
+neos-1425699        ojAlgo-MIP          OPTIMAL             1.755ms             
+neos-1430701        HiGHS               OPTIMAL             3374.53ms           
+neos-1430701        SCIP                OPTIMAL             2438.46ms           
+neos-1430701        ojAlgo-MIP          TIMEOUT             
+neos-2624317-amur   HiGHS               OPTIMAL             47883.7ms           
+neos-2624317-amur   SCIP                OPTIMAL             16065.5ms           
+neos-2624317-amur   ojAlgo-MIP          TIMEOUT             
+neos-3610040-iskar  HiGHS               OPTIMAL             668.804ms           
+neos-3610040-iskar  SCIP                OPTIMAL             521.889ms           
+neos-3610040-iskar  ojAlgo-MIP          OPTIMAL             52190.5ms           
+neos-3610051-istra  HiGHS               OPTIMAL             913.548ms           
+neos-3610051-istra  SCIP                OPTIMAL             664.582ms           
+neos-3610051-istra  ojAlgo-MIP          OPTIMAL             197019.0ms          
+neos-3610173-itata  HiGHS               OPTIMAL             583.998ms           
+neos-3610173-itata  SCIP                OPTIMAL             646.698ms           
+neos-3610173-itata  ojAlgo-MIP          OPTIMAL             25312.5ms           
+neos-3611447-jijia  HiGHS               OPTIMAL             948.894ms           
+neos-3611447-jijia  SCIP                OPTIMAL             778.933ms           
+neos-3611447-jijia  ojAlgo-MIP          OPTIMAL             27697.9ms           
+neos-3611689-kaihu  HiGHS               OPTIMAL             699.929ms           
+neos-3611689-kaihu  SCIP                OPTIMAL             482.728ms           
+neos-3611689-kaihu  ojAlgo-MIP          OPTIMAL             18318.4ms           
+neos-5192052-neckar HiGHS               OPTIMAL             22.3234ms           
+neos-5192052-neckar SCIP                OPTIMAL             13.4554ms           
+neos-5192052-neckar ojAlgo-MIP          OPTIMAL             2.64492ms           
+neos-911880         HiGHS               OPTIMAL             6404.94ms           
+neos-911880         SCIP                OPTIMAL             6262.24ms           
+neos-911880         ojAlgo-MIP          TIMEOUT             
+neos-911970         HiGHS               OPTIMAL             3547.94ms           
+neos-911970         SCIP                OPTIMAL             7332.22ms           
+neos-911970         ojAlgo-MIP          TIMEOUT             
+neos17              HiGHS               OPTIMAL             3762.38ms           
+neos17              SCIP                OPTIMAL             3904.59ms           
+neos17              ojAlgo-MIP          TIMEOUT             
+nexp-50-20-1-1      HiGHS               OPTIMAL             42.7229ms           
+nexp-50-20-1-1      SCIP                OPTIMAL             179.362ms           
+nexp-50-20-1-1      ojAlgo-MIP          TIMEOUT             
+noswot              HiGHS               OPTIMAL             3567.88ms           
+noswot              SCIP                OPTIMAL             6558.97ms           
+noswot              ojAlgo-MIP          UNSTABLE            
+opt1217             HiGHS               OPTIMAL             219.59ms            
+opt1217             SCIP                OPTIMAL             66.1641ms           
+opt1217             ojAlgo-MIP          FAILED              
+p0033               HiGHS               OPTIMAL             13.0685ms           
+p0033               SCIP                OPTIMAL             7.77792ms           
+p0033               ojAlgo-MIP          OPTIMAL             5.25496ms           
+p0040               HiGHS               OPTIMAL             4.97042ms           
+p0040               SCIP                OPTIMAL             2.35379ms           
+p0040               ojAlgo-MIP          OPTIMAL             3.27404ms           
+p0201               HiGHS               OPTIMAL             661.86ms            
+p0201               SCIP                OPTIMAL             363.163ms           
+p0201               ojAlgo-MIP          OPTIMAL             130.67ms            
+p0282               HiGHS               OPTIMAL             109.803ms           
+p0282               SCIP                OPTIMAL             102.828ms           
+p0282               ojAlgo-MIP          OPTIMAL             208.644ms           
+p0291               HiGHS               OPTIMAL             21.1775ms           
+p0291               SCIP                OPTIMAL             11.3287ms           
+p0291               ojAlgo-MIP          OPTIMAL             18.4815ms           
+p0548               HiGHS               OPTIMAL             44.8175ms           
+p0548               SCIP                OPTIMAL             49.8087ms           
+p0548               ojAlgo-MIP          OPTIMAL             6967.37ms           
+pigeon-08           HiGHS               OPTIMAL             5739.04ms           
+pigeon-08           SCIP                OPTIMAL             342.3ms             
+pigeon-08           ojAlgo-MIP          OPTIMAL             43983.5ms           
+pipex               HiGHS               OPTIMAL             35.2596ms           
+pipex               SCIP                OPTIMAL             38.5164ms           
+pipex               ojAlgo-MIP          OPTIMAL             10.2339ms           
+pk1                 HiGHS               OPTIMAL             34760.9ms           
+pk1                 SCIP                OPTIMAL             67310.9ms           
+pk1                 ojAlgo-MIP          OPTIMAL             5756.89ms           
+pp08a               HiGHS               OPTIMAL             589.735ms           
+pp08a               SCIP                OPTIMAL             888.963ms           
+pp08a               ojAlgo-MIP          OPTIMAL             73106.3ms           
+pp08aCUTS           HiGHS               OPTIMAL             725.521ms           
+pp08aCUTS           SCIP                OPTIMAL             624.894ms           
+pp08aCUTS           ojAlgo-MIP          OPTIMAL             55054.8ms           
+prod1               HiGHS               OPTIMAL             4538.0ms            
+prod1               SCIP                OPTIMAL             9159.92ms           
+prod1               ojAlgo-MIP          OPTIMAL             11450.6ms           
+prod2               HiGHS               OPTIMAL             20446.2ms           
+prod2               SCIP                OPTIMAL             48733.3ms           
+prod2               ojAlgo-MIP          OPTIMAL             53942.3ms           
+r50x360             HiGHS               OPTIMAL             13282.9ms           
+r50x360             SCIP                OPTIMAL             26363.3ms           
+r50x360             ojAlgo-MIP          TIMEOUT             
+ran12x21            HiGHS               OPTIMAL             10370.2ms           
+ran12x21            SCIP                OPTIMAL             29081.1ms           
+ran12x21            ojAlgo-MIP          OPTIMAL             202888.0ms          
+ran13x13            HiGHS               OPTIMAL             6239.1ms            
+ran13x13            SCIP                OPTIMAL             20228.3ms           
+ran13x13            ojAlgo-MIP          OPTIMAL             38984.2ms           
+ran16x16            HiGHS               OPTIMAL             24346.3ms           
+ran16x16            SCIP                OPTIMAL             45983.4ms           
+ran16x16            ojAlgo-MIP          TIMEOUT             
+rgn                 HiGHS               OPTIMAL             196.586ms           
+rgn                 SCIP                OPTIMAL             119.139ms           
+rgn                 ojAlgo-MIP          OPTIMAL             87.6273ms           
+rlp1                HiGHS               OPTIMAL             112.95ms            
+rlp1                SCIP                OPTIMAL             15951.1ms           
+rlp1                ojAlgo-MIP          TIMEOUT             
+rout                HiGHS               OPTIMAL             7431.96ms           
+rout                SCIP                OPTIMAL             8189.69ms           
+rout                ojAlgo-MIP          TIMEOUT             
+sample2             HiGHS               OPTIMAL             10.2141ms           
+sample2             SCIP                OPTIMAL             3.87383ms           
+sample2             ojAlgo-MIP          OPTIMAL             15.4813ms           
+sentoy              HiGHS               OPTIMAL             95.9477ms           
+sentoy              SCIP                OPTIMAL             202.9ms             
+sentoy              ojAlgo-MIP          OPTIMAL             72.3433ms           
+set1al              HiGHS               OPTIMAL             50.3975ms           
+set1al              SCIP                OPTIMAL             51.8916ms           
+set1al              ojAlgo-MIP          OPTIMAL             57.379ms            
+set1ch              HiGHS               OPTIMAL             172.13ms            
+set1ch              SCIP                OPTIMAL             148.998ms           
+set1ch              ojAlgo-MIP          TIMEOUT             
+set1cl              HiGHS               OPTIMAL             61.1818ms           
+set1cl              SCIP                OPTIMAL             11.2857ms           
+set1cl              ojAlgo-MIP          OPTIMAL             30.5035ms           
+sp150x300d          HiGHS               OPTIMAL             28.4689ms           
+sp150x300d          SCIP                OPTIMAL             114.837ms           
+sp150x300d          ojAlgo-MIP          TIMEOUT             
+stein15             HiGHS               OPTIMAL             29.8182ms           
+stein15             SCIP                OPTIMAL             17.9214ms           
+stein15             ojAlgo-MIP          OPTIMAL             1.84292ms           
+stein27             HiGHS               OPTIMAL             149.966ms           
+stein27             SCIP                OPTIMAL             87.4446ms           
+stein27             ojAlgo-MIP          OPTIMAL             72.5435ms           
+stein45             HiGHS               OPTIMAL             5406.37ms           
+stein45             SCIP                OPTIMAL             9162.49ms           
+stein45             ojAlgo-MIP          OPTIMAL             4240.8ms            
+stein9              HiGHS               OPTIMAL             5.9955ms            
+stein9              SCIP                OPTIMAL             8.74646ms           
+stein9              ojAlgo-MIP          OPTIMAL             0.520375ms          
+supportcase14       HiGHS               OPTIMAL             38.3177ms           
+supportcase14       SCIP                OPTIMAL             71.747ms            
+supportcase14       ojAlgo-MIP          OPTIMAL             27.4844ms           
+supportcase16       HiGHS               OPTIMAL             44.2277ms           
+supportcase16       SCIP                OPTIMAL             91.3649ms           
+supportcase16       ojAlgo-MIP          OPTIMAL             58.1078ms           
+timtab1             HiGHS               OPTIMAL             23422.4ms           
+timtab1             SCIP                OPTIMAL             39998.1ms           
+timtab1             ojAlgo-MIP          TIMEOUT             
+timtab1CUTS         HiGHS               OPTIMAL             15210.9ms           
+timtab1CUTS         SCIP                OPTIMAL             50666.0ms           
+timtab1CUTS         ojAlgo-MIP          UNSTABLE            
+vpm1                HiGHS               OPTIMAL             7.58304ms           
+vpm1                SCIP                OPTIMAL             9.07437ms           
+vpm1                ojAlgo-MIP          OPTIMAL             56827.8ms           
+vpm2                HiGHS               OPTIMAL             805.12ms            
+vpm2                SCIP                OPTIMAL             1077.48ms           
+vpm2                ojAlgo-MIP          OPTIMAL             36497.1ms           
+
+Models Solved
+Solver              Solved / Total      Share               
+============================================================
+HiGHS               104 / 104           100%                
+SCIP                104 / 104           100%                
+ojAlgo-MIP          77 / 104            74%                 
