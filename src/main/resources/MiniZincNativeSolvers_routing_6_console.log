@@ -1,0 +1,648 @@
+
+Environment: 12GB/18threads aarch64 [48GB/18threads, 2MB/18threads, 256kB/1thread, 64kB/1thread]
+Workers: 6, threads per worker: 3, max heap per worker: 6144m
+Models: 52 of 52 within size limits (0 not shipped), solvers: 3
+
+
+Reference values for 14 models without an expected value 2026-11-27T22:56:07.031780Z
+Model               Solver              Status              Value               
+--------------------------------------------------------------------------------
+traveling-tppv__cir SCIP                TIMEOUT             
+vrp__A-n61-k9.vrp   SCIP                TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+vrp__A-n33-k6.vrp   SCIP                TIMEOUT             
+vrp__A-n38-k5.vrp   SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+vrp__P-n50-k10.vrp  SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+
+Iteration 1 with 156 model/solver pairs remaining 2026-11-27T23:11:07.053539Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              2.889ms             2.889ms             0.0ms               224.0               
+trucking__05        SCIP                Solved              2.59963ms           2.59963ms           0.0ms               287.0               
+shortest_path__09   SCIP                Solved              20.5682ms           20.5682ms           0.0ms               549.0               
+trucking__14        HiGHS               Solved              6.54179ms           6.54179ms           0.0ms               580.0               
+mario__mario_easy_2 SCIP                Solved              270.945ms           270.945ms           0.0ms               628.0               
+prize-collecting__2 CP-SAT              Solved              266.382ms           266.382ms           0.0ms               58.0                
+vrp__P-n16-k8.vrp   CP-SAT              Solved              1419.71ms           1419.71ms           0.0ms               450.0               
+mario__mario_medium SCIP                Solved              3172.73ms           3172.73ms           0.0ms               1481.0              
+shortest_path__00   SCIP                Solved              3.842ms             3.842ms             0.0ms               88.0                
+java-routing__trip_ CP-SAT              Solved              4811.25ms           4811.25ms           0.0ms               67.0                
+mario__mario_n_medi HiGHS               Solved              4064.87ms           4064.87ms           0.0ms               1062.0              
+stochastic-vrp__vrp CP-SAT              Solved              7222.79ms           7222.79ms           0.0ms               330.0               
+java-routing__trip_ CP-SAT              Solved              10513.8ms           10513.8ms           0.0ms               54.0                
+trucking_hl__trucki HiGHS               Solved              5.73517ms           5.73517ms           0.0ms               220.0               
+vrp__P-n16-k8.vrp   HiGHS               Solved              5318.74ms           5318.74ms           0.0ms               450.0               
+traveling-tppv__cir SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+trucking_hl__trucki SCIP                Solved              3.59983ms           3.59983ms           0.0ms               324.0               
+shortest_path__08   CP-SAT              Solved              17.3339ms           17.3339ms           0.0ms               144.0               
+traveling-tppv__cir HiGHS               TIMEOUT             
+tpp__tpp_5_5_20_1   HiGHS               Solved              4861.76ms           4861.76ms           0.0ms               115.0               
+prize-collecting__3 CP-SAT              Solved              221.056ms           221.056ms           0.0ms               77.0                
+trucking__01        HiGHS               Solved              5.51333ms           5.51333ms           0.0ms               220.0               
+shortest_path__00   CP-SAT              Solved              8.53663ms           8.53663ms           0.0ms               88.0                
+prize-collecting__2 HiGHS               Solved              1664.25ms           1664.25ms           0.0ms               58.0                
+tpp__tpp_5_3_20_1   CP-SAT              Solved              138.858ms           138.858ms           0.0ms               141.0               
+traveling-tppv__cir CP-SAT              TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+shortest_path__01   SCIP                Solved              5.57229ms           5.57229ms           0.0ms               42.0                
+cvrp__simple2       HiGHS               TIMEOUT             
+mario__mario_n_medi SCIP                Solved              7846.17ms           7846.17ms           0.0ms               771.0               
+trucking_hl__trucki HiGHS               Solved              4.25092ms           4.25092ms           0.0ms               210.0               
+prize-collecting__2 CP-SAT              Solved              60.315ms            60.315ms            0.0ms               62.0                
+traveling-tppv__cir HiGHS               TIMEOUT             
+stochastic-vrp__vrp SCIP                TIMEOUT             
+vrp__A-n33-k6.vrp   HiGHS               TIMEOUT             
+shortest_path__09   CP-SAT              Solved              47.4177ms           47.4177ms           0.0ms               549.0               
+trucking_hl__trucki SCIP                Solved              2.75083ms           2.75083ms           0.0ms               287.0               
+tpp__tpp_5_5_20_1   CP-SAT              Solved              313.451ms           313.451ms           0.0ms               115.0               
+prize-collecting__2 SCIP                Solved              1376.07ms           1376.07ms           0.0ms               58.0                
+java-routing__trip_ SCIP                TIMEOUT             
+tpp__tpp_5_3_20_1   SCIP                Solved              1257.56ms           1257.56ms           0.0ms               141.0               
+java-routing__trip_ SCIP                TIMEOUT             
+shortest_path__01   CP-SAT              Solved              10.2208ms           10.2208ms           0.0ms               42.0                
+tpp__tpp_7_5_30_1   CP-SAT              Solved              1423.07ms           1423.07ms           0.0ms               124.0               
+prize-collecting__2 HiGHS               Solved              524.377ms           524.377ms           0.0ms               62.0                
+trucking_hl__trucki CP-SAT              Solved              3.5505ms            3.5505ms            0.0ms               210.0               
+traveling-tppv__cir CP-SAT              TIMEOUT             
+trucking__14        CP-SAT              Solved              14.3269ms           14.3269ms           0.0ms               580.0               
+mario__mario_n_medi CP-SAT              Solved              785.33ms            785.33ms            0.0ms               1062.0              
+tpp__tpp_7_5_30_1   HiGHS               Solved              14073.2ms           14073.2ms           0.0ms               124.0               
+java-routing__trip_ CP-SAT              Solved              25931.8ms           25931.8ms           0.0ms               70.0                
+stochastic-vrp__vrp CP-SAT              Solved              166.426ms           166.426ms           0.0ms               194.0               
+trucking_hl__trucki HiGHS               Solved              8.70408ms           8.70408ms           0.0ms               224.0               
+vrp__A-n61-k9.vrp   SCIP                TIMEOUT             
+shortest_path__08   SCIP                Solved              7.19763ms           7.19763ms           0.0ms               144.0               
+stochastic-vrp__vrp SCIP                TIMEOUT             
+prize-collecting__3 HiGHS               Solved              1534.22ms           1534.22ms           0.0ms               77.0                
+shortest_path__02   CP-SAT              Solved              10.9025ms           10.9025ms           0.0ms               59.0                
+trucking_hl__trucki CP-SAT              Solved              3.86846ms           3.86846ms           0.0ms               220.0               
+stochastic-vrp__vrp CP-SAT              Solved              242.165ms           242.165ms           0.0ms               221.0               
+trucking__01        CP-SAT              Solved              3.71075ms           3.71075ms           0.0ms               220.0               
+trucking__10        SCIP                Solved              27.2461ms           27.2461ms           0.0ms               1736.0              
+stochastic-vrp__vrp SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              Solved              4584.11ms           4584.11ms           0.0ms               52.0                
+tpp__tpp_3_3_20_1   HiGHS               Solved              1050.41ms           1050.41ms           0.0ms               126.0               
+tpp__tpp_6_3_30_1   SCIP                Solved              3388.96ms           3388.96ms           0.0ms               164.0               
+stochastic-vrp__vrp SCIP                TIMEOUT             
+prize-collecting__1 SCIP                Solved              209.625ms           209.625ms           0.0ms               24.0                
+trucking_hl__trucki HiGHS               Solved              5.91446ms           5.91446ms           0.0ms               324.0               
+traveling-tppv__cir HiGHS               TIMEOUT             
+tpp__tpp_5_5_20_1   SCIP                Solved              14614.8ms           14614.8ms           0.0ms               115.0               
+shortest_path__02   HiGHS               Solved              9.53979ms           9.53979ms           0.0ms               59.0                
+java-routing__trip_ HiGHS               TIMEOUT             
+prize-collecting__2 SCIP                Solved              470.287ms           470.287ms           0.0ms               62.0                
+vrp__A-n38-k5.vrp   CP-SAT              TIMEOUT             
+prize-collecting__3 SCIP                Solved              2193.15ms           2193.15ms           0.0ms               77.0                
+vrp__A-n33-k6.vrp   CP-SAT              TIMEOUT             
+traveling-tppv__cir CP-SAT              Solved              288746.0ms          288746.0ms          0.0ms               78.0                
+trucking__10        HiGHS               Solved              45.3924ms           45.3924ms           0.0ms               1736.0              
+stochastic-vrp__vrp CP-SAT              Solved              831.312ms           831.312ms           0.0ms               230.0               
+vrp__A-n33-k6.vrp   SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              Solved              21891.0ms           21891.0ms           0.0ms               58.0                
+vrp__P-n50-k10.vrp  CP-SAT              TIMEOUT             
+trucking_hl__trucki CP-SAT              Solved              5.46662ms           5.46662ms           0.0ms               324.0               
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+mario__mario_easy_5 CP-SAT              Solved              99.8132ms           99.8132ms           0.0ms               445.0               
+mario__mario_n_medi HiGHS               Solved              4891.89ms           4891.89ms           0.0ms               771.0               
+prize-collecting__1 HiGHS               Solved              372.114ms           372.114ms           0.0ms               24.0                
+shortest_path__01   HiGHS               Solved              5.20688ms           5.20688ms           0.0ms               42.0                
+tpp__tpp_7_5_30_1   SCIP                Solved              38585.5ms           38585.5ms           0.0ms               124.0               
+trucking__12        CP-SAT              Solved              6.45217ms           6.45217ms           0.0ms               245.0               
+ma-path-finding__in SCIP                Solved              69.13ms             69.13ms             0.0ms               25.0                
+prize-collecting__2 HiGHS               Solved              734.886ms           734.886ms           0.0ms               79.0                
+prize-collecting__2 CP-SAT              Solved              119.446ms           119.446ms           0.0ms               79.0                
+trucking__01        SCIP                Solved              2.06808ms           2.06808ms           0.0ms               220.0               
+stochastic-vrp__vrp HiGHS               Solved              239761.0ms          239761.0ms          0.0ms               194.0               
+traveling-tppv__cir HiGHS               TIMEOUT             
+trucking_hl__trucki HiGHS               Solved              9.57137ms           9.57137ms           0.0ms               287.0               
+vrp__A-n61-k9.vrp   CP-SAT              TIMEOUT             
+mario__mario_easy_2 HiGHS               Solved              650.554ms           650.554ms           0.0ms               628.0               
+cvrp__simple2       SCIP                TIMEOUT             
+mario__mario_n_medi SCIP                Solved              5631.08ms           5631.08ms           0.0ms               1062.0              
+traveling-tppv__cir SCIP                TIMEOUT             
+trucking_hl__trucki CP-SAT              Solved              4.70854ms           4.70854ms           0.0ms               224.0               
+vrp__A-n38-k5.vrp   HiGHS               TIMEOUT             
+trucking__05        HiGHS               Solved              5.99525ms           5.99525ms           0.0ms               287.0               
+ma-path-finding__in CP-SAT              Solved              48.0795ms           48.0795ms           0.0ms               25.0                
+tpp__tpp_3_3_20_1   CP-SAT              Solved              52.619ms            52.619ms            0.0ms               126.0               
+mario__mario_easy_5 SCIP                Solved              612.722ms           612.722ms           0.0ms               445.0               
+mario__mario_medium HiGHS               Solved              6931.07ms           6931.07ms           0.0ms               1481.0              
+trucking__12        SCIP                Solved              3.56421ms           3.56421ms           0.0ms               245.0               
+java-routing__trip_ HiGHS               TIMEOUT             
+traveling-tppv__cir HiGHS               TIMEOUT             
+shortest_path__08   HiGHS               Solved              10.1791ms           10.1791ms           0.0ms               144.0               
+tpp__tpp_6_3_30_1   CP-SAT              Solved              298.768ms           298.768ms           0.0ms               164.0               
+traveling-tppv__cir SCIP                TIMEOUT             
+ma-path-finding__in HiGHS               Solved              90.6337ms           90.6337ms           0.0ms               25.0                
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+prize-collecting__2 SCIP                Solved              547.365ms           547.365ms           0.0ms               79.0                
+trucking_hl__trucki SCIP                Solved              1.96146ms           1.96146ms           0.0ms               220.0               
+vrp__P-n50-k10.vrp  HiGHS               TIMEOUT             
+tpp__tpp_3_3_20_1   SCIP                Solved              209.552ms           209.552ms           0.0ms               126.0               
+trucking__12        HiGHS               Solved              4.39425ms           4.39425ms           0.0ms               245.0               
+mario__mario_easy_5 HiGHS               Solved              441.36ms            441.36ms            0.0ms               445.0               
+mario__mario_n_medi CP-SAT              Solved              877.571ms           877.571ms           0.0ms               771.0               
+prize-collecting__1 CP-SAT              Solved              20.624ms            20.624ms            0.0ms               24.0                
+tpp__tpp_6_3_30_1   HiGHS               Solved              3892.08ms           3892.08ms           0.0ms               164.0               
+trucking__10        CP-SAT              Solved              172.192ms           172.192ms           0.0ms               1736.0              
+shortest_path__02   SCIP                Solved              5.63508ms           5.63508ms           0.0ms               59.0                
+shortest_path__09   HiGHS               Solved              17.2177ms           17.2177ms           0.0ms               549.0               
+vrp__P-n16-k8.vrp   SCIP                Solved              67042.1ms           67042.1ms           0.0ms               450.0               
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ HiGHS               TIMEOUT             
+tpp__tpp_5_3_20_1   HiGHS               Solved              2506.2ms            2506.2ms            0.0ms               141.0               
+vrp__A-n38-k5.vrp   SCIP                TIMEOUT             
+vrp__P-n50-k10.vrp  SCIP                TIMEOUT             
+java-routing__trip_ HiGHS               TIMEOUT             
+trucking_hl__trucki SCIP                Solved              2.82392ms           2.82392ms           0.0ms               210.0               
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+cvrp__simple2       CP-SAT              Solved              3352.67ms           3352.67ms           0.0ms               34.0                
+trucking_hl__trucki CP-SAT              Solved              3.50608ms           3.50608ms           0.0ms               287.0               
+java-routing__trip_ HiGHS               TIMEOUT             
+trucking__05        CP-SAT              Solved              4.62192ms           4.62192ms           0.0ms               287.0               
+mario__mario_medium CP-SAT              Solved              260.261ms           260.261ms           0.0ms               1481.0              
+shortest_path__00   HiGHS               Solved              6.64983ms           6.64983ms           0.0ms               88.0                
+stochastic-vrp__vrp CP-SAT              Solved              257.9ms             257.9ms             0.0ms               160.0               
+mario__mario_easy_2 CP-SAT              Solved              31.8262ms           31.8262ms           0.0ms               628.0               
+vrp__A-n61-k9.vrp   HiGHS               TIMEOUT             
+traveling-tppv__cir CP-SAT              TIMEOUT             
+trucking__14        SCIP                Solved              6.18313ms           6.18313ms           0.0ms               580.0               
+stochastic-vrp__vrp SCIP                TIMEOUT             
+traveling-tppv__cir CP-SAT              TIMEOUT             
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+
+Iteration 2 with 109 model/solver pairs remaining 2026-11-27T23:56:48.505894Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              3.76375ms           3.32637ms           0.87475ms           224.0               
+trucking__05        SCIP                Solved              6.98408ms           4.79185ms           4.38446ms           287.0               
+trucking__14        HiGHS               Solved              6.31313ms           6.42746ms           0.228667ms          580.0               
+shortest_path__09   SCIP                Solved              12.246ms            16.4071ms           8.32221ms           549.0               
+mario__mario_easy_2 SCIP                Solved              262.785ms           266.865ms           8.16083ms           628.0               
+prize-collecting__2 CP-SAT              Solved              228.373ms           247.378ms           38.0083ms           58.0                
+vrp__P-n16-k8.vrp   CP-SAT              Solved              1418.7ms            1419.21ms           1.00771ms           450.0               
+shortest_path__00   SCIP                Solved              3.35667ms           3.59933ms           0.485333ms          88.0                
+mario__mario_medium SCIP                Solved              3133.03ms           3152.88ms           39.697ms            1481.0              
+trucking_hl__trucki HiGHS               Solved              5.18704ms           5.4611ms            0.548124ms          220.0               
+mario__mario_n_medi HiGHS               Solved              3999.5ms            4032.18ms           65.3723ms           1062.0              
+trucking_hl__trucki SCIP                Solved              3.8295ms            3.71467ms           0.229666ms          324.0               
+shortest_path__08   CP-SAT              Solved              14.9388ms           16.1363ms           2.39517ms           144.0               
+prize-collecting__2 HiGHS               Solved              1595.37ms           1629.81ms           68.8788ms           58.0                
+prize-collecting__3 CP-SAT              Solved              268.568ms           244.812ms           47.5123ms           77.0                
+trucking__01        HiGHS               Solved              4.31846ms           4.9159ms            1.19487ms           220.0               
+shortest_path__00   CP-SAT              Solved              8.47258ms           8.5046ms            0.064042ms          88.0                
+tpp__tpp_5_3_20_1   CP-SAT              Solved              140.081ms           139.469ms           1.22325ms           141.0               
+shortest_path__01   SCIP                Solved              4.63521ms           5.10375ms           0.937084ms          42.0                
+vrp__P-n16-k8.vrp   HiGHS               Solved              5192.77ms           5255.75ms           125.968ms           450.0               
+trucking_hl__trucki HiGHS               Solved              4.78225ms           4.51658ms           0.531333ms          210.0               
+prize-collecting__2 CP-SAT              Solved              64.8587ms           62.5868ms           4.54375ms           62.0                
+tpp__tpp_5_5_20_1   CP-SAT              Solved              554.339ms           433.895ms           240.888ms           115.0               
+tpp__tpp_5_5_20_1   HiGHS               Solved              4875.94ms           4868.85ms           14.1787ms           115.0               
+java-routing__trip_ CP-SAT              Solved              5143.67ms           4977.46ms           332.42ms            67.0                
+trucking_hl__trucki SCIP                Solved              2.06246ms           2.40665ms           0.688375ms          287.0               
+shortest_path__09   CP-SAT              Solved              44.8394ms           46.1285ms           2.57829ms           549.0               
+prize-collecting__2 SCIP                Solved              1490.17ms           1433.12ms           114.104ms           58.0                
+tpp__tpp_5_3_20_1   SCIP                Solved              1344.91ms           1301.24ms           87.3594ms           141.0               
+shortest_path__01   CP-SAT              Solved              9.38154ms           9.80117ms           0.83925ms           42.0                
+stochastic-vrp__vrp CP-SAT              Solved              7979.4ms            7601.1ms            756.611ms           330.0               
+trucking_hl__trucki CP-SAT              Solved              2.97458ms           3.26254ms           0.575916ms          210.0               
+prize-collecting__2 HiGHS               Solved              550.177ms           537.277ms           25.7994ms           62.0                
+trucking__14        CP-SAT              Solved              12.2995ms           13.3132ms           2.02742ms           580.0               
+tpp__tpp_7_5_30_1   CP-SAT              Solved              1577.12ms           1500.09ms           154.052ms           124.0               
+mario__mario_n_medi CP-SAT              Solved              813.843ms           799.587ms           28.5134ms           1062.0              
+stochastic-vrp__vrp CP-SAT              Solved              182.996ms           174.711ms           16.5697ms           194.0               
+trucking_hl__trucki HiGHS               Solved              9.69108ms           9.19758ms           0.987ms             224.0               
+shortest_path__08   SCIP                Solved              5.82258ms           6.5101ms            1.37504ms           144.0               
+java-routing__trip_ CP-SAT              Solved              11197.6ms           10855.7ms           683.831ms           54.0                
+shortest_path__02   CP-SAT              Solved              11.5204ms           11.2114ms           0.617958ms          59.0                
+trucking_hl__trucki CP-SAT              Solved              3.69692ms           3.78269ms           0.171541ms          220.0               
+stochastic-vrp__vrp CP-SAT              Solved              264.055ms           253.11ms            21.889ms            221.0               
+trucking__01        CP-SAT              Solved              3.67383ms           3.69229ms           0.036917ms          220.0               
+trucking__10        SCIP                Solved              29.6423ms           28.4442ms           2.39617ms           1736.0              
+tpp__tpp_3_3_20_1   HiGHS               Solved              995.621ms           1023.02ms           54.7938ms           126.0               
+prize-collecting__3 HiGHS               Solved              1506.49ms           1520.35ms           27.7273ms           77.0                
+mario__mario_n_medi SCIP                Solved              8737.56ms           8291.86ms           891.392ms           771.0               
+prize-collecting__1 SCIP                Solved              199.49ms            204.557ms           10.1355ms           24.0                
+trucking_hl__trucki HiGHS               Solved              5.54321ms           5.72883ms           0.37125ms           324.0               
+tpp__tpp_6_3_30_1   SCIP                Solved              3404.66ms           3396.81ms           15.6967ms           164.0               
+shortest_path__02   HiGHS               Solved              8.59587ms           9.06783ms           0.943917ms          59.0                
+prize-collecting__2 SCIP                Solved              437.267ms           453.777ms           33.0204ms           62.0                
+prize-collecting__3 SCIP                Solved              2185.86ms           2189.5ms            7.28846ms           77.0                
+java-routing__trip_ CP-SAT              Solved              6093.77ms           5338.94ms           1509.66ms           52.0                
+trucking__10        HiGHS               Solved              42.5617ms           43.977ms            2.83067ms           1736.0              
+stochastic-vrp__vrp CP-SAT              Solved              768.069ms           799.69ms            63.2432ms           230.0               
+tpp__tpp_7_5_30_1   HiGHS               Solved              14262.5ms           14167.9ms           189.245ms           124.0               
+tpp__tpp_5_5_20_1   SCIP                Solved              13842.3ms           14228.5ms           772.496ms           115.0               
+trucking_hl__trucki CP-SAT              Solved              4.86587ms           5.16625ms           0.60075ms           324.0               
+mario__mario_easy_5 CP-SAT              Solved              101.473ms           100.643ms           1.65929ms           445.0               
+mario__mario_n_medi HiGHS               Solved              5097.57ms           4994.73ms           205.682ms           771.0               
+prize-collecting__1 HiGHS               Solved              380.68ms            376.397ms           8.56579ms           24.0                
+shortest_path__01   HiGHS               Solved              5.36858ms           5.28773ms           0.161708ms          42.0                
+trucking__12        CP-SAT              Solved              6.35792ms           6.40504ms           0.09425ms           245.0               
+ma-path-finding__in SCIP                Solved              73.444ms            71.287ms            4.31404ms           25.0                
+prize-collecting__2 HiGHS               Solved              759.641ms           747.263ms           24.7542ms           79.0                
+prize-collecting__2 CP-SAT              Solved              127.277ms           123.361ms           7.83067ms           79.0                
+trucking__01        SCIP                Solved              1.73287ms           1.90048ms           0.335208ms          220.0               
+trucking_hl__trucki HiGHS               Solved              9.23025ms           9.40081ms           0.341125ms          287.0               
+java-routing__trip_ CP-SAT              Solved              26254.5ms           26093.2ms           322.692ms           70.0                
+mario__mario_easy_2 HiGHS               Solved              700.584ms           675.569ms           50.03ms             628.0               
+trucking_hl__trucki CP-SAT              Solved              3.95658ms           4.33256ms           0.751958ms          224.0               
+trucking__05        HiGHS               Solved              4.60375ms           5.2995ms            1.3915ms            287.0               
+ma-path-finding__in CP-SAT              Solved              39.9535ms           44.0165ms           8.12596ms           25.0                
+tpp__tpp_3_3_20_1   CP-SAT              Solved              48.7072ms           50.6631ms           3.91175ms           126.0               
+mario__mario_easy_5 SCIP                Solved              567.177ms           589.95ms            45.5453ms           445.0               
+mario__mario_n_medi SCIP                Solved              5827.24ms           5729.16ms           196.156ms           1062.0              
+trucking__12        SCIP                Solved              3.11221ms           3.33821ms           0.451999ms          245.0               
+mario__mario_medium HiGHS               Solved              6825.13ms           6878.1ms            105.946ms           1481.0              
+shortest_path__08   HiGHS               Solved              8.35996ms           9.26952ms           1.81912ms           144.0               
+tpp__tpp_6_3_30_1   CP-SAT              Solved              290.256ms           294.512ms           8.51187ms           164.0               
+ma-path-finding__in HiGHS               Solved              81.8374ms           86.2356ms           8.79629ms           25.0                
+prize-collecting__2 SCIP                Solved              616.575ms           581.97ms            69.21ms             79.0                
+trucking_hl__trucki SCIP                Solved              2.21704ms           2.08925ms           0.255583ms          220.0               
+tpp__tpp_3_3_20_1   SCIP                Solved              248.938ms           229.245ms           39.3862ms           126.0               
+trucking__12        HiGHS               Solved              3.61829ms           4.00627ms           0.775959ms          245.0               
+mario__mario_easy_5 HiGHS               Solved              491.663ms           466.511ms           50.3026ms           445.0               
+mario__mario_n_medi CP-SAT              Solved              891.613ms           884.592ms           14.0424ms           771.0               
+prize-collecting__1 CP-SAT              Solved              20.8738ms           20.7489ms           0.249833ms          24.0                
+tpp__tpp_6_3_30_1   HiGHS               Solved              4272.62ms           4082.35ms           380.532ms           164.0               
+trucking__10        CP-SAT              Solved              171.022ms           171.607ms           1.17063ms           1736.0              
+shortest_path__02   SCIP                Solved              5.25012ms           5.4426ms            0.384958ms          59.0                
+shortest_path__09   HiGHS               Solved              14.6654ms           15.9415ms           2.55229ms           549.0               
+tpp__tpp_5_3_20_1   HiGHS               Solved              2593.6ms            2549.9ms            87.3997ms           141.0               
+trucking_hl__trucki SCIP                Solved              1.65075ms           2.23733ms           1.17317ms           210.0               
+java-routing__trip_ CP-SAT              Solved              24813.5ms           23352.2ms           2922.42ms           58.0                
+trucking_hl__trucki CP-SAT              Solved              3.36533ms           3.43571ms           0.14075ms           287.0               
+trucking__05        CP-SAT              Solved              3.27596ms           3.94894ms           1.34596ms           287.0               
+mario__mario_medium CP-SAT              Solved              247.497ms           253.879ms           12.7642ms           1481.0              
+shortest_path__00   HiGHS               Solved              5.42804ms           6.03894ms           1.22179ms           88.0                
+stochastic-vrp__vrp CP-SAT              Solved              226.222ms           242.061ms           31.6776ms           160.0               
+mario__mario_easy_2 CP-SAT              Solved              29.7708ms           30.7985ms           2.05542ms           628.0               
+trucking__14        SCIP                Solved              4.7975ms            5.49031ms           1.38563ms           580.0               
+cvrp__simple2       CP-SAT              Solved              3014.21ms           3183.44ms           338.462ms           34.0                
+tpp__tpp_7_5_30_1   SCIP                Solved              39166.7ms           38876.1ms           581.156ms           124.0               
+stochastic-vrp__vrp HiGHS               Solved              228136.0ms          233949.0ms          11625.1ms           194.0               
+vrp__P-n16-k8.vrp   SCIP                Solved              60729.2ms           63885.6ms           6312.85ms           450.0               
+traveling-tppv__cir CP-SAT              UNSTABLE            
+
+Iteration 3 with 108 model/solver pairs remaining 2026-11-28T00:02:26.203621Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              1.41579ms           2.889ms             2.34796ms           224.0               
+trucking__14        HiGHS               Stable              5.42254ms           6.31313ms           1.11925ms           580.0               
+trucking__05        SCIP                Solved              2.64337ms           2.64337ms           4.38446ms           287.0               
+shortest_path__09   SCIP                Solved              11.2911ms           12.246ms            9.27717ms           549.0               
+mario__mario_easy_2 SCIP                Stable              280.565ms           270.945ms           17.7806ms           628.0               
+prize-collecting__2 CP-SAT              Stable              268.664ms           266.382ms           40.2905ms           58.0                
+vrp__P-n16-k8.vrp   CP-SAT              Stable              1376.57ms           1418.7ms            43.1405ms           450.0               
+shortest_path__00   SCIP                Stable              3.38575ms           3.38575ms           0.485333ms          88.0                
+mario__mario_medium SCIP                Stable              3154.0ms            3154.0ms            39.697ms            1481.0              
+trucking_hl__trucki HiGHS               Stable              5.384ms             5.384ms             0.548124ms          220.0               
+mario__mario_n_medi HiGHS               Stable              3994.0ms            3999.5ms            70.8732ms           1062.0              
+trucking_hl__trucki SCIP                Stable              3.45562ms           3.59983ms           0.373875ms          324.0               
+shortest_path__08   CP-SAT              Stable              15.6955ms           15.6955ms           2.39517ms           144.0               
+prize-collecting__2 HiGHS               Stable              1644.81ms           1644.81ms           68.8788ms           58.0                
+prize-collecting__3 CP-SAT              Stable              249.573ms           249.573ms           47.5123ms           77.0                
+trucking__01        HiGHS               Solved              4.61963ms           4.61963ms           1.19487ms           220.0               
+shortest_path__00   CP-SAT              Stable              8.57146ms           8.53663ms           0.098875ms          88.0                
+tpp__tpp_5_3_20_1   CP-SAT              Stable              148.86ms            140.081ms           10.0026ms           141.0               
+shortest_path__01   SCIP                Solved              3.5805ms            4.63521ms           1.99179ms           42.0                
+stochastic-vrp__vrp CP-SAT              Stable              6969.53ms           7222.79ms           1009.87ms           330.0               
+trucking_hl__trucki HiGHS               Stable              4.48079ms           4.48079ms           0.531333ms          210.0               
+vrp__P-n16-k8.vrp   HiGHS               Stable              5205.5ms            5205.5ms            125.968ms           450.0               
+prize-collecting__2 CP-SAT              Stable              61.2616ms           61.2616ms           4.54375ms           62.0                
+tpp__tpp_5_5_20_1   CP-SAT              Solved              295.036ms           313.451ms           259.303ms           115.0               
+shortest_path__09   CP-SAT              Stable              44.2439ms           44.8394ms           3.17379ms           549.0               
+trucking_hl__trucki SCIP                Solved              1.99642ms           2.06246ms           0.754416ms          287.0               
+tpp__tpp_5_5_20_1   HiGHS               Stable              4933.39ms           4875.94ms           71.6313ms           115.0               
+prize-collecting__2 SCIP                Stable              1504.68ms           1490.17ms           128.609ms           58.0                
+tpp__tpp_5_3_20_1   SCIP                Stable              1352.44ms           1344.91ms           94.8855ms           141.0               
+shortest_path__01   CP-SAT              Stable              9.61996ms           9.61996ms           0.83925ms           42.0                
+prize-collecting__2 HiGHS               Stable              550.189ms           550.177ms           25.8117ms           62.0                
+trucking_hl__trucki CP-SAT              Stable              3.53308ms           3.53308ms           0.575916ms          210.0               
+tpp__tpp_7_5_30_1   CP-SAT              Stable              1461.84ms           1461.84ms           154.052ms           124.0               
+trucking__14        CP-SAT              Stable              11.8525ms           12.2995ms           2.47442ms           580.0               
+java-routing__trip_ CP-SAT              Stable              4855.25ms           4855.25ms           332.42ms            67.0                
+stochastic-vrp__vrp CP-SAT              Stable              200.297ms           182.996ms           33.8707ms           194.0               
+trucking_hl__trucki HiGHS               Stable              9.09883ms           9.09883ms           0.987ms             224.0               
+shortest_path__08   SCIP                Solved              5.87046ms           5.87046ms           1.37504ms           144.0               
+mario__mario_n_medi CP-SAT              Stable              806.918ms           806.918ms           28.5134ms           1062.0              
+prize-collecting__3 HiGHS               Stable              1528.18ms           1528.18ms           27.7273ms           77.0                
+shortest_path__02   CP-SAT              Stable              11.0413ms           11.0413ms           0.617958ms          59.0                
+trucking_hl__trucki CP-SAT              Stable              3.62242ms           3.69692ms           0.246041ms          220.0               
+stochastic-vrp__vrp CP-SAT              Stable              254.628ms           254.628ms           21.889ms            221.0               
+trucking__01        CP-SAT              Stable              3.69325ms           3.69325ms           0.036917ms          220.0               
+trucking__10        SCIP                Stable              27.7736ms           27.7736ms           2.39617ms           1736.0              
+tpp__tpp_3_3_20_1   HiGHS               Stable              984.925ms           995.621ms           65.4898ms           126.0               
+mario__mario_n_medi SCIP                Stable              8714.5ms            8714.5ms            891.392ms           771.0               
+prize-collecting__1 SCIP                Stable              205.647ms           205.647ms           10.1355ms           24.0                
+trucking_hl__trucki HiGHS               Stable              5.8235ms            5.8235ms            0.37125ms           324.0               
+java-routing__trip_ CP-SAT              Stable              11481.0ms           11197.6ms           967.257ms           54.0                
+tpp__tpp_6_3_30_1   SCIP                Stable              3367.47ms           3388.96ms           37.1925ms           164.0               
+shortest_path__02   HiGHS               Stable              8.35546ms           8.59587ms           1.18433ms           59.0                
+prize-collecting__2 SCIP                Stable              408.907ms           437.267ms           61.3798ms           62.0                
+stochastic-vrp__vrp CP-SAT              Stable              732.072ms           768.069ms           99.2394ms           230.0               
+trucking__10        HiGHS               Stable              43.237ms            43.237ms            2.83067ms           1736.0              
+prize-collecting__3 SCIP                Stable              2103.23ms           2185.86ms           89.9205ms           77.0                
+java-routing__trip_ CP-SAT              Solved              4343.21ms           4584.11ms           1750.57ms           52.0                
+tpp__tpp_7_5_30_1   HiGHS               Stable              14243.1ms           14243.1ms           189.245ms           124.0               
+trucking_hl__trucki CP-SAT              Stable              4.72583ms           4.86587ms           0.740791ms          324.0               
+mario__mario_easy_5 CP-SAT              Stable              110.466ms           101.473ms           10.6532ms           445.0               
+mario__mario_n_medi HiGHS               Stable              4991.77ms           4991.77ms           205.682ms           771.0               
+prize-collecting__1 HiGHS               Stable              365.962ms           372.114ms           14.7182ms           24.0                
+shortest_path__01   HiGHS               Stable              5.23425ms           5.23425ms           0.161708ms          42.0                
+trucking__12        CP-SAT              Stable              6.00446ms           6.35792ms           0.447708ms          245.0               
+ma-path-finding__in SCIP                Stable              74.4363ms           73.444ms            5.30625ms           25.0                
+prize-collecting__2 HiGHS               Stable              723.807ms           734.886ms           35.8331ms           79.0                
+prize-collecting__2 CP-SAT              Stable              116.203ms           119.446ms           11.0743ms           79.0                
+trucking__01        SCIP                Solved              1.64796ms           1.73287ms           0.420125ms          220.0               
+trucking_hl__trucki HiGHS               Stable              8.48362ms           9.23025ms           1.08775ms           287.0               
+tpp__tpp_5_5_20_1   SCIP                Stable              13634.8ms           13842.3ms           980.005ms           115.0               
+mario__mario_easy_2 HiGHS               Stable              679.561ms           679.561ms           50.03ms             628.0               
+trucking_hl__trucki CP-SAT              Stable              4.03858ms           4.03858ms           0.751958ms          224.0               
+trucking__05        HiGHS               Solved              4.52117ms           4.60375ms           1.47408ms           287.0               
+ma-path-finding__in CP-SAT              Stable              41.3856ms           41.3856ms           8.12596ms           25.0                
+tpp__tpp_3_3_20_1   CP-SAT              Stable              49.022ms            49.022ms            3.91175ms           126.0               
+mario__mario_easy_5 SCIP                Stable              568.578ms           568.578ms           45.5453ms           445.0               
+mario__mario_n_medi SCIP                Stable              5774.93ms           5774.93ms           196.156ms           1062.0              
+trucking__12        SCIP                Solved              2.478ms             3.11221ms           1.08621ms           245.0               
+java-routing__trip_ CP-SAT              Stable              24646.6ms           25931.8ms           1607.87ms           70.0                
+shortest_path__08   HiGHS               Solved              7.74887ms           8.35996ms           2.43021ms           144.0               
+tpp__tpp_6_3_30_1   CP-SAT              Stable              282.405ms           290.256ms           16.3634ms           164.0               
+ma-path-finding__in HiGHS               Stable              84.8117ms           84.8117ms           8.79629ms           25.0                
+prize-collecting__2 SCIP                Stable              610.136ms           610.136ms           69.21ms             79.0                
+trucking_hl__trucki SCIP                Stable              2.19029ms           2.19029ms           0.255583ms          220.0               
+tpp__tpp_3_3_20_1   SCIP                Stable              233.102ms           233.102ms           39.3862ms           126.0               
+trucking__12        HiGHS               Solved              3.29233ms           3.61829ms           1.10192ms           245.0               
+mario__mario_easy_5 HiGHS               Stable              470.355ms           470.355ms           50.3026ms           445.0               
+mario__mario_medium HiGHS               Stable              6757.72ms           6825.13ms           173.35ms            1481.0              
+prize-collecting__1 CP-SAT              Stable              20.89ms             20.8738ms           0.266ms             24.0                
+mario__mario_n_medi CP-SAT              Stable              825.541ms           877.571ms           66.0728ms           771.0               
+trucking__10        CP-SAT              Stable              168.656ms           171.022ms           3.53667ms           1736.0              
+shortest_path__02   SCIP                Stable              4.70892ms           5.25012ms           0.926166ms          59.0                
+shortest_path__09   HiGHS               Stable              14.9162ms           14.9162ms           2.55229ms           549.0               
+tpp__tpp_5_3_20_1   HiGHS               Stable              2524.11ms           2524.11ms           87.3997ms           141.0               
+trucking_hl__trucki SCIP                Solved              1.65329ms           1.65329ms           1.17317ms           210.0               
+tpp__tpp_6_3_30_1   HiGHS               Stable              4142.28ms           4142.28ms           380.532ms           164.0               
+trucking_hl__trucki CP-SAT              Stable              3.44158ms           3.44158ms           0.14075ms           287.0               
+trucking__05        CP-SAT              Solved              3.26238ms           3.27596ms           1.35954ms           287.0               
+mario__mario_medium CP-SAT              Stable              256.88ms            256.88ms            12.7642ms           1481.0              
+shortest_path__00   HiGHS               Solved              5.50113ms           5.50113ms           1.22179ms           88.0                
+stochastic-vrp__vrp CP-SAT              Stable              238.292ms           238.292ms           31.6776ms           160.0               
+mario__mario_easy_2 CP-SAT              Stable              31.0778ms           31.0778ms           2.05542ms           628.0               
+trucking__14        SCIP                Solved              5.08512ms           5.08512ms           1.38563ms           580.0               
+cvrp__simple2       CP-SAT              Stable              3033.05ms           3033.05ms           338.462ms           34.0                
+java-routing__trip_ CP-SAT              Stable              23059.2ms           23059.2ms           2922.42ms           58.0                
+tpp__tpp_7_5_30_1   SCIP                Stable              36160.7ms           38585.5ms           3005.95ms           124.0               
+stochastic-vrp__vrp HiGHS               Stable              211107.0ms          228136.0ms          28654.2ms           194.0               
+vrp__P-n16-k8.vrp   SCIP                Stable              57898.8ms           60729.2ms           9143.24ms           450.0               
+
+Iteration 4 with 18 model/solver pairs remaining 2026-11-28T00:07:09.019278Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              1.62608ms           1.62608ms           2.34796ms           224.0               
+trucking_hl__trucki SCIP                Stable              1.83508ms           1.99642ms           0.227374ms          287.0               
+shortest_path__08   SCIP                Stable              5.08158ms           5.82258ms           0.788875ms          144.0               
+shortest_path__09   SCIP                Stable              10.0633ms           11.2911ms           2.18279ms           549.0               
+trucking__01        SCIP                Solved              1.33825ms           1.64796ms           0.394625ms          220.0               
+trucking__05        HiGHS               Stable              3.78867ms           4.52117ms           0.815084ms          287.0               
+trucking__12        SCIP                Solved              2.32179ms           2.478ms             0.790418ms          245.0               
+shortest_path__08   HiGHS               Stable              7.05196ms           7.74887ms           1.308ms             144.0               
+trucking__12        HiGHS               Stable              3.16271ms           3.29233ms           0.455583ms          245.0               
+trucking_hl__trucki SCIP                Solved              1.18837ms           1.65075ms           0.464916ms          210.0               
+trucking__05        CP-SAT              Stable              3.46046ms           3.27596ms           0.198083ms          287.0               
+shortest_path__00   HiGHS               Stable              4.92608ms           5.42804ms           0.575042ms          88.0                
+trucking__14        SCIP                Solved              4.03821ms           4.7975ms            1.04692ms           580.0               
+trucking__01        HiGHS               Solved              5.30508ms           4.61963ms           0.986624ms          220.0               
+trucking__05        SCIP                Solved              1.90396ms           2.64337ms           5.08013ms           287.0               
+shortest_path__01   SCIP                Solved              4.628ms             4.628ms             1.05471ms           42.0                
+tpp__tpp_5_5_20_1   CP-SAT              Solved              258.39ms            295.036ms           295.949ms           115.0               
+java-routing__trip_ CP-SAT              Solved              4207.63ms           4343.21ms           1886.14ms           52.0                
+
+Iteration 5 with 10 model/solver pairs remaining 2026-11-28T00:07:21.300980Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Stable              1.55508ms           1.55508ms           0.210292ms          224.0               
+shortest_path__01   SCIP                Solved              4.34733ms           4.34733ms           1.0475ms            42.0                
+trucking__01        SCIP                Solved              2.348ms             1.64796ms           1.00975ms           220.0               
+trucking__12        SCIP                Stable              2.19263ms           2.32179ms           0.285375ms          245.0               
+trucking_hl__trucki SCIP                Solved              1.62567ms           1.62567ms           0.464916ms          210.0               
+trucking__14        SCIP                Solved              5.55317ms           5.08512ms           1.51496ms           580.0               
+trucking__05        SCIP                Solved              4.05629ms           2.64337ms           2.15233ms           287.0               
+trucking__01        HiGHS               Stable              5.20871ms           5.20871ms           0.685458ms          220.0               
+tpp__tpp_5_5_20_1   CP-SAT              Stable              247.843ms           258.39ms            47.1925ms           115.0               
+java-routing__trip_ CP-SAT              Solved              3437.9ms            4207.63ms           905.306ms           52.0                
+
+Iteration 6 with 6 model/solver pairs remaining 2026-11-28T00:07:32.328765Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              1.33533ms           1.33533ms           0.437291ms          210.0               
+trucking__01        SCIP                Solved              2.66863ms           2.348ms             1.33038ms           220.0               
+trucking__05        SCIP                Solved              1.84083ms           1.90396ms           2.21546ms           287.0               
+shortest_path__01   SCIP                Stable              4.1975ms            4.34733ms           0.4305ms            42.0                
+trucking__14        SCIP                Solved              4.60042ms           4.60042ms           1.51496ms           580.0               
+java-routing__trip_ CP-SAT              Stable              4230.66ms           4207.63ms           792.757ms           52.0                
+
+Iteration 7 with 4 model/solver pairs remaining 2026-11-28T00:07:48.555212Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              2.36046ms           1.62567ms           1.02512ms           210.0               
+trucking__01        SCIP                Solved              1.46342ms           2.348ms             1.20521ms           220.0               
+trucking__14        SCIP                Stable              5.21012ms           5.21012ms           0.95275ms           580.0               
+trucking__05        SCIP                Solved              1.95717ms           1.95717ms           2.21546ms           287.0               
+
+Iteration 8 with 3 model/solver pairs remaining 2026-11-28T00:07:48.591589Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              1.44858ms           1.44858ms           1.02512ms           210.0               
+trucking__01        SCIP                Solved              1.85283ms           1.85283ms           1.20521ms           220.0               
+trucking__05        SCIP                Stable              1.84675ms           1.84675ms           0.116333ms          287.0               
+
+Iteration 9 with 2 model/solver pairs remaining 2026-11-28T00:07:48.603939Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Solved              1.13454ms           1.44858ms           1.22592ms           210.0               
+trucking__01        SCIP                Solved              1.70275ms           1.70275ms           0.389416ms          220.0               
+
+Iteration 10 with 2 model/solver pairs remaining 2026-11-28T00:07:48.610030Z
+Model               Solver              Status              Time                Median              Range               Value               
+--------------------------------------------------------------------------------------------------------------------------------------------
+trucking_hl__trucki SCIP                Capped              1.17171ms           1.17171ms           0.314042ms          210.0               
+trucking__01        SCIP                Stable              1.62321ms           1.70275ms           0.229625ms          220.0               
+
+Final Results
+Model               Solver              Status              Time                
+================================================================================
+cvrp__simple2       CP-SAT              OPTIMAL             3033.05ms           
+cvrp__simple2       HiGHS               TIMEOUT             
+cvrp__simple2       SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              OPTIMAL             4855.25ms           
+java-routing__trip_ HiGHS               TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              OPTIMAL             4207.63ms           
+java-routing__trip_ HiGHS               TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              OPTIMAL             25931.8ms           
+java-routing__trip_ HiGHS               TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              OPTIMAL             23059.2ms           
+java-routing__trip_ HiGHS               TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+java-routing__trip_ CP-SAT              OPTIMAL             11197.6ms           
+java-routing__trip_ HiGHS               TIMEOUT             
+java-routing__trip_ SCIP                TIMEOUT             
+ma-path-finding__in CP-SAT              OPTIMAL             41.3856ms           
+ma-path-finding__in HiGHS               OPTIMAL             84.8117ms           
+ma-path-finding__in SCIP                OPTIMAL             73.444ms            
+mario__mario_easy_2 CP-SAT              OPTIMAL             31.0778ms           
+mario__mario_easy_2 HiGHS               OPTIMAL             679.561ms           
+mario__mario_easy_2 SCIP                OPTIMAL             270.945ms           
+mario__mario_easy_5 CP-SAT              OPTIMAL             101.473ms           
+mario__mario_easy_5 HiGHS               OPTIMAL             470.355ms           
+mario__mario_easy_5 SCIP                OPTIMAL             568.578ms           
+mario__mario_medium CP-SAT              OPTIMAL             256.88ms            
+mario__mario_medium HiGHS               OPTIMAL             6825.13ms           
+mario__mario_medium SCIP                OPTIMAL             3154.0ms            
+mario__mario_n_medi CP-SAT              OPTIMAL             806.918ms           
+mario__mario_n_medi HiGHS               OPTIMAL             3999.5ms            
+mario__mario_n_medi SCIP                OPTIMAL             5774.93ms           
+mario__mario_n_medi CP-SAT              OPTIMAL             877.571ms           
+mario__mario_n_medi HiGHS               OPTIMAL             4991.77ms           
+mario__mario_n_medi SCIP                OPTIMAL             8714.5ms            
+prize-collecting__1 CP-SAT              OPTIMAL             20.8738ms           
+prize-collecting__1 HiGHS               OPTIMAL             372.114ms           
+prize-collecting__1 SCIP                OPTIMAL             205.647ms           
+prize-collecting__2 CP-SAT              OPTIMAL             61.2616ms           
+prize-collecting__2 HiGHS               OPTIMAL             550.177ms           
+prize-collecting__2 SCIP                OPTIMAL             437.267ms           
+prize-collecting__2 CP-SAT              OPTIMAL             119.446ms           
+prize-collecting__2 HiGHS               OPTIMAL             734.886ms           
+prize-collecting__2 SCIP                OPTIMAL             610.136ms           
+prize-collecting__2 CP-SAT              OPTIMAL             266.382ms           
+prize-collecting__2 HiGHS               OPTIMAL             1644.81ms           
+prize-collecting__2 SCIP                OPTIMAL             1490.17ms           
+prize-collecting__3 CP-SAT              OPTIMAL             249.573ms           
+prize-collecting__3 HiGHS               OPTIMAL             1528.18ms           
+prize-collecting__3 SCIP                OPTIMAL             2185.86ms           
+shortest_path__00   CP-SAT              OPTIMAL             8.53663ms           
+shortest_path__00   HiGHS               OPTIMAL             5.42804ms           
+shortest_path__00   SCIP                OPTIMAL             3.38575ms           
+shortest_path__01   CP-SAT              OPTIMAL             9.61996ms           
+shortest_path__01   HiGHS               OPTIMAL             5.23425ms           
+shortest_path__01   SCIP                OPTIMAL             4.34733ms           
+shortest_path__02   CP-SAT              OPTIMAL             11.0413ms           
+shortest_path__02   HiGHS               OPTIMAL             8.59587ms           
+shortest_path__02   SCIP                OPTIMAL             5.25012ms           
+shortest_path__08   CP-SAT              OPTIMAL             15.6955ms           
+shortest_path__08   HiGHS               OPTIMAL             7.74887ms           
+shortest_path__08   SCIP                OPTIMAL             5.82258ms           
+shortest_path__09   CP-SAT              OPTIMAL             44.8394ms           
+shortest_path__09   HiGHS               OPTIMAL             14.9162ms           
+shortest_path__09   SCIP                OPTIMAL             11.2911ms           
+stochastic-vrp__vrp CP-SAT              OPTIMAL             238.292ms           
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+stochastic-vrp__vrp SCIP                TIMEOUT             
+stochastic-vrp__vrp CP-SAT              OPTIMAL             182.996ms           
+stochastic-vrp__vrp HiGHS               OPTIMAL             228136.0ms          
+stochastic-vrp__vrp SCIP                TIMEOUT             
+stochastic-vrp__vrp CP-SAT              OPTIMAL             768.069ms           
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+stochastic-vrp__vrp SCIP                TIMEOUT             
+stochastic-vrp__vrp CP-SAT              OPTIMAL             254.628ms           
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+stochastic-vrp__vrp SCIP                TIMEOUT             
+stochastic-vrp__vrp CP-SAT              OPTIMAL             7222.79ms           
+stochastic-vrp__vrp HiGHS               TIMEOUT             
+stochastic-vrp__vrp SCIP                TIMEOUT             
+tpp__tpp_3_3_20_1   CP-SAT              OPTIMAL             49.022ms            
+tpp__tpp_3_3_20_1   HiGHS               OPTIMAL             995.621ms           
+tpp__tpp_3_3_20_1   SCIP                OPTIMAL             233.102ms           
+tpp__tpp_5_3_20_1   CP-SAT              OPTIMAL             140.081ms           
+tpp__tpp_5_3_20_1   HiGHS               OPTIMAL             2524.11ms           
+tpp__tpp_5_3_20_1   SCIP                OPTIMAL             1344.91ms           
+tpp__tpp_5_5_20_1   CP-SAT              OPTIMAL             258.39ms            
+tpp__tpp_5_5_20_1   HiGHS               OPTIMAL             4875.94ms           
+tpp__tpp_5_5_20_1   SCIP                OPTIMAL             13842.3ms           
+tpp__tpp_6_3_30_1   CP-SAT              OPTIMAL             290.256ms           
+tpp__tpp_6_3_30_1   HiGHS               OPTIMAL             4142.28ms           
+tpp__tpp_6_3_30_1   SCIP                OPTIMAL             3388.96ms           
+tpp__tpp_7_5_30_1   CP-SAT              OPTIMAL             1461.84ms           
+tpp__tpp_7_5_30_1   HiGHS               OPTIMAL             14243.1ms           
+tpp__tpp_7_5_30_1   SCIP                OPTIMAL             38585.5ms           
+traveling-tppv__cir CP-SAT              TIMEOUT             
+traveling-tppv__cir HiGHS               TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir CP-SAT              TIMEOUT             
+traveling-tppv__cir HiGHS               TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir CP-SAT              UNSTABLE            
+traveling-tppv__cir HiGHS               TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir CP-SAT              TIMEOUT             
+traveling-tppv__cir HiGHS               TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+traveling-tppv__cir CP-SAT              TIMEOUT             
+traveling-tppv__cir HiGHS               TIMEOUT             
+traveling-tppv__cir SCIP                TIMEOUT             
+trucking__01        CP-SAT              OPTIMAL             3.69325ms           
+trucking__01        HiGHS               OPTIMAL             5.20871ms           
+trucking__01        SCIP                OPTIMAL             1.70275ms           
+trucking__05        CP-SAT              OPTIMAL             3.27596ms           
+trucking__05        HiGHS               OPTIMAL             4.52117ms           
+trucking__05        SCIP                OPTIMAL             1.84675ms           
+trucking__10        CP-SAT              OPTIMAL             171.022ms           
+trucking__10        HiGHS               OPTIMAL             43.237ms            
+trucking__10        SCIP                OPTIMAL             27.7736ms           
+trucking__12        CP-SAT              OPTIMAL             6.35792ms           
+trucking__12        HiGHS               OPTIMAL             3.29233ms           
+trucking__12        SCIP                OPTIMAL             2.32179ms           
+trucking__14        CP-SAT              OPTIMAL             12.2995ms           
+trucking__14        HiGHS               OPTIMAL             6.31313ms           
+trucking__14        SCIP                OPTIMAL             5.21012ms           
+trucking_hl__trucki CP-SAT              OPTIMAL             3.69692ms           
+trucking_hl__trucki HiGHS               OPTIMAL             5.384ms             
+trucking_hl__trucki SCIP                OPTIMAL             2.19029ms           
+trucking_hl__trucki CP-SAT              OPTIMAL             3.53308ms           
+trucking_hl__trucki HiGHS               OPTIMAL             4.48079ms           
+trucking_hl__trucki SCIP                OPTIMAL             1.17171ms           
+trucking_hl__trucki CP-SAT              OPTIMAL             4.03858ms           
+trucking_hl__trucki HiGHS               OPTIMAL             9.09883ms           
+trucking_hl__trucki SCIP                OPTIMAL             1.55508ms           
+trucking_hl__trucki CP-SAT              OPTIMAL             4.86587ms           
+trucking_hl__trucki HiGHS               OPTIMAL             5.8235ms            
+trucking_hl__trucki SCIP                OPTIMAL             3.59983ms           
+trucking_hl__trucki CP-SAT              OPTIMAL             3.44158ms           
+trucking_hl__trucki HiGHS               OPTIMAL             9.23025ms           
+trucking_hl__trucki SCIP                OPTIMAL             1.99642ms           
+vrp__A-n33-k6.vrp   CP-SAT              TIMEOUT             
+vrp__A-n33-k6.vrp   HiGHS               TIMEOUT             
+vrp__A-n33-k6.vrp   SCIP                TIMEOUT             
+vrp__A-n38-k5.vrp   CP-SAT              TIMEOUT             
+vrp__A-n38-k5.vrp   HiGHS               TIMEOUT             
+vrp__A-n38-k5.vrp   SCIP                TIMEOUT             
+vrp__A-n61-k9.vrp   CP-SAT              TIMEOUT             
+vrp__A-n61-k9.vrp   HiGHS               TIMEOUT             
+vrp__A-n61-k9.vrp   SCIP                TIMEOUT             
+vrp__P-n16-k8.vrp   CP-SAT              OPTIMAL             1418.7ms            
+vrp__P-n16-k8.vrp   HiGHS               OPTIMAL             5205.5ms            
+vrp__P-n16-k8.vrp   SCIP                OPTIMAL             60729.2ms           
+vrp__P-n50-k10.vrp  CP-SAT              TIMEOUT             
+vrp__P-n50-k10.vrp  HiGHS               TIMEOUT             
+vrp__P-n50-k10.vrp  SCIP                TIMEOUT             
+
+Models Solved
+Solver              Solved / Total      Share               
+============================================================
+CP-SAT              43 / 52             83%                 
+HiGHS               33 / 52             63%                 
+SCIP                32 / 52             62%                 
